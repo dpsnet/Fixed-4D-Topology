@@ -7,7 +7,7 @@ authors:
   - family-names: "Research Engine"
     given-names: "AI"
     affiliation: "Independent Research"
-repository-code: "https://github.com/yourusername/Fixed-4D-Topology"
+repository-code: "https://github.com/dpsnet/Fixed-4D-Topology"
 license: MIT
 version: 1.0.0
 date-released: 2026-02-07
@@ -21,6 +21,10 @@ keywords:
   - Cantor set
   - Grothendieck group
   - mathematical physics
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.xxxxxxx
+    description: "Zenodo archive of the software release"
 preferred-citation:
   type: article
   title: "Cantor Class Fractal Representation: A Rigorous Approximation Theory"

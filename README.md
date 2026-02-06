@@ -1,5 +1,6 @@
 # Fixed 4D Topology: Dynamic Spectral Dimension Unified Field Theory
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.xxxxxxx.svg)](https://doi.org/10.5281/zenodo.xxxxxxx)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
@@ -42,7 +43,7 @@ Fixed-4D-Topology/
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/Fixed-4D-Topology.git
+git clone https://github.com/dpsnet/Fixed-4D-Topology.git
 cd Fixed-4D-Topology
 
 # Install dependencies
