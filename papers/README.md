@@ -88,7 +88,7 @@ If you use the Fixed 4D Topology framework, please cite:
   author = {AI Research Engine},
   title = {Fixed 4D Topology: Dynamic Spectral Dimension Unified Field Theory},
   year = {2026},
-  doi = {10.5281/zenodo.8475},
+  doi = {10.5281/zenodo.18511250},
   url = {https://github.com/dpsnet/Fixed-4D-Topology}
 }
 ```

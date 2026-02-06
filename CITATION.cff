@@ -23,7 +23,7 @@ keywords:
   - mathematical physics
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.8475
+    value: 10.5281/zenodo.18511250
     description: "Zenodo archive of the software release"
 preferred-citation:
   type: article
