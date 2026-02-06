@@ -1,10 +1,10 @@
 [build-system]
-requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+requires = ["setuptools>=61.0", "wheel", "setuptools_scm[toml]>=6.2"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "fixed-4d-topology"
-version = "1.0.0"
+version = "1.0.1"
 description = "Dynamic Spectral Dimension Unified Field Theory"
 readme = "README.md"
 license = {text = "MIT"}
@@ -18,6 +18,9 @@ keywords = [
     "algebraic topology",
     "unified field theory",
     "mathematical physics",
+    "heat kernel",
+    "Cantor set",
+    "Grothendieck group",
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -28,8 +31,10 @@ classifiers = [
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
     "Topic :: Scientific/Engineering :: Mathematics",
     "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Information Analysis",
 ]
 requires-python = ">=3.8"
 dependencies = [
@@ -48,36 +53,47 @@ dev = [
     "black>=21.0.0",
     "flake8>=4.0.0",
     "mypy>=0.910",
+    "build>=0.7.0",
+    "twine>=3.4.0",
 ]
 docs = [
     "sphinx>=4.3.0",
     "sphinx-rtd-theme>=1.0.0",
+    "myst-parser>=0.17.0",
 ]
 notebooks = [
     "jupyter>=1.0.0",
     "ipython>=7.30.0",
     "plotly>=5.3.0",
+    "ipywidgets>=7.6.0",
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/Fixed-4D-Topology"
-Documentation = "https://fixed-4d-topology.readthedocs.io"
-Repository = "https://github.com/yourusername/Fixed-4D-Topology"
-"Bug Tracker" = "https://github.com/yourusername/Fixed-4D-Topology/issues"
+Homepage = "https://github.com/dpsnet/Fixed-4D-Topology"
+Documentation = "https://github.com/dpsnet/Fixed-4D-Topology/tree/main/docs"
+Repository = "https://github.com/dpsnet/Fixed-4D-Topology"
+"Bug Tracker" = "https://github.com/dpsnet/Fixed-4D-Topology/issues"
+Changelog = "https://github.com/dpsnet/Fixed-4D-Topology/releases"
+
+[project.scripts]
+fixed4d-verify = "fixed_4d_topology.cli:verify_command"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
+include-package-data = true
 
 [tool.setuptools.packages.find]
 where = ["src"]
 
+[tool.setuptools.package-data]
+fixed_4d_topology = ["py.typed"]
+
 [tool.black]
 line-length = 88
-target-version = ['py38', 'py39', 'py310', 'py311']
+target-version = ['py38', 'py39', 'py310', 'py311', 'py312']
 include = '\.pyi?$'
 extend-exclude = '''
 /(
-  # directories
   \.eggs
   | \.git
   | \.hg
@@ -101,3 +117,20 @@ python_version = "3.8"
 warn_return_any = true
 warn_unused_configs = true
 disallow_untyped_defs = true
+ignore_missing_imports = true
+
+[tool.coverage.run]
+source = ["src/fixed_4d_topology"]
+omit = [
+    "*/tests/*",
+    "*/test_*",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+]

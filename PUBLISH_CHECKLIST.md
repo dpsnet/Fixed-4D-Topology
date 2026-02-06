@@ -33,7 +33,7 @@ git init
 git add .
 git commit -m "Initial release v1.0.0"
 git branch -M main
-git remote add origin https://github.com/yourusername/Fixed-4D-Topology.git
+git remote add origin https://github.com/dpsnet/Fixed-4D-Topology.git
 git push -u origin main
 ```
 

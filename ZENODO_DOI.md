@@ -2,11 +2,11 @@
 
 ## Repository DOI
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.xxxxxxx.svg)](https://doi.org/10.5281/zenodo.xxxxxxx)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18511250.svg)](https://doi.org/10.5281/zenodo.18511250)
 
 **Status**: Zenodo integration enabled ✓
 
-**Expected DOI format**: `10.5281/zenodo.xxxxxxx`
+**Expected DOI format**: `10.5281/zenodo.18511250`
 
 The DOI will be automatically assigned when:
 1. A new release is published on GitHub, OR
@@ -21,7 +21,7 @@ Once the DOI is assigned, cite this work as:
   author = {AI Research Engine},
   title = {Fixed 4D Topology: Dynamic Spectral Dimension Unified Field Theory},
   year = {2026},
-  doi = {10.5281/zenodo.xxxxxxx},
+  doi = {10.5281/zenodo.18511250},
   url = {https://github.com/dpsnet/Fixed-4D-Topology}
 }
 ```
