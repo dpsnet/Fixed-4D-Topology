@@ -1,0 +1,12 @@
+SHORT DESCRIPTION (for GitHub sidebar):
+─────────────────────────────────────
+Dynamic Spectral Dimension Unified Field Theory — Rigorous mathematical framework unifying fractal geometry, spectral theory, modular forms, and algebraic topology
+
+TOPICS (for GitHub sidebar):
+─────────────────────────────────────
+fractal-geometry, spectral-dimension, modular-forms, algebraic-topology, unified-field-theory, mathematical-physics, heat-kernel, cantor-set, grothendieck-group, pde, python, research
+
+WEBSITE (for GitHub sidebar):
+─────────────────────────────────────
+https://pypi.org/project/fixed-4d-topology/
+
