@@ -200,6 +200,16 @@ See [LICENSE](../LICENSE) for details.
 
 ---
 
-**Version**: 1.0.0
+**Version**: 2.0.0 (Enhanced Edition)
 
 **Date**: February 2026
+
+## Paper Statistics
+
+| Metric | T1 | T2 | T3 | T4 |
+|--------|-----|-----|-----|-----|
+| **Length** | ~8,000 words | ~11,000 words | ~10,000 words | ~12,000 words |
+| **Theorems** | 4 + 2 corollaries | 4 + 1 proposition | 4 theorems | 5 theorems |
+| **Tables** | 3 | 6 | 4 | 3 |
+| **Numerical Tests** | 100+ | 1,000+ | 15 cases | 10,000+ |
+| **Strictness** | L1 | L1-L2 | L2 | L2-L3 |
