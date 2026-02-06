@@ -77,27 +77,29 @@ print(f"Spectral dimension at t=1e-5: {d_s}")
 | T3 | Ramanujan Correspondence | d_H ≈ 1.84 | ✅ Verified |
 | T4 | Fractal Arithmetic | 𝒢_D^(r) ≅ (ℚ, +) | ✅ Verified |
 
-## 📚 Documentation
+## 📚 Research Papers (Open Access)
 
-### Theory Papers
+All papers are published as open access Markdown documents in this repository:
 
-- **[T1] Cantor Representation Theory** (`docs/T1-cantor-representation/`)
-  - ArXiv-ready paper with complete proofs
-  - Four theorems: linear independence, density, algorithm, optimality
-  - O(log(1/ε)) convergence rate
+### [📄 Papers Directory](./papers/)
 
-- **[T2] Spectral Dimension PDE** (`docs/T2-spectral-dimension-pde/`)
-  - Rigorous derivation from heat kernel asymptotics
-  - Existence and uniqueness proofs
-  - Numerical validation framework
+| Paper | Title | Strictness | Key Results |
+|-------|-------|------------|-------------|
+| **[T1](./papers/T1-cantor-representation/)** | Cantor Class Fractal Representation | L1 (100% strict) | Linear independence, O(log(1/ε)) optimal convergence |
+| **[T2](./papers/T2-spectral-dimension-pde/)** | Spectral Dimension Evolution PDE | L1-L2 | PDE derivation, existence & uniqueness |
+| **[T3](./papers/T3-modular-correspondence/)** | Modular-Fractal Weak Correspondence | L2 | Weak correspondence (~30% preservation) |
+| **[T4](./papers/T4-fractal-arithmetic/)** | Fractal Arithmetic & Grothendieck Group | L2-L3 | Log isomorphism 𝒢_D^(r) ≅ (ℚ, +) |
 
-- **[T3] Modular-Fractal Weak Correspondence** (`docs/T3-modular-fractal-correspondence/`)
-  - Ramanujan L-function connections
-  - Weak correspondence construction
-  - Structure preservation analysis
+Each paper includes:
+- ✅ Complete theorems and proofs
+- ✅ Numerical validation
+- ✅ Implementation code
+- ✅ BibTeX citation
 
-- **[T4] Fractal Arithmetic** (`docs/T4-fractal-arithmetic/`)
-  - Grothendieck group isomorphism
+### Additional Documentation
+
+- **[docs/](./docs/)** - API reference and supplementary documentation
+- **[arxiv-paper/](./arxiv-paper/)** - LaTeX source for T1 (alternative format)
   - Logarithmic unification structure
   - Applications to physics
 
