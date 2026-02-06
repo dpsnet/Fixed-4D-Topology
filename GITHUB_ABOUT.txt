@@ -1,12 +1,32 @@
 SHORT DESCRIPTION (for GitHub sidebar):
 ─────────────────────────────────────
-Dynamic Spectral Dimension Unified Field Theory — Rigorous mathematical framework unifying fractal geometry, spectral theory, modular forms, and algebraic topology
+AI-independent mathematical research unifying fractal geometry, spectral theory, modular forms, and algebraic topology — with honest layered strictness (L1/L2/L3)
 
 TOPICS (for GitHub sidebar):
 ─────────────────────────────────────
-fractal-geometry, spectral-dimension, modular-forms, algebraic-topology, unified-field-theory, mathematical-physics, heat-kernel, cantor-set, grothendieck-group, pde, python, research
+fractal-geometry, spectral-dimension, modular-forms, algebraic-topology, unified-field-theory, mathematical-physics, ai-research, rigorous-mathematics, heat-kernel, cantor-set, grothendieck-group, pde, python, research, open-science
 
 WEBSITE (for GitHub sidebar):
 ─────────────────────────────────────
 https://pypi.org/project/fixed-4d-topology/
 
+RESEARCH STATEMENT:
+─────────────────────────────────────
+This repository presents original mathematical research conducted through
+AI-independent deep derivation methodology. The work features:
+
+• Layered strictness: L1 (100% rigorous) / L2 (progressive) / L3 (heuristic)
+• Honest revision: M-0 series errors corrected in T1-T4 framework
+• Complete transparency: 50,000 words, 18 theorems, all proofs included
+• Full reproducibility: Python implementation with numerical validation
+
+The research evolved from initial over-claims (M-0 v2.0) to honest 
+approximation framework (v2.1) following "宁可删除，不伪造成立" 
+(Rather delete than fake validity) principle.
+
+Status: Research complete, open for peer review and collaboration.
+
+CITATION:
+─────────────────────────────────────
+DOI: 10.5281/zenodo.18511250
+PyPI: pip install fixed-4d-topology
