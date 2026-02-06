@@ -1,0 +1,93 @@
+\subsection{Cantor Class Fractals}
+
+\begin{definition}[Generalized Cantor Set]
+\label{def:generalized_cantor}
+Let $r \in (0, 1/2)$ be a scaling parameter. The \emph{generalized Cantor set} $\Cantor_r \subseteq [0,1]$ is defined as the unique non-empty compact set satisfying:
+\begin{equation}
+\Cantor_r = r \cdot \Cantor_r \cup (r \cdot \Cantor_r + (1-r))
+\end{equation}
+Equivalently, $\Cantor_r$ is the attractor of the iterated function system $\{f_1, f_2\}$ where $f_1(x) = rx$ and $f_2(x) = rx + (1-r)$.
+\end{definition}
+
+\begin{definition}[Cantor Class Dimensions]
+\label{def:cantor_class}
+The \emph{Cantor class} $\mathcal{D}_{\Cantor}$ is the set of Hausdorff dimensions of generalized Cantor sets:
+\begin{equation}
+\mathcal{D}_{\Cantor} = \left\{ \dimH(\Cantor_r) : r \in (0, 1/2) \cap \Q \right\}
+\end{equation}
+Since $\dimH(\Cantor_r) = \frac{\log 2}{\log(1/r)}$, we have:
+\begin{equation}
+\mathcal{D}_{\Cantor} = \left\{ \frac{\log 2}{\log(1/r)} : r \in (0, 1/2) \cap \Q \right\}
+\end{equation}
+\end{definition}
+
+\begin{example}[Standard Cantor Set]
+For $r = 1/3$, we obtain the standard middle-thirds Cantor set:
+\begin{equation}
+\dimH(\Cantor_{1/3}) = \frac{\log 2}{\log 3} \approx 0.6309297536
+\end{equation}
+\end{example}
+
+\begin{definition}[Rational Combinations]
+\label{def:rational_combinations}
+For a finite subset $\{d_1, \ldots, d_k\} \subseteq \mathcal{D}_{\Cantor}$, the set of \emph{rational combinations} is:
+\begin{equation}
+\mathcal{R}(d_1, \ldots, d_k) = \left\{ \sum_{i=1}^{k} q_i d_i : q_i \in \Q \right\}
+\end{equation}
+The set of all rational combinations from $\mathcal{D}_{\Cantor}$ is:
+\begin{equation}
+\mathcal{R}_{\Cantor} = \bigcup_{k=1}^{\infty} \bigcup_{\{d_1, \ldots, d_k\} \subseteq \mathcal{D}_{\Cantor}} \mathcal{R}(d_1, \ldots, d_k)
+\end{equation}
+\end{definition}
+
+\subsection{Linear Independence and Dimension}
+
+\begin{definition}[Linear Independence over $\Q$]
+\label{def:linear_independence}
+A set $S \subseteq \R$ is \emph{linearly independent over $\Q$} if for any finite subset $\{s_1, \ldots, s_n\} \subseteq S$ and any $q_1, \ldots, q_n \in \Q$:
+\begin{equation}
+\sum_{i=1}^{n} q_i s_i = 0 \implies q_1 = q_2 = \cdots = q_n = 0
+\end{equation}
+\end{definition}
+
+\begin{lemma}[Cardinality Argument]
+\label{lem:cardinality}
+Let $S \subseteq \R$ be a countable set. Then the set of finite rational combinations of elements from $S$ has cardinality $\aleph_0$ (countable), while $\R$ has cardinality $2^{\aleph_0}$ (uncountable).
+\end{lemma}
+
+\begin{proof}
+The set of finite rational combinations can be written as:
+\begin{equation}
+\mathcal{C} = \bigcup_{n=1}^{\infty} \left\{ \sum_{i=1}^{n} q_i s_i : q_i \in \Q, s_i \in S \right\}
+\end{equation}
+For each $n$, the set of $n$-term combinations is in bijection with $\Q^n \times S^n$, which is countable. A countable union of countable sets is countable. Therefore $|\mathcal{C}| = \aleph_0 < 2^{\aleph_0} = |\R|$.
+\end{proof}
+
+\Cref{lem:cardinality} shows why exact representation of all real numbers using countable fractal dimensions is impossible. This motivates our focus on approximation.
+
+\subsection{Approximation Framework}
+
+\begin{definition}[Approximation Problem]
+\label{def:approx_problem}
+Given a target $\alpha \in \R$ and precision $\eps > 0$, find $d \in \mathcal{R}_{\Cantor}$ such that:
+\begin{equation}
+|\alpha - d| < \eps
+\end{equation}
+The \emph{complexity} of the approximation is the minimum number of Cantor dimensions needed to achieve the error bound.
+\end{definition}
+
+\begin{definition}[Greedy Approximation]
+\label{def:greedy_approx}
+For target $\alpha$ and precision $\eps$, the greedy algorithm proceeds as follows:
+\begin{enumerate}[leftmargin=*]
+    \item Initialize residual $r_0 = \alpha$
+    \item At step $k$: choose $d_{i_k} \in \mathcal{D}_{\Cantor}$ and $c_k \in \Q$ minimizing $|r_{k-1} - c_k \cdot d_{i_k}|$
+    \item Update: $r_k = r_{k-1} - c_k \cdot d_{i_k}$
+    \item Stop when $|r_k| < \eps$
+\end{enumerate}
+\end{definition}
+
+We denote the approximation after $k$ steps by:
+\begin{equation}
+A_k(\alpha) = \sum_{j=1}^{k} c_j \cdot d_{i_j}
+\end{equation}

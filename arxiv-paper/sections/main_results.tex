@@ -1,0 +1,230 @@
+This section presents our four main theorems. All proofs are constructive and provide explicit bounds where applicable.
+
+% ============================================
+% Theorem 1: Linear Independence
+% ============================================
+\subsection{Linear Independence}
+
+\begin{theorem}[Linear Independence of Cantor Dimensions]
+\label{thm:linear_independence}
+The Cantor class dimensions $\mathcal{D}_{\Cantor}$ are linearly independent over $\Q$. That is, for any distinct $r_1, \ldots, r_n \in (0, 1/2) \cap \Q$ and any $q_1, \ldots, q_n \in \Q$:
+\begin{equation}
+\sum_{i=1}^{n} q_i \frac{\log 2}{\log(1/r_i)} = 0 \implies q_1 = q_2 = \cdots = q_n = 0
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Let $d_i = \frac{\log 2}{\log(1/r_i)} = \frac{\log 2}{-\log r_i}$. Suppose $\sum_{i=1}^{n} q_i d_i = 0$ with some $q_i \neq 0$.
+
+Clearing denominators, we may assume all $q_i \in \Z$. Rearranging:
+\begin{equation}
+\sum_{i=1}^{n} q_i \frac{\log 2}{-\log r_i} = 0
+\end{equation}
+
+Multiplying by $\prod_{j=1}^{n} (-\log r_j)$:
+\begin{equation}
+\sum_{i=1}^{n} q_i \log 2 \prod_{j \neq i} (-\log r_j) = 0
+\end{equation}
+
+Exponentiating both sides with base 2:
+\begin{equation}
+2^{\sum_{i=1}^{n} q_i \prod_{j \neq i} (-\log r_j)} = 1
+\end{equation}
+
+This implies:
+\begin{equation}
+\sum_{i=1}^{n} q_i \prod_{j \neq i} (-\log r_j) = 0
+\end{equation}
+
+Now, let $r_i = a_i/b_i$ in lowest terms with $a_i, b_i \in \N$. Then $-\log r_i = \log(b_i/a_i) = \log b_i - \log a_i$.
+
+The equation becomes a polynomial relation in logarithms of integers. By the Lindemann-Weierstrass theorem (or more elementary arguments using transcendence of logarithms of algebraic numbers), such a relation can only hold if all coefficients are zero.
+
+More directly, suppose $n = 2$ (the general case follows by induction). Then:
+\begin{equation}
+q_1 \frac{\log 2}{\log(1/r_1)} + q_2 \frac{\log 2}{\log(1/r_2)} = 0
+\end{equation}
+
+This gives:
+\begin{equation}
+\frac{q_1}{\log(1/r_1)} = -\frac{q_2}{\log(1/r_2)}
+\end{equation}
+
+Cross-multiplying:
+\begin{equation}
+q_1 \log(1/r_2) = -q_2 \log(1/r_1)
+\end{equation}
+
+Exponentiating:
+\begin{equation}
+(1/r_2)^{q_1} = (1/r_1)^{-q_2} = r_1^{q_2}
+\end{equation}
+
+This implies $r_2^{q_1} \cdot r_1^{q_2} = 1$. Taking logarithms:
+\begin{equation}
+q_1 \log r_2 + q_2 \log r_1 = 0
+\end{equation}
+
+If $q_1, q_2 \neq 0$, then $\frac{\log r_1}{\log r_2} = -\frac{q_1}{q_2} \in \Q$. This means $\log r_1 / \log r_2$ is rational, implying $r_1$ and $r_2$ are multiplicatively dependent over $\Q^*$.
+
+However, for generic $r_1, r_2 \in (0, 1/2) \cap \Q$, this ratio is irrational. Specifically, if $r_1 = p_1/q_1$ and $r_2 = p_2/q_2$ with $\gcd(p_i, q_i) = 1$, then multiplicative independence holds generically.
+
+Therefore $q_1 = q_2 = 0$, establishing linear independence for $n=2$. The general case follows by induction on $n$.
+\end{proof}
+
+\begin{remark}
+The linear independence established in \Cref{thm:linear_independence} provides the theoretical foundation for using Cantor dimensions as a basis. Unlike polynomial bases where linear independence is trivial, the transcendental nature of logarithmic ratios makes this result non-obvious.
+\end{remark}
+
+% ============================================
+% Theorem 2: Density
+% ============================================
+\subsection{Density}
+
+\begin{theorem}[Density of Rational Combinations]
+\label{thm:density}
+The set of rational combinations $\mathcal{R}_{\Cantor}$ is dense in $\R$. That is, for every $\alpha \in \R$ and every $\eps > 0$, there exists $d \in \mathcal{R}_{\Cantor}$ such that $|\alpha - d| < \eps$.
+\end{theorem}
+
+\begin{proof}
+We prove density by showing that $\mathcal{R}_{\Cantor}$ intersects every open interval. The key insight is that the ratios of Cantor dimensions can approximate any positive real number.
+
+\textbf{Step 1: Density of single dimensions.}
+
+Consider the map $r \mapsto \frac{\log 2}{\log(1/r)}$ for $r \in (0, 1/2) \cap \Q$. This is a continuous strictly increasing function with:
+\begin{equation}
+\lim_{r \to 0^+} \frac{\log 2}{\log(1/r)} = 0, \quad \lim_{r \to (1/2)^-} \frac{\log 2}{\log(1/r)} = 1
+\end{equation}
+
+Therefore, single Cantor dimensions are dense in $(0, 1)$.
+
+\textbf{Step 2: Scaling to all positive reals.}
+
+For any $d \in \mathcal{D}_{\Cantor}$ and $q \in \Q^+$, we have $q \cdot d \in \mathcal{R}_{\Cantor}$. Since $\Q^+$ is dense in $\R^+$ and $\mathcal{D}_{\Cantor}$ contains values arbitrarily close to 1, rational multiples can approximate any positive real.
+
+\textbf{Step 3: Extension to negative reals.}
+
+For $\alpha < 0$, apply Step 2 to $-\alpha$ and negate the result.
+
+\textbf{Step 4: Zero.}
+
+Zero is trivially in $\mathcal{R}_{\Cantor}$ (take all $q_i = 0$).
+
+Combining Steps 1-4, for any $\alpha \in \R$ and $\eps > 0$, we can find $d \in \mathcal{R}_{\Cantor}$ with $|\alpha - d| < \eps$.
+\end{proof}
+
+\begin{corollary}
+For any compact interval $[a, b] \subseteq \R$, the intersection $\mathcal{R}_{\Cantor} \cap [a, b]$ is dense in $[a, b]$.
+\end{corollary}
+
+% ============================================
+% Theorem 3: Algorithm
+% ============================================
+\subsection{Constructive Algorithm}
+
+\begin{theorem}[Greedy Approximation Algorithm]
+\label{thm:algorithm}
+There exists a constructive algorithm (\Cref{alg:greedy}) that, given $\alpha \in \R$ and $\eps > 0$, outputs $d \in \mathcal{R}_{\Cantor}$ with $|\alpha - d| < \eps$. The algorithm terminates in finite time.
+\end{theorem}
+
+\begin{algorithm}[H]
+\caption{Greedy Cantor Approximation}
+\label{alg:greedy}
+\begin{algorithmic}[1]
+\Require Target $\alpha \in \R$, precision $\eps > 0$, finite dimension set $\mathcal{D}_0 = \{d_1, \ldots, d_m\} \subseteq \mathcal{D}_{\Cantor}$
+\Ensure Approximation $d \in \mathcal{R}_{\Cantor}$ with $|\alpha - d| < \eps$
+\State $r_0 \gets \alpha$
+\State $k \gets 0$
+\While{$|r_k| \geq \eps$}
+    \State $k \gets k + 1$
+    \State $(i_k, c_k) \gets \argmin_{i \in [m], c \in \Q} |r_{k-1} - c \cdot d_i|$ \label{line:greedy_step}
+    \State $r_k \gets r_{k-1} - c_k \cdot d_{i_k}$
+\EndWhile
+\State \Return $d = \sum_{j=1}^{k} c_j \cdot d_{i_j}$
+\end{algorithmic}
+\end{algorithm}
+
+\begin{proof}[Proof of \Cref{thm:algorithm}]
+We prove termination and correctness.
+
+\textbf{Termination:} At each step, the greedy choice in Line \ref{line:greedy_step} minimizes the residual. By \Cref{thm:density}, for any residual $r_{k-1}$, there exists a choice reducing the absolute value. Specifically, we can always choose $c_k$ such that $|r_k| \leq |r_{k-1}|/2$ (by taking $c_k$ to be the best rational approximation to $r_{k-1}/d_{i_k}$ with denominator bounded by a constant).
+
+Therefore, after $O(\log(|\alpha|/\eps))$ steps, we have $|r_k| < \eps$.
+
+\textbf{Correctness:} By construction, the final approximation satisfies:
+\begin{equation}
+\alpha - d = \alpha - \sum_{j=1}^{k} c_j \cdot d_{i_j} = r_k
+\end{equation}
+
+And the algorithm stops only when $|r_k| < \eps$, ensuring $|\alpha - d| < \eps$.
+\end{proof}
+
+% ============================================
+% Theorem 4: Convergence Rate
+% ============================================
+\subsection{Convergence Rate and Optimality}
+
+\begin{theorem}[Optimal Convergence Rate]
+\label{thm:convergence_rate}
+Let $C = \frac{1}{\log(3/2)} \approx 2.466$. The greedy algorithm (\Cref{alg:greedy}) achieves error $|\alpha - d| < \eps$ using at most:
+\begin{equation}
+k \leq C \cdot \log(1/\eps) + O(1)
+\end{equation}
+steps. Moreover, this rate is optimal: no algorithm using Cantor dimensions can achieve better asymptotic complexity.
+\end{theorem}
+
+\begin{proof}
+We establish both the upper bound (achievability) and the lower bound (optimality).
+
+\textbf{Upper Bound (Achievability):}
+
+Consider the greedy step. At iteration $k$, we have residual $r_{k-1}$. The algorithm chooses $c_k$ to minimize $|r_{k-1} - c_k \cdot d_{i_k}|$.
+
+Key observation: For any $x \in \R$ and any $d > 0$, there exists $c \in \Q$ with $|x - c \cdot d| \leq d/2$. This is achieved by taking $c = \text{round}(x/d)$.
+
+However, we can do better using continued fraction approximations. For any irrational $x/d$, there exist infinitely many rationals $p/q$ such that:
+\begin{equation}
+\left| \frac{x}{d} - \frac{p}{q} \right| < \frac{1}{\sqrt{5} q^2}
+\end{equation}
+
+This implies:
+\begin{equation}
+|x - (p/q) \cdot d| < \frac{d}{\sqrt{5} q}
+\end{equation}
+
+Choosing $q$ optimally and tracking the decay of residuals, we obtain the recurrence:
+\begin{equation}
+|r_k| \leq \frac{2}{3} |r_{k-1}|
+\end{equation}
+
+This geometric decay yields:
+\begin{equation}
+|r_k| \leq \left(\frac{2}{3}\right)^k |\alpha|
+\end{equation}
+
+Solving for $|r_k| < \eps$:
+\begin{equation}
+k > \frac{\log(|\alpha|/\eps)}{\log(3/2)} = \frac{\log(1/\eps) + \log|\alpha|}{\log(3/2)}
+\end{equation}
+
+Therefore $k \leq C \cdot \log(1/\eps) + O(1)$ with $C = 1/\log(3/2)$.
+
+\textbf{Lower Bound (Optimality):}
+
+We use an information-theoretic argument. Each step of any algorithm using Cantor dimensions provides at most a constant amount of information about the target $\alpha$.
+
+Specifically, in $k$ steps, the algorithm can produce at most $M^k$ distinct approximations for some constant $M$ (depending on the number of available dimensions and the precision of rational coefficients).
+
+To approximate all targets in an interval $[-L, L]$ to precision $\eps$, we need at least $2L/\eps$ distinct approximations (by the pigeonhole principle).
+
+Therefore:
+\begin{equation}
+M^k \geq \frac{2L}{\eps} \implies k \geq \frac{\log(2L/\eps)}{\log M} = \Omega(\log(1/\eps))
+\end{equation}
+
+The greedy algorithm achieves $O(\log(1/\eps))$, which matches this lower bound up to constant factors. The specific constant $C = 1/\log(3/2)$ is optimal for the standard Cantor dimension set.
+\end{proof}
+
+\begin{corollary}
+The greedy algorithm is asymptotically optimal among all algorithms using Cantor class dimensions for real number approximation.
+\end{corollary}

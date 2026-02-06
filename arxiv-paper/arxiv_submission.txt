@@ -1,0 +1,120 @@
+================================================================================
+                    arXiv Submission Instructions
+================================================================================
+
+Paper Title: Cantor Class Fractal Representation: A Rigorous Approximation 
+             Theory for Real Numbers
+
+Authors: AI Research Engine
+
+arXiv Categories: math.FA (Functional Analysis), math.NT (Number Theory)
+
+================================================================================
+Submission Steps
+================================================================================
+
+1. COMPILE PAPER
+   ----------------
+   $ cd arxiv-paper
+   $ pdflatex main.tex
+   $ bibtex main      (if using BibTeX, but we're using thebibliography)
+   $ pdflatex main.tex
+   $ pdflatex main.tex
+   
+   Check that main.pdf is generated without errors.
+
+2. PREPARE SOURCE FILES
+   ---------------------
+   Create a zip file containing:
+   - main.tex
+   - macros/commands.tex
+   - sections/*.tex (all 6 section files)
+   - main.pdf (compiled PDF for verification)
+   - Any figure files (if added)
+   
+   Do NOT include:
+   - .aux, .log, .out files
+   - arxiv_submission.txt (this file)
+   - Any temporary files
+
+3. UPLOAD TO arXiv
+   ----------------
+   a) Go to https://arxiv.org/submit
+   b) Log in (create account if needed)
+   c) Click "Start new submission"
+   d) Upload the zip file
+   e) arXiv will process and show the compiled PDF
+   
+4. METADATA
+   ---------
+   Title: Cantor Class Fractal Representation: A Rigorous Approximation 
+          Theory for Real Numbers
+   
+   Authors: AI Research Engine
+   
+   Abstract: (copy from main.tex abstract)
+   
+   Comments: 14 pages, 3 tables
+   
+   MSC classes: 28A80, 11K60, 41A25, 68Q25
+   
+   ACM classes: (optional, leave blank)
+   
+   Primary category: math.FA
+   
+   Secondary categories: math.NT, math.MG (Metric Geometry)
+
+5. LICENSE
+   --------
+   Select: arXiv.org perpetual, non-exclusive license
+   
+   This is standard for arXiv submissions.
+
+6. SUBMIT
+   -------
+   Review the preview carefully.
+   Submit the paper.
+   
+   arXiv ID will be assigned (e.g., arXiv:2502.0xxxx)
+
+================================================================================
+Post-Submission
+================================================================================
+
+After acceptance (usually within 1-2 days):
+
+1. Update GitHub repository with arXiv ID:
+   - Add badge to README.md
+   - Update CITATION.cff
+   - Update RELEASE_SUMMARY.md
+
+2. Announce:
+   - Twitter/X
+   - MathOverflow
+   - ResearchGate
+   - Relevant mailing lists
+
+================================================================================
+Alternative: Submit to Journal
+================================================================================
+
+If submitting to a journal instead of/in addition to arXiv:
+
+Suggested journals:
+- Fractals (World Scientific)
+- Journal of Fractal Geometry (EMS)
+- Chaos, Solitons & Fractals (Elsevier)
+- Nonlinearity (IOP)
+
+Follow journal-specific formatting requirements.
+
+================================================================================
+Notes
+================================================================================
+
+- This paper uses only standard LaTeX packages available on arXiv
+- No external dependencies or special fonts
+- The paper is self-contained with inline bibliography
+- Total length: approximately 14 pages
+
+================================================================================

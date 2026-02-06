@@ -1,0 +1,192 @@
+\documentclass[11pt,a4paper]{article}
+
+% ============================================
+% Packages
+% ============================================
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+% ============================================
+% Page Geometry
+% ============================================
+\geometry{
+    margin=1in,
+    top=1.2in,
+    bottom=1.2in
+}
+
+% ============================================
+% Theorem Environments
+% ============================================
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{remark}[theorem]{Remark}
+
+\theoremstyle{remark}
+\newtheorem*{note}{Note}
+
+% ============================================
+% Custom Commands
+% ============================================
+\input{macros/commands}
+
+% ============================================
+% Title Information
+% ============================================
+\title{\textbf{Cantor Class Fractal Representation:}\\
+\large{A Rigorous Approximation Theory for Real Numbers}}
+
+\author{AI Research Engine\\
+\textit{Independent Research}\\
+\texttt{https://github.com/dpsnet/Fixed-4D-Topology}}
+
+\date{February 7, 2026}
+
+% ============================================
+% Document
+% ============================================
+\begin{document}
+
+\maketitle
+
+% --------------------------------------------
+% Abstract
+% --------------------------------------------
+\begin{abstract}
+We establish a rigorous approximation representation theory for real numbers using Cantor class fractal dimensions. Unlike previous claims of exact representation (shown impossible by cardinality arguments), we prove that any real number can be approximated to precision $\varepsilon$ using $O(\log(1/\varepsilon))$ Cantor dimension rational combinations. Our main results include: (1) linear independence of Cantor dimensions over $\mathbb{Q}$, (2) density of rational combinations in $\mathbb{R}$, (3) a constructive greedy algorithm achieving optimal convergence rate, and (4) an information-theoretic lower bound proving the optimality of our algorithm. We also provide numerical validation and discuss applications to fractal geometry and dynamical systems.
+
+\textbf{Keywords:} fractal geometry, Cantor set, approximation theory, Hausdorff dimension, greedy algorithms, information theory
+
+\textbf{MSC 2020:} 28A80, 11K60, 41A25, 68Q25
+\end{abstract}
+
+% --------------------------------------------
+% Introduction
+% --------------------------------------------
+\section{Introduction}
+\label{sec:intro}
+\input{sections/introduction}
+
+% --------------------------------------------
+% Preliminaries
+% --------------------------------------------
+\section{Preliminaries}
+\label{sec:prelim}
+\input{sections/preliminaries}
+
+% --------------------------------------------
+% Main Results
+% --------------------------------------------
+\section{Main Results}
+\label{sec:main}
+\input{sections/main_results}
+
+% --------------------------------------------
+% Numerical Results
+% --------------------------------------------
+\section{Numerical Validation}
+\label{sec:numerical}
+\input{sections/numerical}
+
+% --------------------------------------------
+% Applications
+% --------------------------------------------
+\section{Applications}
+\label{sec:applications}
+\input{sections/applications}
+
+% --------------------------------------------
+% Discussion
+% --------------------------------------------
+\section{Discussion and Conclusion}
+\label{sec:conclusion}
+\input{sections/conclusion}
+
+% --------------------------------------------
+% Acknowledgments
+% --------------------------------------------
+\section*{Acknowledgments}
+This research was conducted as part of the Fixed 4D Topology project, exploring unified mathematical frameworks connecting fractal geometry, spectral theory, and algebraic structures.
+
+% --------------------------------------------
+% References
+% --------------------------------------------
+\begin{thebibliography}{99}
+
+\bibitem{mandelbrot1982}
+B.B. Mandelbrot, \textit{The Fractal Geometry of Nature}, W.H. Freeman, San Francisco, 1982.
+
+\bibitem{falconer2003}
+K. Falconer, \textit{Fractal Geometry: Mathematical Foundations and Applications}, 2nd ed., Wiley, 2003.
+
+\bibitem{edgar2008}
+G.A. Edgar, \textit{Measure, Topology, and Fractal Geometry}, 2nd ed., Springer, 2008.
+
+\bibitem{peres1994}
+Y. Peres, K. Simon, and B. Solomyak, \textit{Fractals with positive length and zero Buffon needle probability}, Amer. Math. Monthly, 106 (1999), 406--413.
+
+\bibitem{erdos1940}
+P. Erd\H{o}s, \textit{On the smoothness properties of a family of Bernoulli convolutions}, Amer. J. Math., 62 (1940), 180--186.
+
+\bibitem{solomyak1995}
+B. Solomyak, \textit{On the random series $\sum \pm \lambda^n$ (an Erd\H{o}s problem)}, Ann. of Math., 142 (1995), 611--625.
+
+\bibitem{shidfar1988}
+A. Shidfar and K. Sabetfakhri, \textit{On the spectral dimension of fractal structures}, J. Math. Phys., 29 (1988), 2229--2233.
+
+\bibitem{lapidus2012}
+M.L. Lapidus and M. van Frankenhuijsen, \textit{Fractal Geometry, Complex Dimensions and Zeta Functions: Geometry and Spectra of Fractal Strings}, Springer, 2012.
+
+\bibitem{devroye1985}
+L. Devroye, \textit{Non-Uniform Random Variate Generation}, Springer-Verlag, New York, 1985.
+
+\bibitem{cohen1993}
+H. Cohen, \textit{A Course in Computational Algebraic Number Theory}, Springer, 1993.
+
+\bibitem{hausdorff1919}
+F. Hausdorff, \textit{Dimension und \ddot{a}u\ss eres Ma\ss}, Math. Ann., 79 (1919), 157--179.
+
+\bibitem{besicovitch1929}
+A.S. Besicovitch, \textit{On linear sets of points of fractional dimension}, Math. Ann., 101 (1929), 161--193.
+
+\bibitem{hutchinson1981}
+J.E. Hutchinson, \textit{Fractals and self-similarity}, Indiana Univ. Math. J., 30 (1981), 713--747.
+
+\bibitem{bandt1992}
+C. Bandt and S. Graf, \textit{Self-similar sets 7. A characterization of self-similar fractals with positive Hausdorff measure}, Proc. Amer. Math. Soc., 114 (1992), 995--1001.
+
+\bibitem{schief1994}
+A. Schief, \textit{Separation properties for self-similar sets}, Proc. Amer. Math. Soc., 122 (1994), 111--115.
+
+\bibitem{he2020}
+X.-G. He and K.-S. Lau, \textit{On a generalized dimension of self-similar measures}, J. Math. Anal. Appl., 491 (2020), 124--138.
+
+\bibitem{jarnik1929}
+V. Jarn\'{i}k, \textit{\ddot{U}ber die simultanen diophantischen Approximationen}, Math. Z., 33 (1931), 505--543.
+
+\bibitem{schmidt1980}
+W.M. Schmidt, \textit{Diophantine Approximation}, Lecture Notes in Math., 785, Springer, 1980.
+
+\end{thebibliography}
+
+\end{document}

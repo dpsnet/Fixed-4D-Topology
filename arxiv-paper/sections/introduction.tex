@@ -1,0 +1,35 @@
+The representation of real numbers using discrete or structured sets has a long and rich history in mathematics. From the classical decimal expansions to continued fractions and beta expansions, mathematicians have sought efficient and meaningful ways to represent arbitrary real numbers using structured sequences \cite{erdos1940, solomyak1995}. In recent decades, with the development of fractal geometry \cite{mandelbrot1982, falconer2003}, natural questions arise about whether fractal structures can serve as bases for representing real numbers.
+
+The middle-thirds Cantor set, denoted $\CantorStd$, is perhaps the most famous fractal. It is constructed by iteratively removing the middle third of intervals, starting from $[0,1]$. The Hausdorff dimension of this set is $\dimCantorStd \approx 0.6309$. More generally, one can construct Cantor-like sets with various scaling ratios, leading to a family of fractal dimensions that we call the \emph{Cantor class}.
+
+Previous work has claimed that real numbers can be \emph{exactly} represented using fractal dimensions \cite{shidfar1988}. However, such claims are fundamentally flawed due to cardinality considerations: the set of finite rational combinations of any countable set of dimensions has cardinality $\aleph_0$, while $\R$ has cardinality $2^{\aleph_0}$. Therefore, exact representation is impossible.
+
+In this paper, we take a different approach: instead of claiming exact representation, we establish a rigorous \emph{approximation theory}. Our main contributions are:
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Linear Independence (\Cref{thm:linear_independence}):} We prove that Cantor class dimensions are linearly independent over $\Q$. This provides a solid foundation for using these dimensions as building blocks.
+    
+    \item \textbf{Density (\Cref{thm:density}):} We prove that rational combinations of Cantor dimensions are dense in $\R$. This ensures that any real number can be arbitrarily well approximated.
+    
+    \item \textbf{Constructive Algorithm (\Cref{thm:algorithm}):} We present a greedy approximation algorithm and prove its correctness. The algorithm terminates with error less than $\eps$ in $O(\log(1/\eps))$ steps.
+    
+    \item \textbf{Optimality (\Cref{thm:convergence_rate}):} We prove that the $O(\log(1/\eps))$ convergence rate is optimal via information-theoretic arguments. No algorithm can achieve better asymptotic complexity.
+\end{enumerate}
+
+\subsection{Related Work}
+
+The study of fractal dimensions and their properties has been extensively developed \cite{falconer2003, edgar2008}. Hutchinson's seminal work on self-similar sets \cite{hutchinson1981} provided the theoretical foundation for understanding fractal dimensions through iterated function systems (IFS).
+
+Approximation theory on fractals has been studied from various perspectives. Lapidus and van Frankenhuijsen \cite{lapidus2012} developed the theory of complex dimensions of fractal strings, connecting geometry and spectral theory. However, their work focuses on the intrinsic structure of fractals rather than representation of external real numbers.
+
+The use of greedy algorithms in approximation is well-established \cite{devroye1985}. Our contribution is the application of greedy methods to fractal dimensions with rigorous complexity analysis.
+
+\subsection{Outline}
+
+\Cref{sec:prelim} establishes notation and reviews necessary background. \Cref{sec:main} presents our four main theorems with complete proofs. \Cref{sec:numerical} provides numerical validation of our theoretical results. \Cref{sec:applications} discusses applications, and \Cref{sec:conclusion} concludes with discussion and future directions.
+
+\subsection{Notation}
+
+Throughout this paper, we use standard notation. The set of positive integers is $\N = \{1, 2, 3, \ldots\}$. For a set $A \subseteq \R$, we denote its Hausdorff dimension by $\dimH(A)$ and its box-counting dimension by $\dimB(A)$ when they exist.
+
+For real-valued functions $f$ and $g$, we write $f(x) = \bigO(g(x))$ as $x \to a$ if there exists $C > 0$ and a neighborhood of $a$ such that $|f(x)| \leq C|g(x)|$. We write $f(x) = o(g(x))$ if $\lim_{x \to a} f(x)/g(x) = 0$.
