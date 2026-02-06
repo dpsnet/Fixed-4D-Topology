@@ -10,6 +10,26 @@ WEBSITE (for GitHub sidebar):
 ─────────────────────────────────────
 https://pypi.org/project/fixed-4d-topology/
 
+RESEARCH ORIGINS:
+─────────────────────────────────────
+This research emerged from observations about logarithmic structures
+appearing across mathematics:
+
+• Fractal dimensions: log N / log r in Hausdorff formulas
+• Spectral theory: heat kernel traces on fractals
+• Modular forms: L-function values at critical points
+• Algebra: operations on scaling factors
+
+Initial intuition: These might be different "lenses" viewing the same
+underlying mathematical reality.
+
+Influences: Mandelbrot (fractal vision), Connes (noncommutative geometry),
+Strichartz (fractal PDEs), Kigami (analysis on fractals), Langlands
+(deep connections program).
+
+Evolution: M-0 exploratory series (2024-2025) → Error correction → 
+Current T1-T4 framework with explicit strictness labels.
+
 RESEARCH STATEMENT:
 ─────────────────────────────────────
 This repository presents original mathematical research conducted through
