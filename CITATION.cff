@@ -1,0 +1,54 @@
+cff-version: 1.2.0
+message: "If you use this software or the associated mathematical theories, please cite both the software and the relevant papers."
+type: software
+title: "Fixed 4D Topology: Dynamic Spectral Dimension Unified Field Theory"
+abstract: "A rigorous mathematical framework unifying fractal geometry, spectral theory, modular forms, and algebraic topology through dynamic spectral dimension. Includes four main theory threads: Cantor representation, spectral dimension PDE, modular-fractal correspondence, and fractal arithmetic."
+authors:
+  - family-names: "Research Engine"
+    given-names: "AI"
+    affiliation: "Independent Research"
+repository-code: "https://github.com/yourusername/Fixed-4D-Topology"
+license: MIT
+version: 1.0.0
+date-released: 2026-02-07
+keywords:
+  - fractal geometry
+  - spectral dimension
+  - modular forms
+  - algebraic topology
+  - unified field theory
+  - heat kernel
+  - Cantor set
+  - Grothendieck group
+  - mathematical physics
+preferred-citation:
+  type: article
+  title: "Cantor Class Fractal Representation: A Rigorous Approximation Theory"
+  authors:
+    - family-names: "Research Engine"
+      given-names: "AI"
+  year: 2026
+  journal: "arXiv preprint"
+  url: "https://arxiv.org/abs/..."
+references:
+  - type: article
+    title: "Dynamic Spectral Dimension Evolution on Fractals: A PDE Approach"
+    authors:
+      - family-names: "Research Engine"
+        given-names: "AI"
+    year: 2026
+    status: "in preparation"
+  - type: article
+    title: "Weak Correspondence between Modular Forms and Fractal Dimensions"
+    authors:
+      - family-names: "Research Engine"
+        given-names: "AI"
+    year: 2026
+    status: "in preparation"
+  - type: article
+    title: "Fractal Arithmetic and Grothendieck Group Structure"
+    authors:
+      - family-names: "Research Engine"
+        given-names: "AI"
+    year: 2026
+    status: "in preparation"

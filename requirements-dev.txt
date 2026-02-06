@@ -1,0 +1,17 @@
+# Development dependencies
+pytest>=6.2.0
+pytest-cov>=3.0.0
+black>=21.0.0
+flake8>=4.0.0
+mypy>=0.910
+
+# Documentation
+sphinx>=4.3.0
+sphinx-rtd-theme>=1.0.0
+
+# Jupyter
+jupyter>=1.0.0
+ipython>=7.30.0
+
+# Additional testing
+hypothesis>=6.0.0
