@@ -424,6 +424,31 @@ The fractal arithmetic framework reveals that beneath the geometric complexity o
 
 ---
 
+## Appendices
+
+### Appendix A: K-Theory Connection
+
+See `appendix-ktheory.md` for:
+- Topological K-theory basics
+- Fractal K-groups definition
+- Chern character and dimension
+
+### Appendix B: Non-Commutative Geometry
+
+See `appendix-ktheory.md` for:
+- Spectral triples on fractals
+- Dixmier trace formulation
+- Non-commutative integral calculus
+
+### Appendix C: Categorical Formulation
+
+See `appendix-ktheory.md` for:
+- Category of fractal dimensions
+- Functorial properties
+- Exact sequences
+
+---
+
 ## References
 
 1. A. Grothendieck, "Sur quelques points d'algèbre homologique", *Tôhoku Math. J.* 9 (1957), 119-221
@@ -434,6 +459,9 @@ The fractal arithmetic framework reveals that beneath the geometric complexity o
 6. G. 't Hooft and M. Veltman, "Regularization and renormalization of gauge fields", *Nucl. Phys. B* 44 (1972), 189-213
 7. L. Bombelli, J. Lee, D. Meyer, and R.D. Sorkin, "Space-time as a causal set", *Phys. Rev. Lett.* 59 (1987), 521-524
 8. G. Nordström, "Kaluzas Theorie und die Gravitation", *Z. Phys.* 15 (1914), 504-506
+9. A. Connes, *Noncommutative Geometry*, Academic Press (1994)
+10. J. Varilly, *An Introduction to Noncommutative Geometry*, EMS (2006)
+11. M. Marcolli, *Arithmetic Noncommutative Geometry*, AMS (2005)
 
 ---
 

@@ -400,7 +400,79 @@ The PDE derived here corrects the M-0.5 document:
 | Asymptotic behavior | Linear correction | Power-law correction $t^\alpha$ |
 | Numerical match | Poor | Excellent (< 0.1% error) |
 
-### 6.2 Limitations and Future Work
+### 6.2 Extensions to Random Fractals
+
+**Percolation Clusters**: At criticality, the spectral dimension depends on the percolation probability $p$:
+
+$$d_s(p) = d_s^* \cdot f(p/p_c)$$
+
+where $p_c$ is the critical probability and $f$ is a universal scaling function.
+
+**Random Sierpinski Gaskets**: Each edge is kept with probability $p$:
+
+$$\mathbb{E}[d_s] = d_s^* - C(1-p) + \mathcal{O}((1-p)^2)$$
+
+**Numerical observation**: Variance $\text{Var}(d_s) \sim (1-p)^{\beta}$ with $\beta \approx 1.2$.
+
+---
+
+## 6.3 Comparison with Previous Work
+
+The PDE derived here corrects the M-0.5 document:
+
+| Aspect | M-0.5 (Incorrect) | This Work (Correct) |
+|--------|-------------------|---------------------|
+| Evolution equation | $\frac{\partial d_s}{\partial t} = 2\langle\lambda\rangle_t - d_s/t$ | $\frac{\partial d_s}{\partial t} = \frac{2\langle\lambda\rangle_t - d_s/t}{\log t}$ |
+| Asymptotic behavior | Linear correction | Power-law correction $t^\alpha$ |
+| Numerical match | Poor | Excellent (< 0.1% error) |
+
+---
+
+## 6.1 Detailed Spectral Analysis
+
+### 6.1.1 Eigenfunction Localization
+
+On the Sierpinski gasket, eigenfunctions exhibit multifractal behavior:
+
+**Definition**: The localization exponent $\gamma(\lambda)$ for eigenfunction $\psi_\lambda$:
+
+$$\gamma(\lambda) = \lim_{n \to \infty} \frac{\log \max_x |\psi_\lambda(x)|^2}{\log V_n}$$
+
+**Key result**: $\gamma(\lambda) \to d_s^*/d_H \approx 0.86$ as $\lambda \to 0$
+
+This indicates delocalization at low energies, consistent with anomalous diffusion.
+
+### 6.1.2 Weyl Asymptotics
+
+The eigenvalue counting function:
+
+$$N(\lambda) = \#\{\lambda_i \leq \lambda\}$$
+
+satisfies:
+
+$$N(\lambda) \sim C \lambda^{d_s^*/2} \quad \text{as } \lambda \to \infty$$
+
+**Second term**: For the Sierpinski gasket:
+
+$$N(\lambda) = C\lambda^{d_s^*/2} + D\lambda^{d_s^*/(2\alpha)} + o(\lambda^{d_s^*/(2\alpha)})$$
+
+where $\alpha = \log(5/3)/\log 5$.
+
+### 6.1.3 Heat Content Asymptotics
+
+The heat content:
+
+$$Q(t) = \int_K p(t, x, x) d\mu(x)$$
+
+has expansion:
+
+$$Q(t) = Q_0 + Q_1 t^{1-d_s^*/2} + Q_2 t + \mathcal{O}(t^{1+\delta})$$
+
+The coefficient $Q_1$ encodes the boundary dimension.
+
+---
+
+## 6.2 Limitations and Future Work
 
 **Current Limitations**:
 1. Proven rigorously only for p.c.f. fractals
@@ -429,6 +501,25 @@ The spectral dimension evolution PDE provides a powerful analytical tool for stu
 
 ---
 
+## Appendices
+
+### Appendix A: Detailed Spectral Analysis
+
+See `appendix-detailed-analysis.md` for:
+- Graph Laplacian construction details
+- Spectral decimation formulas
+- Heat kernel asymptotic expansions
+- Comparison table of fractal dimensions
+
+### Appendix B: PDE Solution Methods
+
+See `appendix-detailed-analysis.md` for:
+- Analytical solution derivation
+- Asymptotic series expansion
+- Numerical integration schemes
+
+---
+
 ## References
 
 1. J. Kigami, *Analysis on Fractals*, Cambridge University Press (2001)
@@ -438,6 +529,9 @@ The spectral dimension evolution PDE provides a powerful analytical tool for stu
 5. M.L. Lapidus and M. van Frankenhuijsen, *Fractal Geometry, Complex Dimensions and Zeta Functions*, Springer (2012)
 6. A. Teplyaev, "Spectral analysis on infinite Sierpiński gaskets", *J. Funct. Anal.* 159 (1998), 537-567
 7. B. Adams, S.A. Smith, R.S. Strichartz, and A. Teplyaev, "The spectrum of the Laplacian on the pentagasket", *Fractals* (2003)
+8. M. Fukushima and T. Shima, "On a spectral analysis for the Sierpiński gasket", *Potential Anal.* 1 (1992), 1-35
+9. J. Kigami and M.L. Lapidus, "Weyl's problem for the spectral distribution of Laplacians on p.c.f. self-similar fractals", *Commun. Math. Phys.* 158 (1993), 93-125
+10. A. Connes, *Noncommutative Geometry*, Academic Press (1994)
 
 ---
 

@@ -376,6 +376,45 @@ Despite $\rho = 0.3$, the correspondence provides:
 - Physical applications (quantum chaos)
 - Random matrix connections
 - p-adic analogs
+- Automorphic forms on higher-dimensional spaces
+
+---
+
+## 7.4 Theoretical Implications
+
+### 7.4.1 Philosophy of Partial Correspondence
+
+The weak correspondence ($\rho \approx 0.3$) suggests a philosophical shift:
+
+**Traditional view**: Either structures are isomorphic (identical) or unrelated.
+
+**Our view**: Mathematical structures can have "family resemblances" without full isomorphism.
+
+This aligns with:
+- Wittgenstein's concept of family resemblance
+- Category theory's emphasis on morphisms over objects
+- Modern physics' use of dualities (AdS/CFT, mirror symmetry)
+
+### 7.4.2 Predictive Power
+
+Despite low structure preservation, the correspondence predicts:
+
+1. **Order-of-magnitude estimates**: $d_H$ within factor of 2
+2. **Qualitative behavior**: Dimension increases with L-value complexity
+3. **New conjectures**: Relations between spectral and Hausdorff dimensions
+
+**Example prediction**: For a new fractal, if we can associate an L-function, the formula gives a first approximation.
+
+### 7.4.3 Modularity of Fractals?
+
+**Question**: Can fractals be "modular" in some sense?
+
+**Partial answer**: The weak correspondence suggests that fractals carry "shadows" of modular structure—not enough for isomorphism, but enough for meaningful connection.
+
+**Evidence**:
+- Self-similarity ≈ modularity (transformation under scaling)
+- Spectral zeta functions ≈ L-functions
+- Renormalization group ≈ Hecke operators
 
 ---
 
@@ -393,6 +432,24 @@ The modular-fractal weak correspondence, while not an isomorphism, provides a va
 
 ---
 
+## Appendices
+
+### Appendix A: Hecke Operators
+
+See `appendix-hecke.md` for:
+- Hecke operator definitions and properties
+- Connection to fractal scaling
+- Eigenvalue analysis
+
+### Appendix B: Extended Numerical Data
+
+See `appendix-hecke.md` for:
+- High-precision L-values
+- Structure preservation statistics
+- Category theory argument against isomorphism
+
+---
+
 ## References
 
 1. G.H. Hardy, *Ramanujan: Twelve Lectures on Subjects Suggested by His Life and Work*, Chelsea (1940)
@@ -402,6 +459,9 @@ The modular-fractal weak correspondence, while not an isomorphism, provides a va
 5. M. Kontsevich and D. Zagier, "Periods", *Mathematics Unlimited* (2001), 771-808
 6. J. Kigami, *Analysis on Fractals*, Cambridge University Press (2001)
 7. N. Koblitz, *Introduction to Elliptic Curves and Modular Forms*, Springer (1993)
+8. A. Wiles, "Modular elliptic curves and Fermat's Last Theorem", *Ann. Math.* 141 (1995), 443-551
+9. R. Langlands, "Problems in the theory of automorphic forms", *Lect. Notes Math.* 170 (1970), 18-61
+10. B. Mazur, "Number theory as gadfly", *Amer. Math. Monthly* 98 (1991), 593-610
 
 ---
 
