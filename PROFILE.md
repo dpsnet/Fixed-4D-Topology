@@ -65,9 +65,9 @@ Faced with these cascading failures, the final strategic decision was made:
 
 This reflects a pragmatic acknowledgment: **individual human mathematical and physical capabilities are insufficient** for the complexity of unified field theory research. The researcher's role is to:
 - **Research direction**: Define the fundamental questions and overall trajectory
-- **Architectural selection** (not design): Choose among AI-generated mathematical frameworks, not design them from scratch
+- **Architectural selection** (NOT design; design by AI): Choose among AI-generated mathematical frameworks; architecture design is done by AI
 - **Drive and supervise data validation**: Actively push for experimental validation and monitor the process
-- **Prevent AI hallucinations**: Rigorous human judgment to catch and block AI-generated errors and fabrications
+- **Catch AI hallucinations**: Rigorous human judgment to detect AI-generated errors and fabrications
 - **Scientific judgment**: Make final decisions on validity, priority, and publication
 - **Maintain scientific integrity**: Honest assessment of limitations (L1/L2/L3)
 
@@ -83,7 +83,7 @@ This led to the current repository (**Fixed-4D-Topology**), which represents:
 
 | Role | Responsibility |
 |------|----------------|
-| **Human** | Research direction, architectural selection (not design), driving and supervising data validation, preventing AI hallucinations, scientific judgment |
+| **Human** | Research direction, architectural selection (NOT design; design by AI), driving and supervising data validation, catching AI hallucinations, scientific judgment |
 | **AI** | Mathematical derivation, literature synthesis, proof construction, rapid exploration of alternatives |
 | **Synergy** | Human catches AI hallucinations; AI extends beyond human mathematical limits |
 

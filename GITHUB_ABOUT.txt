@@ -16,9 +16,9 @@ Human-AI Collaborative Research:
 
 Human Role:
 - Research direction: Define fundamental questions and trajectory
-- Architectural selection (NOT design): Choose among AI-generated frameworks
+- Architectural selection (NOT design; design by AI): Choose among AI-generated frameworks
 - Drive and supervise data validation: Push for experimental validation
-- Prevent AI hallucinations: Block AI errors and fabrications
+- Catch AI hallucinations: Detect AI errors and fabrications
 - Scientific judgment: Final decisions on validity and priority
 
 AI Role (Top Mathematician Skills):
