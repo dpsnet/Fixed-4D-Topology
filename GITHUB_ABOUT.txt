@@ -10,6 +10,22 @@ WEBSITE (for GitHub sidebar):
 ─────────────────────────────────────
 https://pypi.org/project/fixed-4d-topology/
 
+RESEARCH JOURNEY:
+─────────────────────────────────────
+Origin: Unified Field Theory research (2023-2024) attempting to reconcile
+quantum mechanics and general relativity through dynamic spectral dimension.
+
+Crisis: E-7 and E-8 validation attempts against quasar data revealed 
+fundamental discrepancies and mathematical inconsistencies when theory 
+met observational astrophysical data.
+
+Pivot: Rather than forcing ad hoc modifications, returned to pure 
+mathematical foundations. Suspended physical validation pending 
+rigorous theoretical consolidation.
+
+Current: Fixed 4D Topology framework—establishing solid mathematical 
+groundwork (T1-T4) before attempting physical applications.
+
 RESEARCH ORIGINS:
 ─────────────────────────────────────
 This research emerged from observations about logarithmic structures
