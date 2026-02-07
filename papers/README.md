@@ -77,6 +77,27 @@ The Fixed 4D Topology project establishes connections between fractal geometry, 
 
 ---
 
+### [T5: Categorical Unification](./T5-categorical-unification/)
+
+**Title**: Categorical Unification of Fixed 4D Topology: A 2-Categorical Framework
+
+**Strictness**: L1-L2 (Core L1, Extensions L2)
+
+**Key Results**:
+- 2-category **F4T** unifying T1-T4
+- Functors with preservation degrees ($\rho = 1$ for T1,T2,T4; $\rho = 0.30$ for T3)
+- Spectral Unification Theorem: $d_{\text{eff}} = \text{Tr}_\omega(\mathcal{D}^{-1})$
+- Evolution as spectral flow
+
+**Files**:
+- `T5-paper.md` - Main unified framework paper
+- `axioms.md` - Axiomatic foundation
+- `2category.md` - 2-categorical construction
+- `functors.md` - Functor constructions
+- `spectral-unification.md` - Core theorems
+
+---
+
 ## Citation
 
 ### Citing the Framework
@@ -135,6 +156,16 @@ If you use the Fixed 4D Topology framework, please cite:
 }
 ```
 
+**T5**:
+```bibtex
+@article{f4t_categorical_2026,
+  author = {AI Research Engine},
+  title = {Categorical Unification of Fixed 4D Topology: A 2-Categorical Framework},
+  year = {2026},
+  url = {https://github.com/dpsnet/Fixed-4D-Topology/tree/main/papers/T5-categorical-unification}
+}
+```
+
 ---
 
 ## Research Methodology
@@ -179,7 +210,7 @@ See the [main README](../README.md) for usage examples.
 
 ## License
 
-All papers are licensed under **CC BY 4.0** (Creative Commons Attribution 4.0 International).
+All papers (T1-T5) are licensed under **CC BY 4.0** (Creative Commons Attribution 4.0 International).
 
 You are free to:
 - **Share**: Copy and redistribute the material
@@ -200,16 +231,16 @@ See [LICENSE](../LICENSE) for details.
 
 ---
 
-**Version**: 2.0.0 (Enhanced Edition)
+**Version**: 2.1.0 (T5 Unification Edition)
 
 **Date**: February 2026
 
 ## Paper Statistics
 
-| Metric | T1 | T2 | T3 | T4 |
-|--------|-----|-----|-----|-----|
-| **Length** | ~8,000 words | ~11,000 words | ~10,000 words | ~12,000 words |
-| **Theorems** | 4 + 2 corollaries | 4 + 1 proposition | 4 theorems | 5 theorems |
-| **Tables** | 3 | 6 | 4 | 3 |
-| **Numerical Tests** | 100+ | 1,000+ | 15 cases | 10,000+ |
-| **Strictness** | L1 | L1-L2 | L2 | L2-L3 |
+| Metric | T1 | T2 | T3 | T4 | T5 |
+|--------|-----|-----|-----|-----|-----|
+| **Length** | ~8,000 | ~11,000 | ~10,000 | ~12,000 | ~12,000 |
+| **Theorems** | 4 + 2 cor | 4 + 1 prop | 4 | 5 | 15 |
+| **Tables** | 3 | 6 | 4 | 3 | 5 |
+| **Numerical Tests** | 100+ | 1,000+ | 15 | 10,000+ | N/A (theoretical) |
+| **Strictness** | L1 | L1-L2 | L2 | L2-L3 | L1-L2 |
