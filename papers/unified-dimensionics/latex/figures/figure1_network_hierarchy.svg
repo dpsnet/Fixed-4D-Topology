@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+<defs>
+    <style>
+        text { font-family: Arial, sans-serif; }
+        .title { font-size: 16px; font-weight: bold; }
+        .label { font-size: 12px; }
+        .tick { font-size: 10px; }
+        .legend { font-size: 11px; }
+    </style>
+</defs>
+<text x="400" y="30" text-anchor="middle" class="title">Network Dimension Hierarchy (7 Networks, 2.1M Nodes)</text>
+<rect x="120" y="70" width="500" height="320" fill="#f8f9fa" stroke="#ddd"/>
+<rect x="120" y="90" width="436.00000000000006" height="35" fill="#e74c3c" opacity="0.8" stroke="black" stroke-width="0.5"/>
+<text x="566.0" y="112" class="label">4.36</text>
+<text x="110" y="112" text-anchor="end" class="label">Internet AS</text>
+<rect x="120" y="133" width="300.0" height="35" fill="#3498db" opacity="0.8" stroke="black" stroke-width="0.5"/>
+<text x="430.0" y="155" class="label">3.00</text>
+<text x="110" y="155" text-anchor="end" class="label">DBLP</text>
+<rect x="120" y="176" width="257.0" height="35" fill="#2ecc71" opacity="0.8" stroke="black" stroke-width="0.5"/>
+<text x="387.0" y="198" class="label">2.57</text>
+<text x="110" y="198" text-anchor="end" class="label">Facebook</text>
+<rect x="120" y="219" width="240.0" height="35" fill="#9b59b6" opacity="0.8" stroke="black" stroke-width="0.5"/>
+<text x="370.0" y="241" class="label">2.40</text>
+<text x="110" y="241" text-anchor="end" class="label">Yeast PPI</text>
+<rect x="120" y="262" width="200.0" height="35" fill="#2ecc71" opacity="0.8" stroke="black" stroke-width="0.5"/>
+<text x="330.0" y="284" class="label">2.00</text>
+<text x="110" y="284" text-anchor="end" class="label">Twitter</text>
+<rect x="120" y="305" width="211.0" height="35" fill="#e74c3c" opacity="0.8" stroke="black" stroke-width="0.5"/>
+<text x="341.0" y="327" class="label">2.11</text>
+<text x="110" y="327" text-anchor="end" class="label">Power Grid</text>
+<rect x="120" y="348" width="124.0" height="35" fill="#f39c12" opacity="0.8" stroke="black" stroke-width="0.5"/>
+<text x="254.0" y="370" class="label">1.24</text>
+<text x="110" y="370" text-anchor="end" class="label">Email</text>
+<line x1="120" y1="390" x2="620" y2="390" stroke="black" stroke-width="2"/>
+<line x1="120.0" y1="390" x2="120.0" y2="395" stroke="black"/>
+<text x="120.0" y="410" text-anchor="middle" class="tick">0</text>
+<line x1="220.0" y1="390" x2="220.0" y2="395" stroke="black"/>
+<text x="220.0" y="410" text-anchor="middle" class="tick">1</text>
+<line x1="320.0" y1="390" x2="320.0" y2="395" stroke="black"/>
+<text x="320.0" y="410" text-anchor="middle" class="tick">2</text>
+<line x1="420.0" y1="390" x2="420.0" y2="395" stroke="black"/>
+<text x="420.0" y="410" text-anchor="middle" class="tick">3</text>
+<line x1="520.0" y1="390" x2="520.0" y2="395" stroke="black"/>
+<text x="520.0" y="410" text-anchor="middle" class="tick">4</text>
+<line x1="620.0" y1="390" x2="620.0" y2="395" stroke="black"/>
+<text x="620.0" y="410" text-anchor="middle" class="tick">5</text>
+<text x="370" y="435" text-anchor="middle" class="label">Effective Dimension</text>
+<text x="650" y="90" class="legend" font-weight="bold">Network Type</text>
+<rect x="650" y="100" width="15" height="15" fill="#e74c3c"/>
+<text x="675" y="112" class="legend">Infrastructure</text>
+<rect x="650" y="125" width="15" height="15" fill="#3498db"/>
+<text x="675" y="137" class="legend">Academic</text>
+<rect x="650" y="150" width="15" height="15" fill="#2ecc71"/>
+<text x="675" y="162" class="legend">Social</text>
+<rect x="650" y="175" width="15" height="15" fill="#9b59b6"/>
+<text x="675" y="187" class="legend">Biological</text>
+<rect x="650" y="200" width="15" height="15" fill="#f39c12"/>
+<text x="675" y="212" class="legend">Communication</text>
+</svg>
