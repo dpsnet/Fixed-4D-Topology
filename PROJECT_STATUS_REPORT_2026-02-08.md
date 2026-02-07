@@ -106,7 +106,7 @@ Empirical Study Results:
 
 **Key Discoveries**:
 1. Dimension hierarchy: Infrastructure (4.4) > Academic (3.0) > Social/Bio (2.0-2.6) > Communication (1.2)
-2. Simulated data distortion: BA/WS models produce dimensions 50-400% lower than empirical measurements
+2. Simulated-empirical divergence: BA/WS models produce dimensions (d≈1) 24-336% lower than real-world networks (d=1.2-4.4) — discovered through two-phase study (simulated data validation → empirical analysis)
 3. Biological networks NOT tree-like (d≈2.4, not d≈1)
 
 **Publication**: 17-page paper ready for submission
@@ -233,7 +233,7 @@ Fixed-4D-Topology/
 ### Empirical Contributions
 1. **Scale**: 2.1M nodes analyzed (largest network dimension study)
 2. **Discovery**: Dimension hierarchy in real networks
-3. **Impact**: Standard models shown to underestimate by 50-400%
+3. **Discovery Method**: Two-phase study (simulated validation → empirical analysis) revealed 24-336% simulated-empirical divergence
 4. **Validation**: All theoretical predictions empirically confirmed
 
 ### Software Contributions
