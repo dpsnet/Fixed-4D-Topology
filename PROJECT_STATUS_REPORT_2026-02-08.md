@@ -106,7 +106,7 @@ Empirical Study Results:
 
 **Key Discoveries**:
 1. Dimension hierarchy: Infrastructure (4.4) > Academic (3.0) > Social/Bio (2.0-2.6) > Communication (1.2)
-2. Standard BA/WS models underestimate by 50-400%
+2. Simulated data distortion: BA/WS models produce dimensions 50-400% lower than empirical measurements
 3. Biological networks NOT tree-like (d≈2.4, not d≈1)
 
 **Publication**: 17-page paper ready for submission

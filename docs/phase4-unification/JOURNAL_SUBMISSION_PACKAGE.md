@@ -69,7 +69,7 @@ Chapter 10: Conclusions and Outlook (H, I, J)
 - 2,107,149 nodes total
 - Box-counting and correlation dimensions
 - Dimension hierarchy discovered
-- Model validation (BA/WS underestimate by 50-400%)
+- Model validation (BA/WS simulated data shows 50-400% deviation)
 
 #### 2.2 Software and Data
 
@@ -108,7 +108,7 @@ MAJOR CONTRIBUTION:
 We include a large-scale empirical study of complex network dimensions, analyzing 
 7 real-world networks with 2,107,149 nodes total. This study reveals a dimension 
 hierarchy (Infrastructure > Academic > Social/Bio > Communication) and demonstrates 
-that standard network models systematically underestimate real dimensions by 50-400%.
+that standard network models exhibit significant simulated data distortion, with dimensions 50-400\% lower than empirical measurements.
 
 Key findings:
 1. Internet AS: d = 4.36 (ultra-complex)
@@ -134,7 +134,7 @@ Sincerely,
 2. **2.1 million nodes** analyzed in large-scale network geometry study
 3. **Three fusion theorems** connecting algebraic, analytic, and variational structures
 4. **Dimension hierarchy** discovered: Infrastructure (4.4) > Academic (3.0) > Social/Bio (2.0-2.6) > Communication (1.2)
-5. **Model failure demonstrated**: Standard BA/WS models underestimate by 50-400%
+5. **Simulated data distortion identified**: Standard BA/WS models show 50-400\% deviation from empirical measurements
 
 ---
 

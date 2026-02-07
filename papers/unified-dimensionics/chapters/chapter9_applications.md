@@ -187,7 +187,7 @@ where $N_B(\ell_B)$ is minimum number of boxes of size $\ell_B$ needed to cover 
 
 ### 9.4.2 Key Discovery: Model Failure
 
-**Standard network models severely underestimate real dimensions**:
+**Standard network models exhibit significant simulated data distortion**:
 
 | Model | Predicted d | Real d | Error |
 |-------|-------------|--------|-------|

@@ -9,7 +9,7 @@ $$d_{\text{eff}} = \arg\min_d \left[ E(d) - T \cdot S(d) + \Lambda(d) \right]$$
 
 where $E(d)$ represents energy cost, $S(d)$ entropy, and $\Lambda(d)$ spectral corrections. This variational principle unifies seemingly disparate dimension concepts across mathematics and physics.
 
-Our theoretical framework is validated by a large-scale empirical study of complex network dimensions, analyzing 7 real-world networks with 2,107,149 nodes. We discover a dimension hierarchy: Infrastructure networks (4.4) > Academic networks (3.0) > Social/Biological networks (2.0-2.6) > Communication networks (1.2). Critically, we demonstrate that standard network models (Barabási-Albert, Watts-Strogatz) systematically underestimate real network dimensions by 50-400%, challenging conventional assumptions about network topology.
+Our theoretical framework is validated by a large-scale empirical study of complex network dimensions, analyzing 7 real-world networks with 2,107,149 nodes. We discover a dimension hierarchy: Infrastructure networks (4.4) > Academic networks (3.0) > Social/Biological networks (2.0-2.6) > Communication networks (1.2). Critically, we identify a significant discrepancy between simulated and real network dimensions: standard network models (Barabási-Albert, Watts-Strogatz) produce simulated data with dimensions systematically lower than empirical measurements by 50-400%, indicating simulated data distortion in conventional network topology assumptions.
 
 The framework extends to three additional directions: quantum dimensions (H), network geometry (I), and random fractals (J), with applications to quantum gravity, condensed matter physics, and complex systems. Our work establishes "dimensionics" as a rigorous mathematical discipline, providing both theoretical foundations and empirical validation for understanding dimension as a fundamental physical and mathematical concept.
 
@@ -27,7 +27,7 @@ The framework extends to three additional directions: quantum dimensions (H), ne
 
 4. **Discovery of dimension hierarchy**: Infrastructure (4.4) > Academic (3.0) > Social/Bio (2.0-2.6) > Communication (1.2)
 
-5. **Model failure demonstrated**: Standard BA/WS network models underestimate real dimensions by **50-400%**
+5. **Simulated data distortion identified**: Standard BA/WS network models produce simulated dimensions **50-400% lower** than empirical measurements
 
 6. **Master Equation**: Universal variational principle governing dimension selection across scales
 
@@ -47,7 +47,7 @@ Our contribution is threefold:
 
 3. **Practical**: The open-source framework enables researchers across disciplines to compute and interpret effective dimensions in their domains, from quantum systems to social networks.
 
-The discovery that standard network models severely underestimate real dimensions (by 50-400%) has immediate implications for network science, challenging assumptions underlying widely-used models and suggesting new approaches to network analysis and design.
+The discovery of significant simulated data distortion in standard network models (50-400% deviation from empirical measurements) has immediate implications for network science, indicating that conventional simulation approaches may not accurately capture real network complexity, and suggesting refined approaches for network analysis and modeling.
 
 ---
 

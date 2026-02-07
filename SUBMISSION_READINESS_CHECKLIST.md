@@ -166,7 +166,7 @@ Network data sources:
 2. Large-scale empirical study: 2.1M nodes, 7 real networks
 3. Three fusion theorems connecting algebraic, analytic, and variational structures
 4. Discovery of dimension hierarchy in complex networks
-5. Demonstration that standard models underestimate dimensions by 50-400%
+5. Identification of 50-400% simulated data distortion in standard models
 ```
 
 ### D3. Author Contributions

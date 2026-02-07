@@ -98,9 +98,9 @@ $$d^*(N) = \frac{\alpha}{\log N} + \beta$$
 where $\alpha, \beta$ depend on network type.
 \end{theorem}
 
-\subsubsection{Key Discovery: Model Failure}
+\subsubsection{Key Discovery: Simulated Data Distortion}
 
-Standard network models severely underestimate real dimensions:
+Standard network models exhibit significant simulated data distortion:
 
 \begin{table}[h]
 \centering
@@ -112,7 +112,7 @@ Barab\'asi-Albert & 1.0 & 2.0--4.4 & 50--400\% \\
 Watts-Strogatz & 1.0 & 2.0--4.4 & 50--400\% \\
 \hline
 \end{tabular}
-\caption{Standard models fail to capture real network complexity}
+\caption{Simulated data deviation from empirical measurements}
 \label{tab:model-failure}
 \end{table}
 
@@ -171,7 +171,7 @@ Applications include:
 The I direction has achieved a major breakthrough with the empirical analysis of 7 real networks (2.1M nodes total). Key results include:
 \begin{itemize}
 \item Dimension hierarchy: Infrastructure $>$ Academic $>$ Social/Bio $>$ Communication
-\item Standard models underestimate by 50--400\%
+\item Simulated data shows 50--400\% deviation from empirical measurements
 \item Biological networks are NOT tree-like
 \item Master Equation explains optimal network dimensions
 \end{itemize}

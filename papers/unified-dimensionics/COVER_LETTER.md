@@ -28,7 +28,7 @@ This paper presents a comprehensive mathematical framework unifying the theory o
    This equation unifies seemingly disparate dimension concepts across mathematics and physics.
 
 3. **Large-Scale Empirical Validation**
-   We present the first comprehensive empirical study of network dimensions, analyzing **7 real-world networks with 2,107,149 nodes**. Our analysis reveals a dimension hierarchy (Infrastructure > Academic > Social/Bio > Communication) and demonstrates that standard network models systematically underestimate real dimensions by 50-400%.
+   We present the first comprehensive empirical study of network dimensions, analyzing **7 real-world networks with 2,107,149 nodes**. Our analysis reveals a dimension hierarchy (Infrastructure > Academic > Social/Bio > Communication) and identifies significant simulated data distortion: standard network models produce simulated dimensions 50-400% lower than empirical measurements.
 
 ## Why Reviews in Mathematical Physics?
 
@@ -46,7 +46,7 @@ We believe our manuscript is ideally suited for *Reviews in Mathematical Physics
 
 Our work has significant implications for multiple fields:
 
-- **Network Science**: The discovery that standard models (BA/WS) underestimate dimensions by 50-400% challenges fundamental assumptions and suggests new modeling approaches.
+- **Network Science**: The identification of significant simulated data distortion in standard models (50-400% deviation from empirical measurements) indicates that conventional simulation approaches require refinement to accurately capture real network complexity.
 
 - **Quantum Gravity**: The Master Equation provides a variational interpretation of dimensional flow in Causal Dynamical Triangulations.
 
