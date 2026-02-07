@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Internet AS",
+    "empirical": 4.36,
+    "ba": 1.0,
+    "ws": 1.0
+  },
+  {
+    "name": "DBLP",
+    "empirical": 3.0,
+    "ba": 1.0,
+    "ws": 1.0
+  },
+  {
+    "name": "Yeast PPI",
+    "empirical": 2.4,
+    "ba": 1.0,
+    "ws": 1.0
+  },
+  {
+    "name": "Facebook",
+    "empirical": 2.57,
+    "ba": 1.0,
+    "ws": 1.0
+  },
+  {
+    "name": "Twitter",
+    "empirical": 2.0,
+    "ba": 1.0,
+    "ws": 1.0
+  },
+  {
+    "name": "Power Grid",
+    "empirical": 2.11,
+    "ba": 1.0,
+    "ws": 1.0
+  },
+  {
+    "name": "Email",
+    "empirical": 1.24,
+    "ba": 1.0,
+    "ws": 1.0
+  }
+]

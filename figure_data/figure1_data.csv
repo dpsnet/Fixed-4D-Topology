@@ -1,0 +1,8 @@
+name,dimension,nodes,type
+Internet AS,4.36,1696415,infrastructure
+DBLP,3.0,317080,academic
+Facebook,2.57,4039,social
+Yeast PPI,2.4,6800,biological
+Twitter,2.0,81306,social
+Power Grid,2.11,101,infrastructure
+Email,1.24,1133,communication

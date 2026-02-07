@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Internet AS",
+    "dimension": 4.36,
+    "nodes": 1696415,
+    "type": "infrastructure"
+  },
+  {
+    "name": "DBLP",
+    "dimension": 3.0,
+    "nodes": 317080,
+    "type": "academic"
+  },
+  {
+    "name": "Facebook",
+    "dimension": 2.57,
+    "nodes": 4039,
+    "type": "social"
+  },
+  {
+    "name": "Yeast PPI",
+    "dimension": 2.4,
+    "nodes": 6800,
+    "type": "biological"
+  },
+  {
+    "name": "Twitter",
+    "dimension": 2.0,
+    "nodes": 81306,
+    "type": "social"
+  },
+  {
+    "name": "Power Grid",
+    "dimension": 2.11,
+    "nodes": 101,
+    "type": "infrastructure"
+  },
+  {
+    "name": "Email",
+    "dimension": 1.24,
+    "nodes": 1133,
+    "type": "communication"
+  }
+]
