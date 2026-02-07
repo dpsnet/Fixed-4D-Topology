@@ -1,14 +1,34 @@
 SHORT DESCRIPTION (for GitHub sidebar):
 ─────────────────────────────────────
-Rigorous mathematical framework (T1-T4) distilled from failed unified field theory—honest layered strictness (L1/L2/L3)
+Human-AI collaborative mathematical research (T1-T4) with top-tier mathematician skills—honest layered strictness (L1/L2/L3)
 
 TOPICS (for GitHub sidebar):
 ─────────────────────────────────────
-fractal-geometry, spectral-dimension, modular-forms, algebraic-topology, unified-field-theory, mathematical-physics, rigorous-mathematics, research-integrity, heat-kernel, cantor-set, grothendieck-group, pde, python, open-science
+fractal-geometry, spectral-dimension, modular-forms, algebraic-topology, unified-field-theory, mathematical-physics, rigorous-mathematics, human-ai-collaboration, research-integrity, heat-kernel, cantor-set, grothendieck-group, pde, python, open-science
 
 WEBSITE (for GitHub sidebar):
 ─────────────────────────────────────
 https://pypi.org/project/fixed-4d-topology/
+
+RESEARCH METHODOLOGY:
+─────────────────────────────────────
+Human-AI Collaborative Research:
+
+Human Role:
+- Research direction and architectural design
+- Critical verification and error detection
+- Catching AI hallucinations and logical gaps
+- Scientific judgment and integrity maintenance
+
+AI Role (Top Mathematician Skills):
+- Mathematical derivation with rigorous standards
+- Literature synthesis and proof construction
+- Rapid exploration of theoretical alternatives
+- Systematic research framework execution
+
+Synergy:
+Human extends beyond individual mathematical limits through AI;
+AI outputs are critically verified by human judgment.
 
 RESEARCH EVOLUTION (Failed → Current):
 ─────────────────────────────────────
@@ -39,17 +59,46 @@ The E-7/E-8 Crisis (Experimental-Verification/):
 - Earlier layer errors propagated through subsequent development
 
 Current Repository (Fixed-4D-Topology):
-- Clean break from all prior theoretical attempts
-- AI-independent methodology (human-verified proofs only)
-- Layered strictness: L1/L2/L3 explicit labeling
-- Proof-first: Mathematics before physical interpretation
+- Clean break from prior theoretical attempts
+- Human-AI collaborative methodology
+- Human-verified proofs with AI mathematical assistance
+- Explicit L1/L2/L3 strictness labeling
 - Full transparency on failed prior attempts
 
-ORIGINAL MOTIVATIONS (Why research began):
+ORIGINAL MOTIVATIONS:
 ─────────────────────────────────────
 1. Nature's fractal self-similarity across all scales
 2. Mathematical isomorphism: time dilation ↔ non-Newtonian hardening
 3. Zhang Xiangqian's theory: space as spiral divergence motion
+
+LONG-TERM VISION:
+─────────────────────────────────────
+Mathematical Foundations (Current) 
+        ↓
+Physical Predictions (Future)
+        ↓
+Experimental Validation (E-series, eventually)
+        ↓
+Feedback → Refinement/Correction
+
+This is understood as a long-term closed loop toward unified
+field theory, acknowledging individual human limitations while
+leveraging AI capabilities for rigorous mathematical progress.
+
+RESEARCH STATEMENT:
+─────────────────────────────────────
+This repository presents mathematical research conducted through
+human-AI collaboration with top-tier mathematician methodology.
+
+Key principles:
+• Human-AI collaboration: Human direction + AI execution
+• Layered strictness: L1 (100% rigorous) / L2 (progressive) / L3 (heuristic)
+• Honest revision: Acknowledging and correcting prior errors
+• Complete transparency: 50,000 words, 18 theorems, all proofs included
+• Full reproducibility: Python implementation with numerical validation
+
+Status: Mathematical foundations complete. Physical applications 
+and experimental validation (E-series) planned for future phases.
 
 CITATION:
 ─────────────────────────────────────
