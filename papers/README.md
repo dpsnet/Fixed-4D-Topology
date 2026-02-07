@@ -217,6 +217,16 @@ If you use the Fixed 4D Topology framework, please cite:
 }
 ```
 
+**T9**:
+```bibtex
+@article{f4t_derived_2026,
+  author = {AI Research Engine},
+  title = {Derived and Spectral Algebraic Geometry in Fixed 4D Topology},
+  year = {2026},
+  url = {https://github.com/dpsnet/Fixed-4D-Topology/tree/main/papers/T9-derived-spectral-geometry}
+}
+```
+
 ---
 
 ## Research Methodology
@@ -282,16 +292,16 @@ See [LICENSE](../LICENSE) for details.
 
 ---
 
-**Version**: 2.2.0 (T8 Motives Edition)
+**Version**: 2.3.0 (T9 Derived Geometry Edition)
 
 **Date**: February 2026
 
 ## Paper Statistics
 
-| Metric | T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 |
-|--------|-----|-----|-----|-----|-----|-----|-----|-----|
-| **Length** | ~8,000 | ~11,000 | ~10,000 | ~12,000 | ~12,000 | ~15,000 | ~12,000 | ~12,000 |
-| **Theorems** | 4 + 2 cor | 4 + 1 prop | 4 | 5 | 15 | 20+ | 15+ | 15+ |
-| **Tables** | 3 | 6 | 4 | 3 | 5 | 8 | 6 | 5 |
-| **Numerical Tests** | 100+ | 1,000+ | 15 | 10,000+ | N/A | N/A | N/A | N/A |
-| **Strictness** | L1 | L1-L2 | L2 | L2-L3 | L1-L2 | L1-L3 | L1-L3 | L1-L3 |
+| Metric | T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 |
+|--------|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| **Length** | ~8,000 | ~11,000 | ~10,000 | ~12,000 | ~12,000 | ~15,000 | ~12,000 | ~12,000 | ~10,000 |
+| **Theorems** | 4 + 2 cor | 4 + 1 prop | 4 | 5 | 15 | 20+ | 15+ | 15+ | 12+ |
+| **Tables** | 3 | 6 | 4 | 3 | 5 | 8 | 6 | 5 | 4 |
+| **Numerical Tests** | 100+ | 1,000+ | 15 | 10,000+ | N/A | N/A | N/A | N/A | N/A |
+| **Strictness** | L1 | L1-L2 | L2 | L2-L3 | L1-L2 | L1-L3 | L1-L3 | L1-L3 | L1-L3 |
