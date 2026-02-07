@@ -98,6 +98,27 @@ The Fixed 4D Topology project establishes connections between fractal geometry, 
 
 ---
 
+### [T6: Noncommutative Geometric Refinement](./T6-noncommutative-refinement/)
+
+**Title**: Categorical Unification of Fixed 4D Topology: A 2-Categorical Framework
+
+**Strictness**: L1-L2 (Core L1, Extensions L2)
+
+**Key Results**:
+- 2-category **F4T** unifying T1-T4
+- Functors with preservation degrees ($\rho = 1$ for T1,T2,T4; $\rho = 0.30$ for T3)
+- Spectral Unification Theorem: $d_{\text{eff}} = \text{Tr}_\omega(\mathcal{D}^{-1})$
+- Evolution as spectral flow
+
+**Files**:
+- `T5-paper.md` - Main unified framework paper
+- `axioms.md` - Axiomatic foundation
+- `2category.md` - 2-categorical construction
+- `functors.md` - Functor constructions
+- `spectral-unification.md` - Core theorems
+
+---
+
 ## Citation
 
 ### Citing the Framework
@@ -163,6 +184,16 @@ If you use the Fixed 4D Topology framework, please cite:
   title = {Categorical Unification of Fixed 4D Topology: A 2-Categorical Framework},
   year = {2026},
   url = {https://github.com/dpsnet/Fixed-4D-Topology/tree/main/papers/T5-categorical-unification}
+}
+```
+
+**T6**:
+```bibtex
+@article{f4t_ncg_2026,
+  author = {AI Research Engine},
+  title = {Noncommutative Geometric Refinement of Fixed 4D Topology},
+  year = {2026},
+  url = {https://github.com/dpsnet/Fixed-4D-Topology/tree/main/papers/T6-noncommutative-refinement}
 }
 ```
 
@@ -237,10 +268,10 @@ See [LICENSE](../LICENSE) for details.
 
 ## Paper Statistics
 
-| Metric | T1 | T2 | T3 | T4 | T5 |
-|--------|-----|-----|-----|-----|-----|
-| **Length** | ~8,000 | ~11,000 | ~10,000 | ~12,000 | ~12,000 |
-| **Theorems** | 4 + 2 cor | 4 + 1 prop | 4 | 5 | 15 |
-| **Tables** | 3 | 6 | 4 | 3 | 5 |
-| **Numerical Tests** | 100+ | 1,000+ | 15 | 10,000+ | N/A (theoretical) |
-| **Strictness** | L1 | L1-L2 | L2 | L2-L3 | L1-L2 |
+| Metric | T1 | T2 | T3 | T4 | T5 | T6 |
+|--------|-----|-----|-----|-----|-----|-----|
+| **Length** | ~8,000 | ~11,000 | ~10,000 | ~12,000 | ~12,000 | ~15,000 |
+| **Theorems** | 4 + 2 cor | 4 + 1 prop | 4 | 5 | 15 | 20+ |
+| **Tables** | 3 | 6 | 4 | 3 | 5 | 8 |
+| **Numerical Tests** | 100+ | 1,000+ | 15 | 10,000+ | N/A | N/A |
+| **Strictness** | L1 | L1-L2 | L2 | L2-L3 | L1-L2 | L1-L3 |
