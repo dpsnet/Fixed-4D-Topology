@@ -10,60 +10,46 @@ WEBSITE (for GitHub sidebar):
 ─────────────────────────────────────
 https://pypi.org/project/fixed-4d-topology/
 
-ORIGINAL MOTIVATIONS (Why Unified Field Theory?):
+RESEARCH EVOLUTION (Failed → Current):
 ─────────────────────────────────────
-1. Nature's fractal self-similarity
-   Observed across cosmic, biological, geological scales—suggesting 
-   fractal geometry as fundamental, not merely descriptive
+Pre-Open Source (2 major versions abandoned):
 
-2. Mathematical isomorphism intuition
-   Noticed parallel between:
-   - General relativistic time dilation (non-linear field response)
-   - Non-Newtonian fluid shear hardening (non-linear stress response)
-   Suggested gravity might have "material-like" geometric structure
+Version 1: Phenomenological Approach
+- Excessive free parameters requiring continuous adjustment
+- Ad hoc adaptations for different physical scales
+- Scale-dependent inconsistencies
+- Essentially sophisticated curve-fitting, not predictive theory
 
-3. Zhang Xiangqian's influence
-   Core insight: Space is dynamic spiral divergence from center to 
-   periphery, not static background. Suggested twisted/torsional 
-   geometries beyond Riemannian manifolds.
+Version 2: Fractal-Clifford with Dimensional Reduction  
+- 11D to 4D continuous dimensional reduction
+- Generated fractional dimensions conflicting with General Relativity
+- Severe mathematical defects in proofs
+- Machine hallucination: AI-generated "proofs" appearing rigorous 
+  but containing subtle logical errors
 
-RESEARCH JOURNEY:
+Early Open-Source Phase:
+- Mathematics-first approach (M-0 series: M-0.1 to M-0.22)
+- Layer-by-layer proof development
+- Attempted physical applications after mathematical foundation
+
+The E-7/E-8 Crisis (Experimental-Verification/):
+- Observational validation exposed mathematical defects
+- Proofs failed under physical constraint integration
+- Machine-generated proofs revealed hidden assumptions
+- Earlier layer errors propagated through subsequent development
+
+Current Repository (Fixed-4D-Topology):
+- Clean break from all prior theoretical attempts
+- AI-independent methodology (human-verified proofs only)
+- Layered strictness: L1/L2/L3 explicit labeling
+- Proof-first: Mathematics before physical interpretation
+- Full transparency on failed prior attempts
+
+ORIGINAL MOTIVATIONS (Why research began):
 ─────────────────────────────────────
-Prior Research (2023-2024):
-- Multi-repository program: Advanced-Physics-Framework,
-  Advanced-Theoretical-Framework, Computational-Framework,
-  Experimental-Verification, Fundamental-Mathematics, etc.
-- Framework: "Fixed 4D Topology + Dynamic Spectral Dimension + 
-  Multiple Twisted Fractal Clifford Algebra"
-
-The Crisis (Experimental-Verification/):
-- E-7, E-8: Validation attempts revealing mathematical inconsistencies
-- Clifford algebra contradictions, dimensional anomalies
-- Physical predictions failed against observational data
-
-The Pivot (late 2024):
-- Suspended unified field theory program
-- Extracted sound mathematical components
-- Rebuilt with proof-first methodology
-
-Current Repository:
-- Mathematical distillate of failed physics program
-- T1-T4: Rigorous core surviving critical examination
-- Purified framework freed from premature physical applications
-
-RESEARCH STATEMENT:
-─────────────────────────────────────
-This repository presents mathematical research conducted through
-AI-independent deep derivation methodology.
-
-Key principles:
-• Layered strictness: L1 (100% rigorous) / L2 (progressive) / L3 (heuristic)
-• Honest revision: Acknowledging and correcting prior errors
-• Complete transparency: 50,000 words, 18 theorems, all proofs included
-• Full reproducibility: Python implementation with numerical validation
-
-Status: Mathematical foundations complete. Physical applications 
-deliberately suspended pending peer review and validation.
+1. Nature's fractal self-similarity across all scales
+2. Mathematical isomorphism: time dilation ↔ non-Newtonian hardening
+3. Zhang Xiangqian's theory: space as spiral divergence motion
 
 CITATION:
 ─────────────────────────────────────
