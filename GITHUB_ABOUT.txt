@@ -15,10 +15,11 @@ RESEARCH METHODOLOGY:
 Human-AI Collaborative Research:
 
 Human Role:
-- Research direction and architectural design
-- Critical verification and error detection
-- Catching AI hallucinations and logical gaps
-- Scientific judgment and integrity maintenance
+- Research direction: Define fundamental questions and trajectory
+- Architectural selection (NOT design): Choose among AI-generated frameworks
+- Drive and supervise data validation: Push for experimental validation
+- Prevent AI hallucinations: Block AI errors and fabrications
+- Scientific judgment: Final decisions on validity and priority
 
 AI Role (Top Mathematician Skills):
 - Mathematical derivation with rigorous standards

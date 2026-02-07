@@ -64,9 +64,11 @@ Faced with these cascading failures, the final strategic decision was made:
 > **Decision**: Abandon all prior theoretical frameworks entirely. Rebuild from scratch using **AI-assisted research leveraging top-tier mathematician skills** to systematically develop rigorous mathematical foundations (T1-T4), establishing proof-quality standards beyond human individual capacity before attempting physical applications.
 
 This reflects a pragmatic acknowledgment: **individual human mathematical and physical capabilities are insufficient** for the complexity of unified field theory research. The researcher's role is to:
-- **Architect the research framework**: Define questions, methodology, and validation criteria
-- **Guide AI capabilities**: Leverage AI's access to comprehensive mathematical knowledge and proof techniques
-- **Verify and critique**: Human judgment on AI outputs, catching machine hallucinations and logical gaps
+- **Research direction**: Define the fundamental questions and overall trajectory
+- **Architectural selection** (not design): Choose among AI-generated mathematical frameworks, not design them from scratch
+- **Drive and supervise data validation**: Actively push for experimental validation and monitor the process
+- **Prevent AI hallucinations**: Rigorous human judgment to catch and block AI-generated errors and fabrications
+- **Scientific judgment**: Make final decisions on validity, priority, and publication
 - **Maintain scientific integrity**: Honest assessment of limitations (L1/L2/L3)
 
 This led to the current repository (**Fixed-4D-Topology**), which represents:
@@ -81,7 +83,7 @@ This led to the current repository (**Fixed-4D-Topology**), which represents:
 
 | Role | Responsibility |
 |------|----------------|
-| **Human** | Research direction, architectural design, critical verification, error detection, scientific judgment |
+| **Human** | Research direction, architectural selection (not design), driving and supervising data validation, preventing AI hallucinations, scientific judgment |
 | **AI** | Mathematical derivation, literature synthesis, proof construction, rapid exploration of alternatives |
 | **Synergy** | Human catches AI hallucinations; AI extends beyond human mathematical limits |
 
