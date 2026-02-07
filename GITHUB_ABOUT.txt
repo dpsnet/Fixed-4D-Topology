@@ -1,10 +1,10 @@
 SHORT DESCRIPTION (for GitHub sidebar):
 ─────────────────────────────────────
-AI-independent mathematical research unifying fractal geometry, spectral theory, modular forms, and algebraic topology — with honest layered strictness (L1/L2/L3)
+Rigorous mathematical framework (T1-T4) distilled from failed unified field theory—honest layered strictness (L1/L2/L3)
 
 TOPICS (for GitHub sidebar):
 ─────────────────────────────────────
-fractal-geometry, spectral-dimension, modular-forms, algebraic-topology, unified-field-theory, mathematical-physics, ai-research, rigorous-mathematics, heat-kernel, cantor-set, grothendieck-group, pde, python, research, open-science
+fractal-geometry, spectral-dimension, modular-forms, algebraic-topology, unified-field-theory, mathematical-physics, rigorous-mathematics, research-integrity, heat-kernel, cantor-set, grothendieck-group, pde, python, open-science
 
 WEBSITE (for GitHub sidebar):
 ─────────────────────────────────────
@@ -12,19 +12,29 @@ https://pypi.org/project/fixed-4d-topology/
 
 RESEARCH JOURNEY:
 ─────────────────────────────────────
-Origin: Unified Field Theory research (2023-2024) attempting to reconcile
-quantum mechanics and general relativity through dynamic spectral dimension.
+Prior Research (2023-2024):
+- Multi-repository program: Advanced-Physics-Framework,
+  Advanced-Theoretical-Framework, Computational-Framework,
+  Experimental-Verification, Fundamental-Mathematics, etc.
+- Pursued "Fixed 4D Topology with Dynamic Spectral Dimension 
+  and Multiple Twisted Fractal Clifford Algebra" unified field theory
 
-Crisis: E-7 and E-8 validation attempts against quasar data revealed 
-fundamental discrepancies and mathematical inconsistencies when theory 
-met observational astrophysical data.
+The Crisis (Experimental-Verification/):
+- E-7: Validation attempts revealing mathematical inconsistencies
+- E-8: Extended analysis showing validation failures
+- Fundamental issues: Dimensional anomalies, Clifford algebra 
+  contradictions, prediction failures
 
-Pivot: Rather than forcing ad hoc modifications, returned to pure 
-mathematical foundations. Suspended physical validation pending 
-rigorous theoretical consolidation.
+The Pivot (late 2024):
+- Suspended unified field theory program
+- Extracted sound mathematical components
+- Rebuilt from first principles with proof-first methodology
+- Abandoned physical predictions until mathematical rigor guaranteed
 
-Current: Fixed 4D Topology framework—establishing solid mathematical 
-groundwork (T1-T4) before attempting physical applications.
+Current Repository:
+- Mathematical distillate of failed physics program
+- T1-T4: Rigorous core that survived critical examination
+- Purified framework freed from premature physical applications
 
 RESEARCH ORIGINS:
 ─────────────────────────────────────
@@ -48,19 +58,17 @@ Current T1-T4 framework with explicit strictness labels.
 
 RESEARCH STATEMENT:
 ─────────────────────────────────────
-This repository presents original mathematical research conducted through
-AI-independent deep derivation methodology. The work features:
+This repository presents mathematical research conducted through
+AI-independent deep derivation methodology.
 
+Key principles:
 • Layered strictness: L1 (100% rigorous) / L2 (progressive) / L3 (heuristic)
-• Honest revision: M-0 series errors corrected in T1-T4 framework
+• Honest revision: Acknowledging and correcting prior errors
 • Complete transparency: 50,000 words, 18 theorems, all proofs included
 • Full reproducibility: Python implementation with numerical validation
 
-The research evolved from initial over-claims (M-0 v2.0) to honest 
-approximation framework (v2.1) following "宁可删除，不伪造成立" 
-(Rather delete than fake validity) principle.
-
-Status: Research complete, open for peer review and collaboration.
+Status: Mathematical foundations complete. Physical applications 
+deliberately suspended pending peer review and validation.
 
 CITATION:
 ─────────────────────────────────────
