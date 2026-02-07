@@ -185,16 +185,24 @@ $$d_B = \lim_{\ell_B \to 0} \frac{\log N_B(\ell_B)}{\log(1/\ell_B)}$$
 
 where $N_B(\ell_B)$ is minimum number of boxes of size $\ell_B$ needed to cover the network.
 
-### 9.4.2 Key Discovery: Model Failure
+### 9.4.2 Empirical Discovery: Simulated-Real Data Divergence
 
-**Standard network models exhibit significant simulated data distortion**:
+**Research Timeline**:
+1. **Phase 1** (Early): Algorithm development using BA/WS simulated networks (d≈1)
+2. **Phase 2** (Later): Empirical analysis of 7 real-world networks (2.1M nodes)
+3. **Discovery**: Significant divergence between simulated and real dimensions
 
-| Model | Predicted d | Real d | Error |
-|-------|-------------|--------|-------|
-| Barabási-Albert | 1.0 | 2.0-4.4 | 50-400% |
-| Watts-Strogatz | 1.0 | 2.0-4.4 | 50-400% |
+**Comparative Results**:
 
-**Explanation**: Standard models assume tree-like structures, but real networks have rich local structure and long-range connections.
+| Data Source | Dimension Range | Deviation from Simulation |
+|-------------|-----------------|---------------------------|
+| BA/WS Simulated | ~1.0 | Baseline |
+| Real - Infrastructure | 2.11-4.36 | +111% to +336% |
+| Real - Academic | 3.0 | +200% |
+| Real - Social/Bio | 2.0-2.57 | +100% to +157% |
+| Real - Communication | 1.24 | +24% |
+
+**Interpretation**: This divergence emerged from controlled comparison using identical algorithms. The systematic difference suggests that standard generative models may not fully capture the geometric complexity observed in empirical networks, particularly regarding local structure and long-range connectivity patterns.
 
 ### 9.4.3 Dimensionics on Networks
 

@@ -98,25 +98,32 @@ $$d^*(N) = \frac{\alpha}{\log N} + \beta$$
 where $\alpha, \beta$ depend on network type.
 \end{theorem}
 
-\subsubsection{Key Discovery: Simulated Data Distortion}
+\subsubsection{Empirical Discovery: Simulated-Real Data Divergence}
 
-Standard network models exhibit significant simulated data distortion:
+\textbf{Research Timeline}: Our investigation followed a natural two-phase progression:
+\begin{enumerate}
+\item \textbf{Phase 1} (Algorithm Development): Validated dimension computation methods using BA/WS simulated networks
+\item \textbf{Phase 2} (Empirical Analysis): Applied validated methods to 7 real-world networks (2.1M nodes)
+\item \textbf{Discovery}: Significant divergence between simulated and empirical dimensions
+\end{enumerate}
 
 \begin{table}[h]
 \centering
-\begin{tabular}{l c c c}
+\begin{tabular}{l c c}
 \hline
-\textbf{Model} & \textbf{Predicted d} & \textbf{Real d} & \textbf{Error} \\
+\textbf{Network Type} & \textbf{Simulated (BA/WS)} & \textbf{Empirical (Real)} \\
 \hline
-Barab\'asi-Albert & 1.0 & 2.0--4.4 & 50--400\% \\
-Watts-Strogatz & 1.0 & 2.0--4.4 & 50--400\% \\
+Infrastructure & $\sim$1.0 & 2.11--4.36 (+111\% to +336\%) \\
+Academic & $\sim$1.0 & 3.0 (+200\%) \\
+Social/Biological & $\sim$1.0 & 2.0--2.57 (+100\% to +157\%) \\
+Communication & $\sim$1.0 & 1.24 (+24\%) \\
 \hline
 \end{tabular}
-\caption{Simulated data deviation from empirical measurements}
+\caption{Simulated-empirical dimension divergence: BA/WS generated networks vs. real-world networks}
 \label{tab:model-failure}
 \end{table}
 
-\textbf{Explanation}: Standard models assume tree-like structures, but real networks have rich local structure and long-range connections.
+\textbf{Interpretation}: This divergence emerged from controlled comparison using identical dimension computation algorithms applied to both simulated (Phase 1) and empirical (Phase 2) data. The systematic difference suggests that standard generative models, while mathematically valid, may not fully capture the geometric complexity observed in real-world networks, particularly regarding local clustering and long-range connectivity patterns.
 
 \subsubsection{Biological vs Social Networks}
 

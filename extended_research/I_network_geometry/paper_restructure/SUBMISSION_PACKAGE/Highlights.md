@@ -10,7 +10,7 @@
 ---
 
 ### Highlight 2
-**Standard network models (BA/WS) systematically underestimate real network dimensions by 50-400%, with errors increasing with network scale and complexity.**
+**Significant simulated-empirical divergence discovered: BA/WS model-generated networks yield dimensions 24-336% lower than real-world networks, indicating simulation fidelity limitations for complex systems.**
 
 ---
 

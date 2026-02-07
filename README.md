@@ -27,7 +27,7 @@
 | Twitter | Social | 81K | **2.0** | Dense but limited communities |
 | Email | Communication | 1K | **1.24** | Hierarchy restricts dimension |
 
-**🔍 Key Discovery**: Standard network models (BA/WS) exhibit significant simulated data distortion, producing dimensions **50-400% lower** than empirical measurements!
+**🔍 Empirical Discovery**: Our two-phase study (algorithm validation with simulated data → empirical analysis) reveals significant divergence—BA/WS simulated networks yield dimensions near d≈1, while real-world networks range from d=1.2-4.4, representing deviations of 24-336%.
 
 📄 **Full Paper**: [extended_research/I_network_geometry/papers/](extended_research/I_network_geometry/paper_restructure/I_direction_paper_FINAL_v2.3.md)
 
@@ -187,7 +187,7 @@ print(f"Optimal dimension: {d_opt}")
 | Power Grid | Regional Infrastructure | 101 | **2.11** | Spatial constraint d≈2 |
 | Email | Organizational | 1,005 | **1.24** | Hierarchy-restricted |
 
-**🔬 Scientific Discovery**: Standard BA/WS models exhibit significant simulated data distortion, with dimensions **50-400% lower** than empirical measurements!
+**🔬 Scientific Discovery**: Comparative analysis shows BA/WS simulated data (d≈1) deviates from real-world network dimensions (d=1.2-4.4) by 24-336%, highlighting simulation fidelity limitations.
 
 ### Fusion Validation
 
