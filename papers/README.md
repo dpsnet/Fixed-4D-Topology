@@ -207,6 +207,16 @@ If you use the Fixed 4D Topology framework, please cite:
 }
 ```
 
+**T8**:
+```bibtex
+@article{f4t_motives_2026,
+  author = {AI Research Engine},
+  title = {Motives and p-adic Hodge Theory in Fixed 4D Topology},
+  year = {2026},
+  url = {https://github.com/dpsnet/Fixed-4D-Topology/tree/main/papers/T8-motives-padic-hodge}
+}
+```
+
 ---
 
 ## Research Methodology
@@ -272,16 +282,16 @@ See [LICENSE](../LICENSE) for details.
 
 ---
 
-**Version**: 2.1.0 (T5 Unification Edition)
+**Version**: 2.2.0 (T8 Motives Edition)
 
 **Date**: February 2026
 
 ## Paper Statistics
 
-| Metric | T1 | T2 | T3 | T4 | T5 | T6 | T7 |
-|--------|-----|-----|-----|-----|-----|-----|-----|
-| **Length** | ~8,000 | ~11,000 | ~10,000 | ~12,000 | ~12,000 | ~15,000 | ~12,000 |
-| **Theorems** | 4 + 2 cor | 4 + 1 prop | 4 | 5 | 15 | 20+ | 15+ |
-| **Tables** | 3 | 6 | 4 | 3 | 5 | 8 | 6 |
-| **Numerical Tests** | 100+ | 1,000+ | 15 | 10,000+ | N/A | N/A | N/A |
-| **Strictness** | L1 | L1-L2 | L2 | L2-L3 | L1-L2 | L1-L3 | L1-L3 |
+| Metric | T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 |
+|--------|-----|-----|-----|-----|-----|-----|-----|-----|
+| **Length** | ~8,000 | ~11,000 | ~10,000 | ~12,000 | ~12,000 | ~15,000 | ~12,000 | ~12,000 |
+| **Theorems** | 4 + 2 cor | 4 + 1 prop | 4 | 5 | 15 | 20+ | 15+ | 15+ |
+| **Tables** | 3 | 6 | 4 | 3 | 5 | 8 | 6 | 5 |
+| **Numerical Tests** | 100+ | 1,000+ | 15 | 10,000+ | N/A | N/A | N/A | N/A |
+| **Strictness** | L1 | L1-L2 | L2 | L2-L3 | L1-L2 | L1-L3 | L1-L3 | L1-L3 |
