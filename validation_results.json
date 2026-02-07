@@ -1,0 +1,163 @@
+{
+  "FE-T1": {
+    "test_cases": [
+      {
+        "target": 0.41421356237309515,
+        "name": "sqrt(2)-1",
+        "approximation": 0.41421362012556606,
+        "epsilon": 1e-06,
+        "theoretical_bound": 2330.6607985667742,
+        "computed_norm": 2147.7054298858334,
+        "relative_error": 0.07849935468664002,
+        "passed": true
+      },
+      {
+        "target": 0.14159265358979312,
+        "name": "pi-3",
+        "approximation": 0.14159262173559733,
+        "epsilon": 1e-06,
+        "theoretical_bound": 3986.3088833251672,
+        "computed_norm": 3720.7913895593274,
+        "relative_error": 0.06660735571107056,
+        "passed": true
+      },
+      {
+        "target": 0.7182818284590451,
+        "name": "e-2",
+        "approximation": 0.7182819983120212,
+        "epsilon": 1e-06,
+        "theoretical_bound": 1769.879781061122,
+        "computed_norm": 1700.1500030148864,
+        "relative_error": 0.03939803075462534,
+        "passed": true
+      },
+      {
+        "target": 0.6180339887498949,
+        "name": "golden-1",
+        "approximation": 0.6180342311301974,
+        "epsilon": 1e-06,
+        "theoretical_bound": 1908.029100126126,
+        "computed_norm": 1765.3396814713112,
+        "relative_error": 0.07478367004223499,
+        "passed": true
+      },
+      {
+        "target": 0.6931471805599453,
+        "name": "ln2",
+        "approximation": 0.6931471264402747,
+        "epsilon": 1e-06,
+        "theoretical_bound": 1801.683683515768,
+        "computed_norm": 1660.7700986790492,
+        "relative_error": 0.0782121668337158,
+        "passed": true
+      }
+    ],
+    "overall_success": true,
+    "max_error": 0.07849935468664002,
+    "mean_error": 0.06750011560565734
+  },
+  "FB-T2": {
+    "test_cases": [
+      {
+        "t_range": [
+          0.001,
+          0.0001
+        ],
+        "d_range": [
+          1.4218,
+          1.3794
+        ],
+        "delta_F": -886.6212809554963,
+        "delta_d": -0.04239999999999999,
+        "energy_check": true,
+        "monotonicity_check": true,
+        "relative_error": 0.0,
+        "passed": true
+      },
+      {
+        "t_range": [
+          0.0001,
+          1e-05
+        ],
+        "d_range": [
+          1.3794,
+          1.3665
+        ],
+        "delta_F": -7076.739358264438,
+        "delta_d": -0.012899999999999912,
+        "energy_check": true,
+        "monotonicity_check": true,
+        "relative_error": 0.0,
+        "passed": true
+      },
+      {
+        "t_range": [
+          1e-05,
+          1e-06
+        ],
+        "d_range": [
+          1.3665,
+          1.3653
+        ],
+        "delta_F": -59352.327797908016,
+        "delta_d": -0.0012000000000000899,
+        "energy_check": true,
+        "monotonicity_check": true,
+        "relative_error": 0.0,
+        "passed": true
+      }
+    ],
+    "overall_success": true,
+    "max_error": 0.0,
+    "mean_error": 0.0
+  },
+  "FG-T4": {
+    "test_cases": [
+      {
+        "d_star": 0.5,
+        "rational_approx": "1/2",
+        "d_recovered": 0.5,
+        "relative_error": 0.0,
+        "passed": true
+      },
+      {
+        "d_star": 0.6,
+        "rational_approx": "3/5",
+        "d_recovered": 0.6,
+        "relative_error": 0.0,
+        "passed": true
+      },
+      {
+        "d_star": 0.617,
+        "rational_approx": "617/1000",
+        "d_recovered": 0.617,
+        "relative_error": 0.0,
+        "passed": true
+      },
+      {
+        "d_star": 0.75,
+        "rational_approx": "3/4",
+        "d_recovered": 0.75,
+        "relative_error": 0.0,
+        "passed": true
+      },
+      {
+        "d_star": 1.0,
+        "rational_approx": "1",
+        "d_recovered": 1.0,
+        "relative_error": 0.0,
+        "passed": true
+      },
+      {
+        "d_star": 1.365,
+        "rational_approx": "273/200",
+        "d_recovered": 1.365,
+        "relative_error": 0.0,
+        "passed": true
+      }
+    ],
+    "overall_success": true,
+    "max_error": 0.0,
+    "mean_error": 0.0
+  }
+}

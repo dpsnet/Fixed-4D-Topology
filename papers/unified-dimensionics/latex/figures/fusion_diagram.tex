@@ -1,0 +1,25 @@
+% Fusion Diagram
+\begin{tikzpicture}
+  % A~G side
+  \node[draw, fill=blue!15] (e) at (0,4) {E: Sobolev};
+  \node[draw, fill=blue!15] (b) at (0,2) {B: Flow};
+  \node[draw, fill=blue!15] (g) at (0,0) {G: Variational};
+  
+  % Fixed-4D side
+  \node[draw, fill=red!15] (t1) at (6,4) {T1: Cantor};
+  \node[draw, fill=red!15] (t2) at (6,2) {T2: PDE};
+  \node[draw, fill=red!15] (t4) at (6,0) {T4: Grothendieck};
+  
+  % Fusion nodes
+  \node[draw, fill=yellow!30, diamond] (fe1) at (3,4) {FE-T1};
+  \node[draw, fill=yellow!30, diamond] (fb2) at (3,2) {FB-T2};
+  \node[draw, fill=yellow!30, diamond] (fg4) at (3,0) {FG-T4};
+  
+  % Arrows
+  \draw[->, thick] (e) -- (fe1);
+  \draw[->, thick] (t1) -- (fe1);
+  \draw[->, thick] (b) -- (fb2);
+  \draw[->, thick] (t2) -- (fb2);
+  \draw[->, thick] (g) -- (fg4);
+  \draw[->, thick] (t4) -- (fg4);
+\end{tikzpicture}

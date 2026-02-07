@@ -1,0 +1,42 @@
+{
+  "computation_type": "large_scale_quantum_dimensions",
+  "model": "xx",
+  "results": [
+    {
+      "system_size": 50,
+      "bond_dimension": 20,
+      "entanglement_entropy": 0.9810235360054519,
+      "quantum_dimension": 2.6671848049810367,
+      "central_charge_fit": 0.19584128265040934,
+      "computation_time": 2.118588447570801,
+      "convergence_error": 0.8041587173495907
+    },
+    {
+      "system_size": 100,
+      "bond_dimension": 20,
+      "entanglement_entropy": 0.9810235360054519,
+      "quantum_dimension": 2.6671848049810367,
+      "central_charge_fit": 0.04607423215574696,
+      "computation_time": 4.338937520980835,
+      "convergence_error": 0.9539257678442531
+    },
+    {
+      "system_size": 150,
+      "bond_dimension": 30,
+      "entanglement_entropy": 0.9810235360054519,
+      "quantum_dimension": 2.6671848049810367,
+      "central_charge_fit": -0.01155478405081604,
+      "computation_time": 14.512353420257568,
+      "convergence_error": 1.0115547840508161
+    },
+    {
+      "system_size": 200,
+      "bond_dimension": 40,
+      "entanglement_entropy": 0.9810235360054519,
+      "quantum_dimension": 2.6671848049810367,
+      "central_charge_fit": -0.05206350849387045,
+      "computation_time": 34.4320342540741,
+      "convergence_error": 1.0520635084938705
+    }
+  ]
+}

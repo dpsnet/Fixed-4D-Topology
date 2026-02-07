@@ -1,0 +1,11 @@
+% Dimension Taxonomy Diagram
+\begin{tikzpicture}
+  \node[draw, fill=blue!20] (dh) at (0,4) {$d_H$ Hausdorff};
+  \node[draw, fill=green!20] (db) at (-3,2) {$d_B$ Box};
+  \node[draw, fill=green!20] (ds) at (3,2) {$d_s$ Spectral};
+  \node[draw, fill=yellow!40] (deff) at (0,0) {$d_{\text{eff}}$ Effective};
+  \draw[->, thick] (dh) -- (db);
+  \draw[->, thick] (dh) -- (ds);
+  \draw[->, thick] (db) -- (deff);
+  \draw[->, thick] (ds) -- (deff);
+\end{tikzpicture}

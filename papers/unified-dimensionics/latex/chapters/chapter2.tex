@@ -1,0 +1,77 @@
+% Chapter 2: Mathematical Overview
+
+This section establishes notation and reviews essential background material for the unified dimensionics framework.
+
+\subsection{Notation and Conventions}
+
+We work primarily in separable metric spaces $(X,d)$. Key notation:
+\begin{itemize}
+\item $\dH$: Hausdorff dimension
+\item $\dB$: Box-counting dimension  
+\item $\ds$: Spectral dimension
+\item $\deff$: Effective dimension
+\item $\mathcal{H}^s$: $s$-dimensional Hausdorff measure
+\item $\dim_{top}$: Topological dimension
+\item $C(F)$: Cantor set with ratio $F$
+\item $SG$: Sierpinski gasket
+\end{itemize}
+
+\subsection{Classical Dimension Theories}
+
+\subsubsection{Hausdorff Dimension}
+
+\begin{definition}[Hausdorff Dimension]
+For $F \subset \mathbb{R}^n$, the Hausdorff dimension is:
+$$\dH(F) = \inf\{s : \mathcal{H}^s(F) = 0\} = \sup\{s : \mathcal{H}^s(F) = \infty\}$$
+\end{definition}
+
+The Hausdorff dimension is the most widely used fractal dimension, satisfying:
+\begin{itemize}
+\item Countable stability: $\dH(\bigcup_i F_i) = \sup_i \dH(F_i)$
+\item Monotonicity: $E \subseteq F \Rightarrow \dH(E) \leq \dH(F)$
+\item Lipschitz invariance under bi-Lipschitz maps
+\end{itemize}
+
+\subsubsection{Box-Counting Dimension}
+
+\begin{definition}[Box-Counting Dimension]
+The lower and upper box dimensions are:
+$$\underline{\dB}(F) = \liminf_{\epsilon \to 0} \frac{\log N_\epsilon(F)}{-\log \epsilon}, \quad
+\overline{\dB}(F) = \limsup_{\epsilon \to 0} \frac{\log N_\epsilon(F)}{-\log \epsilon}$$
+where $N_\epsilon(F)$ is the minimum number of $\epsilon$-balls covering $F$.
+\end{definition}
+
+When the limits coincide, we denote the common value by $\dB(F)$.
+
+\subsection{The Dimension Hierarchy}
+
+For any compact metric space $F$, the following inequalities hold:
+$$\dim_{top}(F) \leq \ds(F) \leq \dH(F) \leq \underline{\dB}(F) \leq \overline{\dB}(F)$$
+
+These inequalities reflect fundamental structural constraints that any unified theory must respect.
+
+\subsection{Standard Fractals}
+
+\begin{table}[htbp]
+\centering
+\caption{Dimensions of Standard Fractals}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Fractal} & $\dim_{top}$ & $\ds$ & $\dH$ & $\dB$ \\
+\midrule
+Cantor set & 0 & N/A & 0.631 & 0.631 \\
+Sierpinski gasket & 1 & 1.365 & 1.585 & 1.585 \\
+Koch curve & 1 & N/A & 1.262 & 1.262 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Function Spaces on Fractals}
+
+\begin{definition}[Besov Space on Fractal]
+For a $d$-set $F \subset \mathbb{R}^n$, the Besov space $B^s_{p,q}(F)$ is defined via traces:
+$$B^s_{p,q}(F) = \{f|_F : f \in B^s_{p,q}(\mathbb{R}^n)\}$$
+with quotient norm.
+\end{definition}
+
+These spaces provide the analytic foundation for studying differential equations on fractals.

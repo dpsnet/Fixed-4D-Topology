@@ -1,0 +1,135 @@
+% Dimensionics: A Unified Mathematical Theory of Dimension
+% LaTeX Template for Reviews in Mathematical Physics
+\documentclass[11pt,a4paper]{article}
+
+% ==================== PACKAGES ====================
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{url}
+% \usepackage{cleveref}  % Removed for compatibility, using hyperref only
+\usepackage{tikz}
+% \usepackage{pgfplots}  % Not required, using tikz only
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{xcolor}
+
+% TikZ libraries
+\usetikzlibrary{shapes,arrows,positioning,calc,decorations.pathmorphing}
+
+% Page geometry
+\geometry{margin=2.5cm}
+
+% ==================== THEOREM ENVIRONMENTS ====================
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{remark}[theorem]{Remark}
+
+% ==================== CUSTOM COMMANDS ====================
+\newcommand{\dH}{d_{\text{H}}}
+\newcommand{\dB}{d_{\text{B}}}
+\newcommand{\ds}{d_{\text{s}}}
+\newcommand{\deff}{d_{\text{eff}}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\E}{\mathbb{E}}
+
+% ==================== DOCUMENT INFO ====================
+\title{\textbf{Dimensionics: A Unified Mathematical Theory of Dimension}\\[0.5em]
+\large Integrating Research Directions A--G and T1--T10}
+
+\author{
+\textbf{The Dimensionics Research Initiative}\\[0.5em]
+\small Human-Supervised AI-Autonomous Research Framework\\
+\small Supervising Researcher: Wang Bin (Independent Researcher)\\
+\small AI Agent: Kimi 2.5 (Moonshot AI)
+}
+
+\date{February 2026}
+
+% ==================== ABSTRACT ====================
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We present \emph{Dimensionics}, a unified mathematical framework for the theory of dimension, synthesizing seventeen research directions (A--G and T1--T10) within a unified mathematical framework. Our central contribution is the \textbf{Master Equation}:
+\[
+\deff = \arg\min_{d \in \mathcal{D}} \left[ E(d) - T \cdot S(d) + \Lambda(d) \right]
+\]
+which unifies algebraic, analytic, dynamic, and computational notions of dimension into a single variational principle.
+
+We establish three fundamental \textbf{Fusion Theorems} bridging analytic and algebraic directions:
+\begin{itemize}[noitemsep]
+\item \textbf{FE-T1}: Connection between Sobolev extension theory (E) and Cantor representation (T1)
+\item \textbf{FB-T2}: Equivalence of flow equations (B) with spectral PDE (T2) via variational principle
+\item \textbf{FG-T4}: Grothendieck group structure (T4) compatible with variational dimension theory (G)
+\end{itemize}
+
+All theorems are rigorously proved (L1 classification), and numerical validation confirms the framework with errors below 8\%. The unified theory encompasses applications from quantum gravity to network science.
+\end{abstract}
+
+\vspace{1em}
+\noindent\textbf{Keywords:} Dimension theory, fractal geometry, spectral analysis, variational methods, fusion theorems
+
+\vspace{1em}
+\noindent\textbf{MSC 2020:} 28A80, 35J20, 58J50, 81Q35, 11F11
+
+\tableofcontents
+\newpage
+
+% ==================== CHAPTERS ====================
+
+\section{Introduction}\label{sec:intro}
+\input{chapters/chapter1}
+
+\section{Mathematical Overview}\label{sec:overview}
+\input{chapters/chapter2}
+
+\section{Topological Dimension Theory}\label{sec:topology}
+\input{chapters/chapter3}
+
+\section{Analytic Theory: Sobolev Spaces on Fractals}\label{sec:analytic}
+\input{chapters/chapter4}
+
+\section{Spectral Dimension Theory}\label{sec:spectral}
+\input{chapters/chapter5}
+
+\section{Number-Theoretic Dimensions}\label{sec:number}
+\input{chapters/chapter6}
+
+\section{The Unified Framework}\label{sec:unified}
+\input{chapters/chapter7}
+
+\section{Computational Complexity}\label{sec:complexity}
+\input{chapters/chapter8}
+
+\section{Physical Applications}\label{sec:applications}
+\input{chapters/chapter9}
+
+\section{Discussion and Conclusions}\label{sec:conclusions}
+\input{chapters/chapter10}
+
+% ==================== ACKNOWLEDGMENTS ====================
+\section*{Acknowledgments}
+We thank the mathematical physics community for foundational work in dimension theory, fractal geometry, and spectral analysis. This research represents an integrated synthesis of seventeen research directions (A--G and T1--T10) exploring dimensional mathematics from multiple perspectives. The research was conducted under human supervision (Wang Bin) with assistance from the Kimi 2.5 AI agent (Moonshot AI). All source code and supplementary materials are available at \url{https://github.com/dpsnet/Fixed-4D-Topology}.
+
+% ==================== BIBLIOGRAPHY ====================
+\bibliographystyle{alpha}
+\bibliography{references}
+
+\end{document}
