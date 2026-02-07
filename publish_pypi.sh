@@ -36,14 +36,19 @@ find . -type f -name "*.pyc" -delete 2>/dev/null || true
 echo "✓ Cleaned"
 echo ""
 
-# Run tests
+# Run tests (if pytest is available)
 echo "Step 2: Running tests..."
-python -m pytest tests/ -q --tb=short
-if [ $? -ne 0 ]; then
-    echo "✗ Tests failed! Aborting."
-    exit 1
+if python -m pytest --version > /dev/null 2>&1; then
+    python -m pytest tests/ -q --tb=short
+    if [ $? -ne 0 ]; then
+        echo "✗ Tests failed! Aborting."
+        exit 1
+    fi
+    echo "✓ Tests passed"
+else
+    echo "⚠ pytest not available, skipping tests"
+    echo "  (run 'pip install pytest' to enable testing)"
 fi
-echo "✓ Tests passed"
 echo ""
 
 # Build package
