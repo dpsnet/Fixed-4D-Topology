@@ -1,0 +1,55 @@
+{
+  "L": 20,
+  "num_samples": 50,
+  "p_c_estimate": 0.315,
+  "results": [
+    {
+      "p": 0.28,
+      "spanning_prob": 0.02,
+      "avg_dimension": 1.5394610467924732,
+      "num_samples": 50
+    },
+    {
+      "p": 0.3,
+      "spanning_prob": 0.2,
+      "avg_dimension": 1.6966383702901988,
+      "num_samples": 50
+    },
+    {
+      "p": 0.31,
+      "spanning_prob": 0.3,
+      "avg_dimension": 1.7809990670980176,
+      "num_samples": 50
+    },
+    {
+      "p": 0.312,
+      "spanning_prob": 0.34,
+      "avg_dimension": 1.818119845527827,
+      "num_samples": 50
+    },
+    {
+      "p": 0.315,
+      "spanning_prob": 0.46,
+      "avg_dimension": 1.8248387445375596,
+      "num_samples": 50
+    },
+    {
+      "p": 0.32,
+      "spanning_prob": 0.54,
+      "avg_dimension": 1.9131816482713253,
+      "num_samples": 50
+    },
+    {
+      "p": 0.33,
+      "spanning_prob": 0.76,
+      "avg_dimension": 2.0235022875868705,
+      "num_samples": 50
+    },
+    {
+      "p": 0.35,
+      "spanning_prob": 0.98,
+      "avg_dimension": 2.246669591971551,
+      "num_samples": 50
+    }
+  ]
+}
