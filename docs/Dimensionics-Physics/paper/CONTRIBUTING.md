@@ -2,6 +2,27 @@
 
 Thank you for your interest in contributing to the Dimensionics-Physics project! This document provides guidelines for contributing.
 
+## 🔬 Research Methodology
+
+This project employs a **human-AI collaborative paradigm** with transparent disclosure:
+
+- **Human Researcher**: Provides conceptual direction, research vision, and high-level oversight
+- **Kimi 2.5 Agent**: Generates ALL mathematical content, writing, visualizations, and documentation
+
+### ⚠️ Important Limitation
+
+The human researcher **acknowledges limited expertise** in advanced mathematical physics and **cannot rigorously verify** the technical content. Professional peer review is **invited and needed**.
+
+### How You Can Help
+
+We explicitly seek contributions from **professional physicists and mathematicians**:
+- Verify mathematical proofs (L1 strictness claimed)
+- Check citation accuracy
+- Validate physical predictions
+- Assess technical rigor
+
+See [RESEARCH_METHODOLOGY.md](RESEARCH_METHODOLOGY.md) and [AUTHORS.md](AUTHORS.md) for detailed information.
+
 ---
 
 ## How to Contribute
@@ -39,12 +60,15 @@ For figure generation scripts or numerical validation code:
 
 ## Types of Contributions
 
-### 🔬 Scientific Contributions
+### 🔬 Scientific Contributions (Priority Needs)
 
-- **New predictions**: Suggest additional experimental tests
-- **Numerical validation**: Extend iTEBD, percolation, or other simulations
-- **Mathematical extensions**: Generalizations of theorems or new proofs
-- **Physical applications**: Apply framework to new domains
+Given the AI-generated nature of this work and limited human verification capability, we especially need:
+
+- **Mathematical verification**: Rigorous review of the 12 theorems and claimed L1 strictness
+- **Citation audit**: Verify accuracy of all 84 references
+- **Physical validation**: Assess soundness of 11 experimental predictions
+- **Technical review**: Independent assessment of mathematical derivations
+- **New predictions**: Suggest additional experimental tests (after verification)
 
 ### 📝 Documentation Contributions
 
@@ -66,10 +90,11 @@ For figure generation scripts or numerical validation code:
 
 ### For Scientific Content
 
-1. **Mathematical rigor**: Maintain L1 strictness (100% rigorous proofs)
+1. **Mathematical rigor**: Verify or improve L1 strictness claims (currently pending verification)
 2. **Physical plausibility**: Ensure physical interpretations make sense
 3. **Testability**: Prefer predictions that can be tested experimentally
 4. **Documentation**: Explain the motivation and implications
+5. **Transparency**: Acknowledge AI-generated vs. human-verified content
 
 ### For Code
 

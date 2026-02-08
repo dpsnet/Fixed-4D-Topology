@@ -16,12 +16,25 @@ This repository contains the complete open-source academic paper **"Dimensionics
 
 ## 📄 Paper Overview
 
+### Research Methodology ⚠️
+
+This research employs a **human-AI collaborative paradigm** with transparent disclosure:
+
+| Role | Contributor | Key Contributions |
+|------|-------------|-------------------|
+| **Principal Investigator** | Human Researcher | Conceptual direction, research vision |
+| **AI Research Assistant** | Kimi 2.5 Agent | **ALL** math derivations, writing, visualizations |
+
+**⚠️ Limitations Acknowledged**: The human researcher has **limited expertise** to rigorously verify advanced mathematical physics content. Mathematical proofs (L1 claimed), citation accuracy, and technical rigor are **pending professional verification**. This is an **open research artifact** for community validation.
+
+**[📖 See detailed methodology](RESEARCH_METHODOLOGY.md)** | **[📋 See author information](AUTHORS.md)**
+
 ### Abstract
 
 We present **Dimensionics-Physics**, a rigorous mathematical framework treating spacetime dimension as a dynamical variable that flows with energy scale. Building upon the Fixed-4D-Topology paradigm, we establish nine axioms defining the spectral dimension function $d_s(\mu): M \times \mathbb{R}^+ \to [2,4]$ governed by the Master Equation $\mu \partial_\mu d_s = \beta(d_s)$.
 
 Our main results include:
-1. **Rigorous proof** of the UV fixed point $\lim_{\mu \to \infty} d_s = 2$ via renormalization group analysis
+1. **Proof claimed** of the UV fixed point $\lim_{\mu \to \infty} d_s = 2$ via renormalization group analysis
 2. **Modified relativity theory** with effective metric $g^{\text{eff}}_{\mu\nu} = \frac{4}{d_s}g_{\mu\nu}$ and deformed Lorentz group $SO(3,1; d_s)$
 3. **Black hole dimension compression** $d_s(r) = 4 - r_s/r$
 4. **Cosmic dimension evolution** $d_s(t) = 2 + \frac{2}{1 + e^{-(t-t_c)/\tau}}$
@@ -30,7 +43,7 @@ We derive **11 experimental predictions**, including:
 - **P1**: CMB power spectrum modification (testable by CMB-S4, 2025-2030)
 - **P2**: Gravitational wave dispersion (accessible to LISA, 2030+)
 
-Four predictions already show quantitative agreement with data.
+Four predictions show conceptual agreement with data.
 
 ---
 
@@ -143,10 +156,10 @@ If you use this work in your research, please cite:
 ```bibtex
 @article{dimensionics2026,
   title = {Dimensionics-Physics: Spectral Dimension Flow and Quantum Gravity},
-  author = {{Dimensionics Research Initiative}},
+  author = {Human Researcher and Kimi 2.5 Agent},
   year = {2026},
   url = {https://github.com/dpsnet/Fixed-4D-Topology/tree/main/docs/Dimensionics-Physics/paper},
-  note = {Open-source academic paper. Formatted per RMP guidelines but not formally submitted to journal.}
+  note = {Open research artifact employing human-AI collaborative methodology. AI generated all content; human provided direction with limited verification capability. Professional peer review invited.}
 }
 ```
 
