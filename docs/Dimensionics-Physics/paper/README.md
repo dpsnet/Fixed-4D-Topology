@@ -3,7 +3,8 @@
 
 **Title**: Dimensionics-Physics: Spectral Dimension Flow and Quantum Gravity
 
-**Authors**: [To be determined - see AUTHORS.md]
+**Authors**: Human Researcher (Principal Investigator) & Kimi 2.5 Agent (AI Research Assistant)  
+**Research Methodology**: Human-AI Collaborative - see [RESEARCH_METHODOLOGY.md](RESEARCH_METHODOLOGY.md)
 
 **Format Standard**: Reviews in Mathematical Physics (RMP) Guidelines
 
@@ -22,7 +23,8 @@
 | [ABSTRACT.md](ABSTRACT.md) | 250-word abstract + keywords |
 | [REFERENCES.md](REFERENCES.md) | 84 citations |
 | [FIGURES.md](FIGURES.md) | Figure specifications |
-| [AUTHORS.md](AUTHORS.md) | Author information template |
+| [AUTHORS.md](AUTHORS.md) | Author information and contributions |
+| [RESEARCH_METHODOLOGY.md](RESEARCH_METHODOLOGY.md) | Human-AI collaboration methodology |
 | [COVER_LETTER.tex](COVER_LETTER.tex) | Submission cover letter |
 | [FINAL_CHECKLIST.md](FINAL_CHECKLIST.md) | Pre-submission checklist |
 | [Dimensionics_Physics.tex](Dimensionics_Physics.tex) | **Main LaTeX file** |

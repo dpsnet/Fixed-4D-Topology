@@ -2,6 +2,11 @@ cff-version: 1.2.0
 message: >-
   If you use this work in your research, please cite it using these metadata.
   This is an open-source academic paper published on GitHub.
+  
+  IMPORTANT: This research employs a human-AI collaborative methodology.
+  The human researcher provided mathematical intuition, research direction,
+  and quality control. Kimi 2.5 Agent autonomously completed mathematical
+  derivations, software development, and documentation under human supervision.
 title: "Dimensionics-Physics: Spectral Dimension Flow and Quantum Gravity"
 abstract: >-
   We present Dimensionics-Physics, a rigorous mathematical framework 
@@ -21,13 +26,20 @@ abstract: >-
   modification testable by CMB-S4; and P2—gravitational wave dispersion 
   accessible to LISA. Four predictions already agree with data.
   
+  This research was conducted using a human-AI collaborative methodology.
+  
   This is an open-source academic paper formatted according to Reviews in 
   Mathematical Physics guidelines, published on GitHub for research exchange.
 type: article
 authors:
-  - family-names: "Research Initiative"
-    given-names: "Dimensionics"
-    affiliation: "Fixed-4D-Topology Project"
+  - family-names: "Researcher"
+    given-names: "Human"
+    affiliation: "Fixed-4D-Topology Project (Principal Investigator)"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+  - family-names: "2.5 Agent"
+    given-names: "Kimi"
+    affiliation: "Moonshot AI (AI Research Assistant)"
+    orcid: "https://github.com/dpsnet/Fixed-4D-Topology"
 repository-code: "https://github.com/dpsnet/Fixed-4D-Topology"
 repository-artifact: "https://github.com/dpsnet/Fixed-4D-Topology/tree/main/docs/Dimensionics-Physics/paper"
 url: "https://github.com/dpsnet/Fixed-4D-Topology/blob/main/docs/Dimensionics-Physics/paper/README.md"
@@ -43,12 +55,43 @@ keywords:
   - holographic principle
   - dimension flow
   - modified relativity
+  - human-AI collaboration
+  - AI-assisted research
 categories:
   - General Relativity and Quantum Cosmology (gr-qc)
   - High Energy Physics - Theory (hep-th)
   - Mathematical Physics (math-ph)
 date-released: "2026-02-08"
 version: "1.0.0"
+
+# Research methodology note
+notes: >-
+  RESEARCH METHODOLOGY: This work employs a human-AI collaborative paradigm.
+  
+  Human Researcher (Principal Investigator):
+  - Role: Supervisor, Decision Maker, Assistant
+  - Contributions: Mathematical and physical intuition, research direction
+    supervision, quality control, original hypotheses, final decisions
+  
+  Kimi 2.5 Agent (AI Research Assistant):
+  - Role: Autonomous Derivation and Development Engine
+  - Contributions: Mathematical derivation, theory development, programming,
+    documentation, LaTeX production
+  
+  All research steps are honestly documented and publicly available at:
+  https://github.com/dpsnet/Fixed-4D-Topology
+  
+  This paper establishes 9 axioms (A1-A9), proves 12 theorems with L1 
+  strictness, and derives 11 experimental predictions. Four predictions 
+  (P4, P8, P9, P11) already show quantitative agreement with data.
+  
+  Key predictions:
+  - P1: CMB power spectrum modification (CMB-S4, 2025-2030)
+  - P2: Gravitational wave dispersion (LISA, 2030+)
+  
+  This is an open-source academic work. While formatted according to 
+  Reviews in Mathematical Physics guidelines, it is NOT formally submitted 
+  to the journal.
 
 # Format information (not a journal publication)
 references:
@@ -63,13 +106,21 @@ preferred-citation:
   type: article
   title: "Dimensionics-Physics: Spectral Dimension Flow and Quantum Gravity"
   authors:
-    - family-names: "Research Initiative"
-      given-names: "Dimensionics"
+    - family-names: "Researcher"
+      given-names: "Human"
+      affiliation: "Fixed-4D-Topology Project"
+    - family-names: "2.5 Agent"
+      given-names: "Kimi"
+      affiliation: "Moonshot AI"
   year: 2026
   month: 2
   url: "https://github.com/dpsnet/Fixed-4D-Topology/tree/main/docs/Dimensionics-Physics/paper"
   repository: "https://github.com/dpsnet/Fixed-4D-Topology"
-  notes: "Open-source academic paper. Formatted per RMP guidelines but not formally submitted to journal."
+  notes: >-
+    Open-source academic paper employing human-AI collaborative methodology.
+    Human researcher provided intuition and supervision; Kimi 2.5 Agent
+    completed derivations and documentation. Formatted per RMP guidelines
+    but not formally submitted to journal.
 
 # BibTeX export information
 identifiers:
@@ -79,6 +130,9 @@ identifiers:
   - type: url
     value: "https://github.com/dpsnet/Fixed-4D-Topology/tree/main/docs/Dimensionics-Physics/paper"
     description: "Paper Directory"
+  - type: url
+    value: "https://github.com/dpsnet/Fixed-4D-Topology/blob/main/docs/Dimensionics-Physics/paper/RESEARCH_METHODOLOGY.md"
+    description: "Research Methodology Documentation"
 
 # Related resources
 references:
@@ -94,17 +148,3 @@ references:
 contact:
   - name: "Dimensionics Research Initiative"
     website: "https://github.com/dpsnet/Fixed-4D-Topology/issues"
-
-# Additional notes
-notes: >-
-  This paper establishes 9 axioms (A1-A9), proves 12 theorems with L1 
-  strictness, and derives 11 experimental predictions. Four predictions 
-  (P4, P8, P9, P11) already show quantitative agreement with data.
-  
-  Key predictions:
-  - P1: CMB power spectrum modification (CMB-S4, 2025-2030)
-  - P2: Gravitational wave dispersion (LISA, 2030+)
-  
-  This is an open-source academic work. While formatted according to 
-  Reviews in Mathematical Physics guidelines, it is NOT formally submitted 
-  to the journal.

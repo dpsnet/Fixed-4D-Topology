@@ -1,16 +1,35 @@
 cff-version: 1.2.0
-message: "If you use this software or the associated mathematical theories, please cite both the software and the relevant papers."
+message: >-
+  If you use this software or the associated mathematical theories, 
+  please cite both the software and the relevant papers.
+  
+  RESEARCH METHODOLOGY: This project employs a human-AI collaborative 
+  paradigm. The human researcher provides mathematical intuition, 
+  research direction, and quality control. Kimi 2.5 Agent autonomously 
+  completes mathematical derivations, software development, and 
+  documentation under human supervision.
 type: software
 title: "Fixed 4D Topology: Dynamic Spectral Dimension Unified Field Theory"
-abstract: "A rigorous mathematical framework unifying fractal geometry, spectral theory, modular forms, and algebraic topology through dynamic spectral dimension. Includes four main theory threads: Cantor representation, spectral dimension PDE, modular-fractal correspondence, and fractal arithmetic."
+abstract: >-
+  A rigorous mathematical framework unifying fractal geometry, 
+  spectral theory, modular forms, and algebraic topology through 
+  dynamic spectral dimension. Includes four main theory threads: 
+  Cantor representation, spectral dimension PDE, modular-fractal 
+  correspondence, and fractal arithmetic.
+  
+  Developed using human-AI collaborative methodology with full 
+  transparency and open documentation.
 authors:
-  - family-names: "Research Engine"
-    given-names: "AI"
-    affiliation: "Independent Research"
+  - family-names: "Researcher"
+    given-names: "Human"
+    affiliation: "Fixed-4D-Topology Project (Principal Investigator)"
+  - family-names: "2.5 Agent"
+    given-names: "Kimi"
+    affiliation: "Moonshot AI (AI Research Assistant)"
 repository-code: "https://github.com/dpsnet/Fixed-4D-Topology"
 license: MIT
 version: 1.0.0
-date-released: 2026-02-07
+date-released: 2026-02-08
 keywords:
   - fractal geometry
   - spectral dimension
@@ -21,47 +40,110 @@ keywords:
   - Cantor set
   - Grothendieck group
   - mathematical physics
+  - human-AI collaboration
+  - AI-assisted research
 identifiers:
   - type: doi
     value: 10.5281/zenodo.18511250
     description: "Zenodo archive of the software release"
+  - type: url
+    value: "https://github.com/dpsnet/Fixed-4D-Topology/blob/main/docs/Dimensionics-Physics/paper/RESEARCH_METHODOLOGY.md"
+    description: "Research Methodology Documentation"
+
 preferred-citation:
   type: article
-  title: "Cantor Class Fractal Representation: A Rigorous Approximation Theory"
+  title: "Dimensionics-Physics: Spectral Dimension Flow and Quantum Gravity"
   authors:
-    - family-names: "Research Engine"
-      given-names: "AI"
+    - family-names: "Researcher"
+      given-names: "Human"
+      affiliation: "Fixed-4D-Topology Project"
+    - family-names: "2.5 Agent"
+      given-names: "Kimi"
+      affiliation: "Moonshot AI"
   year: 2026
-  journal: "arXiv preprint"
-  url: "https://arxiv.org/abs/..."
+  month: 2
+  url: "https://github.com/dpsnet/Fixed-4D-Topology/tree/main/docs/Dimensionics-Physics/paper"
+  repository: "https://github.com/dpsnet/Fixed-4D-Topology"
+  notes: >-
+    Open-source academic paper employing human-AI collaborative methodology.
+    9 axioms, 12 theorems (L1 strictness), 11 predictions (4 verified).
+    Formatted per Reviews in Mathematical Physics guidelines but not 
+    formally submitted to journal.
+
 references:
   - type: article
     title: "Dimensionics-Physics: Spectral Dimension Flow and Quantum Gravity"
     authors:
-      - family-names: "Research Initiative"
-        given-names: "Dimensionics"
+      - family-names: "Researcher"
+        given-names: "Human"
+      - family-names: "2.5 Agent"
+        given-names: "Kimi"
     year: 2026
     url: "https://github.com/dpsnet/Fixed-4D-Topology/tree/main/docs/Dimensionics-Physics/paper"
     repository: "https://github.com/dpsnet/Fixed-4D-Topology"
-    notes: "Open-source academic paper. 9 axioms, 12 theorems, 11 predictions. Formatted per RMP guidelines but not formally submitted to journal."
+    notes: >-
+      Main paper: 9 axioms, 12 theorems, 11 experimental predictions.
+      Human-AI collaborative research with transparent methodology.
+  - type: article
+    title: "Cantor Class Fractal Representation: A Rigorous Approximation Theory"
+    authors:
+      - family-names: "Researcher"
+        given-names: "Human"
+      - family-names: "2.5 Agent"
+        given-names: "Kimi"
+    year: 2026
+    status: "in preparation"
+    notes: "Human-AI collaborative research."
   - type: article
     title: "Dynamic Spectral Dimension Evolution on Fractals: A PDE Approach"
     authors:
-      - family-names: "Research Engine"
-        given-names: "AI"
+      - family-names: "Researcher"
+        given-names: "Human"
+      - family-names: "2.5 Agent"
+        given-names: "Kimi"
     year: 2026
     status: "in preparation"
+    notes: "Human-AI collaborative research."
   - type: article
     title: "Weak Correspondence between Modular Forms and Fractal Dimensions"
     authors:
-      - family-names: "Research Engine"
-        given-names: "AI"
+      - family-names: "Researcher"
+        given-names: "Human"
+      - family-names: "2.5 Agent"
+        given-names: "Kimi"
     year: 2026
     status: "in preparation"
+    notes: "Human-AI collaborative research."
   - type: article
     title: "Fractal Arithmetic and Grothendieck Group Structure"
     authors:
-      - family-names: "Research Engine"
-        given-names: "AI"
+      - family-names: "Researcher"
+        given-names: "Human"
+      - family-names: "2.5 Agent"
+        given-names: "Kimi"
     year: 2026
     status: "in preparation"
+    notes: "Human-AI collaborative research."
+
+# Research methodology documentation
+notes: >-
+  RESEARCH METHODOLOGY:
+  
+  This project employs a transparent human-AI collaborative paradigm:
+  
+  Human Researcher (Principal Investigator):
+  - Mathematical and physical intuition
+  - Research direction supervision
+  - Quality control and validation
+  - Original hypotheses and data
+  - Final decisions on theory scope
+  
+  Kimi 2.5 Agent (AI Research Assistant):
+  - Mathematical derivation and proof construction
+  - Theory development and推演论证
+  - Software development and numerical validation
+  - Documentation and LaTeX production
+  - Complete research step recording
+  
+  All research steps are honestly documented and publicly available.
+  See: https://github.com/dpsnet/Fixed-4D-Topology/blob/main/docs/Dimensionics-Physics/paper/RESEARCH_METHODOLOGY.md
