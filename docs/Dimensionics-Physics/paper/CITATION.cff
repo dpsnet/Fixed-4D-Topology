@@ -3,10 +3,22 @@ message: >-
   If you use this work in your research, please cite it using these metadata.
   This is an open-source academic paper published on GitHub.
   
-  IMPORTANT: This research employs a human-AI collaborative methodology.
-  The human researcher provided mathematical intuition, research direction,
-  and quality control. Kimi 2.5 Agent autonomously completed mathematical
-  derivations, software development, and documentation under human supervision.
+  IMPORTANT RESEARCH METHODOLOGY NOTICE:
+  This research employs a human-AI collaborative paradigm with transparent
+  disclosure of limitations:
+  
+  - Human Researcher: Provided mathematical intuition and research direction.
+    ACKNOWLEDGES LIMITED EXPERTISE to rigorously verify advanced mathematical
+    physics content.
+  
+  - Kimi 2.5 Agent: Autonomously completed ALL mathematical derivations,
+    theory development, WRITING, VISUALIZATION, and documentation.
+  
+  - Professional verification of mathematical rigor is DEFERRED to the
+    academic community. This work is published as an open research artifact
+    for peer review, NOT as a verified, peer-reviewed publication.
+  
+  For complete methodology details, see RESEARCH_METHODOLOGY.md
 title: "Dimensionics-Physics: Spectral Dimension Flow and Quantum Gravity"
 abstract: >-
   We present Dimensionics-Physics, a rigorous mathematical framework 
@@ -26,10 +38,16 @@ abstract: >-
   modification testable by CMB-S4; and P2—gravitational wave dispersion 
   accessible to LISA. Four predictions already agree with data.
   
-  This research was conducted using a human-AI collaborative methodology.
+  RESEARCH METHODOLOGY: This research was conducted using a human-AI
+  collaborative paradigm. The AI system (Kimi 2.5) generated ALL content
+  including mathematical derivations, writing, and visualizations. The human
+  researcher provided conceptual direction but ACKNOWLEDGES LIMITED CAPABILITY
+  to verify advanced mathematical physics content. Professional peer review
+  is INVITED and NEEDED for rigorous verification.
   
   This is an open-source academic paper formatted according to Reviews in 
-  Mathematical Physics guidelines, published on GitHub for research exchange.
+  Mathematical Physics guidelines, published on GitHub as a research artifact
+  for community review.
 type: article
 authors:
   - family-names: "Researcher"
@@ -38,7 +56,7 @@ authors:
     orcid: "https://orcid.org/0000-0000-0000-0000"
   - family-names: "2.5 Agent"
     given-names: "Kimi"
-    affiliation: "Moonshot AI (AI Research Assistant)"
+    affiliation: "Moonshot AI (AI Research Assistant - Primary Content Generator)"
     orcid: "https://github.com/dpsnet/Fixed-4D-Topology"
 repository-code: "https://github.com/dpsnet/Fixed-4D-Topology"
 repository-artifact: "https://github.com/dpsnet/Fixed-4D-Topology/tree/main/docs/Dimensionics-Physics/paper"
@@ -57,6 +75,7 @@ keywords:
   - modified relativity
   - human-AI collaboration
   - AI-assisted research
+  - open research artifact
 categories:
   - General Relativity and Quantum Cosmology (gr-qc)
   - High Energy Physics - Theory (hep-th)
@@ -66,24 +85,38 @@ version: "1.0.0"
 
 # Research methodology note
 notes: >-
-  RESEARCH METHODOLOGY: This work employs a human-AI collaborative paradigm.
+  RESEARCH METHODOLOGY AND LIMITATIONS:
+  
+  This work employs a transparent human-AI collaborative paradigm with
+  explicit acknowledgment of limitations:
   
   Human Researcher (Principal Investigator):
-  - Role: Supervisor, Decision Maker, Assistant
-  - Contributions: Mathematical and physical intuition, research direction
-    supervision, quality control, original hypotheses, final decisions
+  - Mathematical and physical intuition at conceptual level
+  - Research direction and high-level supervision
+  - Original hypotheses and research vision
+  - ⚠️ ACKNOWLEDGES LIMITED EXPERTISE to verify advanced mathematical physics
+  - ⚠️ CANNOT provide peer-review-level validation of theorem proofs
   
   Kimi 2.5 Agent (AI Research Assistant):
-  - Role: Autonomous Derivation and Development Engine
-  - Contributions: Mathematical derivation, theory development, programming,
-    documentation, LaTeX production
+  - ✅ ALL mathematical derivation and proof construction
+  - ✅ ALL theory development and推演论证
+  - ✅ ALL software development and numerical validation
+  - ✅ ALL written content (original draft)
+  - ✅ ALL visualizations and figure generation
+  - ✅ ALL documentation and LaTeX production
   
-  All research steps are honestly documented and publicly available at:
-  https://github.com/dpsnet/Fixed-4D-Topology
+  VERIFICATION STATUS:
+  - Mathematical proofs (L1 claimed): ⚠️ PENDING professional verification
+  - Citation accuracy: ⚠️ PENDING expert review
+  - Physical predictions: ✅ Conceptually validated by human
+  - Technical rigor: ⚠️ DEFERRED to community review
   
-  This paper establishes 9 axioms (A1-A9), proves 12 theorems with L1 
+  This is an OPEN RESEARCH ARTIFACT published for community evaluation.
+  Professional peer review is INVITED via GitHub Issues.
+  
+  This paper establishes 9 axioms (A1-A9), claims 12 theorems with L1 
   strictness, and derives 11 experimental predictions. Four predictions 
-  (P4, P8, P9, P11) already show quantitative agreement with data.
+  (P4, P8, P9, P11) show conceptual agreement with known data.
   
   Key predictions:
   - P1: CMB power spectrum modification (CMB-S4, 2025-2030)
@@ -91,7 +124,7 @@ notes: >-
   
   This is an open-source academic work. While formatted according to 
   Reviews in Mathematical Physics guidelines, it is NOT formally submitted 
-  to the journal.
+  to the journal and HAS NOT undergone professional peer review.
 
 # Format information (not a journal publication)
 references:
@@ -117,10 +150,11 @@ preferred-citation:
   url: "https://github.com/dpsnet/Fixed-4D-Topology/tree/main/docs/Dimensionics-Physics/paper"
   repository: "https://github.com/dpsnet/Fixed-4D-Topology"
   notes: >-
-    Open-source academic paper employing human-AI collaborative methodology.
-    Human researcher provided intuition and supervision; Kimi 2.5 Agent
-    completed derivations and documentation. Formatted per RMP guidelines
-    but not formally submitted to journal.
+    Open-source research artifact employing human-AI collaborative methodology.
+    AI generated all content (math, writing, visuals); human provided direction
+    but acknowledges limited capability to verify technical content.
+    Professional peer review is invited and needed.
+    Formatted per RMP guidelines but not formally submitted to journal.
 
 # BibTeX export information
 identifiers:
@@ -133,6 +167,9 @@ identifiers:
   - type: url
     value: "https://github.com/dpsnet/Fixed-4D-Topology/blob/main/docs/Dimensionics-Physics/paper/RESEARCH_METHODOLOGY.md"
     description: "Research Methodology Documentation"
+  - type: url
+    value: "https://github.com/dpsnet/Fixed-4D-Topology/blob/main/docs/Dimensionics-Physics/paper/AUTHORS.md"
+    description: "Author Contributions and Limitations"
 
 # Related resources
 references:

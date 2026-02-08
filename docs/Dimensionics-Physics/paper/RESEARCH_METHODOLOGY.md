@@ -2,7 +2,11 @@
 
 ## Overview
 
-This document details the **human-AI collaborative research methodology** employed in the development of Dimensionics-Physics. We maintain complete transparency about the division of labor between human researchers and AI systems.
+This document details the **human-AI collaborative research methodology** employed in the development of Dimensionics-Physics. We maintain complete transparency about:
+- The division of labor between human researchers and AI systems
+- **The limitations of human technical review**
+- The status of content verification
+- The call for professional peer review
 
 ---
 
@@ -11,16 +15,16 @@ This document details the **human-AI collaborative research methodology** employ
 ### Core Principles
 
 1. **Transparency**: All research steps are openly documented and publicly available
-2. **Human Oversight**: The human researcher maintains final authority over research direction and conclusions
-3. **Explicit Attribution**: AI contributions are clearly identified and acknowledged
-4. **Iterative Verification**: Mathematical rigor achieved through human-AI collaborative validation
+2. **Honest Disclosure**: Acknowledging limitations in human technical capability
+3. **Explicit Attribution**: AI contributions are clearly identified as primary content generation
+4. **Community Validation**: Inviting professional review to supplement limited human oversight
 
 ### Research Integrity
 
 This collaboration follows the principle that:
-- **Human** provides intuition, direction, and quality control
-- **AI** provides computational power, systematic derivation, and documentation
-- **Together** they achieve rigorous mathematical physics research
+- **Human** provides intuition, direction, and high-level oversight (within capability limits)
+- **AI** provides computational power, systematic derivation, **writing, and visualization**
+- **Community** is invited to provide the rigorous verification that the human researcher cannot
 
 ---
 
@@ -31,8 +35,9 @@ This collaboration follows the principle that:
 | Aspect | Description |
 |--------|-------------|
 | **Role** | Supervisor, Decision Maker, Assistant |
-| **Expertise** | Mathematical physics intuition, research direction, quality judgment |
-| **Responsibilities** | Conceptualization, hypothesis generation, validation, final decisions |
+| **Expertise** | Basic mathematical physics intuition, research direction |
+| **Limitations** | **Cannot rigorously verify advanced mathematical proofs** |
+| **Responsibilities** | Conceptualization, hypothesis generation, research direction, final decisions |
 
 #### Specific Contributions
 
@@ -44,12 +49,12 @@ This collaboration follows the principle that:
 2. **Research Direction**
    - Selected the theoretical framework (axiomatic approach)
    - Determined the scope of 9 axioms and 12 theorems
-   - Guided the physical interpretation of mathematical results
+   - Guided the physical interpretation at conceptual level
 
-3. **Quality Control**
-   - Reviewed all L1-level proofs for mathematical rigor
-   - Validated physical predictions against known data
-   - Approved final formulations of all theorems
+3. **Quality Control (Limited)**
+   - ⚠️ **Cannot rigorously verify** L1-level mathematical proofs
+   - Validates physical predictions at conceptual level only
+   - Reviews content for coherence and consistency (non-technical)
 
 4. **Original Data and Hypotheses**
    - Provided foundational physical insights
@@ -57,28 +62,40 @@ This collaboration follows the principle that:
    - Established comparison benchmarks with existing theories
 
 5. **Final Decisions**
-   - Determined which results meet publication standards
+   - Determined publication as open research artifact
    - Selected the Reviews in Mathematical Physics format
-   - Decided on open-source publication model
+   - Decided on transparent disclosure of limitations
+
+#### ⚠️ Critical Limitation
+
+**The human researcher acknowledges limited expertise in advanced mathematical physics and cannot provide peer-review-level verification of:**
+- Complex theorem proofs
+- Mathematical derivation steps
+- Technical accuracy of citations
+- Rigorous consistency checks across the theory
+
+**This verification is explicitly deferred to future professional reviewers.**
+
+---
 
 ### 2.2 Kimi 2.5 Agent (AI Research Assistant)
 
 | Aspect | Description |
 |--------|-------------|
 | **System** | Kimi 2.5 (Moonshot AI) |
-| **Role** | Autonomous Derivation and Development Engine |
-| **Capabilities** | Symbolic mathematics, logical reasoning, software development, LaTeX |
+| **Role** | Autonomous Derivation, Development, Writing, and Visualization Engine |
+| **Capabilities** | Symbolic mathematics, logical reasoning, software development, LaTeX, writing, figure generation |
 
 #### Specific Contributions
 
 1. **Mathematical Derivation**
-   - Autonomously derived 12 theorems with L1 strictness
-   - Constructed rigorous proofs for UV fixed point (Theorem 2.1)
+   - Autonomously derived 12 theorems with claimed L1 strictness
+   - Constructed proofs for UV fixed point (Theorem 2.1)
    - Developed effective metric derivation (Theorem 4.1)
    - Formalized all axioms (A1-A9) into precise mathematical statements
 
 2. **Theory Development**
-   - Systematically推演论证 (conducted deductive reasoning) for:
+   - Systematically conducted deductive reasoning for:
      - Modified relativity theory
      - Black hole dimension compression
      - Cosmic dimension evolution
@@ -87,20 +104,26 @@ This collaboration follows the principle that:
 3. **Software Development**
    - Developed numerical validation code (`generate_figures.py`)
    - Implemented beta function integration
-   - Created visualization scripts for all 7 figures
+   - Created visualization scripts
    - Validated predictions against observational data
 
-4. **Documentation**
+4. **Writing - Original Draft** ✅ **AI Primary**
+   - Composed all written content, explanations, and scientific narrative
+   - Structured the 17-page paper with 9 chapters and 2 appendices
+   - Generated the abstract, introduction, and conclusion
+   - Created all Markdown documentation files
+
+5. **Visualization** ✅ **AI Primary**
+   - Designed all 7 figures (concept and implementation)
+   - Created publication-quality PDF figures
+   - Implemented visualization scripts
+   - Selected color schemes and visual styles
+
+6. **Documentation and LaTeX Production**
    - Recorded every research step in version-controlled repositories
    - Converted mathematical content into LaTeX format
    - Generated all citation files (CITATION.cff, CITATION.bib)
-   - Created comprehensive documentation (19 Markdown files)
-
-5. **LaTeX Production**
-   - Typeset complete 17-page paper
-   - Configured theorem environments
-   - Implemented cross-referencing system
-   - Generated publication-quality PDF
+   - Created comprehensive documentation
 
 ---
 
@@ -109,60 +132,78 @@ This collaboration follows the principle that:
 ### 3.1 Iterative Development Cycle
 
 ```
-Human: Provides intuition and direction
+Human: Provides intuition and high-level direction
     ↓
-AI: Develops mathematical formalization
+AI: Develops mathematical formalization, writes content, creates visuals
     ↓
-Human: Reviews and provides feedback
+Human: Reviews at conceptual level (limited technical verification)
     ↓
-AI: Refines derivations and proofs
+AI: Refines based on feedback
     ↓
-Human: Validates final results
+Human: Determines publication as open artifact
     ↓
-AI: Documents and formats
+AI: Finalizes documentation
     ↓
-Both: Publish and share
+Community: Invited for rigorous verification
 ```
 
-### 3.2 Example: Theorem 2.1 Development
+### 3.2 Quality Assurance Status
 
-| Step | Human Input | AI Output |
-|------|-------------|-----------|
-| 1 | "UV fixed point should be $d_s = 2$" | Formalized conjecture with limit statement |
-| 2 | Review of preliminary proof | Identified gaps in convergence argument |
-| 3 | Suggestion to use Lyapunov analysis | Rigorous stability proof construction |
-| 4 | Validation | Final L1-proof documentation |
-
-### 3.3 Quality Assurance
-
-**L1 Strictness Protocol**:
-- AI generates initial proof
-- Human reviews logical structure
-- AI addresses identified issues
-- Both confirm proof meets L1 standards
-- Result published with full derivation history
+| Component | Generated By | Verified By | Status |
+|-----------|--------------|-------------|--------|
+| Mathematical proofs | AI | ⚠️ Limited human review | **Pending professional verification** |
+| Physical predictions | AI | ✅ Human (conceptual) | Conceptually validated |
+| Written content | ✅ AI | ⚠️ Basic human review | AI-primary composition |
+| Visualizations | ✅ AI | ⚠️ Basic human approval | AI-primary design |
+| Citations | AI | ❌ Not rigorously checked | **Pending verification** |
+| Code | AI | ⚠️ Basic human review | Functionally tested |
 
 ---
 
 ## 4. Verification and Validation
 
-### 4.1 Mathematical Verification
+### 4.1 Current Status
 
-| Method | Implementation |
-|--------|----------------|
-| Symbolic checks | AI-assisted symbolic algebra verification |
-| Limit cases | Human-guided boundary condition testing |
-| Cross-validation | Comparison with known results in literature |
-| Consistency checks | Internal consistency of axiom system |
+**⚠️ Important Disclaimer**: The verification described below represents the **claimed** verification process. Due to limited human expertise, **independent professional review is essential**.
 
-### 4.2 Physical Validation
+#### Mathematical Verification (Claimed)
 
-| Prediction | Validation Method |
-|------------|-------------------|
-| P1 (CMB) | Comparison with Planck/SPT data |
-| P2 (GW) | Consistency with LIGO/Virgo bounds |
-| P4 (BH entropy) | Agreement with Bekenstein-Hawking formula |
-| P8-P11 | Cross-check with standard cosmology |
+| Method | Implementation | Actual Status |
+|--------|----------------|---------------|
+| Symbolic checks | AI-assisted symbolic algebra | Generated by AI; not independently verified |
+| Limit cases | Human-guided boundary testing | Conceptual level only |
+| Cross-validation | Comparison with literature | AI-generated; needs expert check |
+| Consistency checks | Internal axiom system check | AI-generated; needs expert check |
+
+#### Physical Validation (Conceptual)
+
+| Prediction | Validation Method | Status |
+|------------|-------------------|--------|
+| P1 (CMB) | Comparison with Planck/SPT | AI analysis; needs expert review |
+| P2 (GW) | Consistency with LIGO/Virgo | AI analysis; needs expert review |
+| P4 (BH entropy) | Agreement with Bekenstein-Hawking | Conceptually validated by human |
+| P8-P11 | Cross-check with cosmology | Conceptually validated by human |
+
+### 4.2 Call for Professional Review
+
+We explicitly invite the physics and mathematics community to verify:
+
+1. **Mathematical Rigor**
+   - Are the 12 theorems correctly proven?
+   - Is the L1 strictness claim accurate?
+   - Are there logical gaps or errors?
+
+2. **Physical Soundness**
+   - Are the predictions physically meaningful?
+   - Are the interpretations consistent with known physics?
+   - Are the experimental tests feasible?
+
+3. **Citation Accuracy**
+   - Are the 84 citations correctly attributed?
+   - Are there missing relevant references?
+   - Are the quoted results accurate?
+
+**Submit reviews at**: https://github.com/dpsnet/Fixed-4D-Topology/issues
 
 ---
 
@@ -173,28 +214,30 @@ Both: Publish and share
 All research artifacts are publicly available:
 - **GitHub Repository**: https://github.com/dpsnet/Fixed-4D-Topology
 - **Commit History**: Complete record of all changes
-- **Issue Tracker**: Discussion of technical decisions
-- **Release Notes**: Documented evolution of the theory
+- **Issue Tracker**: Discussion of technical decisions and known limitations
+- **This Document**: Explicit acknowledgment of capability limitations
 
 ### 5.2 Honest Reporting
 
 This methodology section explicitly acknowledges:
-- Which components were AI-generated
-- Which decisions required human judgment
-- The iterative refinement process
-- Limitations of the collaborative approach
+- AI is the **primary generator** of mathematical content, writing, and visualizations
+- Human review is **limited to conceptual level** and cannot verify technical details
+- Professional verification is **deferred and welcomed**
+- The work is published as an **open research artifact**, not a peer-reviewed paper
 
 ---
 
 ## 6. Comparison with Traditional Research
 
-| Aspect | Traditional | Human-AI Collaborative |
-|--------|-------------|------------------------|
+| Aspect | Traditional | This Human-AI Collaboration |
+|--------|-------------|----------------------------|
+| Content generation | Human expert | AI system (human-directed) |
+| Technical review | Peer review | **Deferred; community invited** |
+| Writing | Human author | **AI composition** |
+| Visualization | Human/team creation | **AI generation** |
 | Derivation speed | Limited by human capacity | Accelerated by AI automation |
 | Documentation | Often post-hoc | Continuous and version-controlled |
-| Reproducibility | Dependent on notes | Complete commit history |
-| Scale of validation | Limited by time | Extensive automated testing |
-| Transparency | Often implicit | Explicitly documented |
+| Transparency | Often implicit | **Explicitly documented including limitations** |
 
 ---
 
@@ -202,57 +245,70 @@ This methodology section explicitly acknowledges:
 
 ### 7.1 Authorship
 
-- **Human Researcher**: Principal investigator, responsible for research integrity
-- **AI System**: Acknowledged as computational tool, not co-author in traditional sense
-- **Attribution**: Clear documentation of AI contributions in methodology
+- **Human Researcher**: Principal investigator, responsible for research direction within capability limits
+- **AI System**: Acknowledged as **primary content generator** for mathematics, writing, and visuals
+- **Attribution**: Clear documentation that AI generated most technical content
+- **Limitation Disclosure**: Honest statement that human cannot verify all technical claims
 
 ### 7.2 Research Integrity
 
-- All claims are verifiable through the public repository
-- No falsification or fabrication (AI-generated content is explicitly labeled)
-- Mathematical proofs follow standard logical rigor
-- Physical predictions are testable
+- All claims are **presented as open research artifacts** for community validation
+- AI-generated content is **explicitly labeled**
+- Mathematical proofs are **claimed but not independently verified**
+- Physical predictions are **conceptually sound but technically unverified**
 
 ### 7.3 Open Science
 
 - Full source code available
 - Complete derivation histories preserved
-- Transparent about AI assistance
+- Transparent about AI assistance **and human limitations**
 - Inviting peer review and collaboration
 
 ---
 
 ## 8. Future Directions
 
-### 8.1 Methodology Evolution
+### 8.1 Immediate Needs
 
-- Refine human-AI interaction protocols
-- Develop better verification tools
-- Expand to other areas of mathematical physics
-- Create standards for AI-assisted research documentation
+1. **Professional Verification**
+   - Mathematical physicist review of theorem proofs
+   - Cosmologist review of predictions P1-P11
+   - Mathematician review of formal structure
+
+2. **Citation Audit**
+   - Verify accuracy of all 84 citations
+   - Check for missing relevant references
+   - Validate quotation accuracy
+
+3. **Code Review**
+   - Independent verification of numerical validation
+   - Check figure generation scripts
+   - Validate data analysis
 
 ### 8.2 Community Engagement
 
-- Invite independent verification of proofs
-- Welcome contributions to the framework
-- Document lessons learned for other researchers
-- Share best practices for human-AI collaboration
+- Establish formal peer review process via GitHub
+- Create issue templates for different types of review
+- Document lessons learned for other AI-assisted research
+- Share best practices for transparent disclosure
 
 ---
 
 ## 9. Conclusion
 
-The human-AI collaborative methodology employed in this research demonstrates that:
+The research methodology employed in Dimensionics-Physics represents an **honest and transparent approach to AI-assisted research**:
 
-1. **Rigorous mathematics** can be achieved through systematic AI derivation under human supervision
-2. **Transparency** is maintained by documenting all research steps
-3. **Quality control** is ensured through iterative human validation
-4. **Open science** principles are advanced by making the collaboration model explicit
+1. **Primary AI generation**: Most content (math, writing, visuals) is AI-generated
+2. **Limited human oversight**: Human provides direction but cannot verify technical details
+3. **Explicit limitations**: We openly disclose what we cannot verify
+4. **Community invitation**: We defer rigorous verification to the professional community
+5. **Open research artifact**: Published for community evaluation, not as finished work
 
-This methodology represents a **new paradigm for theoretical physics research** in the AI era, where human creativity and AI computational power combine to explore complex mathematical structures.
+This methodology acknowledges a **new reality in AI-assisted research**: when AI capabilities exceed human verification capacity, transparency and community involvement become essential safeguards.
 
 ---
 
-*Document Version: 1.0*  
+*Document Version: 2.0*  
 *Last Updated: February 2026*  
-*Corresponding Repository: https://github.com/dpsnet/Fixed-4D-Topology*
+*Corresponding Repository: https://github.com/dpsnet/Fixed-4D-Topology*  
+*Review Invitations: https://github.com/dpsnet/Fixed-4D-Topology/issues*
