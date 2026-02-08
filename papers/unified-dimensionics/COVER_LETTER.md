@@ -15,20 +15,24 @@ We are pleased to submit our manuscript **"Dimensionics: A Unified Mathematical 
 
 ## Summary of Contribution
 
-This paper presents a comprehensive mathematical framework unifying the theory of dimension across eleven research directions spanning fractal geometry, spectral theory, modular forms, arithmetic geometry, Sobolev analysis, complexity theory, and variational principles. Our work establishes "dimensionics" as a rigorous mathematical discipline with both deep theoretical foundations and strong empirical validation.
+This paper presents a comprehensive mathematical framework unifying the theory of dimension across twelve research directions spanning fractal geometry, spectral theory, modular forms, arithmetic geometry, Sobolev analysis, complexity theory, variational principles, quantum dimensions, network geometry, random fractals, and machine learning. Our work establishes "dimensionics" as a rigorous mathematical discipline with both deep theoretical foundations and strong empirical validation.
 
 ### Key Contributions:
 
 1. **Unified Theoretical Framework**
-   We prove three fusion theorems (FE-T1, FB-T2, FG-T4) that bridge algebraic (Grothendieck groups), analytic (Sobolev spaces), and variational approaches to dimension. These theorems reveal deep structural connections previously unrecognized in the literature.
+   We prove four fusion theorems (FE-T1, FB-T2, FG-T4, FA-T2) that bridge spectral-effective, geometric-functional, functional-master, and spectral-PDE approaches to dimension. The FA-T2 theorem predicts observable logarithmic-periodic oscillations in physical systems with complex dimensions.
 
 2. **Master Equation for Dimension Selection**
    We establish a universal variational principle governing dimension selection:
    $$d_{\text{eff}} = \arg\min_d \left[ E(d) - T \cdot S(d) + \Lambda(d) \right]$$
    This equation unifies seemingly disparate dimension concepts across mathematics and physics.
 
-3. **Large-Scale Empirical Validation**
-   We present the first comprehensive empirical study of network dimensions, analyzing **7 real-world networks with 2,107,149 nodes**. Our analysis reveals a dimension hierarchy (Infrastructure > Academic > Social/Bio > Communication) and identifies significant simulated data distortion: standard network models produce simulated dimensions 50-400% lower than empirical measurements.
+3. **Large-Scale Empirical and Numerical Validation**
+   We present comprehensive validation across multiple domains:
+   - **Network Analysis**: 7 real-world networks with 2,107,149 nodes revealing dimension hierarchy (Infrastructure > Academic > Social/Bio > Communication)
+   - **Quantum Simulation**: iTEBD validation with <1% error vs CFT (d_eff = 1.174 vs 1.167)
+   - **Percolation**: 3D Monte Carlo with ~1% error vs literature (p_c = 0.315 vs 0.3116)
+   - **Model Distortion Discovery**: Standard network models produce simulated dimensions 50-400% lower than empirical measurements
 
 ## Why Reviews in Mathematical Physics?
 
@@ -41,6 +45,8 @@ We believe our manuscript is ideally suited for *Reviews in Mathematical Physics
 3. **Interdisciplinary Scope**: The work bridges pure mathematics (algebra, analysis, number theory) with physical applications, reflecting the journal's mission.
 
 4. **Review Character**: At ~80-100 pages with comprehensive coverage of the field, this work serves as a definitive reference, appropriate for a review journal.
+
+5. **Testable Predictions**: We present 11 concrete experimental predictions across cosmology (CMB spectral corrections), gravitational physics (GW dispersion), condensed matter (Moiré superlattices), network science, and quantum computing
 
 ## Impact and Significance
 

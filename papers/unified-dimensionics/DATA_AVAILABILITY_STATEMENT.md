@@ -121,7 +121,25 @@ Key components:
 - `network_data_loader.py`: Data loading utilities
 - `analyze_large_network.py`: Large-scale network analysis
 
-### Validation
+### Phase 5 Numerical Validation
+
+**Quantum Dimension (H Direction)**:
+- **Location**: `extended_research/H_quantum_dimension/numerics/`
+- **Method**: iTEBD (infinite Time-Evolving Block Decimation)
+- **System**: Transverse-field Ising model (infinite chain)
+- **Result**: d_eff = 1.174 at critical point (h/J = 1.0)
+- **Validation**: <1% error vs CFT theoretical value (1.167)
+- **Implementation**: `itebd_pure_python.py` (pure Python, no numpy required)
+
+**Random Fractals (J Direction)**:
+- **Location**: `extended_research/J_random_fractals/simulations/`
+- **Method**: 3D site percolation Monte Carlo
+- **System**: L³ lattice with Hoshen-Kopelman cluster labeling
+- **Result**: p_c = 0.315 (critical probability)
+- **Validation**: ~1% error vs literature value (0.3116)
+- **Implementation**: `percolation_3d_pure.py` (pure Python)
+
+### Unit Tests
 
 **Location**: `tests/`
 
@@ -139,14 +157,20 @@ Key components:
 git clone https://github.com/dpsnet/Fixed-4D-Topology.git
 cd Fixed-4D-Topology
 
-# Install dependencies
-pip install numpy scipy matplotlib pandas
+# Automated setup (recommended)
+python setup_env.py
+source venv/bin/activate  # Linux/macOS
+# or: venv\Scripts\activate  # Windows
+
+# Or manual setup
+pip install -r requirements.txt
 
 # Run tests
-python -m pytest tests/test_network_dimension.py -v
+python -m pytest tests/ -v
 
-# Run example
-python examples/example_network_analysis.py
+# Run numerical validation
+python extended_research/H_quantum_dimension/numerics/itebd_pure_python.py
+python extended_research/J_random_fractals/simulations/percolation_3d_pure.py
 ```
 
 ### Jupyter Notebooks
@@ -244,4 +268,4 @@ For questions about data access or reproduction:
 ---
 
 **Date**: February 8, 2026  
-**Version**: 1.0
+**Version**: 2.0 (Framework v3.0)
