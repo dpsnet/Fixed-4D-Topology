@@ -1,11 +1,9 @@
 cff-version: 1.2.0
-message: "If you use this work, please cite it using these metadata."
+message: >-
+  If you use this work in your research, please cite it using these metadata.
+  This is an open-source academic paper published on GitHub.
 title: "Dimensionics-Physics: Spectral Dimension Flow and Quantum Gravity"
-authors:
-  - family-names: "Dimensionics"
-    given-names: "Research Initiative"
-    # Replace with actual author names when finalized
-abstract: >
+abstract: >-
   We present Dimensionics-Physics, a rigorous mathematical framework 
   treating spacetime dimension as a dynamical variable that flows with 
   energy scale. Building upon the Fixed-4D-Topology paradigm, we establish 
@@ -22,13 +20,18 @@ abstract: >
   We derive 11 experimental predictions, including: P1—CMB power spectrum 
   modification testable by CMB-S4; and P2—gravitational wave dispersion 
   accessible to LISA. Four predictions already agree with data.
+  
+  This is an open-source academic paper formatted according to Reviews in 
+  Mathematical Physics guidelines, published on GitHub for research exchange.
 type: article
-journal: "Reviews in Mathematical Physics"
-year: 2026
-month: 3
-doi: "10.1142/S0129055X[XXXXXX]"  # To be assigned upon publication
-url: "https://github.com/dpsnet/Fixed-4D-Topology/tree/main/docs/Dimensionics-Physics/paper"
+authors:
+  - family-names: "Research Initiative"
+    given-names: "Dimensionics"
+    affiliation: "Fixed-4D-Topology Project"
 repository-code: "https://github.com/dpsnet/Fixed-4D-Topology"
+repository-artifact: "https://github.com/dpsnet/Fixed-4D-Topology/tree/main/docs/Dimensionics-Physics/paper"
+url: "https://github.com/dpsnet/Fixed-4D-Topology/blob/main/docs/Dimensionics-Physics/paper/README.md"
+license: CC-BY-4.0
 keywords:
   - spectral dimension
   - quantum gravity
@@ -38,17 +41,70 @@ keywords:
   - dimensional reduction
   - black hole thermodynamics
   - holographic principle
-license: CC-BY-4.0
+  - dimension flow
+  - modified relativity
+categories:
+  - General Relativity and Quantum Cosmology (gr-qc)
+  - High Energy Physics - Theory (hep-th)
+  - Mathematical Physics (math-ph)
+date-released: "2026-02-08"
+version: "1.0.0"
+
+# Format information (not a journal publication)
+references:
+  - type: article
+    title: "Reviews in Mathematical Physics"
+    publisher:
+      name: "World Scientific Publishing"
+    notes: "Format guidelines followed; not formally submitted"
+
+# Preferred citation format
 preferred-citation:
   type: article
-  authors:
-    - family-names: "Dimensionics"
-      given-names: "Research Initiative"
   title: "Dimensionics-Physics: Spectral Dimension Flow and Quantum Gravity"
-  journal: "Reviews in Mathematical Physics"
+  authors:
+    - family-names: "Research Initiative"
+      given-names: "Dimensionics"
   year: 2026
-  volume: "XX"  # To be assigned
-  issue: "X"    # To be assigned
-  start: "1"    # To be assigned
-  end: "60"     # To be assigned
-  doi: "10.1142/S0129055X[XXXXXX]"
+  month: 2
+  url: "https://github.com/dpsnet/Fixed-4D-Topology/tree/main/docs/Dimensionics-Physics/paper"
+  repository: "https://github.com/dpsnet/Fixed-4D-Topology"
+  notes: "Open-source academic paper. Formatted per RMP guidelines but not formally submitted to journal."
+
+# BibTeX export information
+identifiers:
+  - type: url
+    value: "https://github.com/dpsnet/Fixed-4D-Topology"
+    description: "GitHub Repository"
+  - type: url
+    value: "https://github.com/dpsnet/Fixed-4D-Topology/tree/main/docs/Dimensionics-Physics/paper"
+    description: "Paper Directory"
+
+# Related resources
+references:
+  - type: software
+    title: "Fixed-4D-Topology Framework"
+    authors:
+      - family-names: "Research Initiative"
+        given-names: "Dimensionics"
+    url: "https://github.com/dpsnet/Fixed-4D-Topology"
+    notes: "Parent repository containing the theoretical framework"
+
+# Contact information
+contact:
+  - name: "Dimensionics Research Initiative"
+    website: "https://github.com/dpsnet/Fixed-4D-Topology/issues"
+
+# Additional notes
+notes: >-
+  This paper establishes 9 axioms (A1-A9), proves 12 theorems with L1 
+  strictness, and derives 11 experimental predictions. Four predictions 
+  (P4, P8, P9, P11) already show quantitative agreement with data.
+  
+  Key predictions:
+  - P1: CMB power spectrum modification (CMB-S4, 2025-2030)
+  - P2: Gravitational wave dispersion (LISA, 2030+)
+  
+  This is an open-source academic work. While formatted according to 
+  Reviews in Mathematical Physics guidelines, it is NOT formally submitted 
+  to the journal.

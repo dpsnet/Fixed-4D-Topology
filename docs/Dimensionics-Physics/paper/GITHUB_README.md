@@ -129,16 +129,25 @@ If you use this work in your research, please cite:
 
 ```bibtex
 @article{dimensionics2026,
-  title={Dimensionics-Physics: Spectral Dimension Flow and Quantum Gravity},
-  author={Dimensionics Research Initiative},
-  journal={Reviews in Mathematical Physics},
-  year={2026},
-  publisher={World Scientific},
-  doi={10.1142/S0129055X[XXXXXX]}
+  title = {Dimensionics-Physics: Spectral Dimension Flow and Quantum Gravity},
+  author = {{Dimensionics Research Initiative}},
+  year = {2026},
+  url = {https://github.com/dpsnet/Fixed-4D-Topology/tree/main/docs/Dimensionics-Physics/paper},
+  note = {Open-source academic paper. Formatted per RMP guidelines but not formally submitted to journal.}
 }
 ```
 
-Or use the [CITATION.cff](CITATION.cff) file.
+### Citation Options
+
+- **[CITATION.cff](CITATION.cff)** - Standard citation file format
+- **[CITATION.bib](CITATION.bib)** - BibTeX entries
+- **[CFF Validator](https://citation-file-format.github.io/cff-initializer-javascript/)** - Validate CFF file
+
+### Citation Information
+
+- **Format Standard**: Reviews in Mathematical Physics guidelines
+- **Publication Type**: Open-source academic paper on GitHub
+- **License**: CC-BY 4.0 (free to use with attribution)
 
 ---
 
