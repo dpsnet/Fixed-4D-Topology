@@ -4,11 +4,24 @@ Thank you for your interest in contributing to the Fixed 4D Topology project! Th
 
 ## 🎯 Research Context
 
-This project represents original mathematical research with four main theory threads:
+This project represents original mathematical research with multiple theory threads:
+
+### Core Theory Threads
 - **T1**: Cantor Class Fractal Representation (L1 strict)
 - **T2**: Spectral Dimension PDE (L1-L2)
 - **T3**: Modular-Fractal Weak Correspondence (L2)
 - **T4**: Fractal Arithmetic (L2-L3)
+
+### Extended Research Directions
+- **H**: Quantum Dimension (MPS/iTEBD spin chains)
+- **I**: Network Geometry (2.1M nodes empirical study)
+- **J**: Random Fractals (3D percolation)
+
+### Open Source Paper
+📄 **[Dimensionics-Physics](docs/Dimensionics-Physics/paper/)**: Rigorous axiomatic framework for quantum gravity
+- 9 axioms (A1-A9), 12 theorems (L1 strict), 11 predictions
+- Open source on GitHub, formatted per RMP guidelines
+- [Read the PDF](docs/Dimensionics-Physics/paper/Dimensionics_Physics.pdf) | [LaTeX Source](docs/Dimensionics-Physics/paper/Dimensionics_Physics.tex)
 
 Contributions should respect the **layered strictness approach**:
 - L1: 100% rigorous proofs required
@@ -22,17 +35,29 @@ Contributions should respect the **layered strictness approach**:
 - Include minimal reproducible example
 - Specify Python version and OS
 
-### 2. Numerical Improvements
+### 2. Paper Improvements
+The [Dimensionics-Physics paper](docs/Dimensionics-Physics/paper/) welcomes:
+- Typos and grammar fixes
+- Clarifications of mathematical content
+- Additional citations to related work
+- Improvements to figures and visualizations
+- Suggestions for new predictions or validations
+
+See [paper/CONTRIBUTING.md](docs/Dimensionics-Physics/paper/CONTRIBUTING.md) for paper-specific guidelines.
+
+### 3. Numerical Improvements
 - Algorithm optimizations
 - Better convergence methods
 - Additional test cases
+- Validation of predictions (P1-P11)
 
-### 3. Documentation
+### 4. Documentation
 - Clarifications of mathematical content
 - Additional examples
 - Tutorial notebooks
+- Translations (if applicable)
 
-### 4. New Theory Extensions
+### 5. New Theory Extensions
 - Must follow strictness guidelines
 - Requires explicit documentation of assumptions
 - Needs numerical verification
@@ -148,6 +173,17 @@ def compute_dimension(
 
 ```
 docs/
+├── Dimensionics-Physics/          # ⭐ Open source paper (RMP format)
+│   └── paper/                     # Complete LaTeX source + PDF
+│       ├── Dimensionics_Physics.tex
+│       ├── Dimensionics_Physics.pdf
+│       ├── chapters/              # 9 core chapters
+│       ├── appendices/            # 2 appendices
+│       └── figures/               # 7 PDF figures
+├── ag-integration/                # A~G unified framework docs
+│   ├── UNIFIED_FRAMEWORK_INDEX.md
+│   ├── SURVEY_PAPER_FULL.md
+│   └── INTEGRATION_WITH_FIXED_4D_TOPOLOGY.md
 ├── T1-cantor-representation/      # T1 theory paper
 ├── T2-spectral-dimension-pde/     # T2 theory paper
 ├── T3-modular-fractal-correspondence/  # T3 theory paper
