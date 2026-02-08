@@ -36,6 +36,15 @@ preferred-citation:
   url: "https://arxiv.org/abs/..."
 references:
   - type: article
+    title: "Dimensionics-Physics: Spectral Dimension Flow and Quantum Gravity"
+    authors:
+      - family-names: "Research Initiative"
+        given-names: "Dimensionics"
+    year: 2026
+    url: "https://github.com/dpsnet/Fixed-4D-Topology/tree/main/docs/Dimensionics-Physics/paper"
+    repository: "https://github.com/dpsnet/Fixed-4D-Topology"
+    notes: "Open-source academic paper. 9 axioms, 12 theorems, 11 predictions. Formatted per RMP guidelines but not formally submitted to journal."
+  - type: article
     title: "Dynamic Spectral Dimension Evolution on Fractals: A PDE Approach"
     authors:
       - family-names: "Research Engine"
