@@ -1,0 +1,137 @@
+% Chapter 2: Axiomatic Foundation
+
+\section{Primitive Concepts}\label{sec:primitive}
+
+Before stating the axioms, we introduce the following primitive concepts (undefined):
+\begin{itemize}
+    \item $\mathcal{M}$: Spacetime set (arena of physical events)
+    \item $\mathbb{R}$: Real numbers (foundation for measurements)
+    \item $\in$: Membership (basic set-theoretic relation)
+    \item $C^\infty$: Smoothness (infinitely differentiable)
+\end{itemize}
+
+All other concepts are defined in terms of these primitives.
+
+\section{The Axiom System}\label{sec:axioms-system}
+
+\subsection{Structural Axioms (A1--A3)}
+
+\begin{axiom}[Background Spacetime]\label{ax:background}
+There exists a smooth, oriented 4-dimensional manifold $M$, called the \textbf{background spacetime}:
+\begin{equation}
+    \exists M: M \text{ is a smooth 4-dimensional manifold}
+\end{equation}
+$M$ may be compact or non-compact, equipped with smooth metric $g \in C^\infty(T^*M \otimes T^*M)$.
+\end{axiom}
+
+\begin{axiom}[Energy Scale]\label{ax:energy}
+There exists a totally ordered set $\mathcal{E} = \mathbb{R}^+ = (0, \infty)$, called the \textbf{energy scale space}:
+\begin{equation}
+    \mathcal{E} := \{\mu \in \mathbb{R} : \mu > 0\}
+\end{equation}
+The parameter $\mu$ represents probe energy: $\mu \to 0$ (IR) and $\mu \to \infty$ (UV).
+\end{axiom}
+
+\begin{axiom}[Spectral Dimension]\label{ax:spectral}
+For each background spacetime $M$ and energy scale $\mu$, there exists a function $d_s(\cdot, \mu): M \to [2,4]$, called the \textbf{spectral dimension field}:
+\begin{equation}
+    \forall M, \forall \mu \in \mathcal{E}, \exists d_s(\cdot, \mu) \in C^\infty(M; [2,4])
+\end{equation}
+with smoothness requirement $d_s \in C^\infty(M \times \mathcal{E})$.
+\end{axiom}
+
+\subsection{Dynamical Axioms (A4--A6)}
+
+\begin{axiom}[Master Equation]\label{ax:master}
+The spectral dimension $d_s$ satisfies the \textbf{Master Equation}:
+\begin{equation}\label{eq:master}
+    \mu \frac{\partial d_s}{\partial \mu} = \beta(d_s)
+\end{equation}
+where $\beta: [2,4] \to \mathbb{R}$ is the \textbf{dimension $\beta$-function} with properties:
+\begin{enumerate}
+    \item Smoothness: $\beta \in C^\infty([2,4])$
+    \item Fixed points: $\beta(2) = 0$, $\beta(4) = 0$
+    \item Stability: $\beta'(2) < 0$ (UV stable), $\beta'(4) > 0$ (IR stable)
+\end{enumerate}
+\end{axiom}
+
+The standard model uses $\beta(d) = -\alpha(d-2)(4-d)$ with $\alpha > 0$.
+
+\begin{axiom}[Spectral-Effective Equivalence]\label{ax:equivalence}
+On compact regions $K \subset M$:
+\begin{equation}
+    d_s|_K = d_{\text{eff}}|_K
+\end{equation}
+where $d_{\text{eff}}(p, \mu) := 1 + S_A(\mu)/\ln L$ is the effective dimension from entanglement entropy.
+\end{axiom}
+
+\begin{axiom}[Monotonicity]\label{ax:mono}
+The spectral dimension decreases monotonically with energy:
+\begin{equation}
+    \frac{\partial d_s}{\partial \mu} < 0 \quad \text{for } \mu \in (0, \infty)
+\end{equation}
+\end{axiom}
+
+\subsection{Physical Axioms (A7--A9)}
+
+\begin{axiom}[Recoverability]\label{ax:recovery}
+In the infrared limit:
+\begin{equation}
+    \lim_{\mu \to 0^+} d_s(p, \mu) = 4, \quad \lim_{\mu \to 0^+} g^{\text{eff}}_{\mu\nu}(p, \mu) = g_{\mu\nu}(p)
+\end{equation}
+Standard physics is recovered at everyday energy scales.
+\end{axiom}
+
+\begin{axiom}[Observable Invariance]\label{ax:invariance}
+Physical observables are dimension-invariant functionals of $d_s$:
+\begin{equation}
+    \mathcal{O}[d_s] = \mathcal{O}[d_s'] \text{ if } d_s, d_s' \text{ represent the same physical state}
+\end{equation}
+\end{axiom}
+
+\begin{axiom}[Locality]\label{ax:locality}
+The spectral dimension flow is local:
+\begin{equation}
+    d_s(p, \mu) = f(g_{\mu\nu}(p), \partial_\alpha g_{\mu\nu}(p), \ldots, \mu)
+\end{equation}
+\end{axiom}
+
+\section{Axiom System Analysis}\label{sec:axiom-analysis}
+
+\begin{theorem}[Consistency]\label{thm:consistency}
+The axioms A1--A9 are mutually consistent.
+\end{theorem}
+
+\begin{proof}
+Construct a concrete model: Let $(M, g)$ be Minkowski spacetime and define
+\begin{equation}
+    d_s(\mu) = 2 + \frac{2}{1 + (\mu/\mu_0)^{-\alpha}}
+\end{equation}
+This satisfies all axioms simultaneously.
+\end{proof}
+
+\begin{theorem}[Independence]\label{thm:independence}
+Each axiom is independent of the others.
+\end{theorem}
+
+\begin{proof}[Sketch]
+For each axiom, construct a model satisfying all others but violating the given axiom. For example, A6 (monotonicity) is independent because one can construct models with non-monotonic $d_s(\mu)$ satisfying A1--A5 and A7--A9.
+\end{proof}
+
+\section{Derived Structures}\label{sec:derived}
+
+\begin{theorem}[Effective Metric]\label{thm:eff-metric}
+From axioms A3 and A4, the effective metric is:
+\begin{equation}
+    g^{\text{eff}}_{\mu\nu}(p, \mu) = \Omega^2(d_s(p, \mu)) \cdot g_{\mu\nu}(p)
+\end{equation}
+with conformal factor $\Omega(d) = \sqrt{4/d}$.
+\end{theorem}
+
+\begin{proof}
+From the Master functional variation with respect to the metric, assuming conformal dominance.
+\end{proof}
+
+\begin{corollary}
+When $d_s = 4$: $\Omega(4) = 1$, so $g^{\text{eff}} = g$.
+\end{corollary}

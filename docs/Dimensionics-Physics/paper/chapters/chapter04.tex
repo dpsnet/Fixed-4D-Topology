@@ -1,0 +1,78 @@
+% Chapter 4: Dimension-Corrected Relativity
+
+\section{Effective Metric Construction}\label{sec:eff-metric}
+
+From the Master functional variation (Axiom~\ref{ax:master}):
+\begin{theorem}[Effective Metric]\label{thm:effective-metric}
+\begin{equation}
+    g^{\text{eff}}_{\mu\nu}(x, \mu) = \Omega^2(d_s(x, \mu)) \cdot g_{\mu\nu}(x)
+\end{equation}
+with conformal factor:
+\begin{equation}
+    \Omega(d) = \sqrt{\frac{4}{d}}
+\end{equation}
+\end{theorem}
+
+\textbf{Explicit form}: $g^{\text{eff}}_{\mu\nu} = \frac{4}{d_s} g_{\mu\nu}$.
+
+\textbf{Behavior}:
+\begin{itemize}
+    \item $d_s = 4$: $\Omega = 1$ (standard metric)
+    \item $d_s = 3$: $\Omega \approx 1.15$ (15\% dilation)
+    \item $d_s = 2$: $\Omega = \sqrt{2}$ (41\% dilation)
+\end{itemize}
+
+\section{Modified Lorentz Transformations}\label{sec:lorentz}
+
+\subsection{Group Structure}
+
+\begin{definition}[Modified Lorentz Group]
+$SO(3,1; d_s)$ consists of transformations $\Lambda$ satisfying:
+\begin{equation}
+    \Lambda^T \eta^{\text{eff}}(d_s) \Lambda = \eta^{\text{eff}}(d_s)
+\end{equation}
+where $\eta^{\text{eff}}_{\mu\nu}(d_s) = \Omega^2(d_s) \cdot \text{diag}(-1, 1, 1, 1)$.
+\end{definition}
+
+\begin{theorem}[Group Axioms]\label{thm:group}
+$SO(3,1; d_s)$ forms a Lie group.
+\end{theorem}
+
+\begin{proof}
+\textbf{Closure}: If $\Lambda_1, \Lambda_2 \in SO(3,1; d_s)$, then:
+\begin{equation}
+    (\Lambda_1\Lambda_2)^T \eta^{\text{eff}} (\Lambda_1\Lambda_2) = \Lambda_2^T \eta^{\text{eff}} \Lambda_2 = \eta^{\text{eff}}
+\end{equation}
+
+\textbf{Inverse}: $\Lambda^{-1} = \eta^{\text{eff}} \Lambda^T \eta^{\text{eff}} \in SO(3,1; d_s)$.
+
+Associativity and identity follow from matrix properties.
+\end{proof}
+
+\subsection{Effective Speed of Light}
+
+The effective speed of light in dimension $d_s$:
+\begin{equation}
+    c_{\text{eff}}(d_s) = c \cdot \Omega(d_s) = c\sqrt{\frac{4}{d_s}}
+\end{equation}
+
+This leads to modified kinematic effects.
+
+\section{Gravitational Wave Dispersion (P2)}\label{sec:p2}
+
+\begin{theorem}[P2: GW Dispersion]\label{thm:p2}
+In the effective metric, gravitational waves exhibit dispersion:
+\begin{equation}\label{eq:p2}
+    \omega^2 = c^2 k^2 \left[1 + \frac{\beta_0}{2}\left(\frac{\hbar\omega}{E_{\text{Pl}}}\right)^{\alpha}\right]
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+From effective metric propagation with $d_s(E) = 4 - \beta_0(E/E_{\text{Pl}})^{\alpha}$, expand to first order.
+\end{proof}
+
+\textbf{Observable effects}:
+\begin{itemize}
+    \item Binary merger GWs ($f \sim 100$ Hz): $\Delta v_g/c \sim 10^{-56}$
+    \item High-redshift GRBs ($z \sim 8$): Time delay $\Delta t \sim 10^{-3}$ s (detectable!)
+\end{itemize}

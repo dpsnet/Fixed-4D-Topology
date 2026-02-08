@@ -1,0 +1,52 @@
+% Chapter 6: Cosmology
+
+\section{Cosmic Dimension Evolution}\label{sec:cosmic-evolution}
+
+Applying the Master Equation to FLRW cosmology with $\mu \propto 1/a(t)$:
+\begin{equation}
+    \frac{dd_s}{dt} = -\frac{1}{\tau} \cdot \frac{(d_s-2)(4-d_s)}{d_s}
+\end{equation}
+
+\begin{theorem}[Cosmic Dimension Evolution]\label{thm:cosmic}
+\begin{equation}\label{eq:cosmic-dim}
+    d_s(t) = 2 + \frac{2}{1 + \exp\left(-\frac{t-t_c}{\tau}\right)}
+\end{equation}
+where $t_c$ is the dimensional phase transition time and $\tau \sim 10^{-43}$ s.
+\end{theorem}
+
+\textbf{Behavior}:
+\begin{itemize}
+    \item Early ($t \ll t_c$): $d_s \to 2$ (quantum gravity regime)
+    \item Transition ($t = t_c$): $d_s = 3$
+    \item Late ($t \gg t_c$): $d_s \to 4$ (classical regime)
+\end{itemize}
+
+\section{CMB Power Spectrum Correction (P1)}\label{sec:p1}
+
+\begin{theorem}[P1: CMB Power Spectrum]\label{thm:p1}
+\begin{equation}\label{eq:p1}
+    C_\ell = C_\ell^{\Lambda\text{CDM}} \cdot \left(\frac{\ell}{\ell_*}\right)^{4-d_s(t_{\text{CMB}})}
+\end{equation}
+where $\ell_* \approx 3000$.
+\end{theorem}
+
+\textbf{Quantitative prediction}: For $d_s(t_{\text{CMB}}) = 4 - \epsilon$ with $\epsilon \sim 10^{-3}$:
+\begin{equation}
+    \frac{\Delta C_\ell}{C_\ell} \sim 10^{-3} \text{ at } \ell > 3000
+\end{equation}
+
+\textbf{Testability}: CMB-S4 (2025-2030) can detect this with SNR $\sim$ 10.
+
+\section{Phase Transition Dynamics}\label{sec:phase}
+
+The dimensional phase transition at $t_c$ exhibits critical behavior:
+\begin{equation}
+    d_s(t) - 3 \sim |t - t_c|^{\beta}
+\end{equation}
+with mean-field exponent $\beta = 1$.
+
+Entropy production during the transition:
+\begin{equation}
+    \dot{S} = \Gamma \left(\frac{\partial \mathcal{F}}{\partial d_s}\right)^2 \geq 0
+\end{equation}
+ensuring consistency with the second law.

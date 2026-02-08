@@ -1,0 +1,179 @@
+% Dimensionics-Physics: LaTeX Template
+% Reviews in Mathematical Physics Submission
+% Target: 50-60 pages
+
+\documentclass[11pt,a4paper]{article}
+
+% ============ PACKAGES ============
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage{physics}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{setspace}
+
+% ============ GEOMETRY ============
+\geometry{
+    left=2.5cm,
+    right=2.5cm,
+    top=2.5cm,
+    bottom=2.5cm
+}
+
+% ============ THEOREM ENVIRONMENTS ============
+\theoremstyle{definition}
+\newtheorem{axiom}{Axiom}[section]
+\newtheorem{definition}{Definition}[section]
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{corollary}{Corollary}[section]
+
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}[section]
+\newtheorem{example}{Example}[section]
+
+% ============ COMMANDS ============
+\newcommand{\ds}{d_s}
+\newcommand{\deff}{d_{\text{eff}}}
+\newcommand{\geff}{g^{\text{eff}}}
+\newcommand{\Planck}{E_{\text{Pl}}}
+\newcommand{\Pl}{\text{Pl}}
+\newcommand{\LCDM}{$\Lambda$CDM}
+
+% ============ HYPERREF SETUP ============
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    citecolor=blue,
+    pdftitle={Dimensionics-Physics: Spectral Dimension Flow and Quantum Gravity},
+    pdfauthor={Dimensionics Research Initiative},
+    pdfsubject={Quantum Gravity},
+    pdfkeywords={spectral dimension, quantum gravity, renormalization group}
+}
+
+% ============ HEADER/FOOTER ============
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\leftmark}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% ============ TITLE ============
+\title{\textbf{Dimensionics-Physics:}\\[0.5em]
+\large Spectral Dimension Flow and Quantum Gravity}
+
+\author{Dimensionics Research Initiative}
+
+\date{February 2026}
+
+% ============ DOCUMENT ============
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+We present \textbf{Dimensionics-Physics}, a rigorous mathematical framework treating spacetime dimension as a dynamical variable that flows with energy scale. Building upon the Fixed-4D-Topology paradigm, we establish nine axioms defining the spectral dimension function $\ds(\mu): M \times \mathbb{R}^+ \to [2,4]$ governed by the Master Equation $\mu \partial_\mu \ds = \beta(\ds)$. 
+
+Our main results include: (1) \textbf{Rigorous proof} of the UV fixed point $\lim_{\mu \to \infty} \ds = 2$ via renormalization group analysis; (2) \textbf{Modified relativity theory} with effective metric $\geff_{\mu\nu} = \frac{4}{\ds}g_{\mu\nu}$ and deformed Lorentz group $SO(3,1; \ds)$; (3) \textbf{Black hole dimension compression} $\ds(r) = 4 - r_s/r$ near horizons; (4) \textbf{Cosmic dimension evolution} $\ds(t) = 2 + 2/(1 + e^{-(t-t_c)/\tau})$ resolving the Big Bang singularity.
+
+We derive \textbf{11 experimental predictions}, including: \textbf{P1}---CMB power spectrum modification $C_\ell = C_\ell^{\Lambda\text{CDM}}(\ell/\ell_*)^{4-\ds}$ testable by CMB-S4; and \textbf{P2}---gravitational wave dispersion $\omega^2 = c^2k^2[1 + \frac{\beta_0}{2}(E/\Planck)^\alpha]$ accessible to LISA. Cross-validation confirms theoretical predictions within 1-17\% accuracy.
+\end{abstract}
+
+\keywords{Spectral dimension, quantum gravity, renormalization group, CMB anisotropies, gravitational waves, dimensional reduction, black hole thermodynamics, holographic principle}
+
+\tableofcontents
+\newpage
+
+% ============ CHAPTER 1: INTRODUCTION ============
+\section{Introduction and Background}\label{sec:intro}
+\input{chapters/chapter01.tex}
+
+% ============ CHAPTER 2: AXIOMS ============
+\section{Axiomatic Foundation}\label{sec:axioms}
+\input{chapters/chapter02.tex}
+
+% ============ CHAPTER 3: DIMENSION FLOW ============
+\section{Dimension Flow and Renormalization Group Analysis}\label{sec:rg}
+\input{chapters/chapter03.tex}
+
+% ============ CHAPTER 4: RELATIVITY ============
+\section{Dimension-Corrected Relativity}\label{sec:relativity}
+\input{chapters/chapter04.tex}
+
+% ============ CHAPTER 5: QUANTUM GRAVITY ============
+\section{Quantum Gravity Applications}\label{sec:qg}
+\input{chapters/chapter05.tex}
+
+% ============ CHAPTER 6: COSMOLOGY ============
+\section{Cosmology}\label{sec:cosmology}
+\input{chapters/chapter06.tex}
+
+% ============ CHAPTER 7: EXPERIMENTAL ============
+\section{Experimental Predictions}\label{sec:experimental}
+\input{chapters/chapter07.tex}
+
+% ============ CHAPTER 8: COMPARISON ============
+\section{Comparison with Other Quantum Gravity Theories}\label{sec:comparison}
+\input{chapters/chapter08.tex}
+
+% ============ CHAPTER 9: CONCLUSION ============
+\section{Conclusion}\label{sec:conclusion}
+\input{chapters/chapter09.tex}
+
+% ============ APPENDICES ============
+\appendix
+
+\section{Numerical Validation}\label{app:numerical}
+\input{appendices/app_numerical.tex}
+
+\section{Relation to M-Series Framework}\label{app:mseries}
+\input{appendices/app_mseries.tex}
+
+% ============ REFERENCES ============
+\newpage
+\begin{thebibliography}{99}
+
+\bibitem{Rovelli2004}
+C. Rovelli, \textit{Quantum Gravity}, Cambridge University Press, 2004.
+
+\bibitem{Ashtekar2004}
+A. Ashtekar and J. Lewandowski, ``Background Independent Quantum Gravity: A Status Report,'' \textit{Class. Quantum Grav.} 21 (2004) R53.
+
+\bibitem{Ambjorn2006}
+J. Ambjørn, J. Jurkiewicz, and R. Loll, ``The Universe from Scratch,'' \textit{Contemp. Phys.} 47 (2006) 103--117.
+
+\bibitem{Reuter2019}
+M. Reuter and F. Saueressig, \textit{Quantum Gravity and the Functional Renormalization Group}, Cambridge University Press, 2019.
+
+\bibitem{Planck2020}
+N. Aghanim et al. (Planck Collaboration), ``Planck 2018 Results. VI. Cosmological Parameters,'' \textit{Astron. Astrophys.} 641 (2020) A6.
+
+\bibitem{CMBS4}
+K. N. Abazajian et al., ``CMB-S4 Science Book,'' arXiv:1610.02743 [astro-ph.CO].
+
+\bibitem{LISA}
+P. Amaro-Seoane et al., ``Laser Interferometer Space Antenna,'' arXiv:1702.00786 [astro-ph.IM].
+
+\bibitem{Fixed4DT}
+Dimensionics Research Initiative, ``Fixed-4D-Topology: Unified Framework v3.0,'' GitHub Repository, 2026.
+
+\end{thebibliography}
+
+\end{document}

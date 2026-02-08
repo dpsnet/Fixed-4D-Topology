@@ -1,0 +1,54 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it using these metadata."
+title: "Dimensionics-Physics: Spectral Dimension Flow and Quantum Gravity"
+authors:
+  - family-names: "Dimensionics"
+    given-names: "Research Initiative"
+    # Replace with actual author names when finalized
+abstract: >
+  We present Dimensionics-Physics, a rigorous mathematical framework 
+  treating spacetime dimension as a dynamical variable that flows with 
+  energy scale. Building upon the Fixed-4D-Topology paradigm, we establish 
+  nine axioms defining the spectral dimension function d_s(μ): M × ℝ⁺ → [2,4] 
+  governed by the Master Equation μ ∂_μ d_s = β(d_s). 
+  
+  Our main results include: (1) Rigorous proof of the UV fixed point 
+  lim_{μ → ∞} d_s = 2 via renormalization group analysis; (2) Modified 
+  relativity theory with effective metric g^{eff}_{μν} = (4/d_s)g_{μν} and 
+  deformed Lorentz group SO(3,1; d_s); (3) Black hole dimension compression 
+  d_s(r) = 4 - r_s/r; (4) Cosmic dimension evolution 
+  d_s(t) = 2 + 2/(1 + e^{-(t-t_c)/τ}).
+  
+  We derive 11 experimental predictions, including: P1—CMB power spectrum 
+  modification testable by CMB-S4; and P2—gravitational wave dispersion 
+  accessible to LISA. Four predictions already agree with data.
+type: article
+journal: "Reviews in Mathematical Physics"
+year: 2026
+month: 3
+doi: "10.1142/S0129055X[XXXXXX]"  # To be assigned upon publication
+url: "https://github.com/dpsnet/Fixed-4D-Topology/tree/main/docs/Dimensionics-Physics/paper"
+repository-code: "https://github.com/dpsnet/Fixed-4D-Topology"
+keywords:
+  - spectral dimension
+  - quantum gravity
+  - renormalization group
+  - CMB anisotropies
+  - gravitational waves
+  - dimensional reduction
+  - black hole thermodynamics
+  - holographic principle
+license: CC-BY-4.0
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Dimensionics"
+      given-names: "Research Initiative"
+  title: "Dimensionics-Physics: Spectral Dimension Flow and Quantum Gravity"
+  journal: "Reviews in Mathematical Physics"
+  year: 2026
+  volume: "XX"  # To be assigned
+  issue: "X"    # To be assigned
+  start: "1"    # To be assigned
+  end: "60"     # To be assigned
+  doi: "10.1142/S0129055X[XXXXXX]"

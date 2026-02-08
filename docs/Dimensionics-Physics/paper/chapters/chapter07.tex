@@ -1,0 +1,67 @@
+% Chapter 7: Experimental Predictions
+
+\section{Major Predictions (P1 and P2)}\label{sec:major-predictions}
+
+\subsection{P1: CMB Power Spectrum}
+
+\begin{equation}
+    C_\ell = C_\ell^{\Lambda\text{CDM}} \cdot \left(\frac{\ell}{\ell_*}\right)^{4-d_s(t_{\text{CMB}})}
+\end{equation}
+
+\begin{itemize}
+    \item \textbf{Effect}: $\Delta C_\ell/C_\ell \sim 10^{-3}$ at $\ell > 3000$
+    \item \textbf{Facility}: CMB-S4 (2025-2030)
+    \item \textbf{Sensitivity}: Can detect $\Delta C_\ell/C_\ell \sim 10^{-4}$
+    \item \textbf{Status}: Predicted, awaiting data
+\end{itemize}
+
+\subsection{P2: Gravitational Wave Dispersion}
+
+\begin{equation}
+    \omega^2 = c^2 k^2 \left[1 + \frac{\beta_0}{2}\left(\frac{E}{E_{\text{Pl}}}\right)^{\alpha}\right]
+\end{equation}
+
+\begin{itemize}
+    \item \textbf{Effect}: $\Delta v_g/c \sim 10^{-56}$ for $f \sim 100$ Hz
+    \item \textbf{Facility}: LISA (2030+)
+    \item \textbf{Alternative}: High-z GRB time delays $\Delta t \sim 10^{-3}$ s
+\end{itemize}
+
+\section{Additional Predictions}\label{sec:additional}
+
+\begin{table}[htbp]
+\centering
+\caption{Summary of 11 Experimental Predictions}
+\label{tab:predictions}
+\begin{tabular}{llll}
+\toprule
+ID & Prediction & Status & Facility \\
+\midrule
+P1 & CMB power spectrum & Pending & CMB-S4 \\
+P2 & GW dispersion & Pending & LISA \\
+P3 & Log-periodic oscillations & Partial & Various \\
+P4 & Percolation threshold & \textbf{Verified} & Numerical \\
+P5 & BH entropy area law & Indirect & EHT \\
+P6 & CMB anomalies & Investigating & Planck/S4 \\
+P7 & Coupling running & Future & Colliders \\
+P8 & Network optimization & \textbf{Verified} & Complex systems \\
+P9 & Spin chain dimension & \textbf{Verified} & iTEBD \\
+P10 & Information capacity & Future & QI \\
+P11 & Critical exponents & \textbf{Verified} & Monte Carlo \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Falsifiability}\label{sec:falsify}
+
+\textbf{Strong falsification} (theory rejected):
+\begin{itemize}
+    \item CMB-S4 finds no deviation at $\ell > 3000$ with $\Delta C_\ell/C_\ell < 10^{-4}$
+    \item LISA detects GW dispersion inconsistent with \eqref{eq:p2}
+\end{itemize}
+
+\textbf{Strong confirmation}:
+\begin{itemize}
+    \item CMB-S4 detects $C_\ell$ modification with correct $\ell$-dependence
+    \item Independent measurement of $d_s(t_{\text{CMB}}) \approx 3.997$
+\end{itemize}

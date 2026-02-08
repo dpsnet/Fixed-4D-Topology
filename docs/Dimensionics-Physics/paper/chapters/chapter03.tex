@@ -1,0 +1,78 @@
+% Chapter 3: Dimension Flow and Renormalization Group Analysis
+
+\section{Master Equation as RG Equation}\label{sec:master-rg}
+
+The Master Equation (Axiom~\ref{ax:master}):
+\begin{equation}
+    \mu \frac{\partial d_s}{\partial \mu} = \beta(d_s)
+\end{equation}
+is formally identical to a renormalization group equation, where $\mu$ is the RG scale, $d_s$ is the running parameter, and $\beta$ is the beta function.
+
+\subsection{Standard Model Beta Function}
+
+For the standard model:
+\begin{equation}\label{eq:beta-standard}
+    \beta(d) = -\alpha(d-2)(4-d), \quad \alpha > 0
+\end{equation}
+
+Properties:
+\begin{itemize}
+    \item Fixed points: $\beta(2) = \beta(4) = 0$
+    \item Derivative: $\beta'(d) = 2\alpha(d-3)$
+    \item UV stability: $\beta'(2) = -2\alpha < 0$
+    \item IR stability: $\beta'(4) = 2\alpha > 0$
+\end{itemize}
+
+\section{Fixed Point Analysis}\label{sec:fixed-points}
+
+\begin{theorem}[Fixed Point Structure]\label{thm:fixed-points}
+The $\beta$-function \eqref{eq:beta-standard} has exactly two fixed points in $[2,4]$:
+\begin{itemize}
+    \item $d_s^* = 2$ (UV fixed point, stable)
+    \item $d_s^* = 4$ (IR fixed point, unstable)
+\end{itemize}
+\end{theorem}
+
+\begin{proof}
+Solving $\beta(d) = 0$ gives $(d-2)(4-d) = 0$, so $d = 2$ or $d = 4$. Stability follows from $\beta'(2) < 0$ and $\beta'(4) > 0$.
+\end{proof}
+
+\section{Analytical Solutions}\label{sec:solutions}
+
+\begin{theorem}[General Solution]\label{thm:general-solution}
+With initial condition $d_s(\mu_0) = d_0$:
+\begin{equation}\label{eq:general-solution}
+    d_s(\mu) = 2 + \frac{2}{1 + C\left(\frac{\mu}{\mu_0}\right)^{-2\alpha}}
+\end{equation}
+where $C = (4-d_0)/(d_0-2)$.
+\end{theorem}
+
+\begin{proof}
+Separate variables in \eqref{eq:master}:
+\begin{equation}
+    \frac{dd_s}{(d_s-2)(4-d_s)} = -\alpha \frac{d\mu}{\mu}
+\end{equation}
+Integrate using partial fractions and solve for $d_s$.
+\end{proof}
+
+\subsection{Asymptotic Behavior}
+
+\textbf{UV Limit} ($\mu \to \infty$):
+\begin{equation}
+    d_s(\mu) = 2 + \frac{2}{C}\left(\frac{\mu}{\mu_0}\right)^{-2\alpha} + O(\mu^{-4\alpha})
+\end{equation}
+Convergence: $|d_s - 2| \sim \mu^{-2\alpha}$.
+
+\textbf{IR Limit} ($\mu \to 0$):
+\begin{equation}
+    d_s(\mu) = 4 - 2C\left(\frac{\mu}{\mu_0}\right)^{2\alpha} + O(\mu^{4\alpha})
+\end{equation}
+
+\section{Relation to Asymptotic Safety}\label{sec:as-safety}
+
+In Asymptotic Safety [\cite{Reuter2019}], gravitational couplings $G_k$, $\Lambda_k$ evolve with scale $k$. The dimension flow can be related:
+\begin{equation}
+    \beta(d_s) = -\frac{\partial d_s}{\partial G}\beta_G - \frac{\partial d_s}{\partial \Lambda}\beta_\Lambda
+\end{equation}
+
+Dimension flow encodes the geometric information from coupling constant RG flow, providing a complementary perspective to AS Gravity.
