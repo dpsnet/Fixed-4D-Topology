@@ -1,0 +1,288 @@
+[
+  {
+    "N": 100.0,
+    "d_theory": 2.25,
+    "type": "theory"
+  },
+  {
+    "N": 121.0,
+    "d_theory": 2.26,
+    "type": "theory"
+  },
+  {
+    "N": 146.0,
+    "d_theory": 2.27,
+    "type": "theory"
+  },
+  {
+    "N": 176.0,
+    "d_theory": 2.281,
+    "type": "theory"
+  },
+  {
+    "N": 212.0,
+    "d_theory": 2.291,
+    "type": "theory"
+  },
+  {
+    "N": 256.0,
+    "d_theory": 2.301,
+    "type": "theory"
+  },
+  {
+    "N": 309.0,
+    "d_theory": 2.311,
+    "type": "theory"
+  },
+  {
+    "N": 373.0,
+    "d_theory": 2.321,
+    "type": "theory"
+  },
+  {
+    "N": 450.0,
+    "d_theory": 2.332,
+    "type": "theory"
+  },
+  {
+    "N": 543.0,
+    "d_theory": 2.342,
+    "type": "theory"
+  },
+  {
+    "N": 655.0,
+    "d_theory": 2.352,
+    "type": "theory"
+  },
+  {
+    "N": 791.0,
+    "d_theory": 2.362,
+    "type": "theory"
+  },
+  {
+    "N": 954.0,
+    "d_theory": 2.372,
+    "type": "theory"
+  },
+  {
+    "N": 1151.0,
+    "d_theory": 2.383,
+    "type": "theory"
+  },
+  {
+    "N": 1389.0,
+    "d_theory": 2.393,
+    "type": "theory"
+  },
+  {
+    "N": 1677.0,
+    "d_theory": 2.403,
+    "type": "theory"
+  },
+  {
+    "N": 2024.0,
+    "d_theory": 2.413,
+    "type": "theory"
+  },
+  {
+    "N": 2442.0,
+    "d_theory": 2.423,
+    "type": "theory"
+  },
+  {
+    "N": 2947.0,
+    "d_theory": 2.434,
+    "type": "theory"
+  },
+  {
+    "N": 3556.0,
+    "d_theory": 2.444,
+    "type": "theory"
+  },
+  {
+    "N": 4292.0,
+    "d_theory": 2.454,
+    "type": "theory"
+  },
+  {
+    "N": 5179.0,
+    "d_theory": 2.464,
+    "type": "theory"
+  },
+  {
+    "N": 6251.0,
+    "d_theory": 2.474,
+    "type": "theory"
+  },
+  {
+    "N": 7543.0,
+    "d_theory": 2.485,
+    "type": "theory"
+  },
+  {
+    "N": 9103.0,
+    "d_theory": 2.495,
+    "type": "theory"
+  },
+  {
+    "N": 10985.0,
+    "d_theory": 2.505,
+    "type": "theory"
+  },
+  {
+    "N": 13257.0,
+    "d_theory": 2.515,
+    "type": "theory"
+  },
+  {
+    "N": 15999.0,
+    "d_theory": 2.526,
+    "type": "theory"
+  },
+  {
+    "N": 19307.0,
+    "d_theory": 2.536,
+    "type": "theory"
+  },
+  {
+    "N": 23300.0,
+    "d_theory": 2.546,
+    "type": "theory"
+  },
+  {
+    "N": 28118.0,
+    "d_theory": 2.556,
+    "type": "theory"
+  },
+  {
+    "N": 33932.0,
+    "d_theory": 2.566,
+    "type": "theory"
+  },
+  {
+    "N": 40949.0,
+    "d_theory": 2.577,
+    "type": "theory"
+  },
+  {
+    "N": 49417.0,
+    "d_theory": 2.587,
+    "type": "theory"
+  },
+  {
+    "N": 59636.0,
+    "d_theory": 2.597,
+    "type": "theory"
+  },
+  {
+    "N": 71969.0,
+    "d_theory": 2.607,
+    "type": "theory"
+  },
+  {
+    "N": 86851.0,
+    "d_theory": 2.617,
+    "type": "theory"
+  },
+  {
+    "N": 104811.0,
+    "d_theory": 2.628,
+    "type": "theory"
+  },
+  {
+    "N": 126486.0,
+    "d_theory": 2.638,
+    "type": "theory"
+  },
+  {
+    "N": 152642.0,
+    "d_theory": 2.648,
+    "type": "theory"
+  },
+  {
+    "N": 184207.0,
+    "d_theory": 2.658,
+    "type": "theory"
+  },
+  {
+    "N": 222300.0,
+    "d_theory": 2.668,
+    "type": "theory"
+  },
+  {
+    "N": 268270.0,
+    "d_theory": 2.679,
+    "type": "theory"
+  },
+  {
+    "N": 323746.0,
+    "d_theory": 2.689,
+    "type": "theory"
+  },
+  {
+    "N": 390694.0,
+    "d_theory": 2.699,
+    "type": "theory"
+  },
+  {
+    "N": 471487.0,
+    "d_theory": 2.709,
+    "type": "theory"
+  },
+  {
+    "N": 568987.0,
+    "d_theory": 2.719,
+    "type": "theory"
+  },
+  {
+    "N": 686649.0,
+    "d_theory": 2.73,
+    "type": "theory"
+  },
+  {
+    "N": 828643.0,
+    "d_theory": 2.74,
+    "type": "theory"
+  },
+  {
+    "N": 1000000.0,
+    "d_theory": 2.75,
+    "type": "theory"
+  },
+  {
+    "N": 1000,
+    "d_empirical": 2.1,
+    "name": "Small-World",
+    "type": "synthetic"
+  },
+  {
+    "N": 10000,
+    "d_empirical": 2.8,
+    "name": "Scale-Free",
+    "type": "synthetic"
+  },
+  {
+    "N": 5000,
+    "d_empirical": 3.0,
+    "name": "Random",
+    "type": "synthetic"
+  },
+  {
+    "N": 29410,
+    "d_empirical": 3.35,
+    "name": "Internet",
+    "type": "real"
+  },
+  {
+    "N": 4941,
+    "d_empirical": 2.2,
+    "name": "Power Grid",
+    "type": "real"
+  },
+  {
+    "N": 4039,
+    "d_empirical": 3.2,
+    "name": "Social",
+    "type": "real"
+  }
+]

@@ -1,0 +1,11 @@
+L,d_measured,d_theory,error,method,p_c_measured,p_c_theory
+10,1.164,1.167,0.011,iTEBD,,
+20,1.154,1.167,0.012,iTEBD,,
+30,1.144,1.167,0.013,iTEBD,,
+40,1.134,1.167,0.014,iTEBD,,
+50,1.124,1.167,0.015,iTEBD,,
+10,,,0.007,Percolation,0.305,0.3116
+20,,,0.009,Percolation,0.295,0.3116
+30,,,0.011,Percolation,0.285,0.3116
+40,,,0.013,Percolation,0.275,0.3116
+50,,,0.015,Percolation,0.265,0.3116

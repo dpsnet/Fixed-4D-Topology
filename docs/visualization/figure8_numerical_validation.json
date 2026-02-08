@@ -1,0 +1,72 @@
+[
+  {
+    "method": "iTEBD",
+    "L": 10,
+    "d_measured": 1.164,
+    "d_theory": 1.167,
+    "error": 0.011
+  },
+  {
+    "method": "iTEBD",
+    "L": 20,
+    "d_measured": 1.154,
+    "d_theory": 1.167,
+    "error": 0.012
+  },
+  {
+    "method": "iTEBD",
+    "L": 30,
+    "d_measured": 1.144,
+    "d_theory": 1.167,
+    "error": 0.013
+  },
+  {
+    "method": "iTEBD",
+    "L": 40,
+    "d_measured": 1.134,
+    "d_theory": 1.167,
+    "error": 0.014
+  },
+  {
+    "method": "iTEBD",
+    "L": 50,
+    "d_measured": 1.124,
+    "d_theory": 1.167,
+    "error": 0.015
+  },
+  {
+    "method": "Percolation",
+    "L": 10,
+    "p_c_measured": 0.305,
+    "p_c_theory": 0.3116,
+    "error": 0.007
+  },
+  {
+    "method": "Percolation",
+    "L": 20,
+    "p_c_measured": 0.295,
+    "p_c_theory": 0.3116,
+    "error": 0.009
+  },
+  {
+    "method": "Percolation",
+    "L": 30,
+    "p_c_measured": 0.285,
+    "p_c_theory": 0.3116,
+    "error": 0.011
+  },
+  {
+    "method": "Percolation",
+    "L": 40,
+    "p_c_measured": 0.275,
+    "p_c_theory": 0.3116,
+    "error": 0.013
+  },
+  {
+    "method": "Percolation",
+    "L": 50,
+    "p_c_measured": 0.265,
+    "p_c_theory": 0.3116,
+    "error": 0.015
+  }
+]

@@ -1,0 +1,602 @@
+[
+  {
+    "t": 0.1,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.405
+  },
+  {
+    "t": 0.238,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4119
+  },
+  {
+    "t": 0.377,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4187
+  },
+  {
+    "t": 0.515,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4255
+  },
+  {
+    "t": 0.654,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4321
+  },
+  {
+    "t": 0.792,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4386
+  },
+  {
+    "t": 0.93,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4449
+  },
+  {
+    "t": 1.069,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4509
+  },
+  {
+    "t": 1.207,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4568
+  },
+  {
+    "t": 1.345,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4623
+  },
+  {
+    "t": 1.484,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4676
+  },
+  {
+    "t": 1.622,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4725
+  },
+  {
+    "t": 1.761,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4771
+  },
+  {
+    "t": 1.899,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4813
+  },
+  {
+    "t": 2.037,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4851
+  },
+  {
+    "t": 2.176,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4886
+  },
+  {
+    "t": 2.314,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4916
+  },
+  {
+    "t": 2.453,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4941
+  },
+  {
+    "t": 2.591,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4962
+  },
+  {
+    "t": 2.729,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4979
+  },
+  {
+    "t": 2.868,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4991
+  },
+  {
+    "t": 3.006,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4998
+  },
+  {
+    "t": 3.144,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.5
+  },
+  {
+    "t": 3.283,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4998
+  },
+  {
+    "t": 3.421,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.499
+  },
+  {
+    "t": 3.56,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4978
+  },
+  {
+    "t": 3.698,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4962
+  },
+  {
+    "t": 3.836,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.494
+  },
+  {
+    "t": 3.975,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4914
+  },
+  {
+    "t": 4.113,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4884
+  },
+  {
+    "t": 4.252,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.485
+  },
+  {
+    "t": 4.39,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4811
+  },
+  {
+    "t": 4.528,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4769
+  },
+  {
+    "t": 4.667,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4723
+  },
+  {
+    "t": 4.805,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4674
+  },
+  {
+    "t": 4.943,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4621
+  },
+  {
+    "t": 5.082,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4565
+  },
+  {
+    "t": 5.22,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4507
+  },
+  {
+    "t": 5.359,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4446
+  },
+  {
+    "t": 5.497,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4383
+  },
+  {
+    "t": 5.635,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4318
+  },
+  {
+    "t": 5.774,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4252
+  },
+  {
+    "t": 5.912,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4184
+  },
+  {
+    "t": 6.051,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4116
+  },
+  {
+    "t": 6.189,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4047
+  },
+  {
+    "t": 6.327,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3978
+  },
+  {
+    "t": 6.466,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3909
+  },
+  {
+    "t": 6.604,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.384
+  },
+  {
+    "t": 6.742,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3772
+  },
+  {
+    "t": 6.881,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3706
+  },
+  {
+    "t": 7.019,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.364
+  },
+  {
+    "t": 7.158,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3577
+  },
+  {
+    "t": 7.296,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3515
+  },
+  {
+    "t": 7.434,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3456
+  },
+  {
+    "t": 7.573,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3399
+  },
+  {
+    "t": 7.711,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3345
+  },
+  {
+    "t": 7.849,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3294
+  },
+  {
+    "t": 7.988,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3247
+  },
+  {
+    "t": 8.126,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3203
+  },
+  {
+    "t": 8.265,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3164
+  },
+  {
+    "t": 8.403,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3128
+  },
+  {
+    "t": 8.541,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3096
+  },
+  {
+    "t": 8.68,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3069
+  },
+  {
+    "t": 8.818,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3046
+  },
+  {
+    "t": 8.957,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3027
+  },
+  {
+    "t": 9.095,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3014
+  },
+  {
+    "t": 9.233,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3005
+  },
+  {
+    "t": 9.372,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3
+  },
+  {
+    "t": 9.51,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3001
+  },
+  {
+    "t": 9.648,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3006
+  },
+  {
+    "t": 9.787,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3016
+  },
+  {
+    "t": 9.925,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3031
+  },
+  {
+    "t": 10.064,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3051
+  },
+  {
+    "t": 10.202,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3075
+  },
+  {
+    "t": 10.34,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3103
+  },
+  {
+    "t": 10.479,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3136
+  },
+  {
+    "t": 10.617,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3173
+  },
+  {
+    "t": 10.756,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3213
+  },
+  {
+    "t": 10.894,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3258
+  },
+  {
+    "t": 11.032,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3306
+  },
+  {
+    "t": 11.171,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3357
+  },
+  {
+    "t": 11.309,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3412
+  },
+  {
+    "t": 11.447,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3469
+  },
+  {
+    "t": 11.586,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3529
+  },
+  {
+    "t": 11.724,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3591
+  },
+  {
+    "t": 11.863,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3655
+  },
+  {
+    "t": 12.001,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3721
+  },
+  {
+    "t": 12.139,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3788
+  },
+  {
+    "t": 12.278,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3856
+  },
+  {
+    "t": 12.416,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3925
+  },
+  {
+    "t": 12.555,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.3994
+  },
+  {
+    "t": 12.693,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4063
+  },
+  {
+    "t": 12.831,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.4132
+  },
+  {
+    "t": 12.97,
+    "cosmological": 3.0,
+    "quantum": 2.0,
+    "biological": 2.42
+  },
+  {
+    "t": 13.108,
+    "cosmological": 3.0001,
+    "quantum": 2.0,
+    "biological": 2.4268
+  },
+  {
+    "t": 13.246,
+    "cosmological": 3.0005,
+    "quantum": 2.0,
+    "biological": 2.4334
+  },
+  {
+    "t": 13.385,
+    "cosmological": 3.0021,
+    "quantum": 2.0,
+    "biological": 2.4398
+  },
+  {
+    "t": 13.523,
+    "cosmological": 3.0084,
+    "quantum": 2.0001,
+    "biological": 2.446
+  },
+  {
+    "t": 13.662,
+    "cosmological": 3.0328,
+    "quantum": 2.0023,
+    "biological": 2.4521
+  },
+  {
+    "t": 13.8,
+    "cosmological": 3.1192,
+    "quantum": 2.036,
+    "biological": 2.4578
+  }
+]
