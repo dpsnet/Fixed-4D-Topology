@@ -110,10 +110,37 @@ Fixed-4D-Topology/
 
 ### Installation
 
+#### Option 1: Automated Setup (Recommended)
+
 ```bash
 # Clone the repository
 git clone https://github.com/dpsnet/Fixed-4D-Topology.git
 cd Fixed-4D-Topology
+
+# Setup virtual environment (auto-installs dependencies)
+python setup_env.py
+
+# Activate environment
+source venv/bin/activate  # Linux/macOS
+# or: venv\Scripts\activate  # Windows
+
+# Run tests
+pytest tests/
+```
+
+#### Option 2: Manual Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/dpsnet/Fixed-4D-Topology.git
+cd Fixed-4D-Topology
+
+# Create virtual environment
+python3 -m venv venv
+
+# Activate
+source venv/bin/activate  # Linux/macOS
+# or: venv\Scripts\activate  # Windows
 
 # Install dependencies
 pip install -r requirements.txt
@@ -121,6 +148,19 @@ pip install -r requirements.txt
 # Run tests
 pytest tests/
 ```
+
+#### Jupyter Notebook Setup
+
+```bash
+# After setup, launch Jupyter
+python setup_env.py  # Installs kernel automatically
+source venv/bin/activate
+jupyter notebook
+
+# Select kernel: "Python (Dimensionics)"
+```
+
+See [Virtual Environment Guide](docs/VIRTUAL_ENVIRONMENT_GUIDE.md) for detailed instructions.
 
 ### Basic Usage
 
