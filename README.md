@@ -11,15 +11,18 @@
 
 ---
 
-## 🎉 NEW: Dimensionics-Physics Paper Submitted to Reviews in Mathematical Physics!
+## 🎉 NEW: Dimensionics-Physics Paper Published Open Source!
 
 ### 📄 Rigorous Axiomatic Framework for Quantum Gravity
 
-[![Paper](https://img.shields.io/badge/Paper-RMP%20Submission-blue)](docs/Dimensionics-Physics/paper/)
+[![Paper](https://img.shields.io/badge/Paper-Open%20Source-green)](docs/Dimensionics-Physics/paper/)
+[![Format](https://img.shields.io/badge/Format-RMP%20Guidelines-blue)](docs/Dimensionics-Physics/paper/)
 [![Theorems](https://img.shields.io/badge/Theorems-12%20(L1)-green)](docs/Dimensionics-Physics/paper/)
 [![Predictions](https://img.shields.io/badge/Predictions-11%20(4%20verified)-orange)](docs/Dimensionics-Physics/paper/)
 
-**Complete LaTeX source** | **12 rigorous theorems** | **11 testable predictions**
+> ⚠️ **Important**: This is an **open-source academic paper** for research exchange. It follows *Reviews in Mathematical Physics* format guidelines but is **NOT formally submitted** to the journal.
+
+**Complete LaTeX source** | **12 rigorous theorems** | **11 testable predictions** | **Freely accessible on GitHub**
 
 We present **Dimensionics-Physics**, a mathematically rigorous framework treating spacetime dimension as a dynamical variable:
 
@@ -102,7 +105,7 @@ Together, they form the **Unified Dimensionics Framework**—the most comprehens
 ```
 Fixed-4D-Topology/
 ├── docs/
-│   ├── Dimensionics-Physics/   # ⭐ NEW: RMP Submission Paper
+│   ├── Dimensionics-Physics/   # ⭐ NEW: Open Source Paper (RMP Format)
 │   │   └── paper/              # Complete LaTeX source
 │   │       ├── Dimensionics_Physics.tex    # Main document
 │   │       ├── chapters/       # 9 core chapters
