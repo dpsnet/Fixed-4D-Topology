@@ -5,11 +5,13 @@
 
 **Authors**: [To be determined - see AUTHORS.md]
 
-**Target Journal**: Reviews in Mathematical Physics
+**Format Standard**: Reviews in Mathematical Physics (RMP) Guidelines
 
-**Submission Deadline**: March 21, 2026
+**Publication Status**: 🌐 **Open Source on GitHub** (Not formally submitted to journal)
 
-**Current Status**: ✅✅✅ **PROJECT COMPLETE - READY FOR SUBMISSION** ✅✅✅
+**Current Status**: ✅✅✅ **OPEN SOURCE PAPER - FORMATTED PER RMP GUIDELINES** ✅✅✅
+
+> ⚠️ **Disclaimer**: This paper is openly published on GitHub for academic exchange and reference. It is formatted according to *Reviews in Mathematical Physics* journal guidelines, but **NOT actually submitted** to the journal. This is an open-source academic work, not a formal submission.
 
 ---
 

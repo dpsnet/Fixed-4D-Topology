@@ -2,12 +2,15 @@
 ## Spectral Dimension Flow and Quantum Gravity
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![Status: Submitted](https://img.shields.io/badge/Status-Submitted%20to%20RMP-blue)](https://www.worldscientific.com/worldscinet/rmp)
-[![arXiv](https://img.shields.io/badge/arXiv-Coming%20Soon-b31b1b.svg)](https://arxiv.org)
+[![Status: Open Source](https://img.shields.io/badge/Status-Open%20Source-green)](https://github.com/dpsnet/Fixed-4D-Topology)
+[![Format: RMP](https://img.shields.io/badge/Format-RMP%20Guidelines-blue)](https://www.worldscientific.com/worldscinet/rmp)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 > **"Dimension is not a fixed background, but a dynamical result of physics."**
 
-This repository contains the complete source code and documentation for the paper **"Dimensionics-Physics: Spectral Dimension Flow and Quantum Gravity"** submitted to *Reviews in Mathematical Physics*.
+This repository contains the complete open-source academic paper **"Dimensionics-Physics: Spectral Dimension Flow and Quantum Gravity"**, formatted according to *Reviews in Mathematical Physics* journal guidelines.
+
+> ⚠️ **Important Notice**: This is an **open-source academic work** published on GitHub for research exchange and reference. While formatted per RMP standards, it is **NOT formally submitted** to the journal. The paper is freely available for reading, citation, and academic discussion.
 
 ---
 
@@ -250,14 +253,21 @@ This work builds upon:
 - [x] Manuscript complete
 - [x] LaTeX compiled
 - [x] Figures generated
-- [x] Submitted to Reviews in Mathematical Physics (March 21, 2026)
-- [ ] arXiv preprint (after acceptance)
+- [x] **Open source on GitHub** (freely accessible)
+- [ ] Formal journal submission (if pursued separately)
+- [ ] arXiv preprint (optional)
+
+**Note**: This paper is published here as an open-source academic work, not as a formal journal submission.
 
 ---
 
 **Last Updated**: February 2026  
 **Version**: 1.0.0  
-**Status**: ✅ Submitted to RMP
+**Status**: ✅ Open Source Academic Paper
+
+---
+
+*This is an open-source academic paper published on GitHub. It is formatted according to Reviews in Mathematical Physics guidelines but has NOT been formally submitted to the journal. The work is freely available for academic use, citation, and discussion.*
 
 ---
 

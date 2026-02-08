@@ -1,9 +1,14 @@
-# Final Submission Checklist
-## Reviews in Mathematical Physics - March 21, 2026
+# Final Checklist (Format Reference)
+## RMP Format Guidelines - Open Source Paper
+
+> ⚠️ **IMPORTANT NOTICE**:
+> This checklist demonstrates *Reviews in Mathematical Physics* format requirements.
+> The actual paper is **OPEN SOURCE on GitHub** and is **NOT formally submitted**
+> to the journal. This is an open-source academic work for research exchange.
 
 ---
 
-## Submission Package Contents
+## Package Contents (For Reference)
 
 ### Main Document ✅
 - [ ] `Dimensionics_Physics.tex` - LaTeX source
@@ -132,16 +137,16 @@
 
 ---
 
-## Timeline
+## Project Timeline
 
 | Date | Milestone | Status |
 |------|-----------|--------|
 | Jan 15-28 | Core chapters | ✅ Complete |
 | Jan 29-Feb 4 | Appendices | ✅ Complete |
 | Feb 5-11 | LaTeX conversion | ✅ Complete |
-| Feb 12-25 | Editing | ⏳ Current |
-| Feb 26-Mar 11 | Expert review | ⏳ Pending |
-| **Mar 21** | **RMP Submission** | **⏳ Target** |
+| **Feb 2026** | **Open Source Release** | **✅ Published on GitHub** |
+
+**Note**: This paper is published as an open-source academic work. No formal journal submission is planned.
 
 ---
 

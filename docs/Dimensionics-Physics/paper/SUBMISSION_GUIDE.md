@@ -1,25 +1,23 @@
-# Submission Guide
-## How to Submit to Reviews in Mathematical Physics
+# Submission Guide (Format Reference Only)
+## RMP Format Guidelines - NOT FOR ACTUAL SUBMISSION
+
+> ⚠️ **IMPORTANT NOTICE**:
+> This guide shows the format of *Reviews in Mathematical Physics* and the submission
+> process, but the actual paper is **OPEN SOURCE on GitHub** and is **NOT formally
+> submitted** to the journal. This document is provided for reference purposes only.
 
 ---
 
-## Pre-Submission Preparation
+## Pre-Submission Preparation (Format Demonstration)
 
 ### Step 1: Compile the PDF
 
 ```bash
-cd /mnt/e/FiberGravity-DynamicCoupling/GitHub_Repositories/Fixed-4D-Topology/docs/Dimensionics-Physics/paper
+cd /path/to/paper
 
-# First compilation
+# Compile the LaTeX
 pdflatex Dimensionics_Physics.tex
-
-# If there are references, run bibtex (optional - currently using thebibliography)
-# bibtex Dimensionics_Physics
-
-# Second compilation for cross-references
 pdflatex Dimensionics_Physics.tex
-
-# Third compilation for final output
 pdflatex Dimensionics_Physics.tex
 ```
 
@@ -33,33 +31,7 @@ Check the generated PDF for:
 - [ ] Table of contents generated
 - [ ] Abstract and keywords present
 
-### Step 3: Create Submission Package
-
-```bash
-# Create submission directory
-mkdir -p submission_package
-
-# Copy main files
-cp Dimensionics_Physics.tex submission_package/
-cp Dimensionics_Physics.pdf submission_package/
-
-# Copy chapters
-cp -r chapters submission_package/
-
-# Copy appendices
-cp -r appendices submission_package/
-
-# Copy figures
-cp -r figures submission_package/
-
-# Copy cover letter
-cp COVER_LETTER.tex submission_package/
-
-# Create ZIP archive
-cd submission_package
-zip -r ../Dimensionics_Physics_RMP_Submission.zip .
-cd ..
-```
+**Note**: This demonstrates that the paper follows RMP format guidelines. The actual paper is open source on GitHub.
 
 ---
 
