@@ -6,7 +6,71 @@ Unified framework for computing effective dimensions of complex networks.
 Based on empirical study of 7 real networks (2.1M nodes total).
 """
 
-import numpy as np
+try:
+    import numpy as np
+    NUMPY_AVAILABLE = True
+except ImportError:
+    NUMPY_AVAILABLE = False
+    import math
+    # Minimal numpy-like fallback
+    class _NumpyFallback:
+        @staticmethod
+        def mean(arr):
+            return sum(arr) / len(arr) if arr else 0
+        @staticmethod
+        def std(arr, ddof=0):
+            if len(arr) <= ddof:
+                return 0
+            m = sum(arr) / len(arr)
+            variance = sum((x - m) ** 2 for x in arr) / (len(arr) - ddof)
+            return math.sqrt(variance)
+        @staticmethod
+        def array(arr):
+            return list(arr)
+        @staticmethod
+        def log(x):
+            if hasattr(x, '__iter__'):
+                return [math.log(v) for v in x]
+            return math.log(x)
+        @staticmethod
+        def exp(x):
+            if hasattr(x, '__iter__'):
+                return [math.exp(v) for v in x]
+            return math.exp(x)
+        @staticmethod
+        def linspace(start, stop, num):
+            if num <= 1:
+                return [start]
+            step = (stop - start) / (num - 1)
+            return [start + i * step for i in range(num)]
+        @staticmethod
+        def zeros(n):
+            return [0.0] * n
+        @staticmethod
+        def sqrt(x):
+            return math.sqrt(x)
+        @staticmethod
+        def polyfit(x, y, deg):
+            # Simple linear regression for deg=1
+            if deg != 1:
+                raise NotImplementedError("Only linear fit supported in fallback")
+            n = len(x)
+            x_mean = sum(x) / n
+            y_mean = sum(y) / n
+            ss_xy = sum((x[i] - x_mean) * (y[i] - y_mean) for i in range(n))
+            ss_xx = sum((x[i] - x_mean) ** 2 for i in range(n))
+            slope = ss_xy / ss_xx if ss_xx != 0 else 0
+            intercept = y_mean - slope * x_mean
+            return [slope, intercept]
+        @staticmethod
+        def polyval(coeffs, x):
+            # Evaluate polynomial
+            result = []
+            for xi in x:
+                val = coeffs[0] * xi + coeffs[1] if len(coeffs) == 2 else coeffs[0]
+                result.append(val)
+            return result
+    np = _NumpyFallback()
 from typing import Dict, List, Tuple, Optional, Set
 from collections import deque
 
@@ -459,5 +523,3 @@ def compare_to_empirical(computed_dim: float, network_type: str) -> Dict:
         'within_std': abs(computed_dim - avg_dim) < std_dim,
         'comparison': 'consistent' if abs(computed_dim - avg_dim) < 2*std_dim else 'significant_difference'
     }
-EOF
-echo "network.py implemented successfully!"

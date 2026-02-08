@@ -5,7 +5,81 @@ Cantor Representation Module (T1 Direction)
 Implementation of Cantor class fractal representation theory.
 """
 
-import numpy as np
+try:
+    import numpy as np
+    NUMPY_AVAILABLE = True
+except ImportError:
+    NUMPY_AVAILABLE = False
+    import math
+    # Minimal numpy-like fallback
+    class _NumpyFallback:
+        @staticmethod
+        def mean(arr):
+            return sum(arr) / len(arr) if arr else 0
+        @staticmethod
+        def std(arr, ddof=0):
+            if len(arr) <= ddof:
+                return 0
+            m = sum(arr) / len(arr)
+            variance = sum((x - m) ** 2 for x in arr) / (len(arr) - ddof)
+            return math.sqrt(variance)
+        @staticmethod
+        def array(arr):
+            return list(arr)
+        @staticmethod
+        def log(x):
+            if hasattr(x, '__iter__'):
+                return [math.log(v) for v in x]
+            return math.log(x)
+        @staticmethod
+        def exp(x):
+            if hasattr(x, '__iter__'):
+                return [math.exp(v) for v in x]
+            return math.exp(x)
+        @staticmethod
+        def linspace(start, stop, num):
+            if num <= 1:
+                return [start]
+            step = (stop - start) / (num - 1)
+            return [start + i * step for i in range(num)]
+        @staticmethod
+        def zeros(n):
+            return [0.0] * n
+        @staticmethod
+        def sqrt(x):
+            if hasattr(x, '__iter__'):
+                return [math.sqrt(v) for v in x]
+            return math.sqrt(x)
+        @staticmethod
+        def logspace(start, stop, num):
+            # Generate logarithmically spaced numbers
+            log_start = start * math.log(10)
+            log_stop = stop * math.log(10)
+            step = (log_stop - log_start) / (num - 1) if num > 1 else 0
+            return [math.exp(log_start + i * step) for i in range(num)]
+        @staticmethod
+        def max(arr):
+            return max(arr) if arr else 0
+        @staticmethod
+        def min(arr):
+            return min(arr) if arr else 0
+        @staticmethod
+        def arange(n):
+            return list(range(n))
+        @staticmethod
+        def polyfit(x, y, deg):
+            # Simple linear regression for deg=1
+            if deg != 1:
+                raise NotImplementedError("Only linear fit supported in fallback")
+            n = len(x)
+            x_mean = sum(x) / n
+            y_mean = sum(y) / n
+            ss_xy = sum((x[i] - x_mean) * (y[i] - y_mean) for i in range(n))
+            ss_xx = sum((x[i] - x_mean) ** 2 for i in range(n))
+            slope = ss_xy / ss_xx if ss_xx != 0 else 0
+            intercept = y_mean - slope * x_mean
+            return [slope, intercept]
+    np = _NumpyFallback()
 from typing import List, Tuple, Optional
 from fractions import Fraction
 
@@ -230,5 +304,3 @@ def demo_cantor_approximation():
 
 if __name__ == "__main__":
     demo_cantor_approximation()
-EOF
-echo "cantor.py implemented successfully!"

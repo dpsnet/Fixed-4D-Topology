@@ -30,6 +30,7 @@ from .core import (
     VariationalPrinciple,
     DimensionicsFramework,
     master_equation,
+    dimension_taxonomy,
 )
 
 from .algebraic import (
@@ -37,34 +38,69 @@ from .algebraic import (
     FractalElement,
 )
 
-from .analytic import (
-    SobolevSpace,
-    ExtensionOperator,
-)
+# Placeholder imports for modules not yet implemented
+# These will be implemented in future versions
+try:
+    from .analytic import (
+        SobolevSpace,
+        ExtensionOperator,
+    )
+    ANALYTIC_AVAILABLE = True
+except ImportError:
+    ANALYTIC_AVAILABLE = False
+    SobolevSpace = None
+    ExtensionOperator = None
 
-from .evolution import (
-    DimensionFlow,
-    SpectralPDE,
-)
+try:
+    from .evolution import (
+        DimensionFlow,
+        SpectralPDE,
+    )
+    EVOLUTION_AVAILABLE = True
+except ImportError:
+    EVOLUTION_AVAILABLE = False
+    DimensionFlow = None
+    SpectralPDE = None
 
-from .number_theory import (
-    ModularCorrespondence,
-    PTEAnalyzer,
-)
+try:
+    from .number_theory import (
+        ModularCorrespondence,
+        PTEAnalyzer,
+    )
+    NT_AVAILABLE = True
+except ImportError:
+    NT_AVAILABLE = False
+    ModularCorrespondence = None
+    PTEAnalyzer = None
 
-from .complexity import (
-    FComplexity,
-    FNPComplete,
-)
+try:
+    from .complexity import (
+        FComplexity,
+        FNPComplete,
+    )
+    COMPLEXITY_AVAILABLE = True
+except ImportError:
+    COMPLEXITY_AVAILABLE = False
+    FComplexity = None
+    FNPComplete = None
 
 # NEW: I Direction - Network Geometry
-from .network import (
-    NetworkDimension,
-    NetworkMasterEquation,
-    EMPIRICAL_NETWORK_DATA,
-    get_empirical_data,
-    compare_to_empirical,
-)
+try:
+    from .network import (
+        NetworkDimension,
+        NetworkMasterEquation,
+        EMPIRICAL_NETWORK_DATA,
+        get_empirical_data,
+        compare_to_empirical,
+    )
+    NETWORK_AVAILABLE = True
+except ImportError:
+    NETWORK_AVAILABLE = False
+    NetworkDimension = None
+    NetworkMasterEquation = None
+    EMPIRICAL_NETWORK_DATA = {}
+    get_empirical_data = None
+    compare_to_empirical = None
 
 __all__ = [
     # Core
@@ -72,25 +108,31 @@ __all__ = [
     'VariationalPrinciple',
     'DimensionicsFramework',
     'master_equation',
+    'dimension_taxonomy',
     # Algebraic
     'GrothendieckGroup',
     'FractalElement',
-    # Analytic
+    # Analytic (optional)
     'SobolevSpace',
     'ExtensionOperator',
-    # Evolution
+    'ANALYTIC_AVAILABLE',
+    # Evolution (optional)
     'DimensionFlow',
     'SpectralPDE',
-    # Number Theory
+    'EVOLUTION_AVAILABLE',
+    # Number Theory (optional)
     'ModularCorrespondence',
     'PTEAnalyzer',
-    # Complexity
+    'NT_AVAILABLE',
+    # Complexity (optional)
     'FComplexity',
     'FNPComplete',
+    'COMPLEXITY_AVAILABLE',
     # Network Geometry (I Direction)
     'NetworkDimension',
     'NetworkMasterEquation',
     'EMPIRICAL_NETWORK_DATA',
     'get_empirical_data',
     'compare_to_empirical',
+    'NETWORK_AVAILABLE',
 ]

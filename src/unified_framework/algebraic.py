@@ -5,7 +5,50 @@ Algebraic Module - Grothendieck Group Implementation (T4 Direction)
 Implementation of fractal dimension Grothendieck group theory.
 """
 
-import numpy as np
+try:
+    import numpy as np
+    NUMPY_AVAILABLE = True
+except ImportError:
+    NUMPY_AVAILABLE = False
+    import math
+    # Minimal numpy-like fallback
+    class _NumpyFallback:
+        @staticmethod
+        def mean(arr):
+            return sum(arr) / len(arr) if arr else 0
+        @staticmethod
+        def std(arr, ddof=0):
+            if len(arr) <= ddof:
+                return 0
+            m = sum(arr) / len(arr)
+            variance = sum((x - m) ** 2 for x in arr) / (len(arr) - ddof)
+            return math.sqrt(variance)
+        @staticmethod
+        def array(arr):
+            return list(arr)
+        @staticmethod
+        def log(x):
+            if hasattr(x, '__iter__'):
+                return [math.log(v) for v in x]
+            return math.log(x)
+        @staticmethod
+        def exp(x):
+            if hasattr(x, '__iter__'):
+                return [math.exp(v) for v in x]
+            return math.exp(x)
+        @staticmethod
+        def linspace(start, stop, num):
+            if num <= 1:
+                return [start]
+            step = (stop - start) / (num - 1)
+            return [start + i * step for i in range(num)]
+        @staticmethod
+        def zeros(n):
+            return [0.0] * n
+        @staticmethod
+        def sqrt(x):
+            return math.sqrt(x)
+    np = _NumpyFallback()
 from fractions import Fraction
 from typing import Tuple, Union
 
@@ -273,5 +316,3 @@ def demo_grothendieck_group():
 
 if __name__ == "__main__":
     demo_grothendieck_group()
-EOF
-echo "algebraic.py implemented successfully!"

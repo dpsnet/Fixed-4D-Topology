@@ -5,9 +5,49 @@ Unified Dimensionics Framework - Core Module
 Core classes: Dimension and VariationalPrinciple
 """
 
-import numpy as np
+try:
+    import numpy as np
+    NUMPY_AVAILABLE = True
+except ImportError:
+    NUMPY_AVAILABLE = False
+    # Create a minimal numpy-like interface for pure Python
+    class _NumpyFallback:
+        @staticmethod
+        def linspace(start, stop, num):
+            if num <= 1:
+                return [start]
+            step = (stop - start) / (num - 1)
+            return [start + i * step for i in range(num)]
+        
+        @staticmethod
+        def log(x):
+            import math
+            return math.log(x)
+        
+        @staticmethod
+        def exp(x):
+            import math
+            return math.exp(x)
+        
+        @staticmethod
+        def array(x):
+            return list(x)
+        
+        @staticmethod
+        def argmin(arr):
+            return min(range(len(arr)), key=lambda i: arr[i])
+        
+        @staticmethod
+        def min(arr):
+            return min(arr)
+        
+        pi = 3.141592653589793
+    
+    np = _NumpyFallback()
+
 from typing import Union, Optional, Callable
 from fractions import Fraction
+import math
 
 
 class Dimension:
@@ -155,16 +195,32 @@ class VariationalPrinciple:
         """
         T = temperature if temperature is not None else self.T
         
-        # Use scipy optimization
-        from scipy.optimize import minimize_scalar
-        
-        result = minimize_scalar(
-            lambda d: self.A / (d ** self.alpha) + T * d * np.log(d),
-            bounds=(0.01, 10.0),
-            method='bounded'
-        )
-        
-        return result.x
+        # Try scipy first, fall back to pure Python
+        try:
+            from scipy.optimize import minimize_scalar
+            result = minimize_scalar(
+                lambda d: self.A / (d ** self.alpha) + T * d * math.log(d),
+                bounds=(0.01, 10.0),
+                method='bounded'
+            )
+            return result.x
+        except ImportError:
+            # Pure Python implementation: grid search + refinement
+            # Initial grid search
+            d_values = [0.01 + i * 9.99 / 999 for i in range(1000)]
+            f_values = [self.A / (d ** self.alpha) + T * d * math.log(d) for d in d_values]
+            
+            # Find minimum
+            min_idx = min(range(len(f_values)), key=lambda i: f_values[i])
+            d_min = d_values[min_idx]
+            
+            # Refine with smaller grid around minimum
+            d_refined = [d_min - 0.01 + i * 0.02 / 99 for i in range(100)]
+            d_refined = [d for d in d_refined if d > 0]
+            f_refined = [self.A / (d ** self.alpha) + T * d * math.log(d) for d in d_refined]
+            
+            min_idx_refined = min(range(len(f_refined)), key=lambda i: f_refined[i])
+            return d_refined[min_idx_refined]
     
     def critical_temperature(self) -> float:
         """
@@ -202,21 +258,29 @@ class VariationalPrinciple:
         Returns:
             Solution d_eff
         """
-        from scipy.optimize import minimize_scalar
-        
         def total_functional(d):
-            F = self.free_energy(d)
+            if d <= 0:
+                return float('inf')
+            F = self.A / (d ** self.alpha) + self.T * d * math.log(d)
             if spectral_correction is not None:
                 F += spectral_correction(d)
             return F
         
-        result = minimize_scalar(
-            total_functional,
-            bounds=(0.001, 100.0),
-            method='bounded'
-        )
-        
-        return result.x
+        # Try scipy first, fall back to pure Python
+        try:
+            from scipy.optimize import minimize_scalar
+            result = minimize_scalar(
+                total_functional,
+                bounds=(0.001, 100.0),
+                method='bounded'
+            )
+            return result.x
+        except ImportError:
+            # Pure Python implementation: grid search
+            d_values = [0.001 + i * 99.999 / 9999 for i in range(10000)]
+            f_values = [total_functional(d) for d in d_values]
+            min_idx = min(range(len(f_values)), key=lambda i: f_values[i])
+            return d_values[min_idx]
 
 
 class DimensionicsFramework:
@@ -368,5 +432,3 @@ def master_equation(A: float = 1.0,
     """
     vp = VariationalPrinciple(A, alpha, T)
     return vp.master_equation_solution(spectral_correction)
-EOF
-echo "core.py implemented successfully!"
