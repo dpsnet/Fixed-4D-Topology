@@ -36,14 +36,27 @@ Four predictions already show quantitative agreement with data.
 
 ## 🚀 Quick Start
 
-### Compile the Paper
+### Download the PDF (Easiest)
+
+The compiled PDF is available directly from the repository:
+
+**[📄 Download Dimensionics_Physics.pdf](Dimensionics_Physics.pdf)** (17 pages, 449 KB)
+
+Click the link above or use:
+```bash
+wget https://github.com/dpsnet/Fixed-4D-Topology/raw/main/docs/Dimensionics-Physics/paper/Dimensionics_Physics.pdf
+```
+
+### Compile from Source
+
+If you want to compile the LaTeX yourself:
 
 ```bash
 # Clone the repository
 git clone https://github.com/dpsnet/Fixed-4D-Topology.git
 cd Fixed-4D-Topology/docs/Dimensionics-Physics/paper
 
-# Compile LaTeX
+# Compile LaTeX (run 2-3 times for cross-references)
 pdflatex Dimensionics_Physics.tex
 pdflatex Dimensionics_Physics.tex
 
