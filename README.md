@@ -22,7 +22,9 @@
 
 > ⚠️ **Important**: This is an **open-source academic paper** for research exchange. It follows *Reviews in Mathematical Physics* format guidelines but is **NOT formally submitted** to the journal.
 
-**Complete LaTeX source** | **12 rigorous theorems** | **11 testable predictions** | **Freely accessible on GitHub**
+> 🔬 **Research Methodology**: This paper employs a **human-AI collaborative paradigm**. Kimi 2.5 Agent generated ALL mathematical content, writing, and visualizations. The human researcher provided conceptual direction but **acknowledges limited expertise** to rigorously verify advanced content. Professional peer review is **invited and needed**.
+
+**Complete LaTeX source** | **12 theorems (L1 claimed)** | **11 testable predictions** | **Freely accessible on GitHub**
 
 We present **Dimensionics-Physics**, a mathematically rigorous framework treating spacetime dimension as a dynamical variable:
 
@@ -31,9 +33,11 @@ We present **Dimensionics-Physics**, a mathematically rigorous framework treatin
 | **Axioms** | 9 independent axioms (A1-A9) with consistency proofs |
 | **Theorems** | 12 theorems with L1 (100%) rigorous proofs |
 | **Modified Relativity** | $g^{\text{eff}}_{\mu\nu} = \frac{4}{d_s}g_{\mu\nu}$, $SO(3,1; d_s)$ group structure |
-| **UV Fixed Point** | Rigorous proof: $\lim_{\mu \to \infty} d_s = 2$ |
+| **UV Fixed Point** | Proof claimed: $\lim_{\mu \to \infty} d_s = 2$ |
 | **Black Holes** | Dimension compression: $d_s(r) = 4 - r_s/r$ |
 | **Cosmology** | Evolution: $d_s(t) = 2 + \frac{2}{1 + e^{-(t-t_c)/\tau}}$ |
+
+**⚠️ Verification Status**: Mathematical proofs are AI-generated with claimed L1 strictness but **pending professional verification**. See [AUTHORS.md](docs/Dimensionics-Physics/paper/AUTHORS.md) and [RESEARCH_METHODOLOGY.md](docs/Dimensionics-Physics/paper/RESEARCH_METHODOLOGY.md) for details.
 
 **Key Predictions:**
 - **P1**: CMB power spectrum → CMB-S4 (2025-2030)
@@ -328,6 +332,8 @@ Each paper includes:
 
 ## 🔬 Research Methodology
 
+### Unified Framework (T1-T4, A~G, H-J)
+
 This project follows a **layered strictness approach**:
 
 - **L1 (100% Strict)**: Full mathematical rigor, complete proofs
@@ -342,6 +348,23 @@ This project follows a **layered strictness approach**:
   - Physical applications, T4 extensions
 
 **Revision Principle**: "宁可删除，不伪造成立" (Rather delete than fake validity)
+
+### Dimensionics-Physics Paper (Human-AI Collaboration)
+
+The [Dimensionics-Physics paper](docs/Dimensionics-Physics/paper/) employs a **transparent human-AI collaborative paradigm**:
+
+| Role | Contributor | Responsibility |
+|------|-------------|----------------|
+| **Principal Investigator** | Human Researcher | Conceptual direction, research vision |
+| **AI Research Assistant** | Kimi 2.5 Agent | **ALL** math, writing, visualization |
+
+**⚠️ Limitations Acknowledged**:
+- Human researcher has **limited expertise** to verify advanced mathematical physics content
+- Mathematical proofs (L1 claimed) are **pending professional verification**
+- Citation accuracy is **pending expert review**
+- Published as **open research artifact** for community validation
+
+**Call for Review**: Professional physicists and mathematicians are invited to verify this work. Submit issues at [GitHub Issues](https://github.com/dpsnet/Fixed-4D-Topology/issues).
 
 ---
 
@@ -371,6 +394,18 @@ This project follows a **layered strictness approach**:
 ---
 
 ## 📖 Citation
+
+### Dimensionics-Physics Paper
+
+```bibtex
+@article{dimensionics2026,
+  title = {Dimensionics-Physics: Spectral Dimension Flow and Quantum Gravity},
+  author = {Human Researcher and Kimi 2.5 Agent},
+  year = {2026},
+  url = {https://github.com/dpsnet/Fixed-4D-Topology/tree/main/docs/Dimensionics-Physics/paper},
+  note = {Open research artifact. AI generated all content; human provided direction with limited verification. Professional review invited.}
+}
+```
 
 ### Unified Framework
 
