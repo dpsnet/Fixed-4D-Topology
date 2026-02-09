@@ -10,10 +10,10 @@
 
 | 路线 | 完成度 | 状态 |
 |------|--------|------|
-| 路线1: 理论深化 | 30% | 🔄 进行中 |
-| 路线2: 代码实现 | 40% | 🔄 进行中 |
-| 路线3: 实验设计 | 35% | 🔄 进行中 |
-| 路线4: 方向连接 | 50% | 🔄 进行中 |
+| 路线1: 理论深化 | 85% | 🔄 进行中 |
+| 路线2: 代码实现 | 80% | 🔄 进行中 |
+| 路线3: 实验设计 | 75% | 🔄 进行中 |
+| 路线4: 方向连接 | 70% | 🔄 进行中 |
 
 ---
 
@@ -24,12 +24,11 @@
 - ✅ K1.2: 有效维度定义与性质
 - ✅ K1.3: 训练动态方程
 - ✅ K1.4: 泛化界证明
+- ✅ K1.5: 与Dimensionics连接
+- ✅ K1.6: 整合论文框架
 
 ### 进行中
-- 📝 K1.5: 与Dimensionics连接
-
-### 待完成
-- ⏳ K1.6: 整合论文
+- 📝 填充实验数据到K1.6
 
 **接口定义**:
 ```python
@@ -47,17 +46,16 @@ class EffectiveDimensionTheory:
 - ✅ `neural_dimension/` 包结构
 - ✅ `core/fisher_information.py`: Fisher矩阵计算
 - ✅ `core/effective_dimension.py`: 有效维度计算
+- ✅ `core/dimension_dynamics.py`: 维度动态追踪
 - ✅ `models/standard_architectures.py`: 标准架构
+- ✅ `models/lottery_ticket.py`: 彩票票实现
 - ✅ `visualization/dimension_plots.py`: 可视化工具
+- ✅ `experiments/double_descent.py`: 双下降实验
+- ✅ `experiments/neural_collapse.py`: 神经崩塌实验
+- ✅ `setup.py`: 包安装配置
 
 ### 进行中
-- 📝 `core/dimension_dynamics.py`: 维度动态追踪
-
-### 待完成
-- ⏳ `models/lottery_ticket.py`: 彩票票实现
-- ⏳ `experiments/double_descent.py`: 双下降实验
-- ⏳ `setup.py`: 包安装配置
-- ⏳ 单元测试
+- 📝 单元测试和文档完善
 
 **当前可用接口**:
 ```python
@@ -74,17 +72,15 @@ from neural_dimension.models import TwoLayerMLP, ResNet18
 
 ### 已完成
 - ✅ 实验协议文档 (E1-E6)
-- ✅ E1基准测量脚本框架
+- ✅ E1: 有效维度基准测量脚本
+- ✅ E2: 训练动态追踪脚本
+- ✅ E3: 双下降验证脚本
+- ✅ E4: 神经崩塌分析脚本
+- ✅ E5: 彩票票假设脚本
+- ✅ E6: 泛化界验证脚本
 
 ### 进行中
-- 📝 E1脚本实现与测试
-
-### 待完成
-- ⏳ E2: 训练动态追踪
-- ⏳ E3: 双下降验证
-- ⏳ E4: 神经崩塌分析
-- ⏳ E5: 彩票票假设
-- ⏳ E6: 泛化界验证
+- 📝 运行实验并收集数据
 - ⏳ Jupyter notebooks
 
 ---
@@ -96,12 +92,10 @@ from neural_dimension.models import TwoLayerMLP, ResNet18
 - ✅ K-I连接: 网络几何
 - ✅ K-J连接: 渗流理论
 - ✅ 统一框架文档
+- ✅ 联合实验设计文档
 
 ### 进行中
-- 📝 联合实验设计
-
-### 待完成
-- ⏳ K-H-I-J综合实验
+- 📝 联合实验代码实现
 - ⏳ 跨方向代码实现
 
 ---
