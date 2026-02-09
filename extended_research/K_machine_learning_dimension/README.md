@@ -1,130 +1,235 @@
-# K Direction: Dimension and Machine Learning
-## Neural Network Geometry and Effective Dimensions
+# K方向: 机器学习维度
+## K Direction: Machine Learning Dimension
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-1.10+-red.svg)](https://pytorch.org/)
+
+**基于Fisher信息的神经网络有效维度理论框架**
 
 ---
 
-## 1. Vision
+## 🎯 核心思想
 
-**Research Question**: What is the effective dimension of a neural network, and how does dimension relate to learning capacity, generalization, and optimization?
+神经网络的有效维度(effective dimension) $d_{\text{eff}}$ 衡量模型的"真实"复杂度，远小于参数数量 $D$。本框架提供：
 
-**Hypothesis**: Neural networks operate in an emergent effective dimension that:
-- Evolves during training
-- Determines generalization capability
-- Can be optimized via architecture design
-
----
-
-## 2. Neural Network Effective Dimension
-
-### 2.1 Definition
-
-For a neural network with parameters $\theta \in \mathbb{R}^D$, the effective dimension is:
-
-$$d_{\text{eff}}^{NN} = \frac{\left(\sum_i \lambda_i\right)^2}{\sum_i \lambda_i^2}$$
-
-where $\lambda_i$ are eigenvalues of the Fisher Information Matrix.
-
-**Interpretation**:
-- $d_{\text{eff}}^{NN} \ll D$: Most parameters are redundant
-- $d_{\text{eff}}^{NN} \approx D$: All parameters contribute
-- $d_{\text{eff}}^{NN}$ measures "true" degrees of freedom
-
-### 2.2 Connection to Dimensionics Master Equation
-
-**Proposed form**:
-
-$$d_{\text{eff}}^{NN}(t) = \arg\min_d \left[ \mathcal{L}(d) + \lambda \mathcal{R}(d) + T_{\text{opt}} S_{\text{param}}(d) \right]$$
-
-where:
-- $\mathcal{L}(d)$: Loss function (decreases with more capacity)
-- $\mathcal{R}(d)$: Regularization (increases with complexity)
-- $S_{\text{param}}(d)$: Parameter space entropy
-- $T_{\text{opt}}$: Optimization temperature
+- **严格数学定义**: 基于Fisher信息矩阵
+- **动态演化方程**: 描述训练过程中的维度变化
+- **泛化误差界**: $O(\sqrt{d_{\text{eff}}/n})$ 样本复杂度
+- **Dimensionics统一**: 与物理维度理论的跨学科连接
 
 ---
 
-## 3. Key Research Areas
+## 📁 项目结构
 
-### 3.1 Dimension Dynamics During Training
-
-**Observation**: $d_{\text{eff}}^{NN}$ evolves during SGD:
-- Early phase: $d_{\text{eff}}^{NN}$ increases (learning structure)
-- Mid phase: Plateau (optimization)
-- Late phase: May decrease (regularization kicks in)
-
-**Conjecture K.1**: Optimal generalization occurs when $d_{\text{eff}}^{NN}$ matches data manifold dimension.
-
-### 3.2 Lottery Ticket Hypothesis and Dimension
-
-**Hypothesis**: Winning tickets correspond to subnetworks with optimal $d_{\text{eff}}^{NN}$.
-
-**Prediction**: Winning tickets have $d_{\text{eff}}^{NN}$ closer to optimal than random tickets.
-
-### 3.3 Architecture Design via Dimension
-
-**Principle**: Design networks with target $d_{\text{eff}}^{NN}$ for specific tasks.
-
-**Design Rule**: 
-$$\text{Width} \times \text{Depth} \approx e^{d_{\text{eff}}^{NN}}$$
-
-### 3.4 Generalization Bounds via Dimension
-
-**New Generalization Bound**:
-
-$$\text{Generalization Error} \lesssim \sqrt{\frac{d_{\text{eff}}^{NN}}{N}}$$
-
-where $N$ is training set size.
-
----
-
-## 4. Deep Learning Phenomena Explained
-
-### 4.1 Double Descent
-
-**Dimensionics view**: 
-- Under-parametrized: $d_{\text{eff}}^{NN} < d_{\text{data}}$ (underfitting)
-- Interpolation: $d_{\text{eff}}^{NN} \approx N$ (overfitting)
-- Over-parametrized: $d_{\text{eff}}^{NN} > d_{\text{data}}$ but regularized (good fit)
-
-### 4.2 Neural Collapse
-
-**Interpretation**:
-- Optimal dimension for $K$ classes is $d_{\text{eff}}^{NN} = K-1$
-- Network self-organizes to this dimension
-
-### 4.3 Grokking
-
-**Interpretation**:
-- Early: $d_{\text{eff}}^{NN}$ grows too fast (memorization)
-- Regularization slowly reduces $d_{\text{eff}}^{NN}$
-- At critical $d_{\text{eff}}^{NN} = d_{\text{algorithm}}$: generalization occurs
-
----
-
-## 5. Experimental Plan
-
-### Phase 1: Measurement (Month 1)
-- [ ] Implement $d_{\text{eff}}^{NN}$ computation
-- [ ] Measure for standard architectures
-- [ ] Track during training
-
-### Phase 2: Correlation (Month 2)
-- [ ] Correlate $d_{\text{eff}}^{NN}$ with generalization
-- [ ] Test lottery ticket hypothesis
-
-### Phase 3: Optimization (Month 3)
-- [ ] Dimension-regularized training
-- [ ] Dimension-aware architecture search
+```
+K_machine_learning_dimension/
+├── theory/                          # 理论文档
+│   ├── K1.1_Fisher_Information.md   # Fisher信息基础
+│   ├── K1.2_Effective_Dimension.md  # 有效维度定义
+│   ├── K1.3_Training_Dynamics.md    # 训练动态方程
+│   ├── K1.4_Generalization_Bounds.md # 泛化界证明
+│   ├── K1.5_Dimensionics_Connection.md # Dimensionics连接
+│   └── K_DIRECTION_PAPER.md         # 整合论文框架
+│
+├── code/                            # Python工具包
+│   ├── neural_dimension/            # 主包
+│   │   ├── core/                    # 核心模块
+│   │   │   ├── fisher_information.py
+│   │   │   ├── effective_dimension.py
+│   │   │   └── dimension_dynamics.py
+│   │   ├── models/                  # 模型架构
+│   │   │   ├── standard_architectures.py
+│   │   │   └── lottery_ticket.py
+│   │   ├── visualization/           # 可视化
+│   │   │   └── dimension_plots.py
+│   │   └── experiments/             # 实验实现
+│   │       ├── double_descent.py
+│   │       └── neural_collapse.py
+│   └── setup.py                     # 安装配置
+│
+├── experiments/                     # 实验脚本
+│   ├── protocols/                   # 实验协议
+│   │   └── EXPERIMENTS_PROTOCOL.md
+│   └── scripts/                     # 可运行脚本
+│       ├── E1_effective_dim_baseline.py
+│       ├── E2_training_dynamics.py
+│       ├── E3_double_descent.py
+│       ├── E4_neural_collapse.py
+│       ├── E5_lottery_ticket.py
+│       └── E6_generalization_bound.py
+│
+├── integration/                     # 跨方向连接
+│   ├── KH_QUANTUM_NN.md             # K-H连接
+│   ├── KI_NETWORK_NN.md             # K-I连接
+│   ├── KJ_RANDOM_INIT.md            # K-J连接
+│   ├── K_CROSS_DIRECTION_FRAMEWORK.md # 统一框架
+│   └── JOINT_EXPERIMENTS.md         # 联合实验设计
+│
+├── notebooks/                       # Jupyter演示
+│   └── (待创建)
+│
+├── tests/                           # 单元测试
+│   └── (待创建)
+│
+├── PLAN.md                          # 并行开发计划
+├── PROGRESS.md                      # 进度追踪
+└── README.md                        # 本文件
+```
 
 ---
 
-## 6. Connections to Other Directions
+## 🚀 快速开始
 
-- **K-H**: Quantum neural networks
-- **K-I**: Neural networks as complex networks
-- **K-J**: Random initialization dynamics
+### 安装
+
+```bash
+# 克隆仓库
+cd Fixed-4D-Topology/extended_research/K_machine_learning_dimension
+
+# 安装包
+pip install code/
+
+# 或开发模式
+pip install -e code/
+```
+
+### 基础用法
+
+```python
+import torch
+from neural_dimension import FisherInformationMatrix, EffectiveDimensionCalculator
+from neural_dimension.models import TwoLayerMLP
+
+# 创建模型
+model = TwoLayerMLP(hidden_dim=128)
+
+# 准备数据
+train_loader = ...  # PyTorch DataLoader
+
+# 计算Fisher信息矩阵
+fisher_calc = FisherInformationMatrix(model, sigma=1.0)
+fisher_matrix = fisher_calc.compute_diagonal_fisher(train_loader)
+
+# 计算有效维度
+dim_calc = EffectiveDimensionCalculator(fisher_calc)
+dimensions = dim_calc.compute_all_dimensions(n_samples=1000)
+
+print(f"有效维度: {dimensions['fisher_effective_dimension']:.2f}")
+print(f"总参数: {dimensions['total_parameters']}")
+print(f"维度压缩比: {dimensions['reduction_ratio']:.4f}")
+```
+
+### 运行实验
+
+```bash
+# E1: 有效维度基准测量
+python experiments/scripts/E1_effective_dim_baseline.py
+
+# E2: 训练动态追踪
+python experiments/scripts/E2_training_dynamics.py
+
+# E3: 双下降验证
+python experiments/scripts/E3_double_descent.py
+
+# E4: 神经崩塌分析
+python experiments/scripts/E4_neural_collapse.py
+
+# E5: 彩票票假设
+python experiments/scripts/E5_lottery_ticket.py
+
+# E6: 泛化界验证
+python experiments/scripts/E6_generalization_bound.py
+```
 
 ---
 
-**Status**: Research direction identified  
-**Next**: Implement dimension measurement tools
+## 📊 核心理论
+
+### 有效维度定义
+
+基于Fisher信息矩阵 $F$:
+
+$$d_{\text{eff}} = \frac{(\text{tr} F)^2}{\text{tr}(F^2)} = \frac{(\sum_i \lambda_i)^2}{\sum_i \lambda_i^2}$$
+
+### 关键性质
+
+- **范围**: $1 \leq d_{\text{eff}} \leq D$ (总参数)
+- **尺度不变性**: 对 $F$ 的缩放不变
+- **单调性**: $F_1 \preceq F_2 \Rightarrow d_{\text{eff}}^{(1)} \leq d_{\text{eff}}^{(2)}$
+
+### 泛化界
+
+以高概率:
+
+$$R \leq \hat{R} + \mathcal{O}\left(\sqrt{\frac{d_{\text{eff}} \ln(n/d_{\text{eff}})}{n}}\right)$$
+
+### 维度演化方程
+
+$$\frac{\partial d_{\text{eff}}}{\partial t} = \alpha \mathcal{L}(d_{\text{data}} - d_{\text{eff}}) - \beta d_{\text{eff}} R$$
+
+---
+
+## 🔬 实验概览
+
+| 实验 | 目标 | 关键结果 |
+|------|------|----------|
+| **E1** | 基准测量 | 不同架构的 $d_{\text{eff}}$ 比较 |
+| **E2** | 训练动态 | $d_{\text{eff}}(t)$ 演化曲线 |
+| **E3** | 双下降 | 维度解释的双下降验证 |
+| **E4** | 神经崩塌 | NC1/NC2/NC3 与维度关系 |
+| **E5** | 彩票票 | 获胜票券的维度特性 |
+| **E6** | 泛化界 | 理论界的经验验证 |
+
+---
+
+## 🔗 跨方向连接
+
+K方向与以下方向建立连接:
+
+- **H方向 (量子维度)**: 量子神经网络的有效维度
+- **I方向 (网络几何)**: 神经网络作为复杂网络
+- **J方向 (随机分形)**: 渗流理论与初始化
+
+详见 `integration/` 目录。
+
+---
+
+## 📖 文档
+
+- **理论**: 见 `theory/` 目录
+- **实验协议**: 见 `experiments/protocols/`
+- **API文档**: (待生成)
+
+---
+
+## 🤝 贡献
+
+欢迎贡献！请查看主仓库的 CONTRIBUTING.md。
+
+---
+
+## 📄 引用
+
+```bibtex
+@article{k_direction_2026,
+  title={Neural Network Effective Dimension: A Dimensionics Framework},
+  author={Human Researcher and Kimi 2.5 Agent},
+  year={2026},
+  url={https://github.com/dpsnet/Fixed-4D-Topology}
+}
+```
+
+---
+
+## 📝 许可证
+
+MIT License - 见主仓库 LICENSE 文件。
+
+---
+
+**研究方法论**: 本研究采用人机协作范式。Kimi 2.5 Agent 生成所有内容，人类提供方向指导。
+
+**状态**: 开发阶段基本完成，进入实验验证阶段。
+
+**最后更新**: 2026-02-09

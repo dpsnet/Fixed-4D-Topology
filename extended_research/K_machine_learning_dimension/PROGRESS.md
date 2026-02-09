@@ -55,7 +55,14 @@ class EffectiveDimensionTheory:
 - ✅ `setup.py`: 包安装配置
 
 ### 进行中
-- 📝 单元测试和文档完善
+- 📝 更多单元测试
+- 📝 API文档生成
+
+### 已完成
+- ✅ 项目README
+- ✅ 基础单元测试框架
+- ✅ Jupyter演示notebooks
+- ✅ 项目结构完善
 
 **当前可用接口**:
 ```python
