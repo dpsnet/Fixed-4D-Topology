@@ -642,10 +642,44 @@ Mathematical content: CC BY 4.0
 
 ## 🙏 Acknowledgments
 
+### Research Origin and Evolution
+
+This repository represents the **fusion of two independent research initiatives** started by the same principal investigator:
+
+1. **A~G Research Directions** (May-Nov 2025)
+   - Seven parallel research directions (A through G) exploring dimension theory
+   - Initially developed as separate theoretical investigations
+   - Focus: Spectral zeta, dimension flow, modular forms, PTE arithmetic, 
+     Sobolev spaces, complexity theory, variational principles
+
+2. **Fixed-4D-Topology** (Early 2025)
+   - Core framework for dynamic spectral dimension
+   - Threads T1-T10 covering fractal geometry to motivic homotopy
+   - Focus: Cantor representation, spectral PDE, modular-fractal correspondence
+
+**Fusion**: These parallel efforts were recognized as complementary aspects of 
+a unified dimension theory and merged into this repository for integrated 
+development under the Fixed-4D-Topology umbrella.
+
+### Technical Acknowledgments
+
 - Inspired by the works of Mandelbrot, Connes, Grothendieck, and Jonsson-Wallin
-- Built with NumPy, SciPy, and SymPy
-- A~G research funded by independent research initiative
-- Fixed-4D-Topology developed through collaborative effort
+- Built with NumPy, SciPy, SymPy, PyTorch
+- Human-AI collaborative methodology employing Kimi 2.5 Agent for 
+  mathematical derivation, code implementation, and documentation
+- Independent research initiative without external funding
+
+### Research Methodology Note
+
+All content in this repository was generated through **human-AI collaboration**:
+- **Human Researcher**: Conceptual direction, research vision, hypothesis generation, 
+  high-level supervision within capability limits
+- **Kimi 2.5 Agent (Moonshot AI)**: Mathematical derivations, theorem proofs, 
+  software development, documentation, LaTeX production
+
+The human researcher acknowledges **limited expertise** in advanced mathematical 
+physics and cannot provide peer-review-level verification of all technical claims. 
+Professional peer review is invited and needed for rigorous validation.
 
 ---
 
