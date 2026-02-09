@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  k-direction-research:
+    build: .
+    image: k-direction:latest
+    container_name: k-direction-research
+    volumes:
+      - ./data:/workspace/data
+      - ./results:/workspace/results
+      - ./paper:/workspace/paper
+    environment:
+      - PYTHONPATH=/workspace
+    command: /bin/bash
+    stdin_open: true
+    tty: true
+
+  # Jupyter notebook service
+  jupyter:
+    build: .
+    image: k-direction:latest
+    container_name: k-direction-jupyter
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./:/workspace
+    command: jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root
+    environment:
+      - PYTHONPATH=/workspace
