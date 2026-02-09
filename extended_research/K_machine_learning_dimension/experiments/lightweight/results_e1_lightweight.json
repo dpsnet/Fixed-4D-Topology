@@ -1,0 +1,125 @@
+{
+  "timestamp": "2026-02-09T12:01:27.601934",
+  "configurations": [
+    {
+      "name": "Small Network",
+      "architecture": [
+        10,
+        20,
+        5
+      ],
+      "total_params": 325,
+      "estimates": {
+        "fisher": {
+          "trace_estimate": 0.0010159771498467734,
+          "rank_estimate": 300,
+          "participation_ratio": 0.2432537395444305,
+          "d_eff_trace": 0.0010159771498467734,
+          "d_eff_rank": 300,
+          "d_eff_pr": 79.05746535193991
+        },
+        "random": {
+          "trace_estimate": 105598.456240337,
+          "rank_estimate": 300,
+          "participation_ratio": 0.2432537395444305,
+          "d_eff_trace": 325.0,
+          "d_eff_rank": 300,
+          "d_eff_pr": 79.05746535193991
+        }
+      },
+      "consistency": 1.0
+    },
+    {
+      "name": "Medium Network",
+      "architecture": [
+        20,
+        40,
+        40,
+        10
+      ],
+      "total_params": 2890,
+      "estimates": {
+        "fisher": {
+          "trace_estimate": 0.0010483849245680875,
+          "rank_estimate": 966,
+          "participation_ratio": 0.3089317021765768,
+          "d_eff_trace": 0.0010483849245680875,
+          "d_eff_rank": 966,
+          "d_eff_pr": 892.8126192903069
+        },
+        "random": {
+          "trace_estimate": 2888137.0345370634,
+          "rank_estimate": 966,
+          "participation_ratio": 0.3089317021765768,
+          "d_eff_trace": 2890.0,
+          "d_eff_rank": 966,
+          "d_eff_pr": 892.8126192903069
+        }
+      },
+      "consistency": 1.0
+    },
+    {
+      "name": "Wide Shallow",
+      "architecture": [
+        10,
+        100,
+        5
+      ],
+      "total_params": 1605,
+      "estimates": {
+        "fisher": {
+          "trace_estimate": 0.0011226120747215374,
+          "rank_estimate": 941,
+          "participation_ratio": 0.31154489189949597,
+          "d_eff_trace": 0.0011226120747215374,
+          "d_eff_rank": 941,
+          "d_eff_pr": 500.02955149869103
+        },
+        "random": {
+          "trace_estimate": 1604178.1698383186,
+          "rank_estimate": 937,
+          "participation_ratio": 0.31154489189949597,
+          "d_eff_trace": 1605.0,
+          "d_eff_rank": 937,
+          "d_eff_pr": 500.02955149869103
+        }
+      },
+      "consistency": 1.0
+    },
+    {
+      "name": "Deep Narrow",
+      "architecture": [
+        10,
+        15,
+        15,
+        15,
+        5
+      ],
+      "total_params": 725,
+      "estimates": {
+        "fisher": {
+          "trace_estimate": 0.0006827011251587365,
+          "rank_estimate": 675,
+          "participation_ratio": 0.28257295289491446,
+          "d_eff_trace": 0.0006827011251587365,
+          "d_eff_rank": 675,
+          "d_eff_pr": 204.86539084881298
+        },
+        "random": {
+          "trace_estimate": 526606.7265273405,
+          "rank_estimate": 675,
+          "participation_ratio": 0.28257295289491446,
+          "d_eff_trace": 725.0,
+          "d_eff_rank": 675,
+          "d_eff_pr": 204.86539084881298
+        }
+      },
+      "consistency": 1.0
+    }
+  ],
+  "summary": {
+    "mean_consistency": 1.0,
+    "min_consistency": 1.0,
+    "max_consistency": 1.0
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "timestamp": "2026-02-09T12:01:29.143313",
+  "experiments": [
+    {
+      "name": "Depth Variation",
+      "configs": [
+        {
+          "name": "Depth-2",
+          "depth": 2,
+          "total_params": 1605,
+          "d_eff": 500.02955149869103,
+          "d_eff_ratio": 0.31154489189949597
+        },
+        {
+          "name": "Depth-3",
+          "depth": 3,
+          "total_params": 5335,
+          "d_eff": 1596.4671747510245,
+          "d_eff_ratio": 0.29924408149035137
+        },
+        {
+          "name": "Depth-4",
+          "depth": 4,
+          "total_params": 5905,
+          "d_eff": 1788.2994323766934,
+          "d_eff_ratio": 0.3028449504448253
+        },
+        {
+          "name": "Depth-5",
+          "depth": 5,
+          "total_params": 5565,
+          "d_eff": 1711.59423841426,
+          "d_eff_ratio": 0.3075641039378724
+        },
+        {
+          "name": "Depth-6",
+          "depth": 6,
+          "total_params": 5605,
+          "d_eff": 1739.6234134278302,
+          "d_eff_ratio": 0.3103699221102284
+        }
+      ]
+    },
+    {
+      "name": "Width Variation",
+      "configs": [
+        {
+          "name": "Width-20",
+          "width": 20,
+          "total_params": 745,
+          "d_eff": 215.7759211181973,
+          "d_eff_ratio": 0.2896321088834863
+        },
+        {
+          "name": "Width-40",
+          "width": 40,
+          "total_params": 2285,
+          "d_eff": 663.6982367724863,
+          "d_eff_ratio": 0.2904587469463835
+        },
+        {
+          "name": "Width-60",
+          "width": 60,
+          "total_params": 4625,
+          "d_eff": 1413.9571449019031,
+          "d_eff_ratio": 0.30572046376257367
+        },
+        {
+          "name": "Width-80",
+          "width": 80,
+          "total_params": 7765,
+          "d_eff": 2350.6903890881113,
+          "d_eff_ratio": 0.30272896189157905
+        },
+        {
+          "name": "Width-100",
+          "width": 100,
+          "total_params": 11705,
+          "d_eff": 3525.4453896959353,
+          "d_eff_ratio": 0.30119140450200216
+        }
+      ]
+    },
+    {
+      "name": "Activation Function",
+      "configs": [
+        {
+          "activation": "relu",
+          "total_params": 3355,
+          "d_eff": 990.4467013859108,
+          "d_eff_ratio": 0.2952151121865606
+        },
+        {
+          "activation": "tanh",
+          "total_params": 3355,
+          "d_eff": 990.4467013859108,
+          "d_eff_ratio": 0.2952151121865606
+        },
+        {
+          "activation": "sigmoid",
+          "total_params": 3355,
+          "d_eff": 990.4467013859108,
+          "d_eff_ratio": 0.2952151121865606
+        }
+      ]
+    }
+  ]
+}
