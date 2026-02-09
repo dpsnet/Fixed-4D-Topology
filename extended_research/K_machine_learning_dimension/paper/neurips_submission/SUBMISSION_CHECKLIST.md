@@ -5,8 +5,8 @@
 | Field | Content |
 |-------|---------|
 | **Title** | Neural Network Effective Dimension: A Geometric Framework for Understanding Generalization |
-| **Authors** | Unified Field Theory Researcher, Kimi 2.5 Agent |
-| **Primary Contact** | researcher@unifiedfieldtheory.org |
+| **Authors** | Wang Bin (王斌, Independent Researcher), Kimi 2.5 Agent |
+| **Primary Contact** | wang.bin@foxmail.com |
 | **Affiliation** | Fixed-4D-Topology Project / Moonshot AI |
 | **Submission Type** | Anonymous? No (open research artifact) |
 
@@ -15,10 +15,10 @@
 ## Author Information (Consistent with Repository)
 
 ### Human Researcher
-- **Name**: Unified Field Theory Researcher
+- **Name**: Wang Bin (王斌)
 - **Role**: Principal Investigator
-- **Email**: researcher@unifiedfieldtheory.org
-- **Affiliation**: Fixed-4D-Topology Project
+- **Email**: wang.bin@foxmail.com
+- **Role**: 独立研究员 (Independent Researcher)
 - **Contribution**: Conceptualization, research direction, physical intuition
 - **Limitation**: Cannot rigorously verify all advanced mathematical content
 

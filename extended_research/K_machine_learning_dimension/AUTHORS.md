@@ -10,9 +10,9 @@
 This research employs a **human-AI collaborative paradigm** with clearly defined roles and **honest disclosure of limitations**, consistent with the Fixed-4D-Topology framework.
 
 ### Human Researcher (Principal Investigator)
-**Name**: Unified Field Theory Researcher  
-**Affiliation**: Fixed-4D-Topology Project  
-**Email**: researcher@unifiedfieldtheory.org
+**Name**: Wang Bin (王斌)  
+**Role**: 独立研究员 (Independent Researcher)  
+**Email**: wang.bin@foxmail.com
 
 **Role**: Supervisor, Decision Maker, Research Director
 
@@ -44,14 +44,14 @@ This research employs a **human-AI collaborative paradigm** with clearly defined
 
 | Author | Affiliation | Role | Contribution |
 |--------|-------------|------|--------------|
-| **Unified Field Theory Researcher** | Fixed-4D-Topology Project | Principal Investigator | Conceptualization, Physical intuition, Research direction, Original hypotheses |
+| **Wang Bin (王斌)** | 独立研究员 (Independent Researcher) | Principal Investigator | Conceptualization, Physical intuition, Research direction, Original hypotheses |
 | **Kimi 2.5 Agent** | Moonshot AI | AI Research Assistant | Mathematical derivation, Theory development, Programming, **Writing**, **Visualization**, Documentation, LaTeX production |
 
 ---
 
 ## Author Contributions (CRediT Taxonomy)
 
-| Contribution Type | Unified Field Theory Researcher | Kimi 2.5 Agent | Notes |
+| Contribution Type | Wang Bin (王斌) | Kimi 2.5 Agent | Notes |
 |-------------------|----------------------------------|----------------|-------|
 | **Conceptualization** | ✅ Lead | ❌ | Human provides core ideas |
 | **Methodology** | ✅ Design intent | ✅ Full implementation | AI develops rigorous framework |
@@ -93,7 +93,7 @@ If you use this work, please cite:
 ```bibtex
 @article{k_direction_2026,
   title={Neural Network Effective Dimension: A Geometric Framework for Understanding Generalization},
-  author={Unified Field Theory Researcher and Kimi 2.5 Agent},
+  author={Wang Bin (王斌) and Kimi 2.5 Agent},
   year={2026},
   note={Fixed-4D-Topology Framework, K Direction},
   url={https://github.com/dpsnet/Fixed-4D-Topology}
