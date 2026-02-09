@@ -9,7 +9,7 @@
 
 This research employs a **human-AI collaborative paradigm** with clearly defined roles and **honest disclosure of limitations**, consistent with the Fixed-4D-Topology framework.
 
-### Human Researcher (Principal Investigator)
+### Wang Bin (王斌) (Principal Investigator)
 **Name**: Wang Bin (王斌)  
 **Role**: 独立研究员 (Independent Researcher)  
 **Email**: wang.bin@foxmail.com

@@ -53,13 +53,13 @@ Check the generated PDF for:
 
 **Current Authors** (see AUTHORS.md for details):
 ```
-Author 1: Human Researcher, Fixed-4D-Topology Project, [Email], [ORCID]
+Author 1: Wang Bin (王斌), Fixed-4D-Topology Project, [Email], [ORCID]
 Author 2: Kimi 2.5 Agent, Moonshot AI, N/A, N/A
 ```
 
 **Note on Authorship**: This work employs a human-AI collaborative paradigm. Kimi 2.5 Agent generated ALL mathematical content, writing, and visualizations. The human researcher acknowledges limited expertise to rigorously verify advanced content. Professional peer review is invited.
 
-Corresponding author: Human Researcher (for now); may change after professional verification
+Corresponding author: Wang Bin (王斌) (for now); may change after professional verification
 
 ### 4. Abstract and Keywords
 

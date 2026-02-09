@@ -2,7 +2,7 @@
 
 **标题**: Neural Network Effective Dimension: A Dimensionics Framework
 
-**作者**: Human Researcher & Kimi 2.5 Agent
+**作者**: Wang Bin (王斌) & Kimi 2.5 Agent
 
 **状态**: 开放研究制品，待同行评审
 

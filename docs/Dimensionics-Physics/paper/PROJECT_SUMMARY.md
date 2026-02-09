@@ -22,7 +22,7 @@ This project presents a complete open-source academic paper titled **"Dimensioni
 
 ### Human-AI Collaboration Model
 
-| Aspect | Human Researcher | Kimi 2.5 Agent |
+| Aspect | Wang Bin (王斌) | Kimi 2.5 Agent |
 |--------|------------------|----------------|
 | **Role** | Principal Investigator | AI Research Assistant |
 | **Mathematical Content** | Conceptual direction | ✅ **ALL derivations & proofs** |
@@ -187,7 +187,7 @@ This open-source paper can be cited:
 ```bibtex
 @article{dimensionics2026,
   title={Dimensionics-Physics: Spectral Dimension Flow and Quantum Gravity},
-  author={Human Researcher and Kimi 2.5 Agent},
+  author={Wang Bin (王斌) and Kimi 2.5 Agent},
   year={2026},
   url={https://github.com/dpsnet/Fixed-4D-Topology},
   note={Open research artifact. AI generated all content; human provided direction with limited verification capability. Professional review invited.}

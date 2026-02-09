@@ -244,7 +244,7 @@ K方向（机器学习维度）是 **Fixed-4D-Topology统一框架** 的扩展�
 ```bibtex
 @article{k_direction_2026,
   title={Neural Network Effective Dimension: A Dimensionics Framework},
-  author={Human Researcher and Kimi 2.5 Agent},
+  author={Wang Bin (王斌) and Kimi 2.5 Agent},
   year={2026},
   url={https://github.com/dpsnet/Fixed-4D-Topology}
 }

@@ -126,7 +126,7 @@ Human-AI collaborative development:
 
 ### Contributors
 
-- Human Researcher: Conceptualization, supervision
+- Wang Bin (王斌): Conceptualization, supervision
 - Kimi 2.5 Agent: Implementation, documentation
 
 ---

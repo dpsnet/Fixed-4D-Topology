@@ -14,7 +14,7 @@
 
 ## Author Information (Consistent with Repository)
 
-### Human Researcher
+### Wang Bin (王斌)
 - **Name**: Wang Bin (王斌)
 - **Role**: Principal Investigator
 - **Email**: wang.bin@foxmail.com

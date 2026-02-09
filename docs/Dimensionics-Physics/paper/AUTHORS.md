@@ -9,7 +9,7 @@
 
 This research employs a **human-AI collaborative paradigm** with clearly defined roles and **honest disclosure of limitations**:
 
-### Human Researcher (Principal Investigator)
+### Wang Bin (王斌) (Principal Investigator)
 **Role**: Supervisor, Decision Maker, Assistant  
 **Capabilities and Limitations**:
 - **Mathematical and Physical Intuition**: Providing fundamental insights into spectral dimension flow and quantum gravity
@@ -45,14 +45,14 @@ This work represents a **transparent human-AI collaboration** where:
 
 | Author | Affiliation | Role | Contribution |
 |--------|-------------|------|--------------|
-| **Human Researcher** (Principal Investigator) | Fixed-4D-Topology Project | Supervisor, Decision Maker | Conceptualization, Physical intuition, Research direction, Original hypotheses |
+| **Wang Bin (王斌)** (Principal Investigator) | Fixed-4D-Topology Project | Supervisor, Decision Maker | Conceptualization, Physical intuition, Research direction, Original hypotheses |
 | **Kimi 2.5 Agent** | Moonshot AI / AI Research Engine | AI Research Assistant | Mathematical derivation, Theory development, Programming, **Writing**, **Visualization**, Documentation, LaTeX production |
 
 ---
 
 ## Author Contributions (CRediT Taxonomy)
 
-| Contribution Type | Human Researcher | Kimi 2.5 Agent | Notes |
+| Contribution Type | Wang Bin (王斌) | Kimi 2.5 Agent | Notes |
 |-------------------|------------------|----------------|-------|
 | **Conceptualization** | ✅ Lead | ❌ | Human provides core ideas |
 | **Methodology** | ✅ Design intent | ✅ Full implementation | AI develops rigorous framework |

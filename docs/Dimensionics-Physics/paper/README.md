@@ -3,7 +3,7 @@
 
 **Title**: Dimensionics-Physics: Spectral Dimension Flow and Quantum Gravity
 
-**Authors**: Human Researcher (Principal Investigator) & Kimi 2.5 Agent (AI Research Assistant)  
+**Authors**: Wang Bin (王斌) (Principal Investigator) & Kimi 2.5 Agent (AI Research Assistant)  
 **Research Methodology**: Human-AI Collaborative - see [RESEARCH_METHODOLOGY.md](RESEARCH_METHODOLOGY.md)
 
 **Format Standard**: Reviews in Mathematical Physics (RMP) Guidelines

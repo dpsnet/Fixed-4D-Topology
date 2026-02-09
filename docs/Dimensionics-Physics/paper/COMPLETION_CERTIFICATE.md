@@ -20,7 +20,7 @@ This project employs a **human-AI collaborative paradigm** with transparent disc
 
 | Role | Contributor | Key Contributions |
 |------|-------------|-------------------|
-| **Principal Investigator** | Human Researcher | Mathematical intuition, research direction, original hypotheses |
+| **Principal Investigator** | Wang Bin (王斌) | Mathematical intuition, research direction, original hypotheses |
 | **AI Research Assistant** | Kimi 2.5 Agent | ALL mathematical derivations, writing, visualizations, documentation |
 
 ### ⚠️ Limitations Acknowledged

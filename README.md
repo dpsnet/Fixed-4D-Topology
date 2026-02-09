@@ -355,7 +355,7 @@ The [Dimensionics-Physics paper](docs/Dimensionics-Physics/paper/) employs a **t
 
 | Role | Contributor | Responsibility |
 |------|-------------|----------------|
-| **Principal Investigator** | Human Researcher | Conceptual direction, research vision |
+| **Principal Investigator** | Wang Bin (王斌) | Conceptual direction, research vision |
 | **AI Research Assistant** | Kimi 2.5 Agent | **ALL** math, writing, visualization |
 
 **⚠️ Limitations Acknowledged**:
@@ -400,7 +400,7 @@ The [Dimensionics-Physics paper](docs/Dimensionics-Physics/paper/) employs a **t
 ```bibtex
 @article{dimensionics2026,
   title = {Dimensionics-Physics: Spectral Dimension Flow and Quantum Gravity},
-  author = {Human Researcher and Kimi 2.5 Agent},
+  author = {Wang Bin (王斌) and Kimi 2.5 Agent},
   year = {2026},
   url = {https://github.com/dpsnet/Fixed-4D-Topology/tree/main/docs/Dimensionics-Physics/paper},
   note = {Open research artifact. AI generated all content; human provided direction with limited verification. Professional review invited.}
@@ -698,7 +698,7 @@ All content in this repository was generated through **human-AI collaboration**.
   - Software development, LaTeX production, integration
 
 **Human-AI Collaboration Model**:
-- **Human Researcher**: Conceptual direction, research vision, hypothesis generation,
+- **Wang Bin (王斌)**: Conceptual direction, research vision, hypothesis generation,
   high-level supervision, final decision making
 - **AI Assistants**: Mathematical derivations, theorem proofs, code implementation,
   documentation writing, visualization

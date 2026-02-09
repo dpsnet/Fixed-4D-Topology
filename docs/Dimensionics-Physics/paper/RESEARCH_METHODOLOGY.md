@@ -30,7 +30,7 @@ This collaboration follows the principle that:
 
 ## 2. Role Definitions
 
-### 2.1 Human Researcher (Principal Investigator)
+### 2.1 Wang Bin (王斌) (Principal Investigator)
 
 | Aspect | Description |
 |--------|-------------|
@@ -245,7 +245,7 @@ This methodology section explicitly acknowledges:
 
 ### 7.1 Authorship
 
-- **Human Researcher**: Principal investigator, responsible for research direction within capability limits
+- **Wang Bin (王斌)**: Principal investigator, responsible for research direction within capability limits
 - **AI System**: Acknowledged as **primary content generator** for mathematics, writing, and visuals
 - **Attribution**: Clear documentation that AI generated most technical content
 - **Limitation Disclosure**: Honest statement that human cannot verify all technical claims

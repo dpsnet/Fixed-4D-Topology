@@ -22,7 +22,7 @@ This research employs a **human-AI collaborative paradigm** with transparent dis
 
 | Role | Contributor | Key Contributions |
 |------|-------------|-------------------|
-| **Principal Investigator** | Human Researcher | Conceptual direction, research vision |
+| **Principal Investigator** | Wang Bin (王斌) | Conceptual direction, research vision |
 | **AI Research Assistant** | Kimi 2.5 Agent | **ALL** math derivations, writing, visualizations |
 
 **⚠️ Limitations Acknowledged**: The human researcher has **limited expertise** to rigorously verify advanced mathematical physics content. Mathematical proofs (L1 claimed), citation accuracy, and technical rigor are **pending professional verification**. This is an **open research artifact** for community validation.
@@ -156,7 +156,7 @@ If you use this work in your research, please cite:
 ```bibtex
 @article{dimensionics2026,
   title = {Dimensionics-Physics: Spectral Dimension Flow and Quantum Gravity},
-  author = {Human Researcher and Kimi 2.5 Agent},
+  author = {Wang Bin (王斌) and Kimi 2.5 Agent},
   year = {2026},
   url = {https://github.com/dpsnet/Fixed-4D-Topology/tree/main/docs/Dimensionics-Physics/paper},
   note = {Open research artifact employing human-AI collaborative methodology. AI generated all content; human provided direction with limited verification capability. Professional peer review invited.}

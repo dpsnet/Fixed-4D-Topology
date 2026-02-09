@@ -6,7 +6,7 @@ Thank you for your interest in contributing to the Dimensionics-Physics project!
 
 This project employs a **human-AI collaborative paradigm** with transparent disclosure:
 
-- **Human Researcher**: Provides conceptual direction, research vision, and high-level oversight
+- **Wang Bin (王斌)**: Provides conceptual direction, research vision, and high-level oversight
 - **Kimi 2.5 Agent**: Generates ALL mathematical content, writing, visualizations, and documentation
 
 ### ⚠️ Important Limitation
