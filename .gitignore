@@ -91,7 +91,12 @@ extended_research/K_machine_learning_dimension/data/
 *.synctex.gz
 *.fdb_latexmk
 *.fls
+# PDF files (default ignore)
 *.pdf
 
-# But keep the final paper PDF in submission directory
-!paper/neurips_submission/main.pdf
+# But keep all paper PDFs (open source)
+!arxiv-paper/main.pdf
+!docs/Dimensionics-Physics/paper/Dimensionics_Physics.pdf
+!papers/unified-dimensionics/latex/main.pdf
+!extended_research/K_machine_learning_dimension/paper/neurips_submission/main.pdf
+!extended_research/K_machine_learning_dimension/paper/neurips_submission/supplementary_materials.pdf

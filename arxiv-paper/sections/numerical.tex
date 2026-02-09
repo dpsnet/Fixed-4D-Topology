@@ -2,7 +2,7 @@ This section presents numerical validation of our theoretical results. All compu
 
 \subsection{Implementation}
 
-We implement \Cref{alg:greedy} with the following specifications:
+We implement \ref{alg:greedy} with the following specifications:
 \begin{itemize}[leftmargin=*]
     \item Dimension set: $\mathcal{D}_0 = \{d_1, d_2, d_3, d_4, d_5\}$ where $d_i = \frac{\log(i+1)}{\log(i+2)}$
     \item Rational coefficients: limited to denominators $\leq 1000$ for computational efficiency
@@ -11,7 +11,7 @@ We implement \Cref{alg:greedy} with the following specifications:
 
 \subsection{Convergence Rate Verification}
 
-\Cref{tab:convergence} validates the $O(\log(1/\eps))$ convergence rate predicted by \Cref{thm:convergence_rate}. We approximate $\alpha = \pi - 3$ (an irrational number) to various precisions.
+\ref{tab:convergence} validates the $O(\log(1/\eps))$ convergence rate predicted by \ref{thm:convergence_rate}. We approximate $\alpha = \pi - 3$ (an irrational number) to various precisions.
 
 \begin{table}[ht]
 \centering
@@ -34,7 +34,7 @@ The empirical ratio $k / \log(1/\eps)$ stabilizes around 1.1, well below the the
 
 \subsection{Approximation Examples}
 
-\Cref{tab:examples} shows approximations of various mathematical constants.
+\ref{tab:examples} shows approximations of various mathematical constants.
 
 \begin{table}[ht]
 \centering
@@ -57,7 +57,7 @@ All targets are approximated within the specified tolerance using 15--19 steps, 
 
 \subsection{Linear Independence Verification}
 
-To numerically verify \Cref{thm:linear_independence}, we check that small rational combinations do not produce exact zeros:
+To numerically verify \ref{thm:linear_independence}, we check that small rational combinations do not produce exact zeros:
 
 \begin{table}[ht]
 \centering

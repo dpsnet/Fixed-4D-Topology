@@ -73,7 +73,7 @@ Therefore $q_1 = q_2 = 0$, establishing linear independence for $n=2$. The gener
 \end{proof}
 
 \begin{remark}
-The linear independence established in \Cref{thm:linear_independence} provides the theoretical foundation for using Cantor dimensions as a basis. Unlike polynomial bases where linear independence is trivial, the transcendental nature of logarithmic ratios makes this result non-obvious.
+The linear independence established in \ref{thm:linear_independence} provides the theoretical foundation for using Cantor dimensions as a basis. Unlike polynomial bases where linear independence is trivial, the transcendental nature of logarithmic ratios makes this result non-obvious.
 \end{remark}
 
 % ============================================
@@ -124,30 +124,37 @@ For any compact interval $[a, b] \subseteq \R$, the intersection $\mathcal{R}_{\
 
 \begin{theorem}[Greedy Approximation Algorithm]
 \label{thm:algorithm}
-There exists a constructive algorithm (\Cref{alg:greedy}) that, given $\alpha \in \R$ and $\eps > 0$, outputs $d \in \mathcal{R}_{\Cantor}$ with $|\alpha - d| < \eps$. The algorithm terminates in finite time.
+There exists a constructive algorithm (\ref{alg:greedy}) that, given $\alpha \in \R$ and $\eps > 0$, outputs $d \in \mathcal{R}_{\Cantor}$ with $|\alpha - d| < \eps$. The algorithm terminates in finite time.
 \end{theorem}
 
-\begin{algorithm}[H]
-\caption{Greedy Cantor Approximation}
-\label{alg:greedy}
-\begin{algorithmic}[1]
-\Require Target $\alpha \in \R$, precision $\eps > 0$, finite dimension set $\mathcal{D}_0 = \{d_1, \ldots, d_m\} \subseteq \mathcal{D}_{\Cantor}$
-\Ensure Approximation $d \in \mathcal{R}_{\Cantor}$ with $|\alpha - d| < \eps$
-\State $r_0 \gets \alpha$
-\State $k \gets 0$
-\While{$|r_k| \geq \eps$}
-    \State $k \gets k + 1$
-    \State $(i_k, c_k) \gets \argmin_{i \in [m], c \in \Q} |r_{k-1} - c \cdot d_i|$ \label{line:greedy_step}
-    \State $r_k \gets r_{k-1} - c_k \cdot d_{i_k}$
-\EndWhile
-\State \Return $d = \sum_{j=1}^{k} c_j \cdot d_{i_j}$
-\end{algorithmic}
-\end{algorithm}
+\begin{center}
+\fbox{
+\begin{minipage}{0.9\textwidth}
+\textbf{Algorithm:} Greedy Cantor Approximation (Algorithm~\ref{alg:greedy})\label{alg:greedy}
 
-\begin{proof}[Proof of \Cref{thm:algorithm}]
+\textbf{Input:} Target $\alpha \in \R$, precision $\eps > 0$, finite dimension set $\mathcal{D}_0 = \{d_1, \ldots, d_m\} \subseteq \mathcal{D}_{\Cantor}$
+
+\textbf{Output:} Approximation $d \in \mathcal{R}_{\Cantor}$ with $|\alpha - d| < \eps$
+
+\begin{enumerate}
+    \item Initialize: $r_0 \gets \alpha$, $k \gets 0$
+    \item \textbf{while} $|r_k| \geq \eps$ \textbf{do}
+    \begin{enumerate}
+        \item $k \gets k + 1$
+        \item $(i_k, c_k) \gets \argmin_{i \in [m], c \in \Q} |r_{k-1} - c \cdot d_i|$
+        \item $r_k \gets r_{k-1} - c_k \cdot d_{i_k}$
+    \end{enumerate}
+    \item \textbf{end while}
+    \item \textbf{return} $d = \sum_{j=1}^{k} c_j \cdot d_{i_j}$
+\end{enumerate}
+\end{minipage}
+}
+\end{center}
+
+\begin{proof}[Proof of \ref{thm:algorithm}]
 We prove termination and correctness.
 
-\textbf{Termination:} At each step, the greedy choice in Line \ref{line:greedy_step} minimizes the residual. By \Cref{thm:density}, for any residual $r_{k-1}$, there exists a choice reducing the absolute value. Specifically, we can always choose $c_k$ such that $|r_k| \leq |r_{k-1}|/2$ (by taking $c_k$ to be the best rational approximation to $r_{k-1}/d_{i_k}$ with denominator bounded by a constant).
+\textbf{Termination:} At each step, the greedy choice in line~5 of Algorithm~\ref{alg:greedy} minimizes the residual. By \ref{thm:density}, for any residual $r_{k-1}$, there exists a choice reducing the absolute value. Specifically, we can always choose $c_k$ such that $|r_k| \leq |r_{k-1}|/2$ (by taking $c_k$ to be the best rational approximation to $r_{k-1}/d_{i_k}$ with denominator bounded by a constant).
 
 Therefore, after $O(\log(|\alpha|/\eps))$ steps, we have $|r_k| < \eps$.
 
@@ -166,7 +173,7 @@ And the algorithm stops only when $|r_k| < \eps$, ensuring $|\alpha - d| < \eps$
 
 \begin{theorem}[Optimal Convergence Rate]
 \label{thm:convergence_rate}
-Let $C = \frac{1}{\log(3/2)} \approx 2.466$. The greedy algorithm (\Cref{alg:greedy}) achieves error $|\alpha - d| < \eps$ using at most:
+Let $C = \frac{1}{\log(3/2)} \approx 2.466$. The greedy algorithm (\ref{alg:greedy}) achieves error $|\alpha - d| < \eps$ using at most:
 \begin{equation}
 k \leq C \cdot \log(1/\eps) + O(1)
 \end{equation}
