@@ -9,7 +9,10 @@ Date: 2026-02-09
 
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy.integrate import odeint
+try:
+    from scipy.integrate import odeint
+except ImportError:
+    odeint = None
 from typing import Callable, Tuple
 import json
 from datetime import datetime
@@ -79,6 +82,8 @@ def solve_master_eq(
     def ode(y, t):
         return master_equation(y, t, alpha)
     
+    if odeint is None:
+        raise ImportError("scipy not installed")
     d_solution = odeint(ode, d0, ln_mu)
     return ln_mu, d_solution.flatten()
 
