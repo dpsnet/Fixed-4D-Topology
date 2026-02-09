@@ -687,15 +687,29 @@ This repository represents the **unified framework** developed through an iterat
 
 ### Research Methodology Note
 
-All content in this repository was generated through **human-AI collaboration**:
-- **Human Researcher**: Conceptual direction, research vision, hypothesis generation, 
-  high-level supervision within capability limits
-- **Kimi 2.5 Agent (Moonshot AI)**: Mathematical derivations, theorem proofs, 
-  software development, documentation, LaTeX production
+All content in this repository was generated through **human-AI collaboration**.
 
-The human researcher acknowledges **limited expertise** in advanced mathematical 
-physics and cannot provide peer-review-level verification of all technical claims. 
+**AI Tools Used (Chronological)**:
+- **Phase 1 (May 2025 - Jan 2026)**: DeepSeek, Trae AI, 知乎AI, KIMI
+  - Used during initial research in private repository
+  - Mathematical derivations, theorem proofs, documentation
+- **Phase 2 (Jan 2026 - Present)**: Kimi 2.5 Agent (Moonshot AI)
+  - Primary tool for Fixed-4D-Topology framework development
+  - Software development, LaTeX production, integration
+
+**Human-AI Collaboration Model**:
+- **Human Researcher**: Conceptual direction, research vision, hypothesis generation,
+  high-level supervision, final decision making
+- **AI Assistants**: Mathematical derivations, theorem proofs, code implementation,
+  documentation writing, visualization
+
+The human researcher acknowledges **limited expertise** in advanced mathematical
+physics and cannot provide peer-review-level verification of all technical claims.
 Professional peer review is invited and needed for rigorous validation.
+
+**Early Research**: Some content was developed using DeepSeek, Trae AI, and 知乎AI
+during the pre-open source phase (May 2025 - Jan 2026), before consolidation into
+the Fixed-4D-Topology framework.
 
 ---
 

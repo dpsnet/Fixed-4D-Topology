@@ -288,13 +288,23 @@ jupyter notebook notebooks/
 **研究整合**：研究从初始私有仓库(2025-05)经历分布式GitHub仓库(2026-01)，
 最终整合到Fixed-4D-Topology统一框架(2026-02)进行协同开发。
 
-### 贡献者
+### 贡献者与AI工具
 
-- **人类研究员**：研究构想、方向指导、假设生成、概念验证
-- **Kimi 2.5 Agent (Moonshot AI)**：数学推导、代码实现、
-  文档撰写、LaTeX排版
-- **开源社区**：NumPy, SciPy, PyTorch等工具支持
-- **理论先驱**：Mandelbrot, Connes, Grothendieck等人的工作启发
+**人类研究员**
+- 研究构想、方向指导、假设生成、概念验证
+- 最终决策和质量把控
+
+**AI工具演进**
+- **早期阶段 (2025-05 至 2026-01)**：DeepSeek, Trae AI, 知乎AI, KIMI
+  - 用于初始理论探索和文档撰写
+- **当前阶段 (2026-01 至今)**：Kimi 2.5 Agent (Moonshot AI)
+  - 用于Fixed-4D-Topology框架开发和K方向实现
+
+**开源社区**
+- NumPy, SciPy, PyTorch等工具支持
+
+**理论先驱**
+- Mandelbrot, Connes, Grothendieck等人的工作启发
 
 ### 方法论声明
 
