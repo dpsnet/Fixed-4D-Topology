@@ -1,6 +1,6 @@
 # Fixed 4D Topology + A~G: Unified Dimensionics Framework
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18511250.svg)](https://doi.org/10.5281/zenodo.18511250)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18547324.svg)](https://doi.org/10.5281/zenodo.18547324)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
@@ -456,9 +456,9 @@ e1b7800 | Further enhance T2-T4 papers with advanced mathematical content (v2.1)
 5284e6e | Update Zenodo DOI integration
 c5d6415 | Update with actual Zenodo DOI: 10.5281/zenodo.8475
 3ff2e44 | Add Zenodo DOI status tracking for v1.0.1
-dc2f7c7 | Update all files with actual Zenodo DOI: 10.5281/zenodo.18511250
+dc2f7c7 | Update all files with actual Zenodo DOI: 10.5281/zenodo.18547324
 ```
-- DOI: 10.5281/zenodo.18511250 registered
+- DOI: 10.5281/zenodo.18547324 registered
 - Academic archiving established
 
 ---
