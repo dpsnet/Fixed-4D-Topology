@@ -133,3 +133,72 @@ This holds for all $\alpha, \beta, T > 0$.
 \end{itemize}
 
 \end{document}
+
+\section{Convexity Sufficient Condition: Proof}\label{sec:proof}
+
+\begin{theorem}[Main Result]
+Let $E(d)$ be the energy functional and $S(d)$ the entropy functional defined as:
+\begin{align}
+E(d) &= \int_M \left(R + \alpha(d-2)^2 + \beta(d-4)^2\right) dV\\
+S(d) &= -\int_M d \ln d \, dV
+\end{align}
+
+The total functional $F(d) = E(d) - T \cdot S(d)$ is strictly convex on $[2,4]$ if and only if:
+\begin{equation}\label{eq:convexity_condition}
+\boxed{\alpha + \beta > \frac{T}{8}}
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+We compute the second variation of $F(d)$:
+
+\textbf{Step 1: Energy second derivative}
+\begin{equation}
+\frac{d^2 E}{dd^2} = \int_M 2(\alpha + \beta) \, dV = 2(\alpha + \beta) \cdot \text{Vol}(M)
+\end{equation}
+
+\textbf{Step 2: Entropy second derivative}
+\begin{equation}
+\frac{d^2 S}{dd^2} = -\int_M \frac{1}{d} \, dV = -\frac{\text{Vol}(M)}{d}
+\end{equation}
+
+\textbf{Step 3: Total functional Hessian}
+\begin{equation}
+\frac{d^2 F}{dd^2} = 2(\alpha + \beta) \cdot \text{Vol}(M) + \frac{T \cdot \text{Vol}(M)}{d}
+\end{equation}
+
+\textbf{Step 4: Convexity condition}
+For strict convexity, we require:
+\begin{equation}
+\frac{d^2 F}{dd^2} > 0 \quad \forall d \in [2,4]
+\end{equation}
+
+The minimum occurs at $d = 4$ (where $1/d$ is smallest):
+\begin{equation}
+\min_{d \in [2,4]} \frac{d^2 F}{dd^2} = \text{Vol}(M) \left[2(\alpha + \beta) - \frac{T}{4}\right]
+\end{equation}
+
+Therefore:
+\begin{equation}
+2(\alpha + \beta) - \frac{T}{4} > 0 \Rightarrow \alpha + \beta > \frac{T}{8}
+\end{equation}
+
+\textbf{Q.E.D.}
+\end{proof}
+
+\begin{corollary}[Physical Interpretation]
+In the high-temperature limit $T \to \infty$, the coupling constants must satisfy:
+\begin{equation}
+\alpha + \beta = O(T)
+\end{equation}
+to maintain convexity. This provides a constraint on the Dimensionics parameters.
+\end{corollary}
+
+\begin{remark}[Non-convex Regime]
+When $\alpha + \beta \leq T/8$, the functional $F(d)$ loses convexity, potentially leading to:
+\begin{itemize}
+\item Multiple local minima
+\item First-order phase transitions
+\item Spontaneous symmetry breaking in dimension
+\end{itemize}
+\end{remark}

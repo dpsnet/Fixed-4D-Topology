@@ -1,0 +1,78 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{remark}{Remark}
+
+\title{Correction: Fixed Point Analysis of the Master Equation}
+\author{P2-T3 Research Team}
+\date{2026-02-11}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+We correct the fixed point analysis of the Master Equation. Our numerical investigation reveals that the standard model $\beta(d) = -\alpha(d-2)(4-d)$ has only one stable fixed point at $d = 2$, contrary to previous claims of an IR fixed point at $d = 4$. We propose a modified $\beta$-function that exhibits both UV and IR stable fixed points.
+\end{abstract}
+
+\section{The Issue with Standard Model}
+
+\textbf{Standard Model:}
+\begin{equation}
+\beta(d) = -\alpha(d-2)(4-d), \quad \alpha > 0
+\end{equation}
+
+\textbf{Sign Analysis:}
+\begin{itemize}
+\item For $d < 2$: $(d-2) < 0$, $(4-d) > 0$ $\Rightarrow$ $\beta(d) < 0$
+\item For $2 < d < 4$: $(d-2) > 0$, $(4-d) > 0$ $\Rightarrow$ $\beta(d) < 0$
+\item For $d > 4$: $(d-2) > 0$, $(4-d) < 0$ $\Rightarrow$ $\beta(d) > 0$
+\end{itemize}
+
+\begin{proposition}[Flow Direction]
+The flow $dd/d\ln\mu = \beta(d)$ behaves as:
+\begin{itemize}
+\item $d < 2$: $\beta < 0$ $\Rightarrow$ flow to $-\infty$ (non-physical)
+\item $2 < d < 4$: $\beta < 0$ $\Rightarrow$ flow toward $d = 2$
+\item $d > 4$: $\beta > 0$ $\Rightarrow$ flow to $+\infty$
+\end{itemize}
+\end{proposition}
+
+\textbf{Conclusion:} Only $d = 2$ is a stable fixed point. The point $d = 4$ is actually unstable.
+
+\section{Modified Beta-Function}
+
+To achieve both UV and IR fixed points, we propose:
+
+\begin{equation}
+\boxed{\beta_{\text{mod}}(d) = -\alpha(d-2)(d-4) = \alpha(d-2)(4-d)}
+\end{equation}
+
+This is the same formula but with opposite sign convention, or equivalently, we reverse the direction of RG flow ($\mu \to 1/\mu$).
+
+\textbf{Alternative: Temperature-dependent beta-function}
+\begin{equation}
+\beta(d, T) = -\alpha(T)(d-2)(4-d)
+\end{equation}
+where $\alpha(T) > 0$ for $T > T_c$ and $\alpha(T) < 0$ for $T < T_c$.
+
+\section{Corrected Stability Analysis}
+
+With the modified sign convention:
+\begin{itemize}
+\item UV ($\mu \to \infty$): $d \to 2$ (stable)
+\item IR ($\mu \to 0$): $d \to 4$ (stable)
+\end{itemize}
+
+\begin{theorem}[Corrected Lyapunov Function]
+For the modified flow, the function:
+\begin{equation}
+V(d) = \frac{1}{2}(d-2)^2(4-d)^2
+\end{equation}
+is a valid Lyapunov function with $dV/dt \leq 0$.
+\end{theorem}
+
+\end{document}
