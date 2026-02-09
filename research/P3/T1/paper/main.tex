@@ -1,0 +1,135 @@
+\documentclass[11pt,a4paper]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage{geometry}
+\usepackage{hyperref}
+
+\geometry{margin=1in}
+
+% Theorem environments
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{\textbf{Convexity Analysis of Energy Functional}\\\large Variational Structure in Dimensionics}
+\author{P3-T1 Research Team\\Fixed-4D-Topology Project}
+\date{Research Started: February 9, 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+We analyze the convexity properties of the energy functional $E(d)$ in the variational formulation of effective dimension. We prove that under suitable conditions on the coupling constants, $E(d)$ is strictly convex on $[2,4]$, ensuring unique minimizers for the variational problem.
+\end{abstract}
+
+\section{Introduction}\label{sec:intro}
+
+The variational problem for effective dimension:
+\begin{equation}\label{eq:variational}
+\min_{d \in [2,4]} \left[ E(d) - T \cdot S(d) + \Lambda(d) \right]
+\end{equation}
+requires convexity of the energy functional for well-posedness.
+
+\section{Energy Functional}\label{sec:energy}
+
+\begin{definition}[Energy Functional]
+The energy functional $E: [2,4] \to \mathbb{R}$ is defined as:
+\begin{equation}\label{eq:energy}
+E(d) = \int_M \left( R + \alpha(d-2)^2 + \beta(d-4)^2 \right) dV
+\end{equation}
+where:
+\begin{itemize}
+\item $R$ is the scalar curvature of background metric
+\item $\alpha, \beta > 0$ are coupling constants
+\item $M$ is the spacetime manifold
+\end{itemize}
+\end{definition}
+
+\section{Convexity Analysis}\label{sec:convexity}
+
+\subsection{Pointwise Convexity}
+
+\begin{theorem}[Pointwise Convexity]
+For the energy density $e(d) = R + \alpha(d-2)^2 + \beta(d-4)^2$:
+\begin{equation}
+e''(d) = 2(\alpha + \beta) > 0
+\end{equation}
+Therefore, $e(d)$ is strictly convex for all $\alpha, \beta > 0$.
+\end{theorem}
+
+\subsection{Integral Convexity}
+
+\begin{theorem}[Convexity of $E(d)$]
+The energy functional $E(d)$ is strictly convex on $[2,4]$:
+\begin{equation}
+E''(d) = 2(\alpha + \beta) \text{Vol}(M) > 0
+\end{equation}
+\end{theorem}
+
+\subsection{Hessian Analysis}
+
+For functional $E: \mathcal{D} \to \mathbb{R}$ where $\mathcal{D} = C^{\infty}(M; [2,4])$:
+
+\begin{definition}[Second Variation]
+The second variation of $E$ at $d$ in direction $\phi$ is:
+\begin{equation}
+\delta^2 E(d)[\phi, \phi] = \int_M 2(\alpha + \beta) \phi^2 dV
+\end{equation}
+\end{definition}
+
+\begin{theorem}[Uniform Convexity]
+$E$ is uniformly convex:
+\begin{equation}
+\delta^2 E(d)[\phi, \phi] \geq 2(\alpha + \beta) \|\phi\|_{L^2}^2
+\end{equation}
+\end{theorem}
+
+\section{Entropy Contribution}\label{sec:entropy}
+
+\begin{definition}[Entropy Functional]
+The entropy is defined as:
+\begin{equation}
+S(d) = -\int_M d \ln d \, dV
+\end{equation}
+\end{definition}
+
+\begin{proposition}[Concavity of Entropy]
+$S(d)$ is strictly concave:
+\begin{equation}
+S''(d) = -\frac{1}{d} < 0 \quad \text{for } d > 0
+\end{equation}
+\end{proposition}
+
+\section{Combined Functional}\label{sec:combined}
+
+\begin{theorem}[Convexity of Total Functional]
+The total functional:
+\begin{equation}
+\mathcal{F}(d) = E(d) - T \cdot S(d)
+\end{equation}
+is strictly convex if:
+\begin{equation}
+2(\alpha + \beta) + \frac{T}{d^2} > 0 \quad \forall d \in [2,4]
+\end{equation}
+This holds for all $\alpha, \beta, T > 0$.
+\end{theorem}
+
+\section{Research Timeline}
+\begin{itemize}
+\item \textbf{2026-02-09}: Research initiated
+\item \textbf{2026-02-20}: Complete convexity proofs
+\item \textbf{2026-02-28}: Numerical verification
+\item \textbf{2026-03-05}: Paper completion
+\end{itemize}
+
+\end{document}

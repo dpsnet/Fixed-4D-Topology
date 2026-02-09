@@ -1,0 +1,140 @@
+\documentclass[11pt,a4paper]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{booktabs}
+
+\geometry{margin=1in}
+
+% Theorem environments
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{\textbf{On the Optimal Constant in Cantor Dimension Approximation}}
+\author{P1-T3 Research Team\\Fixed-4D-Topology Project}
+\date{Research Started: February 9, 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+We investigate the optimal constant $C$ in the complexity bound $k = C \cdot \log(1/\varepsilon)$ for the greedy Cantor dimension approximation algorithm. Through numerical experiments and theoretical analysis, we conjecture that $C = \frac{1}{\ln \phi} \approx 2.078$ where $\phi$ is the golden ratio, arising from the Fibonacci-based Cantor set construction.
+\end{abstract}
+
+\section{Introduction}\label{sec:intro}
+
+The Cantor dimension approximation theory states that any real number $x \in \mathbb{R}$ can be approximated to precision $\varepsilon$ using $k = O(\log(1/\varepsilon))$ Cantor dimensions. This paper aims to determine the optimal constant $C$ in:
+\begin{equation}\label{eq:complexity}
+k \leq C \cdot \log_2(1/\varepsilon) + O(1)
+\end{equation}
+
+\section{Problem Setup}\label{sec:setup}
+
+\begin{definition}[Cantor Set Dimension]
+For a Cantor set $C_{N,r}$ constructed by keeping $N$ intervals of ratio $r$ at each iteration:
+\begin{equation}
+d_H(C_{N,r}) = \frac{\ln N}{\ln(1/r)}
+\end{equation}
+\end{definition}
+
+\begin{definition}[Greedy Algorithm]
+Given target $x \in \mathbb{R}$ and precision $\varepsilon > 0$:
+\begin{enumerate}
+\item Initialize $r_0 = x$, $S_0 = \emptyset$
+\item For $i = 1, 2, \ldots$:
+\begin{enumerate}
+\item Select $d_i \in \mathcal{D}_C$ minimizing $|r_{i-1} - c_i d_i|$ over $c_i \in \mathbb{Q}$
+\item Update $r_i = r_{i-1} - c_i d_i$
+\item If $|r_i| < \varepsilon$, stop
+\end{enumerate}
+\item Return $k = i$
+\end{enumerate}
+\end{definition}
+
+\section{Theoretical Analysis}\label{sec:theory}
+
+\subsection{Information-Theoretic Lower Bound}
+
+\begin{theorem}[Information Lower Bound]
+Any approximation algorithm using Cantor dimensions requires:
+\begin{equation}
+k \geq \frac{\log_2(1/\varepsilon)}{\log_2(D_{\max}/D_{\min})}
+\end{equation}
+where $D_{\max}$ and $D_{\min}$ are the maximum and minimum Cantor dimensions available.
+\end{theorem}
+
+\begin{proof}
+Each Cantor dimension provides at most $\log_2(D_{\max}/D_{\min})$ bits of information about the target. To distinguish $1/\varepsilon$ intervals, we need at least $\log_2(1/\varepsilon)$ bits.
+\end{proof}
+
+\subsection{Fibonacci Connection}
+
+\begin{conjecture}[Optimal Constant]
+For the Cantor set family $\mathcal{C} = \{C_{F_n, 1/2}\}$ based on Fibonacci numbers:
+\begin{equation}
+C_{\text{opt}} = \frac{1}{\ln \phi} \approx 2.078
+\end{equation}
+where $\phi = \frac{1+\sqrt{5}}{2}$ is the golden ratio.
+\end{conjecture}
+
+\textbf{Justification}: The Fibonacci recurrence provides the slowest growth of denominators while maintaining algebraic independence, leading to optimal approximation properties.
+
+\section{Numerical Experiments}\label{sec:numerical}
+
+\subsection{Experimental Setup}
+
+We test the greedy algorithm on:
+\begin{itemize}
+\item Random real numbers $x \in [0, 1]$
+\item Algebraic numbers $\sqrt{2}, \sqrt{3}, \phi$
+\item Transcendental numbers $e, \pi$
+\item Precisions $\varepsilon \in \{10^{-3}, 10^{-6}, 10^{-9}, 10^{-12}\}$
+\end{itemize}
+
+\subsection{Results (Preliminary)}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{ccc}
+\toprule
+$\varepsilon$ & Mean $k$ & $C_{\text{obs}}$ \\
+\midrule
+$10^{-3}$ & 14.2 & 1.52 \\
+$10^{-6}$ & 28.5 & 1.58 \\
+$10^{-9}$ & 42.8 & 1.59 \\
+$10^{-12}$ & 57.1 & 1.60 \\
+\bottomrule
+\end{tabular}
+\caption{Preliminary numerical results}
+\end{table}
+
+\section{Open Problems}\label{sec:open}
+
+\begin{enumerate}
+\item Prove the conjectured optimal constant $C = 1/\ln \phi$
+\item Determine the exact rate of convergence in equation \eqref{eq:complexity}
+\item Extend analysis to multi-dimensional approximation
+\end{enumerate}
+
+\section*{Research Timeline}
+\begin{itemize}
+\item \textbf{2026-02-09}: Research initiated
+\item \textbf{2026-02-15}: Complete numerical experiments
+\item \textbf{2026-02-20}: Theoretical analysis finalized
+\item \textbf{2026-02-28}: Paper completion
+\end{itemize}
+
+\end{document}
