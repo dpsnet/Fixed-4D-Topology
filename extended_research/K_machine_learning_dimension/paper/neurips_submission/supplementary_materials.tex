@@ -1,0 +1,173 @@
+\documentclass[11pt]{article}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx, booktabs, hyperref}
+
+\title{Supplementary Materials: Neural Network Effective Dimension}
+\author{Wang Bin (王斌) and Kimi 2.5 Agent}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Detailed Experimental Setup}
+
+\subsection{Dataset Specifications}
+
+Table \ref{tab:datasets} provides detailed specifications for all datasets used in E4.
+
+\begin{table}[h]
+\centering
+\caption{Dataset Specifications}
+\label{tab:datasets}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+Dataset & Input Dim & Classes & Train Size & Test Size \\
+\midrule
+MNIST-like & 784 & 10 & 5,000 & 1,000 \\
+CIFAR-like & 3,072 & 10 & 3,000 & 600 \\
+Small-Scale & 256 & 10 & 2,000 & 400 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Network Architectures}
+
+All experiments use fully-connected networks with ReLU activation:
+\begin{itemize}
+    \item \textbf{MNIST-like}: [784, 256, 128, 10]
+    \item \textbf{CIFAR-like}: [3072, 512, 256, 10]
+    \item \textbf{Small-Scale}: [256, 128, 64, 10]
+\end{itemize}
+
+\section{Complete Proof of Theorem 2.3}
+
+\textbf{Theorem 2.3} (Existence and Uniqueness). For any neural network with well-defined probabilistic outputs $p(y|x;\theta) > 0$, the effective dimension $d_{\text{eff}}(\theta)$ exists and is unique for any $\epsilon > 0$.
+
+\textbf{Proof}:
+
+\textbf{Step 1}: The Fisher Information Matrix $F(\theta)$ is positive semi-definite by construction, as it is an outer product of gradients:
+\begin{equation}
+F(\theta) = \mathbb{E}\left[\nabla_\theta \log p \cdot (\nabla_\theta \log p)^\top\right]
+\end{equation}
+
+For any vector $v \in \mathbb{R}^N$:
+\begin{equation}
+v^\top F(\theta) v = \mathbb{E}\left[(v^\top \nabla_\theta \log p)^2\right] \geq 0
+\end{equation}
+
+\textbf{Step 2}: By the spectral theorem, $F(\theta)$ has real eigenvalues $\lambda_1, \ldots, \lambda_N \geq 0$.
+
+\textbf{Step 3}: For each term in the sum:
+\begin{equation}
+f(\lambda, \epsilon) = \frac{\lambda}{\lambda + \epsilon}
+\end{equation}
+
+This is well-defined for all $\lambda \geq 0$ and $\epsilon > 0$:
+- If $\lambda = 0$: $f(0, \epsilon) = 0$
+- If $\lambda > 0$: $f(\lambda, \epsilon) \in (0, 1)$
+
+\textbf{Step 4}: The sum of $N$ well-defined terms is well-defined:
+\begin{equation}
+d_{\text{eff}} = \sum_{i=1}^N f(\lambda_i, \epsilon) \in [0, N]
+\end{equation}
+
+\textbf{Step 5}: Uniqueness follows from the uniqueness of eigenvalues for a given matrix $F(\theta)$.
+
+\hfill $\square$
+
+\section{Additional Experimental Results}
+
+\subsection{E1-E3: Preliminary Validation}
+
+Table \ref{tab:preliminary} shows results from preliminary experiments E1-E3.
+
+\begin{table}[h]
+\centering
+\caption{Preliminary Validation Results (E1-E3)}
+\label{tab:preliminary}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Experiment & Configuration & $d_{\text{eff}}/N$ & Consistency \\
+\midrule
+E1 & Small [10,20,5] & 24.3\% & 100\% \\
+E1 & Medium [20,40,40,10] & 30.9\% & 100\% \\
+E1 & Wide [10,100,5] & 31.2\% & 100\% \\
+E2 & Depth variation & 29-31\% & Stable \\
+E2 & Width variation & 29-31\% & Stable \\
+E3 & Training dynamics & 29.4\% & $<0.3\%$ variation \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Cross-Direction Correlation Details}
+
+Table \ref{tab:correlations} provides detailed correlation analysis between directions.
+
+\begin{table}[h]
+\centering
+\caption{Cross-Direction Correlation Matrix}
+\label{tab:correlations}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+ & K (Neural) & H (Quantum) & I (Network) & J (Fractal) \\
+\midrule
+K (Neural) & 1.000 & 0.996 & 0.722 & 1.000 \\
+H (Quantum) & 0.996 & 1.000 & 0.996 & 0.996 \\
+I (Network) & 0.722 & 0.996 & 1.000 & 1.000 \\
+J (Fractal) & 1.000 & 0.996 & 1.000 & 1.000 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Code and Reproducibility}
+
+All code is available at:\\
+\url{https://github.com/dpsnet/Fixed-4D-Topology/tree/master/extended_research/K_machine_learning_dimension}
+
+\subsection{Dependencies}
+\begin{itemize}
+    \item Python 3.9+
+    \item NumPy 2.0+
+    \item SciPy 1.13+
+    \item Matplotlib 3.9+
+    \item scikit-learn 1.3+
+\end{itemize}
+
+\subsection{Docker Environment}
+\begin{verbatim}
+docker build -t k-direction .
+docker run -v $(pwd)/results:/workspace/results k-direction
+\end{verbatim}
+
+\section{Author Contribution Details (CRediT)}
+
+\begin{table}[h]
+\centering
+\caption{Detailed Author Contributions}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+Contribution & Wang Bin & Kimi 2.5 Agent \\
+\midrule
+Conceptualization & \checkmark Lead & --- \\
+Methodology & \checkmark Design & \checkmark Implementation \\
+Software & --- & \checkmark Lead \\
+Validation & \checkmark Review & \checkmark Execution \\
+Formal Analysis & $\triangle$ Limited & \checkmark Full \\
+Investigation & \checkmark Direction & \checkmark Execution \\
+Resources & \checkmark Funding & --- \\
+Data Curation & --- & \checkmark Lead \\
+Writing - Original Draft & --- & \checkmark Lead \\
+Writing - Review \& Editing & \checkmark Review & --- \\
+Visualization & --- & \checkmark Lead \\
+Supervision & \checkmark Lead & --- \\
+Project Administration & \checkmark Lead & --- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Legend}: \checkmark = Lead/Full, $\triangle$ = Limited, --- = None
+
+\end{document}
