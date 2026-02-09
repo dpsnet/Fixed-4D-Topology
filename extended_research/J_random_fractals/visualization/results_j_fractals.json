@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-02-09T13:32:44.287966",
+  "fractals": [
+    {
+      "type": "percolation",
+      "p": 0.25,
+      "dimension": 1.36215189394685,
+      "n_occupied": 133
+    },
+    {
+      "type": "percolation",
+      "p": 0.3,
+      "dimension": 1.7238485062515756,
+      "n_occupied": 508
+    },
+    {
+      "type": "percolation",
+      "p": 0.35,
+      "dimension": 2.5743474179788857,
+      "n_occupied": 14442
+    },
+    {
+      "type": "sierpinski",
+      "dimension": 2.66299954663502,
+      "n_occupied": 14384,
+      "theoretical_dim": 2.73
+    }
+  ]
+}

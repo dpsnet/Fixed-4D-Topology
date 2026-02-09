@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-02-09T13:34:40.034347",
+  "individual_directions": {
+    "K_neural": 3750.0,
+    "H_quantum": 5.477225575051661,
+    "I_network": 2.6,
+    "J_fractal": 2.5
+  },
+  "unified_metrics": {
+    "unified_dimension": 1502.1154451150103,
+    "weights": [
+      0.4,
+      0.2,
+      0.2,
+      0.2
+    ]
+  },
+  "correlations": {
+    "K-H": 0.9960981494360355,
+    "K-I": 0.9999999983338964,
+    "K-J": 0.9999999983338967,
+    "H-I": 0.9960988360374906,
+    "H-J": 0.9960988360374905,
+    "I-J": 1.0
+  },
+  "conjectures": {
+    "dimension_conservation": 3752.5,
+    "classical_quantum_ratio": 684.6531968814577,
+    "network_fractal_diff": 0.10000000000000009
+  }
+}
