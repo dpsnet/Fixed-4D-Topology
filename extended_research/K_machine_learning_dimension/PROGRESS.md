@@ -100,9 +100,10 @@ from neural_dimension.models import TwoLayerMLP, ResNet18
 - ✅ K-J连接: 渗流理论
 - ✅ 统一框架文档
 - ✅ 联合实验设计文档
+- ✅ 联合实验代码实现 (CrossDirectionAnalyzer)
 
 ### 进行中
-- 📝 联合实验代码实现
+- 📝 量子/网络/渗流接口完善
 - ⏳ 跨方向代码实现
 
 ---
