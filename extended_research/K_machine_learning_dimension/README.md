@@ -212,9 +212,10 @@ K方向（机器学习维度）是 **Fixed-4D-Topology统一框架** 的扩展�
 形成K-H-I-J跨方向研究体系的一部分。
 
 **研究演进** (根据Git提交历史):
-- **2026-01-27**: 基础框架建立 (Fundamental-Mathematics, Physical-Applications等)
+- **2025-05-10**: 初始研究启动 (FiberGravity-DynamicCoupling私有仓库)
+- **2026-01-27**: 开源基础框架建立 (Fundamental-Mathematics, Physical-Applications等)
 - **2026-02-03**: 扩展框架建立 (Advanced-Physics-Framework, Computational-Framework等)
-- **2026-02-07**: Fixed-4D-Topology v1.0.0发布，A~G方向深度研究启动
+- **2026-02-07**: Fixed-4D-Topology v1.0.0发布，整合前期研究成果
 - **2026-02-07**: H-J扩展研究启动 (量子维度、网络几何、随机分形)
 - **2026-02-09**: **K方向启动**: 机器学习维度理论
 

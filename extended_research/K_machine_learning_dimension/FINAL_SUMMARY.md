@@ -257,27 +257,36 @@ jupyter notebook notebooks/
 
 本项目是研究者独立发起的**系列研究的一部分**。根据Git提交历史：
 
-**阶段一：基础框架建立** (2026年1月27日-2月3日)
-- **2026-01-27**: Fundamental-Mathematics, Physical-Applications, 
-  Advanced-Theoretical-Framework, Master-Outline等基础仓库初始提交
-- **2026-02-03**: Advanced-Physics-Framework, Computational-Framework, 
-  Experimental-Verification, Theory-Documentation等扩展框架初始提交
-- 建立数学维度理论的基础文档和理论框架
+**阶段一：初始研究** (2025年5月-2026年1月)
+- **2025-05-10**: 研究在私有仓库(FiberGravity-DynamicCoupling)中启动
+  - 初始焦点：纤维引力和动态耦合理论
+  - 持续开发M系列和P系列理论文档
+  - 从物理导向进化为统一维度理论
+- 这阶段的研究为后续开源框架奠定了基础
 
-**阶段二：统一框架启动** (2026年2月7日)
-- **Fixed-4D-Topology v1.0.0** 初始发布
-- 核心框架：动态谱维度统一理论（T1-T10理论线程）
-- 深度研究方向：A~G方向（谱Zeta、维度流、模形式、PTE算术、
-  Sobolev空间、复杂性、变分原理）的系统研究
+**阶段二：开源框架建立** (2026年1月27日-2月3日)
+- **2026-01-27**: 创建基础GitHub仓库：
+  Fundamental-Mathematics, Physical-Applications, 
+  Advanced-Theoretical-Framework, Master-Outline
+- **2026-02-03**: 创建扩展框架仓库：
+  Advanced-Physics-Framework, Computational-Framework, 
+  Experimental-Verification, Theory-Documentation
+- 将私有仓库的研究整理为开源可用的文档和代码
 
-**阶段三：扩展研究融合** (2026年2月7-9日)
+**阶段三：统一框架发布** (2026年2月7日)
+- **Fixed-4D-Topology v1.0.0** 发布
+- 从私有仓库迁移并整合研究成果
+- 核心框架：T1-T10动态谱维度理论
+- A~G方向系统研究（谱Zeta、维度流、模形式、PTE算术、
+  Sobolev空间、复杂性、变分原理）
+
+**阶段四：扩展研究** (2026年2月7-9日)
 - **2026-02-07**: H方向（量子维度）、I方向（网络几何）、
   J方向（随机分形）启动
-- **2026-02-09**: **K方向（机器学习维度）**启动，
-  将维度理论扩展到深度学习领域
+- **2026-02-09**: **K方向（机器学习维度）**启动
 
-**研究整合**：从分布式专业仓库整合到Fixed-4D-Topology统一框架，
-实现协同开发和集中管理。
+**研究整合**：研究从初始私有仓库(2025-05)经历分布式GitHub仓库(2026-01)，
+最终整合到Fixed-4D-Topology统一框架(2026-02)进行协同开发。
 
 ### 贡献者
 

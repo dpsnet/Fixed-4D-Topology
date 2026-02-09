@@ -648,19 +648,25 @@ This repository represents the **unified framework** developed through an iterat
 
 #### Timeline (Based on Git History)
 
-**Phase 1: Initial Framework Development (Jan 27 - Feb 3, 2026)**
-- **2026-01-27**: Initial commits for foundational repositories:
+**Pre-Open Source Development (May 2025 - Jan 2026)**
+- **2025-05-10**: Research initiated in private repository (`FiberGravity-DynamicCoupling`)
+  - Initial focus: Fiber gravity and dynamic coupling theories
+  - Continuous development through M-series and P-series documents
+  - Evolution from physics-focused to unified dimension theory
+
+**Phase 1: Open Source Preparation (Jan 27 - Feb 3, 2026)**
+- **2026-01-27**: Created foundational GitHub repositories:
   - Fundamental-Mathematics, Physical-Applications, Advanced-Theoretical-Framework
   - Master-Outline (总纲)
-- **2026-02-03**: Expanded framework with:
+- **2026-02-03**: Extended framework repositories:
   - Advanced-Physics-Framework, Computational-Framework, Experimental-Verification
   - Theory-Documentation
 
 **Phase 2: Unified Framework Launch (Feb 7, 2026)**
 - **2026-02-07**: Fixed-4D-Topology v1.0.0 initial release
-  - Core framework for dynamic spectral dimension (T1-T10)
-  - Deep research on A~G directions (E→D→B→F progression)
-  - Integration of theoretical threads into unified structure
+  - Migration and consolidation of research from private repository
+  - Core framework: T1-T10 dynamic spectral dimension theory
+  - A~G directions integration (spectral zeta, dimension flow, modular forms, etc.)
 
 **Phase 3: Extended Research (Feb 7-8, 2026)**
 - **H, I, J Directions**: Quantum dimension, network geometry (2.1M nodes), random fractals
@@ -668,10 +674,8 @@ This repository represents the **unified framework** developed through an iterat
 
 **Phase 4: K Direction - Machine Learning (Feb 9, 2026)**
 - **2026-02-09**: Launch of K direction (neural network effective dimension)
-- Parallel development on theory, code, experiments, and integration
-- Cross-direction framework with H/I/J directions
 
-**Repository Structure**: The research evolved from distributed specialized repositories (Jan-Feb 2026) into the current centralized Fixed-4D-Topology framework for integrated development and unified management.
+**Research Evolution**: The project evolved from an initial private research repository (May 2025) through distributed specialized GitHub repositories (Jan 2026) into the current centralized Fixed-4D-Topology framework (Feb 2026) for integrated development.
 
 ### Technical Acknowledgments
 
