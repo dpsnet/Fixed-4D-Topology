@@ -1,0 +1,56 @@
+{
+  "timestamp": "2026-02-09T12:54:57.641159",
+  "datasets": [
+    {
+      "name": "MNIST-like",
+      "architecture": [
+        784,
+        256,
+        128,
+        10
+      ],
+      "total_params": 235146,
+      "d_eff": 57863.01903965858,
+      "d_eff_ratio": 0.2460727337044159,
+      "train_samples": 5000,
+      "train_error": 0.3625954323753483,
+      "test_error": 0.361365397014261,
+      "generalization_gap": -0.0012300353610872894,
+      "predicted_bound": 3.401852996225986
+    },
+    {
+      "name": "CIFAR-like",
+      "architecture": [
+        3072,
+        512,
+        256,
+        10
+      ],
+      "total_params": 1707274,
+      "d_eff": 336795.7337394355,
+      "d_eff_ratio": 0.19727104948557495,
+      "train_samples": 3000,
+      "train_error": 0.2133781109818632,
+      "test_error": 0.2143219799797197,
+      "generalization_gap": 0.0009438689978564785,
+      "predicted_bound": 10.59552946198593
+    },
+    {
+      "name": "Small-Scale",
+      "architecture": [
+        256,
+        128,
+        64,
+        10
+      ],
+      "total_params": 41802,
+      "d_eff": 11481.45200257493,
+      "d_eff_ratio": 0.2746627434710045,
+      "train_samples": 2000,
+      "train_error": 0.410556729602381,
+      "test_error": 0.41778547538027155,
+      "generalization_gap": 0.007228745777890566,
+      "predicted_bound": 2.3959812188928913
+    }
+  ]
+}
