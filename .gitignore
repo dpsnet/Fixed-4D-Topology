@@ -80,3 +80,18 @@ data/
 extended_research/*/data/
 extended_research/*/*/data/
 extended_research/K_machine_learning_dimension/data/
+
+# LaTeX build files
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.pdf
+
+# But keep the final paper PDF in submission directory
+!paper/neurips_submission/main.pdf
