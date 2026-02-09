@@ -59,3 +59,15 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Python virtual environments (comprehensive)
+venv/
+venv_*/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# K direction specific
+extended_research/K_machine_learning_dimension/venv*/
