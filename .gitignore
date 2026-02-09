@@ -72,3 +72,11 @@ venv.bak/
 # K direction specific
 extended_research/K_machine_learning_dimension/venv*/
 /extended_research/K_machine_learning_dimension/venv_pytorch
+
+# Large data files (downloaded/generated)
+*.npz
+data/
+*.tar.gz
+extended_research/*/data/
+extended_research/*/*/data/
+extended_research/K_machine_learning_dimension/data/
