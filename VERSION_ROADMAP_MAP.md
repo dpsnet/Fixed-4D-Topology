@@ -6,12 +6,14 @@ This document clarifies the relationship between release versions and research r
 
 ## Overview
 
-| Version | Release Date | Roadmap Phase | Major Achievement |
-|---------|--------------|---------------|-------------------|
-| v2.0.0 | 2026-02-07 | Pre-roadmap | Extended Research (H/I/J/K) |
-| **v2.1.0** | **2026-02-09** | **Pre-roadmap** | **T1-T10 + A-G Foundation, 5 papers** |
-| **v3.0.0** | **2026-02-10** | **RESEARCH_ROADMAP_v3.0 Complete** | **Three Bridges + Final Paper** |
-| v4.0.0 | Planned | RESEARCH_ROADMAP_v4.0 | M-1~M-10 Reconstruction |
+| Version | Release Date | Roadmap | Status | Major Achievement |
+|---------|--------------|---------|--------|-------------------|
+| v2.0.0 | 2026-02-07 | Pre-roadmap | 🟢 Released | Extended Research (H/I/J/K) |
+| **v2.1.0** | **2026-02-09** | **Pre-roadmap** | **🟢 Released** | **T1-T10 + A-G Foundation, 5 papers** |
+| **v3.0.0** | **2026-02-10** | **[v3.0](docs/roadmaps/completed/RESEARCH_ROADMAP_v3.0.md)** | **🟢 Current** | **Three Bridges + Final Paper** |
+| v4.0.0 | Planned | [v4.0](docs/roadmaps/active/RESEARCH_ROADMAP_v4.0.md) | 🔵 Planned | M-1~M-10 Reconstruction |
+
+**Quick Links**: [All Roadmaps](docs/roadmaps/) | [Project Status](PROJECT_STATUS.md)
 
 ---
 
