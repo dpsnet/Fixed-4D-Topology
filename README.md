@@ -88,8 +88,8 @@ We present **Dimensionics-Physics**, a mathematically rigorous framework treatin
 - ✅ Phase transitions: **4 testable cosmological predictions**
 
 📄 **Papers**: `P1_T3_*.pdf`, `P2_T3_*.pdf`, `P3_T1_*.pdf`, `P4_T1_*.pdf`  
-📊 **Visualizations**: `research_dashboard.png`, `*_analysis.png`, `*_rigorous.png` (13 charts)  
-📖 **Reports**: `FINAL_RESEARCH_REPORT.md`, `RESEARCH_ROADMAP_v3.0.md`
+📊 **Visualizations**: `final_summary_dashboard.png`, `*_analysis.png`, `*_rigorous.png` (16 charts)  
+📖 **Reports**: `COMPREHENSIVE_RESEARCH_SUMMARY.md`, `FINAL_RESEARCH_REPORT.md`, `RESEARCH_ROADMAP_v3.0.md`
 
 ---
 
