@@ -386,6 +386,62 @@ python research/P4/T1/code/spectral_dimension_formula.py
 
 ---
 
+## 🔬 Research Methodology
+
+### Human-AI Collaborative Paradigm
+
+This research employs a **transparent human-AI collaborative methodology**:
+
+| Role | Responsibility | Contribution |
+|------|----------------|--------------|
+| **Human Researcher** | Conceptual direction, research vision, hypothesis generation, scientific judgment, data validation | Defines research questions, sets priorities, validates results, catches AI hallucinations |
+| **AI (Kimi 2.5 Agent)** | Mathematical derivations, theorem proofs, code implementation, documentation, LaTeX production | Generates ALL mathematical content, writing, and visualizations |
+
+### Strictness Grading (L1-L3)
+
+All theoretical claims are honestly graded:
+- **L1 (100% Strict)**: Full proofs, no assumptions (e.g., Master Equation existence, Cantor approximation)
+- **L2 (Progressive)**: Asymptotic results with error bounds (e.g., spectral dimension flow)
+- **L3 (Heuristic)**: Exploratory conjectures with numerical evidence (e.g., physical applications)
+
+### Core Principle
+
+> **"宁可删除，不伪造成立"** (Rather delete than fake validity)
+
+All phenomenological parameters eliminated through first-principles derivation (Three Bridges).
+
+### Verification Status
+
+- Mathematical proofs claimed as L1 are **pending professional verification**
+- Published as **open research artifact** for community validation
+- **Call for Review**: Professional peer review invited at [GitHub Issues](https://github.com/dpsnet/Fixed-4D-Topology/issues)
+
+---
+
+## 🙏 Acknowledgments
+
+### Research Origin
+
+This work represents the culmination of intensive research:
+
+- **May 2025 - Jan 2026**: Private exploration (discarded)
+- **Feb 7, 2026**: Clean-slate rigorous reconstruction began
+- **Feb 10, 2026**: Three Bridges complete, v3.0.0 release
+
+### Technical Acknowledgments
+
+- **Inspiration**: Mandelbrot (fractals), Connes (noncommutative geometry), Grothendieck (algebraic geometry), Jonsson-Wallin (Sobolev spaces)
+- **Tools**: NumPy, SciPy, SymPy, PyTorch, LaTeX
+- **AI Assistance**: Kimi 2.5 Agent (Moonshot AI) for mathematical derivation and code
+
+### Research Integrity
+
+- Independent research without external funding
+- All code and data open source (MIT License)
+- Full transparency in methodology and limitations
+
+---
+
 ## Package Structure
 
 ```
