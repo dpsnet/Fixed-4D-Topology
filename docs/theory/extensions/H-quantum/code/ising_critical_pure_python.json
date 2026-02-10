@@ -1,0 +1,35 @@
+{
+  "model": "Transverse Field Ising (Pure Python)",
+  "results": [
+    {
+      "h_over_J": 0.5,
+      "entropy": 0.2,
+      "dimension": 1.0868588963806505
+    },
+    {
+      "h_over_J": 0.8,
+      "entropy": 0.14,
+      "dimension": 1.0608012274664553
+    },
+    {
+      "h_over_J": 1.0,
+      "entropy": 0.4,
+      "dimension": 1.1737177927613007
+    },
+    {
+      "h_over_J": 1.2,
+      "entropy": 0.12,
+      "dimension": 1.0521153378283903
+    },
+    {
+      "h_over_J": 1.5,
+      "entropy": 0.15000000000000002,
+      "dimension": 1.0651441722854877
+    },
+    {
+      "h_over_J": 2.0,
+      "entropy": 0.2,
+      "dimension": 1.0868588963806505
+    }
+  ]
+}

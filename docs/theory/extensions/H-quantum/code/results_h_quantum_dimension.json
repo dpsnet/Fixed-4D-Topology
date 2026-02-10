@@ -1,0 +1,386 @@
+{
+  "timestamp": "2026-02-09T13:19:08.997631",
+  "experiments": [
+    {
+      "bond_dim": 10,
+      "final_entropy": -0.0,
+      "final_quantum_dimension": 1.0,
+      "history": [
+        {
+          "step": 0,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 10,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 20,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 30,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 40,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 50,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 60,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 70,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 80,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 90,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 100,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 110,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 120,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 130,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 140,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 150,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 160,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 170,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 180,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 190,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        }
+      ]
+    },
+    {
+      "bond_dim": 20,
+      "final_entropy": -0.0,
+      "final_quantum_dimension": 1.0,
+      "history": [
+        {
+          "step": 0,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 10,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 20,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 30,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 40,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 50,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 60,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 70,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 80,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 90,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 100,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 110,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 120,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 130,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 140,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 150,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 160,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 170,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 180,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 190,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        }
+      ]
+    },
+    {
+      "bond_dim": 40,
+      "final_entropy": -0.0,
+      "final_quantum_dimension": 1.0,
+      "history": [
+        {
+          "step": 0,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 10,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 20,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 30,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 40,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 50,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 60,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 70,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 80,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 90,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 100,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 110,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 120,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 130,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 140,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 150,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 160,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 170,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 180,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        },
+        {
+          "step": 190,
+          "entropy": -0.0,
+          "quantum_dimension": 1.0,
+          "max_singular": 1.0
+        }
+      ]
+    }
+  ]
+}
