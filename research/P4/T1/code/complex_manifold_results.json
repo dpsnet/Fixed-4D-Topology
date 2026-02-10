@@ -1,0 +1,135 @@
+[
+  {
+    "manifold": "CP^1",
+    "dimension": 2,
+    "euler_char": 2,
+    "betti_numbers": [
+      1,
+      0,
+      1
+    ],
+    "signature": 1,
+    "total_pontryagin": 2,
+    "spectral_dim_metric_0.5": 1.997,
+    "spectral_dim_metric_1.0": 1.999,
+    "spectral_dim_metric_2.0": 2.0
+  },
+  {
+    "manifold": "CP^2",
+    "dimension": 4,
+    "euler_char": 3,
+    "betti_numbers": [
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    "signature": 1,
+    "total_pontryagin": 3,
+    "spectral_dim_metric_0.5": 4.0,
+    "spectral_dim_metric_1.0": 4.0,
+    "spectral_dim_metric_2.0": 4.0
+  },
+  {
+    "manifold": "CP^3",
+    "dimension": 6,
+    "euler_char": 4,
+    "betti_numbers": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    "signature": 1,
+    "total_pontryagin": 4,
+    "spectral_dim_metric_0.5": 6.0,
+    "spectral_dim_metric_1.0": 6.0,
+    "spectral_dim_metric_2.0": 6.0
+  },
+  {
+    "manifold": "K3",
+    "dimension": 4,
+    "euler_char": 24,
+    "betti_numbers": [
+      1,
+      0,
+      22,
+      0,
+      1
+    ],
+    "signature": 22,
+    "total_pontryagin": -48,
+    "spectral_dim_metric_0.5": 3.997,
+    "spectral_dim_metric_1.0": 4.0,
+    "spectral_dim_metric_2.0": 4.0
+  },
+  {
+    "manifold": "S^2 \u00d7 S^2",
+    "dimension": 4,
+    "euler_char": 4,
+    "betti_numbers": [
+      1,
+      0,
+      2,
+      0,
+      1
+    ],
+    "signature": 2,
+    "total_pontryagin": 0,
+    "spectral_dim_metric_0.5": 3.999,
+    "spectral_dim_metric_1.0": 4.0,
+    "spectral_dim_metric_2.0": 4.0
+  },
+  {
+    "manifold": "S^1 \u00d7 S^2",
+    "dimension": 3,
+    "euler_char": 0,
+    "betti_numbers": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "signature": 1,
+    "total_pontryagin": 0,
+    "spectral_dim_metric_0.5": 3.0,
+    "spectral_dim_metric_1.0": 3.0,
+    "spectral_dim_metric_2.0": 3.0
+  },
+  {
+    "manifold": "S^1 \u00d7 S^1",
+    "dimension": 2,
+    "euler_char": 0,
+    "betti_numbers": [
+      1,
+      2,
+      1
+    ],
+    "signature": 1,
+    "total_pontryagin": 0,
+    "spectral_dim_metric_0.5": 2.0,
+    "spectral_dim_metric_1.0": 2.0,
+    "spectral_dim_metric_2.0": 2.0
+  },
+  {
+    "manifold": "S^4 # S^4",
+    "dimension": 4,
+    "euler_char": 2,
+    "betti_numbers": [
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "signature": 0,
+    "total_pontryagin": 0,
+    "spectral_dim_metric_0.5": 4.0,
+    "spectral_dim_metric_1.0": 4.0,
+    "spectral_dim_metric_2.0": 4.0
+  }
+]
