@@ -1,0 +1,15 @@
+{
+  "application": "Quantum Field Theory in Varying Dimensions",
+  "key_findings": {
+    "ground_state": "Phase transition at d_c \u2248 3",
+    "uv_behavior": "Super-renormalizable at d=2",
+    "dimreg_connection": "d(\u03bc) \u2248 4 - \u03b5(\u03bc)",
+    "phase_structure": "Symmetric/Broken phases in (d,T) space"
+  },
+  "implications": [
+    "Natural UV completion through dimensional flow",
+    "Holographic behavior at UV fixed point",
+    "Dynamic dimensional regularization"
+  ],
+  "status": "QFT applications of convexity framework established"
+}
