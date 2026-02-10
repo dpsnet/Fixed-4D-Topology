@@ -1,0 +1,341 @@
+{
+  "timestamp": "2026-02-10 16:56:26",
+  "manifolds": [
+    {
+      "name": "S^1",
+      "dimension": 1,
+      "volume": 6.283185307179586,
+      "curvature": 0.0,
+      "eigenvalues_count": 101,
+      "proof_validated": false,
+      "chi_squared_reduced": 29.817385112938148,
+      "seeley_dewitt": {
+        "a_0": 6.267106853948132,
+        "a_1": 0.30060202776862105,
+        "a_2": -11.682900643641325
+      },
+      "error_bounds": {
+        "C_constant": 0.00048540471504796717,
+        "exponent": -0.448477998608583,
+        "bound_formula": "4.8540e-04 * t^-0.448",
+        "valid_range": [
+          0.001,
+          0.5
+        ]
+      }
+    },
+    {
+      "name": "T^2",
+      "dimension": 2,
+      "volume": 39.47841760435743,
+      "curvature": 0.0,
+      "eigenvalues_count": 1681,
+      "proof_validated": false,
+      "chi_squared_reduced": 1315.1145833613894,
+      "seeley_dewitt": {
+        "a_0": 122.13602744212568,
+        "a_1": 299.0601453592704,
+        "a_2": -17550.533944257037
+      },
+      "error_bounds": {
+        "C_constant": 0.11303192639490972,
+        "exponent": -0.2751174559290099,
+        "bound_formula": "1.1303e-01 * t^-0.275",
+        "valid_range": [
+          0.001,
+          0.5
+        ]
+      }
+    },
+    {
+      "name": "T^3",
+      "dimension": 3,
+      "volume": 248.05021344239853,
+      "curvature": 0.0,
+      "eigenvalues_count": 9261,
+      "proof_validated": false,
+      "chi_squared_reduced": 3146.833279478706,
+      "seeley_dewitt": {
+        "a_0": 174.29947588978166,
+        "a_1": 5408.670615947131,
+        "a_2": -145862.55372276733
+      },
+      "error_bounds": {
+        "C_constant": 0.0034986150854749596,
+        "exponent": -1.179268153201822,
+        "bound_formula": "3.4986e-03 * t^-1.179",
+        "valid_range": [
+          0.001,
+          0.5
+        ]
+      }
+    },
+    {
+      "name": "S^2",
+      "dimension": 2,
+      "volume": 12.566370614359174,
+      "curvature": 2.0,
+      "eigenvalues_count": 31,
+      "proof_validated": false,
+      "chi_squared_reduced": 589.4908358671228,
+      "seeley_dewitt": {
+        "a_0": 11.46582006559786,
+        "a_1": 24.57766364985691,
+        "a_2": -757.0221971933804
+      },
+      "error_bounds": {
+        "C_constant": 6.699491263942855e-05,
+        "exponent": -1.343576323404064,
+        "bound_formula": "6.6995e-05 * t^-1.344",
+        "valid_range": [
+          0.001,
+          0.5
+        ]
+      }
+    },
+    {
+      "name": "S^3",
+      "dimension": 3,
+      "volume": 19.739208802178716,
+      "curvature": 6.0,
+      "eigenvalues_count": 21,
+      "proof_validated": false,
+      "chi_squared_reduced": 1664.6450760907167,
+      "seeley_dewitt": {
+        "a_0": 12.993721998683913,
+        "a_1": 142.17290890342966,
+        "a_2": -4168.681245479801
+      },
+      "error_bounds": {
+        "C_constant": 0.00015268857997572513,
+        "exponent": -1.5288097458232799,
+        "bound_formula": "1.5269e-04 * t^-1.529",
+        "valid_range": [
+          0.001,
+          0.5
+        ]
+      }
+    },
+    {
+      "name": "T^4",
+      "dimension": 4,
+      "volume": 1558.5454565440386,
+      "curvature": 0.0,
+      "eigenvalues_count": 28561,
+      "proof_validated": false,
+      "chi_squared_reduced": 4765.619623809602,
+      "seeley_dewitt": {
+        "a_0": 80.6254129719228,
+        "a_1": 20344.054087346336,
+        "a_2": -262490.5880562249
+      },
+      "error_bounds": {
+        "C_constant": 0.009003685121660205,
+        "exponent": -1.1778923922229354,
+        "bound_formula": "9.0037e-03 * t^-1.178",
+        "valid_range": [
+          0.001,
+          0.5
+        ]
+      }
+    },
+    {
+      "name": "S^2(R=2)",
+      "dimension": 2,
+      "volume": 50.2654824574367,
+      "curvature": 0.5,
+      "eigenvalues_count": 31,
+      "proof_validated": false,
+      "chi_squared_reduced": 2322.566715880062,
+      "seeley_dewitt": {
+        "a_0": 31.01041451876517,
+        "a_1": 345.39385777805774,
+        "a_2": -10998.669011746566
+      },
+      "error_bounds": {
+        "C_constant": 0.00013478317674960123,
+        "exponent": -1.6023918823771732,
+        "bound_formula": "1.3478e-04 * t^-1.602",
+        "valid_range": [
+          0.001,
+          0.5
+        ]
+      }
+    },
+    {
+      "name": "S^2(R=0.5)",
+      "dimension": 2,
+      "volume": 3.1415926535897936,
+      "curvature": 8.0,
+      "eigenvalues_count": 31,
+      "proof_validated": false,
+      "chi_squared_reduced": 205.80267626707212,
+      "seeley_dewitt": {
+        "a_0": 3.1335329633019704,
+        "a_1": 4.5843891021663685,
+        "a_2": -0.5065186734793452
+      },
+      "error_bounds": {
+        "C_constant": 0.010201972614597484,
+        "exponent": 0.10287010303823121,
+        "bound_formula": "1.0202e-02 * t^0.103",
+        "valid_range": [
+          0.001,
+          0.5
+        ]
+      }
+    },
+    {
+      "name": "T^2_rect",
+      "dimension": 2,
+      "volume": 78.95683520871486,
+      "curvature": 0.0,
+      "eigenvalues_count": 1681,
+      "proof_validated": false,
+      "chi_squared_reduced": 1315.1145833613894,
+      "seeley_dewitt": {
+        "a_0": 122.13602744212568,
+        "a_1": 299.0601453592704,
+        "a_2": -17550.533944257037
+      },
+      "error_bounds": {
+        "C_constant": 0.11303192639490972,
+        "exponent": -0.2751174559290099,
+        "bound_formula": "1.1303e-01 * t^-0.275",
+        "valid_range": [
+          0.001,
+          0.5
+        ]
+      }
+    },
+    {
+      "name": "S^1 x S^1",
+      "dimension": 2,
+      "volume": 39.47841760435743,
+      "curvature": 0.0,
+      "eigenvalues_count": 1681,
+      "proof_validated": false,
+      "chi_squared_reduced": 1315.1145833613894,
+      "seeley_dewitt": {
+        "a_0": 122.13602744212568,
+        "a_1": 299.0601453592704,
+        "a_2": -17550.533944257037
+      },
+      "error_bounds": {
+        "C_constant": 0.11303192639490972,
+        "exponent": -0.2751174559290099,
+        "bound_formula": "1.1303e-01 * t^-0.275",
+        "valid_range": [
+          0.001,
+          0.5
+        ]
+      }
+    }
+  ],
+  "heat_kernel_proofs": [],
+  "error_bounds": [],
+  "topological_invariants": [
+    {
+      "manifold": "S^1",
+      "euler_characteristic": 0,
+      "hirzebruch_signature": 0,
+      "chern_numbers": {},
+      "pontryagin_numbers": {}
+    },
+    {
+      "manifold": "T^2",
+      "euler_characteristic": 0,
+      "hirzebruch_signature": 0,
+      "chern_numbers": {},
+      "pontryagin_numbers": {}
+    },
+    {
+      "manifold": "T^3",
+      "euler_characteristic": 0,
+      "hirzebruch_signature": 0,
+      "chern_numbers": {},
+      "pontryagin_numbers": {}
+    },
+    {
+      "manifold": "S^2",
+      "euler_characteristic": 2,
+      "hirzebruch_signature": 0,
+      "chern_numbers": {},
+      "pontryagin_numbers": {}
+    },
+    {
+      "manifold": "S^3",
+      "euler_characteristic": 0,
+      "hirzebruch_signature": 0,
+      "chern_numbers": {},
+      "pontryagin_numbers": {}
+    }
+  ],
+  "edge_cases": {
+    "noncompact": {
+      "divergent": true,
+      "regularization_required": true,
+      "methods": [
+        "volume_cutoff",
+        "heat_content"
+      ]
+    },
+    "boundary": {
+      "boundary_exists": true,
+      "fractional_powers": true,
+      "coefficients": {
+        "a_0": 3.141592653589793,
+        "a_1/2": -5.568327996831707
+      }
+    },
+    "orbifold": {
+      "singular": true,
+      "group_theory": true,
+      "contributions": [
+        "bulk",
+        "fixed_points",
+        "twisted_sectors"
+      ]
+    },
+    "infinite_dimensional": {
+      "zeta_regularization": true,
+      "functional_determinant": true,
+      "example_circle": {
+        "zeta_prime_at_0": -1.8378770664093453,
+        "regularized_determinant": 39.47841760435742
+      }
+    }
+  },
+  "convergence_study": {
+    "k_max_values": [
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      40,
+      50
+    ],
+    "spectral_dimension_convergence": [
+      1.932937741880636,
+      1.932937741880636,
+      1.932937741880636,
+      1.932937741880636,
+      1.932937741880636,
+      1.932937741880636,
+      1.932937741880636,
+      1.932937741880636
+    ]
+  },
+  "statistical_analysis": {
+    "spectral_dimension_mean": 2.117289083005133,
+    "spectral_dimension_std": 0.9753241767514107,
+    "spectral_dimension_ci95": [
+      0.8621346826340442,
+      4.233267485249541
+    ],
+    "heat_trace_mean": 10.315727779313258,
+    "heat_trace_std": 4.3190783383579765
+  }
+}

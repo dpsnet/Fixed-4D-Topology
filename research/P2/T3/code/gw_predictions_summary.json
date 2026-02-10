@@ -1,0 +1,232 @@
+{
+  "lisa": {
+    "arm_length_m": 2500000000.0,
+    "laser_power_W": 2.0,
+    "transfer_frequency_Hz": 0.01908586077558009,
+    "observation_time_years": 4.0,
+    "sensitivity_at_1mHz": 5.277641775428035e-11,
+    "binaries": [
+      {
+        "description": "SMBH Binary (10^6 + 10^6 M\u2609, z=1)",
+        "m1": 1000000.0,
+        "m2": 1000000.0,
+        "z": 1.0,
+        "f_isco": 0.0021981997602295925,
+        "snr": 3.5914244968051276e-08,
+        "detectable": false,
+        "detection_probability": 6.220962388757083e-16,
+        "merger_time_years": 0.03775515440291535
+      },
+      {
+        "description": "IMBH Binary (10^5 + 10^5 M\u2609, z=0.5)",
+        "m1": 100000.0,
+        "m2": 100000.0,
+        "z": 0.5,
+        "f_isco": 0.021981997602295914,
+        "snr": 1.7798068160549241e-07,
+        "detectable": false,
+        "detection_probability": 6.220969566344761e-16,
+        "merger_time_years": 2.8305716006159956
+      },
+      {
+        "description": "Stellar BH Binary (10^4 + 10^4 M\u2609, z=0.1)",
+        "m1": 10000.0,
+        "m2": 10000.0,
+        "z": 0.1,
+        "f_isco": 0.2198199760229592,
+        "snr": 7.633415224491743e-08,
+        "detectable": false,
+        "detection_probability": 6.220964430881308e-16,
+        "merger_time_years": 220.31214296910852
+      },
+      {
+        "description": "NS-NS Binary (1.4 + 1.4 M\u2609, z=0.001)",
+        "m1": 1.4,
+        "m2": 1.4,
+        "z": 0.001,
+        "f_isco": 1570.1426858782797,
+        "snr": 7.125000776005819e-12,
+        "detectable": false,
+        "detection_probability": 6.220960574631758e-16,
+        "merger_time_years": 683003173.4176235
+      }
+    ]
+  },
+  "pta": {
+    "hellings_downs": {
+      "at_0_deg": 1.0,
+      "at_90_deg": 0.10513961458004112,
+      "at_180_deg": 0.0,
+      "minimum": 0.0
+    },
+    "configurations": [
+      {
+        "array_name": "NANOGrav",
+        "n_pulsars": 68,
+        "timing_precision_ns": 500.0,
+        "observation_time_years": 15.0,
+        "sensitivity_1nHz": 1.2463296666382438e-16,
+        "snr_background_Omega_1e-9": 7572.2824398215735
+      },
+      {
+        "array_name": "EPTA",
+        "n_pulsars": 25,
+        "timing_precision_ns": 1000.0,
+        "observation_time_years": 24.0,
+        "sensitivity_1nHz": 3.250030144169381e-16,
+        "snr_background_Omega_1e-9": 1053.7949561558194
+      },
+      {
+        "array_name": "PPTA",
+        "n_pulsars": 20,
+        "timing_precision_ns": 1000.0,
+        "observation_time_years": 15.0,
+        "sensitivity_1nHz": 4.596236708005724e-16,
+        "snr_background_Omega_1e-9": 593.0035466837369
+      },
+      {
+        "array_name": "IPTA",
+        "n_pulsars": 100,
+        "timing_precision_ns": 100.0,
+        "observation_time_years": 20.0,
+        "sensitivity_1nHz": 1.7801148225333373e-17,
+        "snr_background_Omega_1e-9": 78151.52559551827
+      },
+      {
+        "array_name": "SKA",
+        "n_pulsars": 200,
+        "timing_precision_ns": 29.999999999999996,
+        "observation_time_years": 30.0,
+        "sensitivity_1nHz": 3.0832493159341952e-18,
+        "snr_background_Omega_1e-9": 904692.0452394378
+      }
+    ],
+    "smbh_binaries": [
+      {
+        "description": "SMBH Binary (10\u2079 M\u2609, q=1, z=0.1)",
+        "total_mass_Msun": 1000000000.0,
+        "mass_ratio": 1.0,
+        "redshift": 0.1,
+        "luminosity_distance_Mpc": 460.3115162537908,
+        "strain_1nHz": 7.56859192359173e-17,
+        "snr_ska_1nHz": 245.47453507821564
+      },
+      {
+        "description": "SMBH Binary (10\u00b9\u2070 M\u2609, q=0.3, z=0.5)",
+        "total_mass_Msun": 10000000000.0,
+        "mass_ratio": 0.3,
+        "redshift": 0.5,
+        "luminosity_distance_Mpc": 2833.0093630266115,
+        "strain_1nHz": 6.796381542437866e-16,
+        "snr_ska_1nHz": 2204.2919161010586
+      }
+    ]
+  },
+  "ground_based": {
+    "detectors": [
+      {
+        "detector": "LIGO_O4",
+        "f_low_Hz": 10.0,
+        "f_high_Hz": 2048.0,
+        "sensitivity_100Hz": 1.7320508075688773e-22,
+        "bns_horizon_Mpc": 1154.7005383792514
+      },
+      {
+        "detector": "LIGO_O5",
+        "f_low_Hz": 10.0,
+        "f_high_Hz": 4096.0,
+        "sensitivity_100Hz": 9.486832980505138e-23,
+        "bns_horizon_Mpc": 2108.1851067789194
+      },
+      {
+        "detector": "Virgo_O4",
+        "f_low_Hz": 10.0,
+        "f_high_Hz": 2048.0,
+        "sensitivity_100Hz": 3.3777138151838664e-22,
+        "bns_horizon_Mpc": 592.1164756497079
+      },
+      {
+        "detector": "KAGRA",
+        "f_low_Hz": 10.0,
+        "f_high_Hz": 2048.0,
+        "sensitivity_100Hz": 4.0313133907352064e-22,
+        "bns_horizon_Mpc": 496.11622966262416
+      },
+      {
+        "detector": "ET",
+        "f_low_Hz": 1.0,
+        "f_high_Hz": 10000.0,
+        "sensitivity_100Hz": 4.4791182167922294e-23,
+        "bns_horizon_Mpc": 4465.164577487581
+      }
+    ],
+    "cbc_systems": [
+      {
+        "description": "BBH (30+30 M\u2609, z=0.1)",
+        "m1_Msun": 30.0,
+        "m2_Msun": 30.0,
+        "redshift": 0.1,
+        "f_isco_Hz": 73.27332534098639,
+        "f_ring_Hz": 39.159765565606016,
+        "snr_ligo_o5": 132.02679716366006,
+        "chirp_mass_uncertainty_percent": 0.007574219942337939,
+        "distance_uncertainty_percent": 0.37871099711689693
+      },
+      {
+        "description": "BNS (1.4+1.4 M\u2609, z=0.05)",
+        "m1_Msun": 1.4,
+        "m2_Msun": 1.4,
+        "redshift": 0.05,
+        "f_isco_Hz": 1570.1426858782797,
+        "f_ring_Hz": 879.0967780034003,
+        "snr_ligo_o5": 3.817267322535983,
+        "chirp_mass_uncertainty_percent": 0.2619675059423543,
+        "distance_uncertainty_percent": 13.098375297117714
+      },
+      {
+        "description": "NS-BH (10+1.4 M\u2609, z=0.1)",
+        "m1_Msun": 10.0,
+        "m2_Msun": 1.4,
+        "redshift": 0.1,
+        "f_isco_Hz": 385.6490807420337,
+        "f_ring_Hz": 232.57571241034412,
+        "snr_ligo_o5": 8.57924174900634,
+        "chirp_mass_uncertainty_percent": 0.11656041748862264,
+        "distance_uncertainty_percent": 5.828020874431132
+      },
+      {
+        "description": "BBH (50+50 M\u2609, z=0.5)",
+        "m1_Msun": 50.0,
+        "m2_Msun": 50.0,
+        "redshift": 0.5,
+        "f_isco_Hz": 43.96399520459184,
+        "f_ring_Hz": 17.230296848866647,
+        "snr_ligo_o5": 22.65521123016058,
+        "chirp_mass_uncertainty_percent": 0.044139954813959686,
+        "distance_uncertainty_percent": 2.206997740697984
+      }
+    ]
+  },
+  "cosmic_background": {
+    "inflationary": {
+      "r_0.1_omega_cmb": 1e-15,
+      "r_0.01_omega_cmb": 1e-16,
+      "r_0.001_omega_cmb": 1e-17
+    },
+    "qcd_phase_transition": {
+      "peak_frequency_Hz": 1e-07,
+      "peak_omega_gw": 5.668227957771245e-09,
+      "peak_h_c": 3.841545126007346e-17
+    },
+    "cosmic_strings": {
+      "Gmu_1e-11_omega_1nHz": 1e-08,
+      "Gmu_1e-11_h_c_1nHz": 6.252920071212807e-14
+    }
+  },
+  "metadata": {
+    "analysis_date": "2026-02-10",
+    "framework": "P2-T3 Master Equation",
+    "version": "1.0",
+    "purpose": "Paper-grade GW predictions analysis"
+  }
+}
