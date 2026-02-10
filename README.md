@@ -1,7 +1,8 @@
 # Dimensionics: A Unified Mathematical Theory of Dimension
 **English | [中文](README_zh.md)**
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18547324.svg)](https://doi.org/10.5281/zenodo.18547324)
+[![ALL DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18511249.svg)](https://doi.org/10.5281/zenodo.18511249)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18547801.svg)](https://doi.org/10.5281/zenodo.18547801)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Status](https://img.shields.io/badge/Status-100%25%20COMPLETE-success.svg)]()

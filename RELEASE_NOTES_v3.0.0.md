@@ -215,7 +215,7 @@ This release represents the culmination of intensive research using human-AI col
   author={Fixed-4D-Topology Consortium},
   year={2026},
   version={3.0.0},
-  doi={10.5281/zenodo.18547324},
+  doi={10.5281/zenodo.18547801},
   url={https://github.com/dpsnet/Fixed-4D-Topology}
 }
 ```
@@ -226,7 +226,7 @@ This release represents the culmination of intensive research using human-AI col
 
 - **GitHub**: https://github.com/dpsnet/Fixed-4D-Topology
 - **PyPI**: https://pypi.org/project/dimensionics/
-- **DOI**: https://doi.org/10.5281/zenodo.18547324
+- **DOI**: https://doi.org/10.5281/zenodo.18547801
 - **Documentation**: See `docs/` directory
 
 ---
