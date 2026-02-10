@@ -1,41 +1,43 @@
-# Bridge A: Critical Exponent Bridge
+# Bridge A: Critical Exponent - RESEARCH HYPOTHESIS
 
-## Problem
+## Status
 
-**Original Issue**: C* = 0.21 was empirical/fitted, not derived from first principles.
+🟡 **RESEARCH HYPOTHESIS** - NOT A PROVEN THEOREM
 
-## Solution
+## Current Understanding
 
-**Fractal Laplacian Spectral Gap**: Derived C* from spectral properties.
+**Empirical Observation**: C* ≈ 0.21
 
-## Formula
+This value is determined from numerical experiments with Cantor set approximations. It is a **phenomenological parameter**, not derived from first principles.
 
+## Open Problem
+
+The relationship between Cantor complexity C* and fractal Laplacian spectral properties remains **unproven**.
+
+### Previously Claimed (REMOVED)
+
+The formula:
 ```
 C* = (Δλ/λ₁) · d_c · (1-d_c) · π/4
 ```
 
-## Verification
+has been **REMOVED** from this project as it was found to be **incorrect**:
+- Predicted value: ~1.46
+- Empirical value: ~0.21
+- Error: ~600%
 
-| Source | Value | Match |
-|--------|-------|-------|
-| Theory | 0.213149 | ✅ |
-| Empirical | 0.21 | ✅ |
+## Research Questions
 
-## Code ([code/](code/))
+1. Is there a rigorous relationship between C* and the spectral gap of fractal Laplacian?
+2. What is the correct mathematical structure connecting discrete Cantor complexity to continuous spectral theory?
+3. Can C* be derived from axioms A1-A9, or must it remain a phenomenological input?
 
-| File | Description |
-|------|-------------|
-| `fractal_laplacian_spectral_gap.py` | Main derivation proof |
+## Code
 
-## Dependencies
+[code/](code/) contains exploratory research code, not rigorous proof.
 
-- **Input**: T1 (Cantor theory)
-- **Validates**: J (Random fractals, percolation)
+## Honest Assessment
 
-## Achievement
+**Bridge A is a research direction, not a completed derivation.**
 
-✅ **Eliminated empirical fitting** - C* now derived from spectral geometry
-
-## Status
-
-🟢 Complete - First-principles derivation established
+The claim that "all phenomenological parameters have been eliminated" was **incorrect** for Bridge A.

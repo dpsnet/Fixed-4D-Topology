@@ -1,41 +1,31 @@
-# Bridge B: Neural Network Bridge
+# Bridge B: Neural Network Weights - RESEARCH HYPOTHESIS
 
-## Problem
+## Status
 
-**Original Issue**: Network weights w_i were phenomenological/artificially set.
+🟡 **RESEARCH HYPOTHESIS** - NOT RIGOROUSLY PROVEN
 
-## Solution
+## Current Understanding
 
-**RG Eigenvalues at Criticality**: Derived weights from renormalization group flow.
+**Observation**: Network weights w_i may relate to RG eigenvalues at criticality.
 
-## Formula
-
+Proposed relationship:
 ```
 w_i ∝ 1/|λ_i| at α + β = T/8
 ```
 
-## Verification
+## Honest Assessment
 
-| Network | Nodes | Verified |
-|---------|-------|----------|
-| Multiple | 2.1M | ✅ |
+This is a **heuristic connection**, not a theorem:
+- The relationship between variational weights and RG eigenvalues is **conjectural**
+- The critical condition α + β = T/8 is **not derived** from first principles
+- Numerical verification shows correlations but **not causal derivation**
 
-## Code ([code/](code/))
+## Open Questions
 
-| File | Description |
-|------|-------------|
-| `network_neural_isomorphism.py` | Network-neural mapping |
-| `variational_principle_weights.py` | Weight derivation |
-
-## Dependencies
-
-- **Input**: T3 (Convexity: α+β > T/8)
-- **Validates**: I (Network geometry), K (ML applications)
-
-## Achievement
-
-✅ **Eliminated artificial weights** - w_i now from RG criticality
+1. Can the weight formula be derived from the Master Equation?
+2. Is the RG connection rigorous or coincidental?
+3. What is the domain of validity of this relationship?
 
 ## Status
 
-🟢 Complete - First-principles derivation established
+**Bridge B is a research hypothesis requiring further development.**

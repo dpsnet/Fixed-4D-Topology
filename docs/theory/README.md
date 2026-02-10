@@ -47,7 +47,7 @@ docs/theory/
 
 | Bridge | Formula | Status |
 |--------|---------|--------|
-| **A** | C* = (Δλ/λ₁)·d_c·(1-d_c)·π/4 | ✅ Verified |
+| **A** | C* ≈ 0.21 (empirical) | 🟡 Hypothesis - no strict derivation |
 | **B** | w_i ∝ 1/|λ_i| at α+β=T/8 | ✅ Verified |
 | **C** | H_NN = U·L·U† | ✅ Verified |
 

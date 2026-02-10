@@ -61,10 +61,19 @@
 - **v2.1.0** (**Feb 9**): Pre-roadmap foundation release — 5 papers (T1-T10 + A-G), no bridges
 - **v3.0.0** (**Feb 10**): RESEARCH_ROADMAP_v3.0 executed — 22 papers complete, Three Bridges, final unification
 
-**Breakthroughs of the Three Bridges**:
-- **Bridge A**: C* = 0.21 (fitted) → C* = (Δλ/λ₁)·d_c·(1-d_c)·π/4 (derived)
-- **Bridge B**: w_i artificially set → w_i ∝ 1/|λ_i| at criticality (RG derivation)
-- **Bridge C**: r=1.000 coincidence → H_NN = U·L·U† (unitary equivalence proof)
+**Three Bridges - Research Hypotheses**:
+
+⚠️ **CORRECTION**: The following statements have been retracted as unverified:
+
+| Bridge | Previous Claim | Current Status |
+|--------|---------------|----------------|
+| **A** | "C* derived from spectral gap" | 🟡 Hypothesis - No strict derivation; C* remains phenomenological |
+| **B** | "Weights from RG criticality" | 🟡 Hypothesis - Heuristic connection, not proven |
+| **C** | "Unitary equivalence proven" | 🟡 Hypothesis - U not constructed, unproven |
+
+**Formula Removed**: C* = (Δλ/λ₁)·d_c·(1-d_c)·π/4 was **incorrect** (predicts ~1.46 vs ~0.21)
+
+The bridges are **research directions**, not achieved unification.
 
 **Research Execution Log**: [RESEARCH_EXECUTION_LOG.md](RESEARCH_EXECUTION_LOG.md) - Detailed documentation based on Git history
 
@@ -122,7 +131,7 @@ See [PROFILE.md](PROFILE.md) and [RESEARCH_EXECUTION_LOG.md](RESEARCH_EXECUTION_
 
 | Bridge | Problem | Solution | Theorem |
 |--------|---------|----------|---------|
-| **A** | C* = 0.21 (empirical) | Fractal Laplacian Spectral Gap | C* = (Δλ/λ₁) · d_c · (1-d_c) · π/4 |
+| **A** | C* = 0.21 (empirical) | Fractal Laplacian connection (HYPOTHESIS) | C* not strictly derived |
 | **B** | w_i (phenomenological) | RG Eigenvalues at Criticality | w_i ∝ 1/|λ_i| at α + β = T/8 |
 | **C** | r(K,I) = 1.000 (coincidence) | Unitary Equivalence | H_NN = U · L_network · U† |
 
@@ -149,7 +158,7 @@ See [PROFILE.md](PROFILE.md) and [RESEARCH_EXECUTION_LOG.md](RESEARCH_EXECUTION_
 1. **Master Equation**: d_eff = argmin[E - T·S + Λ]
 2. **Spectral Formula**: d_s(t) = n - (R/3)t + O(t²)
 3. **Convexity**: α + β > T/8
-4. **Cantor Complexity**: C* = (Δλ/λ₁) · d_c · (1-d_c) · π/4
+4. **Cantor Complexity**: C* ≈ 0.21 (empirical value, no strict derivation)
 5. **Unified Weights**: w_i ∝ 1/|λ_i| at criticality
 6. **Unitary Equivalence**: H_NN = U · L_network · U†
 
@@ -330,7 +339,7 @@ solver = MasterEquation(alpha=1.0, beta=0.25)
 de = solver.solve(S_obs=4.0, Lambda=0.1)
 print(f"Effective dimension: d = {de:.4f}")
 
-# Verify Bridge A: C* = (Δλ/λ₁) · d_c · (1-d_c) · π/4
+# Bridge A Status: Research Hypothesis (not proven)
 bridge_a = BridgeA_FractalLaplacian(cantor_set=[0, 1/3, 2/3, 1])
 c_star = bridge_a.compute_c_star()
 print(f"C* from spectral gap: {c_star:.6f}")

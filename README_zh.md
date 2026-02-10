@@ -62,7 +62,7 @@
 - **v3.0.0** (**2月10日**): RESEARCH_ROADMAP_v3.0 执行完成 — 22篇论文完整, 三座桥, 最终统一
 
 **三座桥的突破**：
-- **Bridge A**: C* = 0.21 (拟合) → C* = (Δλ/λ₁)·d_c·(1-d_c)·π/4 (推导)
+- **Bridge A**: C* = 0.21 (经验值) - 严格推导未完成（研究假说）
 - **Bridge B**: w_i 人为设定 → w_i ∝ 1/|λ_i| at criticality (RG推导)
 - **Bridge C**: r=1.000 巧合 → H_NN = U·L·U† (幺正等价证明)
 
@@ -122,7 +122,7 @@ v4.0+: RESEARCH_ROADMAP_v4.0 - M-1~M-10 & P系列重建 (计划中)
 
 | 桥梁 | 问题 | 解决方案 | 定理 |
 |--------|---------|----------|---------|
-| **A** | C* = 0.21 (经验性) | 分形拉普拉斯谱隙 | C* = (Δλ/λ₁) · d_c · (1-d_c) · π/4 |
+| **A** | C* = 0.21 (经验性) | 分形拉普拉斯连接（假说） | C* 未严格推导 |
 | **B** | w_i (唯象性) | 临界点的RG特征值 | w_i ∝ 1/|λ_i| at α + β = T/8 |
 | **C** | r(K,I) = 1.000 (巧合) | 幺正等价 | H_NN = U · L_network · U† |
 
@@ -149,7 +149,7 @@ v4.0+: RESEARCH_ROADMAP_v4.0 - M-1~M-10 & P系列重建 (计划中)
 1. **主方程**: d_eff = argmin[E - T·S + Λ]
 2. **谱公式**: d_s(t) = n - (R/3)t + O(t²)
 3. **凸性**: α + β > T/8
-4. **Cantor 复杂度**: C* = (Δλ/λ₁) · d_c · (1-d_c) · π/4
+4. **Cantor 复杂度**: C* ≈ 0.21 (经验值，无严格推导)
 5. **统一权重**: w_i ∝ 1/|λ_i| at criticality
 6. **幺正等价**: H_NN = U · L_network · U†
 
@@ -330,7 +330,7 @@ solver = MasterEquation(alpha=1.0, beta=0.25)
 de = solver.solve(S_obs=4.0, Lambda=0.1)
 print(f"Effective dimension: d = {de:.4f}")
 
-# 验证 Bridge A: C* = (Δλ/λ₁) · d_c · (1-d_c) · π/4
+# Bridge A 状态：研究假说（未证明）
 bridge_a = BridgeA_FractalLaplacian(cantor_set=[0, 1/3, 2/3, 1])
 c_star = bridge_a.compute_c_star()
 print(f"C* from spectral gap: {c_star:.6f}")

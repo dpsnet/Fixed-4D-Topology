@@ -48,7 +48,7 @@ All phenomenological parameters eliminated through rigorous derivation:
 
 | Bridge | Problem | Solution | Theorem |
 |--------|---------|----------|---------|
-| **Bridge A** | C* = 0.21 (empirical) | Fractal Laplacian Spectral Gap | C* = (Δλ/λ₁) · d_c · (1-d_c) · π/4 |
+| **Bridge A** | C* = 0.21 (empirical) | Fractal Laplacian (HYPOTHESIS) | C* not strictly derived |
 | **Bridge B** | w_i (phenomenological) | RG Eigenvalues at Criticality | w_i ∝ 1/\|λ_i\| at α + β = T/8 |
 | **Bridge C** | r(K,I) = 1.000 (coincidence) | Unitary Equivalence | H_NN = U · L_network · U† |
 

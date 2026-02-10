@@ -29,9 +29,9 @@ The rigorous mathematical foundation of Dimensionics Theory.
 | **T2.2** | UV fixed point: d=2; IR fixed point: d=4 | L2 |
 | **T3.1** | F(d) convex ⟺ α+β > T/8 | L1 |
 | **T4.1** | d_s depends on topology and curvature | L2-L3 |
-| **A.1** | C* = (Δλ/λ₁)·d_c·(1-d_c)·π/4 | L1 |
-| **B.1** | w_i ∝ 1/|λ_i| at criticality | L2 |
-| **C.1** | H_NN = U·L·U† | L1 |
+| **A.1** | C* ≈ 0.21 (empirical) | NOT PROVEN - formula removed |
+| **B.1** | w_i ∝ 1/|λ_i| at criticality | HYPOTHESIS - not proven |
+| **C.1** | H_NN = U·L·U† | HYPOTHESIS - U not constructed |
 
 ## Key Definitions
 
@@ -49,9 +49,9 @@ The rigorous mathematical foundation of Dimensionics Theory.
 
 | Level | Criterion | Coverage |
 |-------|-----------|----------|
-| **L1** | Complete proof, no gaps | Core theorems, bridges |
-| **L2** | Rigorous but some computation | PDE solutions, numerics |
-| **L3** | Conceptual, computation-heavy | Complex simulations |
+| **L1** | Complete proof, no gaps | Core theorems only (T1-T4) |
+| **L2** | Rigorous but some computation | PDE solutions, numerics, B bridges |
+| **L3** | Conceptual, computation-heavy | Complex simulations, bridges are heuristic |
 
 ---
 
