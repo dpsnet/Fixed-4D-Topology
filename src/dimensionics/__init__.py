@@ -18,7 +18,7 @@ Example:
     >>> d_s = me.solve(initial_d=4, t_span=10)
 """
 
-__version__ = "2.0.0"
+__version__ = "3.0.0"
 __author__ = "Fixed-4D-Topology Consortium"
 __license__ = "MIT"
 

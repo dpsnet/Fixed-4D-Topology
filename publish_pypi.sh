@@ -1,11 +1,12 @@
 #!/bin/bash
-# PyPI Release Script for Fixed 4D Topology
+# PyPI Release Script for Dimensionics
+# Dimensionics: A Unified Mathematical Theory of Dimension
 # Usage: ./publish_pypi.sh [test|prod]
 
 set -e
 
-VERSION="1.0.1"
-PACKAGE_NAME="fixed-4d-topology"
+VERSION="2.0.0"
+PACKAGE_NAME="dimensionics"
 
 echo "========================================"
 echo "PyPI Release Script"
