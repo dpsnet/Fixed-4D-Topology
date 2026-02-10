@@ -10,7 +10,7 @@ This document clarifies the relationship between release versions and research r
 |---------|--------------|---------|--------|-------------------|
 | v2.0.0 | 2026-02-07 | Pre-roadmap | 🟢 Released | Extended Research (H/I/J/K) |
 | **v2.1.0** | **2026-02-09** | **Pre-roadmap** | **🟢 Released** | **T1-T10 + A-G Foundation, 5 papers** |
-| **v3.0.0** | **2026-02-10** | **[v3.0](docs/roadmaps/completed/RESEARCH_ROADMAP_v3.0.md)** | **🟢 Current** | **Three Bridges + Final Paper** |
+| **v3.0.0-core** | **2026-02-11** | **[v3.0-revised](docs/roadmaps/completed/RESEARCH_ROADMAP_v3.0.md)** | **🟢 Current** | **T1-T4 Strict Core (Bridges & Extensions removed)** |
 | v4.0.0 | 2026-Q1 | [v4.0](docs/roadmaps/active/RESEARCH_ROADMAP_v4.0.md) | 🟡 In Progress | M-1~M-10 Reconstruction |
 
 **Quick Links**: [All Roadmaps](docs/roadmaps/) | [Project Status](PROJECT_STATUS.md)
@@ -42,9 +42,12 @@ This document clarifies the relationship between release versions and research r
 
 ---
 
-## v3.0.0 (Feb 10, 2026): Three Bridges Complete ⭐ Final Unification
+## v3.0.0-core (Feb 11, 2026): Strict Core Foundation
 
-**Result of executing RESEARCH_ROADMAP_v3.0. Published on February 10, 2026.**
+**REVISED RELEASE: v3.0.0 retracted due to false claims**
+
+This release contains only the L1/L2 strict mathematical core (T1-T4).
+The Three Bridges and H-K extensions have been removed as they did not meet strict standards.
 
 ### Major Deliverables
 | Deliverable | Status | Description |

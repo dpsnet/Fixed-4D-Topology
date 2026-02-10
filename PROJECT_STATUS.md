@@ -28,10 +28,16 @@ v1.0.0  v2.0.0  v2.1.0  v3.0.0  v4.0.0
 
 ## Active Roadmap
 
+### Note on v3.0.0
+
+**RETRACTED**: The original v3.0.0 release (Feb 10, 2026) has been **deleted** due to false claims:
+- "Three Bridges eliminate phenomenological parameters" — ❌ False
+- "C* = (Δλ/λ₁)·d_c·(1-d_c)·π/4" — ❌ Formula incorrect (1.46 vs 0.21)
+- "L1 rigorous proofs for bridges" — ❌ Unproven
+
+**Current**: v3.0.0-core (Feb 11, 2026) contains only L1/L2 strict content (T1-T4).
+
 ### RESEARCH_ROADMAP_v4.0
-**Status**: 🟡 In Progress  
-**Target**: v4.0.0  
-**Timeline**: Q1-Q4 2026
 
 | Phase | Status | Progress |
 |-------|--------|----------|

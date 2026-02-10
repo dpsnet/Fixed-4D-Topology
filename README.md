@@ -55,11 +55,11 @@
 | Extended Research | Feb 7-8, 2026 | v2.0.0 | H, I, J, K directions | 2.1M node networks |
 | **PDF Release** | **Feb 9, 2026** | **v2.1.0** | **5 papers open source** | **Pre-roadmap foundation complete** |
 | **v3.0 Roadmap Execution** | **Feb 9-10, 2026** | **v2.1.0→v3.0.0** | **4-track intensive (16h)** | **P1-T3/P2-T3/P3-T1/P4-T1 breakthroughs** |
-| **Final Unification** | **Feb 10, 2026** | **v3.0.0** | **Three Bridges + Final Paper** | **All 22 papers, 100% unified** |
+| **Strict Core Release** | **Feb 11, 2026** | **v3.0.0-core** | **T1-T4 strict only** | **L1/L2 foundation, bridges removed** |
 
 **Key Distinction**:
 - **v2.1.0** (**Feb 9**): Pre-roadmap foundation release — 5 papers (T1-T10 + A-G), no bridges
-- **v3.0.0** (**Feb 10**): RESEARCH_ROADMAP_v3.0 executed — 22 papers complete, Three Bridges, final unification
+- **v3.0.0-core** (**Feb 11**): REVISED — T1-T4 strict core only (original v3.0.0 retracted due to false claims)
 
 **Three Bridges - Research Hypotheses**:
 
