@@ -25,6 +25,36 @@ The previous release claimed:
 
 ---
 
+## 🔬 Theory Evolution
+
+### Clean-Slate Reconstruction
+
+**Fixed-4D-Topology (Dimensionics) is NOT a continuation of prior work—it is a clean-slate rigorous reconstruction.**
+
+### Research Timeline (Based on Git History)
+
+| Phase | Period | Version | Roadmap | Nature | Status |
+|-------|--------|---------|---------|--------|--------|
+| **Private Research** | May 2025 - Jan 2026 | - | - | Initial exploration, M-series docs | ❌ **Discarded** |
+| **Distributed Framework** | Jan 27 - Feb 3, 2026 | - | - | Separated specialized repos | ❌ **Discarded** |
+| **Unified Framework Launch** | Feb 7, 2026 | v1.0.0 | - | Core T1-T10 + A~G integration | ✅ **Foundation** |
+| **Extended Research** | Feb 7-8, 2026 | v2.0.0 | Pre-roadmap | H, I, J, K directions | ✅ **Extensions** |
+| **PDF Release** | **Feb 9, 2026** | **v2.1.0** | Pre-roadmap | 5 papers open source | ✅ **Released** |
+| **Parallel Research v3.0** | Feb 9-10, 2026 | v2.1.0→v3.0.0 | v3.0 Execution | Attempted bridges (later removed) | ⚠️ **RETRACTED** |
+| **Strict Core Release** | **Feb 11, 2026** | **v3.0.0-core** | Revised | T1-T4 strict only | ✅ **Current** |
+
+### Internal Evolution
+
+| Stage | Date | Version | Characteristics | Key Achievement |
+|-------|------|---------|-----------------|-----------------|
+| Framework Established | Feb 7, 2026 | v1.0.0 | T1-T10 + A~G integration | Unified Dimensionics framework |
+| Extended Research | Feb 7-8, 2026 | v2.0.0 | H, I, J, K directions | 2.1M node networks |
+| **PDF Release** | **Feb 9, 2026** | **v2.1.0** | **5 papers open source** | **Pre-roadmap foundation complete** |
+| **v3.0 Roadmap Execution** | **Feb 9-10, 2026** | **v2.1.0→v3.0.0** | **4-track intensive (16h)** | **Attempted bridges (retracted)** |
+| **Strict Core Release** | **Feb 11, 2026** | **v3.0.0-core** | **T1-T4 strict only** | **L1/L2 foundation, bridges removed** |
+
+---
+
 ## Current Scope (L1/L2 Strict)
 
 ### Mathematical Core (T1-T4)
