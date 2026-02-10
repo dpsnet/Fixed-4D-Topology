@@ -1,9 +1,25 @@
 # Dimensionics v3.0.0 Release Notes
 
 **Release Date**: February 10, 2026  
+**Re-release Date**: February 10, 2026 (22:35 UTC+8)  
 **Codename**: "Three Bridges"  
 **Status**: Production Stable  
 **Roadmap**: Result of executing RESEARCH_ROADMAP_v3.0
+
+---
+
+## 🔄 Re-release Notes
+
+This is a **re-release** of v3.0.0 with improved documentation:
+
+| Change | Description |
+|--------|-------------|
+| **VERSION_ROADMAP_MAP.md** | New document clarifying v2.1.0 vs v3.0.0 scope |
+| **README.md** | Added Version/Roadmap columns to research timeline |
+| **README_zh.md** | Synced Chinese version with version-roadmap mapping |
+| **Timeline Fix** | Corrected v2.1.0 release date (Feb 9) distinct from v3.0.0 (Feb 10) |
+
+**Key Clarification**: v2.1.0 (Feb 9) was the pre-roadmap foundation release with 5 papers. v3.0.0 (Feb 10) is the complete RESEARCH_ROADMAP_v3.0 execution result with all 22 papers and Three Bridges.
 
 ---
 
