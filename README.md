@@ -1,4 +1,4 @@
-# Dimensionics: Mathematical Core (T1-T4, A-G)
+# Dimensionics: Mathematical Core (T1-T10, A-G)
 
 **English | [中文](README_zh.md)**
 
@@ -7,7 +7,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Status](https://img.shields.io/badge/Status-CORE%20FOUNDATION-blue.svg)]()
 
-> **L1/L2 Strict Mathematical Foundation**: T1-T4 core theory + A-G physical applications.
+> **L1/L2 Strict Mathematical Foundation**: T1-T10 core theory + A-G physical applications (v2.1.0 content, v3.0.0-core corrected claims).
 
 ---
 
@@ -21,7 +21,9 @@ The previous release claimed:
 - ❌ "L1 rigorous proofs for bridges" — **Unproven**
 - ❌ "100% first-principles unification" — **Not achieved**
 
-**This release (v3.0.0-core)** contains only the mathematically rigorous core (T1-T4).
+**v3.0.0-core** contains the same content as v2.1.0 (T1-T10 + A-G) with corrected claims:
+- Bridges and extensions remain research plans (not proven theory)
+- No false claims about "100% unification" or "eliminated phenomenology"
 
 ---
 
@@ -41,7 +43,7 @@ The previous release claimed:
 | **Extended Research** | Feb 7-8, 2026 | v2.0.0 | Pre-roadmap | H, I, J, K directions | ✅ **Extensions** |
 | **PDF Release** | **Feb 9, 2026** | **v2.1.0** | Pre-roadmap | 5 papers open source | ✅ **Released** |
 | **Parallel Research v3.0** | Feb 9-10, 2026 | v2.1.0→v3.0.0 | v3.0 Execution | Attempted bridges (later removed) | ⚠️ **RETRACTED** |
-| **Strict Core Release** | **Feb 11, 2026** | **v3.0.0-core** | Revised | **T1-T4 + A-G strict** (bridges removed) | ✅ **Current** |
+| **Strict Core Release** | **Feb 11, 2026** | **v3.0.0-core** | Revised | **T1-T10 + A-G strict** (bridges removed) | ✅ **Current** |
 
 ### Internal Evolution
 
@@ -51,7 +53,7 @@ The previous release claimed:
 | Extended Research | Feb 7-8, 2026 | v2.0.0 | H, I, J, K directions | 2.1M node networks |
 | **PDF Release** | **Feb 9, 2026** | **v2.1.0** | **5 papers open source** | **Pre-roadmap foundation complete** |
 | **v3.0 Roadmap Execution** | **Feb 9-10, 2026** | **v2.1.0→v3.0.0** | **4-track intensive (16h)** | **Attempted bridges (retracted)** |
-| **Strict Core Release** | **Feb 11, 2026** | **v3.0.0-core** | **T1-T4 + A-G strict** | **L1/L2 foundation, bridges removed** |
+| **Strict Core Release** | **Feb 11, 2026** | **v3.0.0-core** | **T1-T10 + A-G strict** | **L1/L2 foundation (same as v2.1.0), bridges removed** |
 
 ---
 
@@ -136,7 +138,7 @@ Fixed-4D-Topology/
 | Version | Date | Status | Content |
 |---------|------|--------|---------|
 | v2.1.0 | Feb 9, 2026 | ✅ Valid | 5 papers, T1-T10 + A-G foundation |
-| **v3.0.0-core** | **Feb 11, 2026** | **✅ Current** | **T1-T4 + A-G strict core** |
+| **v3.0.0-core** | **Feb 11, 2026** | **✅ Current** | **T1-T10 + A-G strict core (v2.1.0 content, corrected claims)** |
 | v3.0.0 | Feb 10, 2026 | ❌ **RETRACTED** | False claims about bridges |
 
 ---
