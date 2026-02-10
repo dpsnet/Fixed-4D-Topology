@@ -378,11 +378,23 @@ python research/P4/T1/code/spectral_dimension_formula.py
 
 ## 引用
 
+**推荐使用概念性 DOI**（始终指向最新版本）：
 ```bibtex
 @misc{dimensionics2026,
   title={Dimensionics: A Unified Mathematical Theory of Dimension},
   year={2026},
-  doi={10.5281/zenodo.18547324},
+  doi={10.5281/zenodo.18511249},
+  url={https://github.com/dpsnet/Fixed-4D-Topology}
+}
+```
+
+**引用 v3.0.0 特定版本**：
+```bibtex
+@misc{dimensionics2026v3,
+  title={Dimensionics: A Unified Mathematical Theory of Dimension (v3.0.0)},
+  year={2026},
+  version={3.0.0},
+  doi={10.5281/zenodo.18547801},
   url={https://github.com/dpsnet/Fixed-4D-Topology}
 }
 ```
