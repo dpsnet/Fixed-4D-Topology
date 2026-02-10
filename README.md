@@ -27,11 +27,16 @@ This repository represents the **final rigorous version** of a multi-year resear
 **Fundamental-Mathematics** established the initial mathematical foundation (M-0.1~M-0.22, A~G directions) but had several issues:
 - M-0.3 claimed "strict correspondence" between modular forms and fractals → **Dimensionics T3** proves weak correspondence only (ρ≈0.3, L2)
 - M-0.14 had proof gaps for spacetime origin → **M-0.14.4** completes uniqueness proof
-- Phenomenological parameters (C*=0.21, w_i) were unexplained → **Three Bridges** derive from first principles
+- All theorems claimed L1 strictness without grading → **Dimensionics** adopts honest L1-L3 grading
 
-**Advanced-Theoretical-Framework** developed physical applications but:
-- Lacked strictness grading (all claimed L1) → **Dimensionics** adopts L1-L3 honest grading
-- Physics-first approach led to inconsistencies → **Proof-first** methodology in Dimensionics
+**Within Fixed-4D-Topology itself**, early research (2024-2025) produced phenomenological parameters:
+- **C* = 0.21** from Cantor approximation studies → **Bridge A** derives from spectral gap: C* = (Δλ/λ₁)·d_c·(1-d_c)·π/4
+- **Weights w_i** in unified formula → **Bridge B** derives from RG eigenvalues: w_i ∝ 1/|λ_i| at criticality
+- **r(K,I) = 1.000** correlation coincidence → **Bridge C** proves unitary equivalence: H_NN = U·L·U†
+
+**Methodology shift**:
+- Early phase (2024-2025): Physics-driven exploration with phenomenological fitting
+- Final phase (2025-2026): Proof-first rigorous reconstruction eliminating all free parameters
 
 ### Research Strategy Shift
 
