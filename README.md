@@ -12,31 +12,43 @@
 
 ## 🔬 Theory Evolution
 
-### From Early Exploration to Rigorous Framework
+### Clean-Slate Reconstruction
 
-This repository represents the **final rigorous version** of a multi-year research program:
+**Fixed-4D-Topology (Dimensionics) is NOT a continuation of prior work—it is a clean-slate rigorous reconstruction.**
 
-| Phase | Repository | Period | Role | Status |
-|-------|------------|--------|------|--------|
-| **Exploration** | Fundamental-Mathematics | 2019-2024 | M-0 series, A~G directions | ⚠️ Superseded |
-| **Framework** | Advanced-Theoretical-Framework | 2020-2024 | M-1~M-10 physics extensions | ⚠️ Superseded |
-| **Rigorous Core** | **Fixed-4D-Topology** | 2024-2026 | **Dimensionics (T1-T4)** | ✅ **Current** |
+| Phase | Repository | Period | Nature | Status |
+|-------|------------|--------|--------|--------|
+| **Exploration v1** | Fundamental-Mathematics | 2019-2024 | M-0 series exploration | ❌ **Discarded** |
+| **Exploration v2** | Advanced-Theoretical-Framework | 2020-2024 | M-1~M-10 physics framework | ❌ **Discarded** |
+| **Rigorous Reconstruction** | **Fixed-4D-Topology** | 2024-2026 | **Dimensionics (T1-T4)** | ✅ **Current** |
 
-### Key Improvements Over Prior Work
+### What Happened
 
-**Fundamental-Mathematics** established the initial mathematical foundation (M-0.1~M-0.22, A~G directions) but had several issues:
-- M-0.3 claimed "strict correspondence" between modular forms and fractals → **Dimensionics T3** proves weak correspondence only (ρ≈0.3, L2)
-- M-0.14 had proof gaps for spacetime origin → **M-0.14.4** completes uniqueness proof
-- All theorems claimed L1 strictness without grading → **Dimensionics** adopts honest L1-L3 grading
+**2024年决策：从零开始重新发展**
 
-**Within Fixed-4D-Topology itself**, early research (2024-2025) produced phenomenological parameters:
-- **C* = 0.21** from Cantor approximation studies → **Bridge A** derives from spectral gap: C* = (Δλ/λ₁)·d_c·(1-d_c)·π/4
-- **Weights w_i** in unified formula → **Bridge B** derives from RG eigenvalues: w_i ∝ 1/|λ_i| at criticality
-- **r(K,I) = 1.000** correlation coincidence → **Bridge C** proves unitary equivalence: H_NN = U·L·U†
+Fundamental-Mathematics (M-0) 和 Advanced-Theoretical-Framework (M-1~M-10) 是早期探索，存在根本问题：
+- 数学证明跳跃、循环论证、概念混淆
+- AI 辅助产生的"幻觉证明"（看似严格实则错误）
+- E-7、E-8 实验验证失败暴露理论缺陷
 
-**Methodology shift**:
-- Early phase (2024-2025): Physics-driven exploration with phenomenological fitting
-- Final phase (2025-2026): Proof-first rigorous reconstruction eliminating all free parameters
+**Dimensionics 的重建策略**：
+1. **吸收概念，抛弃证明**：只保留 M-0/M-1~M-10 中的核心概念（谱维度、分形几何等）
+2. **从零开始严格推导**：所有定理从公理 A1-A9 重新证明
+3. **诚实标记严格性**：L1-L3 分级，不夸大声明
+
+### Internal Evolution Within Fixed-4D-Topology
+
+即使在 Fixed-4D-Topology 内部，也经历了演进：
+
+| 阶段 | 时间 | 特征 | 关键问题 |
+|------|------|------|----------|
+| 早期探索 | 2024-2025 | 唯象拟合 | C*=0.21, w_i 人为设定 |
+| 严格重建 | 2025-2026 | 第一性原理 | **三座桥**消除所有唯象参数 |
+
+**三座桥的突破**：
+- **Bridge A**: C* = 0.21 (拟合) → C* = (Δλ/λ₁)·d_c·(1-d_c)·π/4 (推导)
+- **Bridge B**: w_i 人为设定 → w_i ∝ 1/|λ_i| at criticality (RG推导)
+- **Bridge C**: r=1.000 巧合 → H_NN = U·L·U† (幺正等价证明)
 
 ### Research Strategy Shift
 
