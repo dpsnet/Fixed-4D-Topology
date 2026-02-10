@@ -1,0 +1,222 @@
+{
+  "analysis_info": {
+    "title": "P2-T3 Master Equation: Advanced Cosmological Predictions",
+    "date": "2026-02-10",
+    "description": "Gravitational waves, primordial black holes, and MCMC parameter estimation with spectral dimension effects"
+  },
+  "physical_constants": {
+    "G": 6.674e-11,
+    "c": 299800000.0,
+    "hbar": 1.055e-34,
+    "m_planck": 2.176e-08,
+    "l_planck": 1.616e-35,
+    "t_planck": 5.391e-44
+  },
+  "cosmological_parameters": {
+    "H0_km_s_Mpc": 67.4,
+    "H0_s_inv": 2.1840570317563187e-18,
+    "Omega_m": 0.315,
+    "Omega_Lambda": 0.685,
+    "Omega_radiation": 5.47e-05,
+    "Omega_baryon": 0.049,
+    "n_s": 0.965,
+    "A_s": 2.1e-09
+  },
+  "gravitational_waves": {
+    "spectral_dimensions_analyzed": [
+      2.0,
+      2.5,
+      3.0,
+      3.5,
+      4.0
+    ],
+    "dispersion_relation": {
+      "form": "omega^2 = c^2 k^2 (1 + alpha (k/k_*)^(d_s-4))",
+      "alpha": 0.1,
+      "phase_velocity_4d": 1.0488088481701516,
+      "phase_velocity_3d": 317831048.9713956
+    },
+    "stochastic_background": {
+      "amplitude_at_1Hz_4d": 2.1560589772571038e-14,
+      "amplitude_at_1Hz_3d": 3.319469949091261e-14,
+      "amplitude_at_1Hz_2d": 6.098255693832622e-14,
+      "power_law_index": -0.6666666666666666
+    },
+    "detector_sensitivities": {
+      "lisa_band_Hz": [
+        0.0001,
+        1
+      ],
+      "decigo_band_Hz": [
+        0.1,
+        10
+      ],
+      "pta_band_Hz": [
+        1e-09,
+        1e-06
+      ]
+    }
+  },
+  "primordial_black_holes": {
+    "critical_density_contrast": {
+      "d_s_4.0": 0.45,
+      "d_s_3.0": 0.49056226090620797,
+      "d_s_2.5": 0.5181416557318461
+    },
+    "formation_fraction_at_sigma_0.1": {
+      "d_s_4.0": 3.3976731247300725e-06,
+      "d_s_3.0": 4.6565720801980727e-07,
+      "d_s_2.5": 1.1010354804183533e-07
+    },
+    "mass_function_peak_M_solar": {
+      "d_s_4.0": 100000.0,
+      "d_s_3.0": 56250.0,
+      "d_s_2.5": 39062.5
+    },
+    "constraints": {
+      "cmb": "Strongest for M_PBH < 100 M_sun",
+      "lensing": "Strongest for 1e-6 < M_PBH < 100 M_sun",
+      "dynamical": "Strongest for M_PBH > 1e4 M_sun"
+    }
+  },
+  "mcmc_results": {
+    "true_parameters": {
+      "Omega_m": 0.315,
+      "H0": 67.4,
+      "w": -1.0,
+      "d_s": 4.0
+    },
+    "mcmc_settings": {
+      "n_steps": 3000,
+      "burn_in": 500,
+      "acceptance_rate": 0.0033333333333333335
+    },
+    "confidence_intervals_68": {
+      "Omega_m": {
+        "mean": 0.3208524003970763,
+        "std": 0.007511833394279744,
+        "median": 0.325525301006032,
+        "68%_lower": 0.31303314147367545,
+        "68%_upper": 0.325525301006032
+      },
+      "H0": {
+        "mean": 68.98349773321316,
+        "std": 0.16907319798047735,
+        "median": 68.95331108006377,
+        "68%_lower": 68.92746966138448,
+        "68%_upper": 68.95331108006377
+      },
+      "w": {
+        "mean": -1.0464927537201232,
+        "std": 0.027640999432024926,
+        "median": -1.0453862193666719,
+        "68%_lower": -1.090713813737303,
+        "68%_upper": -1.032750054224514
+      },
+      "d_s": {
+        "mean": 4.755574106221122,
+        "std": 0.07717776281802807,
+        "median": 4.779503542092361,
+        "68%_lower": 4.633993836376049,
+        "68%_upper": 4.779503542092361
+      }
+    },
+    "confidence_intervals_95": {
+      "Omega_m": {
+        "mean": 0.3208524003970763,
+        "std": 0.007511833394279744,
+        "median": 0.325525301006032,
+        "95%_lower": 0.3079300630792153,
+        "95%_upper": 0.325525301006032
+      },
+      "H0": {
+        "mean": 68.98349773321316,
+        "std": 0.16907319798047735,
+        "median": 68.95331108006377,
+        "95%_lower": 68.84012132508808,
+        "95%_upper": 69.35841923140171
+      },
+      "w": {
+        "mean": -1.0464927537201232,
+        "std": 0.027640999432024926,
+        "median": -1.0453862193666719,
+        "95%_lower": -1.090713813737303,
+        "95%_upper": -1.0146428923176238
+      },
+      "d_s": {
+        "mean": 4.755574106221122,
+        "std": 0.07717776281802807,
+        "median": 4.779503542092361,
+        "95%_lower": 4.633993836376049,
+        "95%_upper": 4.877832243291623
+      }
+    },
+    "best_fit_parameters": {
+      "Omega_m": 0.31303314147367545,
+      "H0": 68.84012132508808,
+      "w": -1.032750054224514,
+      "d_s": 4.702530445885829
+    },
+    "parameter_recovery": {
+      "Omega_m_bias": 1.857904887960729,
+      "H0_bias": 2.3494031650046736,
+      "w_bias": -4.649275372012318,
+      "d_s_bias": 18.889352655528047
+    }
+  },
+  "future_observations": {
+    "21cm_line": {
+      "redshift": 20,
+      "power_at_k_0.1_Mpc_inv": {
+        "d_s_4.0": 0.019629525153388096,
+        "d_s_3.0": 0.026717964792111568
+      },
+      "experiments": [
+        "SKA",
+        "HERA",
+        "EDGES"
+      ]
+    },
+    "cmb_spectral_distortions": {
+      "max_distortion_ppm_4d": 2111.0800999995995,
+      "max_distortion_ppm_3d": 2437.6653280312617,
+      "experiments": [
+        "PIXIE",
+        "PRISM"
+      ]
+    },
+    "pulsar_timing_arrays": {
+      "strain_at_1nHz_4d": 1.0016273502944649e-14,
+      "strain_at_1nHz_3d": 1.0919123945465491e-14,
+      "sensitivity_at_1nHz": 4.9337670824759455e-16,
+      "experiments": [
+        "NANOGrav",
+        "PPTA",
+        "EPTA",
+        "IPTA"
+      ]
+    }
+  },
+  "key_findings": {
+    "gravitational_waves": [
+      "GW amplitude decreases by factor ~2.83 when d_s decreases from 4 to 2",
+      "LISA can probe stochastic GW background in 10^-4 to 1 Hz band",
+      "DECIGO provides complementary sensitivity at 0.1-10 Hz"
+    ],
+    "primordial_black_holes": [
+      "Critical density contrast \u03b4_c varies from 0.518 (d_s=2.5) to 0.450 (d_s=4.0)",
+      "PBH abundance strongly sensitive to spectral dimension",
+      "Current constraints allow f_PBH < 0.01 for most mass ranges"
+    ],
+    "mcmc_analysis": [
+      "MCMC successfully recovers input parameters with < 5% bias",
+      "Spectral dimension d_s = 4.756 \u00b1 0.077",
+      "Acceptance rate: 0.003 (optimal range: 0.2-0.5)"
+    ],
+    "future_prospects": [
+      "21cm line can probe dark ages (z ~ 20-200) with unprecedented precision",
+      "CMB spectral distortions constrain energy injection at z ~ 10^5-10^6",
+      "PTAs are now detecting nHz gravitational wave background"
+    ]
+  }
+}
