@@ -39,9 +39,32 @@
 
 ---
 
-## 二、核心研究方向独立论文（P1-P4）
+## 二、arXiv投稿论文（T1）
 
-### 2. P1-T3: Cantor Approximation Theory
+### arxiv-paper: Cantor Representation Theory
+
+**位置**: `arxiv-paper/`
+
+**文件**:
+- ✅ `main.tex` / `main.pdf` (~14页, 450KB)
+- ✅ `sections/*.tex` (6个章节)
+- ✅ `macros/commands.tex` (自定义命令)
+- ✅ `figures/` (图表)
+
+**内容**: T1 Cantor表示论的严格数学理论
+- 定理1: Cantor维度在ℚ上的线性独立性
+- 定理2: 有理组合在ℝ中的稠密性
+- 定理3: 贪婪逼近算法（构造性）
+- 定理4: 最优O(log(1/ε))收敛率
+
+**投稿状态**: arXiv投稿准备中
+**目标类别**: math.FA (Functional Analysis), math.NT (Number Theory)
+
+---
+
+## 三、核心研究方向独立论文（P1-P4）
+
+### 3. P1-T3: Cantor Approximation Theory
 
 **位置**: `research/P1/T3/paper/`
 
@@ -57,7 +80,7 @@
 
 ---
 
-### 3. P2-T3: Master Equation & Cosmology
+### 4. P2-T3: Master Equation & Cosmology
 
 **位置**: `research/P2/T3/paper/`
 
@@ -73,7 +96,7 @@
 
 ---
 
-### 4. P3-T1: Convexity Analysis (QFT Applications)
+### 5. P3-T1: Convexity Analysis (QFT Applications)
 
 **位置**: `research/P3/T1/paper/`
 
@@ -86,7 +109,7 @@
 
 ---
 
-### 5. P4-T1: Algebraic Topology & Spectral Geometry
+### 6. P4-T1: Algebraic Topology & Spectral Geometry
 
 **位置**: `research/P4/T1/paper/`
 
@@ -101,9 +124,9 @@
 
 ---
 
-## 三、扩展研究方向独立论文（H, I, J, K）
+## 四、扩展研究方向独立论文（H, I, J, K）
 
-### 6. H方向: Quantum Dimension
+### 7. H方向: Quantum Dimension
 
 **位置**: `extended_research/H_quantum_dimension/`
 
@@ -117,7 +140,7 @@
 
 ---
 
-### 7. I方向: Network Geometry
+### 8. I方向: Network Geometry
 
 **位置**: `extended_research/I_network_geometry/`
 
@@ -137,7 +160,7 @@
 
 ---
 
-### 8. J方向: Random Fractals
+### 9. J方向: Random Fractals
 
 **位置**: `extended_research/J_random_fractals/`
 
@@ -151,7 +174,7 @@
 
 ---
 
-### 9. K方向: Machine Learning Dimension
+### 10. K方向: Machine Learning Dimension
 
 **位置**: `extended_research/K_machine_learning_dimension/`
 
@@ -166,7 +189,7 @@
 
 ---
 
-## 四、T1-T10 和 A-G 扩展材料
+## 五、T1-T10 和 A-G 扩展材料
 
 **说明**: 这些是详细技术文档，不是独立论文，内容已整合到 unified-dimensionics。
 
@@ -196,21 +219,22 @@
 
 ---
 
-## 五、论文完整性总结
+## 六、论文完整性总结
 
 ### ✅ 完整 (有 tex + pdf)
 
-| 论文 | 位置 | 页数/规模 |
-|------|------|----------|
-| unified-dimensionics | `papers/unified-dimensionics/` | ~100页 |
-| P1-T3 Cantor | `research/P1/T3/paper/` | 多版本 |
-| P2-T3 Master方程 | `research/P2/T3/paper/` | 多版本 |
-| P3-T1 凸性 | `research/P3/T1/paper/` | 短篇 |
-| P4-T1 谱维度 | `research/P4/T1/paper/` | 多版本 |
-| K方向 ML维度 | `extended_research/K_machine_learning_dimension/paper/` | NeurIPS格式 |
-| I方向 网络几何 | `extended_research/I_network_geometry/` | 4页，2.1M节点 |
-| H方向 量子维度 | `extended_research/H_quantum_dimension/` | 3页，iTEBD模拟 |
-| J方向 随机分形 | `extended_research/J_random_fractals/` | 4页，3D渗流 |
+| 论文 | 位置 | 页数/规模 | 说明 |
+|------|------|----------|------|
+| **unified-dimensionics** | `papers/unified-dimensionics/` | ~100页 | 最终整合论文 |
+| **arxiv-paper** | `arxiv-paper/` | ~14页 | T1 Cantor表示论，arXiv投稿格式 |
+| P1-T3 Cantor | `research/P1/T3/paper/` | 多版本 | 核心方向 |
+| P2-T3 Master方程 | `research/P2/T3/paper/` | 多版本 | 核心方向 |
+| P3-T1 凸性 | `research/P3/T1/paper/` | 短篇 | 核心方向 |
+| P4-T1 谱维度 | `research/P4/T1/paper/` | 多版本 | 核心方向 |
+| K方向 ML维度 | `extended_research/K_machine_learning_dimension/paper/` | NeurIPS格式 | 扩展方向 |
+| I方向 网络几何 | `extended_research/I_network_geometry/` | 4页，2.1M节点 | 扩展方向 |
+| H方向 量子维度 | `extended_research/H_quantum_dimension/` | 3页，iTEBD模拟 | 扩展方向 |
+| J方向 随机分形 | `extended_research/J_random_fractals/` | 4页，3D渗流 | 扩展方向 |
 
 ### 📚 扩展材料 (Markdown only，已整合)
 
@@ -219,7 +243,7 @@
 
 ---
 
-## 六、论文完整性状态
+## 七、论文完整性状态
 
 ### ✅ 所有论文现在完整
 
@@ -231,6 +255,23 @@
 | 扩展材料 | T1-T10, A-G | Markdown (内容已整合) |
 
 所有独立论文均已具备 tex 源文件和 pdf 输出，可直接用于投稿或发布。
+
+---
+
+### arxiv-paper 引用
+
+```bibtex
+@misc{cantor2026,
+  title={Cantor Class Fractal Representation: A Rigorous Approximation Theory for Real Numbers},
+  url={https://github.com/dpsnet/Fixed-4D-Topology/tree/main/arxiv-paper},
+  year={2026}
+}
+```
+
+**投稿类别**:
+- math.FA (Functional Analysis) - Primary
+- math.NT (Number Theory) - Secondary
+- math.MG (Metric Geometry) - Secondary
 
 ---
 
