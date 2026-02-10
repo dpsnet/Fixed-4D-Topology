@@ -1,0 +1,60 @@
+{
+  "timestamp": "2026-02-10",
+  "overall_status": "PARTIAL",
+  "categories": {
+    "network_data": {
+      "caida_as_skitter": {
+        "status": "verified",
+        "message": "\u9a8c\u8bc1\u901a\u8fc7",
+        "size": 149105700
+      },
+      "facebook": {
+        "status": "verified",
+        "message": "\u9a8c\u8bc1\u901a\u8fc7",
+        "size": 854362
+      },
+      "twitter": {
+        "status": "verified",
+        "message": "\u9a8c\u8bc1\u901a\u8fc7",
+        "size": 44550129
+      },
+      "dblp": {
+        "status": "verified",
+        "message": "\u9a8c\u8bc1\u901a\u8fc7",
+        "size": 13931442
+      },
+      "email": {
+        "status": "verified",
+        "message": "\u9a8c\u8bc1\u901a\u8fc7",
+        "size": 192698
+      },
+      "ieee_power": {
+        "status": "verified",
+        "message": "\u9a8c\u8bc1\u901a\u8fc7",
+        "size": 38734
+      }
+    },
+    "biological_data": {
+      "biogrid_human": {
+        "status": "verified",
+        "message": "\u9a8c\u8bc1\u901a\u8fc7",
+        "size": 718987872
+      },
+      "biogrid_yeast": {
+        "status": "verified",
+        "message": "\u9a8c\u8bc1\u901a\u8fc7",
+        "size": 492495625
+      }
+    },
+    "ml_data": {
+      "cifar10": {
+        "status": "failed",
+        "message": "\u7f3a\u5c11\u6587\u4ef6: data_batch_1, data_batch_2, data_batch_3, data_batch_4, data_batch_5, test_batch"
+      },
+      "mnist": {
+        "status": "failed",
+        "message": "\u7f3a\u5c11\u6587\u4ef6: train-images-idx3-ubyte, train-labels-idx1-ubyte, t10k-images-idx3-ubyte, t10k-labels-idx1-ubyte"
+      }
+    }
+  }
+}

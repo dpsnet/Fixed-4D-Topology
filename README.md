@@ -6,6 +6,7 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Fusion Status](https://img.shields.io/badge/Fusion-Phase%204%20Complete-brightgreen.svg)]()
 [![Network Data](https://img.shields.io/badge/Network%20Data-2.1M%20nodes-green.svg)]()
+[![Data Provenance](https://img.shields.io/badge/Data%20Provenance-Verified-blue.svg)](DATA_PROVENANCE.md)
 
 **A rigorous mathematical framework unifying 16+ research directions across mathematics and physics through Dimensionics Theory—the first unified theory of dimension as a dynamical variable.**
 
@@ -197,6 +198,32 @@ We present **Dimensionics-Physics**, a mathematically rigorous framework treatin
 📄 **Full Paper**: [extended_research/I_network_geometry/papers/](extended_research/I_network_geometry/paper_restructure/I_direction_paper_FINAL_v2.3.md)
 
 ---
+
+## 📊 Data Provenance & Reproducibility
+
+### Complete Data Source Documentation
+
+All data sources used in this research are **fully documented and traceable**:
+
+| Data Category | Sources | Status | Documentation |
+|--------------|---------|--------|---------------|
+| **Network Topology** | CAIDA, SNAP, BIOGRID | ✅ Verified | [DATA_PROVENANCE.md](DATA_PROVENANCE.md) |
+| **ML Datasets** | CIFAR-10, MNIST | ✅ Verified | [DATA_PROVENANCE.md](DATA_PROVENANCE.md) |
+| **Physical Constants** | CODATA 2018, PDG 2024 | ✅ Verified | [DATA_PROVENANCE.md](DATA_PROVENANCE.md) |
+| **Math Constants** | OEIS | ✅ Verified | [DATA_PROVENANCE.md](DATA_PROVENANCE.md) |
+
+### Data Verification
+
+Run the verification script:
+```bash
+python scripts/verify_data_provenance.py
+```
+
+### Data Statistics
+- Network Data: ~2.1 GB (7 datasets, 2.1M nodes)
+- ML Datasets: ~250 MB (CIFAR-10, MNIST)
+- Biological Networks: ~1.8 GB (BIOGRID)
+- Physical Constants: 50+ from CODATA/PDG
 
 ---
 
