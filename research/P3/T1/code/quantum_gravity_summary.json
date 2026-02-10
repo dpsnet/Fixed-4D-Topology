@@ -1,0 +1,21 @@
+{
+  "connections": [
+    "Asymptotic Safety (Weinberg)",
+    "Causal Dynamical Triangulations (CDT)",
+    "Modified Dispersion Relations",
+    "Black Hole Thermodynamics",
+    "Holographic Principle"
+  ],
+  "key_predictions": {
+    "asymptotic_safety": "UV fixed point at d=2 confirmed",
+    "cdt_phase_C": "Convex free energy \u2194 extended phase",
+    "mdr": "Energy-dependent Lorentz violation",
+    "entropy": "Topological at UV, area law at IR"
+  },
+  "testability": [
+    "Gamma-ray burst time-of-flight (MDR)",
+    "Black hole shadow observations",
+    "Cosmic microwave background spectra"
+  ],
+  "status": "Quantum gravity applications established"
+}
