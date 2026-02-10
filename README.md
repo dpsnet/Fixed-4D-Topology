@@ -20,14 +20,17 @@
 
 ### Research Timeline (Based on Git History)
 
-| Phase | Period | Repository/Source | Nature | Status |
-|-------|--------|-------------------|--------|--------|
-| **Private Research** | May 2025 - Jan 2026 | `FiberGravity-DynamicCoupling` (private) | Initial exploration, M-series docs | ❌ **Discarded** |
-| **Distributed Framework** | Jan 27 - Feb 3, 2026 | Fundamental-Mathematics, Physical-Applications, etc. | Separated specialized repos | ❌ **Discarded** |
-| **Unified Framework Launch** | Feb 7, 2026 | Fixed-4D-Topology v1.0.0 | Core T1-T10 + A~G integration | ✅ **Foundation** |
-| **Extended Research** | Feb 7-9, 2026 | Fixed-4D-Topology | H, I, J, K directions | ✅ **Extensions** |
-| **Parallel Research v3.0** | Feb 9-10, 2026 | Fixed-4D-Topology | 4-track intensive (16h) | ✅ **Breakthrough** |
-| **Final Unification** | Feb 10, 2026+ | Fixed-4D-Topology v2.0.0 | **Three Bridges**, final paper | ✅ **Current** |
+| Phase | Period | Version | Roadmap | Nature | Status |
+|-------|--------|---------|---------|--------|--------|
+| **Private Research** | May 2025 - Jan 2026 | - | - | Initial exploration, M-series docs | ❌ **Discarded** |
+| **Distributed Framework** | Jan 27 - Feb 3, 2026 | - | - | Separated specialized repos | ❌ **Discarded** |
+| **Unified Framework Launch** | Feb 7, 2026 | v1.0.0 | - | Core T1-T10 + A~G integration | ✅ **Foundation** |
+| **Extended Research** | Feb 7-8, 2026 | v2.0.0 | Pre-roadmap | H, I, J, K directions | ✅ **Extensions** |
+| **PDF Release** | **Feb 9, 2026** | **v2.1.0** | Pre-roadmap | 5 papers open source | ✅ **Released** |
+| **Parallel Research v3.0** | Feb 9-10, 2026 | v2.1.0→v3.0.0 | v3.0 Execution | 4-track intensive (16h), 3 Bridges | ✅ **Breakthrough** |
+| **Final Unification** | **Feb 10, 2026** | **v3.0.0** | **v3.0 Complete** | **All 22 papers, 100% unified** | ✅ **Current** |
+
+**Version-Roadmap Mapping**: See [VERSION_ROADMAP_MAP.md](VERSION_ROADMAP_MAP.md) for detailed version-roadmap correspondence.
 
 ### What Happened
 
@@ -46,12 +49,17 @@
 
 ### Internal Evolution Within Fixed-4D-Topology
 
-| Stage | Date | Characteristics | Key Achievement |
-|-------|------|-----------------|-----------------|
-| Framework Established | Feb 7, 2026 | T1-T10 + A~G integration | Unified Dimensionics framework |
-| Extended Research | Feb 7-9, 2026 | H, I, J, K directions | 2.1M node networks, etc. |
-| Parallel Research | Feb 9-10, 2026 | 4-track intensive (16h) | P1-T3/P2-T3/P3-T1/P4-T1 breakthroughs |
-| Final Unification | Feb 10, 2026+ | Three Bridges + Final Paper | All phenomenological parameters eliminated |
+| Stage | Date | Version | Characteristics | Key Achievement |
+|-------|------|---------|-----------------|-----------------|
+| Framework Established | Feb 7, 2026 | v1.0.0 | T1-T10 + A~G integration | Unified Dimensionics framework |
+| Extended Research | Feb 7-8, 2026 | v2.0.0 | H, I, J, K directions | 2.1M node networks |
+| **PDF Release** | **Feb 9, 2026** | **v2.1.0** | **5 papers open source** | **Pre-roadmap foundation complete** |
+| **v3.0 Roadmap Execution** | **Feb 9-10, 2026** | **v2.1.0→v3.0.0** | **4-track intensive (16h)** | **P1-T3/P2-T3/P3-T1/P4-T1 breakthroughs** |
+| **Final Unification** | **Feb 10, 2026** | **v3.0.0** | **Three Bridges + Final Paper** | **All 22 papers, 100% unified** |
+
+**Key Distinction**:
+- **v2.1.0** (**Feb 9**): Pre-roadmap foundation release — 5 papers (T1-T10 + A-G), no bridges
+- **v3.0.0** (**Feb 10**): RESEARCH_ROADMAP_v3.0 executed — 22 papers complete, Three Bridges, final unification
 
 **Breakthroughs of the Three Bridges**:
 - **Bridge A**: C* = 0.21 (fitted) → C* = (Δλ/λ₁)·d_c·(1-d_c)·π/4 (derived)
@@ -74,15 +82,16 @@ Jan 27 - Feb 3, 2026: Distributed framework phase
 Feb 7, 2026: Fixed-4D-Topology v1.0.0 launch
              └── Mathematics-first rigorous methodology
      ↓
-Feb 7-10, 2026: Intensive development
-                ├── H/I/J/K extended directions
-                ├── 4-track parallel research (16 hours)
-                └── Three Bridges breakthrough
+Feb 7-9, 2026: Extended research (pre-roadmap)
+               ├── H/I/J/K extended directions
+               └── v2.1.0 release: 5 papers, PDF open source
      ↓
-Feb 10, 2026: v3.0.0 "Three Bridges" release
-              └── 100% phenomenology eliminated
+Feb 9-10, 2026: RESEARCH_ROADMAP_v3.0 EXECUTION (16 hours)
+                ├── 4-track parallel research
+                ├── Three Bridges breakthrough
+                └── v3.0.0 release: 22 papers complete
      ↓ [Current]
-v4.0+: M-1~M-10 & P-series strict reconstruction (planned)
+v4.0+: RESEARCH_ROADMAP_v4.0 - M-1~M-10 & P-series reconstruction (planned)
 ```
 
 **Key Principle**: This repository is NOT a continuation but a **clean-slate rigorous reconstruction**. All prior proofs were discarded; only concepts were absorbed and rebuilt from axioms A1-A9.

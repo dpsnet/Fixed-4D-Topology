@@ -4,6 +4,8 @@
 **Authors**: Wang Bin (王斌, Independent Researcher) & Kimi 2.5 Agent (Moonshot AI)  
 **Contact**: wang.bin@foxmail.com
 
+**Note**: This release was completed **before** the RESEARCH_ROADMAP_v3.0 execution. The Three Bridges and final unified paper were completed in v3.0.0 (Feb 10, 2026).
+
 ---
 
 ## 🎉 Major Highlights

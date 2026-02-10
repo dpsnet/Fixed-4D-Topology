@@ -2,7 +2,8 @@
 
 **Release Date**: February 10, 2026  
 **Codename**: "Three Bridges"  
-**Status**: Production Stable
+**Status**: Production Stable  
+**Roadmap**: Result of executing RESEARCH_ROADMAP_v3.0
 
 ---
 
@@ -10,14 +11,16 @@
 
 Dimensionics v3.0.0 represents the **completion of the core theoretical framework** and establishes the foundation for all future physical applications. This release includes the rigorous mathematical core (T1-T4), the three final bridges eliminating all phenomenological parameters, and the complete Python implementation.
 
+**Important**: This release is the result of executing RESEARCH_ROADMAP_v3.0. For the pre-roadmap version (v2.1.0, Feb 9), see [RELEASE_NOTES_v2.1.0.md](RELEASE_NOTES_v2.1.0.md).
+
 ### Version Significance
 
-| Version | Milestone | Description |
-|---------|-----------|-------------|
-| v1.0.0 | Initial Release | Core T1-T4 framework established |
-| v1.0.1 | PyPI Release | Package distribution setup |
-| v2.0.0 | Python Package | Complete dimensionics library |
-| **v3.0.0** | **Three Bridges** | **First-principles unification complete** |
+| Version | Milestone | Description | Roadmap |
+|---------|-----------|-------------|---------|
+| v2.1.0 | PDF Release (Feb 9) | T1-T10 + A-G Foundation, 5 papers | Pre-roadmap |
+| **v3.0.0** | **Three Bridges (Feb 10)** | **All 22 papers, 100% complete** | **v3.0 Executed** |
+
+**v2.1.0 vs v3.0.0**: v2.1.0 (Feb 9) was the pre-roadmap foundation release. v3.0.0 (Feb 10) completed the Three Bridges (H/I/J/K) and final unified paper through execution of RESEARCH_ROADMAP_v3.0.
 
 ---
 
