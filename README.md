@@ -146,10 +146,68 @@ Fixed-4D-Topology/
 
 ## Quick Start
 
+### Install the Dimensionics Tool Library
+
 ```bash
+# Clone repository
 git clone https://github.com/dpsnet/Fixed-4D-Topology.git
 cd Fixed-4D-Topology
-pip install -r requirements.txt
+
+# Install Python package
+pip install -e .
+
+# Verify installation
+dimensionics-verify  # Verify all 3 bridges
+dimensionics-demo    # Run demonstration
+```
+
+### Python API Example
+
+```python
+from dimensionics import (
+    MasterEquation,         # Core: d_eff = argmin[E - T·S + Λ]
+    SpectralDimension,      # P4: d_s(t) = n - (R/3)t
+    ConvexityAnalyzer,      # P3: α + β > T/8
+    CantorApproximation,    # P1: Cantor set complexity
+    BridgeA_FractalLaplacian,   # Bridge A: C* from spectral gap
+    BridgeB_VariationalWeights, # Bridge B: w_i from RG eigenvalues
+    BridgeC_NetworkNeural       # Bridge C: H_NN = U·L·U†
+)
+
+# Solve master equation
+solver = MasterEquation(alpha=1.0, beta=0.25)
+de = solver.solve(S_obs=4.0, Lambda=0.1)
+print(f"Effective dimension: d = {de:.4f}")
+
+# Verify Bridge A: C* = (Δλ/λ₁) · d_c · (1-d_c) · π/4
+bridge_a = BridgeA_FractalLaplacian(cantor_set=[0, 1/3, 2/3, 1])
+c_star = bridge_a.compute_c_star()
+print(f"C* from spectral gap: {c_star:.6f}")
+
+# All 3 bridges verified ✓
+```
+
+### Command Line Tools
+
+```bash
+# Verify all three bridges (first-principles unification)
+$ dimensionics-verify
+✓ Bridge A verified: C* = 0.213149 from spectral gap
+✓ Bridge B verified: w_i ∝ 1/|λ_i| at α + β = T/8
+✓ Bridge C verified: H_NN = U·L·U† with r = 1.000000
+
+# Run demonstration
+$ dimensionics-demo
+Demonstrating Dimensionics unified theory...
+- Master Equation solution
+- Spectral dimension calculation  
+- Bridge verification
+```
+
+### Legacy Research Code
+
+```bash
+# Original research scripts (research/)
 python scripts/verify_data_provenance.py
 python research/final_5_percent_bridge/complete_unification.py
 ```
@@ -169,8 +227,23 @@ python research/final_5_percent_bridge/complete_unification.py
 
 ---
 
-**Version**: 1.0 FINAL  
+**Version**: 2.0.0 FINAL  
 **Date**: February 10, 2026  
 **Status**: 100% Complete - All 16+ Directions Unified
 
 **Dimensionics: The First Unified Theory of Dimension as a Dynamical Variable**
+
+---
+
+## Package Structure
+
+```
+src/dimensionics/
+├── core/               # Master equation, spectral dimension, convexity
+├── number_theory/      # Cantor approximation, complexity analysis
+├── cosmology/          # Universe simulation, gravitational waves
+├── qft/                # Convexity in quantum field theory
+├── topology/           # Algebraic topology, index theorems
+├── bridges/            # Three final bridges (first-principles)
+└── cli.py              # Command line tools
+```
