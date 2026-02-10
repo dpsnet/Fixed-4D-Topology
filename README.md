@@ -283,12 +283,22 @@ Demonstrating Dimensionics unified theory...
 - Bridge verification
 ```
 
-### Legacy Research Code
+### Core Research Implementation
+
+Direct access to the latest research code (all current, no legacy):
 
 ```bash
-# Original research scripts (research/)
+# Verify data sources and citations
 python scripts/verify_data_provenance.py
+
+# Run the complete Three Bridges unification
 python research/final_5_percent_bridge/complete_unification.py
+
+# Explore individual research directions
+python research/P1/T3/code/cantor_constant_theory.py
+python research/P2/T3/code/master_equation_solver.py
+python research/P3/T1/code/convexity_verification.py
+python research/P4/T1/code/spectral_dimension_formula.py
 ```
 
 ---
