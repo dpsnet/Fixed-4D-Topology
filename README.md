@@ -27,6 +27,8 @@ The previous release claimed:
 
 ## Current Scope (L1/L2 Strict)
 
+### Mathematical Core (T1-T4)
+
 | Module | Direction | Strictness | Status |
 |--------|-----------|------------|--------|
 | **T1** | Cantor Dimension Approximation | L1-L2 | ✅ Complete |
@@ -34,7 +36,19 @@ The previous release claimed:
 | **T3** | Convexity Analysis | L1 | ✅ Complete |
 | **T4** | Algebraic Topology & Spectral Geometry | L2 | ✅ Complete |
 
-**Total**: 4 core modules, 8+ theorems with proofs.
+### Physical Applications (A-G)
+
+| Paper | Topic | Strictness | Status |
+|-------|-------|------------|--------|
+| **A** | Spectral Zeta Functions | L2 | ✅ Available |
+| **B** | Dimension Flow Dynamics | L2 | ✅ Available |
+| **C** | Modular Correspondence | L2 | ✅ Available |
+| **D** | P-adic Arithmetic | L2 | ✅ Available |
+| **E** | Sobolev Spaces on Fractals | L2 | ✅ Available |
+| **F** | Complexity Theory | L2 | ✅ Available |
+| **G** | Variational Principle | L2 | ✅ Available |
+
+**Total**: 11 papers (T1-T4 core + A-G applications), all with tex+pdf.
 
 ---
 
