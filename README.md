@@ -10,6 +10,45 @@
 
 ---
 
+## 🔬 Theory Evolution
+
+### From Early Exploration to Rigorous Framework
+
+This repository represents the **final rigorous version** of a multi-year research program:
+
+| Phase | Repository | Period | Role | Status |
+|-------|------------|--------|------|--------|
+| **Exploration** | Fundamental-Mathematics | 2019-2024 | M-0 series, A~G directions | ⚠️ Superseded |
+| **Framework** | Advanced-Theoretical-Framework | 2020-2024 | M-1~M-10 physics extensions | ⚠️ Superseded |
+| **Rigorous Core** | **Fixed-4D-Topology** | 2024-2026 | **Dimensionics (T1-T4)** | ✅ **Current** |
+
+### Key Improvements Over Prior Work
+
+**Fundamental-Mathematics** established the initial mathematical foundation (M-0.1~M-0.22, A~G directions) but had several issues:
+- M-0.3 claimed "strict correspondence" between modular forms and fractals → **Dimensionics T3** proves weak correspondence only (ρ≈0.3, L2)
+- M-0.14 had proof gaps for spacetime origin → **M-0.14.4** completes uniqueness proof
+- Phenomenological parameters (C*=0.21, w_i) were unexplained → **Three Bridges** derive from first principles
+
+**Advanced-Theoretical-Framework** developed physical applications but:
+- Lacked strictness grading (all claimed L1) → **Dimensionics** adopts L1-L3 honest grading
+- Physics-first approach led to inconsistencies → **Proof-first** methodology in Dimensionics
+
+### Research Strategy Shift
+
+```
+2019-2024: Physics-driven exploration (Fundamental-Mathematics, Advanced-Theoretical)
+     ↓ [Crisis: E-7, E-8 validation failures]
+2024-2026: Mathematics-first rigorous reconstruction (Dimensionics)
+     ↓ [Current]
+2026+: Experimental validation program (planned)
+```
+
+**This repository is NOT a continuation** but a **rigorous distillate** of sound mathematical components extracted from earlier attempts.
+
+See [PROFILE.md](PROFILE.md) for detailed research journey documentation.
+
+---
+
 ## FINAL PAPER RELEASED
 
 ### Dimensionics: A Unified Mathematical Theory
