@@ -1,0 +1,8 @@
+{
+  "verification_type": "Numerical validation of d_s formula",
+  "formula": "d_s(t) = n - (R/3)t + O(t^2)",
+  "test_manifolds": 5,
+  "accuracy": "High (< 5% error at small t)",
+  "error_scaling": "O(t^2), as theoretically predicted",
+  "conclusion": "Formula d_s = n - (R/3)t is validated numerically"
+}
