@@ -106,10 +106,18 @@ src/dimensionics/
 |------|-----------|
 | May 2025 - Jan 2026 | Private research exploration (discarded) |
 | Jan 27 - Feb 3, 2026 | Distributed framework phase (discarded) |
-| **Feb 7, 2026** | **Fixed-4D-Topology v1.0.0 launch** |
+| **Feb 7, 2026** | **Fixed-4D-Topology v1.0.0 launch** (clean-slate) |
 | Feb 7-9, 2026 | Extended research H/I/J/K directions |
-| Feb 9-10, 2026 | Parallel research v3.0 (16h intensive) |
-| **Feb 10, 2026** | **Three Bridges complete, v3.0.0 release** |
+| Feb 9-10, 2026 | Parallel research (16h intensive) |
+| **Feb 10, 2026** | **Three Bridges complete** |
+| **Current** | **v3.0.0 release** - All documentation corrected |
+
+### Key Clarifications
+
+- **Clean-slate**: Fixed-4D-Topology (Feb 7, 2026) is NOT a continuation of prior work
+- **No legacy code**: All code in `research/` is current v3.0.0 implementation  
+- **Corrected timeline**: All dates aligned with actual Git history
+- **Strict grading**: L1-L3 methodology applied throughout
 
 ---
 
