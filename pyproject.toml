@@ -3,28 +3,30 @@ requires = ["setuptools>=61.0", "wheel", "setuptools_scm[toml]>=6.2"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "fixed-4d-topology"
-version = "1.0.1"
-description = "Dynamic Spectral Dimension Unified Field Theory"
+name = "dimensionics"
+version = "2.0.0"
+description = "Dimensionics: A Unified Mathematical Theory of Dimension"
 readme = "README.md"
 license = {text = "MIT"}
 authors = [
-    {name = "AI Research Engine", email = "research@fixed4dtopology.org"}
+    {name = "Fixed-4D-Topology Consortium", email = "research@dimensionics.org"}
 ]
 keywords = [
+    "dimension theory",
     "fractal geometry",
     "spectral dimension",
-    "modular forms",
-    "algebraic topology",
     "unified field theory",
     "mathematical physics",
-    "heat kernel",
     "Cantor set",
-    "Grothendieck group",
+    "master equation",
+    "convexity",
+    "renormalization group",
+    "complex networks",
 ]
 classifiers = [
-    "Development Status :: 4 - Beta",
+    "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Science/Research",
+    "Intended Audience :: Education",
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.8",
@@ -35,14 +37,13 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Mathematics",
     "Topic :: Scientific/Engineering :: Physics",
     "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Education",
 ]
 requires-python = ">=3.8"
 dependencies = [
     "numpy>=1.21.0",
     "scipy>=1.7.0",
-    "sympy>=1.9",
     "matplotlib>=3.4.0",
-    "numba>=0.56.0",
     "pandas>=1.3.0",
 ]
 
@@ -51,32 +52,22 @@ dev = [
     "pytest>=6.2.0",
     "pytest-cov>=3.0.0",
     "black>=21.0.0",
-    "flake8>=4.0.0",
     "mypy>=0.910",
-    "build>=0.7.0",
-    "twine>=3.4.0",
 ]
 docs = [
     "sphinx>=4.3.0",
     "sphinx-rtd-theme>=1.0.0",
-    "myst-parser>=0.17.0",
-]
-notebooks = [
-    "jupyter>=1.0.0",
-    "ipython>=7.30.0",
-    "plotly>=5.3.0",
-    "ipywidgets>=7.6.0",
 ]
 
 [project.urls]
 Homepage = "https://github.com/dpsnet/Fixed-4D-Topology"
-Documentation = "https://github.com/dpsnet/Fixed-4D-Topology/tree/main/docs"
+Documentation = "https://github.com/dpsnet/Fixed-4D-Topology/blob/main/Dimensionics_Final_Paper.md"
 Repository = "https://github.com/dpsnet/Fixed-4D-Topology"
 "Bug Tracker" = "https://github.com/dpsnet/Fixed-4D-Topology/issues"
-Changelog = "https://github.com/dpsnet/Fixed-4D-Topology/releases"
 
 [project.scripts]
-fixed4d-verify = "fixed_4d_topology.cli:verify_command"
+dimensionics-verify = "dimensionics.cli:verify_all_bridges"
+dimensionics-demo = "dimensionics.cli:demo"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
@@ -85,52 +76,13 @@ include-package-data = true
 [tool.setuptools.packages.find]
 where = ["src"]
 
-[tool.setuptools.package-data]
-fixed_4d_topology = ["py.typed"]
-
 [tool.black]
 line-length = 88
 target-version = ['py38', 'py39', 'py310', 'py311', 'py312']
-include = '\.pyi?$'
-extend-exclude = '''
-/(
-  \.eggs
-  | \.git
-  | \.hg
-  | \.mypy_cache
-  | \.tox
-  | \.venv
-  | build
-  | dist
-)/
-'''
 
 [tool.pytest.ini_options]
 minversion = "6.0"
-addopts = "-ra -q --strict-markers --cov=fixed_4d_topology --cov-report=term-missing"
+addopts = "-ra -q --strict-markers"
 testpaths = [
     "tests",
-]
-
-[tool.mypy]
-python_version = "3.8"
-warn_return_any = true
-warn_unused_configs = true
-disallow_untyped_defs = true
-ignore_missing_imports = true
-
-[tool.coverage.run]
-source = ["src/fixed_4d_topology"]
-omit = [
-    "*/tests/*",
-    "*/test_*",
-]
-
-[tool.coverage.report]
-exclude_lines = [
-    "pragma: no cover",
-    "def __repr__",
-    "raise AssertionError",
-    "raise NotImplementedError",
-    "if __name__ == .__main__.:",
 ]
