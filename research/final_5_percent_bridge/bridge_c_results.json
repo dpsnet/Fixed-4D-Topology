@@ -1,0 +1,9 @@
+{
+  "dimension_network": 2.6,
+  "dimension_neural": 2.6,
+  "rank_correlation": 0.525500626362525,
+  "spectrum_correlation": 0.8030559203078985,
+  "is_unitary": true,
+  "correlation_observed": 1.0,
+  "isomorphism_proven": false
+}
