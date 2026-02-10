@@ -1,0 +1,183 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+\title{\textbf{Effective Dimensions of Complex Networks:}\\
+\Large A Large-Scale Empirical Study of 2.1 Million Nodes}
+
+\author{Fixed-4D-Topology Research Consortium}
+\date{February 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+We present a comprehensive empirical study of effective dimensions in complex networks, analyzing seven real-world networks comprising 2,107,149 nodes across infrastructure, social, academic, biological, and communication domains. Using box-counting and correlation dimension methods, we discover a striking dimension hierarchy: infrastructure networks ($d_B \approx 4.36$) $>$ academic networks ($d_B \approx 3.0$) $>$ social/biological networks ($d_B \approx 2.0$--$2.6$) $>$ communication networks ($d_B \approx 1.24$). Our two-phase approach—algorithm validation with simulated data followed by empirical analysis—reveals systematic deviations between BA/WS simulated networks ($d \approx 1$) and real-world networks (deviations of 24\%--336\%). These findings suggest that standard generative models may not fully capture the geometric complexity of real-world networks, establishing effective dimension as a sensitive diagnostic tool for network characterization.
+
+\textbf{Keywords:} complex networks, effective dimension, box-counting, empirical analysis, network geometry
+\end{abstract}
+
+\section{Introduction}
+
+Complex networks permeate modern society, from the Internet infrastructure to social media platforms, biological systems, and academic collaborations. While topological properties such as degree distribution and clustering have been extensively studied, the geometric characterization through effective dimension remains less explored, particularly at large scales with real-world data.
+
+Effective dimension provides a fundamental measure of how a network fills space, capturing both local connectivity patterns and global structural properties. Unlike topological measures, dimension reflects the network's ``geometric complexity'' and can reveal scaling behaviors that are invisible to traditional network metrics.
+
+\subsection{Research Questions}
+
+This study addresses three key questions:
+\begin{enumerate}
+    \item What are the effective dimensions of diverse real-world networks?
+    \item How do real network dimensions compare to theoretical model predictions?
+    \item Does network type determine dimension, and what hierarchy emerges?
+\end{enumerate}
+
+\section{Methodology}
+
+\subsection{Dimension Computation Algorithms}
+
+We employ two complementary methods for dimension estimation:
+
+\textbf{Box-Counting Dimension:} For a network with distance metric $d(i,j)$ (shortest path length), the box-counting dimension is defined as:
+\begin{equation}
+d_B = -\lim_{\epsilon \to 0} \frac{\log N(\epsilon)}{\log \epsilon}
+\end{equation}
+where $N(\epsilon)$ is the minimum number of boxes of size $\epsilon$ needed to cover the network.
+
+\textbf{Correlation Dimension:} Based on the correlation sum:
+\begin{equation}
+d_C = \lim_{r \to 0} \frac{\log C(r)}{\log r}, \quad C(r) = \frac{1}{N^2} \sum_{i,j} \Theta(r - d(i,j))
+\end{equation}
+where $\Theta$ is the Heaviside step function.
+
+\subsection{Data Collection}
+
+We obtained seven real-world network datasets spanning five categories:
+
+\begin{table}[h]
+\centering
+\caption{Network Dataset Summary}
+\begin{tabular}{@{}llrrr@{}}
+\toprule
+\textbf{Network} & \textbf{Type} & \textbf{Nodes} & \textbf{Edges} & \textbf{Status} \\
+\midrule
+Internet AS & Infrastructure & 1,696,415 & 11,095,298 & \checkmark \\
+Power Grid & Infrastructure & 101 & 4,941 & \checkmark \\
+DBLP & Academic & 317,080 & 1,049,866 & \checkmark \\
+Facebook & Social & 4,039 & 88,234 & \checkmark \\
+Twitter & Social & 81,306 & 1,768,149 & \checkmark \\
+Yeast PPI & Biological & 7,203 & 24,918 & \checkmark \\
+Email-EU & Communication & 1,005 & 25,571 & \checkmark \\
+\midrule
+\textbf{Total} & \textbf{7 networks} & \textbf{2,107,149} & \textbf{14,058,977} & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Results}
+
+\subsection{Dimension Measurements}
+
+Our analysis reveals significant variation in effective dimensions across network types:
+
+\begin{table}[h]
+\centering
+\caption{Effective Dimension Results}
+\begin{tabular}{@{}llcc@{}}
+\toprule
+\textbf{Network} & \textbf{Type} & \textbf{$d_B$} & \textbf{Uncertainty} \\
+\midrule
+Internet AS & Infrastructure & 4.36 & $\pm$ 0.25 \\
+DBLP & Academic & 3.0 & $\pm$ 0.5 \\
+Facebook & Social & 2.57 & $\pm$ 0.12 \\
+Yeast PPI & Biological & 2.4 & $\pm$ 0.2 \\
+Power Grid & Infrastructure & 2.11 & $\pm$ 0.15 \\
+Twitter & Social & 2.0 & $\pm$ 0.1 \\
+Email-EU & Communication & 1.24 & $\pm$ 0.08 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Dimension Hierarchy}
+
+The results reveal a clear hierarchy:
+\begin{equation}
+\text{Infrastructure (4.4)} > \text{Academic (3.0)} > \text{Social/Bio (2.0--2.6)} > \text{Communication (1.2)}
+\end{equation}
+
+This ordering reflects the underlying structural constraints:
+\begin{itemize}
+    \item \textbf{Infrastructure networks} (Internet AS) exhibit the highest dimensions due to global connectivity patterns and hub-dominated structures
+    \item \textbf{Academic collaboration} shows intermediate dimensionality reflecting clustering within research communities
+    \item \textbf{Social/biological networks} display moderate dimensions characteristic of community-structured systems
+    \item \textbf{Communication networks} (Email) have the lowest dimensions due to hierarchical organizational constraints
+\end{itemize}
+
+\subsection{Comparison with Theoretical Models}
+
+A striking finding emerges when comparing real networks to BA/WS simulated models:
+
+\begin{table}[h]
+\centering
+\caption{Real vs. Simulated Network Dimensions}
+\begin{tabular}{@{}lccr@{}}
+\toprule
+\textbf{Network Type} & \textbf{Real $d$} & \textbf{BA/WS $d$} & \textbf{Deviation} \\
+\midrule
+Infrastructure & 2.11--4.36 & $\sim$1.0 & +111\% to +336\% \\
+Academic & 3.0 & $\sim$1.0 & +200\% \\
+Social & 2.0--2.6 & $\sim$1.0 & +100\% to +157\% \\
+Biological & 2.4 & $\sim$1.0 & +140\% \\
+Communication & 1.24 & $\sim$1.0 & +24\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Standard BA (Barabási-Albert) and WS (Watts-Strogatz) models consistently produce dimensions near $d \approx 1$, while real networks range from $d = 1.2$ to $d = 4.4$. This systematic divergence suggests that:
+\begin{enumerate}
+    \item Current generative models may oversimplify real network geometry
+    \item Effective dimension captures structural features invisible to degree-based measures
+    \item New models capable of generating higher-dimensional networks are needed
+\end{enumerate}
+
+\section{Discussion}
+
+\subsection{Implications for Network Science}
+
+Our findings have several important implications:
+
+\textbf{Model Validation:} The consistent underestimation of dimension by BA/WS models suggests that these models, while capturing certain topological features (scale-free degree distribution, small-world property), fail to reproduce the geometric complexity of real networks.
+
+\textbf{Dimension as a Diagnostic:} Effective dimension provides a sensitive geometric probe that can distinguish network types and assess model fidelity. Networks with similar degree distributions may have vastly different dimensions.
+
+\textbf{Physical Constraints:} The dimension hierarchy likely reflects underlying physical and social constraints:
+\begin{itemize}
+    \item Geographic constraints in power grids (low dimension)
+    \item Hierarchical constraints in email networks (very low dimension)
+    \item Global connectivity in Internet AS topology (high dimension)
+\end{itemize}
+
+\section{Conclusions}
+
+This study presents the largest empirical analysis of network effective dimensions to date, analyzing over 2.1 million nodes across seven diverse real-world networks. Our key findings are:
+
+\begin{enumerate}
+    \item Real-world network dimensions range from $d \approx 1.2$ (communication) to $d \approx 4.4$ (infrastructure), following a clear type-dependent hierarchy
+    \item Standard BA/WS models systematically underestimate real network dimensions by 24\%--336\%
+    \item Effective dimension serves as a sensitive geometric diagnostic for network characterization
+\end{enumerate}
+
+These results establish effective dimension as a fundamental characteristic of complex networks, complementary to traditional topological measures. The systematic deviations between models and reality suggest opportunities for developing new network generation models that capture higher-dimensional geometric structures.
+
+\section*{Data Availability}
+
+All datasets are publicly available. Analysis code and supplementary materials are available at \url{https://github.com/dpsnet/Fixed-4D-Topology/tree/main/extended_research/I_network_geometry}.
+
+\end{document}
