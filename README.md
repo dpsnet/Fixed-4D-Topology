@@ -164,14 +164,27 @@ Fixed-4D-Topology/
 ## Research Status
 
 **Completed (L1/L2)**:
+
+*Mathematical Core (T1-T4)*:
 - ✅ T1: Cantor approximation theory
 - ✅ T2: Master equation framework
 - ✅ T3: Convexity analysis
 - ✅ T4: Spectral geometry
-- ✅ A-G: Physical applications
+
+*Physical Applications (A-G)*:
+- ✅ A: Spectral Zeta Functions
+- ✅ B: Dimension Flow Dynamics
+- ✅ C: Modular Correspondence
+- ✅ D: P-adic Arithmetic
+- ✅ E: Sobolev Spaces on Fractals
+- ✅ F: Complexity Theory
+- ✅ G: Variational Principle
 
 **In Progress (Research Plans - NOT published as theory)**:
-- 🟡 H-K: Extended directions (L3 numerical/experimental)
+- 🟡 H: Quantum dimension (L3 numerical)
+- 🟡 I: Network geometry (L3 empirical)
+- 🟡 J: Random fractals (L3 simulation)
+- 🟡 K: ML effective dimension (L3 experimental)
 - 🟡 Three Bridges: Research hypotheses (unproven)
 
 ---
