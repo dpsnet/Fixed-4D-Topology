@@ -1,0 +1,122 @@
+[
+  {
+    "T": 1.0,
+    "is_convex": true,
+    "num_minima": 0,
+    "global_minimum": null
+  },
+  {
+    "T": 1.263157894736842,
+    "is_convex": true,
+    "num_minima": 0,
+    "global_minimum": null
+  },
+  {
+    "T": 1.526315789473684,
+    "is_convex": true,
+    "num_minima": 0,
+    "global_minimum": null
+  },
+  {
+    "T": 1.7894736842105263,
+    "is_convex": true,
+    "num_minima": 0,
+    "global_minimum": null
+  },
+  {
+    "T": 2.052631578947368,
+    "is_convex": true,
+    "num_minima": 0,
+    "global_minimum": null
+  },
+  {
+    "T": 2.3157894736842106,
+    "is_convex": true,
+    "num_minima": 0,
+    "global_minimum": null
+  },
+  {
+    "T": 2.5789473684210527,
+    "is_convex": true,
+    "num_minima": 0,
+    "global_minimum": null
+  },
+  {
+    "T": 2.8421052631578947,
+    "is_convex": true,
+    "num_minima": 0,
+    "global_minimum": null
+  },
+  {
+    "T": 3.1052631578947367,
+    "is_convex": true,
+    "num_minima": 0,
+    "global_minimum": null
+  },
+  {
+    "T": 3.3684210526315788,
+    "is_convex": false,
+    "num_minima": 0,
+    "global_minimum": null
+  },
+  {
+    "T": 3.631578947368421,
+    "is_convex": false,
+    "num_minima": 0,
+    "global_minimum": null
+  },
+  {
+    "T": 3.894736842105263,
+    "is_convex": false,
+    "num_minima": 0,
+    "global_minimum": null
+  },
+  {
+    "T": 4.157894736842105,
+    "is_convex": false,
+    "num_minima": 0,
+    "global_minimum": null
+  },
+  {
+    "T": 4.421052631578947,
+    "is_convex": false,
+    "num_minima": 0,
+    "global_minimum": null
+  },
+  {
+    "T": 4.684210526315789,
+    "is_convex": false,
+    "num_minima": 0,
+    "global_minimum": null
+  },
+  {
+    "T": 4.947368421052632,
+    "is_convex": false,
+    "num_minima": 0,
+    "global_minimum": null
+  },
+  {
+    "T": 5.2105263157894735,
+    "is_convex": false,
+    "num_minima": 0,
+    "global_minimum": null
+  },
+  {
+    "T": 5.473684210526316,
+    "is_convex": false,
+    "num_minima": 0,
+    "global_minimum": null
+  },
+  {
+    "T": 5.7368421052631575,
+    "is_convex": false,
+    "num_minima": 0,
+    "global_minimum": null
+  },
+  {
+    "T": 6.0,
+    "is_convex": false,
+    "num_minima": 0,
+    "global_minimum": null
+  }
+]
