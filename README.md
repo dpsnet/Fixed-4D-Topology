@@ -165,11 +165,17 @@ Fixed-4D-Topology/
 
 **Completed (L1/L2)**:
 
-*Mathematical Core (T1-T4)*:
+*Mathematical Core (T1-T10)*:
 - ✅ T1: Cantor approximation theory
 - ✅ T2: Master equation framework
 - ✅ T3: Convexity analysis
 - ✅ T4: Spectral geometry
+- ✅ T5: Categorical unification
+- ✅ T6: Noncommutative refinement
+- ✅ T7: Higher structures
+- ✅ T8: Motives & p-adic Hodge theory
+- ✅ T9: Anabelian geometry
+- ✅ T10: Motivic homotopy
 
 *Physical Applications (A-G)*:
 - ✅ A: Spectral Zeta Functions
@@ -179,6 +185,10 @@ Fixed-4D-Topology/
 - ✅ E: Sobolev Spaces on Fractals
 - ✅ F: Complexity Theory
 - ✅ G: Variational Principle
+
+*Note*: T1-T10 and A-G are published in unified papers:
+- Dimensionics_Physics.pdf (17 pages)
+- Unified_Dimensionics.pdf (31 pages)
 
 **In Progress (Research Plans - NOT published as theory)**:
 - 🟡 H: Quantum dimension (L3 numerical)
