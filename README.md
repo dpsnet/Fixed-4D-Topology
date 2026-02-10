@@ -185,7 +185,6 @@ Fixed-4D-Topology/
 - 🟡 I: Network geometry (L3 empirical)
 - 🟡 J: Random fractals (L3 simulation)
 - 🟡 K: ML effective dimension (L3 experimental)
-- 🟡 Three Bridges: Research hypotheses (unproven)
 
 ---
 
