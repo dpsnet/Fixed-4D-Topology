@@ -24,12 +24,12 @@ v1.0.0  v2.0.0  v2.1.0  v3.0.0  v4.0.0
 | v2.0.0 | 🟢 Released | 2026-02-08 | Extended Research (H/I/J/K) |
 | v2.1.0 | 🟢 Released | 2026-02-09 | 5 Papers PDF Release |
 | **v3.0.0** | **🟢 Current** | **2026-02-10** | **Three Bridges + 22 Papers** |
-| v4.0.0 | 🔵 Planned | Q1 2026 | M-1~M-10 Reconstruction |
+| v4.0.0 | 🟡 In Progress | Q1 2026 | M-1~M-10 Reconstruction |
 
 ## Active Roadmap
 
 ### RESEARCH_ROADMAP_v4.0
-**Status**: 🔵 Planned  
+**Status**: 🟡 In Progress  
 **Target**: v4.0.0  
 **Timeline**: Q1-Q4 2026
 

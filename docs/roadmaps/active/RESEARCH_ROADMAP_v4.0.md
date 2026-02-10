@@ -1,5 +1,12 @@
 # Dimensionics v4.0 研究路线图：M-1~M-10 & P-系列严格重建计划
 
+**Status**: 🟡 In Progress  
+**Start Date**: 2026-02-10  
+**Target Completion**: Q4 2026  
+**Corresponding Version**: v4.0.0
+
+---
+
 ## 核心原则
 
 > **吸收概念，抛弃证明，严格重建**

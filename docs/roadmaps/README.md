@@ -26,7 +26,7 @@ docs/roadmaps/
 
 | Roadmap | Target Version | Start Date | Status |
 |---------|----------------|------------|--------|
-| [v4.0](active/RESEARCH_ROADMAP_v4.0.md) | v4.0.0 | Q1 2026 | 🔵 Planned |
+| [v4.0](active/RESEARCH_ROADMAP_v4.0.md) | v4.0.0 | 2026-Q1 | 🟡 In Progress |
 
 ## Completed Roadmaps
 
