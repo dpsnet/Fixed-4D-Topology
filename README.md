@@ -1,4 +1,4 @@
-# Dimensionics: Mathematical Core (T1-T4)
+# Dimensionics: Mathematical Core (T1-T4, A-G)
 
 **English | [中文](README_zh.md)**
 
@@ -7,7 +7,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Status](https://img.shields.io/badge/Status-CORE%20FOUNDATION-blue.svg)]()
 
-> **L1/L2 Strict Mathematical Foundation**: Cantor theory, Master equation, Convexity, Spectral geometry.
+> **L1/L2 Strict Mathematical Foundation**: T1-T4 core theory + A-G physical applications.
 
 ---
 

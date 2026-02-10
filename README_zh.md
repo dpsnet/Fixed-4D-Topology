@@ -1,4 +1,4 @@
-# Dimensionics: 数学核心 (T1-T4)
+# Dimensionics: 数学核心 (T1-T4, A-G)
 
 **[English](README.md) | 中文**
 
@@ -7,7 +7,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Status](https://img.shields.io/badge/Status-核心基础-blue.svg)]()
 
-> **L1/L2 严格数学基础**: Cantor理论、Master方程、凸性分析、谱几何。
+> **L1/L2 严格数学基础**: T1-T4核心理论 + A-G物理应用。
 
 ---
 
