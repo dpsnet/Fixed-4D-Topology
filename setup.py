@@ -1,25 +1,25 @@
 """
-Setup script for Fixed 4D Topology package.
+Setup script for Dimensionics package.
 
 This package provides numerical implementations of the mathematical theories
-developed in the Fixed 4D Topology research project.
+developed in the Dimensionics research project.
 """
 
 from setuptools import setup, find_packages
 
 setup(
-    name="fixed-4d-topology",
-    version="1.0.0",
-    author="AI Research Engine",
-    author_email="research@fixed4dtopology.org",
-    description="Dynamic Spectral Dimension Unified Field Theory",
+    name="dimensionics",
+    version="3.0.0",
+    author="Wang Bin & Kimi Agent",
+    author_email="wang.bin@foxmail.com",
+    description="Dimensionics: A Unified Mathematical Theory of Dimension",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/Fixed-4D-Topology",
+    url="https://github.com/dpsnet/Fixed-4D-Topology",
     package_dir={"": "src"},
     packages=find_packages(where="src"),
     classifiers=[
-        "Development Status :: 4 - Beta",
+        "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Science/Research",
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3",
@@ -59,7 +59,8 @@ setup(
     },
     entry_points={
         "console_scripts": [
-            "fixed4d-verify=fixed_4d_topology.cli:verify_command",
+            "dimensionics-verify=dimensionics.cli:verify_all_bridges",
+            "dimensionics-demo=dimensionics.cli:demo",
         ],
     },
 )

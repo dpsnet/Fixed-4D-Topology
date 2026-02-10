@@ -9,7 +9,7 @@ description = "Dimensionics: A Unified Mathematical Theory of Dimension"
 readme = "README.md"
 license = {text = "MIT"}
 authors = [
-    {name = "Fixed-4D-Topology Consortium", email = "research@dimensionics.org"}
+    {name = "Wang Bin & Kimi Agent", email = "wang.bin@foxmail.com"}
 ]
 keywords = [
     "dimension theory",
