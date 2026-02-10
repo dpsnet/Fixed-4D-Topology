@@ -5,6 +5,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Status](https://img.shields.io/badge/Status-100%25%20COMPLETE-success.svg)]()
 [![Paper](https://img.shields.io/badge/Paper-Available-brightgreen.svg)](Dimensionics_Final_Paper.md)
+[![Data Provenance](https://img.shields.io/badge/Data%20Provenance-Verified-blue.svg)](DATA_PROVENANCE.md)
 
 > **FIRST UNIFIED THEORY OF DIMENSION**: All 16+ research directions unified through Dimensionics Theory.
 
@@ -256,6 +257,31 @@ Fixed-4D-Topology/
 | **Extension Papers (H,I,J,K)** | `extended_research/*/paper*` | tex+pdf | 4 independent papers |
 
 **Note**: T1-T10 and A-G content is integrated in the unified paper (no separate papers). H, I, J, K appear in **both** the unified paper (Chapters 7-9) and as independent papers.
+
+---
+
+## 📊 Data Provenance & Verification
+
+All data sources used in this research are **fully documented and traceable**:
+
+| Data Category | Sources | Status | Documentation |
+|--------------|---------|--------|---------------|
+| **Network Topology** | CAIDA (Internet AS), SNAP (Facebook, Twitter), BioGRID (Yeast PPI), IEEE (Power Grid) | ✅ Verified | [DATA_PROVENANCE.md](DATA_PROVENANCE.md) |
+| **ML Datasets** | CIFAR-10, MNIST | ✅ Verified | [DATA_PROVENANCE.md](DATA_PROVENANCE.md) |
+| **Physical Constants** | CODATA 2018, PDG 2024 | ✅ Verified | [DATA_PROVENANCE.md](DATA_PROVENANCE.md) |
+| **Math Constants** | OEIS | ✅ Verified | [DATA_PROVENANCE.md](DATA_PROVENANCE.md) |
+
+### Data Verification Script
+
+Run the verification script to validate all data sources:
+```bash
+python scripts/verify_data_provenance.py
+```
+
+This script checks:
+- Data source availability and citations
+- Dataset integrity and checksums
+- Reproducibility of reported results
 
 ---
 
