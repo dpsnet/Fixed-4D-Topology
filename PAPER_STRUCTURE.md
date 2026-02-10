@@ -131,12 +131,18 @@
 **位置**: `extended_research/H_quantum_dimension/`
 
 **文件**:
-- ❌ 无独立论文（只在 unified-dimensionics Chapter 8 中涵盖）
+- ✅ `paper.tex` / `paper.pdf` (3页, 285KB)
 - ✅ 代码实现: `numerics/itebd_quantum_dimension.py`
 
-**内容**: iTEBD模拟、量子纠缠维度
+**论文标题**: *Quantum Dimensions in Spin Chains: An iTEBD Numerical Study*
 
-**状态**: ⚠️ 无独立论文（数据已整合到统一论文）
+**内容**: 
+- iTEBD模拟（键维度χ=200）
+- 横场Ising模型分析
+- 临界有效维度 d_q = 1.174（误差<1% vs CFT）
+- 量子纠缠维度
+
+**状态**: ✅ 完整 (tex + pdf)
 
 ---
 
@@ -145,18 +151,21 @@
 **位置**: `extended_research/I_network_geometry/`
 
 **文件**:
-- ❌ 无 tex/pdf（未生成）
+- ✅ `paper.tex` / `paper.pdf` (4页, 275KB)
 - ✅ 详细文档: `paper_restructure/I_direction_paper_FINAL_v2.3.md`
 - ✅ 数据: 2.1M节点, 7个网络
 - ✅ 代码: `algorithms/compute_all_dimensions.py`
 
-**内容**: 网络有效维度、2.1M节点分析、维度层次发现
+**论文标题**: *Effective Dimensions of Complex Networks: A Large-Scale Empirical Study of 2.1 Million Nodes*
 
-**整合情况**: 部分结果已整合到 unified-dimensionics Chapter 7 和 Chapter 9
+**内容**: 
+- 网络有效维度、2.1M节点分析
+- 7个真实网络（社交、基础设施、学术、生物、通信）
+- 维度层次：基础设施(4.4) > 学术(3.0) > 社交/生物(2.0-2.6) > 通信(1.2)
+- BA/WS模型偏差：24-336%
+- 维度层次发现
 
-**状态**: ⚠️ 有详细 markdown，但无独立 tex/pdf 论文
-
-**建议**: I方向数据丰富，建议生成独立论文投稿期刊
+**状态**: ✅ 完整 (tex + pdf)
 
 ---
 
@@ -165,12 +174,18 @@
 **位置**: `extended_research/J_random_fractals/`
 
 **文件**:
-- ❌ 无独立论文（只在 unified-dimensionics Chapter 9 中涵盖）
+- ✅ `paper.tex` / `paper.pdf` (4页, 284KB)
 - ✅ 可视化: `visualization/fractal_3d_visualization.py`
 
-**内容**: 3D渗流、Sierpinski海绵
+**论文标题**: *Random Fractals and Percolation in Three Dimensions: A Numerical Study of Fractal Dimensions and Critical Behavior*
 
-**状态**: ⚠️ 无独立论文（数据已整合到统一论文）
+**内容**: 
+- 3D渗流分析
+- 渗流阈值 p_c = 0.315 ± 0.005
+- 临界分形维度 d_f = 2.57 ± 0.08
+- Sierpinski海绵对比（d_f = 2.73）
+
+**状态**: ✅ 完整 (tex + pdf)
 
 ---
 
