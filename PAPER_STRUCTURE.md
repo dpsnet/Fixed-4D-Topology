@@ -30,12 +30,31 @@
 | Chapter 4 | Analytic Theory | A (Spectral Zeta) |
 | Chapter 5 | Spectral Theory | B (Dimension Flow), T2谱理论 |
 | Chapter 6 | Number Theory | T1 (Cantor), D (PTE), C (Modular) |
-| Chapter 7 | Unified Framework | G (Variational), E (Sobolev), I (Network) |
-| Chapter 8 | Complexity Theory | F (Complexity), H (Quantum) |
-| Chapter 9 | Applications | J (Random Fractals), K (ML) |
+| Chapter 7 | Unified Framework | G (Variational), E (Sobolev), **I (Network)** |
+| Chapter 8 | Complexity Theory | F (Complexity), **H (Quantum)** |
+| Chapter 9 | Applications | **J (Random Fractals), K (ML)** |
 | Chapter 10 | Conclusions | 总结, 三座桥, 未来方向 |
 
 **状态**: ✅ 完整 (tex + pdf + md)
+
+---
+
+### 统一论文 vs 独立论文的关系
+
+**重要说明**: `Dimensionics_Unified_Theory.pdf` **包含了所有方向**的内容（包括 H, I, J, K），但整合方式不同：
+
+| 类型 | 统一论文 (100页) | 独立论文 (各3-4页) |
+|------|------------------|-------------------|
+| **内容深度** | 综述性整合 | 完整研究论文 |
+| **I方向** | Chapter 7-9: 2.1M节点结果摘要、维度层次表格 | 独立paper: 完整7网络数据、算法细节、统计方法 |
+| **H方向** | Chapter 8: iTEBD结果概述 | 独立paper: 完整模拟方法、收敛性分析、CFT对比 |
+| **J方向** | Chapter 9: 渗流结果摘要 | 独立paper: 详细数值方法、有限尺寸标度、与文献对比 |
+| **K方向** | Chapter 9: ML维度概述 | 独立paper: NeurIPS格式完整论文 |
+
+**使用建议**:
+- **引用整体理论**: 使用 `Dimensionics_Unified_Theory.pdf`
+- **引用具体研究**: 使用各方向的独立 `paper.pdf`
+- **详细阅读**: 独立论文提供更完整的方法、数据、讨论
 
 ---
 
@@ -125,6 +144,8 @@
 ---
 
 ## 四、扩展研究方向独立论文（H, I, J, K）
+
+**注意**: 这些方向的**核心结果已整合**到统一论文 `Dimensionics_Unified_Theory.pdf` 中（见Chapter 7-9），但独立论文提供更详细的研究内容。
 
 ### 7. H方向: Quantum Dimension
 
@@ -302,6 +323,11 @@
 ```
 
 **引用具体方向**:
-- P1-P4 和 K方向有独立引用信息
-- T1-T10 和 A-G 引用统一论文即可
-- H, I, J 方向目前引用统一论文（待独立论文完成后更新）
+- **统一理论引用**: 使用 `Dimensionics_Unified_Theory.pdf` 引用整体框架
+- **独立论文引用**: P1-P4, H, I, J, K 都有独立 `paper.pdf`，可单独引用
+- **示例**: I方向既在统一论文Chapter 7-9中有概述，也有独立4页论文详细阐述
+
+**引用策略**:
+- 强调整体理论统一性 → 引用统一论文
+- 强调具体研究贡献 → 引用独立论文
+- 两者可同时引用（统一论文为背景，独立论文为方法细节）
