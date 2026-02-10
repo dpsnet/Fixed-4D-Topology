@@ -5,12 +5,16 @@ This package provides numerical implementations of the Dimensionics theory,
 unifying 16+ research directions across mathematics and physics.
 
 Modules:
-    core: Master equation, spectral formulas, convexity
+    core: Master equation, spectral formulas, convexity (T1-T4)
     number_theory: Cantor approximation, p-adic analysis, complexity
-    cosmology: Master equation, gravitational waves, simulations
-    qft: Convexity analysis, string theory, F-theory
     topology: Spectral dimension, algebraic topology, index theorems
-    bridges: Final 5% first-principles unification
+    qft: Convexity analysis, string theory, F-theory
+    cosmology: Master equation, gravitational waves, simulations
+    bridges: Final 5% first-principles unification (A, B, C)
+    quantum: Quantum dimension, iTEBD (H)
+    network: Network geometry, spectral analysis (I)
+    fractal: Random fractals, percolation (J)
+    neural_network: Effective dimension, Fisher information (K)
 
 Example:
     >>> from dimensionics import MasterEquation
@@ -61,6 +65,27 @@ from dimensionics.bridges import (
     BridgeC_NetworkNeuralIsomorphism,
 )
 
+# Extended directions
+from dimensionics.quantum import (
+    iTEBD_Simulator,
+    quantum_dimension,
+)
+
+from dimensionics.network import (
+    network_spectral_dimension,
+    analyze_network,
+)
+
+from dimensionics.fractal import (
+    percolation_3d,
+    critical_exponent,
+)
+
+from dimensionics.neural_network import (
+    effective_dimension,
+    fisher_information_matrix,
+)
+
 __all__ = [
     # Version
     "__version__",
@@ -72,17 +97,26 @@ __all__ = [
     # Number Theory
     "CantorApproximation",
     "ComplexityAnalyzer",
-    # Cosmology
-    "CosmologicalSimulator",
-    "GravitationalWavePredictor",
-    # QFT
-    "ConvexityQFT",
-    "StringTheoryConnection",
     # Topology
     "SpectralTopology",
     "IndexTheoremValidator",
+    # QFT
+    "ConvexityQFT",
+    "StringTheoryConnection",
+    # Cosmology
+    "CosmologicalSimulator",
+    "GravitationalWavePredictor",
     # Bridges
     "BridgeA_FractalLaplacian",
     "BridgeB_VariationalWeights",
     "BridgeC_NetworkNeuralIsomorphism",
+    # Extended Directions
+    "iTEBD_Simulator",
+    "quantum_dimension",
+    "network_spectral_dimension",
+    "analyze_network",
+    "percolation_3d",
+    "critical_exponent",
+    "effective_dimension",
+    "fisher_information_matrix",
 ]
