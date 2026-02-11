@@ -1,0 +1,136 @@
+{
+  "task": "K-103",
+  "description": "Numerical validation of Hausdorff dimension vs L-function correlation",
+  "timestamp": "2026-02-11T16:05:52.494004",
+  "database": {
+    "total_groups": 10,
+    "arithmetic_groups": 8,
+    "non_arithmetic_groups": 2
+  },
+  "correlation_analysis": {
+    "n_samples": 8,
+    "group_names": [
+      "PSL(2, Z[i])",
+      "PSL(2, Z[ω])",
+      "Figure-Eight Knot Complement (m004)",
+      "Whitehead Link Complement (m003)",
+      "Weeks Manifold",
+      "Apollonian Gasket Group",
+      "Quaternion Group (d=2)",
+      "Borromean Rings Complement"
+    ],
+    "observed_dimensions": [
+      2.0,
+      2.0,
+      1.0,
+      1.0,
+      2.0,
+      1.305688,
+      1.85,
+      1.0
+    ],
+    "predicted_dimensions": [
+      1.405284734569351,
+      1.68391798958578,
+      3.0,
+      3.0,
+      3.0,
+      3.0,
+      2.8899999999999997,
+      3.0
+    ],
+    "pearson_r": -0.628450573888606,
+    "pearson_p_value": 0.09515249891311736,
+    "spearman_r": -0.6882472016116853,
+    "spearman_p_value": 0.05914129087156035,
+    "linear_regression": {
+      "slope": -0.4560777358625952,
+      "intercept": 2.7154794098293826,
+      "r_squared": 0.39495012382091826,
+      "p_value": 0.09515249891311714,
+      "std_error": 0.23045583456698907
+    },
+    "mse": 2.1757359046984677,
+    "rmse": 1.4750375943339435,
+    "mae": 1.3306386594806086
+  },
+  "hypothesis_test": {
+    "individual_results": [
+      {
+        "name": "PSL(2, Z[i])",
+        "observed": 2.0,
+        "predicted": 1.405284734569351,
+        "difference": 0.5947152654306489,
+        "relative_error": 0.29735763271532445,
+        "within_error_bounds": false
+      },
+      {
+        "name": "PSL(2, Z[ω])",
+        "observed": 2.0,
+        "predicted": 1.68391798958578,
+        "difference": 0.3160820104142199,
+        "relative_error": 0.15804100520710995,
+        "within_error_bounds": false
+      },
+      {
+        "name": "Figure-Eight Knot Complement (m004)",
+        "observed": 1.0,
+        "predicted": 3.0,
+        "difference": -2.0,
+        "relative_error": 2.0,
+        "within_error_bounds": false
+      },
+      {
+        "name": "Whitehead Link Complement (m003)",
+        "observed": 1.0,
+        "predicted": 3.0,
+        "difference": -2.0,
+        "relative_error": 2.0,
+        "within_error_bounds": false
+      },
+      {
+        "name": "Weeks Manifold",
+        "observed": 2.0,
+        "predicted": 3.0,
+        "difference": -1.0,
+        "relative_error": 0.5,
+        "within_error_bounds": false
+      },
+      {
+        "name": "Apollonian Gasket Group",
+        "observed": 1.305688,
+        "predicted": 3.0,
+        "difference": -1.694312,
+        "relative_error": 1.2976392522562818,
+        "within_error_bounds": false
+      },
+      {
+        "name": "Quaternion Group (d=2)",
+        "observed": 1.85,
+        "predicted": 2.8899999999999997,
+        "difference": -1.0399999999999996,
+        "relative_error": 0.5621621621621619,
+        "within_error_bounds": false
+      },
+      {
+        "name": "Borromean Rings Complement",
+        "observed": 1.0,
+        "predicted": 3.0,
+        "difference": -2.0,
+        "relative_error": 2.0,
+        "within_error_bounds": false
+      }
+    ],
+    "summary": {
+      "total_tested": 8,
+      "matches": 0,
+      "match_ratio": 0.0,
+      "conclusion": "不支持假设"
+    }
+  },
+  "conclusion": {
+    "hypothesis_supported": false,
+    "confidence": "medium",
+    "notes": "需要更多精确数据来严格验证假设"
+  }
+}

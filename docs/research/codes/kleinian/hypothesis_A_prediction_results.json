@@ -1,0 +1,90 @@
+{
+  "timestamp": "2026-02-11T17:34:44.889673",
+  "formula_parameters": {
+    "alpha": 0.2443,
+    "gamma": {
+      "B": 0.919,
+      "C": 0.2687,
+      "CL": 0.8608,
+      "S": 0.5
+    }
+  },
+  "results": {
+    "predictions": [
+      {
+        "name": "Trefoil Knot Complement (\u9a8c\u8bc1)",
+        "type": "C",
+        "volume": 2.029883,
+        "log_derivative": -0.65,
+        "predicted": 1.0444063566564574,
+        "observed": 1.0,
+        "error": -0.044406356656457424
+      },
+      {
+        "name": "m016 (SnapPy census, \u9a8c\u8bc1)",
+        "type": "C",
+        "volume": 2.828122,
+        "log_derivative": -1.0,
+        "predicted": 1.033708684459531,
+        "observed": 1.0,
+        "error": -0.0337086844595309
+      },
+      {
+        "name": "m017 (SnapPy census, \u9a8c\u8bc1)",
+        "type": "CL",
+        "volume": 0.981369,
+        "log_derivative": 0.05,
+        "predicted": 1.211298926339203,
+        "observed": 2.0,
+        "error": 0.7887010736607969
+      },
+      {
+        "name": "Hypothetical Bianchi Group (d=19)",
+        "type": "B",
+        "volume": 5.5,
+        "log_derivative": 0.4,
+        "predicted": 1.9763222521526265,
+        "observed": null,
+        "error": null
+      },
+      {
+        "name": "Hypothetical Schottky (sep=0.6)",
+        "type": "S",
+        "volume": null,
+        "log_derivative": 0.8,
+        "predicted": 1.59772,
+        "observed": null,
+        "error": null
+      },
+      {
+        "name": "Hypothetical Closed Manifold (V=1.5)",
+        "type": "CL",
+        "volume": 1.5,
+        "log_derivative": -0.1,
+        "predicted": 1.8005482064141438,
+        "observed": null,
+        "error": null
+      },
+      {
+        "name": "Hypothetical Cusped (Large Volume)",
+        "type": "C",
+        "volume": 10.0,
+        "log_derivative": -3.0,
+        "predicted": 0.9504055742131068,
+        "observed": null,
+        "error": null
+      }
+    ],
+    "validation_stats": {
+      "n_predictions": 7,
+      "n_with_observed": 3,
+      "mean_error": 0.23686201084826952,
+      "std_error": 0.390233582598905,
+      "mae": 0.2889387049255951,
+      "rmse": 0.45649300232430967,
+      "max_abs_error": 0.7887010736607969,
+      "min_abs_error": 0.0337086844595309,
+      "median_abs_error": 0.044406356656457424
+    }
+  }
+}

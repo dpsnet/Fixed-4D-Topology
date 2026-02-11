@@ -1,0 +1,133 @@
+{
+  "source": "Sarnak - Spectra of Hyperbolic Surfaces (Baltimore Lectures 2003)",
+  "pages": 48,
+  "chapters": [
+    "Introduction",
+    "Chapter 1: Existence of Maass forms",
+    "Chapter 2: Low-lying eigenvalues",
+    "Chapter 3: High-energy behavior",
+    "Appendix 1: L-functions",
+    "Appendix 2: Frobenius automorphisms",
+    "Appendix 3: Trace formula",
+    "Appendix 4: Microlocal lifts",
+    "Appendix 5: Quantum vs classical fluctuations",
+    "Appendix 6: Cancellation in shifted sums",
+    "Appendix 7: Numerical methods"
+  ],
+  "core_concepts": {
+    "hyperbolic_geometry": {
+      "upper_half_plane": "H = {z = x+iy : y > 0}",
+      "metric": "ds = |dz|/y",
+      "laplacian": "Δ = y²(∂ₓ² + ∂ᵧ²)",
+      "gauss_curvature": "K = -1"
+    },
+    "modular_surfaces": {
+      "modular_group": "Γ(1) = SL(2,Z)",
+      "congruence_subgroup": "Γ(N) = {γ ∈ SL(2,Z) : γ ≡ I (mod N)}",
+      "modular_surface": "X(N) = Γ(N)\\H",
+      "area": "Area(X(1)) = π/3"
+    },
+    "spectral_theory": {
+      "discrete_spectrum": "0 = λ₀ < λ₁ ≤ λ₂ ≤ ...",
+      "continuous_spectrum": "[1/4, ∞) from Eisenstein series",
+      "residual_spectrum": "Poles of Eisenstein series in (1/2, 1]",
+      "weyl_law": "N_cusp(λ) ~ Area(X)·λ/(4π)"
+    },
+    "maass_forms": {
+      "definition": "Δ-eigenfunctions, Γ-invariant, L²-integrable",
+      "cusp_forms": "Maass forms vanishing at cusps",
+      "fourier_expansion": "φ(z) = Σ ρ(n)y^{1/2}K_{it}(2π|n|y)e^{2πinx}",
+      "eigenvalue": "λ = 1/4 + t²"
+    },
+    "hecke_operators": {
+      "definition": "T_n f(z) = (1/√n) Σ_{ad=n} Σ_{b mod d} f((az+b)/d)",
+      "properties": ["Commute with Δ", "Preserve L²_cusp", "Simultaneously diagonalizable"],
+      "eigenvalues": "T_n φ = λ_φ(n)φ"
+    },
+    "l_functions": {
+      "standard_l_function": "L(s,φ) = Σ λ_φ(n)/n^s = Π_p (1 - λ_φ(p)p^{-s} + p^{-2s})^{-1}",
+      "functional_equation": "Λ(s,φ) = Λ(1-s,φ)",
+      "completed_l_function": "Λ(s,φ) = π^{-s}Γ((s+it)/2)Γ((s-it)/2)L(s,φ)",
+      "rankin_selberg": "L(s, φ₁ ⊗ φ₂), degree 4",
+      "symmetric_power": "L(s, φ; sym^ℓ), degree ℓ+1",
+      "grand_riemann_hypothesis": "Zeros on Re(s) = 1/2",
+      "convexity_bound": "L(1/2+it,ρ) ≪ C(ρ;t)^{1/4+ε}"
+    }
+  },
+  "selberg_trace_formula": {
+    "formula_type": "Spectral side = Geometric side",
+    "spectral_side": "Sum over discrete spectrum + continuous spectrum via scattering matrix",
+    "geometric_side": [
+      "Identity term: Area term",
+      "Elliptic terms: From elliptic conjugacy classes",
+      "Hyperbolic terms: Sum over primitive closed geodesics"
+    ],
+    "application": "Proves Weyl law, connects spectrum to closed geodesics"
+  },
+  "quantum_chaos": {
+    "classical_dynamics": "Geodesic flow is Anosov (chaotic)",
+    "quantization": "Laplace eigenfunctions = quantum states",
+    "quantum_ergodicity": "Almost all eigenstates equidistribute (Shnirelman-Zelditch-Colin)",
+    "quantum_unique_ergodicity": "All Hecke eigenforms equidistribute (Lindenstrauss)",
+    "level_spacing": "X(1) has Poisson statistics (due to Hecke symmetry)",
+    "delocalization_conjecture": "‖φ_λ‖_{L^p} ≪_ε λ^ε for p > 2"
+  },
+  "key_theorems": {
+    "kim_sarnak_bound": {
+      "statement": "λ₁(X(N)) ≥ 975/4096 ≈ 0.238",
+      "method": "Symmetric power functoriality (sym², sym³, sym⁴)",
+      "gap_to_selberg": "Selberg conjectured λ₁ ≥ 1/4 = 0.25"
+    },
+    "quantum_variance": {
+      "statement": "B(φ) = L(1/2, φ) · V(φ)",
+      "meaning": "Quantum variance = L-value × Classical variance",
+      "significance": "Arithmetic correction to classical variance"
+    },
+    "weyl_law": {
+      "statement": "#{j : |t_j| ≤ T} ~ Area(X)·T²/(2π)",
+      "consequence": "X(1) is essentially cuspidal"
+    }
+  },
+  "microlocal_analysis": {
+    "wigner_distribution": "ν_λ(a) = ⟨Op(a)φ_λ, φ_λ⟩",
+    "microlocal_lift": "Lift of position measure to phase space S*X",
+    "egorov_theorem": "Quantum evolution ≈ Classical evolution (mod o(1))",
+    "invariance": "Quantum limits are invariant under geodesic flow"
+  },
+  "numerical_methods": {
+    "collocation_method": "Truncate Fourier series, use boundary conditions",
+    "stark_method": "For large eigenvalues (t ≤ 11000)",
+    "verification": "Check Hecke relations ρ(nm) = Σ_{d|(n,m)} ρ(nm/d²)"
+  },
+  "relation_to_lindenstrauss": {
+    "common_theme": "Hecke operators provide arithmetic rigidity for QUE",
+    "sarnak_contribution": "Explicit formulas (variance = L-value × classical)",
+    "lindenstrauss_contribution": "Entropy method: positive entropy ⇒ Haar measure",
+    "complementarity": "Explicit vs conceptual; computation vs abstraction"
+  },
+  "relation_to_fractal_research": {
+    "key_differences": [
+      "Smooth vs fractal geometry",
+      "Constant curvature vs distributional curvature",
+      "Hecke symmetry vs no symmetry",
+      "Eisenstein series vs unknown continuous spectrum"
+    ],
+    "applicable_methods": [
+      "Spectral analysis framework",
+      "Heat kernel estimates (adapted)",
+      "Microlocal analysis concepts",
+      "Trace formula philosophy"
+    ],
+    "open_questions": [
+      "Weyl law for fractal surfaces?",
+      "Existence of Maass forms without arithmetic?",
+      "Localization of eigenfunctions?",
+      "L-function analogs?"
+    ]
+  },
+  "references_cited": {
+    "essential": ["[Iw] Iwaniec - Spectral Methods of Automorphic Forms", "[He1-3] Hejhal - Numerical computation of spectrum"],
+    "advanced": ["[K] Kim - Functoriality for exterior square", "[K-S] Kim-Shahidi - Symmetric cube and fourth power", "[Li1] Lindenstrauss - Quantum unique ergodicity"],
+    "classical": ["[Sel1-3] Selberg - Collected works", "[Lan1-4] Langlands - Various papers on functoriality"]
+  }
+}

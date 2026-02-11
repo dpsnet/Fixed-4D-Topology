@@ -1,0 +1,241 @@
+{
+  "task": "Hypothesis_A_Validation",
+  "description": "Validation of logarithmic derivative formula for Hausdorff dimension",
+  "timestamp": "2026-02-11T17:12:06.342579",
+  "database_info": {
+    "total_groups": 15,
+    "complete_data": 15,
+    "arithmetic_groups": 12,
+    "schottky_groups": 3
+  },
+  "original_hypothesis": {
+    "n_samples": 12,
+    "group_names": [
+      "PSL(2, Z[i])",
+      "PSL(2, Z[ω])",
+      "Figure-Eight Knot Complement (m004)",
+      "Whitehead Link Complement (m003)",
+      "Borromean Rings Complement",
+      "Weeks Manifold",
+      "Thurston Manifold (m003(3,1))",
+      "Apollonian Gasket Group",
+      "Quaternion Group (d=2)",
+      "Quaternion Group (d=5)",
+      "5₁ Knot Complement",
+      "6₁ Knot Complement"
+    ],
+    "observed": [
+      2.0,
+      2.0,
+      1.0,
+      1.0,
+      1.0,
+      2.0,
+      2.0,
+      1.305688,
+      1.85,
+      1.75,
+      1.0,
+      1.0
+    ],
+    "predicted": [
+      1.8105694691387022,
+      3.0517539687573403,
+      3.0,
+      3.0,
+      3.0,
+      3.0,
+      3.0,
+      3.0,
+      2.8899999999999997,
+      2.875,
+      3.0,
+      3.0
+    ],
+    "pearson_r": -0.3639078555907205,
+    "pearson_p": 0.2448863179318266,
+    "spearman_r": -0.15391196290975137,
+    "spearman_p": 0.6329435322727679,
+    "r_squared": 0.13242892736063666,
+    "adj_r_squared": 0.045671820096700344,
+    "rmse": 1.5373133623891608,
+    "mae": 1.4250413749682196,
+    "linear_regression": {
+      "slope": -0.5041241328203068,
+      "intercept": 2.946846450001469,
+      "std_err": 0.408036100741359
+    }
+  },
+  "hypothesis_A": {
+    "n_samples": 15,
+    "group_names": [
+      "PSL(2, Z[i])",
+      "PSL(2, Z[ω])",
+      "Figure-Eight Knot Complement (m004)",
+      "Whitehead Link Complement (m003)",
+      "Borromean Rings Complement",
+      "Weeks Manifold",
+      "Thurston Manifold (m003(3,1))",
+      "Apollonian Gasket Group",
+      "Classical Schottky (sep=0.3)",
+      "Classical Schottky (sep=0.5)",
+      "Classical Schottky (sep=0.8)",
+      "Quaternion Group (d=2)",
+      "Quaternion Group (d=5)",
+      "5₁ Knot Complement",
+      "6₁ Knot Complement"
+    ],
+    "observed": [
+      2.0,
+      2.0,
+      1.0,
+      1.0,
+      1.0,
+      2.0,
+      2.0,
+      1.305688,
+      1.65,
+      1.45,
+      1.15,
+      1.85,
+      1.75,
+      1.0,
+      1.0
+    ],
+    "predicted": [
+      1.313221860665326,
+      1.30981673856392,
+      0.011269075916553573,
+      0.07586948650466097,
+      -0.15481264374305792,
+      1.5084800031922345,
+      0.6804577043097548,
+      1.092,
+      1.9,
+      1.6,
+      1.2,
+      1.1803368801111205,
+      1.2346387726263877,
+      0.03810352648120385,
+      0.0015848131800707543
+    ],
+    "residuals": [
+      0.6867781393346739,
+      0.6901832614360801,
+      0.9887309240834464,
+      0.924130513495339,
+      1.154812643743058,
+      0.4915199968077655,
+      1.3195422956902452,
+      0.21368799999999988,
+      -0.25,
+      -0.15000000000000013,
+      -0.050000000000000044,
+      0.6696631198888796,
+      0.5153612273736123,
+      0.9618964735187961,
+      0.9984151868199292
+    ],
+    "pearson_r": 0.7212637066139522,
+    "pearson_p": 0.0024070495020900467,
+    "spearman_r": 0.6975119433036348,
+    "spearman_p": 0.0038423542045740175,
+    "r_squared": 0.5202213344784975,
+    "adj_r_squared": 0.48331528328453577,
+    "rmse": 0.7687776173457332,
+    "mae": 0.6709814521461218,
+    "correlation_with_log_deriv": 0.5682478447277877,
+    "linear_regression": {
+      "slope": 0.4510811767310868,
+      "intercept": 1.0863805114398197,
+      "std_err": 0.12014602731227539
+    },
+    "residual_analysis": {
+      "shapiro_stat": 0.9348947988767952,
+      "shapiro_p": 0.32248329427386935,
+      "mean_residual": 0.6109814521461218,
+      "std_residual": 0.4666054972513709
+    },
+    "group_type_analysis": {
+      "bianchi": {
+        "n": 2,
+        "pearson_r": null,
+        "pearson_p": null,
+        "rmse": 0.6884828055349462,
+        "mean_observed": 2.0,
+        "mean_predicted": 1.311519299614623
+      },
+      "cusp": {
+        "n": 5,
+        "pearson_r": null,
+        "pearson_p": null,
+        "rmse": 1.0086898432522722,
+        "mean_observed": 1.0,
+        "mean_predicted": -0.005597148332113755
+      },
+      "closed": {
+        "n": 2,
+        "pearson_r": null,
+        "pearson_p": null,
+        "rmse": 0.9956866418149307,
+        "mean_observed": 2.0,
+        "mean_predicted": 1.0944688537509948
+      },
+      "arithmetic": {
+        "n": 3,
+        "pearson_r": 0.8471823129670588,
+        "pearson_p": 0.3565943105071323,
+        "rmse": 0.5032257446260555,
+        "mean_observed": 1.6352293333333332,
+        "mean_predicted": 1.168991884245836
+      },
+      "schottky": {
+        "n": 3,
+        "pearson_r": 0.9994664294862463,
+        "pearson_p": 0.020797462218680587,
+        "rmse": 0.17078251276599335,
+        "mean_observed": 1.4166666666666667,
+        "mean_predicted": 1.5666666666666667
+      }
+    }
+  },
+  "cross_validation": {
+    "fold_rmse": [
+      0.5605392959187622,
+      0.6401397589666915,
+      0.9038389716238405,
+      0.6786640807480607,
+      0.9765255195109988
+    ],
+    "mean_rmse": 0.7519415253536706,
+    "std_rmse": 0.16000927279560279,
+    "full_rmse": 0.7687776173457332
+  },
+  "comparison": {
+    "original_hypothesis": {
+      "n_samples": 12,
+      "r_squared": 0.13242892736063666,
+      "rmse": 1.5373133623891608,
+      "pearson_r": -0.3639078555907205,
+      "aic": 7.160435876169706,
+      "bic": 7.645342525957707
+    },
+    "hypothesis_A": {
+      "n_samples": 15,
+      "r_squared": 0.5202213344784975,
+      "rmse": 0.7687776173457332,
+      "pearson_r": 0.7212637066139522,
+      "aic": -1.9443030325617556,
+      "bic": -1.2362528314595456
+    },
+    "winner": "Hypothesis A",
+    "improvement_r_squared": 0.38779240711786084,
+    "improvement_rmse": 0.7685357450434276
+  },
+  "conclusion": {
+    "hypothesis_A_supported": true,
+    "r_squared": 0.5202213344784975,
+    "pearson_r": 0.7212637066139522,
+    "rmse": 0.7687776173457332
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "schottky": {
+    "rank": 2,
+    "num_limit_points": 4000
+  },
+  "apollonian": {
+    "num_circles": 4,
+    "num_limit_points": 0
+  },
+  "figure_eight": {
+    "name": "Figure-Eight Knot Complement",
+    "dt_code": "4_1",
+    "volume": 2.029883212819307,
+    "dirichlet_domain": null,
+    "symmetry_group": "D4",
+    "holonomy": null,
+    "fundamental_group": "Generators:\n   a,b\nRelators:\n   abbbaBAAB",
+    "homology": "Z",
+    "cusp_info": [
+      "Cusp 0 : complete torus cusp of shape -2.664535259 E-15 + 3.4641016151*I"
+    ]
+  },
+  "whitehead": {
+    "name": "Whitehead Link Complement",
+    "volume": 3.6638623767088747,
+    "num_cusps": 2
+  },
+  "borromean": {
+    "name": "Borromean Rings Complement",
+    "volume": 7.327724753417752,
+    "num_cusps": 3
+  },
+  "weeks": {
+    "name": "Weeks Manifold",
+    "volume": 0.9427073627769282,
+    "num_cusps": null
+  }
+}

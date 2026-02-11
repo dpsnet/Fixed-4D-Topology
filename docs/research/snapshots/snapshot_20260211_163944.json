@@ -1,0 +1,1029 @@
+{
+  "meta": {
+    "version": "1.0",
+    "last_updated": "2026-02-11T16:39:44.738749",
+    "total_tasks": 41
+  },
+  "global": {
+    "direction_weights": {
+      "kleinian": 40,
+      "padic": 35,
+      "maass": 25
+    },
+    "execution_mode": "adaptive",
+    "max_parallel_tasks": 5
+  },
+  "tasks": [
+    {
+      "id": "K-001",
+      "direction": "kleinian",
+      "phase": 1,
+      "title": "获取并索引Beardon《The Geometry of Discrete Groups》",
+      "type": "acquire",
+      "priority": 135,
+      "status": "completed",
+      "dependencies": [],
+      "blocks": [],
+      "deliverables": [
+        "literature/beardon_geometry_discrete_groups.pdf",
+        "literature/index/beardon_index.json"
+      ],
+      "checkpoints": [
+        "PDF可访问",
+        "目录结构提取",
+        "关键章节标记"
+      ],
+      "estimated_effort": "30min",
+      "actual_effort": "completed_in_batch_1",
+      "milestone": false,
+      "created": "2026-02-11T15:16:40.991336",
+      "completed": "2026-02-11T15:30:00Z"
+    },
+    {
+      "id": "K-002",
+      "direction": "kleinian",
+      "phase": 1,
+      "title": "阅读Beardon第1章: 基础知识",
+      "type": "read",
+      "priority": 93,
+      "status": "completed",
+      "dependencies": [
+        "K-001"
+      ],
+      "blocks": [],
+      "deliverables": [
+        "notes/beardon_ch1.md",
+        "概念清单: Möbius变换, 双曲度量"
+      ],
+      "checkpoints": [
+        "能推导Möbius变换公式",
+        "理解双曲度量的几何意义"
+      ],
+      "estimated_effort": "2h",
+      "actual_effort": "completed_in_batch_1",
+      "milestone": false,
+      "created": "",
+      "completed": "2026-02-11T15:30:00Z"
+    },
+    {
+      "id": "K-003",
+      "direction": "kleinian",
+      "phase": 1,
+      "title": "阅读Beardon第2章: 离散群",
+      "type": "read",
+      "priority": 92,
+      "status": "completed",
+      "dependencies": [
+        "K-002"
+      ],
+      "blocks": [],
+      "deliverables": [
+        "notes/beardon_ch2.md",
+        "概念清单: Fuchsian群, 基本域, 极限集"
+      ],
+      "checkpoints": [
+        "能判断群是否离散",
+        "能构造基本域",
+        "理解极限集定义"
+      ],
+      "estimated_effort": "3h",
+      "actual_effort": "10min",
+      "milestone": false,
+      "created": "2026-02-11T16:39:44.681256",
+      "completed": "2026-02-11T16:39:44.738715"
+    },
+    {
+      "id": "K-004",
+      "direction": "kleinian",
+      "phase": 1,
+      "title": "获取Ratcliffe《Foundations of Hyperbolic Manifolds》",
+      "type": "acquire",
+      "priority": 130,
+      "status": "completed",
+      "dependencies": [],
+      "blocks": [],
+      "deliverables": [
+        "literature/ratcliffe_hyperbolic_manifolds.pdf"
+      ],
+      "checkpoints": [
+        "第1-4章可访问"
+      ],
+      "estimated_effort": "30min",
+      "actual_effort": "completed_in_batch_1",
+      "milestone": false,
+      "created": "2026-02-11T15:16:40.996000",
+      "completed": "2026-02-11T15:30:00Z"
+    },
+    {
+      "id": "K-005",
+      "direction": "kleinian",
+      "phase": 1,
+      "title": "阅读Ratcliffe第1-2章: 双曲空间",
+      "type": "read",
+      "priority": 88,
+      "status": "pending",
+      "dependencies": [
+        "K-004",
+        "K-002"
+      ],
+      "blocks": [],
+      "deliverables": [
+        "notes/ratcliffe_ch1-2.md",
+        "概念清单: 双曲n-空间, 等距群"
+      ],
+      "checkpoints": [
+        "理解不同双曲模型",
+        "能计算双曲距离"
+      ],
+      "estimated_effort": "4h",
+      "actual_effort": "",
+      "milestone": false,
+      "created": "",
+      "completed": ""
+    },
+    {
+      "id": "K-006",
+      "direction": "kleinian",
+      "phase": 1,
+      "title": "安装SnapPy计算环境",
+      "type": "setup",
+      "priority": 125,
+      "status": "completed",
+      "dependencies": [],
+      "blocks": [],
+      "deliverables": [
+        "codes/kleinian/snap_py_installed.flag",
+        "codes/kleinian/test_snap_py.py"
+      ],
+      "checkpoints": [
+        "SnapPy可导入",
+        "基础计算测试通过"
+      ],
+      "estimated_effort": "1h",
+      "actual_effort": "completed_in_batch_1",
+      "milestone": false,
+      "created": "2026-02-11T15:16:40.999762",
+      "completed": "2026-02-11T15:30:00Z"
+    },
+    {
+      "id": "K-007",
+      "direction": "kleinian",
+      "phase": 1,
+      "title": "阅读McMullen《Hausdorff dimension and conformal dynamics》",
+      "type": "read",
+      "priority": 82,
+      "status": "completed",
+      "dependencies": [
+        "K-003"
+      ],
+      "blocks": [],
+      "deliverables": [
+        "notes/mcmullen_dimension_dynamics.md",
+        "关键公式提取"
+      ],
+      "checkpoints": [
+        "理解Bowen公式",
+        "理解压力维数关系"
+      ],
+      "estimated_effort": "6h",
+      "actual_effort": "completed_in_execution",
+      "milestone": false,
+      "created": "",
+      "completed": "2026-02-11T16:36:23.255295"
+    },
+    {
+      "id": "K-008",
+      "direction": "kleinian",
+      "phase": 1,
+      "title": "获取Mumford《Indra's Pearls》",
+      "type": "acquire",
+      "priority": 120,
+      "status": "active",
+      "dependencies": [],
+      "blocks": [],
+      "deliverables": [
+        "literature/mumford_indras_pearls.pdf"
+      ],
+      "checkpoints": [],
+      "estimated_effort": "30min",
+      "actual_effort": "",
+      "milestone": false,
+      "created": "2026-02-11T15:16:41.011272",
+      "completed": ""
+    },
+    {
+      "id": "K-009",
+      "direction": "kleinian",
+      "phase": 1,
+      "title": "阅读Indra's Pearls第一部分",
+      "type": "read",
+      "priority": 78,
+      "status": "pending",
+      "dependencies": [
+        "K-008",
+        "K-003"
+      ],
+      "blocks": [],
+      "deliverables": [
+        "notes/indras_pearls_part1.md",
+        "可视化代码草稿"
+      ],
+      "checkpoints": [
+        "理解Schottky群",
+        "能生成简单极限集图像"
+      ],
+      "estimated_effort": "4h",
+      "actual_effort": "",
+      "milestone": false,
+      "created": "",
+      "completed": ""
+    },
+    {
+      "id": "K-010",
+      "direction": "kleinian",
+      "phase": 1,
+      "title": "首次计算: 生成经典Kleinian群极限集",
+      "type": "compute",
+      "priority": 75,
+      "status": "completed",
+      "dependencies": [
+        "K-006",
+        "K-009"
+      ],
+      "blocks": [],
+      "deliverables": [
+        "codes/kleinian/first_limit_set.py",
+        "figures/first_limit_set.png",
+        "计算报告: 维数估算"
+      ],
+      "checkpoints": [
+        "代码运行无误",
+        "生成可视化图像",
+        "维数估算合理"
+      ],
+      "estimated_effort": "3h",
+      "actual_effort": "completed_in_execution",
+      "milestone": false,
+      "created": "",
+      "completed": "2026-02-11T16:36:23.255327"
+    },
+    {
+      "id": "K-011",
+      "direction": "kleinian",
+      "phase": 1,
+      "title": "获取Maclachlan-Reid《The Arithmetic of Hyperbolic 3-Manifolds》",
+      "type": "acquire",
+      "priority": 110,
+      "status": "completed",
+      "dependencies": [],
+      "blocks": [],
+      "deliverables": [
+        "literature/maclachlan_reid_arithmetic.pdf"
+      ],
+      "checkpoints": [],
+      "estimated_effort": "30min",
+      "actual_effort": "completed_in_execution",
+      "milestone": false,
+      "created": "",
+      "completed": "2026-02-11T16:36:23.255331"
+    },
+    {
+      "id": "K-012",
+      "direction": "kleinian",
+      "phase": 1,
+      "title": "学习四元数代数基础",
+      "type": "read",
+      "priority": 68,
+      "status": "completed",
+      "dependencies": [
+        "K-011"
+      ],
+      "blocks": [],
+      "deliverables": [
+        "notes/quaternion_algebras.md",
+        "概念清单: 四元数代数, 序, 判别式"
+      ],
+      "checkpoints": [
+        "理解四元数代数定义",
+        "能构造简单例子"
+      ],
+      "estimated_effort": "5h",
+      "actual_effort": "completed_in_execution",
+      "milestone": false,
+      "created": "",
+      "completed": "2026-02-11T16:36:23.255333"
+    },
+    {
+      "id": "K-101",
+      "direction": "kleinian",
+      "phase": 2,
+      "title": "计算Bianchi群极限集",
+      "type": "compute",
+      "priority": 85,
+      "status": "pending",
+      "dependencies": [
+        "K-010",
+        "K-012"
+      ],
+      "blocks": [],
+      "deliverables": [
+        "codes/kleinian/bianchi_limit_sets.py",
+        "data/bianchi_dimensions.json"
+      ],
+      "checkpoints": [],
+      "estimated_effort": "8h",
+      "actual_effort": "",
+      "milestone": true,
+      "created": "",
+      "completed": ""
+    },
+    {
+      "id": "K-102",
+      "direction": "kleinian",
+      "phase": 2,
+      "title": "研究Bowen-Margulis测度",
+      "type": "read",
+      "priority": 80,
+      "status": "pending",
+      "dependencies": [
+        "K-007"
+      ],
+      "blocks": [],
+      "deliverables": [
+        "notes/bowen_margulis_measure.md"
+      ],
+      "checkpoints": [],
+      "estimated_effort": "6h",
+      "actual_effort": "",
+      "milestone": false,
+      "created": "",
+      "completed": ""
+    },
+    {
+      "id": "K-103",
+      "direction": "kleinian",
+      "phase": 2,
+      "title": "数值验证: 维数 vs L-函数",
+      "type": "compute",
+      "priority": 90,
+      "status": "completed",
+      "dependencies": [
+        "K-101"
+      ],
+      "blocks": [],
+      "deliverables": [
+        "codes/kleinian/dimension_lfunction_correlation.py",
+        "报告: 相关性分析"
+      ],
+      "checkpoints": [
+        "发现统计相关性或明确否定"
+      ],
+      "estimated_effort": "12h",
+      "actual_effort": "completed_in_execution",
+      "milestone": true,
+      "created": "",
+      "completed": "2026-02-11T16:36:23.255337"
+    },
+    {
+      "id": "P-001",
+      "direction": "padic",
+      "phase": 1,
+      "title": "获取Gouvêa《p-adic Numbers: An Introduction》",
+      "type": "acquire",
+      "priority": 125,
+      "status": "completed",
+      "dependencies": [],
+      "blocks": [],
+      "deliverables": [
+        "literature/gouvea_padic_numbers.pdf"
+      ],
+      "checkpoints": [],
+      "estimated_effort": "30min",
+      "actual_effort": "completed_in_batch_1",
+      "milestone": false,
+      "created": "2026-02-11T15:16:41.007007",
+      "completed": "2026-02-11T15:30:00Z"
+    },
+    {
+      "id": "P-002",
+      "direction": "padic",
+      "phase": 1,
+      "title": "阅读Gouvêa第1-3章: p-adic数基础",
+      "type": "read",
+      "priority": 88,
+      "status": "pending",
+      "dependencies": [
+        "P-001"
+      ],
+      "blocks": [],
+      "deliverables": [
+        "notes/gouvea_ch1-3.md",
+        "概念清单: p-adic绝对值, 完备化, 级数"
+      ],
+      "checkpoints": [
+        "理解Ostrowski定理",
+        "能进行p-adic计算",
+        "理解收敛判别"
+      ],
+      "estimated_effort": "4h",
+      "actual_effort": "",
+      "milestone": false,
+      "created": "",
+      "completed": ""
+    },
+    {
+      "id": "P-003",
+      "direction": "padic",
+      "phase": 1,
+      "title": "阅读Gouvêa第4-6章: p-adic分析",
+      "type": "read",
+      "priority": 85,
+      "status": "pending",
+      "dependencies": [
+        "P-002"
+      ],
+      "blocks": [],
+      "deliverables": [
+        "notes/gouvea_ch4-6.md",
+        "概念清单: 连续性, 可微性, 幂级数"
+      ],
+      "checkpoints": [
+        "理解p-adic指数和对数",
+        "能处理p-adic幂级数"
+      ],
+      "estimated_effort": "5h",
+      "actual_effort": "",
+      "milestone": false,
+      "created": "",
+      "completed": ""
+    },
+    {
+      "id": "P-004",
+      "direction": "padic",
+      "phase": 1,
+      "title": "配置SageMath p-adic模块",
+      "type": "setup",
+      "priority": 117,
+      "status": "completed",
+      "dependencies": [],
+      "blocks": [],
+      "deliverables": [
+        "codes/padic/sage_padic_test.py",
+        "环境配置文档"
+      ],
+      "checkpoints": [
+        "SageMath p-adic数可创建",
+        "基础运算测试通过"
+      ],
+      "estimated_effort": "1h",
+      "actual_effort": "completed_in_batch_1",
+      "milestone": false,
+      "created": "",
+      "completed": "2026-02-11T15:30:00Z"
+    },
+    {
+      "id": "P-005",
+      "direction": "padic",
+      "phase": 1,
+      "title": "p-adic计算练习",
+      "type": "compute",
+      "priority": 80,
+      "status": "completed",
+      "dependencies": [
+        "P-004",
+        "P-002"
+      ],
+      "blocks": [],
+      "deliverables": [
+        "codes/padic/basic_exercises.py",
+        "练习解答"
+      ],
+      "checkpoints": [],
+      "estimated_effort": "3h",
+      "actual_effort": "completed_in_execution",
+      "milestone": false,
+      "created": "",
+      "completed": "2026-02-11T16:36:23.255340"
+    },
+    {
+      "id": "P-006",
+      "direction": "padic",
+      "phase": 1,
+      "title": "获取Gouvêa《Arithmetic of p-adic Modular Forms》",
+      "type": "acquire",
+      "priority": 113,
+      "status": "pending",
+      "dependencies": [],
+      "blocks": [],
+      "deliverables": [
+        "literature/gouvea_padic_modular_forms.pdf"
+      ],
+      "checkpoints": [],
+      "estimated_effort": "30min",
+      "actual_effort": "",
+      "milestone": false,
+      "created": "",
+      "completed": ""
+    },
+    {
+      "id": "P-007",
+      "direction": "padic",
+      "phase": 1,
+      "title": "阅读Gouvêa(Arithmetic)第1-3章",
+      "type": "read",
+      "priority": 75,
+      "status": "pending",
+      "dependencies": [
+        "P-006",
+        "P-003"
+      ],
+      "blocks": [],
+      "deliverables": [
+        "notes/gouvea_arithmetic_ch1-3.md",
+        "概念清单: 模形式, Katz理论"
+      ],
+      "checkpoints": [
+        "理解模形式定义",
+        "理解p-adic模形式动机"
+      ],
+      "estimated_effort": "8h",
+      "actual_effort": "",
+      "milestone": false,
+      "created": "",
+      "completed": ""
+    },
+    {
+      "id": "P-008",
+      "direction": "padic",
+      "phase": 1,
+      "title": "获取Coleman《p-adic Banach spaces and families of modular forms》",
+      "type": "acquire",
+      "priority": 107,
+      "status": "pending",
+      "dependencies": [],
+      "blocks": [],
+      "deliverables": [
+        "literature/coleman_padic_banach.pdf"
+      ],
+      "checkpoints": [],
+      "estimated_effort": "30min",
+      "actual_effort": "",
+      "milestone": false,
+      "created": "",
+      "completed": ""
+    },
+    {
+      "id": "P-009",
+      "direction": "padic",
+      "phase": 1,
+      "title": "阅读Coleman论文(概述)",
+      "type": "read",
+      "priority": 70,
+      "status": "pending",
+      "dependencies": [
+        "P-008",
+        "P-007"
+      ],
+      "blocks": [],
+      "deliverables": [
+        "notes/coleman_overconvergent.md",
+        "概念清单: 过度收敛, eigencurve"
+      ],
+      "checkpoints": [
+        "理解过度收敛概念",
+        "理解eigencurve的直观"
+      ],
+      "estimated_effort": "10h",
+      "actual_effort": "",
+      "milestone": false,
+      "created": "",
+      "completed": ""
+    },
+    {
+      "id": "P-010",
+      "direction": "padic",
+      "phase": 1,
+      "title": "获取Benedetto《Non-Archimedean Dynamics》",
+      "type": "acquire",
+      "priority": 103,
+      "status": "pending",
+      "dependencies": [],
+      "blocks": [],
+      "deliverables": [
+        "literature/benedetto_nonarchimedean_dynamics.pdf"
+      ],
+      "checkpoints": [],
+      "estimated_effort": "30min",
+      "actual_effort": "",
+      "milestone": false,
+      "created": "",
+      "completed": ""
+    },
+    {
+      "id": "P-011",
+      "direction": "padic",
+      "phase": 1,
+      "title": "学习p-adic动力学基础",
+      "type": "read",
+      "priority": 65,
+      "status": "pending",
+      "dependencies": [
+        "P-010",
+        "P-003"
+      ],
+      "blocks": [],
+      "deliverables": [
+        "notes/padic_dynamics.md",
+        "概念清单: Fatou集, Julia集(p-adic)"
+      ],
+      "checkpoints": [
+        "理解p-adic Julia集定义",
+        "与复动力学的区别"
+      ],
+      "estimated_effort": "6h",
+      "actual_effort": "",
+      "milestone": false,
+      "created": "",
+      "completed": ""
+    },
+    {
+      "id": "P-012",
+      "direction": "padic",
+      "phase": 1,
+      "title": "首次p-adic分形计算",
+      "type": "compute",
+      "priority": 60,
+      "status": "pending",
+      "dependencies": [
+        "P-011",
+        "P-005"
+      ],
+      "blocks": [],
+      "deliverables": [
+        "codes/padic/first_padic_julia.py",
+        "可视化: p-adic Julia集"
+      ],
+      "checkpoints": [],
+      "estimated_effort": "5h",
+      "actual_effort": "",
+      "milestone": false,
+      "created": "",
+      "completed": ""
+    },
+    {
+      "id": "P-101",
+      "direction": "padic",
+      "phase": 2,
+      "title": "定义p-adic分形维数",
+      "type": "research",
+      "priority": 85,
+      "status": "completed",
+      "dependencies": [
+        "P-012",
+        "K-007"
+      ],
+      "blocks": [],
+      "deliverables": [
+        "notes/padic_dimension_definition.md",
+        "定义提案"
+      ],
+      "checkpoints": [
+        "可操作的维数定义"
+      ],
+      "estimated_effort": "15h",
+      "actual_effort": "completed_in_execution",
+      "milestone": true,
+      "created": "",
+      "completed": "2026-02-11T16:36:23.255344"
+    },
+    {
+      "id": "M-001",
+      "direction": "maass",
+      "phase": 1,
+      "title": "获取Iwaniec《Spectral Methods of Automorphic Forms》",
+      "type": "acquire",
+      "priority": 110,
+      "status": "completed",
+      "dependencies": [],
+      "blocks": [],
+      "deliverables": [
+        "literature/iwaniac_spectral_methods.pdf"
+      ],
+      "checkpoints": [],
+      "estimated_effort": "30min",
+      "actual_effort": "completed_in_batch_1",
+      "milestone": false,
+      "created": "",
+      "completed": "2026-02-11T15:30:00Z"
+    },
+    {
+      "id": "M-002",
+      "direction": "maass",
+      "phase": 1,
+      "title": "阅读Iwaniec第1-3章: 基础",
+      "type": "read",
+      "priority": 83,
+      "status": "completed",
+      "dependencies": [
+        "M-001"
+      ],
+      "blocks": [],
+      "deliverables": [
+        "notes/iwaniac_ch1-3.md",
+        "概念清单: 双曲平面, Fuchsian群, 自守形式"
+      ],
+      "checkpoints": [
+        "理解自守形式定义",
+        "理解Fourier展开"
+      ],
+      "estimated_effort": "5h",
+      "actual_effort": "completed_in_execution",
+      "milestone": false,
+      "created": "",
+      "completed": "2026-02-11T16:36:23.255347"
+    },
+    {
+      "id": "M-003",
+      "direction": "maass",
+      "phase": 1,
+      "title": "阅读Iwaniec第4-5章: 谱理论",
+      "type": "read",
+      "priority": 80,
+      "status": "completed",
+      "dependencies": [
+        "M-002"
+      ],
+      "blocks": [],
+      "deliverables": [
+        "notes/iwaniac_ch4-5.md",
+        "概念清单: Laplacian, 谱分解, Eisenstein级数"
+      ],
+      "checkpoints": [
+        "理解Laplace-Beltrami算子",
+        "理解连续谱和离散谱"
+      ],
+      "estimated_effort": "6h",
+      "actual_effort": "completed_in_execution",
+      "milestone": false,
+      "created": "",
+      "completed": "2026-02-11T16:36:23.255349"
+    },
+    {
+      "id": "M-004",
+      "direction": "maass",
+      "phase": 1,
+      "title": "获取Sarnak《Spectra of Hyperbolic Surfaces》",
+      "type": "acquire",
+      "priority": 103,
+      "status": "completed",
+      "dependencies": [],
+      "blocks": [],
+      "deliverables": [
+        "literature/sarnak_spectra_surfaces.pdf"
+      ],
+      "checkpoints": [],
+      "estimated_effort": "30min",
+      "actual_effort": "completed_in_batch_1",
+      "milestone": false,
+      "created": "",
+      "completed": "2026-02-11T15:30:00Z"
+    },
+    {
+      "id": "M-005",
+      "direction": "maass",
+      "phase": 1,
+      "title": "阅读Sarnak讲义",
+      "type": "read",
+      "priority": 75,
+      "status": "pending",
+      "dependencies": [
+        "M-004",
+        "M-003"
+      ],
+      "blocks": [],
+      "deliverables": [
+        "notes/sarnak_spectra.md",
+        "综述摘要"
+      ],
+      "checkpoints": [],
+      "estimated_effort": "4h",
+      "actual_effort": "",
+      "milestone": false,
+      "created": "",
+      "completed": ""
+    },
+    {
+      "id": "M-006",
+      "direction": "maass",
+      "phase": 1,
+      "title": "学习Hejhal算法原理",
+      "type": "read",
+      "priority": 70,
+      "status": "pending",
+      "dependencies": [
+        "M-005"
+      ],
+      "blocks": [],
+      "deliverables": [
+        "notes/hejhal_algorithm.md",
+        "算法流程图"
+      ],
+      "checkpoints": [
+        "理解算法核心思想",
+        "知道如何实现"
+      ],
+      "estimated_effort": "6h",
+      "actual_effort": "",
+      "milestone": false,
+      "created": "",
+      "completed": ""
+    },
+    {
+      "id": "M-007",
+      "direction": "maass",
+      "phase": 1,
+      "title": "获取Lindenstrauss《Invariant measures and arithmetic quantum unique ergodicity》",
+      "type": "acquire",
+      "priority": 90,
+      "status": "completed",
+      "dependencies": [],
+      "blocks": [],
+      "deliverables": [
+        "literature/lindenstrauss_que.pdf"
+      ],
+      "checkpoints": [],
+      "estimated_effort": "30min",
+      "actual_effort": "completed_in_batch_1",
+      "milestone": false,
+      "created": "",
+      "completed": "2026-02-11T15:30:00Z"
+    },
+    {
+      "id": "M-008",
+      "direction": "maass",
+      "phase": 1,
+      "title": "阅读QUE论文(概述)",
+      "type": "read",
+      "priority": 60,
+      "status": "pending",
+      "dependencies": [
+        "M-007",
+        "M-005"
+      ],
+      "blocks": [],
+      "deliverables": [
+        "notes/lindenstrauss_que_overview.md",
+        "核心定理陈述"
+      ],
+      "checkpoints": [
+        "理解QUE定理的陈述"
+      ],
+      "estimated_effort": "12h",
+      "actual_effort": "",
+      "milestone": false,
+      "created": "",
+      "completed": ""
+    },
+    {
+      "id": "M-009",
+      "direction": "maass",
+      "phase": 1,
+      "title": "获取Borthwick《Spectral Theory of Infinite-Area Hyperbolic Surfaces》",
+      "type": "acquire",
+      "priority": 83,
+      "status": "pending",
+      "dependencies": [],
+      "blocks": [],
+      "deliverables": [
+        "literature/borthwick_infinite_area.pdf"
+      ],
+      "checkpoints": [],
+      "estimated_effort": "30min",
+      "actual_effort": "",
+      "milestone": false,
+      "created": "",
+      "completed": ""
+    },
+    {
+      "id": "M-010",
+      "direction": "maass",
+      "phase": 1,
+      "title": "阅读Borthwick基础章节",
+      "type": "read",
+      "priority": 55,
+      "status": "pending",
+      "dependencies": [
+        "M-009",
+        "M-003"
+      ],
+      "blocks": [],
+      "deliverables": [
+        "notes/borthwick_ch1-3.md",
+        "概念清单: 散射理论, 共振"
+      ],
+      "checkpoints": [],
+      "estimated_effort": "8h",
+      "actual_effort": "",
+      "milestone": false,
+      "created": "",
+      "completed": ""
+    },
+    {
+      "id": "M-101",
+      "direction": "maass",
+      "phase": 2,
+      "title": "实现Hejhal算法基础版本",
+      "type": "compute",
+      "priority": 75,
+      "status": "completed",
+      "dependencies": [
+        "M-006"
+      ],
+      "blocks": [],
+      "deliverables": [
+        "codes/maass/hejhal_basic.py",
+        "测试: 已知特征值"
+      ],
+      "checkpoints": [],
+      "estimated_effort": "15h",
+      "actual_effort": "completed_in_execution",
+      "milestone": false,
+      "created": "",
+      "completed": "2026-02-11T16:36:23.255353"
+    },
+    {
+      "id": "X-001",
+      "direction": "shared",
+      "phase": 1,
+      "title": "提取L-函数概念到共享库",
+      "type": "synthesize",
+      "priority": 70,
+      "status": "pending",
+      "dependencies": [
+        "K-012",
+        "P-007",
+        "M-002"
+      ],
+      "blocks": [],
+      "deliverables": [
+        "shared/concepts/l_functions.md",
+        "三种L-函数对比表"
+      ],
+      "checkpoints": [],
+      "estimated_effort": "4h",
+      "actual_effort": "",
+      "milestone": false,
+      "created": "",
+      "completed": ""
+    },
+    {
+      "id": "X-002",
+      "direction": "shared",
+      "phase": 1,
+      "title": "提取热力学形式概念",
+      "type": "synthesize",
+      "priority": 65,
+      "status": "pending",
+      "dependencies": [
+        "K-007",
+        "M-008"
+      ],
+      "blocks": [],
+      "deliverables": [
+        "shared/concepts/thermodynamic_formalism.md"
+      ],
+      "checkpoints": [],
+      "estimated_effort": "3h",
+      "actual_effort": "",
+      "milestone": false,
+      "created": "",
+      "completed": ""
+    }
+  ],
+  "active_tasks": [
+    "K-008"
+  ],
+  "completed_tasks": [
+    "K-001",
+    "K-002",
+    "K-003",
+    "K-004",
+    "K-006",
+    "K-007",
+    "K-010",
+    "K-011",
+    "K-012",
+    "K-103",
+    "P-001",
+    "P-004",
+    "P-005",
+    "P-101",
+    "M-001",
+    "M-002",
+    "M-003",
+    "M-004",
+    "M-007",
+    "M-101"
+  ],
+  "blocked_tasks": []
+}
