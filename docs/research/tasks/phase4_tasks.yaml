@@ -1,0 +1,961 @@
+meta:
+  version: '4.0'
+  last_updated: '2026-02-12T05:14:00'
+  total_tasks: 27
+  phase: 4
+  phase_name: '专家咨询与期刊投稿阶段'
+  phase_goal: '完成领域专家咨询，撰写出版级论文，投稿至顶级数学期刊'
+  phase_status: 'pending'
+  expected_start_date: '2026-02-15'
+  expected_completion_date: '2028-01-31'
+  predecessor_phase: 3
+  previous_phase_status: 'completed'
+  l1_achievement_summary:
+    conjecture_1: 'L1 ACHIEVED - Fractal Weyl Law for Kleinian Groups'
+    conjecture_2: 'L1 ACHIEVED - p-adic Bowen Formula for General Polynomials'
+    date: '2026-02-11'
+  target_journal:
+    name: 'Annals of Mathematics'
+    publisher: 'Princeton University Press'
+    impact_factor: '5.0+'
+    review_period: '6-12 months'
+    acceptance_rate: '<10%'
+  statistics:
+    expert_consultations_total: 7
+    paper_sections_total: 8
+    estimated_submission_date: '2026-08-15'
+    estimated_acceptance_date: '2028-01-31'
+
+global:
+  direction_weights:
+    kleinian: 40
+    padic: 35
+    maass: 25
+    shared: 30
+  execution_mode: publication_focused
+  max_parallel_tasks: 4
+  paper_writing:
+    target_journal: 'Annals of Mathematics'
+    target_length: '50-70 pages'
+    latex_template: 'annals_template'
+    supplementary_materials:
+      - data/verification_datasets
+      - codes/computation_scripts
+      - proofs/technical_appendices
+  expert_consultation:
+    contact_strategy: 'sequential_with_overlap'
+    feedback_integration_required: true
+    min_consultations_before_submission: 5
+
+tasks:
+# ==================== 专家咨询 (P4-EXP-xxx) ====================
+
+- id: P4-EXP-001
+  direction: shared
+  phase: 4
+  title: '准备专家咨询材料包'
+  type: prepare
+  priority: 95
+  status: pending
+  dependencies:
+    - P3-C1-006
+    - P3-C2-006
+  blocks:
+    - P4-EXP-002
+    - P4-EXP-003
+    - P4-EXP-004
+    - P4-EXP-005
+    - P4-EXP-006
+    - P4-EXP-007
+  deliverables:
+    - docs/research/expert_consultation/materials_package/
+    - 技术摘要文档 (3-5页)
+    - 核心定理陈述
+    - 证明概述
+    - 数值验证精选结果
+    - 开放问题列表
+  checkpoints:
+    - 整理L1证明核心结果
+    - 撰写非技术摘要
+    - 准备专家特定问题清单
+    - 制作演示材料 (可选)
+  estimated_effort: 3w
+  actual_effort: ''
+  milestone: true
+  created: '2026-02-12T05:14:00'
+  completed: ''
+  expert_category: all
+
+- id: P4-EXP-002
+  direction: padic
+  phase: 4
+  title: '联系Robert Benedetto (p-adic动力学专家)'
+  type: consult
+  priority: 93
+  status: pending
+  dependencies:
+    - P4-EXP-001
+  blocks:
+    - P4-EXP-008
+  deliverables:
+    - reports/expert_consultation/benedetto_feedback.md
+    - 咨询会议记录
+    - 书面反馈
+  checkpoints:
+    - 发送初步联系邮件
+    - 安排会议时间
+    - 进行技术咨询
+    - 获取书面反馈
+  estimated_effort: 4w
+  actual_effort: ''
+  milestone: false
+  created: '2026-02-12T05:14:00'
+  completed: ''
+  expert_info:
+    name: 'Robert Benedetto'
+    institution: 'Amherst College'
+    email: 'rlbenedetto@amherst.edu'
+    specialty: 'p-adic dynamics, arithmetic dynamics'
+    key_papers:
+      - 'p-adic dynamics and the boundedness conjecture'
+      - 'Reduction dynamics of polynomial maps'
+
+- id: P4-EXP-003
+  direction: padic
+  phase: 4
+  title: '联系Juan Rivera-Letelier (算术动力学专家)'
+  type: consult
+  priority: 92
+  status: pending
+  dependencies:
+    - P4-EXP-001
+  blocks:
+    - P4-EXP-008
+  deliverables:
+    - reports/expert_consultation/rivera_letelier_feedback.md
+    - 咨询会议记录
+    - 书面反馈
+  checkpoints:
+    - 发送初步联系邮件
+    - 安排会议时间
+    - 进行技术咨询
+    - 获取关于Bowen公式的专业意见
+  estimated_effort: 4w
+  actual_effort: ''
+  milestone: false
+  created: '2026-02-12T05:14:00'
+  completed: ''
+  expert_info:
+    name: 'Juan Rivera-Letelier'
+    institution: 'University of Rochester'
+    email: 'riveraletelier@gmail.com'
+    specialty: 'Arithmetic dynamics, p-adic Hénon maps'
+    key_papers:
+      - 'Dynamics of rational maps over local fields'
+      - 'Equidistribution in arithmetic dynamics'
+
+- id: P4-EXP-004
+  direction: shared
+  phase: 4
+  title: '联系Richard Taylor (Langlands纲领专家)'
+  type: consult
+  priority: 94
+  status: pending
+  dependencies:
+    - P4-EXP-001
+  blocks:
+    - P4-EXP-008
+  deliverables:
+    - reports/expert_consultation/taylor_feedback.md
+    - 咨询会议记录
+    - 书面反馈
+  checkpoints:
+    - 发送初步联系邮件
+    - 安排会议时间
+    - 进行技术咨询
+    - 获取关于函子性维数公式的意见
+  estimated_effort: 5w
+  actual_effort: ''
+  milestone: false
+  created: '2026-02-12T05:14:00'
+  completed: ''
+  expert_info:
+    name: 'Richard Taylor'
+    institution: 'Stanford University'
+    email: 'rltaylor@stanford.edu'
+    specialty: 'Langlands program, automorphic forms, Galois representations'
+    key_papers:
+      - 'Automorphy lifting theorems'
+      - 'Potential automorphy'
+      - 'The Sato-Tate conjecture'
+
+- id: P4-EXP-005
+  direction: shared
+  phase: 4
+  title: '联系Peter Sarnak (Langlands/Maass形式专家)'
+  type: consult
+  priority: 94
+  status: pending
+  dependencies:
+    - P4-EXP-001
+  blocks:
+    - P4-EXP-008
+  deliverables:
+    - reports/expert_consultation/sarnak_feedback.md
+    - 咨询会议记录
+    - 书面反馈
+  checkpoints:
+    - 发送初步联系邮件
+    - 安排会议时间
+    - 进行技术咨询
+    - 获取关于谱理论和量子混沌的见解
+  estimated_effort: 5w
+  actual_effort: ''
+  milestone: false
+  created: '2026-02-12T05:14:00'
+  completed: ''
+  expert_info:
+    name: 'Peter Sarnak'
+    institution: 'Institute for Advanced Study / Princeton University'
+    email: 'sarnak@math.ias.edu'
+    specialty: 'Automorphic forms, quantum chaos, number theory'
+    key_papers:
+      - 'Spectra of hyperbolic surfaces'
+      - 'Quantum chaos, randomness and number theory'
+      - 'Maass cusp forms'
+
+- id: P4-EXP-006
+  direction: shared
+  phase: 4
+  title: '联系Curt McMullen (热力学形式/复动力学专家)'
+  type: consult
+  priority: 93
+  status: pending
+  dependencies:
+    - P4-EXP-001
+  blocks:
+    - P4-EXP-008
+  deliverables:
+    - reports/expert_consultation/mcmullen_feedback.md
+    - 咨询会议记录
+    - 书面反馈
+  checkpoints:
+    - 发送初步联系邮件
+    - 安排会议时间
+    - 进行技术咨询
+    - 获取关于分形维数和压力函数的专业意见
+  estimated_effort: 4w
+  actual_effort: ''
+  milestone: false
+  created: '2026-02-12T05:14:00'
+  completed: ''
+  expert_info:
+    name: 'Curt McMullen'
+    institution: 'Harvard University'
+    email: 'ctm@math.harvard.edu'
+    specialty: 'Complex dynamics, hyperbolic geometry, Kleinian groups'
+    key_papers:
+      - 'Hausdorff dimension and conformal dynamics'
+      - 'Thermodynamics, dimension and the Weil-Petersson metric'
+      - 'Kleinian groups and the Hausdorff dimension'
+
+- id: P4-EXP-007
+  direction: shared
+  phase: 4
+  title: '联系Mark Pollicott (热力学形式专家)'
+  type: consult
+  priority: 91
+  status: pending
+  dependencies:
+    - P4-EXP-001
+  blocks:
+    - P4-EXP-008
+  deliverables:
+    - reports/expert_consultation/pollicott_feedback.md
+    - 咨询会议记录
+    - 书面反馈
+  checkpoints:
+    - 发送初步联系邮件
+    - 安排会议时间
+    - 进行技术咨询
+    - 获取关于压力函数和维数公式的意见
+  estimated_effort: 4w
+  actual_effort: ''
+  milestone: false
+  created: '2026-02-12T05:14:00'
+  completed: ''
+  expert_info:
+    name: 'Mark Pollicott'
+    institution: 'University of Warwick'
+    email: 'M.Pollicott@warwick.ac.uk'
+    specialty: 'Thermodynamic formalism, dynamical systems, ergodic theory'
+    key_papers:
+      - 'Thermodynamic formalism and dimension'
+      - 'Pressure and equilibrium states'
+      - 'Symbolic dynamics and applications'
+
+- id: P4-EXP-008
+  direction: shared
+  phase: 4
+  title: '整合专家反馈'
+  type: synthesize
+  priority: 96
+  status: pending
+  dependencies:
+    - P4-EXP-002
+    - P4-EXP-003
+    - P4-EXP-004
+    - P4-EXP-005
+    - P4-EXP-006
+    - P4-EXP-007
+  blocks:
+    - P4-EXP-009
+    - P4-PAP-001
+  deliverables:
+    - reports/expert_consultation/feedback_integration_report.md
+    - 专家意见综合分析
+    - 修改建议优先级列表
+    - 共识领域和分歧领域分析
+  checkpoints:
+    - 收集所有专家反馈
+    - 分类整理意见
+    - 识别需要修改的关键问题
+    - 制定修改计划
+  estimated_effort: 3w
+  actual_effort: ''
+  milestone: true
+  created: '2026-02-12T05:14:00'
+  completed: ''
+
+- id: P4-EXP-009
+  direction: shared
+  phase: 4
+  title: '修改证明策略'
+  type: research
+  priority: 95
+  status: pending
+  dependencies:
+    - P4-EXP-008
+  blocks:
+    - P4-PAP-002
+    - P4-PAP-003
+  deliverables:
+    - docs/research/proofs/REVISED_PROOF_STRATEGY.md
+    - 修改后的定理陈述
+    - 技术引理更新
+    - 证明优化
+  checkpoints:
+    - 评估专家建议的影响
+    - 修改证明结构
+    - 更新技术细节
+    - 重新验证数值结果
+  estimated_effort: 6w
+  actual_effort: ''
+  milestone: true
+  created: '2026-02-12T05:14:00'
+  completed: ''
+
+# ==================== 论文撰写 (P4-PAP-xxx) ====================
+
+- id: P4-PAP-001
+  direction: shared
+  phase: 4
+  title: '撰写引言和背景'
+  type: write
+  priority: 92
+  status: pending
+  dependencies:
+    - P4-EXP-008
+  blocks:
+    - P4-PAP-006
+  deliverables:
+    - paper/sections/01_introduction.tex
+    - paper/sections/02_background.tex
+    - 历史综述
+    - 问题陈述
+    - 主要结果概述
+  checkpoints:
+    - 撰写历史背景
+    - 陈述核心问题
+    - 概述主要定理
+    - 描述论文结构
+  estimated_effort: 4w
+  actual_effort: ''
+  milestone: false
+  created: '2026-02-12T05:14:00'
+  completed: ''
+  section: 1-2
+
+- id: P4-PAP-002
+  direction: shared
+  phase: 4
+  title: '撰写猜想1证明部分'
+  type: write
+  priority: 94
+  status: pending
+  dependencies:
+    - P4-EXP-009
+  blocks:
+    - P4-PAP-006
+  deliverables:
+    - paper/sections/03_conjecture1_proof.tex
+    - 函子性维数公式完整证明
+    - 技术引理详细证明
+    - 数值验证结果呈现
+  checkpoints:
+    - 陈述主要定理
+    - 撰写完整证明
+    - 添加技术细节
+    - 引用专家反馈
+  estimated_effort: 8w
+  actual_effort: ''
+  milestone: true
+  created: '2026-02-12T05:14:00'
+  completed: ''
+  section: 3
+  conjecture: 1
+
+- id: P4-PAP-003
+  direction: shared
+  phase: 4
+  title: '撰写猜想2证明部分'
+  type: write
+  priority: 94
+  status: pending
+  dependencies:
+    - P4-EXP-009
+  blocks:
+    - P4-PAP-006
+  deliverables:
+    - paper/sections/04_conjecture2_proof.tex
+    - 统一压力原理完整证明
+    - Bowen公式详细证明
+    - Gibbs测度理论呈现
+  checkpoints:
+    - 陈述主要定理
+    - 撰写完整证明
+    - 添加技术细节
+    - 引用专家反馈
+  estimated_effort: 8w
+  actual_effort: ''
+  milestone: true
+  created: '2026-02-12T05:14:00'
+  completed: ''
+  section: 4
+  conjecture: 2
+
+- id: P4-PAP-004
+  direction: shared
+  phase: 4
+  title: '撰写统一框架部分'
+  type: write
+  priority: 91
+  status: pending
+  dependencies:
+    - P4-PAP-002
+    - P4-PAP-003
+  blocks:
+    - P4-PAP-006
+  deliverables:
+    - paper/sections/05_unified_framework.tex
+    - Langlands函子性与热力学形式联系
+    - 统一视角呈现
+    - 未来研究方向
+  checkpoints:
+    - 建立统一理论框架
+    - 讨论两个猜想的联系
+    - 提出未来研究问题
+    - 撰写结论
+  estimated_effort: 5w
+  actual_effort: ''
+  milestone: false
+  created: '2026-02-12T05:14:00'
+  completed: ''
+  section: 5
+
+- id: P4-PAP-005
+  direction: shared
+  phase: 4
+  title: '撰写数值验证部分'
+  type: write
+  priority: 89
+  status: pending
+  dependencies:
+    - P4-PAP-002
+    - P4-PAP-003
+  blocks:
+    - P4-PAP-006
+  deliverables:
+    - paper/sections/06_numerical_verification.tex
+    - 验证方法论
+    - 结果呈现和图表
+    - 统计分析
+  checkpoints:
+    - 描述数值方法
+    - 呈现主要结果
+    - 创建高质量图表
+    - 进行统计分析
+  estimated_effort: 4w
+  actual_effort: ''
+  milestone: false
+  created: '2026-02-12T05:14:00'
+  completed: ''
+  section: 6
+
+- id: P4-PAP-006
+  direction: shared
+  phase: 4
+  title: '论文整合与修改'
+  type: write
+  priority: 95
+  status: pending
+  dependencies:
+    - P4-PAP-001
+    - P4-PAP-002
+    - P4-PAP-003
+    - P4-PAP-004
+    - P4-PAP-005
+  blocks:
+    - P4-PAP-007
+    - P4-PAP-008
+  deliverables:
+    - paper/draft/unified_framework_paper_v1.tex
+    - 完整论文初稿
+    - 交叉引用完善
+    - 格式统一
+  checkpoints:
+    - 整合所有章节
+    - 检查一致性
+    - 完善交叉引用
+    - 统一符号和术语
+  estimated_effort: 3w
+  actual_effort: ''
+  milestone: true
+  created: '2026-02-12T05:14:00'
+  completed: ''
+
+- id: P4-PAP-007
+  direction: shared
+  phase: 4
+  title: '生成LaTeX版本'
+  type: setup
+  priority: 88
+  status: pending
+  dependencies:
+    - P4-PAP-006
+  blocks:
+    - P4-PAP-008
+  deliverables:
+    - paper/unified_framework_annals.tex
+    - paper/unified_framework_annals.pdf
+    - 补充材料LaTeX文件
+    - 参考文献BibTeX文件
+  checkpoints:
+    - 应用Annals模板
+    - 生成PDF
+    - 检查格式合规性
+    - 准备补充材料
+  estimated_effort: 2w
+  actual_effort: ''
+  milestone: false
+  created: '2026-02-12T05:14:00'
+  completed: ''
+
+- id: P4-PAP-008
+  direction: shared
+  phase: 4
+  title: '内部审查'
+  type: research
+  priority: 93
+  status: pending
+  dependencies:
+    - P4-PAP-006
+    - P4-PAP-007
+  blocks:
+    - P4-SUB-001
+  deliverables:
+    - reports/internal_review_report.md
+    - 审查意见整合
+    - 论文修改版本
+  checkpoints:
+    - 组织内部审查
+    - 收集反馈意见
+    - 修改论文
+    - 最终润色
+  estimated_effort: 3w
+  actual_effort: ''
+  milestone: true
+  created: '2026-02-12T05:14:00'
+  completed: ''
+
+# ==================== 投稿准备 (P4-SUB-xxx) ====================
+
+- id: P4-SUB-001
+  direction: shared
+  phase: 4
+  title: '准备投稿材料'
+  type: setup
+  priority: 92
+  status: pending
+  dependencies:
+    - P4-PAP-008
+  blocks:
+    - P4-SUB-002
+    - P4-SUB-003
+    - P4-SUB-004
+  deliverables:
+    - submission/package/
+    - 完整论文PDF
+    - 补充材料压缩包
+    - 代码和数据集
+    - 作者信息确认
+  checkpoints:
+    - 最终PDF生成
+    - 补充材料打包
+    - 数据集整理
+    - 代码文档化
+  estimated_effort: 2w
+  actual_effort: ''
+  milestone: false
+  created: '2026-02-12T05:14:00'
+  completed: ''
+
+- id: P4-SUB-002
+  direction: shared
+  phase: 4
+  title: '撰写封面信'
+  type: write
+  priority: 90
+  status: pending
+  dependencies:
+    - P4-SUB-001
+  blocks:
+    - P4-SUB-004
+  deliverables:
+    - submission/cover_letter.tex
+    - submission/cover_letter.pdf
+    - 研究重要性陈述
+    - 适合Annals的理由
+  checkpoints:
+    - 撰写封面信
+    - 突出研究贡献
+    - 说明适合该期刊的原因
+    - 校对和润色
+  estimated_effort: 1w
+  actual_effort: ''
+  milestone: false
+  created: '2026-02-12T05:14:00'
+  completed: ''
+
+- id: P4-SUB-003
+  direction: shared
+  phase: 4
+  title: '推荐审稿人'
+  type: research
+  priority: 88
+  status: pending
+  dependencies:
+    - P4-SUB-001
+  blocks:
+    - P4-SUB-004
+  deliverables:
+    - submission/suggested_reviewers.md
+    - 5-8位推荐审稿人名单
+    - 推荐理由
+    - 回避名单(如需要)
+  checkpoints:
+    - 识别潜在审稿人
+    - 验证利益冲突
+    - 撰写推荐理由
+    - 准备回避名单
+  estimated_effort: 1w
+  actual_effort: ''
+  milestone: false
+  created: '2026-02-12T05:14:00'
+  completed: ''
+
+- id: P4-SUB-004
+  direction: shared
+  phase: 4
+  title: '提交至Annals of Mathematics'
+  type: submit
+  priority: 98
+  status: pending
+  dependencies:
+    - P4-SUB-001
+    - P4-SUB-002
+    - P4-SUB-003
+  blocks: []
+  deliverables:
+    - submission/confirmation_email.md
+    - 提交确认
+    - 投稿记录
+  checkpoints:
+    - 最终检查所有材料
+    - 在线提交
+    - 确认提交成功
+    - 记录投稿信息
+  estimated_effort: 1w
+  actual_effort: ''
+  milestone: true
+  created: '2026-02-12T05:14:00'
+  completed: ''
+  journal: 'Annals of Mathematics'
+
+# ==================== 里程碑 ====================
+
+milestones:
+- id: M7
+  name: '专家咨询完成'
+  description: '完成所有领域专家咨询，整合反馈到证明和论文中'
+  date: '2026-04-30'
+  tasks:
+    - P4-EXP-001
+    - P4-EXP-002
+    - P4-EXP-003
+    - P4-EXP-004
+    - P4-EXP-005
+    - P4-EXP-006
+    - P4-EXP-007
+    - P4-EXP-008
+    - P4-EXP-009
+  status: pending
+  deliverables:
+    - reports/expert_consultation/consultation_summary.pdf
+    - docs/research/proofs/REVISED_PROOF_STRATEGY.md
+
+- id: M8
+  name: '论文完成'
+  description: '完成出版级论文撰写，通过内部审查'
+  date: '2026-07-31'
+  tasks:
+    - P4-PAP-001
+    - P4-PAP-002
+    - P4-PAP-003
+    - P4-PAP-004
+    - P4-PAP-005
+    - P4-PAP-006
+    - P4-PAP-007
+    - P4-PAP-008
+  status: pending
+  deliverables:
+    - paper/unified_framework_annals.tex
+    - paper/unified_framework_annals.pdf
+    - supplementary_materials.zip
+
+- id: M9
+  name: '投稿完成'
+  description: '论文正式提交至Annals of Mathematics'
+  date: '2026-08-15'
+  tasks:
+    - P4-SUB-001
+    - P4-SUB-002
+    - P4-SUB-003
+    - P4-SUB-004
+  status: pending
+  deliverables:
+    - submission/confirmation_email.md
+    - submission/package_complete.md
+
+- id: M10
+  name: '审稿完成'
+  description: '收到审稿意见，完成回复和修改'
+  date: '2027-03-31'
+  tasks: []
+  status: pending
+  note: '等待审稿反馈后进行'
+  expected_duration: '6-12 months'
+
+- id: M11
+  name: '接受发表'
+  description: '论文被Annals of Mathematics接受发表'
+  date: '2028-01-31'
+  tasks: []
+  status: pending
+  note: '最终目标'
+
+# ==================== 状态追踪 ====================
+
+active_tasks: []
+completed_tasks: []
+blocked_tasks:
+  - P4-EXP-002
+  - P4-EXP-003
+  - P4-EXP-004
+  - P4-EXP-005
+  - P4-EXP-006
+  - P4-EXP-007
+  - P4-EXP-008
+  - P4-EXP-009
+  - P4-PAP-001
+  - P4-PAP-002
+  - P4-PAP-003
+  - P4-PAP-004
+  - P4-PAP-005
+  - P4-PAP-006
+  - P4-PAP-007
+  - P4-PAP-008
+  - P4-SUB-001
+  - P4-SUB-002
+  - P4-SUB-003
+  - P4-SUB-004
+
+task_summary:
+  total: 27
+  completed: 0
+  in_progress: 0
+  pending: 1
+  blocked: 26
+  ready_to_start:
+    - P4-EXP-001
+
+# ==================== 专家咨询追踪 ====================
+
+expert_consultations:
+  robert_benedetto:
+    name: 'Robert Benedetto'
+    institution: 'Amherst College'
+    specialty: 'p-adic dynamics'
+    status: 'planned'
+    contact_date: null
+    meeting_date: null
+    feedback_received: false
+    task_id: 'P4-EXP-002'
+    
+  juan_rivera_letelier:
+    name: 'Juan Rivera-Letelier'
+    institution: 'University of Rochester'
+    specialty: 'arithmetic dynamics'
+    status: 'planned'
+    contact_date: null
+    meeting_date: null
+    feedback_received: false
+    task_id: 'P4-EXP-003'
+    
+  richard_taylor:
+    name: 'Richard Taylor'
+    institution: 'Stanford University'
+    specialty: 'Langlands program'
+    status: 'planned'
+    contact_date: null
+    meeting_date: null
+    feedback_received: false
+    task_id: 'P4-EXP-004'
+    
+  peter_sarnak:
+    name: 'Peter Sarnak'
+    institution: 'IAS/Princeton'
+    specialty: 'automorphic forms'
+    status: 'planned'
+    contact_date: null
+    meeting_date: null
+    feedback_received: false
+    task_id: 'P4-EXP-005'
+    
+  curt_mcmullen:
+    name: 'Curt McMullen'
+    institution: 'Harvard University'
+    specialty: 'complex dynamics, thermodynamic formalism'
+    status: 'planned'
+    contact_date: null
+    meeting_date: null
+    feedback_received: false
+    task_id: 'P4-EXP-006'
+    
+  mark_pollicott:
+    name: 'Mark Pollicott'
+    institution: 'University of Warwick'
+    specialty: 'thermodynamic formalism'
+    status: 'planned'
+    contact_date: null
+    meeting_date: null
+    feedback_received: false
+    task_id: 'P4-EXP-007'
+
+# ==================== 投稿追踪 ====================
+
+submission_tracking:
+  journal: 'Annals of Mathematics'
+  submission_system: 'ScholarOne Manuscripts'
+  manuscript_number: null
+  submission_date: null
+  current_status: 'not_submitted'
+  status_history: []
+  
+  review_timeline:
+    expected_first_response: '2026-12-01'
+    expected_decision: '2027-03-31'
+    
+  suggested_reviewers:
+    - name: null
+      institution: null
+      reason: null
+      
+  excluded_reviewers: []
+
+# ==================== 风险评估 ====================
+
+risks:
+  - id: R1
+    category: 'expert_consultation'
+    description: '专家可能无法及时回复或提供反馈'
+    probability: 'medium'
+    impact: 'high'
+    mitigation: '提前联系多位专家，准备备用咨询计划'
+    contingency: '如专家咨询延迟，优先完成论文撰写，后期再整合反馈'
+    
+  - id: R2
+    category: 'paper_writing'
+    description: '论文撰写时间超出预期'
+    probability: 'medium'
+    impact: 'medium'
+    mitigation: '采用模块化撰写策略，分章节并行进行'
+    contingency: '优先完成核心定理证明部分，其他部分可适当简化'
+    
+  - id: R3
+    category: 'review_process'
+    description: '审稿周期超出预期或需要重大修改'
+    probability: 'high'
+    impact: 'medium'
+    mitigation: '确保论文质量达到最高标准，减少被退回的可能性'
+    contingency: '准备Plan B期刊 (Inventiones Mathematicae, JAMS)'
+    
+  - id: R4
+    category: 'competition'
+    description: '类似结果可能由其他研究团队发表'
+    probability: 'low'
+    impact: 'high'
+    mitigation: '尽快完成投稿，同时准备arXiv预印本'
+    contingency: '强调研究的独特贡献和方法论创新'
+
+# ==================== 资源需求 ====================
+
+resources:
+  time_requirements:
+    total_weeks: 80
+    expert_consultation_phase: 18w
+    paper_writing_phase: 35w
+    submission_phase: 5w
+    review_phase: 22w
+    
+  personnel:
+    - role: 'Lead Author'
+      responsibilities: '论文撰写、专家联系、整体协调'
+      time_commitment: 'full_time'
+    - role: 'Technical Editor'
+      responsibilities: 'LaTeX排版、格式检查、文献管理'
+      time_commitment: 'part_time'
+      
+  software:
+    - 'LaTeX (TeX Live 2024)'
+    - 'Python 3.12 (数值验证)'
+    - 'SageMath (符号计算)'
+    - 'BibTeX/Biber (文献管理)'
+    
+  financial:
+    - item: 'Conference travel for presentations'
+      estimated_cost: '$5,000'
+    - item: 'Open access publication fees'
+      estimated_cost: '$3,000'
+    - item: 'Computational resources'
+      estimated_cost: '$1,000'
