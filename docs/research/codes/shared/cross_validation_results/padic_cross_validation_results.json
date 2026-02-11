@@ -1,0 +1,176 @@
+{
+  "data_source": "/mnt/e/FiberGravity-DynamicCoupling/GitHub_Repositories/Fixed-4D-Topology/docs/research/codes/padic/results/first_padic_fractal_results.json",
+  "n_samples": 5,
+  "cross_validation": {
+    "3_fold": {
+      "method": "3-Fold CV (default)",
+      "n_samples": 5,
+      "mean": 0.9999999999999994,
+      "std": 3.2657356996607607e-15,
+      "ci_95": [
+        0.9999999999999953,
+        1.0000000000000036
+      ],
+      "ci_99": [
+        0.9999999999999927,
+        1.0000000000000062
+      ],
+      "mse": 8.766216809268494e-30,
+      "rmse": 2.9607797637224713e-15,
+      "mae": 1.9984014443252818e-15,
+      "bias": -4.884981308350689e-16,
+      "variance": 1.0665029660038757e-29,
+      "dimension_estimates": [
+        1.0000000000000018,
+        0.9999999999999938,
+        1.0000000000000009,
+        1.000000000000001,
+        1.0
+      ],
+      "outlier_indices": [
+        1
+      ],
+      "convergence_rate": null,
+      "computation_time": null
+    },
+    "5_fold": {
+      "method": "5-Fold CV (default)",
+      "n_samples": 5,
+      "mean": 1.0000000000000002,
+      "std": 6.521083742145178e-16,
+      "ci_95": [
+        0.9999999999999994,
+        1.000000000000001
+      ],
+      "ci_99": [
+        0.9999999999999989,
+        1.0000000000000016
+      ],
+      "mse": 3.697785493223493e-31,
+      "rmse": 6.080941944488118e-16,
+      "mae": 3.552713678800501e-16,
+      "bias": 1.7763568394002506e-16,
+      "variance": 4.252453317207017e-31,
+      "dimension_estimates": [
+        0.9999999999999999,
+        0.9999999999999998,
+        1.0,
+        0.9999999999999999,
+        1.0000000000000013
+      ],
+      "outlier_indices": [
+        4
+      ],
+      "convergence_rate": null,
+      "computation_time": null
+    },
+    "loo": {
+      "method": "LOO CV (default)",
+      "n_samples": 5,
+      "mean": 1.0000000000000002,
+      "std": 6.568167990716596e-16,
+      "ci_95": [
+        0.9999999999999994,
+        1.000000000000001
+      ],
+      "ci_99": [
+        0.9999999999999989,
+        1.0000000000000016
+      ],
+      "mse": 3.747089299799806e-31,
+      "rmse": 6.121347318850488e-16,
+      "mae": 3.552713678800501e-16,
+      "bias": 1.7763568394002506e-16,
+      "variance": 4.314083075427408e-31,
+      "dimension_estimates": [
+        0.9999999999999998,
+        0.9999999999999998,
+        1.0,
+        1.0,
+        1.0000000000000013
+      ],
+      "outlier_indices": [
+        4
+      ],
+      "convergence_rate": null,
+      "computation_time": null
+    }
+  },
+  "bootstrap": {
+    "mean": 1.0,
+    "std": 0.0,
+    "ci_95": [
+      1.0,
+      1.0
+    ],
+    "note": "Bootstrap计算失败，使用简单统计量"
+  },
+  "error_analysis": {
+    "systematic": {
+      "bias": 0.0,
+      "relative_bias": 0.0,
+      "bias_percentage": 0.0,
+      "estimated_true_value": 1.0
+    },
+    "random": {
+      "std": 0.0,
+      "sem": 0.0,
+      "ci_half_width": 0.0,
+      "cv": 0.0,
+      "cv_percentage": 0.0,
+      "mad": 0.0,
+      "mad_scaled": 0.0,
+      "precision": Infinity
+    }
+  },
+  "statistical_tests": {
+    "normality": {
+      "note": "样本数不足 (5 < 8)，跳过检验"
+    }
+  },
+  "precision_comparison": {
+    "float32": {
+      "mean": 1.0,
+      "std": 0.0,
+      "precision_digits": 7
+    },
+    "float64": {
+      "mean": 1.0,
+      "std": 0.0,
+      "precision_digits": 15
+    },
+    "float128": {
+      "mean": 1.0,
+      "std": 0.0,
+      "precision_digits": 18
+    }
+  },
+  "sensitivity": {},
+  "convergence": [
+    {
+      "iterations": 10,
+      "dimension": 0.9854456774697287,
+      "estimated_error": 0.03162277660168379
+    },
+    {
+      "iterations": 20,
+      "dimension": 1.0444668682015141,
+      "estimated_error": 0.022360679774997897
+    },
+    {
+      "iterations": 30,
+      "dimension": 1.0338109509824653,
+      "estimated_error": 0.018257418583505537
+    },
+    {
+      "iterations": 50,
+      "dimension": 0.9996357159100663,
+      "estimated_error": 0.01414213562373095
+    },
+    {
+      "iterations": 100,
+      "dimension": 1.0120180659296567,
+      "estimated_error": 0.01
+    }
+  ]
+}
