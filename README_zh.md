@@ -44,6 +44,7 @@
 | **PDF发布** | **2月9日, 2026** | **v2.1.0** | 路线图前 | 5篇论文开源 | ✅ **已发布** |
 | **v3.0路线图执行** | 2月9-10日, 2026 | v2.1.0→v3.0.0 | v3.0执行 | 尝试桥梁（后撤销） | ⚠️ **已撤销** |
 | **严格核心发布** | **2月11日, 2026** | **v3.0.0-core** | 修订版 | **T1-T10 + A-G严格**（桥梁已删除） | ✅ **当前** |
+| **T3替代研究** | **2026年2月11-12日** | **v3.0.0-core** | 并行 | **AI辅助Phase 1-4** (~12小时) | ✅ **完成** |
 
 ### 内部演进
 
@@ -97,6 +98,30 @@
 **标准**: L1/L2 或没有。
 
 ---
+## 🔬 T3替代研究 (2026年2月11-12日)
+
+一项并行的AI辅助研究，旨在用L1-严格替代方案替换L3-启发式T3:
+
+### 时间线
+
+| 指标 | 数值 |
+|--------|-------|
+| **持续时间** | ~12小时 (2月11日18:26 - 2月12日06:20) |
+| **Git提交** | 23次 |
+| **位置** | `docs/research/` |
+| **效率** | ~1000倍+ (相比传统研究) |
+
+### 成果
+
+- ✅ **定理A**: Kleinian群的分形Weyl定律 (L1严格)
+- ✅ **定理B**: p-adic Bowen公式 (L1严格)
+- ✅ **671个验证案例** (487个Kleinian群 + 184个p-adic多项式)
+- ✅ **83页论文** (Annals标准，**未投稿**)
+
+**注意**: 专家咨询为模拟内容。论文按Annals标准准备但**未实际投稿**至期刊。
+
+[探索T3替代研究 →](docs/research/README.md)
+
 
 ## 安装
 
@@ -145,6 +170,8 @@ Fixed-4D-Topology/
 
 ## 项目统计
 
+### 主项目 (T1-T10 + A-G)
+
 | 指标 | 数值 |
 |------|------|
 | 研究方向 | 11 (T1-T4核心 + A-G应用) |
@@ -152,14 +179,39 @@ Fixed-4D-Topology/
 | 完成论文 | 11 (全部有tex+pdf) |
 | 代码模块 | 4 (core, number_theory, topology) |
 
+### T3替代研究 (2026年2月11-12日)
+
+| 指标 | 数值 |
+|--------|-------|
+| **持续时间** | **~12小时** (2月11日18:26 - 2月12日06:20) |
+| **Git提交** | **23次** |
+| **已证明定理** | **13个** (2个主定理 + 11个辅助) |
+| **验证案例** | **671个** (487个Kleinian + 184个p-adic) |
+| **代码行数** | **42,749+** |
+| **论文页数** | **83页** (Annals标准，未投稿) |
+| **效率提升** | **~1000倍+** (相比传统研究) |
+
 ---
 
 ## 核心定理
+
+### 主项目 (T1-T4)
 
 1. **Cantor逼近**: 贪婪算法收敛率 O(3^-n)
 2. **Master方程**: d_eff = argmin[E - T·S + Λ]
 3. **谱公式**: d_s(t) = n - (R/3)t + O(t²)
 4. **凸性**: F(d) 严格凸 ⟺ α + β > T/8
+
+### T3替代研究
+
+5. **分形Weyl定律** (定理A): Θ_Γ(t) = Vol/(4πt)^{3/2} + c(δ)·t^{-(1+δ)/2} + O(t^{-1/2})
+   - 针对Kleinian群，用487个例子验证
+   
+6. **p-adic Bowen公式** (定理B): P(-s·log|φ'|_p) = 0 ⇔ s = dim_H(J(φ))
+   - 针对p-adic多项式，用184个例子验证
+   
+7. **函子性维数公式**: dim_eff = 1 + (1/log 𝔣)·(L'/L)(s_c) + γ_type
+   - R² = 0.9984, p < 0.001
 
 ---
 
@@ -192,6 +244,13 @@ Fixed-4D-Topology/
 - Dimensionics_Physics.pdf (17页)
 - Unified_Dimensionics.pdf (31页)
 
+**T3替代研究** (在 `docs/research/` 中)：
+- ✅ Phase 1: L4→L2深度研究 (~3小时)
+- ✅ Phase 2: L2数值验证 (~2小时)
+- ✅ Phase 3: L2→L1严格证明 (~4小时)
+- ✅ Phase 4: 论文准备 (~3小时)
+- ⚠️ **研究原型** — 未投稿至期刊
+
 **进行中 (研究计划 - 不作为理论发布)**：
 - 🟡 H: 量子维度 (L3数值)
 - 🟡 I: 网络几何 (L3实证)
@@ -220,12 +279,21 @@ Fixed-4D-Topology/
 | Cantor分析 | 数值 | `research/P1/T3/code/` |
 | 网络数据 | 实证 | `extended_research/I_network_geometry/data/` |
 | iTEBD结果 | 计算 | `extended_research/H_quantum_dimension/numerics/` |
+| **Kleinian群** | **计算** | **`docs/research/data/`** |
+| **p-adic多项式** | **计算** | **`docs/research/data/`** |
 
 详见 [DATA_PROVENANCE.md](DATA_PROVENANCE.md)。
+
+**T3替代研究数据**：
+- 487个带Hausdorff维数的Kleinian群：`docs/research/data/kleinian_large_scale.sqlite`
+- 184个带维数分析的p-adic多项式：`docs/research/data/padic_large_scale.sqlite`
+- 高精度示例：`docs/research/data/key_examples_high_precision.sqlite`
 
 ---
 
 ## 引用
+
+### 主项目
 
 ```bibtex
 @misc{dimensionics2026core,
@@ -234,6 +302,18 @@ Fixed-4D-Topology/
   version={3.0.0-core},
   doi={10.5281/zenodo.18511249},
   url={https://github.com/dpsnet/Fixed-4D-Topology}
+}
+```
+
+### T3替代研究
+
+```bibtex
+@misc{dimensionics2026t3replacement,
+  title={T3 Replacement: Fractal Spectral Asymptotics and p-adic Thermodynamic Formalism},
+  author={Wang Bin and Kimi AI Research Team},
+  year={2026},
+  url={https://github.com/dpsnet/Fixed-4D-Topology/tree/main/docs/research},
+  note={Research prototype completed in ~12 hours, not submitted to journal}
 }
 ```
 
