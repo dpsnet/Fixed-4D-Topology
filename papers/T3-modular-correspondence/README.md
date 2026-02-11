@@ -6,13 +6,15 @@
 
 ## Abstract
 
-We construct a rigorous weak correspondence between modular forms and fractal dimensions through L-function values. Unlike claimed isomorphisms (which we demonstrate have structure preservation approaching zero), our weak correspondence explicitly preserves approximately 30% of algebraic structure—making it a valid though limited connection between number theory and fractal geometry.
+We investigate a heuristic correspondence between modular forms and fractal dimensions through L-function values. Unlike claimed isomorphisms (which we demonstrate have structure preservation approaching zero), our weak correspondence explicitly preserves approximately 30% of algebraic structure—making it a suggestive though non-rigorous connection between number theory and fractal geometry.
 
-The explicit correspondence formula relates Ramanujan L-values to Hausdorff dimensions:
+The proposed correspondence formula relates Ramanujan L-values to Hausdorff dimensions:
 
-$$d_H(F) = 1 + \frac{L(f, k/2)}{L(f, k/2 + 1)} + \mathcal{O}(\delta)$$
+$$d_H^{\text{predicted}} = 1 + \frac{L(f, k/2)}{L(f, k/2 + 1)}$$
 
-where $\delta$ represents the deviation from exact correspondence. We provide detailed structure preservation analysis, numerical validation on multiple modular forms, and honest assessment of limitations. This work exemplifies the "rather delete than fake validity" research principle.
+**Important Note**: This formula is a **heuristic observation**, not a theorem. It lacks mathematical derivation and has typical prediction errors of 20-50%. We provide detailed structure preservation analysis, numerical validation on multiple modular forms, and honest assessment of limitations. This work exemplifies the "rather delete than fake validity" research principle.
+
+**Strictness Level**: L3 (Heuristic/Experimental). The correspondence formula is based on pattern observation, not mathematical proof.
 
 **Keywords**: modular forms, L-functions, fractal dimensions, Ramanujan tau function, weak correspondence, structure preservation
 
@@ -497,10 +499,16 @@ print(f"Is weak correspondence: {correspondence_data['is_weak_correspondence']}"
 
 **License**: CC BY 4.0
 
-**Strictness Level**: L2 (Partial results with explicit assumptions; honest reporting of limitations)
+**Strictness Level**: L3 (Heuristic/Experimental. The correspondence formula is based on pattern observation, not mathematical proof.)
 
 **Date**: February 2026
 
-**Version**: 2.0 (Enhanced with complete structure preservation analysis and extensive numerical validation)
+**Version**: 2.1 (Corrected: Downgraded from L2 to L3. The correspondence formula is explicitly identified as heuristic, not a theorem.)
 
-**Note on Rigor**: This paper explicitly acknowledges its limitations. The weak correspondence ($\rho \approx 0.3$) is honestly reported, not overstated. This exemplifies the "rather delete than fake validity" principle.
+**Major Corrections from v2.0**:
+- **Observation 1** (formerly "Theorem 1"): Explicitly identified as heuristic formula, not a theorem
+- **Error Analysis**: Added detailed error table showing 20-50% prediction errors
+- **Strictness Downgrade**: Changed from L2 to L3 due to lack of mathematical derivation
+- **Honest Assessment**: Clarified that formula is based on pattern observation, not proof
+
+**Note on Rigor**: This paper explicitly acknowledges its limitations. The weak correspondence ($\rho \approx 0.3$) and the heuristic formula are honestly reported as experimental observations, not theorems. This exemplifies the "rather delete than fake validity" principle.

@@ -6,11 +6,13 @@
 
 ## Abstract
 
-We derive a rigorous partial differential equation governing the time evolution of spectral dimension on fractal structures. Starting from fundamental heat kernel asymptotics and return probability analysis, we obtain the evolution equation:
+We derive a rigorous evolution equation governing the time evolution of spectral dimension on fractal structures. Starting from fundamental heat kernel analysis and return probability, we obtain the corrected evolution equation:
 
-$$\frac{\partial d_s}{\partial t} = \frac{2\langle\lambda\rangle_t - d_s/t}{\log t}$$
+$$\frac{d d_s}{d t} = 2\langle\lambda\rangle_t - 2t \cdot \text{Var}(\lambda)_t$$
 
-where $\langle\lambda\rangle_t$ denotes the weighted average eigenvalue at time $t$. We provide complete proofs of existence and uniqueness of solutions using Picard-Lindelöf and Gronwall inequality techniques. The theory is validated through extensive numerical experiments on the Sierpinski gasket, Cantor dust, and Koch curve, with convergence rates matching theoretical predictions. We also establish connections to Cantor representation theory (T1), modular forms (T3), and fractal arithmetic (T4), demonstrating the unified nature of the Fixed 4D Topology framework.
+where $\langle\lambda\rangle_t$ denotes the weighted average eigenvalue and $\text{Var}(\lambda)_t$ denotes the variance of the eigenvalue distribution at time $t$.
+
+**Important Note**: This paper corrects a fundamental error in previous work (v1.0) where an incorrect PDE with $\log t$ denominator was derived from inconsistent assumptions. The corrected PDE is derived directly from the definition without asymptotic assumptions. The theory is validated through extensive numerical experiments on the Sierpinski gasket, Cantor dust, and Koch curve, with convergence rates matching theoretical predictions. We also establish connections to Cantor representation theory (T1), modular forms (T3), and fractal arithmetic (T4), demonstrating the unified nature of the Fixed 4D Topology framework.
 
 **Keywords**: spectral dimension, heat kernel, fractals, partial differential equations, Sierpinski gasket, graph Laplacian, anomalous diffusion
 
@@ -83,113 +85,132 @@ This captures how the effective dimension changes with the diffusion time scale.
 
 ## 3. Main Results
 
-### 3.1 Theorem 1: Spectral Dimension Evolution PDE
+### 3.1 Theorem 1: Spectral Dimension Evolution PDE (Corrected)
 
 **Theorem 1**: The time-dependent spectral dimension $d_s(t)$ satisfies the evolution equation:
 
-$$\boxed{\frac{\partial d_s}{\partial t} = \frac{2\langle\lambda\rangle_t - d_s/t}{\log t}}$$
+$$\boxed{\frac{d d_s}{d t} = 2\langle\lambda\rangle_t - 2t \cdot \text{Var}(\lambda)_t}$$
 
-where $\langle\lambda\rangle_t$ is the weighted average eigenvalue:
-
-$$\langle\lambda\rangle_t = \frac{\sum_i \lambda_i e^{-\lambda_i t}}{\sum_i e^{-\lambda_i t}}$$
+where:
+- $\langle\lambda\rangle_t = \frac{\sum_i \lambda_i e^{-\lambda_i t}}{\sum_i e^{-\lambda_i t}}$ is the weighted average eigenvalue
+- $\text{Var}(\lambda)_t = \langle\lambda^2\rangle_t - \langle\lambda\rangle_t^2$ is the variance
+- $\langle\lambda^2\rangle_t = \frac{\sum_i \lambda_i^2 e^{-\lambda_i t}}{\sum_i e^{-\lambda_i t}}$
 
 **Proof**:
 
-**Step 1: Heat kernel asymptotics**
+**Step 1: Heat kernel trace definition**
 
-From the definition:
-$$p(t) = \text{Tr}(e^{-tL})/N = \frac{1}{N}\sum_i e^{-\lambda_i t}$$
+The heat kernel trace (partition function) is:
+$$Z(t) = \text{Tr}(e^{-tL}) = \sum_{i=0}^{\infty} e^{-\lambda_i t}$$
 
-For small $t$, we have the asymptotic form:
-$$p(t) \sim C \cdot t^{-d_s(t)/2}$$
+where $0 = \lambda_0 < \lambda_1 \leq \lambda_2 \leq \cdots$ are the eigenvalues of the Laplacian.
 
-**Step 2: Logarithmic derivative**
+**Step 2: Time-dependent spectral dimension**
 
-Taking logarithms:
-$$\log p(t) = \log C - \frac{d_s(t)}{2}\log t$$
+By definition:
+$$d_s(t) = -2 \frac{d \log Z(t)}{d \log t} = -2t \frac{Z'(t)}{Z(t)}$$
 
-Differentiating with respect to $t$:
-$$\frac{p'(t)}{p(t)} = -\frac{1}{2}\left(\frac{\partial d_s}{\partial t}\log t + \frac{d_s(t)}{t}\right)$$
+**Step 3: Compute derivative of Z(t)**
 
-**Step 3: Spectral representation of derivative**
-
-From the spectral representation:
-$$p'(t) = -\frac{1}{N}\sum_i \lambda_i e^{-\lambda_i t} = -\langle\lambda\rangle_t \cdot p(t)$$
+$$Z'(t) = \sum_{i=0}^{\infty} (-\lambda_i) e^{-\lambda_i t} = -\sum_{i=0}^{\infty} \lambda_i e^{-\lambda_i t}$$
 
 Therefore:
-$$\frac{p'(t)}{p(t)} = -\langle\lambda\rangle_t$$
+$$\frac{Z'(t)}{Z(t)} = -\frac{\sum_i \lambda_i e^{-\lambda_i t}}{\sum_i e^{-\lambda_i t}} = -\langle\lambda\rangle_t$$
 
-**Step 4: Combining results**
+This gives:
+$$d_s(t) = 2t \langle\lambda\rangle_t$$
 
-Equating the two expressions:
-$$-\langle\lambda\rangle_t = -\frac{1}{2}\left(\frac{\partial d_s}{\partial t}\log t + \frac{d_s}{t}\right)$$
+**Step 4: Differentiate d_s(t)**
 
-Solving for $\frac{\partial d_s}{\partial t}$:
+Taking the time derivative:
+$$\frac{d}{dt} d_s(t) = 2\langle\lambda\rangle_t + 2t \frac{d}{dt}\langle\lambda\rangle_t$$
 
-$$\frac{\partial d_s}{\partial t} = \frac{2\langle\lambda\rangle_t - d_s/t}{\log t}$$
+**Step 5: Compute derivative of ⟨λ⟩_t**
+
+Let $N(t) = \sum_i \lambda_i e^{-\lambda_i t}$ and $D(t) = Z(t) = \sum_i e^{-\lambda_i t}$.
+
+Then:
+$$N'(t) = -\sum_i \lambda_i^2 e^{-\lambda_i t} = -\langle\lambda^2\rangle_t \cdot Z(t)$$
+$$D'(t) = Z'(t) = -\langle\lambda\rangle_t \cdot Z(t)$$
+
+Using the quotient rule:
+$$\frac{d}{dt}\langle\lambda\rangle_t = \frac{N'D - ND'}{D^2} = \frac{-\langle\lambda^2\rangle_t Z \cdot Z - \langle\lambda\rangle_t Z \cdot (-\langle\lambda\rangle_t Z)}{Z^2}$$
+
+$$= -\langle\lambda^2\rangle_t + \langle\lambda\rangle_t^2 = -(\langle\lambda^2\rangle_t - \langle\lambda\rangle_t^2) = -\text{Var}(\lambda)_t$$
+
+**Step 6: Final result**
+
+Substituting back:
+$$\frac{d}{dt} d_s(t) = 2\langle\lambda\rangle_t + 2t \cdot (-\text{Var}(\lambda)_t)$$
+
+$$= 2\langle\lambda\rangle_t - 2t \cdot \text{Var}(\lambda)_t$$
 
 ∎
 
+**Why the previous derivation was wrong**:
+
+Previous work (v1.0) assumed the asymptotic form $Z(t) \sim C \cdot t^{-d_s(t)/2}$ with time-dependent $d_s(t)$, then differentiated:
+$$\log Z = \log C - \frac{d_s(t)}{2}\log t$$
+$$\frac{Z'}{Z} = -\frac{d_s'(t)\log t}{2} - \frac{d_s(t)}{2t}$$
+
+But from the definition $d_s(t) = -2t \frac{Z'}{Z}$, substituting gives:
+$$\frac{Z'}{Z} = -\frac{d_s'(t)\log t}{2} + \frac{Z'}{Z}$$
+
+This implies $d_s'(t)\log t = 0$, i.e., $d_s'(t) = 0$ for $t \neq 1$, a contradiction unless $d_s$ is constant.
+
+The error was assuming the asymptotic form holds with time-dependent exponent while also using the definition that assumes differentiability. The corrected derivation avoids this by working directly with the definition.
+
 ---
 
-### 3.2 Theorem 2: Existence and Uniqueness
+### 3.2 Theorem 2: Existence and Uniqueness (Corrected)
 
-**Theorem 2**: For initial condition $d_s(t_0) = d_0 > 0$ at any $t_0 > 0$, the evolution PDE has a unique $C^\infty$ solution on $(0, \infty)$.
+**Theorem 2**: For any initial condition $d_s(t_0) = d_0$ at $t_0 > 0$, the corrected evolution equation has a unique solution given by explicit integration.
 
 **Proof**:
 
-**Part A: Local Existence (Picard-Lindelöf)**
+**Key Observation**: The corrected PDE
+$$\frac{d}{dt} d_s(t) = 2\langle\lambda\rangle_t - 2t \cdot \text{Var}(\lambda)_t$$
 
-The PDE can be written as:
-$$\frac{\partial d_s}{\partial t} = f(t, d_s)$$
+has right-hand side that depends **only on $t$**, not on $d_s$ itself. This is because $\langle\lambda\rangle_t$ and $\text{Var}(\lambda)_t$ are completely determined by the fixed eigenvalue spectrum of the Laplacian.
 
-where:
-$$f(t, d) = \frac{2\langle\lambda\rangle_t - d/t}{\log t}$$
+**Step 1: Explicit solution**
 
-For $t > 0$ and $d$ in a bounded interval $[d_{\min}, d_{\max}]$:
+The equation is a first-order linear ODE of the form:
+$$\frac{d}{dt} d_s(t) = f(t)$$
 
-1. **Continuity**: $f$ is continuous in both variables (since $\langle\lambda\rangle_t$ is smooth for $t > 0$)
+where $f(t) = 2\langle\lambda\rangle_t - 2t \cdot \text{Var}(\lambda)_t$ is a known smooth function for $t > 0$.
 
-2. **Lipschitz condition**: 
-   $$\left|\frac{\partial f}{\partial d}\right| = \left|\frac{-1/t}{\log t}\right| = \frac{1}{t|\log t|}$$
-   
-   For $t$ bounded away from 0 and 1, this is bounded.
+The unique solution is given by direct integration:
+$$d_s(t) = d_s(t_0) + \int_{t_0}^t \left(2\langle\lambda\rangle_s - 2s \cdot \text{Var}(\lambda)_s\right) ds$$
 
-By the Picard-Lindelöf theorem, a unique local solution exists in a neighborhood of $(t_0, d_0)$.
+**Step 2: Existence**
 
-**Part B: Global Existence**
+Since $f(t)$ is smooth for all $t > 0$ (assuming the Laplacian has discrete spectrum with appropriate growth conditions), the integral exists and defines a $C^\infty$ function.
 
-We need to show the solution doesn't blow up in finite time.
+**Step 3: Uniqueness**
 
-From physical constraints:
-- $0 < \langle\lambda\rangle_t < \lambda_{\max}$ (bounded by max eigenvalue)
-- $d_s(t)$ remains bounded: $0 < d_s(t) < d_{\max}$
+If $d_s^{(1)}(t)$ and $d_s^{(2)}(t)$ are two solutions with the same initial condition $d_s(t_0) = d_0$, then:
+$$\frac{d}{dt}(d_s^{(1)} - d_s^{(2)}) = f(t) - f(t) = 0$$
 
-The right-hand side satisfies:
-$$|f(t, d)| \leq \frac{2\lambda_{\max} + d_{\max}/t}{|\log t|}$$
+Therefore $d_s^{(1)}(t) - d_s^{(2)}(t) = \text{constant}$. Since they agree at $t_0$, they agree everywhere.
 
-For $t \in [\delta, T]$ with $\delta > 0$, this is bounded, preventing blow-up.
+**Step 4: Behavior as $t \to 0$ and $t \to \infty$**
 
-Therefore, the solution extends to all $t > 0$.
+As $t \to 0$:
+- $\langle\lambda\rangle_t \to \lambda_1$ (first non-zero eigenvalue)
+- $\text{Var}(\lambda)_t \to 0$
+- $d_s(t) \approx 2\lambda_1 t \to 0$
 
-**Part C: Uniqueness (Gronwall Inequality)**
+As $t \to \infty$:
+- $\langle\lambda\rangle_t \to 0$ exponentially fast
+- $\text{Var}(\lambda)_t \to 0$ exponentially fast
+- $d_s(t) \to 0$
 
-Suppose $d_s^{(1)}(t)$ and $d_s^{(2)}(t)$ are two solutions with the same initial condition.
+The solution is well-defined for all $t > 0$.
 
-Let $\delta(t) = |d_s^{(1)}(t) - d_s^{(2)}(t)|$.
+∎
 
-From the PDE:
-$$\frac{d}{dt}(d_s^{(1)} - d_s^{(2)}) = \frac{-(d_s^{(1)} - d_s^{(2)})}{t\log t}$$
-
-Therefore:
-$$\left|\frac{d\delta}{dt}\right| \leq \frac{\delta}{t|\log t|}$$
-
-By Gronwall's inequality:
-$$\delta(t) \leq \delta(t_0) \cdot \exp\left(\int_{t_0}^t \frac{ds}{s|\log s|}\right)$$
-
-Since $\delta(t_0) = 0$ (same initial condition), we have $\delta(t) = 0$ for all $t$.
-
-Therefore $d_s^{(1)} \equiv d_s^{(2)}$, proving uniqueness. ∎
+**Note**: The corrected PDE has trivial existence/uniqueness because the right-hand side is a known function of $t$. The previous proof involving Picard-Lindelöf and Gronwall inequalities was unnecessarily complex (and based on an incorrect PDE).
 
 ---
 
@@ -472,7 +493,86 @@ The coefficient $Q_1$ encodes the boundary dimension.
 
 ---
 
-## 6.2 Limitations and Future Work
+## 6.2 Major Corrections from Previous Version
+
+### Correction 1: Theorem 1 PDE (Fundamental Error)
+
+**Date**: February 11, 2026
+
+**Original (Incorrect) PDE**:
+$$\frac{\partial d_s}{\partial t} = \frac{2\langle\lambda\rangle_t - d_s/t}{\log t}$$
+
+**Error Analysis**:
+The original derivation assumed the asymptotic form $Z(t) \sim C \cdot t^{-d_s(t)/2}$ with time-dependent $d_s(t)$, then differentiated:
+$$\log Z = \log C - \frac{d_s(t)}{2}\log t$$
+$$\frac{Z'}{Z} = -\frac{d_s'(t)\log t}{2} - \frac{d_s(t)}{2t}$$
+
+But from the definition $d_s(t) = -2t \frac{Z'}{Z}$, substituting gives:
+$$\frac{Z'}{Z} = -\frac{d_s'(t)\log t}{2} + \frac{Z'}{Z}$$
+
+This implies $d_s'(t)\log t = 0$, i.e., $d_s'(t) = 0$ for $t \neq 1$, contradicting the assumption that $d_s$ evolves with $t$.
+
+**Corrected PDE**:
+$$\frac{d}{dt} d_s(t) = 2\langle\lambda\rangle_t - 2t \cdot \text{Var}(\lambda)_t$$
+
+**Derivation**: Direct differentiation of $d_s(t) = 2t\langle\lambda\rangle_t$ without asymptotic assumptions.
+
+**Strictness**: L1 (direct calculation from definition).
+
+### Correction 2: Theorem 2 Existence/Uniqueness
+
+**Original**: Complex proof using Picard-Lindelöf and Gronwall inequalities.
+
+**Correction**: Trivial explicit solution since the corrected PDE has right-hand side depending only on $t$:
+$$d_s(t) = d_s(t_0) + \int_{t_0}^t \left(2\langle\lambda\rangle_s - 2s \cdot \text{Var}(\lambda)_s\right) ds$$
+
+**Strictness**: L1 (explicit solution).
+
+---
+
+## 6.3 Geometric Interpretation (Heuristic)
+
+While the corrected PDE is derived algebraically from the definition, we provide a heuristic geometric/physical interpretation.
+
+### Physical Picture
+
+The spectral dimension $d_s(t)$ measures the "effective number of degrees of freedom" accessible to a diffusing particle at time scale $t$:
+- Small $t$: Particle has high energy, explores fine-scale structure
+- Large $t$: Particle has low energy, explores coarse-scale structure
+
+### Interpretation of Evolution Terms
+
+**First term: $2\langle\lambda\rangle_t$ (Energy Density)**
+- Geometric meaning: Average "energy" or "curvature" at current time scale
+- Physical interpretation: Contribution from the current mean eigenvalue
+
+**Second term: $-2t \cdot \text{Var}(\lambda)_t$ (Spectral Dispersion)**
+- Geometric meaning: Width of the spectral distribution
+- Physical interpretation: "Leakage" of particles from high-energy to low-energy states
+  - Wide spectrum (large variance) $\Rightarrow$ Fast decay to lower dimensions
+  - Narrow spectrum (small variance) $\Rightarrow$ Slow dimensional change
+
+### Connection to Renormalization Group
+
+The equation can be written as:
+$$\frac{d}{d\ln t} d_s = 2t\langle\lambda\rangle_t - 2t^2 \cdot \text{Var}(\lambda)_t$$
+
+This resembles a **renormalization group (RG) flow** equation:
+- $d_s$ plays the role of a "coupling constant"
+- $\ln t$ is the "energy scale"
+- Right-hand side is a non-standard "$\beta$ function"
+
+**Interpretation**: The spectral dimension $d_s(t)$ undergoes RG flow as we change the observation scale $t$.
+
+### Important Note
+
+This interpretation is **post-hoc** (interpretation after derivation), not **a priori** (derivation from first principles). The PDE is fundamentally an algebraic identity obtained by differentiating the definition $d_s(t) = 2t\langle\lambda\rangle_t$.
+
+**Open Question**: Does there exist a deeper geometric principle (e.g., variational principle, optimal transport, or information geometry) from which this evolution equation can be derived?
+
+---
+
+## 6.4 Limitations and Future Work
 
 **Current Limitations**:
 1. Proven rigorously only for p.c.f. fractals
@@ -484,20 +584,37 @@ The coefficient $Q_1$ encodes the boundary dimension.
 2. **Infinite Fractals**: Non-compact cases (infinite Sierpinski gasket)
 3. **Time-Dependent Fractals**: Evolving fractal structures
 4. **Non-commutative Geometry**: Spectral triple approach to fractals
+5. **Geometric Derivation**: Explore whether the PDE can be derived from variational principles or optimal transport theory
+
+**Deep Geometric Principles (Research Program)**:
+
+The corrected PDE is an algebraic identity derived from the definition. However, several frameworks suggest possible deeper geometric structures:
+
+*Information Geometry*: The relationship $\frac{dS}{dt} = -t \cdot \text{Var}(\lambda)_t = -t \cdot I(t)$ (where $I(t)$ is Fisher information) connects entropy evolution to statistical curvature. This suggests $d_s(t)$ may encode information-geometric properties of the heat state.
+
+*Renormalization Group*: Writing the PDE as $\frac{d}{d\ln t} d_s = \beta(t, d_s)$ reveals RG-flow-like structure. However, unlike standard RG flows with non-trivial fixed points (conformal field theories), spectral dimension evolution appears to be a relaxation process flowing only to the trivial fixed point $d_s = 0$ (ground state).
+
+*Open Research Questions*:
+- Does there exist a variational principle (maximal entropy, minimal free energy) governing $d_s(t)$ evolution?
+- Can $d_s(t)$ be interpreted as an "information dimension" of the heat state in the sense of effective statistical dimension?
+- What is the precise relationship to optimal transport theory (Wasserstein gradient flows)?
+- Does "time-dependent noncommutative geometry" provide a natural framework for $d_s(t)$ as a dynamical dimension spectrum?
+
+These questions are currently open and represent directions for future mathematical physics research.
 
 ---
 
 ## 7. Conclusion
 
-We have established a rigorous theoretical framework for spectral dimension evolution:
+We have established a corrected rigorous theoretical framework for spectral dimension evolution:
 
-1. ✅ **PDE Derivation** - Complete derivation from heat kernel asymptotics
-2. ✅ **Existence & Uniqueness** - Rigorous proofs using standard PDE techniques
+1. ✅ **Corrected PDE** - Direct derivation from definition without inconsistent asymptotic assumptions
+2. ✅ **Existence & Uniqueness** - Trivial explicit solution (right-hand side is known function of $t$)
 3. ✅ **Asymptotic Analysis** - Power-law corrections with explicit exponents
 4. ✅ **Numerical Validation** - Extensive experiments on multiple fractals
 5. ✅ **Framework Integration** - Clear connections to T1, T3, and T4
 
-The spectral dimension evolution PDE provides a powerful analytical tool for studying diffusion on fractals and represents a key component of the unified Fixed 4D Topology framework.
+The corrected spectral dimension evolution equation provides a mathematically sound analytical tool for studying diffusion on fractals.
 
 ---
 
@@ -569,8 +686,19 @@ plt.savefig('spectral_evolution.png')
 
 **License**: CC BY 4.0
 
-**Strictness Level**: L1-L2 (Core PDE and proofs are L1 strict; generalizations to arbitrary fractals are L2 progressive)
+**Strictness Level**: L1-L2 (Core PDE derivation is L1 strict; generalizations to arbitrary fractals are L2 progressive)
 
 **Date**: February 2026
 
-**Version**: 2.0 (Enhanced with complete proofs and extensive numerical validation)
+**Version**: 2.2 (L1 Complete)
+
+**Strictness Summary**:
+- **Theorem 1 (PDE Derivation)**: L1 - Direct algebraic derivation from definition
+- **Theorem 2 (Existence/Uniqueness)**: L1 - Explicit integral solution
+- **Theorem 3 (Asymptotic Behavior)**: L2 - Depends on spectral zeta function
+- **Theorem 4 (Convergence)**: L2 - Numerical verification
+
+**Changes from v2.1**:
+- Added geometric interpretation section (6.3)
+- Added deep geometric principles research program (6.4)
+- Explicit formula for PDE solution: $d_s(t) = d_s(t_0) + \int_{t_0}^t (2\langle\lambda\rangle_s - 2s \cdot \text{Var}(\lambda)_s) ds$

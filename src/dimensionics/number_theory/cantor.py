@@ -13,15 +13,15 @@ class CantorApproximation:
     """
     Cantor set-based approximation for real numbers.
     
-    The Cantor complexity constant C* ≈ 0.21 emerges from the
-    spectral gap of the fractal Laplacian (Bridge A).
-    
     Attributes:
-        C_star: Theoretical complexity constant (~0.21)
+        C_star: Empirical complexity constant (~0.21) - experimentally observed
         d_cantor: Cantor set dimension = ln(2)/ln(3) ≈ 0.6309
+    
+    NOTE: C* ≈ 0.21 is empirically observed from numerical experiments.
+    Any theoretical derivation is a research hypothesis, not proven fact.
     """
     
-    C_STAR = 0.21  # Theoretical complexity constant
+    C_STAR = 0.21  # Empirical complexity constant (experimentally observed)
     D_CANTOR = np.log(2) / np.log(3)  # Hausdorff dimension
     
     def __init__(self):
@@ -82,26 +82,15 @@ class CantorApproximation:
             'C_theoretical': self.C_STAR
         }
     
-    def calculate_c_star_theoretical(self) -> float:
+    def calculate_c_star_empirical(self) -> float:
         """
-        Calculate C* from fractal Laplacian spectral gap (Bridge A).
+        Return the empirical C* value from numerical experiments.
         
-        C* = (Δλ/λ₁) · d_c · (1-d_c) · π/4
+        This constant (~0.21) is experimentally observed from fitting
+        approximation complexity data. It does NOT have a theoretical
+        derivation.
         
         Returns:
-            Theoretical C* value
+            Empirical C* value (~0.21)
         """
-        # Fractal Laplacian eigenvalues
-        lambda_1 = (np.pi)**(2/self.D_CANTOR)
-        lambda_2 = (2*np.pi)**(2/self.D_CANTOR)
-        delta_lambda = lambda_2 - lambda_1
-        
-        # Dimension factor
-        correction = self.D_CANTOR * (1 - self.D_CANTOR) * np.pi / 4
-        
-        C_star = (delta_lambda / lambda_1) * correction
-        return C_star
-
-
-# Bridge A reference
-from_spectral_gap = CantorApproximation.calculate_c_star_theoretical
+        return self.C_STAR

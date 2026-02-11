@@ -1,0 +1,49 @@
+name: Compile Research Paper PDF
+
+on:
+  push:
+    paths:
+      - 'docs/research/papers/**/*.tex'
+      - 'docs/research/papers/**/*.bib'
+  pull_request:
+    paths:
+      - 'docs/research/papers/**/*.tex'
+      - 'docs/research/papers/**/*.bib'
+  workflow_dispatch:
+
+jobs:
+  compile-pdf:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      
+    - name: Install LaTeX
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-bibtex-extra biber
+        
+    - name: Compile PDF
+      working-directory: docs/research/papers/output
+      run: |
+        pdflatex -interaction=nonstopmode -halt-on-error paper_final.tex || true
+        bibtex paper_final || true
+        pdflatex -interaction=nonstopmode -halt-on-error paper_final.tex || true
+        pdflatex -interaction=nonstopmode -halt-on-error paper_final.tex
+        
+    - name: Upload PDF artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: research-paper-pdf
+        path: docs/research/papers/output/paper_final.pdf
+        
+    - name: Check PDF exists
+      run: |
+        if [ -f "docs/research/papers/output/paper_final.pdf" ]; then
+          echo "✅ PDF generated successfully"
+          ls -lh docs/research/papers/output/paper_final.pdf
+        else
+          echo "❌ PDF generation failed"
+          exit 1
+        fi
