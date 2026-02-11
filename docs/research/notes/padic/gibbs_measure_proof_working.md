@@ -7,20 +7,406 @@
 
 ---
 
-## 当前状态：步骤1/4 - 预备理论
+## 当前状态：步骤2/4 - Markov划分构造 ✓ 进行中
 
 > **总目标**: 证明对于一般p-adic多项式 $\varphi \in \mathbb{Q}_p[z]$，Gibbs测度存在且唯一。
 > 
 > **证明路线图**:
 > ```
-> 步骤1: 预备理论 ← 当前位置
+> 步骤1: 预备理论 ✓ 已完成
 >     ↓
-> 步骤2: RPF算子谱理论
+> 步骤2: Markov划分构造 ← 当前位置 ✓ 进行中
 >     ↓
-> 步骤3: Gibbs测度构造
+> 步骤3: 变分原理证明
 >     ↓
-> 步骤4: 验证与严格化
+> 步骤4: 综合证明与Bowen公式
 > ```
+
+---
+
+## 步骤2：Markov划分构造（4周）✓ 进行中
+
+### 2.1 p-adic Markov划分存在性
+
+#### 2.1.1 构造算法
+
+**p-adic Markov划分定义**:  
+设 $\varphi: \mathbb{P}^1_{\text{Berk}} \to \mathbb{P}^1_{\text{Berk}}$ 是扩张的p-adic多项式。Markov划分 $\mathcal{P} = \{P_1, \ldots, P_k\}$ 满足：
+
+1. **覆盖性**: $\mathcal{J}(\varphi) \subseteq \bigcup_{i=1}^k P_i$
+2. **不交性**: $P_i \cap P_j = \emptyset$ 对 $i \neq j$ (在测度意义下)
+3. **Markov性质**: $\varphi(P_i) \cap P_j \neq \emptyset \Rightarrow \varphi(P_i) \supseteq P_j$
+
+**关键观察**:  
+在p-adic拓扑中，Julia集是不连通的，Markov划分的元素可以取为p-adic球（圆盘）：
+$$P_i = B(a_i, r_i) = \{x \in \mathbb{Q}_p : |x - a_i|_p \leq r_i\}$$
+
+**构造算法** (`gibbs_step2_markov_partition.py`):
+
+```python
+class MarkovPartitionConstructor:
+    def construct_for_pure_power(self) -> MarkovPartition:
+        """为 z^d 构造标准Markov划分"""
+        # Julia集是单位圆盘
+        # 划分为 p 个半径为 p^{-1} 的球
+        for k in range(self.p):
+            partition.add_element(k, 1)  # 中心k，半径p^{-1}
+```
+
+#### 2.1.2 与实数情形的差异
+
+| 性质 | 实数情形 | p-adic情形 |
+|------|----------|-----------|
+| Julia集 | 连通分形 | 完全不连通 |
+| 划分元素 | 区间/弧段 | p-adic球 |
+| 划分细化 | 2^n 细分 | p^n 细分 |
+| 几何复杂度 | 高 | 相对较低 |
+| 代数结构 | 连续 | 离散赋值 |
+
+#### 2.1.3 存在性证明策略
+
+**命题** (p-adic Markov划分存在性).  
+对于扩张的p-adic多项式 $\varphi$，存在有限Markov划分。
+
+*证明概要*:
+1. 利用Berkovich空间的树结构
+2. 在Julia集上构造生成划分
+3. 证明迭代细化收敛到Markov划分
+
+---
+
+### 2.2 符号动力学建立
+
+#### 2.2.1 符号空间
+
+给定Markov划分 $\mathcal{P} = \{P_1, \ldots, P_k\}$，定义**允许转移**: 
+$$A_{ij} = \begin{cases} 1 & \text{if } \varphi(P_i) \cap P_j \neq \emptyset \\ 0 & \text{otherwise} \end{cases}$$
+
+**符号空间**:
+$$\Sigma_A^+ = \{(x_0, x_1, \ldots) : x_i \in \{1,\ldots,k\}, A_{x_i x_{i+1}} = 1\}$$
+
+**编码映射**:
+$$\pi: \Sigma_A^+ \to \mathcal{J}(\varphi), \quad \pi(\mathbf{x}) = \bigcap_{n=0}^\infty \varphi^{-n}(P_{x_n})$$
+
+#### 2.2.2 共轭映射
+
+**定理** (符号动力学共轭).  
+编码映射 $\pi$ 是连续满射，且满足：
+$$\pi \circ \sigma = \varphi \circ \pi$$
+其中 $\sigma$ 是符号空间上的移位映射。
+
+*关键性质*: 在p-adic情形，由于Julia集的不连通性，$\pi$ 实际上是**同胚**（对于扩张映射）。
+
+#### 2.2.3 熵计算
+
+**拓扑熵**:
+$$h_{\text{top}}(\varphi) = \log \rho(A) = \log \lambda_{\max}$$
+
+其中 $\lambda_{\max}$ 是转移矩阵 $A$ 的谱半径。
+
+对于纯幂 $\varphi(z) = z^d$:
+$$h_{\text{top}}(\varphi) = \log d$$
+
+---
+
+### 2.3 划分细化
+
+#### 2.3.1 迭代细化过程
+
+**n阶细化**:
+$$\mathcal{P}^{(n)} = \bigvee_{k=0}^{n-1} \varphi^{-k}(\mathcal{P})$$
+
+每个半径为 $p^{-r}$ 的球细化为 $p$ 个半径为 $p^{-(r+1)}$ 的球。
+
+#### 2.3.2 收敛性
+
+**定理** (划分细化收敛).  
+随着 $n \to \infty$，划分 $\mathcal{P}^{(n)}$ 满足：
+1. 直径 $\to 0$
+2. 生成Borel $\sigma$-代数
+3. 熵收敛: $h_\mu(\mathcal{P}^{(n)}) \to h_\mu(\varphi)$
+
+#### 2.3.3 极限行为
+
+细化划分的极限对应于**Berkovich Julia集**的几何结构：
+$$\lim_{n \to \infty} \mathcal{P}^{(n)} = \text{代数曲线的Berkovich解析化}$$
+
+---
+
+### 2.4 数值实现
+
+#### 2.4.1 具体多项式的划分
+
+```python
+# 示例：z^2 (p=2) 的Markov划分
+partition = MarkovPartition(poly)
+# 初始划分: 2个半径为1/2的球
+# B(0, 1/2) 和 B(1, 1/2)
+
+# 细化一层: 4个半径为1/4的球
+# B(0, 1/4), B(2, 1/4), B(1, 1/4), B(3, 1/4)
+```
+
+#### 2.4.2 可视化
+
+划分可视化使用树状图表示p-adic球的层次结构：
+- 节点：p-adic球的中心
+- 边：细化关系
+- 深度：半径指数
+
+#### 2.4.3 验证
+
+验证Markov性质：检查每个划分元素的像是否完整覆盖其他划分元素。
+
+---
+
+## 步骤3：变分原理证明（6周）
+
+### 3.1 Gibbs测度存在性
+
+#### 3.1.1 通过RPF算子
+
+**RPF算子**在符号空间上的作用：
+$$(\mathcal{L}_s f)(\mathbf{x}) = \sum_{\mathbf{y}: \sigma(\mathbf{y}) = \mathbf{x}} e^{-s \log|\varphi'(\pi(\mathbf{y}))|_p} f(\mathbf{y})$$
+
+**Gibbs测度构造** (`gibbs_step3_variational.py`):
+
+```python
+def construct_measure(self, x0: int, n: int) -> DiscreteMeasure:
+    """构造n阶Gibbs测度逼近"""
+    preimages = self.compute_preimages(x0, n)
+    weights = [np.exp(self.birkhoff_sum(y, n)) for y in preimages]
+    return DiscreteMeasure(points, weights)
+```
+
+#### 3.1.2 主特征值性质
+
+**猜想验证**: RPF算子 $\mathcal{L}_s$ 在 $C^\alpha(\Sigma_A^+)$ 上满足：
+1. 谱半径 $\rho(\mathcal{L}_s) = e^{P(-s\log|\varphi'|)} > 0$
+2. 主特征值 $\lambda = \rho$ 是简单的、孤立的
+3. 正特征函数 $h > 0$ 存在且唯一
+
+#### 3.1.3 特征测度构造
+
+**Gibbs测度**:
+$$\mu_s = h \cdot \nu$$
+其中 $h$ 是主特征函数，$\nu$ 是主特征测度（满足 $\mathcal{L}_s^* \nu = \lambda \nu$）。
+
+---
+
+### 3.2 唯一性证明
+
+#### 3.2.1 准紧性论证
+
+**定义** (准紧性).  
+算子 $\mathcal{L}$ 是准紧的如果：
+$$\|\mathcal{L}^n\|_{\text{ess}} \leq C \theta^n \lambda^n, \quad \theta < 1$$
+
+**引理**: RPF算子在适当选择的函数空间上是准紧的。
+
+#### 3.2.2 谱隙
+
+**谱隙**定义为：
+$$\text{gap} = \lambda_1 - |\lambda_2|$$
+其中 $\lambda_1$ 是主特征值，$\lambda_2$ 是次大特征值。
+
+谱隙保证指数收敛：
+$$\|\lambda^{-n}\mathcal{L}^n f - (\int f \, d\nu) h\| \leq C \theta^n$$
+
+#### 3.2.3 遍历性
+
+**定理** (唯一性).  
+如果 $(\mathcal{J}(\varphi), \varphi, \mu)$ 是遍历的，则Gibbs测度唯一。
+
+*证明思路*:
+1. 假设两个Gibbs测度 $\mu_1, \mu_2$
+2. 证明它们是等价的（相互绝对连续）
+3. 由遍历性，$\mu_1 = \mu_2$
+
+---
+
+### 3.3 变分特征
+
+#### 3.3.1 压力作为上确界
+
+**变分原理**:
+$$P(\phi) = \sup_{\mu \in \mathcal{M}_\varphi} \left\{ h_\mu(\varphi) + \int \phi \, d\mu \right\}$$
+
+对于势函数 $\phi = -s \log|\varphi'|_p$:
+
+```python
+def verify_variational_principle(self, s: float) -> Dict:
+    pressure = self.compute_pressure_via_partition(s)
+    functional = self.compute_measure_functional(measure, s)
+    return {
+        'pressure': pressure,
+        'variational_functional': functional,
+        'verified': abs(pressure - functional) < tolerance
+    }
+```
+
+#### 3.3.2 达到上确界的条件
+
+**平衡态** $\mu_\phi$ 满足：
+1. 达到上确界
+2. 是Gibbs测度
+3. 是遍历的
+
+**等价条件**:
+$$h_{\mu_\phi}(\varphi) + \int \phi \, d\mu_\phi = P(\phi) \quad \Leftrightarrow \quad \mu_\phi \text{ 是Gibbs测度}$$
+
+#### 3.3.3 与熵的关系
+
+**熵-压力关系**:
+$$h_{\text{top}}(\varphi) = \sup_\mu h_\mu(\varphi) = P(0)$$
+
+对于度为 $d$ 的多项式：
+$$h_{\text{top}}(\varphi) = \log d$$
+
+---
+
+### 3.4 数值验证
+
+#### 3.4.1 对测试多项式验证
+
+测试案例 (`gibbs_step3_variational.py`):
+- $z^2$ (p=2,3): 基准情形
+- $z^2 + p$: 小扰动
+- $z^3$: 高次幂
+
+#### 3.4.2 测度计算
+
+迭代构造直到收敛：
+$$\mu_n = \frac{1}{Z_n} \sum_{y \in \varphi^{-n}(x_0)} e^{S_n \phi(y)} \delta_y \xrightarrow{w^*} \mu_\phi$$
+
+#### 3.4.3 性质检验
+
+- Gibbs不等式验证
+- 熵的收敛性
+- 变分等式验证
+- 唯一性检验（不同初始条件）
+
+---
+
+## 步骤4：综合证明（3周）
+
+### 4.1 一般多项式覆盖
+
+#### 4.1.1 从特殊到一般的推广
+
+**推广策略**:
+
+```
+纯幂情形 (z^d)
+      ↓ 扰动论证
+一般二次多项式
+      ↓ 归纳/变形
+一般多项式
+```
+
+**关键引理**: 对于足够接近 $z^d$ 的多项式，动力学行为保持相似，Gibbs测度存在性得以保持。
+
+#### 4.1.2 特殊情况处理
+
+**特殊情况**:
+1. **有素好的约化**: 使用Berkovich约化理论
+2. **超椭圆情形**: Julia集可能有空洞
+3. **具有临界点循环**: 需要精细分析
+
+---
+
+### 4.2 Bowen公式证明
+
+#### 4.2.1 dim_H = s* 的严格证明
+
+**Bowen公式**:
+$$\dim_H(\mathcal{J}(\varphi)) = s^* \quad \text{其中} \quad P(-s^* \log|\varphi'|_p) = 0$$
+
+**证明结构** (`gibbs_step4_integration.py`):
+
+```python
+class BowenFormulaVerifier:
+    def verify_bowen_formula(self) -> Dict:
+        # 找到压力零点
+        s_root = find_root(lambda s: self.compute_pressure(s))
+        # 与数值计算的维数比较
+        return {
+            'delta_numerical': s_root,
+            'matches_theory': error < tolerance
+        }
+```
+
+#### 4.2.2 上下界
+
+**下界** ($\dim_H \geq s^*$):
+- 构造在维数 $s^*$ 下有限的测度
+- 使用质量分布原理
+
+**上界** ($\dim_H \leq s^*$):
+- 构造有效的覆盖
+- 使用压力函数的变分刻画
+
+---
+
+### 4.3 定理陈述
+
+#### 4.3.1 完整定理
+
+**定理** (Gibbs测度存在唯一性).  
+设 $\varphi \in \mathbb{Q}_p[z]$ 是扩张的p-adic多项式，$\phi: \mathcal{J}(\varphi) \to \mathbb{R}$ 是Hölder连续势函数。则：
+
+1. **存在性**: 存在唯一（至多规范化）的Gibbs测度 $\mu_\phi$
+2. **变分刻画**: $\mu_\phi$ 是变分原理的唯一最大化者
+3. **遍历性质**: $(\mathcal{J}(\varphi), \varphi, \mu_\phi)$ 是混合的
+4. **指数衰减**: 关联函数以指数速度衰减
+
+#### 4.3.2 条件
+
+**定理条件**:
+- $\varphi$ 在Julia集上是扩张的
+- $\phi$ 是Hölder连续的
+- 临界点的轨道不累积于Julia集（好约化）
+
+#### 4.3.3 例子
+
+**例1**: $\varphi(z) = z^d$ (p∤d)
+- Gibbs测度显式给出
+- Hausdorff维数: $\delta = \frac{\log d}{\log p}$
+
+**例2**: $\varphi(z) = z^2 + p$ (p=2)
+- 数值验证Bowen公式
+- 维数略小于 $\frac{\log 2}{\log p}$
+
+---
+
+### 4.4 文档化
+
+#### 4.4.1 证明撰写
+
+**文档结构**:
+1. 引言与主要结果
+2. p-adic动力系统背景
+3. Markov划分构造
+4. RPF算子理论
+5. Gibbs测度存在性证明
+6. 唯一性证明
+7. Bowen公式证明
+8. 应用与例子
+
+#### 4.4.2 发表准备
+
+**目标期刊**: 
+- Annals of Mathematics
+- Inventiones Mathematicae
+- Journal of the AMS
+
+**准备材料**:
+- 完整证明文档
+- 数值验证代码和数据
+- 辅助技术引理
+- 专家推荐信
+
+---
 
 ---
 
