@@ -349,24 +349,74 @@ See [DATA_PROVENANCE.md](DATA_PROVENANCE.md) for details.
 
 ## 🙏 Acknowledgments
 
-### Research Origin
+### Research Origin and Evolution
 
-This work represents the culmination of intensive research:
+This repository represents the **unified framework** developed through an iterative research process documented in Git history:
 
-- **May 2025 - Jan 2026**: Private exploration (discarded)
-- **Feb 7, 2026**: Clean-slate rigorous reconstruction began
-- **Feb 11, 2026**: T3 replacement research completed (~12 hours)
+#### Timeline (Based on Git History)
 
-### People
+**Pre-Open Source Development (May 2025 - Jan 2026)**
+- **2025-05-10**: Research initiated in private repository (`FiberGravity-DynamicCoupling`)
+  - Initial focus: Fiber gravity and dynamic coupling theories
+  - Continuous development through M-series and P-series documents
+  - Evolution from physics-focused to unified dimension theory
 
-- **Wang Bin (王斌)**: Research vision, conceptual direction, quality control
-- **Kimi AI Agent**: Mathematical derivations, code implementation, documentation
+**Phase 1: Open Source Preparation (Jan 27 - Feb 3, 2026)**
+- **2026-01-27**: Created foundational GitHub repositories:
+  - Fundamental-Mathematics, Physical-Applications, Advanced-Theoretical-Framework
+  - Master-Outline (总纲)
+- **2026-02-03**: Extended framework repositories:
+  - Advanced-Physics-Framework, Computational-Framework, Experimental-Verification
+  - Theory-Documentation
+
+**Phase 2: Unified Framework Launch (Feb 7, 2026)**
+- **2026-02-07**: Fixed-4D-Topology v1.0.0 initial release
+  - Migration and consolidation of research from private repository
+  - Core framework: T1-T10 dynamic spectral dimension theory
+  - A~G directions integration (spectral zeta, dimension flow, modular forms, etc.)
+
+**Phase 3: Extended Research (Feb 7-8, 2026)**
+- **H, I, J Directions**: Quantum dimension, network geometry (2.1M nodes), random fractals
+- **Dimensionics-Physics**: 12-theorem axiomatic framework
+
+**Phase 4: K Direction - Machine Learning (Feb 9, 2026)**
+- **2026-02-09**: Launch of K direction (neural network effective dimension)
+
+**Phase 5: T3 Replacement Research (Feb 11-12, 2026)**
+- **2026-02-11 18:26**: Phase 1-4 research initiation (L4→L1 strict proofs)
+- **2026-02-12 06:20**: Completion of 83-page Annals-standard paper (~12 hours)
+
+**Research Evolution**: The project evolved from an initial private research repository (May 2025) through distributed specialized GitHub repositories (Jan 2026) into the current centralized Fixed-4D-Topology framework (Feb 2026) for integrated development.
 
 ### Technical Acknowledgments
 
-- **Inspiration**: Mandelbrot (fractals), Connes (noncommutative geometry), Grothendieck (algebraic geometry), Jonsson-Wallin (Sobolev spaces)
-- **Tools**: NumPy, SciPy, SymPy, PyTorch, LaTeX
-- **Open Source Community**: Tools and libraries
+- Inspired by the works of Mandelbrot, Connes, Grothendieck, and Jonsson-Wallin
+- Built with NumPy, SciPy, SymPy, PyTorch
+- Human-AI collaborative methodology employing Kimi 2.5 Agent for 
+  mathematical derivation, code implementation, and documentation
+- Independent research initiative without external funding
+
+### Research Methodology Note
+
+All content in this repository was generated through **human-AI collaboration**.
+
+**AI Tools Used (Chronological)**:
+- **Phase 1 (May 2025 - Jan 2026)**: DeepSeek, Trae AI, 知乎AI, KIMI
+  - Used during initial research in private repository
+  - Mathematical derivations, theorem proofs, documentation
+- **Phase 2 (Jan 2026 - Present)**: Kimi 2.5 Agent (Moonshot AI)
+  - Primary tool for Fixed-4D-Topology framework development
+  - Software development, LaTeX production, integration
+
+**Human-AI Collaboration Model**:
+- **Wang Bin (王斌)**: Conceptual direction, research vision, hypothesis generation,
+  high-level supervision, final decision making
+- **AI Assistants**: Mathematical derivations, theorem proofs, code implementation,
+  documentation writing, visualization
+
+The human researcher acknowledges **limited expertise** in advanced mathematical
+physics and cannot provide peer-review-level verification of all technical claims.
+Professional peer review is invited and needed for rigorous validation.
 
 ### Research Integrity
 
