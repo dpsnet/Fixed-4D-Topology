@@ -1,0 +1,108 @@
+{
+  "computation_date": "2026-02-11",
+  "task_id": "P-012",
+  "test_cases": [
+    {
+      "p": 2,
+      "d": 2,
+      "map": "f(z) = z^2",
+      "julia_points": 800,
+      "avg_iterations": 30.0,
+      "dimension": {
+        "pressure_dimension": 1.0
+      }
+    },
+    {
+      "p": 2,
+      "d": 4,
+      "map": "f(z) = z^4",
+      "julia_points": 800,
+      "avg_iterations": 30.0,
+      "dimension": {
+        "pressure_dimension": 1.0
+      }
+    },
+    {
+      "p": 3,
+      "d": 3,
+      "map": "f(z) = z^3",
+      "julia_points": 800,
+      "avg_iterations": 30.0,
+      "dimension": {
+        "pressure_dimension": 1.0
+      }
+    },
+    {
+      "p": 3,
+      "d": 9,
+      "map": "f(z) = z^9",
+      "julia_points": 800,
+      "avg_iterations": 30.0,
+      "dimension": {
+        "pressure_dimension": 1.0
+      }
+    },
+    {
+      "p": 5,
+      "d": 5,
+      "map": "f(z) = z^5",
+      "julia_points": 800,
+      "avg_iterations": 30.0,
+      "dimension": {
+        "pressure_dimension": 1.0
+      }
+    }
+  ],
+  "bowen_verifications": [
+    {
+      "p": 2,
+      "d": 2,
+      "bowen_formula_holds": true,
+      "bowen_dimension": 1.0,
+      "geometric_dimension": 1.0,
+      "difference": 0.0,
+      "is_pure_p_power": true,
+      "vp_d": 1
+    },
+    {
+      "p": 2,
+      "d": 4,
+      "bowen_formula_holds": true,
+      "bowen_dimension": 1.0,
+      "geometric_dimension": 1.0,
+      "difference": 0.0,
+      "is_pure_p_power": true,
+      "vp_d": 2
+    },
+    {
+      "p": 3,
+      "d": 3,
+      "bowen_formula_holds": true,
+      "bowen_dimension": 1.0,
+      "geometric_dimension": 1.0,
+      "difference": 0.0,
+      "is_pure_p_power": true,
+      "vp_d": 1
+    },
+    {
+      "p": 3,
+      "d": 9,
+      "bowen_formula_holds": true,
+      "bowen_dimension": 1.0,
+      "geometric_dimension": 1.0,
+      "difference": 0.0,
+      "is_pure_p_power": true,
+      "vp_d": 2
+    },
+    {
+      "p": 5,
+      "d": 5,
+      "bowen_formula_holds": true,
+      "bowen_dimension": 1.0,
+      "geometric_dimension": 1.0,
+      "difference": 0.0,
+      "is_pure_p_power": true,
+      "vp_d": 1
+    }
+  ]
+}
