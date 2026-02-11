@@ -1,0 +1,526 @@
+meta:
+  version: '2.0'
+  last_updated: '2026-02-11T11:47:42.523077'
+  total_tasks: 18
+  phase: 2
+  phase_name: '严格性提升阶段'
+  phase_goal: '将两个核心猜想从L4提升到L2/L1'
+global:
+  direction_weights:
+    kleinian: 40
+    padic: 35
+    maass: 25
+    shared: 30
+  execution_mode: adaptive
+  max_parallel_tasks: 5
+  rigor_target:
+    conjecture_1:
+      current_level: L4
+      target_level: L1
+      current_phase: L4_to_L3
+    conjecture_2:
+      current_level: L4
+      target_level: L1
+      current_phase: L4_to_L3
+tasks:
+# ==================== 猜想1: 函子性维数公式 - L4→L3 ====================
+- id: P2-C1-T4
+  direction: shared
+  phase: 2
+  title: '分形Hecke构造框架'
+  type: research
+  priority: 95
+  status: in_progress
+  dependencies:
+  - K-103
+  - P-101
+  blocks:
+  - P2-C1-T5
+  - P2-C1-T6
+  deliverables:
+  - notes/shared/fractal_hecke_framework.md
+  - 广义Hecke算子定义
+  - Patterson-Sullivan测度应用
+  checkpoints:
+  - 定义分形极限集上的Hecke算子
+  - 证明自伴性
+  - 建立谱理论框架
+  estimated_effort: 10w
+  actual_effort: ''
+  milestone: true
+  created: '2026-02-11T11:47:42.523077'
+  completed: ''
+  rigor_level: L3
+  conjecture: 1
+
+- id: P2-C1-T5
+  direction: kleinian
+  phase: 2
+  title: '非算术Kleinian群初步分析'
+  type: compute
+  priority: 85
+  status: pending
+  dependencies:
+  - P2-C1-T4
+  blocks: []
+  deliverables:
+  - data/non_arithmetic_kleinian_samples.json
+  - 2-3个具体群的维数计算
+  - 维数公式适用性检验
+  checkpoints:
+  - 选择非算术群样本
+  - 计算极限集维数
+  - 检验公式预测
+  estimated_effort: 6w
+  actual_effort: ''
+  milestone: false
+  created: '2026-02-11T11:47:42.523077'
+  completed: ''
+  rigor_level: L3
+  conjecture: 1
+
+# ==================== 猜想1: L3→L2 ====================
+- id: P2-C1-T6
+  direction: kleinian
+  phase: 2
+  title: '关键例子完整计算 - Bianchi群系列'
+  type: compute
+  priority: 90
+  status: pending
+  dependencies:
+  - P2-C1-T4
+  - K-101
+  blocks:
+  - P2-C1-T7
+  deliverables:
+  - data/bianchi_dimension_detailed.json
+  - codes/kleinian/bianchi_high_precision.py
+  - 维数-L函数对照表
+  checkpoints:
+  - 计算Γ_d (d=1,2,3,7,11)的维数
+  - 计算对应L-函数值
+  - 验证公式一致性
+  estimated_effort: 8w
+  actual_effort: ''
+  milestone: true
+  created: '2026-02-11T11:47:42.523077'
+  completed: ''
+  rigor_level: L2
+  conjecture: 1
+
+- id: P2-C1-T7
+  direction: kleinian
+  phase: 2
+  title: '关键例子完整计算 - 四元数群系列'
+  type: compute
+  priority: 88
+  status: pending
+  dependencies:
+  - P2-C1-T6
+  - K-012
+  blocks:
+  - P2-C1-T8
+  deliverables:
+  - data/quaternion_dimension_detailed.json
+  - 判别式D=6,10,14,15,21的计算结果
+  - JL对应双向验证
+  checkpoints:
+  - 计算各判别式的极限集维数
+  - 通过JL对应计算GL₂侧
+  - 比较验证结果
+  estimated_effort: 10w
+  actual_effort: ''
+  milestone: true
+  created: '2026-02-11T11:47:42.523077'
+  completed: ''
+  rigor_level: L2
+  conjecture: 1
+
+- id: P2-C1-T8
+  direction: kleinian
+  phase: 2
+  title: '误差项控制框架'
+  type: prove
+  priority: 85
+  status: pending
+  dependencies:
+  - P2-C1-T7
+  blocks:
+  - P2-C1-T9
+  deliverables:
+  - notes/shared/error_control_framework.md
+  - L-函数对数导数误差分析
+  - Hausdorff维数计算误差界
+  - 综合误差传播公式
+  checkpoints:
+  - L'/L截断误差估计
+  - 盒计数法收敛速度分析
+  - 统计显著性检验框架
+  estimated_effort: 16w
+  actual_effort: ''
+  milestone: true
+  created: '2026-02-11T11:47:42.523077'
+  completed: ''
+  rigor_level: L2
+  conjecture: 1
+
+- id: P2-C1-T9
+  direction: shared
+  phase: 2
+  title: '数值验证扩展到50+群'
+  type: compute
+  priority: 80
+  status: pending
+  dependencies:
+  - P2-C1-T8
+  blocks:
+  - P2-C1-T10
+  deliverables:
+  - data/large_scale_validation_50groups.h5
+  - codes/shared/batch_computation_pipeline.py
+  - 统计分析报告
+  checkpoints:
+  - 建立群数据库(50+)
+  - 批量计算完成
+  - 假设检验(p<0.01)
+  estimated_effort: 16w
+  actual_effort: ''
+  milestone: true
+  created: '2026-02-11T11:47:42.523077'
+  completed: ''
+  rigor_level: L2
+  conjecture: 1
+
+# ==================== 猜想1: L2→L1 ====================
+- id: P2-C1-T10
+  direction: shared
+  phase: 2
+  title: '严格渐近证明'
+  type: prove
+  priority: 92
+  status: pending
+  dependencies:
+  - P2-C1-T9
+  blocks:
+  - P2-C1-T11
+  deliverables:
+  - notes/shared/asymptotic_proof_strict.md
+  - 余项定量控制
+  - JL对应维数不变性证明
+  checkpoints:
+  - 迹公式渐近严格化
+  - JL对应与维数关系证明
+  - 例外情况处理
+  estimated_effort: 40w
+  actual_effort: ''
+  milestone: true
+  created: '2026-02-11T11:47:42.523077'
+  completed: ''
+  rigor_level: L1
+  conjecture: 1
+
+- id: P2-C1-T11
+  direction: shared
+  phase: 2
+  title: '出版级论文准备'
+  type: write
+  priority: 88
+  status: pending
+  dependencies:
+  - P2-C1-T10
+  blocks: []
+  deliverables:
+  - paper/functorial_dimension_formula.tex
+  - 补充材料(数据、代码)
+  - 审稿回应准备
+  checkpoints:
+  - 论文撰写完成
+  - 内部审查通过
+  - 提交顶级期刊
+  estimated_effort: 12w
+  actual_effort: ''
+  milestone: true
+  created: '2026-02-11T11:47:42.523077'
+  completed: ''
+  rigor_level: L1
+  conjecture: 1
+
+# ==================== 猜想2: 统一压力原理 - L4→L3 ====================
+- id: P2-C2-T4
+  direction: maass
+  phase: 2
+  title: 'Maass压力定义框架'
+  type: research
+  priority: 93
+  status: in_progress
+  dependencies:
+  - M-101
+  - P-101
+  blocks:
+  - P2-C2-T5
+  deliverables:
+  - notes/maass/maass_pressure_framework.md
+  - 谱压力抽象定义
+  - 符号动力学框架
+  checkpoints:
+  - 从谱数据定义配分函数
+  - 证明压力函数极限存在性
+  - 与量子混沌的联系
+  estimated_effort: 20w
+  actual_effort: ''
+  milestone: true
+  created: '2026-02-11T11:47:42.523077'
+  completed: ''
+  rigor_level: L3
+  conjecture: 2
+
+# ==================== 猜想2: L3→L2 ====================
+- id: P2-C2-T5
+  direction: padic
+  phase: 2
+  title: '关键多项式严格证明'
+  type: prove
+  priority: 90
+  status: pending
+  dependencies:
+  - P2-C2-T4
+  - P-012
+  blocks:
+  - P2-C2-T6
+  deliverables:
+  - notes/padic/key_polynomials_strict_proof.md
+  - 纯幂次情形严格证明
+  - 单项式扰动分析
+  - 超bolic性条件验证
+  checkpoints:
+  - f(z)=z^d的Bowen公式证明
+  - f(z)=z^d+c的小c分析
+  - 一般多项式条件证明
+  estimated_effort: 26w
+  actual_effort: ''
+  milestone: true
+  created: '2026-02-11T11:47:42.523077'
+  completed: ''
+  rigor_level: L2
+  conjecture: 2
+
+- id: P2-C2-T6
+  direction: shared
+  phase: 2
+  title: '数值验证扩展到100+例子'
+  type: compute
+  priority: 85
+  status: pending
+  dependencies:
+  - P2-C2-T5
+  blocks:
+  - P2-C2-T7
+  deliverables:
+  - data/unified_pressure_validation_100examples.h5
+  - codes/shared/unified_pressure_pipeline.py
+  - 三方向统一验证报告
+  checkpoints:
+  - p-adic多项式50+个
+  - Kleinian群30+个
+  - Maass形式20+个
+  - 统计检验
+  estimated_effort: 20w
+  actual_effort: ''
+  milestone: true
+  created: '2026-02-11T11:47:42.523077'
+  completed: ''
+  rigor_level: L2
+  conjecture: 2
+
+# ==================== 猜想2: L2→L1 ====================
+- id: P2-C2-T7
+  direction: padic
+  phase: 2
+  title: '一般多项式Bowen公式证明'
+  type: prove
+  priority: 90
+  status: pending
+  dependencies:
+  - P2-C2-T6
+  blocks:
+  - P2-C2-T8
+  deliverables:
+  - notes/padic/general_bowen_formula_proof.md
+  - 压力函数存在性证明
+  - Bowen公式一般证明
+  - Gibbs测度理论
+  checkpoints:
+  - 压力函数良定义性
+  - 变分原理严格证明
+  - Bowen公式P(dim)=0证明
+  estimated_effort: 32w
+  actual_effort: ''
+  milestone: true
+  created: '2026-02-11T11:47:42.523077'
+  completed: ''
+  rigor_level: L1
+  conjecture: 2
+
+- id: P2-C2-T8
+  direction: shared
+  phase: 2
+  title: '统一性严格证明'
+  type: prove
+  priority: 88
+  status: pending
+  dependencies:
+  - P2-C2-T7
+  - P2-C1-T10
+  blocks: []
+  deliverables:
+  - notes/shared/unified_pressure_strict_proof.md
+  - Langlands函子性与压力函数联系
+  - 抽象热力学公理
+  - 统一性定理
+  checkpoints:
+  - p-adic插值理论应用
+  - 三方向压力函数对比
+  - 统一性定理证明
+  estimated_effort: 28w
+  actual_effort: ''
+  milestone: true
+  created: '2026-02-11T11:47:42.523077'
+  completed: ''
+  rigor_level: L1
+  conjecture: 2
+
+# ==================== 支持性任务 ====================
+- id: P2-SUP-001
+  direction: shared
+  phase: 2
+  title: '自动化计算流程建设'
+  type: setup
+  priority: 75
+  status: pending
+  dependencies: []
+  blocks:
+  - P2-C1-T9
+  - P2-C2-T6
+  deliverables:
+  - codes/shared/computation_pipeline.py
+  - 群数据库schema
+  - 自动化验证脚本
+  checkpoints:
+  - 数据库设计完成
+  - 核心计算流程实现
+  - 测试通过
+  estimated_effort: 8w
+  actual_effort: ''
+  milestone: false
+  created: '2026-02-11T11:47:42.523077'
+  completed: ''
+  rigor_level: L2
+  conjecture: null
+
+- id: P2-SUP-002
+  direction: shared
+  phase: 2
+  title: '文档和知识管理系统'
+  type: write
+  priority: 60
+  status: active
+  dependencies: []
+  blocks: []
+  deliverables:
+  - docs/research/notes/shared/rigor_escalation_execution_plan.md
+  - 任务追踪系统
+  - 版本控制规范
+  checkpoints:
+  - 执行计划文档
+  - 任务YAML更新
+  - 追踪器实现
+  estimated_effort: 2w
+  actual_effort: in_progress
+  milestone: false
+  created: '2026-02-11T11:47:42.523077'
+  completed: ''
+  rigor_level: null
+  conjecture: null
+
+active_tasks:
+- P2-C1-T4
+- P2-C2-T4
+- P2-SUP-002
+
+completed_tasks: []
+
+blocked_tasks: []
+
+milestones:
+- id: M4
+  name: '分形Hecke构造'
+  date: '2026-04-15'
+  tasks:
+  - P2-C1-T4
+  - P2-C1-T5
+  status: in_progress
+  
+- id: M4-prime
+  name: 'Maass压力框架'
+  date: '2026-05-31'
+  tasks:
+  - P2-C2-T4
+  status: in_progress
+  
+- id: M5
+  name: '猜想1关键例子'
+  date: '2026-08-31'
+  tasks:
+  - P2-C1-T6
+  - P2-C1-T7
+  status: pending
+  
+- id: M5-prime
+  name: '猜想2关键多项式'
+  date: '2026-11-30'
+  tasks:
+  - P2-C2-T5
+  status: pending
+  
+- id: M6
+  name: '猜想1误差控制'
+  date: '2027-01-31'
+  tasks:
+  - P2-C1-T8
+  - P2-C1-T9
+  status: pending
+  
+- id: M6-prime
+  name: '猜想2大规模验证'
+  date: '2027-03-31'
+  tasks:
+  - P2-C2-T6
+  status: pending
+  
+- id: M7
+  name: '猜想1严格证明'
+  date: '2027-08-31'
+  tasks:
+  - P2-C1-T10
+  status: pending
+  
+- id: M7-prime
+  name: '猜想2Bowen公式'
+  date: '2027-09-30'
+  tasks:
+  - P2-C2-T7
+  status: pending
+  
+- id: M8
+  name: '猜想1论文提交'
+  date: '2027-11-30'
+  tasks:
+  - P2-C1-T11
+  status: pending
+  
+- id: M8-prime
+  name: '猜想2统一性证明'
+  date: '2028-01-31'
+  tasks:
+  - P2-C2-T8
+  status: pending
