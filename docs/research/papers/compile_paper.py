@@ -34,6 +34,9 @@ SECTIONS = [
     "07_CONCLUSION.md",
 ]
 
+ABSTRACT_FILE = "00_ABSTRACT.md"
+APPENDIX_FILE = "09_APPENDICES.md"
+
 METADATA = {
     "title": "Fractal Spectral Asymptotics and p-adic Thermodynamic Formalism: "
              "A Unified Framework for Kleinian Groups and Non-Archimedean Dynamics",
@@ -163,21 +166,36 @@ class PaperCompiler:
             "",
         ])
         
-        # Abstract placeholder
-        lines.extend([
-            "## Abstract",
-            "",
-            "We establish a unified framework connecting fractal spectral theory with p-adic thermodynamic "
-            "formalism. Our main results include: (1) a fractal Weyl law for Kleinian groups relating "
-            "Laplacian eigenvalue asymptotics to the Hausdorff dimension of limit sets, and (2) a p-adic "
-            "Bowen formula characterizing the dimension of p-adic Julia sets via topological pressure. "
-            "These theorems reveal deep structural parallels between Archimedean and non-Archimedean "
-            "dynamical systems. We provide rigorous proofs, numerical verification for over 1,000 test "
-            "cases, and applications to arithmetic geometry and quantum chaos.",
-            "",
-            "---",
-            "",
-        ])
+        # Abstract
+        abstract_path = SECTIONS_DIR / ABSTRACT_FILE
+        if abstract_path.exists():
+            with open(abstract_path, 'r', encoding='utf-8') as f:
+                abstract_content = f.read()
+            # Remove the first h1 heading
+            abstract_content = re.sub(r'^#\s+.*\n+', '', abstract_content)
+            lines.extend([
+                "## Abstract",
+                "",
+                abstract_content.strip(),
+                "",
+                "---",
+                "",
+            ])
+        else:
+            lines.extend([
+                "## Abstract",
+                "",
+                "We establish a unified framework connecting fractal spectral theory with p-adic thermodynamic "
+                "formalism. Our main results include: (1) a fractal Weyl law for Kleinian groups relating "
+                "Laplacian eigenvalue asymptotics to the Hausdorff dimension of limit sets, and (2) a p-adic "
+                "Bowen formula characterizing the dimension of p-adic Julia sets via topological pressure. "
+                "These theorems reveal deep structural parallels between Archimedean and non-Archimedean "
+                "dynamical systems. We provide rigorous proofs, numerical verification for over 1,000 test "
+                "cases, and applications to arithmetic geometry and quantum chaos.",
+                "",
+                "---",
+                "",
+            ])
         
         # Sections
         for section_file in SECTIONS:
@@ -187,6 +205,14 @@ class PaperCompiler:
                 content = re.sub(r'^#\s+.*\n+', '', content)
                 lines.append(content)
                 lines.extend(["", "---", ""])
+        
+        # Appendix
+        appendix_path = SECTIONS_DIR / APPENDIX_FILE
+        if appendix_path.exists():
+            with open(appendix_path, 'r', encoding='utf-8') as f:
+                appendix_content = f.read()
+            lines.append(appendix_content)
+            lines.extend(["", "---", ""])
         
         # References section placeholder
         lines.extend([

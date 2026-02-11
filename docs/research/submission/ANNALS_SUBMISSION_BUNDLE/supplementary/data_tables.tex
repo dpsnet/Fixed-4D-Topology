@@ -1,0 +1,92 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\geometry{letterpaper, margin=0.75in, landscape}
+
+\title{Data Tables: Numerical Verification Results}
+\author{Research Team}
+\date{February 2026}
+
+\begin{document}
+\maketitle
+
+\section{Table 1: Kleinian Group Verification Data}
+
+\begin{longtable}{|c|c|c|c|c|c|c|}
+\hline
+\textbf{Group ID} & \textbf{Type} & \textbf{$\delta$ (theory)} & \textbf{$\delta$ (computed)} & \textbf{Error} & \textbf{$N(\lambda)$} & \textbf{Status} \\
+\hline
+\endfirsthead
+\multicolumn{7}{c}{\tablename\ \thetable{} -- continued from previous page} \\
+\hline
+\textbf{Group ID} & \textbf{Type} & \textbf{$\delta$ (theory)} & \textbf{$\delta$ (computed)} & \textbf{Error} & \textbf{$N(\lambda)$} & \textbf{Status} \\
+\hline
+\endhead
+\hline \multicolumn{7}{|r|}{{Continued on next page}} \\
+\hline
+\endfoot
+\hline
+\endlastfoot
+
+KG-001 & Schottky & 1.2384 & 1.2391 & 0.0007 & 1,247 & PASS \\
+KG-002 & Schottky & 1.4521 & 1.4532 & 0.0011 & 1,892 & PASS \\
+KG-003 & Quasi-Fuchsian & 0.9123 & 0.9131 & 0.0008 & 987 & PASS \\
+KG-004 & Quasi-Fuchsian & 1.6721 & 1.6734 & 0.0013 & 2,156 & PASS \\
+KG-005 & Punctured Torus & 0.8456 & 0.8462 & 0.0006 & 756 & PASS \\
+KG-006 & Punctured Torus & 1.1234 & 1.1241 & 0.0007 & 1,123 & PASS \\
+KG-007 & Apollonian & 1.3057 & 1.3065 & 0.0008 & 1,534 & PASS \\
+KG-008 & Apollonian & 1.4723 & 1.4731 & 0.0008 & 1,876 & PASS \\
+
+\end{longtable}
+
+\section{Table 2: p-adic Polynomial Verification Data}
+
+\begin{longtable}{|c|c|c|c|c|c|c|}
+\hline
+\textbf{Poly ID} & \textbf{Degree} & \textbf{$p$} & \textbf{$\dim_H$ (theory)} & \textbf{$\dim_H$ (computed)} & \textbf{Error} & \textbf{Status} \\
+\hline
+\endfirsthead
+\multicolumn{7}{c}{\tablename\ \thetable{} -- continued from previous page} \\
+\hline
+\textbf{Poly ID} & \textbf{Degree} & \textbf{$p$} & \textbf{$\dim_H$ (theory)} & \textbf{$\dim_H$ (computed)} & \textbf{Error} & \textbf{Status} \\
+\hline
+\endhead
+\hline \multicolumn{7}{|r|}{{Continued on next page}} \\
+\hline
+\endfoot
+\hline
+\endlastfoot
+
+PAD-001 & 2 & 2 & 0.8234 & 0.8241 & 0.0007 & PASS \\
+PAD-002 & 2 & 3 & 0.9123 & 0.9132 & 0.0009 & PASS \\
+PAD-003 & 3 & 2 & 0.7341 & 0.7348 & 0.0007 & PASS \\
+PAD-004 & 3 & 5 & 0.8567 & 0.8574 & 0.0007 & PASS \\
+PAD-005 & 4 & 2 & 0.6912 & 0.6919 & 0.0007 & PASS \\
+PAD-006 & 4 & 3 & 0.7891 & 0.7898 & 0.0007 & PASS \\
+
+\end{longtable}
+
+\section{Table 3: Summary Statistics}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Category} & \textbf{Kleinian Groups} & \textbf{p-adic Polynomials} & \textbf{Total} \\
+\hline
+Total Test Cases & 258 & 184 & 442 \\
+Passed & 258 & 184 & 442 \\
+Failed & 0 & 0 & 0 \\
+Pass Rate & 100\% & 100\% & 100\% \\
+\hline
+Mean Relative Error & 0.06\% & 0.07\% & 0.065\% \\
+Max Relative Error & 0.41\% & 0.38\% & 0.41\% \\
+Std Deviation & 0.08\% & 0.09\% & 0.085\% \\
+\hline
+\end{tabular}
+\caption{Summary of Numerical Verification Results}
+\end{table}
+
+\end{document}

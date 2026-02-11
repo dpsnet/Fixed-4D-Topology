@@ -1,0 +1,211 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\usepackage{listings}
+\usepackage{xcolor}
+\geometry{letterpaper, margin=1in}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\title{Code Appendix\\\vspace{0.5em}\large Computational Verification Framework}
+\author{Research Team}
+\date{February 2026}
+
+\begin{document}
+\maketitle
+
+\section{Overview}
+
+This appendix provides key code snippets from our computational verification framework. The complete source code is available in our GitHub repository and as supplementary digital materials.
+
+\section{Fractal Dimension Computation}
+
+\begin{lstlisting}[language=Python, caption=Hausdorff Dimension via Transfer Operator]
+import numpy as np
+from scipy.sparse import csr_matrix
+from scipy.sparse.linalg import eigs
+
+def compute_hausdorff_dimension(Gamma, epsilon=1e-10, max_iter=1000):
+    """
+    Compute Hausdorff dimension of limit set using
+    transfer operator method.
+    
+    Parameters:
+    -----------
+    Gamma : KleinianGroup
+        The Kleinian group to analyze
+    epsilon : float
+        Convergence tolerance
+    max_iter : int
+        Maximum iterations
+    
+    Returns:
+    --------
+    delta : float
+        Computed Hausdorff dimension
+    """
+    # Generate Markov partition
+    partition = Gamma.generate_markov_partition()
+    
+    # Construct transfer operator
+    L = construct_transfer_operator(partition)
+    
+    # Power iteration to find leading eigenvalue
+    delta_prev = 1.0
+    for i in range(max_iter):
+        # Compute spectral radius
+        eigenvalues = eigs(L, k=1, which='LM', return_eigenvectors=False)
+        delta = np.real(eigenvalues[0])
+        
+        if abs(delta - delta_prev) < epsilon:
+            return delta
+        delta_prev = delta
+    
+    return delta
+
+def construct_transfer_operator(partition):
+    """Construct transfer operator matrix."""
+    n = len(partition.elements)
+    L = csr_matrix((n, n))
+    
+    for i, elem_i in enumerate(partition.elements):
+        for j, elem_j in enumerate(partition.elements):
+            weight = compute_transition_weight(elem_i, elem_j)
+            L[i, j] = weight
+    
+    return L
+\end{lstlisting}
+
+\section{p-adic Dynamics Verification}
+
+\begin{lstlisting}[language=Python, caption=p-adic Bowen Formula Verification]
+def verify_bowen_formula(phi, p, max_degree=20):
+    """
+    Verify the p-adic Bowen formula for a given rational map.
+    
+    Parameters:
+    -----------
+    phi : Callable
+        p-adic rational map
+    p : int
+        Prime number
+    max_degree : int
+        Maximum degree for polynomial approximation
+    
+    Returns:
+    --------
+    result : dict
+        Verification results including computed dimension
+    """
+    # Compute Julia set
+    J = compute_julia_set(phi, p)
+    
+    # Compute topological pressure
+    def pressure(s):
+        return compute_topological_pressure(phi, s, p)
+    
+    # Find zero of pressure function
+    from scipy.optimize import brentq
+    s_star = brentq(pressure, 0, 2)
+    
+    # Compute Hausdorff dimension directly
+    dim_hausdorff = compute_hausdorff_dimension(J)
+    
+    return {
+        'bowen_dimension': s_star,
+        'hausdorff_dimension': dim_hausdorff,
+        'error': abs(s_star - dim_hausdorff),
+        'verified': abs(s_star - dim_hausdorff) < 1e-6
+    }
+\end{lstlisting}
+
+\section{Statistical Validation}
+
+\begin{lstlisting}[language=Python, caption=Bootstrap Statistical Analysis]
+def bootstrap_analysis(data, n_bootstrap=10000, confidence=0.95):
+    """
+    Perform bootstrap analysis for error estimation.
+    
+    Parameters:
+    -----------
+    data : array-like
+        Input data
+    n_bootstrap : int
+        Number of bootstrap samples
+    confidence : float
+        Confidence level
+    
+    Returns:
+    --------
+    stats : dict
+        Bootstrap statistics
+    """
+    n = len(data)
+    bootstrap_means = []
+    
+    for _ in range(n_bootstrap):
+        sample = np.random.choice(data, size=n, replace=True)
+        bootstrap_means.append(np.mean(sample))
+    
+    bootstrap_means = np.array(bootstrap_means)
+    
+    alpha = 1 - confidence
+    ci_lower = np.percentile(bootstrap_means, 100*alpha/2)
+    ci_upper = np.percentile(bootstrap_means, 100*(1-alpha/2))
+    
+    return {
+        'mean': np.mean(data),
+        'std': np.std(data),
+        'ci_lower': ci_lower,
+        'ci_upper': ci_upper,
+        'bootstrap_std': np.std(bootstrap_means)
+    }
+\end{lstlisting}
+
+\section{Repository Structure}
+
+The complete code repository is organized as follows:
+
+\begin{verbatim}
+codes/
+├── kleinian/
+│   ├── dimension_computation.py
+│   ├── trace_formula_verification.py
+│   └── visualization/
+├── padic/
+│   ├── bowen_formula.py
+│   ├── thermodynamic_formalism.py
+│   └── julia_set_computation.py
+├── maass/
+│   ├── eigenvalue_computation.py
+│   └── spectral_analysis.py
+└── shared/
+    ├── bootstrap_analysis.py
+    ├── cross_validation.py
+    └── statistical_tests.py
+\end{verbatim}
+
+\end{document}
