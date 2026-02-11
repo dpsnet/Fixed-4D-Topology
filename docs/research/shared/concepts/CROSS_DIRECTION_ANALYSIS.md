@@ -305,6 +305,9 @@ $$h_{\mu_{BM}}(g_1) = h_{\text{top}}(g_1) = \delta = \dim_H(\Lambda)$$
 | 遍历性 | $g_t$ 对 $\mu_{BM}$ 是遍历的 | Bowen, Margulis |
 | 唯一性 | 唯一达到最大熵的测度 | Bowen |
 | 局部乘积结构 | 稳定/不稳定流形上的分解 | Margulis |
+| 熵-维数关系 | $h_{\mu_{BM}} = \dim_H(\Lambda)$ | Sullivan (1984) |
+
+**详细文档**: [`/docs/research/notes/kleinian/bowen_margulis_measure.md`](bowen_margulis_measure.md) (任务K-102完成)
 
 ### 5.3 p-adic方向：测度理论的空白 ⬜
 
@@ -318,13 +321,19 @@ p-adic动力系统的测度理论远不如复动力系统成熟：
 | 熵理论完善 | **熵的定义不明确** | 需要框架 |
 | 遍历理论成熟 | 结果零散 | 需要系统研究 |
 
-**可能的研究方向**：
+**Bowen-Margulis测度的p-adic类比（研究提案）**：
 
-1. **容量测度**（通过p-adic势能理论）
-2. **不变测度**（通过迭代原像分布）
-3. **Berkovich空间上的测度**（利用刚性解析几何）
+根据任务K-102的研究，提出以下p-adic测度构造方案：
 
-**候选构造**（类比Bowen-Margulis）：
+**提案1: p-adic Patterson-Sullivan测度**
+
+对于p-adic Schottky群 $\Gamma \subset PGL(2, \mathbb{Q}_p)$：
+
+$$P_s(x, y) = \sum_{\gamma \in \Gamma} |x - \gamma y|_p^s, \quad \delta_p = \inf\{s : P_s < \infty\}$$
+
+$$\mu_p = \text{w-}\lim_{s \to \delta_p^+} \frac{1}{P_s(o,o)} \sum_{\gamma \in \Gamma} |o - \gamma o|_p^s \delta_{\gamma o}$$
+
+**提案2: 通过迭代原像的平衡测度**
 
 对于p-adic有理映射 $f$，定义：
 
@@ -332,10 +341,27 @@ $$\mu = \text{w-lim}_{n \to \infty} \frac{1}{d^n} \sum_{f^n(z) = a} \delta_z$$
 
 其中 $d = \deg(f)$，$a$ 是适当选择的基点。
 
-**研究任务**：
-- [ ] 调研Benedetto关于p-adic测度的工作
-- [ ] 探索Berkovich空间上的测度理论
-- [ ] 尝试与p-adic L-函数的联系
+**关键差异对比**：
+
+| 性质 | Kleinian (Bowen-Margulis) | p-adic (提案) |
+|------|---------------------------|---------------|
+| 构造基础 | 群作用的轨道 | 迭代原像/群作用 |
+| 临界指数 | $\delta$（Poincaré级数） | $\delta_p$（待验证） |
+| 测度类 | Patterson-Sullivan | **? 待开发** |
+| 熵公式 | $h = \delta$ | **? 待研究** |
+| 遍历性 | 已证明 | **? 待证明** |
+
+**已有工作基础**：
+- Benedetto (2001): p-adic动力系统的遍历理论基础
+- Rivera-Letelier (2000+): p-adic有理函数的遍历理论
+- Favre-Rivera-Letelier: 通过Jacobian的熵公式
+
+**研究任务**（更新）：
+- [x] 调研Benedetto关于p-adic测度的工作
+- [x] 探索Berkovich空间上的测度理论（初步）
+- [ ] 严格定义p-adic临界指数 $\delta_p$
+- [ ] 证明p-adic Patterson测度的存在性
+- [ ] 建立p-adic熵-维数关系
 
 ### 5.4 Maass方向：Patterson-Sullivan测度
 

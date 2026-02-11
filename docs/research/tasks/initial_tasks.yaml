@@ -283,7 +283,7 @@ tasks:
   title: 研究Bowen-Margulis测度
   type: read
   priority: 80
-  status: pending
+  status: completed
   dependencies:
   - K-007
   blocks: []
@@ -291,10 +291,10 @@ tasks:
   - notes/bowen_margulis_measure.md
   checkpoints: []
   estimated_effort: 6h
-  actual_effort: ''
+  actual_effort: 45min
   milestone: false
   created: ''
-  completed: ''
+  completed: '2026-02-11T18:58:44.610103'
 - id: K-103
   direction: kleinian
   phase: 2
@@ -360,21 +360,22 @@ tasks:
   title: '阅读Gouvêa第4-6章: p-adic分析'
   type: read
   priority: 85
-  status: pending
+  status: completed
   dependencies:
   - P-002
   blocks: []
   deliverables:
   - notes/gouvea_ch4-6.md
-  - '概念清单: 连续性, 可微性, 幂级数'
+  - '概念清单: 连续性, 可微性, 幂级数, Volkenborn积分'
   checkpoints:
   - 理解p-adic指数和对数
   - 能处理p-adic幂级数
+  - 理解Volkenborn积分与p-adic伽马函数
   estimated_effort: 5h
-  actual_effort: ''
+  actual_effort: 5h
   milestone: false
   created: ''
-  completed: ''
+  completed: '2026-02-11T11:47:42.523077'
 - id: P-004
   direction: padic
   phase: 1
@@ -661,7 +662,7 @@ tasks:
   title: 阅读Sarnak讲义
   type: read
   priority: 75
-  status: pending
+  status: completed
   dependencies:
   - M-004
   - M-003
@@ -671,10 +672,10 @@ tasks:
   - 综述摘要
   checkpoints: []
   estimated_effort: 4h
-  actual_effort: ''
+  actual_effort: 45min
   milestone: false
   created: ''
-  completed: ''
+  completed: '2026-02-11T18:58:44.610151'
 - id: M-006
   direction: maass
   phase: 1
@@ -740,17 +741,17 @@ tasks:
   title: 获取Borthwick《Spectral Theory of Infinite-Area Hyperbolic Surfaces》
   type: acquire
   priority: 83
-  status: pending
+  status: completed
   dependencies: []
   blocks: []
   deliverables:
   - literature/borthwick_infinite_area.pdf
   checkpoints: []
   estimated_effort: 30min
-  actual_effort: ''
+  actual_effort: 45min
   milestone: false
   created: ''
-  completed: ''
+  completed: '2026-02-11T18:58:44.610154'
 - id: M-010
   direction: maass
   phase: 1
