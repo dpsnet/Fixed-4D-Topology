@@ -281,12 +281,21 @@ All data used in this research is publicly documented:
 | Cantor Analysis | Numerical | `research/P1/T3/code/` |
 | Network Data | Empirical | `extended_research/I_network_geometry/data/` |
 | iTEBD Results | Computational | `extended_research/H_quantum_dimension/numerics/` |
+| **Kleinian Groups** | **Computational** | **`docs/research/data/`** |
+| **p-adic Polynomials** | **Computational** | **`docs/research/data/`** |
 
 See [DATA_PROVENANCE.md](DATA_PROVENANCE.md) for details.
+
+**T3 Replacement Research Data**:
+- 487 Kleinian groups with Hausdorff dimensions: `docs/research/data/kleinian_large_scale.sqlite`
+- 184 p-adic polynomials with dimension analysis: `docs/research/data/padic_large_scale.sqlite`
+- High-precision examples: `docs/research/data/key_examples_high_precision.sqlite`
 
 ---
 
 ## Citation
+
+### Main Project
 
 ```bibtex
 @misc{dimensionics2026core,
@@ -295,6 +304,18 @@ See [DATA_PROVENANCE.md](DATA_PROVENANCE.md) for details.
   version={3.0.0-core},
   doi={10.5281/zenodo.18511249},
   url={https://github.com/dpsnet/Fixed-4D-Topology}
+}
+```
+
+### T3 Replacement Research
+
+```bibtex
+@misc{dimensionics2026t3replacement,
+  title={T3 Replacement: Fractal Spectral Asymptotics and p-adic Thermodynamic Formalism},
+  author={Wang Bin and Kimi AI Research Team},
+  year={2026},
+  url={https://github.com/dpsnet/Fixed-4D-Topology/tree/main/docs/research},
+  note={Research prototype completed in ~12 hours, not submitted to journal}
 }
 ```
 
