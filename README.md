@@ -424,3 +424,33 @@ Professional peer review is invited and needed for rigorous validation.
 - All code and data open source (MIT License)
 - Full transparency in methodology and limitations
 - This project maintains strict academic standards. Content not meeting L1/L2 rigorous standards has been removed or marked as research hypotheses.
+
+---
+
+## 🔗 Quick Links
+
+### Main Resources
+- [ArXiv Preprint](https://arxiv.org/abs/...) (Coming soon)
+- [Unified Documentation](docs/ag-integration/UNIFIED_FRAMEWORK_INDEX.md)
+- [Issue Tracker](https://github.com/dpsnet/Fixed-4D-Topology/issues)
+
+### T3 Replacement Research
+- 📄 **[Paper Final](docs/research/papers/output/paper_final.md)** - 83-page Annals-standard paper
+- 📐 **[Proofs](docs/research/proofs/)** - L1 strict proofs (Trace Formula & Gibbs Measure)
+- 💾 **[Data](docs/research/data/)** - 671 verification cases (487 + 184)
+- 🐍 **[Code](docs/research/codes/)** - 45,000+ lines of Python
+- 📊 **[Reports](docs/research/reports/)** - Completion reports and statistics
+
+### Extended Research Directions
+- ⚛️ [H: Quantum Dimension](extended_research/H_quantum_dimension/) - MPS/iTEBD spin chains
+- 🌐 [I: Network Geometry](extended_research/I_network_geometry/) - 2.1M node networks
+- 🎲 [J: Random Fractals](extended_research/J_random_fractals/) - 3D percolation & random walks
+- 🤖 [K: ML Dimension](extended_research/K_machine_learning_dimension/) - Neural network effective dimension
+
+---
+
+**Status**: T3 Replacement Research Complete | L1 Strict Proofs Achieved | Research Prototype Ready 🎉
+
+**Last Updated**: 2026-02-12 (Major Update: T3 Replacement ~12h completion!)
+
+**Version**: v3.0.0-core + T3 Replacement Research
