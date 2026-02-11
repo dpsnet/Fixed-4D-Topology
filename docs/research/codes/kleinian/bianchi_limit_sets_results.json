@@ -1,0 +1,692 @@
+{
+  "metadata": {
+    "timestamp": "2026-02-11T18:35:27.295222",
+    "snappy_available": true,
+    "snappy_version": "3.3",
+    "scipy_available": true,
+    "max_iterations": 100000,
+    "epsilon": 1e-12,
+    "task": "K-101"
+  },
+  "results": [
+    {
+      "d": 1,
+      "discriminant": -1,
+      "field_name": "Q(i)",
+      "group_name": "PSL(2,Z[i])",
+      "manifold_name": "m004",
+      "volume": 2.029883212819307,
+      "cusps": 1,
+      "euler_characteristic": null,
+      "orbifold_euler_char": null,
+      "chern_simons": null,
+      "hausdorff_dim_estimate": 1.7216,
+      "hausdorff_dim_lower": 1.7116,
+      "hausdorff_dim_upper": 1.7316,
+      "hausdorff_dim_error": 0.01,
+      "dim_computation_method": "literature",
+      "dim_computation_details": {
+        "source": "Published research values",
+        "all_methods": {
+          "literature": 1.7216,
+          "volume_based": 1.657396252533597,
+          "mcmullen": 1.0,
+          "spectral": 1.1903985433141149
+        }
+      },
+      "dirichlet_domain": {
+        "center": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "radius": 0.0,
+        "num_faces": 0,
+        "num_edges": 0,
+        "num_vertices": 0,
+        "face_data": [
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          }
+        ]
+      },
+      "fundamental_domain": {
+        "volume": 2.029883212819307,
+        "cusp_volume": null,
+        "num_cusps": 1,
+        "cusp_cross_sections": [
+          {
+            "index": 0,
+            "info": "Cusp 0 : complete torus cusp of shape -1.110223025 E-15 + 3.4641016151*I"
+          }
+        ],
+        "symmetry_group": ""
+      },
+      "trace_field": "{'d': 1, 'dedekind_zeta_2': 1.875, 'selberg_zeta_estimate': None, 'spectral_gap_estimate': None, 'volume_formula_check': 0.04749430483234583, 'notes': 'ζ_{Q(i)}(2) ≈ 1.875000', 'volume_deviation': 0.9481483410039184}",
+      "invariant_trace_field": "",
+      "quaternion_algebra": "",
+      "is_arithmetic": true,
+      "class_number": null,
+      "regulator": null,
+      "computation_time": 0.015317440032958984,
+      "timestamp": "2026-02-11T18:35:27.252821",
+      "status": "completed",
+      "error_message": "",
+      "snappy_version": "3.3"
+    },
+    {
+      "d": 2,
+      "discriminant": -8,
+      "field_name": "Q(√-2)",
+      "group_name": "PSL(2,Z[√-2])",
+      "manifold_name": "m003(0,1)",
+      "volume": -2.029883212819308,
+      "cusps": 1,
+      "euler_characteristic": null,
+      "orbifold_euler_char": null,
+      "chern_simons": null,
+      "hausdorff_dim_estimate": 1.7889,
+      "hausdorff_dim_lower": 1.7789,
+      "hausdorff_dim_upper": 1.7989,
+      "hausdorff_dim_error": 0.01,
+      "dim_computation_method": "literature",
+      "dim_computation_details": {
+        "source": "Published research values",
+        "all_methods": {
+          "literature": 1.7889,
+          "mcmullen": 1.0,
+          "spectral": 1.1903985433141167
+        }
+      },
+      "dirichlet_domain": null,
+      "fundamental_domain": {
+        "volume": -2.029883212819308,
+        "cusp_volume": null,
+        "num_cusps": 1,
+        "cusp_cross_sections": [
+          {
+            "index": 0,
+            "info": "Cusp 0 : torus cusp with Dehn filling coefficients (M, L) = (0.0, 1.0)"
+          }
+        ],
+        "symmetry_group": ""
+      },
+      "trace_field": "{'d': 2, 'dedekind_zeta_2': 1.5625, 'selberg_zeta_estimate': None, 'spectral_gap_estimate': None, 'volume_formula_check': 0.8955612003918068, 'notes': 'ζ_{Q(√-2)}(2) ≈ 1.562500', 'volume_deviation': 0.11762240328077526}",
+      "invariant_trace_field": "",
+      "quaternion_algebra": "",
+      "is_arithmetic": true,
+      "class_number": null,
+      "regulator": null,
+      "computation_time": 0.0005424022674560547,
+      "timestamp": "2026-02-11T18:35:27.268988",
+      "status": "completed",
+      "error_message": "",
+      "snappy_version": "3.3"
+    },
+    {
+      "d": 3,
+      "discriminant": -12,
+      "field_name": "Q(ω)",
+      "group_name": "PSL(2,Z[ω])",
+      "manifold_name": "m003",
+      "volume": 2.029883212819308,
+      "cusps": 1,
+      "euler_characteristic": null,
+      "orbifold_euler_char": null,
+      "chern_simons": null,
+      "hausdorff_dim_estimate": 1.6976,
+      "hausdorff_dim_lower": 1.6876,
+      "hausdorff_dim_upper": 1.7076,
+      "hausdorff_dim_error": 0.01,
+      "dim_computation_method": "literature",
+      "dim_computation_details": {
+        "source": "Published research values",
+        "all_methods": {
+          "literature": 1.6976,
+          "volume_based": 1.6573962525335972,
+          "mcmullen": 1.0,
+          "spectral": 1.1903985433141167
+        }
+      },
+      "dirichlet_domain": {
+        "center": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "radius": 0.0,
+        "num_faces": 0,
+        "num_edges": 0,
+        "num_vertices": 0,
+        "face_data": [
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          }
+        ]
+      },
+      "fundamental_domain": {
+        "volume": 2.029883212819308,
+        "cusp_volume": null,
+        "num_cusps": 1,
+        "cusp_cross_sections": [
+          {
+            "index": 0,
+            "info": "Cusp 0 : complete torus cusp of shape 0.50000000000 + 0.86602540378*I"
+          }
+        ],
+        "symmetry_group": ""
+      },
+      "trace_field": "{'d': 3, 'dedekind_zeta_2': 1.4583333333333335, 'selberg_zeta_estimate': None, 'spectral_gap_estimate': None, 'volume_formula_check': 1.5355675820760248, 'notes': 'ζ_{Q(ω)}(2) ≈ 1.458333', 'volume_deviation': 0.815553104011096}",
+      "invariant_trace_field": "",
+      "quaternion_algebra": "",
+      "is_arithmetic": true,
+      "class_number": null,
+      "regulator": null,
+      "computation_time": 0.0009467601776123047,
+      "timestamp": "2026-02-11T18:35:27.269760",
+      "status": "completed",
+      "error_message": "",
+      "snappy_version": "3.3"
+    },
+    {
+      "d": 7,
+      "discriminant": -28,
+      "field_name": "Q(√-7)",
+      "group_name": "PSL(2,Z[√-7])",
+      "manifold_name": "m009",
+      "volume": 2.6667447834490603,
+      "cusps": 1,
+      "euler_characteristic": null,
+      "orbifold_euler_char": null,
+      "chern_simons": null,
+      "hausdorff_dim_estimate": 1.8326,
+      "hausdorff_dim_lower": 1.8226,
+      "hausdorff_dim_upper": 1.8426,
+      "hausdorff_dim_error": 0.01,
+      "dim_computation_method": "literature",
+      "dim_computation_details": {
+        "source": "Published research values",
+        "all_methods": {
+          "literature": 1.8326,
+          "volume_based": 1.699402437632289,
+          "mcmullen": 1.0,
+          "spectral": 1.6258042646896609
+        }
+      },
+      "dirichlet_domain": {
+        "center": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "radius": 0.0,
+        "num_faces": 0,
+        "num_edges": 0,
+        "num_vertices": 0,
+        "face_data": [
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          }
+        ]
+      },
+      "fundamental_domain": {
+        "volume": 2.6667447834490603,
+        "cusp_volume": null,
+        "num_cusps": 1,
+        "cusp_cross_sections": [
+          {
+            "index": 0,
+            "info": "Cusp 0 : complete torus cusp of shape 2.220446049 E-15 + 2.6457513111*I"
+          }
+        ],
+        "symmetry_group": ""
+      },
+      "trace_field": "{'d': 7, 'dedekind_zeta_2': 1.3392857142857142, 'selberg_zeta_estimate': None, 'spectral_gap_estimate': None, 'volume_formula_check': 5.026324771131213, 'notes': 'ζ_{Q(√-7)}(2) ≈ 1.339286', 'volume_deviation': 3.520511210279418}",
+      "invariant_trace_field": "",
+      "quaternion_algebra": "",
+      "is_arithmetic": true,
+      "class_number": null,
+      "regulator": null,
+      "computation_time": 0.0021686553955078125,
+      "timestamp": "2026-02-11T18:35:27.270979",
+      "status": "completed",
+      "error_message": "",
+      "snappy_version": "3.3"
+    },
+    {
+      "d": 11,
+      "discriminant": -44,
+      "field_name": "Q(√-11)",
+      "group_name": "PSL(2,Z[√-11])",
+      "manifold_name": "m023",
+      "volume": 2.989120282929485,
+      "cusps": 1,
+      "euler_characteristic": null,
+      "orbifold_euler_char": null,
+      "chern_simons": null,
+      "hausdorff_dim_estimate": 1.9033,
+      "hausdorff_dim_lower": 1.8933,
+      "hausdorff_dim_upper": 1.9133,
+      "hausdorff_dim_error": 0.01,
+      "dim_computation_method": "literature",
+      "dim_computation_details": {
+        "source": "Published research values",
+        "all_methods": {
+          "literature": 1.9033,
+          "volume_based": 1.7155194395882263,
+          "mcmullen": 1.0,
+          "spectral": 1.7094245388991818
+        }
+      },
+      "dirichlet_domain": {
+        "center": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "radius": 0.0,
+        "num_faces": 0,
+        "num_edges": 0,
+        "num_vertices": 0,
+        "face_data": [
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          }
+        ]
+      },
+      "fundamental_domain": {
+        "volume": 2.989120282929485,
+        "cusp_volume": null,
+        "num_cusps": 1,
+        "cusp_cross_sections": [
+          {
+            "index": 0,
+            "info": "Cusp 0 : complete torus cusp of shape -0.3583829119 + 2.3646765515*I"
+          }
+        ],
+        "symmetry_group": ""
+      },
+      "trace_field": "{'d': 11, 'dedekind_zeta_2': 1.3068181818181817, 'selberg_zeta_estimate': None, 'spectral_gap_estimate': None, 'volume_formula_check': 9.661275046869472, 'notes': 'ζ_{Q(√-11)}(2) ≈ 1.306818', 'volume_deviation': 5.987561501497841}",
+      "invariant_trace_field": "",
+      "quaternion_algebra": "",
+      "is_arithmetic": true,
+      "class_number": null,
+      "regulator": null,
+      "computation_time": 0.003451824188232422,
+      "timestamp": "2026-02-11T18:35:27.273442",
+      "status": "completed",
+      "error_message": "",
+      "snappy_version": "3.3"
+    },
+    {
+      "d": 19,
+      "discriminant": -76,
+      "field_name": "Q(√-19)",
+      "group_name": "PSL(2,Z[√-19])",
+      "manifold_name": "m155",
+      "volume": 3.791127715974132,
+      "cusps": 1,
+      "euler_characteristic": null,
+      "orbifold_euler_char": null,
+      "chern_simons": null,
+      "hausdorff_dim_estimate": 1.94,
+      "hausdorff_dim_lower": 1.93,
+      "hausdorff_dim_upper": 1.95,
+      "hausdorff_dim_error": 0.01,
+      "dim_computation_method": "literature",
+      "dim_computation_details": {
+        "source": "Published research values",
+        "all_methods": {
+          "literature": 1.94,
+          "volume_based": 1.7465266751763555,
+          "mcmullen": 1.0,
+          "spectral": 1.8240073887049895
+        }
+      },
+      "dirichlet_domain": {
+        "center": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "radius": 0.0,
+        "num_faces": 0,
+        "num_edges": 0,
+        "num_vertices": 0,
+        "face_data": [
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          }
+        ]
+      },
+      "fundamental_domain": {
+        "volume": 3.791127715974132,
+        "cusp_volume": null,
+        "num_cusps": 1,
+        "cusp_cross_sections": [
+          {
+            "index": 0,
+            "info": "Cusp 0 : complete torus cusp of shape -0.0783255455 + 1.4202973126*I"
+          }
+        ],
+        "symmetry_group": ""
+      },
+      "trace_field": "{'d': 19, 'dedekind_zeta_2': 1.2828947368421053, 'selberg_zeta_estimate': None, 'spectral_gap_estimate': None, 'volume_formula_check': 21.53037901642274, 'notes': 'ζ_{Q(√-19)}(2) ≈ 1.282895', 'volume_deviation': 10.603752056179246}",
+      "invariant_trace_field": "",
+      "quaternion_algebra": "",
+      "is_arithmetic": true,
+      "class_number": null,
+      "regulator": null,
+      "computation_time": 0.005785703659057617,
+      "timestamp": "2026-02-11T18:35:27.278224",
+      "status": "completed",
+      "error_message": "",
+      "snappy_version": "3.3"
+    },
+    {
+      "d": 43,
+      "discriminant": -172,
+      "field_name": "Q(√-43)",
+      "group_name": "PSL(2,Z[√-43])",
+      "manifold_name": "m390",
+      "volume": 4.851170757332738,
+      "cusps": 1,
+      "euler_characteristic": null,
+      "orbifold_euler_char": null,
+      "chern_simons": null,
+      "hausdorff_dim_estimate": 1.97,
+      "hausdorff_dim_lower": 1.96,
+      "hausdorff_dim_upper": 1.98,
+      "hausdorff_dim_error": 0.01,
+      "dim_computation_method": "literature",
+      "dim_computation_details": {
+        "source": "Published research values",
+        "all_methods": {
+          "literature": 1.97,
+          "volume_based": 1.775293284379055,
+          "mcmullen": 1.0,
+          "spectral": 1.89378826936779
+        }
+      },
+      "dirichlet_domain": {
+        "center": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "radius": 0.0,
+        "num_faces": 0,
+        "num_edges": 0,
+        "num_vertices": 0,
+        "face_data": [
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          },
+          {
+            "vertices": 9
+          }
+        ]
+      },
+      "fundamental_domain": {
+        "volume": 4.851170757332738,
+        "cusp_volume": null,
+        "num_cusps": 1,
+        "cusp_cross_sections": [
+          {
+            "index": 0,
+            "info": "Cusp 0 : complete torus cusp of shape 0.39024659109 + 1.50905834629*I"
+          }
+        ],
+        "symmetry_group": ""
+      },
+      "trace_field": "{'d': 43, 'dedekind_zeta_2': 1.2645348837209303, 'selberg_zeta_estimate': None, 'spectral_gap_estimate': None, 'volume_formula_check': 72.2543083326756, 'notes': 'ζ_{Q(√-43)}(2) ≈ 1.264535', 'volume_deviation': 20.936265766278577}",
+      "invariant_trace_field": "",
+      "quaternion_algebra": "",
+      "is_arithmetic": true,
+      "class_number": null,
+      "regulator": null,
+      "computation_time": 0.0034942626953125,
+      "timestamp": "2026-02-11T18:35:27.285395",
+      "status": "completed",
+      "error_message": "",
+      "snappy_version": "3.3"
+    },
+    {
+      "d": 67,
+      "discriminant": -268,
+      "field_name": "Q(√-67)",
+      "group_name": "PSL(2,Z[√-67])",
+      "manifold_name": "",
+      "volume": 4.645264,
+      "cusps": 1,
+      "euler_characteristic": null,
+      "orbifold_euler_char": null,
+      "chern_simons": null,
+      "hausdorff_dim_estimate": 1.98,
+      "hausdorff_dim_lower": 1.97,
+      "hausdorff_dim_upper": 1.99,
+      "hausdorff_dim_error": null,
+      "dim_computation_method": "literature",
+      "dim_computation_details": {
+        "source": "Published research values",
+        "all_methods": {
+          "literature": 1.98,
+          "volume_based": 1.770469810753207,
+          "mcmullen": 1.0,
+          "spectral": 1.8839896943703311
+        }
+      },
+      "dirichlet_domain": null,
+      "fundamental_domain": null,
+      "trace_field": "{'d': 67, 'dedekind_zeta_2': 1.2593283582089552, 'selberg_zeta_estimate': None, 'spectral_gap_estimate': None, 'volume_formula_check': 139.95275029473493, 'notes': 'ζ_{Q(√-67)}(2) ≈ 1.259328', 'volume_deviation': 29.12805091265748}",
+      "invariant_trace_field": "",
+      "quaternion_algebra": "",
+      "is_arithmetic": true,
+      "class_number": 1,
+      "regulator": null,
+      "computation_time": 0.00046539306640625,
+      "timestamp": "2026-02-11T18:35:27.292142",
+      "status": "theoretical_only",
+      "error_message": "",
+      "snappy_version": "3.3"
+    },
+    {
+      "d": 163,
+      "discriminant": -652,
+      "field_name": "Q(√-163)",
+      "group_name": "PSL(2,Z[√-163])",
+      "manifold_name": "",
+      "volume": 7.699656,
+      "cusps": 1,
+      "euler_characteristic": null,
+      "orbifold_euler_char": null,
+      "chern_simons": null,
+      "hausdorff_dim_estimate": 1.99,
+      "hausdorff_dim_lower": 1.98,
+      "hausdorff_dim_upper": 2.0,
+      "hausdorff_dim_error": null,
+      "dim_computation_method": "literature",
+      "dim_computation_details": {
+        "source": "Published research values",
+        "all_methods": {
+          "literature": 1.99,
+          "volume_based": 1.8209673335467884,
+          "mcmullen": 1.0,
+          "spectral": 1.9581971183650833
+        }
+      },
+      "dirichlet_domain": null,
+      "fundamental_domain": null,
+      "trace_field": "{'d': 163, 'dedekind_zeta_2': 1.2538343558282208, 'selberg_zeta_estimate': None, 'spectral_gap_estimate': None, 'volume_formula_check': 528.7517557466654, 'notes': 'ζ_{Q(√-163)}(2) ≈ 1.253834', 'volume_deviation': 67.67212713745462}",
+      "invariant_trace_field": "",
+      "quaternion_algebra": "",
+      "is_arithmetic": true,
+      "class_number": 1,
+      "regulator": null,
+      "computation_time": 0.00040340423583984375,
+      "timestamp": "2026-02-11T18:35:27.294679",
+      "status": "theoretical_only",
+      "error_message": "",
+      "snappy_version": "3.3"
+    }
+  ]
+}

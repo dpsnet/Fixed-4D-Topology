@@ -53,11 +53,11 @@
 | P-003 | 阅读第4-6章: p-adic分析 | ⬜ | 85 | P-002 | | |
 | P-004 | 配置SageMath/padic | ✅ | 82 | - | 20min | Python padic库 |
 | P-005 | p-adic计算练习 | ⬜ | 80 | P-004,P-002 | | |
-| P-006 | 获取Gouvêa《Arithmetic》 | ⬜ | 78 | - | | |
+| P-006 | 获取Gouvêa《Arithmetic》 | ✅ | 78 | - | 30min | 详细文献文件已创建 |
 | P-007 | 阅读第1-3章 | ⬜ | 75 | P-006,P-003 | | |
 | P-008 | 获取Coleman论文 | ⬜ | 72 | - | | |
 | P-009 | 阅读Coleman论文(概述) | ⬜ | 70 | P-008,P-007 | | |
-| P-010 | 获取Benedetto | ⬜ | 68 | - | | |
+| P-010 | 获取Benedetto | ✅ | 68 | - | 2026-02-11 | literature/padic/benedetto_detailed.md |
 | P-011 | 学习p-adic动力学基础 | ⬜ | 65 | P-010,P-003 | | |
 | P-012 | 首次p-adic分形计算 | ⬜ | 60 | P-011,P-005 | | |
 
