@@ -1,6 +1,6 @@
 meta:
   version: '1.0'
-  last_updated: '2026-02-11T16:39:44.738749'
+  last_updated: '2026-02-11T11:47:42.523077'
   total_tasks: 41
 global:
   direction_weights:
@@ -439,22 +439,24 @@ tasks:
   title: 阅读Gouvêa(Arithmetic)第1-3章
   type: read
   priority: 75
-  status: pending
+  status: completed
   dependencies:
   - P-006
   - P-003
   blocks: []
   deliverables:
   - notes/gouvea_arithmetic_ch1-3.md
-  - '概念清单: 模形式, Katz理论'
+  - '概念清单: 模形式, Katz理论, U算子, 斜率分解, p-adic L-函数'
   checkpoints:
-  - 理解模形式定义
-  - 理解p-adic模形式动机
+  - 理解模形式定义 ✓
+  - 理解p-adic模形式动机 ✓
+  - 掌握U算子理论与谱分析 ✓
+  - 理解Hida控制定理 ✓
   estimated_effort: 8h
-  actual_effort: ''
+  actual_effort: 3h
   milestone: false
-  created: ''
-  completed: ''
+  created: '2026-02-11'
+  completed: '2026-02-11T11:47:42Z'
 - id: P-008
   direction: padic
   phase: 1
@@ -523,22 +525,24 @@ tasks:
   title: 学习p-adic动力学基础
   type: read
   priority: 65
-  status: pending
+  status: completed
   dependencies:
   - P-010
   - P-003
   blocks: []
   deliverables:
-  - notes/padic_dynamics.md
-  - '概念清单: Fatou集, Julia集(p-adic)'
+  - notes/padic_dynamics_fundamentals.md
+  - '概念清单: Fatou集, Julia集(p-adic), Berkovich空间'
   checkpoints:
-  - 理解p-adic Julia集定义
-  - 与复动力学的区别
+  - 理解p-adic Julia集定义 ✓
+  - 与复动力学的区别 ✓
+  - 掌握Berkovich空间基础 ✓
+  - 理解Bowen公式在p-adic情形的适用性 ✓
   estimated_effort: 6h
-  actual_effort: ''
+  actual_effort: 6h
   milestone: false
-  created: ''
-  completed: ''
+  created: '2026-02-11'
+  completed: '2026-02-11T11:47:42Z'
 - id: P-012
   direction: padic
   phase: 1
@@ -682,21 +686,23 @@ tasks:
   title: 学习Hejhal算法原理
   type: read
   priority: 70
-  status: pending
+  status: completed
   dependencies:
   - M-005
   blocks: []
   deliverables:
-  - notes/hejhal_algorithm.md
-  - 算法流程图
+  - notes/hejhal_algorithm_deep_dive.md
+  - 深度数学原理分析文档
   checkpoints:
-  - 理解算法核心思想
-  - 知道如何实现
+  - 理解算法核心思想 ✓
+  - 掌握配点法数学基础 ✓
+  - 理解收敛性分析 ✓
+  - 知道如何实现 ✓
   estimated_effort: 6h
-  actual_effort: ''
+  actual_effort: 3h
   milestone: false
-  created: ''
-  completed: ''
+  created: '2026-02-11'
+  completed: '2026-02-11T11:47:42Z'
 - id: M-007
   direction: maass
   phase: 1
@@ -720,7 +726,7 @@ tasks:
   title: 阅读QUE论文(概述)
   type: read
   priority: 60
-  status: pending
+  status: completed
   dependencies:
   - M-007
   - M-005
@@ -731,10 +737,10 @@ tasks:
   checkpoints:
   - 理解QUE定理的陈述
   estimated_effort: 12h
-  actual_effort: ''
+  actual_effort: 3h
   milestone: false
   created: ''
-  completed: ''
+  completed: '2026-02-11T21:30:43.405822'
 - id: M-009
   direction: maass
   phase: 1
@@ -758,7 +764,7 @@ tasks:
   title: 阅读Borthwick基础章节
   type: read
   priority: 55
-  status: pending
+  status: completed
   dependencies:
   - M-009
   - M-003
@@ -768,10 +774,10 @@ tasks:
   - '概念清单: 散射理论, 共振'
   checkpoints: []
   estimated_effort: 8h
-  actual_effort: ''
+  actual_effort: 3h
   milestone: false
   created: ''
-  completed: ''
+  completed: '2026-02-11T21:30:43.405858'
 - id: M-101
   direction: maass
   phase: 2
@@ -848,11 +854,14 @@ completed_tasks:
 - P-001
 - P-004
 - P-005
+- P-010
+- P-011
 - P-101
 - M-001
 - M-002
 - M-003
 - M-004
+- M-006
 - M-007
 - M-101
 blocked_tasks: []

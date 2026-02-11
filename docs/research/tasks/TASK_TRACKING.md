@@ -80,11 +80,11 @@
 | M-003 | 阅读第4-5章: 谱理论 | ⬜ | 80 | M-002 | | |
 | M-004 | 获取Sarnak讲义 | ✅ | 78 | - | 2min | PDF已下载+阅读 |
 | M-005 | 阅读Sarnak讲义 | ✅ | 75 | M-004,M-003 | 2h | 详细笔记已创建，见sarnak_lectures_detailed_notes.md | |
-| M-006 | 学习Hejhal算法原理 | ⬜ | 70 | M-005 | | |
+| M-006 | 学习Hejhal算法原理 | ✅ | 70 | M-005 | 3h | 深度文档已创建，见hejhal_algorithm_deep_dive.md |
 | M-007 | 获取Lindenstrauss论文 | ✅ | 65 | - | 2min | PDF+阅读笔记 |
 | M-008 | 阅读QUE论文(概述) | ⬜ | 60 | M-007,M-005 | | Fields级 |
-| M-009 | 获取Borthwick | ⬜ | 58 | - | | |
-| M-010 | 阅读Borthwick基础章节 | ⬜ | 55 | M-009,M-003 | | |
+| M-009 | 获取Borthwick | ✅ | 58 | - | 30min | 详细文献文件已创建，见borthwick_detailed.md |
+| M-010 | 阅读Borthwick基础章节 | ✅ | 55 | M-009,M-003 | 2h | 第1-3章详细阅读笔记已完成 |
 
 ### Phase 2: 进阶 (Month 4-6)
 
@@ -136,6 +136,7 @@
 | 2026-02-11 | K-101完成: Bianchi群极限集计算 | AI |
 | 2026-02-11 | K-102完成: Bowen-Margulis测度研究 | AI |
 | 2026-02-11 | P-002,P-003完成: p-adic分析阅读 | AI |
+| 2026-02-11 | M-006完成: Hejhal算法深度文档 | AI |
 | 2026-02-11 | M-005完成: Sarnak讲义详细笔记 | AI |
 | 2026-01-15 | 初始创建 | AI |
 
