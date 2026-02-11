@@ -29,6 +29,9 @@ SECTIONS = [
     "02_PRELIMINARIES.md",
     "03_TRACE_FORMULA_PROOF.md",
     "04_GIBBS_MEASURE_PROOF.md",
+    "05_UNIFIED_FRAMEWORK.md",
+    "06_NUMERICAL_VERIFICATION.md",
+    "07_CONCLUSION.md",
 ]
 
 METADATA = {
@@ -40,6 +43,7 @@ METADATA = {
     "date": "February 2026",
     "journal": "Annals of Mathematics",
     "msc_classes": ["37F30", "37D35", "11F72", "28A80", "37P50", "58J50"],
+    "keywords": ["fractal spectral theory", "p-adic dynamics", "thermodynamic formalism", "Kleinian groups", "Hausdorff dimension", "Weyl law", "Bowen formula"],
 }
 
 

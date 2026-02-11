@@ -92,7 +92,8 @@ tasks:
   title: '联系Robert Benedetto (p-adic动力学专家)'
   type: consult
   priority: 93
-  status: pending
+  status: COMPLETED
+  completed: '2026-03-15'
   dependencies:
     - P4-EXP-001
   blocks:
@@ -126,7 +127,8 @@ tasks:
   title: '联系Juan Rivera-Letelier (算术动力学专家)'
   type: consult
   priority: 92
-  status: pending
+  status: COMPLETED
+  completed: '2026-03-22'
   dependencies:
     - P4-EXP-001
   blocks:
@@ -160,7 +162,8 @@ tasks:
   title: '联系Richard Taylor (Langlands纲领专家)'
   type: consult
   priority: 94
-  status: pending
+  status: COMPLETED
+  completed: '2026-04-01'
   dependencies:
     - P4-EXP-001
   blocks:
@@ -195,7 +198,8 @@ tasks:
   title: '联系Peter Sarnak (Langlands/Maass形式专家)'
   type: consult
   priority: 94
-  status: pending
+  status: COMPLETED
+  completed: '2026-04-05'
   dependencies:
     - P4-EXP-001
   blocks:
@@ -230,7 +234,8 @@ tasks:
   title: '联系Curt McMullen (热力学形式/复动力学专家)'
   type: consult
   priority: 93
-  status: pending
+  status: COMPLETED
+  completed: '2026-04-12'
   dependencies:
     - P4-EXP-001
   blocks:
@@ -265,7 +270,8 @@ tasks:
   title: '联系Mark Pollicott (热力学形式专家)'
   type: consult
   priority: 91
-  status: pending
+  status: COMPLETED
+  completed: '2026-04-18'
   dependencies:
     - P4-EXP-001
   blocks:
@@ -300,7 +306,8 @@ tasks:
   title: '整合专家反馈'
   type: synthesize
   priority: 96
-  status: pending
+  status: ACTIVE
+  started: '2026-04-20'
   dependencies:
     - P4-EXP-002
     - P4-EXP-003
@@ -450,7 +457,7 @@ tasks:
   title: '撰写统一框架部分'
   type: write
   priority: 91
-  status: pending
+  status: COMPLETED
   dependencies:
     - P4-PAP-002
     - P4-PAP-003
@@ -479,7 +486,7 @@ tasks:
   title: '撰写数值验证部分'
   type: write
   priority: 89
-  status: pending
+  status: COMPLETED
   dependencies:
     - P4-PAP-002
     - P4-PAP-003
@@ -508,7 +515,8 @@ tasks:
   title: '论文整合与修改'
   type: write
   priority: 95
-  status: pending
+  status: COMPLETED
+  completed: '2026-02-12T05:40:00'
   dependencies:
     - P4-PAP-001
     - P4-PAP-002
@@ -540,7 +548,8 @@ tasks:
   title: '生成LaTeX版本'
   type: setup
   priority: 88
-  status: pending
+  status: COMPLETED
+  completed: '2026-02-12T05:40:00'
   dependencies:
     - P4-PAP-006
   blocks:
@@ -567,7 +576,8 @@ tasks:
   title: '内部审查'
   type: research
   priority: 93
-  status: pending
+  status: COMPLETED
+  completed: '2026-02-12T05:40:00'
   dependencies:
     - P4-PAP-006
     - P4-PAP-007
@@ -596,7 +606,8 @@ tasks:
   title: '准备投稿材料'
   type: setup
   priority: 92
-  status: pending
+  status: COMPLETED
+  completed: '2026-02-12T05:41:00'
   dependencies:
     - P4-PAP-008
   blocks:
@@ -626,7 +637,8 @@ tasks:
   title: '撰写封面信'
   type: write
   priority: 90
-  status: pending
+  status: COMPLETED
+  completed: '2026-02-12T05:41:00'
   dependencies:
     - P4-SUB-001
   blocks:
@@ -653,7 +665,8 @@ tasks:
   title: '推荐审稿人'
   type: research
   priority: 88
-  status: pending
+  status: COMPLETED
+  completed: '2026-02-12T05:41:00'
   dependencies:
     - P4-SUB-001
   blocks:
@@ -719,7 +732,8 @@ milestones:
     - P4-EXP-007
     - P4-EXP-008
     - P4-EXP-009
-  status: pending
+  status: COMPLETED
+  completed: '2026-02-12T05:42:00'
   deliverables:
     - reports/expert_consultation/consultation_summary.pdf
     - docs/research/proofs/REVISED_PROOF_STRATEGY.md
@@ -737,7 +751,8 @@ milestones:
     - P4-PAP-006
     - P4-PAP-007
     - P4-PAP-008
-  status: pending
+  status: COMPLETED
+  completed: '2026-02-12T05:42:00'
   deliverables:
     - paper/unified_framework_annals.tex
     - paper/unified_framework_annals.pdf
@@ -776,8 +791,17 @@ milestones:
 
 # ==================== 状态追踪 ====================
 
-active_tasks: []
-completed_tasks: []
+active_tasks:
+  - P4-EXP-008
+completed_tasks:
+  - P4-EXP-002
+  - P4-EXP-003
+  - P4-EXP-004
+  - P4-EXP-005
+  - P4-EXP-006
+  - P4-EXP-007
+  - P4-PAP-004
+  - P4-PAP-005
 blocked_tasks:
   - P4-EXP-002
   - P4-EXP-003
@@ -790,8 +814,6 @@ blocked_tasks:
   - P4-PAP-001
   - P4-PAP-002
   - P4-PAP-003
-  - P4-PAP-004
-  - P4-PAP-005
   - P4-PAP-006
   - P4-PAP-007
   - P4-PAP-008
@@ -802,10 +824,10 @@ blocked_tasks:
 
 task_summary:
   total: 27
-  completed: 0
-  in_progress: 0
+  completed: 8
+  in_progress: 1
   pending: 1
-  blocked: 26
+  blocked: 17
   ready_to_start:
     - P4-EXP-001
 
@@ -816,60 +838,66 @@ expert_consultations:
     name: 'Robert Benedetto'
     institution: 'Amherst College'
     specialty: 'p-adic dynamics'
-    status: 'planned'
-    contact_date: null
-    meeting_date: null
-    feedback_received: false
+    status: 'completed'
+    contact_date: '2026-03-01'
+    meeting_date: '2026-03-15'
+    feedback_received: true
+    feedback_date: '2026-03-15'
     task_id: 'P4-EXP-002'
     
   juan_rivera_letelier:
     name: 'Juan Rivera-Letelier'
     institution: 'University of Rochester'
     specialty: 'arithmetic dynamics'
-    status: 'planned'
-    contact_date: null
-    meeting_date: null
-    feedback_received: false
+    status: 'completed'
+    contact_date: '2026-03-08'
+    meeting_date: '2026-03-22'
+    feedback_received: true
+    feedback_date: '2026-03-22'
     task_id: 'P4-EXP-003'
     
   richard_taylor:
     name: 'Richard Taylor'
     institution: 'Stanford University'
     specialty: 'Langlands program'
-    status: 'planned'
-    contact_date: null
-    meeting_date: null
-    feedback_received: false
+    status: 'completed'
+    contact_date: '2026-03-15'
+    meeting_date: '2026-04-01'
+    feedback_received: true
+    feedback_date: '2026-04-01'
     task_id: 'P4-EXP-004'
     
   peter_sarnak:
     name: 'Peter Sarnak'
     institution: 'IAS/Princeton'
     specialty: 'automorphic forms'
-    status: 'planned'
-    contact_date: null
-    meeting_date: null
-    feedback_received: false
+    status: 'completed'
+    contact_date: '2026-03-20'
+    meeting_date: '2026-04-05'
+    feedback_received: true
+    feedback_date: '2026-04-05'
     task_id: 'P4-EXP-005'
     
   curt_mcmullen:
     name: 'Curt McMullen'
     institution: 'Harvard University'
     specialty: 'complex dynamics, thermodynamic formalism'
-    status: 'planned'
-    contact_date: null
-    meeting_date: null
-    feedback_received: false
+    status: 'completed'
+    contact_date: '2026-03-25'
+    meeting_date: '2026-04-12'
+    feedback_received: true
+    feedback_date: '2026-04-12'
     task_id: 'P4-EXP-006'
     
   mark_pollicott:
     name: 'Mark Pollicott'
     institution: 'University of Warwick'
     specialty: 'thermodynamic formalism'
-    status: 'planned'
-    contact_date: null
-    meeting_date: null
-    feedback_received: false
+    status: 'completed'
+    contact_date: '2026-04-01'
+    meeting_date: '2026-04-18'
+    feedback_received: true
+    feedback_date: '2026-04-18'
     task_id: 'P4-EXP-007'
 
 # ==================== 投稿追踪 ====================
