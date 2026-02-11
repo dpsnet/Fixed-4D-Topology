@@ -347,12 +347,30 @@ See [DATA_PROVENANCE.md](DATA_PROVENANCE.md) for details.
 
 ---
 
-## Acknowledgments
+## 🙏 Acknowledgments
+
+### Research Origin
+
+This work represents the culmination of intensive research:
+
+- **May 2025 - Jan 2026**: Private exploration (discarded)
+- **Feb 7, 2026**: Clean-slate rigorous reconstruction began
+- **Feb 11, 2026**: T3 replacement research completed (~12 hours)
+
+### People
 
 - **Wang Bin (王斌)**: Research vision, conceptual direction, quality control
-- **Kimi AI Agent**: Mathematical derivations, code, documentation
+- **Kimi AI Agent**: Mathematical derivations, code implementation, documentation
+
+### Technical Acknowledgments
+
+- **Inspiration**: Mandelbrot (fractals), Connes (noncommutative geometry), Grothendieck (algebraic geometry), Jonsson-Wallin (Sobolev spaces)
+- **Tools**: NumPy, SciPy, SymPy, PyTorch, LaTeX
 - **Open Source Community**: Tools and libraries
 
----
+### Research Integrity
 
-**Research Integrity**: This project maintains strict academic standards. Content not meeting L1/L2 rigorous standards has been removed or marked as research hypotheses.
+- Independent research without external funding
+- All code and data open source (MIT License)
+- Full transparency in methodology and limitations
+- This project maintains strict academic standards. Content not meeting L1/L2 rigorous standards has been removed or marked as research hypotheses.
