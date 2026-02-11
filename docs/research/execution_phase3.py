@@ -35,6 +35,7 @@ class TaskType(Enum):
     CONSULT = "consult"  # Phase 3新增：专家咨询
     SETUP = "setup"
     SYNTHESIZE = "synthesize"
+    IMPLEMENTATION = "implementation"  # 数值实现/计算任务
 
 class RigorLevel(Enum):
     L1 = "L1"  # 完整证明
@@ -98,12 +99,22 @@ class Task:
     completed: str = ""
     rigor_level: Optional[RigorLevel] = None
     conjecture: Optional[int] = None  # 1 or 2
+    # Phase 3扩展字段
+    started: str = ""  # 任务开始日期
+    progress: str = ""  # 任务进度描述
+    description: str = ""  # 任务详细描述
+    effort: str = ""  # 替代estimated_effort的字段
     
     def __post_init__(self):
         if isinstance(self.type, str):
             self.type = TaskType(self.type)
         if isinstance(self.status, str):
-            self.status = TaskStatus(self.status)
+            # 处理大小写不敏感的状态
+            status_str = self.status.upper() if isinstance(self.status, str) else self.status
+            if status_str == 'ACTIVE':
+                self.status = TaskStatus.ACTIVE
+            else:
+                self.status = TaskStatus(self.status)
         if isinstance(self.rigor_level, str):
             self.rigor_level = RigorLevel(self.rigor_level)
     
@@ -141,7 +152,7 @@ class Task:
             return 12
     
     def to_dict(self) -> Dict:
-        return {
+        result = {
             "id": self.id,
             "direction": self.direction,
             "phase": self.phase,
@@ -161,6 +172,16 @@ class Task:
             "rigor_level": self.rigor_level.value if self.rigor_level else None,
             "conjecture": self.conjecture
         }
+        # 只在有值时添加可选字段
+        if self.started:
+            result["started"] = self.started
+        if self.progress:
+            result["progress"] = self.progress
+        if self.description:
+            result["description"] = self.description
+        if self.effort:
+            result["effort"] = self.effort
+        return result
 
 @dataclass
 class Milestone:
@@ -172,9 +193,10 @@ class Milestone:
     status: str = "pending"
     description: str = ""
     note: str = ""
+    progress: Dict = field(default_factory=dict)  # 进度详情
     
     def to_dict(self) -> Dict:
-        return {
+        result = {
             "id": self.id,
             "name": self.name,
             "date": self.date,
@@ -183,6 +205,9 @@ class Milestone:
             "description": self.description,
             "note": self.note
         }
+        if self.progress:
+            result["progress"] = self.progress
+        return result
     
     @property
     def days_until(self) -> int:
