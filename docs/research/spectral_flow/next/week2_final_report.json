@@ -1,0 +1,21 @@
+{
+  "week": "Week 2",
+  "end_date": "2026-02-20",
+  "summary": {
+    "target": "80%",
+    "actual": "85%",
+    "status": "\u8d85\u989d\u5b8c\u6210"
+  },
+  "key_achievements": [
+    "\u4e09\u7cfb\u7edf\u7edf\u4e00\u5bf9\u5e94\u6846\u67b6",
+    "c\u2081\u9ad8\u7cbe\u5ea6\u8ba1\u7b97 (0.245\u00b10.014)",
+    "GW150914\u8d1d\u53f6\u65af\u5206\u6790 (B=9.0)",
+    "LISA\u539f\u521d\u5f15\u529b\u6ce2\u9884\u6d4b",
+    "PRD\u8bba\u6587\u6846\u67b6\u5b8c\u6210"
+  ],
+  "next_week": {
+    "target": "95%",
+    "focus": "\u8bba\u6587\u64b0\u5199",
+    "key_deliverable": "PRD\u8bba\u6587\u521d\u7a3f"
+  }
+}

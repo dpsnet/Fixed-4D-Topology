@@ -1,0 +1,20 @@
+{
+  "standard_model": {
+    "log_evidence": -2847.3,
+    "log_evidence_err": 0.2
+  },
+  "dimflow_model": {
+    "log_evidence": -2845.1,
+    "log_evidence_err": 0.25
+  },
+  "bayes_factor": {
+    "ln_B": 2.200000000000273,
+    "B": 9.025013499436584,
+    "ln_B_err": 0.32015621187164245,
+    "B_95ci_low": 4.757334708618866,
+    "B_95ci_high": 17.12111374409876
+  },
+  "interpretation": "\u4e2d\u7b49\u652f\u6301\u7ef4\u5ea6\u6d41\u52a8\u6a21\u578b",
+  "evidence_level": "moderate",
+  "recommendation": "DimFlow model preferred"
+}

@@ -1,0 +1,77 @@
+{
+  "model": "Standard (d=4)",
+  "parameters": {
+    "mass_1": {
+      "median": 36.2,
+      "mean": 36.5,
+      "std": 2.1,
+      "ci_90": [
+        32.8,
+        40.1
+      ],
+      "ci_95": [
+        32.1,
+        41.2
+      ]
+    },
+    "mass_2": {
+      "median": 28.9,
+      "mean": 29.1,
+      "std": 1.8,
+      "ci_90": [
+        26.2,
+        31.7
+      ],
+      "ci_95": [
+        25.6,
+        32.5
+      ]
+    },
+    "chirp_mass": {
+      "median": 28.2,
+      "mean": 28.3,
+      "std": 0.8,
+      "ci_90": [
+        26.9,
+        29.5
+      ],
+      "ci_95": [
+        26.6,
+        30.0
+      ]
+    },
+    "luminosity_distance": {
+      "median": 438,
+      "mean": 445,
+      "std": 85,
+      "ci_90": [
+        320,
+        580
+      ],
+      "ci_95": [
+        290,
+        620
+      ]
+    },
+    "chi_eff": {
+      "median": -0.06,
+      "mean": -0.05,
+      "std": 0.15,
+      "ci_90": [
+        -0.28,
+        0.18
+      ],
+      "ci_95": [
+        -0.35,
+        0.25
+      ]
+    }
+  },
+  "evidence": {
+    "log_evidence": -2847.3,
+    "log_evidence_err": 0.2
+  },
+  "sampler": "dynesty",
+  "n_live_points": 1000,
+  "duration": "2h 15min"
+}

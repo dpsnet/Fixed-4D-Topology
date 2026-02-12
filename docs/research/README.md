@@ -2,22 +2,25 @@
 
 本文档目录包含三个并行研究方向的研究成果，采用AI优化的任务驱动执行框架已完成多轮执行。
 
-> **研究状态**: ✅ **项目已完成** - 论文按Annals标准完成，未真实投稿  
+> **研究状态**: ✅ **研究原型完成** - L1严格定理已建立，经验公式已标注为Conjecture  
 > **实际执行时间**: 约12小时 (2026-02-11晚至2026-02-12早)  
 > **Git提交**: 23次  
 > **Phase 3 状态**: ✅ L1严格证明完成 ([认证报告](./reports/L1_RIGOR_CERTIFICATION.md))  
-> **Phase 4 状态**: ✅ 专家咨询与论文投稿完成 ([完成报告](./reports/PHASE4_COMPLETION_REPORT.md))
+> **Phase 4 状态**: ✅ 专家咨询模拟完成 ([完成报告](./reports/PHASE4_COMPLETION_REPORT.md))
 > 
 > ⚠️ **[时间线更正说明](./reports/TIMELINE_CORRECTION_NOTICE.md)**: 之前报告的"5天"有误，实际用时约12小时  
+> 📋 **[严格性审查报告](./RIGOR_AUDIT.md)**: L1/L3严格性分级标注  
+> ⚠️ **[研究原型免责声明](./RESEARCH_PROTOTYPE_DISCLAIMER.md)**: 明确区分严格证明与数值猜想  
 
 ---
 
 ## 核心成果
 
-### 🎯 统一维数公式 (R² = 0.9984)
+### 🎯 统一维数公式 (Conjecture, R² = 0.9984)
 
-$$\dim_{\text{eff}} = 1 + \frac{1}{\log \mathfrak{f}} \cdot \frac{L'(s_c)}{L(s_c)} + \gamma_{\text{type}}$$
+$$\dim_{\text{eff}} \approx 1 + \frac{1}{\log \mathfrak{f}} \cdot \frac{L'(s_c)}{L(s_c)} + \gamma_{\text{type}}$$
 
+**状态**: 🔴 **Conjecture (L3)** - 基于671个案例的数值观察，系数需理论解释  
 **验证结果**:
 | 指标 | 原始T3 | 我们的公式 | 改善 |
 |------|--------|-----------|------|
@@ -26,12 +29,14 @@ $$\dim_{\text{eff}} = 1 + \frac{1}{\log \mathfrak{f}} \cdot \frac{L'(s_c)}{L(s_c
 | MAE | 1.43 | 0.04 | -97% |
 | 样本数 | 20 | **671** | +325% |
 
+**开放问题**: 系数$0.244$和类型修正项$\gamma_{\text{type}}$的几何意义([Problem 6.2](./RIGOR_AUDIT.md))
+
 ### 🏆 主要突破
 
 1. **Theorem A (Fractal Weyl Law)** - Kleinian群热核迹渐近的严格证明
 2. **Theorem B (p-adic Bowen Formula)** - 一般p-adic多项式Bowen公式的严格证明
 3. **统一压力原理** - 揭示Archimedean与非Archimedean动力学的统一结构
-4. **83页Annals论文** - 投稿至Annals of Mathematics (稿件号: ANNMATH-2026-08432)
+4. **83页Annals标准论文** - 按Annals格式撰写，含L1/L3严格性标注([论文框架](./paper_annals.tex))
 5. **671个验证案例** - 487个Kleinian群 + 184个p-adic多项式
 
 ---
@@ -43,7 +48,7 @@ $$\dim_{\text{eff}} = 1 + \frac{1}{\log \mathfrak{f}} \cdot \frac{L'(s_c)}{L(s_c
 | Phase 1 | L4→L2深度研究 | ✅ 完成 | ~3小时 | - |
 | Phase 2 | L2数值验证 | ✅ 完成 | ~2小时 | [报告](./reports/PHASE2_COMPLETION_REPORT.md) |
 | Phase 3 | L2→L1严格证明 | ✅ 完成 | ~5小时 | [认证报告](./reports/L1_RIGOR_CERTIFICATION.md) |
-| Phase 4 | 专家咨询与投稿准备 | ✅ 完成 | ~2小时 | [完成报告](./reports/PHASE4_COMPLETION_REPORT.md) |
+| Phase 4 | 专家咨询模拟与严格性审查 | ✅ 完成 | ~2小时 | [完成报告](./reports/PHASE4_COMPLETION_REPORT.md) |
 
 **实际执行时间**: 约12小时 (2026-02-11晚至2026-02-12早)  
 **总提交数**: 23次  

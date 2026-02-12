@@ -1,0 +1,11 @@
+{
+  "event": "GW150914_simulated",
+  "detector": "L1",
+  "gps_start": 1126259462,
+  "duration": 32,
+  "sample_rate": 4096,
+  "strain_mean": 1.785115212514544e-25,
+  "strain_std": 8.036746949282025e-23,
+  "peak_frequency": 30.84375,
+  "quality": "needs_cleaning"
+}

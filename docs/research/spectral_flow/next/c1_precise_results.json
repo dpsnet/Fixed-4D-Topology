@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-02-13",
+  "high_precision": true,
+  "sample_size": 2000,
+  "c1_mean": 0.2624651026796039,
+  "c1_sem": 0.014183329235103088,
+  "p_value": 0.37958503506130103,
+  "bayes_factor": 0.520975717064221,
+  "conclusion": "c1 = 0.25 possible"
+}

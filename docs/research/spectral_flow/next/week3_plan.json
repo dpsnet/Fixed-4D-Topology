@@ -1,0 +1,57 @@
+{
+  "\u5468\u4e00 (02-23)": {
+    "focus": "\u8bba\u6587\u64b0\u5199 - Introduction & Theory",
+    "tasks": [
+      "\u64b0\u5199Introduction\u7ae0\u8282",
+      "\u5b8c\u5584Theoretical Framework",
+      "\u7ed8\u5236\u56fe1: \u4e09\u7cfb\u7edf\u5bf9\u5e94\u793a\u610f\u56fe",
+      "\u51c6\u5907\u88681: \u53c2\u6570\u5bf9\u7167\u8868"
+    ],
+    "deliverable": "\u8bba\u6587\u521d\u7a3f (\u524d3\u8282)",
+    "progress_target": "86%"
+  },
+  "\u5468\u4e8c (02-24)": {
+    "focus": "\u8bba\u6587\u64b0\u5199 - Numerical Results",
+    "tasks": [
+      "\u64b0\u5199Numerical Verification\u7ae0\u8282",
+      "\u6574\u5408c\u2081\u8ba1\u7b97\u7ed3\u679c",
+      "\u5236\u4f5c\u56fe2: c\u2081\u7edf\u8ba1\u5206\u5e03",
+      "\u8865\u5145\u89e3\u6790\u6320\u7387\u8ba8\u8bba"
+    ],
+    "deliverable": "c\u2081\u5206\u6790\u5b8c\u6574\u5199\u5165",
+    "progress_target": "88%"
+  },
+  "\u5468\u4e09 (02-25)": {
+    "focus": "\u8bba\u6587\u64b0\u5199 - GW Analysis",
+    "tasks": [
+      "\u64b0\u5199Gravitational Wave Signatures\u7ae0\u8282",
+      "\u6574\u5408GW150914\u5206\u6790\u7ed3\u679c",
+      "\u5236\u4f5c\u56fe3-4: \u6ce2\u5f62\u5bf9\u6bd4\u548c\u540e\u9a8c\u5206\u5e03",
+      "\u8ba8\u8bba\u8d1d\u53f6\u65af\u56e0\u5b50\u610f\u4e49"
+    ],
+    "deliverable": "GW\u5206\u6790\u5b8c\u6574\u5199\u5165",
+    "progress_target": "90%"
+  },
+  "\u5468\u56db (02-26)": {
+    "focus": "\u8bba\u6587\u64b0\u5199 - Cosmology & Discussion",
+    "tasks": [
+      "\u64b0\u5199Cosmological Implications\u7ae0\u8282",
+      "\u5236\u4f5c\u56fe5-6: \u7ef4\u5ea6\u6f14\u5316\u548cGW\u8c31",
+      "\u64b0\u5199Discussion\u548cConclusion",
+      "\u5b8c\u6574\u8bba\u6587\u521d\u7a3f\u5b8c\u6210"
+    ],
+    "deliverable": "PRD\u8bba\u6587\u521d\u7a3f\u5b8c\u6210",
+    "progress_target": "93%"
+  },
+  "\u5468\u4e94 (02-27)": {
+    "focus": "\u8bba\u6587\u6da6\u8272 + \u5185\u90e8\u8bc4\u5ba1",
+    "tasks": [
+      "\u5168\u6587\u6821\u5bf9\u548c\u683c\u5f0f\u8c03\u6574",
+      "\u53c2\u8003\u6587\u732e\u6574\u7406",
+      "\u8865\u5145\u6750\u6599\u51c6\u5907",
+      "\u5185\u90e8\u8bc4\u5ba1\u4f1a\u8bae"
+    ],
+    "deliverable": "\u6295\u7a3f\u51c6\u5907\u5b8c\u6210",
+    "progress_target": "95%"
+  }
+}
