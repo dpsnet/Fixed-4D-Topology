@@ -122,7 +122,7 @@
 
 🔗 项目上下文
 
-本研究 (spectral_flow) 是 Fixed-4D-Topology (Dimensionics) 大项目的一部分:
+本研究 (spectral_flow) 是 Fixed-4D-Topology v3.1.0 (Dimensionics) 大项目的一部分:
 
 Fixed-4D-Topology 架构:
 ├── 核心理论 (T1-T4): Cantor表示、谱PDE、凸性分析、分形算术
