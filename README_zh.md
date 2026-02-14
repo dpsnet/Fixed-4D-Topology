@@ -5,9 +5,11 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18511249.svg)](https://doi.org/10.5281/zenodo.18511249)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Status](https://img.shields.io/badge/Status-核心基础-blue.svg)]()
+[![Status](https://img.shields.io/badge/Status-v3.1.0%20实验验证-green.svg)]()
 
 > **L1/L2 严格数学基础**: T1-T10核心理论 + A-G物理应用（v2.1.0内容，v3.0.0-core修正声明）。
+
+> 📢 **v3.1.0 已发布** (2026-02-14): 实验验证完成 — Cu₂O Rydberg激子数据证实 $c_1 = 0.516 \pm 0.026$ (理论值: 0.5)。详见 [VERSION_3.1.0.md](VERSION_3.1.0.md) 和 [docs/research/spectral_flow/](docs/research/spectral_flow/)
 
 > 🎯 **最新研究目标** (2026-02-13): [从分形几何第一性原理导出 $c_1 = 1/4$](ROADMAP_FRACTAL_C1.md) — 核心猜想：$c_1 = 1/d_f^{\max} = (d_f^{\min}/d_f^{\max})^2$
 
@@ -82,7 +84,9 @@
 | **PDF发布** | **2月9日, 2026** | **v2.1.0** | 路线图前 | 5篇论文开源 | ✅ **已发布** |
 | **v3.0路线图执行** | 2月9-10日, 2026 | v2.1.0→v3.0.0 | v3.0执行 | 尝试桥梁（后撤销） | ⚠️ **已撤销** |
 | **严格核心发布** | **2月11日, 2026** | **v3.0.0-core** | 修订版 | **T1-T10 + A-G严格**（桥梁已删除） | ✅ **当前** |
-| **T3替代研究** | **2026年2月11-12日** | **v3.0.0-core** | 并行 | **AI辅助Phase 1-4** (~12小时) | ✅ **完成** |
+| **T3替代研究** | **2026年2月11-12日** | **v3.0.0-core** | 并行 | **AI辅助Phase 1-4** (~12小时) | ✅ 完成 |
+| **Phase 5+ (谱流)** | **2026年2月12-14日** | **v3.0.0-core** | AI辅助 | **Cu₂O c₁提取** | ✅ 完成 |
+| **实验验证** | **2026年2月14日** | **v3.1.0** | 发布 | **+ spectral_flow验证** (c₁ = 0.516±0.026) | ✅ **当前** |
 
 ### 内部演进
 
@@ -93,6 +97,7 @@
 | **PDF发布** | **2026年2月9日** | **v2.1.0** | **5篇论文开源** | **路线图前基础完成** |
 | **v3.0路线图执行** | **2026年2月9-10日** | **v2.1.0→v3.0.0** | **4轨道16小时密集研究** | **尝试桥梁（已撤销）** |
 | **严格核心发布** | **2026年2月11日** | **v3.0.0-core** | **T1-T10 + A-G严格** | **L1/L2基础（同v2.1.0），桥梁已删除** |
+| **实验验证** | **2026年2月14日** | **v3.1.0** | **spectral_flow + Cu₂O** | **首次c₁提取 (0.516±0.026)** |
 
 ---
 
