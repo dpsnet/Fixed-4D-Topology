@@ -5,9 +5,11 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18511249.svg)](https://doi.org/10.5281/zenodo.18511249)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Status](https://img.shields.io/badge/Status-CORE%20FOUNDATION-blue.svg)]()
+[![Status](https://img.shields.io/badge/Status-v3.1.0%20EXPERIMENTAL-green.svg)]()
 
 > 🎯 **最新研究目标** (2026-02-13): [从分形几何第一性原理导出 $c_1 = 1/4$](ROADMAP_FRACTAL_C1.md) — 核心猜想：$c_1 = 1/d_f^{\max} = (d_f^{\min}/d_f^{\max})^2$
+
+> 📢 **v3.1.0 Released** (2026-02-14): Experimental validation completed — Cu₂O Rydberg exciton data confirms $c_1 = 0.516 \pm 0.026$ (theory: 0.5). See [VERSION_3.1.0.md](VERSION_3.1.0.md) and [docs/research/spectral_flow/](docs/research/spectral_flow/)
 
 ---
 
@@ -83,9 +85,10 @@ This repository contains the **unified research framework** for dimension theory
 | **Extended Research** | Feb 7-8, 2026 | v2.0.0 | Pre-roadmap | H, I, J, K directions | ✅ **Extensions** |
 | **PDF Release** | **Feb 9, 2026** | **v2.1.0** | Pre-roadmap | 5 papers open source | ✅ **Released** |
 | **Parallel Research v3.0** | Feb 9-10, 2026 | v2.1.0→v3.0.0 | v3.0 Execution | Attempted bridges (later removed) | ⚠️ **RETRACTED** |
-| **Strict Core Release** | **Feb 11, 2026** | **v3.0.0-core** | Revised | **T1-T10 + A-G strict** (bridges removed) | ✅ **Current** |
-| **T3 Replacement Research** | **Feb 11-12, 2026** | **v3.0.0-core** | Parallel | **AI-assisted Phase 1-4** (~12 hours) | ✅ **Completed** |
-| **Phase 5+ (Spectral Flow)** | **Feb 12 - Mar 1, 2026** | **v3.0.0-core** | AI-assisted | **PRD Paper Complete** | ✅ **Complete** |
+| **Strict Core Release** | **Feb 11, 2026** | **v3.0.0-core** | Revised | **T1-T10 + A-G strict** (bridges removed) | ✅ Complete |
+| **T3 Replacement Research** | **Feb 11-12, 2026** | **v3.0.0-core** | Parallel | **AI-assisted Phase 1-4** (~12 hours) | ✅ Complete |
+| **Phase 5+ (Spectral Flow)** | **Feb 12-14, 2026** | **v3.0.0-core** | AI-assisted | **Cu₂O c₁ extraction** | ✅ Complete |
+| **Experimental Validation** | **Feb 14, 2026** | **v3.1.0** | Release | **+ spectral_flow validation** (c₁ = 0.516±0.026) | ✅ **Current** |
 
 ### Internal Evolution
 
@@ -96,6 +99,7 @@ This repository contains the **unified research framework** for dimension theory
 | **PDF Release** | **Feb 9, 2026** | **v2.1.0** | **5 papers open source** | **Pre-roadmap foundation complete** |
 | **v3.0 Roadmap Execution** | **Feb 9-10, 2026** | **v2.1.0→v3.0.0** | **4-track intensive (16h)** | **Attempted bridges (retracted)** |
 | **Strict Core Release** | **Feb 11, 2026** | **v3.0.0-core** | **T1-T10 + A-G strict** | **L1/L2 foundation (same as v2.1.0), bridges removed** |
+| **Experimental Validation** | **Feb 14, 2026** | **v3.1.0** | **spectral_flow + Cu₂O** | **First c₁ extraction (0.516±0.026)** |
 
 ---
 
