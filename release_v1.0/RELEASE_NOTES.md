@@ -4,6 +4,7 @@
 
 **Release Date**: 2026-02-15  
 **Authors**: 王斌 (Wang Bin), Kimi 2.5 Agent  
+**Part of**: Fixed-4D-Topology v3.1.0  
 **License**: CC BY 4.0 (Paper) / MIT (Code) / CC0 (Data)
 
 ---
@@ -27,6 +28,21 @@ c₁(d,w) = 1/2^(d-2+w)
 ```
 
 For d=3 spatial dimensions and w=0 time dimensions: c₁(3,0) = 1/2 = 0.5
+
+---
+
+## 📝 Version Note
+
+This release (v1.0-cu2o-extraction) is part of the **Fixed-4D-Topology v3.1.0** framework:
+
+- **Release Version**: v1.0-cu2o-extraction (paper release)
+- **Framework Version**: Fixed-4D-Topology v3.1.0
+- **Release Type**: GitHub Release for specific paper
+- **Relationship**: This is the first experimental validation release under v3.1.0
+
+Future releases will follow semantic versioning:
+- Paper updates: v1.1, v1.2, etc.
+- New papers: v2.0-[topic], v3.0-[topic], etc.
 
 ---
 
@@ -101,7 +117,7 @@ where:
   title={Experimental Extraction of the Dimension Flow Parameter from Rydberg Excitons},
   author={Wang, Bin and Kimi 2.5 Agent},
   year={2026},
-  note={GitHub Release v1.0-cu2o-extraction},
+  note={GitHub Release v1.0-cu2o-extraction, Part of Fixed-4D-Topology v3.1.0},
   url={https://github.com/dpsnet/Fixed-4D-Topology/releases/tag/v1.0-cu2o-extraction}
 }
 ```
@@ -109,6 +125,7 @@ where:
 ### APA
 Wang, B., & Kimi 2.5 Agent. (2026). Experimental Extraction of the Dimension Flow 
 Parameter from Rydberg Excitons. GitHub Release v1.0-cu2o-extraction. 
+Part of Fixed-4D-Topology v3.1.0.
 https://github.com/dpsnet/Fixed-4D-Topology/releases/tag/v1.0-cu2o-extraction
 
 ---
@@ -116,12 +133,13 @@ https://github.com/dpsnet/Fixed-4D-Topology/releases/tag/v1.0-cu2o-extraction
 ## 🔗 Related Resources
 
 ### Project
-- **Main Repository**: https://github.com/dpsnet/Fixed-4D-Topology
+- **Main Repository**: https://github.com/dpsnet/Fixed-4D-Topology (v3.1.0)
+- **Framework Version**: [v3.1.0](../VERSION_3.1.0.md)
 - **Unified Theory Docs**: `docs/research/spectral_flow/unified_theory/`
 
 ### Other Releases
-- v2.0: Unified Framework (coming March 2026)
-- v3.0: GR Derivation (coming June 2026)
+- v2.0-unified-framework: Coming March 2026
+- v3.0-gr-derivation: Coming June 2026
 
 ### External Links
 - **arXiv**: [Coming soon]
@@ -156,4 +174,5 @@ We welcome feedback and contributions!
 ---
 
 *Release v1.0-cu2o-extraction*  
-*Part of the Fixed-4D-Topology (Dimensionics) Project*
+*Part of Fixed-4D-Topology v3.1.0*  
+*Fixed-4D-Topology (Dimensionics) Project*
