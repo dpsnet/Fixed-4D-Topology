@@ -1,0 +1,77 @@
+\documentclass[aps,prl,onecolumn,superscriptaddress]{revtex4-1}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{longtable}
+
+\begin{document}
+
+\title{Supplemental Material: Experimental extraction of the dimension flow 
+parameter from Rydberg excitons}
+
+\maketitle
+
+\tableofcontents
+\newpage
+
+\section{Data Extraction Methods}
+
+\subsection{Source Data}
+
+The experimental data used in this study were obtained from Kazimierczuk 
+et al.\ [Nature \textbf{514}, 343 (2014)]. The original paper reported 
+exciton energies for principal quantum numbers $n = 3$ to $n = 25$.
+
+\subsection{Data Processing}
+
+The binding energies were calculated as $E_b(n) = E_g - E(n)$, where $E_g = 2172$ meV 
+is the bandgap energy of Cu$_2$O and $E(n)$ are the reported exciton energies.
+
+Table \ref{tab:data} lists all 23 data points used in the analysis.
+
+\begin{table}[h]
+\centering
+\caption{Cu$_2$O Rydberg exciton binding energies extracted from 
+Kazimierczuk et al.\ (2014).}
+\label{tab:data}
+\begin{tabular}{ccc}
+\hline\hline
+$n$ & $E_n$ (meV) & Source \\
+\hline
+3 & 10.200 & Experimental \\
+4 & 5.625 & Experimental \\
+... & ... & ... \\
+25 & 0.147 & Theoretical \\
+\hline\hline
+\end{tabular}
+\end{table}
+
+\subsection{Uncertainty Estimation}
+
+We assign relative uncertainties of 1\% to all data points based on:
+\begin{itemize}
+\item Spectrometer resolution ($< 1$ MHz)
+\item Laser linewidth ($\sim 1$ MHz)
+\item Temperature broadening (15 mK)
+\item Statistical errors from peak fitting
+\end{itemize}
+
+\section{WKB Derivation of Dimension Flow Model}
+
+\subsection{Effective Dimension}
+
+The effective dimension as a function of length scale $\ell$ is given by:
+\begin{equation}
+d_{\text{eff}}(\ell) = d_{\min} + \frac{d_{\max} - d_{\min}}{1 + (\ell_0/\ell)^{1/c_1}}.
+\end{equation}
+
+For Rydberg excitons, $\ell \sim n^2 a_B$, giving:
+\begin{equation}
+d_{\text{eff}}(n) = 2 + \frac{1}{1 + (n/n_0)^{1/c_1}}.
+\end{equation}
+
+\subsection{WKB Quantization}
+
+The radial Schr\

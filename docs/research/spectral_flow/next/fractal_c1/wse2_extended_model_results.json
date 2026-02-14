@@ -1,0 +1,23 @@
+{
+  "system": "WSe2 monolayer (extended model)",
+  "dimension": 2,
+  "time_weight": 0,
+  "c1_base": 0.13754930177044886,
+  "c1_base_uncertainty": 0.07239319179464057,
+  "c1_theory": 1.0,
+  "deviation_sigma": -11.91342275218483,
+  "material_parameters": {
+    "epsilon": 2.5,
+    "r0_nm": 5.0,
+    "a_B_nm": 1.0,
+    "r0_over_aB": 5.0
+  },
+  "fit_parameters": {
+    "Ry_meV": 171.3035296690237,
+    "n0": 2.957331419480809,
+    "delta_inf": 0.9999999999999996
+  },
+  "chi2": 0.09511788019195838,
+  "dof": 0,
+  "model": "Extended dimension flow with Rytova-Keldysh screening"
+}

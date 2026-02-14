@@ -1,0 +1,23 @@
+{
+  "system": "WSe2 monolayer",
+  "dimension": 2,
+  "time_weight": 0,
+  "c1_extracted": 0.10000000004045731,
+  "c1_uncertainty": 0.41596857994311004,
+  "c1_theory": 1.0,
+  "deviation_sigma": -2.163624954756514,
+  "n_points": 4,
+  "binding_energies": [
+    172,
+    41,
+    20,
+    11
+  ],
+  "quantum_numbers": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "source": "Liu et al. (2019) via arXiv:2407.01477v3"
+}

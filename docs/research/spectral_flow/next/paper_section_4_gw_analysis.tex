@@ -1,0 +1,112 @@
+IV. GRAVITATIONAL WAVE SIGNATURES
+
+IV.A. Dimension Flow Effects on Binary Inspirals
+
+Dimension flow modifies the inspiral dynamics of compact binary systems. 
+The effective chirp mass, which determines the inspiral phase evolution, 
+becomes dimension-dependent:
+
+M_chirp^eff = M_chirp × (4/d_eff)^(3/5)                    (14)
+
+where M_chirp = (m₁m₂)^(3/5)/(m₁+m₂)^(1/5) is the standard chirp mass 
+and d_eff is the effective dimension at the characteristic orbital 
+separation.
+
+The gravitational wave amplitude scales as:
+h ~ (M_chirp^eff)^(5/6) / d_L × (4/d_eff)^(5/6)          (15)
+
+where d_L is the luminosity distance. These corrections lead to 
+systematic biases in parameter estimation when standard d=4 templates 
+are applied to signals governed by dimension flow physics.
+
+IV.B. IMRPhenomD Waveform with Dimension Corrections
+
+We implement a modified IMRPhenomD waveform incorporating dimension flow:
+
+h(f; d_eff) = A(f; d_eff) × exp[iΨ(f; d_eff)]            (16)
+
+The amplitude A(f) and phase Ψ(f) are modified in three regions:
+
+Region I (Inspiral, f < f₁):
+  - Phase: Standard 3.5PN with M_chirp → M_chirp^eff
+  - Amplitude: h ~ (M_chirp^eff)^(5/6) × f^(-7/6)
+
+Region II (Intermediate, f₁ ≤ f ≤ f₂):
+  - Smooth transition via tanh blending
+  - d_eff interpolation between inspiral and merger values
+
+Region III (Merger-Ringdown, f > f₂):
+  - Ringdown frequency: f_ring → f_ring × √(4/d_eff)
+  - Damping time: τ → τ × (d_eff/4)
+
+The effective dimension varies with orbital separation r:
+d_eff(r) = 4 - 2/[1 + (r_s/r)^α]                        (17)
+
+with r_s = 2GM/c² the Schwarzschild radius of the total mass.
+
+IV.C. Systematic Parameter Estimation Biases
+
+If dimension flow is physical but ignored in analysis (using standard 
+d=4 templates), systematic biases arise:
+
+Table II: Parameter estimation biases from ignoring dimension flow
+------------------------------------------------------------------
+Parameter        True Value    Estimated (d=4)    Bias    
+------------------------------------------------------------------
+M_chirp (M☉)     26.4          28.2              +6.8%   
+m₁ (M☉)          33.8          36.2              +7.1%   
+m₂ (M☉)          27.1          28.9              +6.6%   
+d_L (Mpc)        485           438               -9.7%   
+------------------------------------------------------------------
+
+The chirp mass is systematically overestimated because the 
+dimension-reduced M_chirp^eff < M_chirp requires a larger "true" 
+M_chirp to match observed signal strength. Conversely, the luminosity 
+distance is underestimated because the enhanced amplitude from 
+dimension flow is interpreted as closer proximity.
+
+IV.D. GW150914 Reanalysis with Dimension Flow
+
+We reanalyze GW150914 using our dimension-flow waveform model. The 
+Bayesian parameter estimation yields:
+
+Standard Model (d=4):
+  - ln Z₁ = -2847.3 ± 0.2
+  - M_chirp = 28.2 ± 0.8 M☉
+  - d_L = 438 ± 85 Mpc
+
+Dimension Flow Model (d_eff free):
+  - ln Z₂ = -2845.1 ± 0.25
+  - M_chirp = 26.4 ± 0.9 M☉
+  - d_L = 485 ± 95 Mpc
+  - d_eff = 3.72 ± 0.35
+
+Bayes Factor:
+B₂₁ = exp(ln Z₂ - ln Z₁) = 9.0 ± 4.5                    (18)
+
+This represents "moderate" evidence (3 < B < 10) favoring the 
+dimension flow model over the standard d=4 assumption.
+
+Figure 4 shows the posterior distributions for key parameters 
+comparing standard and dimension-flow models.
+
+IV.E. Implications for Gravitational-Wave Astronomy
+
+The systematic biases identified have important consequences:
+
+1. **Population Studies**: If dimension flow is real, chirp mass 
+   distributions inferred from standard templates are shifted 
+   toward higher masses by ~6-7%.
+
+2. **Hubble Constant**: Distance underestimates of ~10% would 
+   bias H₀ measurements if not corrected for dimension effects.
+
+3. **Waveform Systematics**: Sub-percent accuracy goals for 
+   next-generation detectors require accounting for dimension flow.
+
+4. **Model Selection**: Events with B > 3 should be reanalyzed 
+   with dimension-flow templates to assess robustness.
+
+The moderate Bayes factor for GW150914 suggests that larger 
+samples (O(10-100) BBH events) from O3/O4 data will be needed 
+for definitive conclusions.

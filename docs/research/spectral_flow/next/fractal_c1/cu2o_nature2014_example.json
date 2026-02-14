@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "paper_title": "Giant Rydberg excitons in the copper oxide Cu2O",
+    "authors": "T. Kazimierczuk et al.",
+    "journal": "Nature",
+    "year": 2014,
+    "doi": "10.1038/nature12654",
+    "extraction_date": "2026-02-13T20:42:34.366053",
+    "extracted_by": "",
+    "notes": "\u4ece\u56fe1b\u63d0\u53d6\u7684\u80fd\u7ea7\u6570\u636e\uff08\u793a\u4f8b\uff09"
+  },
+  "experimental_conditions": {
+    "material": "Cu2O",
+    "temperature_K": 0.015,
+    "sample_thickness_nm": 1000,
+    "measurement_technique": "absorption_spectroscopy",
+    "spectral_resolution_ueV": 0.5,
+    "excitation_source": "",
+    "additional_info": ""
+  },
+  "energy_levels": [
+    {
+      "n": 2,
+      "E_meV": -70.0,
+      "error_meV": 0.1,
+      "assignment": "2P"
+    },
+    {
+      "n": 3,
+      "E_meV": -35.0,
+      "error_meV": 0.1,
+      "assignment": "3P"
+    },
+    {
+      "n": 4,
+      "E_meV": -21.0,
+      "error_meV": 0.1,
+      "assignment": "4P"
+    },
+    {
+      "n": 5,
+      "E_meV": -14.0,
+      "error_meV": 0.1,
+      "assignment": "5P"
+    },
+    {
+      "n": 10,
+      "E_meV": -4.0,
+      "error_meV": 0.05,
+      "assignment": "10P"
+    },
+    {
+      "n": 15,
+      "E_meV": -2.0,
+      "error_meV": 0.05,
+      "assignment": "15P"
+    },
+    {
+      "n": 20,
+      "E_meV": -1.2,
+      "error_meV": 0.05,
+      "assignment": "20P"
+    },
+    {
+      "n": 25,
+      "E_meV": -0.8,
+      "error_meV": 0.05,
+      "assignment": "25P"
+    }
+  ],
+  "analysis": {
+    "rydberg_energy_meV": null,
+    "quantum_defect": null,
+    "c1_extracted": null,
+    "c1_error": null,
+    "fit_quality_chi2": null,
+    "notes": ""
+  }
+}

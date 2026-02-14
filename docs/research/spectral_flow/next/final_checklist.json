@@ -1,0 +1,41 @@
+{
+  "paper_writing": {
+    "All 7 sections": true,
+    "Abstract": true,
+    "Introduction": true,
+    "Theoretical Framework": true,
+    "Numerical Verification": true,
+    "GW Signatures": true,
+    "Cosmology": true,
+    "Discussion": true,
+    "Conclusion": true
+  },
+  "figures": {
+    "Figure 1 - Three systems": true,
+    "Figure 2 - c1 distribution": true,
+    "Figure 3 - Dimension-volume": true,
+    "Figure 4 - GW150914": true,
+    "Figure 5 - FLRW evolution": true,
+    "Figure 6 - GW spectrum": true
+  },
+  "tables": {
+    "Table I - c1 methods": true,
+    "Table II - Parameter bias": true,
+    "Table III - GW150914": true,
+    "Table IV - GW sources": true
+  },
+  "technical": {
+    "LaTeX source files": true,
+    "BibTeX references": true,
+    "Figure data (JSON)": true,
+    "Plotting scripts": true,
+    "Build scripts": true
+  },
+  "final_checks": {
+    "Spell checking": true,
+    "Equation numbering": true,
+    "Figure references": true,
+    "Citation completeness": "Partial",
+    "PDF generation": "Mock"
+  }
+}

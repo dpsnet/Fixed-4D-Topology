@@ -1,0 +1,42 @@
+{
+  "GaAs QW binding energy systematic": {
+    "description": "GaAs\u91cf\u5b50\u9631\u7ed3\u5408\u80fd\u7cfb\u7edf\u7814\u7a76",
+    "relevance": "\u9ad8 - \u76f4\u63a5\u76f8\u5173",
+    "expected_c1": 1.0
+  },
+  "quantum well exciton binding energy vs width": {
+    "description": "\u91cf\u5b50\u9631\u6fc0\u5b50\u7ed3\u5408\u80fdvs\u9631\u5bbd",
+    "relevance": "\u9ad8 - \u7ef4\u5ea6\u6d41\u9a8c\u8bc1",
+    "expected_c1": 1.0
+  },
+  "2D exciton Rydberg series quantum well": {
+    "description": "2D\u6fc0\u5b50Rydberg\u7cfb\u5217",
+    "relevance": "\u9ad8 - \u5982\u679c\u6709\u6570\u636e",
+    "expected_c1": 1.0
+  },
+  "MoS2 exciton binding energy": {
+    "description": "MoS2\u6fc0\u5b50\u7ed3\u5408\u80fd",
+    "relevance": "\u4e2d - \u7eaf2D\u7cfb\u7edf",
+    "expected_c1": 1.0
+  },
+  "WSe2 Rydberg excitons": {
+    "description": "WSe2 Rydberg\u6fc0\u5b50",
+    "relevance": "\u9ad8 - \u53ef\u80fd\u6709\u9ad8n\u6570\u636e",
+    "expected_c1": 1.0
+  },
+  "perovskite quantum well exciton": {
+    "description": "\u9499\u949b\u77ff\u91cf\u5b50\u9631\u6fc0\u5b50",
+    "relevance": "\u4e2d - \u65b0\u5174\u6750\u6599",
+    "expected_c1": 1.0
+  },
+  "graphene Landau level spectroscopy multiple transitions": {
+    "description": "\u77f3\u58a8\u70efLandau\u80fd\u7ea7\u591a\u8dc3\u8fc1",
+    "relevance": "\u9ad8 - \u7528\u4e8e(d=2,w=1)",
+    "expected_c1": 0.5
+  },
+  "topological insulator surface state Landau levels": {
+    "description": "\u62d3\u6251\u7edd\u7f18\u4f53\u8868\u9762\u6001Landau\u80fd\u7ea7",
+    "relevance": "\u4e2d - \u66ff\u4ee3\u72c4\u62c9\u514b\u7cfb\u7edf",
+    "expected_c1": 0.5
+  }
+}

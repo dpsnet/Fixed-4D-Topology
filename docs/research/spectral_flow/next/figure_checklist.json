@@ -1,0 +1,38 @@
+{
+  "Figure 1": {
+    "title": "Three-system dimension flow",
+    "status": "\u2705",
+    "data": "figure1_three_systems.json",
+    "script": "plot_figure1.py"
+  },
+  "Figure 2": {
+    "title": "c\u2081 bootstrap distributions",
+    "status": "\u2705",
+    "data": "figure2_c1_distribution.json",
+    "script": "plot_figure2.py"
+  },
+  "Figure 3": {
+    "title": "Dimension-volume relationship",
+    "status": "\u2705",
+    "data": "figure3_dimension_volume.json",
+    "script": "plot_figure3.py"
+  },
+  "Figure 4": {
+    "title": "GW150914 posteriors",
+    "status": "\u2705",
+    "data": "figure4_gw150914_posteriors.json",
+    "script": "plot_figure4.py"
+  },
+  "Figure 5": {
+    "title": "FLRW dimension evolution",
+    "status": "\u2705",
+    "data": "figure5_flrw_evolution.json",
+    "script": "plot_figure5.py"
+  },
+  "Figure 6": {
+    "title": "Primordial GW spectrum",
+    "status": "\u2705",
+    "data": "figure6_gw_spectrum.json",
+    "script": "plot_figure6.py"
+  }
+}

@@ -1,0 +1,166 @@
+
+% ============================================
+\appendix
+% ============================================
+
+\section{Detailed Derivations}
+\label{app:derivations}
+
+\subsection{Heat Kernel on Hyperbolic Space}
+
+The heat kernel on hyperbolic space $\mathbb{H}^3$ can be computed exactly using the method of images or via the spectral representation. The Laplacian eigenfunctions are labeled by momentum $k \in [0, \infty)$ with spectral density $\rho(k) = k^2/(2\pi^2)$.
+
+The heat kernel trace is:
+\begin{equation}
+K_{\mathbb{H}^3}(\sigma) = \int_0^\infty dk \, \rho(k) \, e^{-\sigma(k^2 + 1)} = \frac{e^{-\sigma}}{(4\pi\sigma)^{3/2}}.
+\end{equation}
+
+For a compact hyperbolic manifold $\mathcal{M} = \mathbb{H}^3/\Gamma$, the spectrum is discrete and the heat kernel involves a sum over closed geodesics through the Selberg trace formula:
+\begin{equation}
+K_{\mathcal{M}}(\sigma) = \frac{\text{Vol}(\mathcal{M})}{(4\pi\sigma)^{3/2}}e^{-\sigma} + \sum_{\gamma} \frac{\ell(\gamma)}{2\sinh(\ell(\gamma)/2)} \frac{e^{-\ell(\gamma)^2/4\sigma}}{\sqrt{4\pi\sigma}},
+\end{equation}
+where the sum runs over primitive closed geodesics $\gamma$ with length $\ell(\gamma)$.
+
+\subsection{Patterson-Sullivan Theory}
+
+The Patterson-Sullivan measure provides the connection between the spectral geometry of $\mathbb{H}^3/\Gamma$ and the fractal dimension of the limit set. For a geometrically finite Kleinian group, the Poincar\'{e} series:
+\begin{equation}
+g_s(x, y) = \sum_{\gamma \in \Gamma} e^{-s \, d(x, \gamma y)}
+\end{equation}
+converges for $\text{Re}(s) > \delta$ and diverges for $\text{Re}(s) < \delta$, where $\delta$ is the Hausdorff dimension.
+
+The spectral bottom is given by:
+\begin{equation}
+\lambda_0 = \begin{cases}
+\delta(2-\delta) & \text{if } \delta > 1, \\
+1 & \text{if } \delta \leq 1.
+\end{cases}
+\end{equation}
+
+\subsection{Derivation of Coefficient Formula}
+
+Starting from the spectral dimension definition and using the asymptotic form of the heat kernel near the critical dimension, we derive:
+
+\begin{align}
+d_s(\ell) &= -2 \frac{\partial \ln K}{\partial \ln \sigma} \\
+&= d - 2\sigma \frac{K'(\sigma)}{K(\sigma)} \\
+&= d - \frac{c_1}{\ln(\ell/\ell_0)} + O\left(\frac{1}{\ln^2(\ell/\ell_0)}\right).
+\end{align}
+
+The coefficient $c_1$ emerges from matching the short-distance behavior of the spectral measure to the black hole entropy scaling.
+
+\section{Numerical Methods}
+\label{app:numerical}
+
+\subsection{Bootstrap Algorithm}
+
+Our bootstrap analysis proceeds as follows:
+\begin{enumerate}
+\item Generate $B = 10,000$ bootstrap samples by resampling with replacement from the original $N = 2,000$ manifolds.
+\item For each sample, compute $c_1$ using the three methods described in Sec.~\ref{sec:numerical}.
+\item Construct empirical cumulative distribution functions for each method.
+\item Compute bias-corrected and accelerated (BCa) confidence intervals.
+\item Test for method consistency via ANOVA.
+\end{enumerate}
+
+The BCa intervals account for both bias and skewness in the bootstrap distribution:
+\begin{equation}
+\alpha_1 = \Phi\left(\hat{z}_0 + \frac{\hat{z}_0 + z_{\alpha/2}}{1 - \hat{a}(\hat{z}_0 + z_{\alpha/2})}\right),
+\end{equation}
+where $\Phi$ is the standard normal CDF, $\hat{z}_0$ measures bias, and $\hat{a}$ measures skewness.
+
+\subsection{Precision Requirements}
+
+The logarithmic derivative in Eq.~(\ref{eq:c1_formula}) requires high precision:
+\begin{equation}
+\frac{\Delta c_1}{c_1} \sim \frac{1}{\ln V} \frac{\Delta V}{V}.
+\end{equation}
+
+For $V \sim 10^3$ and target precision $\Delta c_1/c_1 \sim 10^{-3}$, we need $\Delta V/V \sim 10^{-6}$, necessitating 50-digit arithmetic.
+
+\subsection{Convergence Tests}
+
+We verify convergence through Richardson extrapolation. The $c_1$ estimate at precision $p$ behaves as:
+\begin{equation}
+c_1(p) = c_1^* + \frac{A}{p} + \frac{B}{p^2} + O(p^{-3}).
+\end{equation}
+
+Using precisions $p = 30, 40, 50, 60$ digits, we extract the extrapolated value $c_1^*$ and confirm agreement at the $10^{-7}$ level.
+
+\section{Gravitational Wave Waveform Details}
+\label{app:waveform}
+
+\subsection{IMRPhenomD Structure}
+
+The IMRPhenomD waveform combines inspiral, merger, and ringdown through:
+\begin{equation}
+\tilde{h}(f) = A(f)e^{i\Psi(f)} = A_{eff}(f) \times \begin{cases}
+e^{i\Psi_{ins}(f)} & f < f_1, \\
+e^{i\Psi_{int}(f)} & f_1 \leq f < f_2, \\
+e^{i\Psi_{rd}(f)} & f \geq f_2,
+\end{cases}
+\end{equation}
+where the intermediate phase $\Psi_{int}$ ensures continuity of phase and derivatives.
+
+\subsection{Spectral Dimension Modifications}
+
+Our modifications preserve the GR limit while introducing $d_s$ dependence:
+\begin{align}
+\Psi_{ins}^{(d_s)} &= \Psi_{ins}^{GR} + \delta\Psi_{d_s}, \\
+A_{eff}^{(d_s)} &= A_{eff}^{GR} \times (1 + \delta A_{d_s}),
+\end{align}
+with corrections vanishing as $f \to 0$ (ensuring IR recovery of GR).
+
+The phase correction through 3.5PN order:
+\begin{align}
+\delta\Psi_{d_s}(f) &= \frac{3}{128} \eta^{-1} v^{-5} \left[ \beta_{d_s}^{(0)} v^0 + \beta_{d_s}^{(1)} v^2 \right. \\
+&\quad \left. + \beta_{d_s}^{(2)} v^4 + \beta_{d_s}^{(3)} v^6 + O(v^7) \right],
+\end{align}
+where $v = (\pi G \mathcal{M} f)^{1/3}$ and the $\beta$ coefficients depend on $c_1$ and $\beta$.
+
+\subsection{Bayesian Computation}
+
+We employ nested sampling via \texttt{dynesty} for posterior estimation. The evidence integral:
+\begin{equation}
+\mathcal{Z} = \int d\theta \, \mathcal{L}(d|\theta) \pi(\theta)
+\end{equation}
+is computed via Monte Carlo with 2000 live points and tolerance $10^{-3}$.
+
+\section{Cosmological Perturbation Theory}
+\label{app:cosmo}
+
+\subsection{Modified Einstein Equations}
+
+With scale-dependent $d_s$, the effective Friedmann equation becomes:
+\begin{equation}
+H^2 = \frac{8\pi G}{3}\rho + \frac{\Lambda_{eff}(a)}{3},
+\end{equation}
+where $\Lambda_{eff}(a) \propto a^{-2(4-d_s(a))}$ encodes the dimensional flow.
+
+\subsection{Tensor Perturbations}
+
+The equation for tensor perturbations $h_{ij}$ in an expanding universe with variable $d_s$:
+\begin{equation}
+\ddot{h}_k + 3H\dot{h}_k + \left(\frac{k}{a}\right)^2 \left(\frac{k}{a k_P}\right)^{d_s-4} h_k = 0.
+\end{equation}
+
+The resulting power spectrum at horizon crossing:
+\begin{equation}
+\mathcal{P}_h(k) = \frac{2}{\pi^2} \left(\frac{H_{inf}}{M_{Pl}}\right)^2 \left[ 1 + A_{d_s} \sin(\omega_{d_s}\ln(k/k_*)) \right].
+\end{equation}
+
+\subsection{LISA Response Function}
+
+The LISA detector response to a gravitational wave background is characterized by the overlap reduction function:
+\begin{equation}
+\Gamma(f) = \frac{3}{10} \left[ 1 + \frac{1}{3} j_0(2x) - \frac{4}{3} j_0(x) \right],
+\end{equation}
+where $x = 2\pi f L/c$ with $L = 2.5 \times 10^9$ m the arm length.
+
+The sensitivity curve accounts for instrumental noise and confusion foreground:
+\begin{equation}
+S_n(f) = S_{inst}(f) + S_{conf}(f),
+\end{equation}
+with the instrumental noise comprising acceleration and displacement contributions.
+
+\end{document}

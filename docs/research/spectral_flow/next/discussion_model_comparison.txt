@@ -1,0 +1,21 @@
+Model Comparison Discussion
+---------------------------
+
+The Bayes factor B₂₁ = 9.0 represents moderate evidence favoring the 
+dimension flow model. This can be understood through the Jeffreys scale:
+
+- B < 1: Evidence supports null hypothesis (standard model)
+- 1 < B < 3: Weak evidence for alternative
+- 3 < B < 10: Moderate evidence (our result)
+- 10 < B < 30: Strong evidence
+- B > 30: Very strong evidence
+
+While B = 9.0 does not constitute definitive proof, it warrants 
+further investigation with:
+
+1. Larger samples of BBH events (O3/O4 data)
+2. Multiple event stacking
+3. Population-level analysis
+
+The systematic parameter biases (~7% in chirp mass, ~10% in distance) 
+are significant enough to affect astrophysical inference if uncorrected.

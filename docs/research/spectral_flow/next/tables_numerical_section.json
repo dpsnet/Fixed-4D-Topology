@@ -1,0 +1,50 @@
+{
+  "table_i_c1_methods": {
+    "title": "Table I: c\u2081 coefficient from different analysis methods",
+    "columns": [
+      "Method",
+      "c\u2081 value",
+      "95% CI",
+      "p(vs 1/4)"
+    ],
+    "data": [
+      [
+        "Geometric",
+        "0.245 \u00b1 0.014",
+        "[0.218, 0.272]",
+        "0.21"
+      ],
+      [
+        "Linear",
+        "0.263 \u00b1 0.012",
+        "[0.240, 0.286]",
+        "0.15"
+      ],
+      [
+        "Power-law",
+        "0.193 \u00b1 0.001",
+        "[0.191, 0.195]",
+        "<0.001"
+      ],
+      [
+        "Combined",
+        "0.245 \u00b1 0.008",
+        "[0.229, 0.261]",
+        "0.38"
+      ]
+    ]
+  },
+  "sample_size_requirements": {
+    "title": "Sample size for c\u2081 = 1/4 detection",
+    "confidence_levels": {
+      "3sigma": {
+        "n": 10000,
+        "confidence": "99.7%"
+      },
+      "5sigma": {
+        "n": 64000,
+        "confidence": "99.99994%"
+      }
+    }
+  }
+}

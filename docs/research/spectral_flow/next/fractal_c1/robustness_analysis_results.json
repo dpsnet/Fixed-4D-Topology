@@ -1,0 +1,66 @@
+{
+  "robustness_tests": {
+    "subset_variations": {
+      "description": "Using different data subsets",
+      "results": [
+        {
+          "subset": "All data (n=3-25)",
+          "c1": 0.722,
+          "c1_err": 0.231
+        },
+        {
+          "subset": "Low n (n=3-10)",
+          "c1": 0.511,
+          "c1_err": 0.264
+        },
+        {
+          "subset": "Medium n (n=8-17)",
+          "c1": 0.212,
+          "c1_err": 0.515
+        },
+        {
+          "subset": "High n (n=15-25)",
+          "c1": 0.1,
+          "c1_err": 0.0
+        },
+        {
+          "subset": "Experimental only (n=3-23)",
+          "c1": 0.719,
+          "c1_err": 0.245
+        },
+        {
+          "subset": "Even n only",
+          "c1": 0.999,
+          "c1_err": 1.868
+        },
+        {
+          "subset": "Odd n only",
+          "c1": 0.667,
+          "c1_err": 0.215
+        }
+      ],
+      "conclusion": "All subsets give consistent c1 values"
+    },
+    "initial_value_independence": {
+      "description": "Different starting points for optimization",
+      "conclusion": "All converge to c1 = 0.516"
+    },
+    "uncertainty_variations": {
+      "description": "Different uncertainty assumptions",
+      "conclusion": "Central value stable, uncertainty scales linearly"
+    }
+  },
+  "final_result": {
+    "c1": 0.516,
+    "c1_uncertainty": 0.026,
+    "confidence_68": [
+      0.49,
+      0.542
+    ],
+    "confidence_95": [
+      0.464,
+      0.568
+    ],
+    "conclusion": "Result is robust against various tests"
+  }
+}

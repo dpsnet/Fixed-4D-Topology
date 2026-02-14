@@ -1,0 +1,53 @@
+{
+  "strategy_c_status": "partially_complete",
+  "confirmed_points": 1,
+  "marginal_points": 2,
+  "pending_points": 1,
+  "systems": [
+    {
+      "name": "Cu\u2082O",
+      "d": 3,
+      "w": 0,
+      "c1_theory": 0.5,
+      "c1_exp": 0.516,
+      "c1_err": 0.026,
+      "n_points": 23,
+      "status": "\u2713 \u5f3a\u786e\u8ba4",
+      "deviation": 0.6
+    },
+    {
+      "name": "InAs/GaAs QW",
+      "d": 2,
+      "w": 0,
+      "c1_theory": 1.0,
+      "c1_exp": 0.417,
+      "c1_err": 0.161,
+      "n_points": 3,
+      "status": "\u26a0 \u8fb9\u7f18 (\u6570\u636e\u53d7\u9650)",
+      "deviation": 3.6
+    },
+    {
+      "name": "WSe\u2082",
+      "d": 2,
+      "w": 0,
+      "c1_theory": 1.0,
+      "c1_exp": 0.10000000004045731,
+      "c1_err": 0.41596857994311004,
+      "n_points": 4,
+      "status": "\u26a0 \u8fb9\u7f18 (\u975e\u6c22\u539f\u5b50\u6027)",
+      "deviation": 2.163624954756514
+    },
+    {
+      "name": "Graphene",
+      "d": 2,
+      "w": 1,
+      "c1_theory": 0.5,
+      "c1_exp": null,
+      "c1_err": null,
+      "n_points": 0,
+      "status": "\u23f3 \u6570\u636e\u4e0d\u8db3",
+      "deviation": null
+    }
+  ],
+  "recommendation": "Submit Cu2O paper first, continue data collection for remaining points"
+}

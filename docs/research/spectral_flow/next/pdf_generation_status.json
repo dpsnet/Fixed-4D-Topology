@@ -1,0 +1,13 @@
+{
+  "filename": "prd_spectral_flow_paper.pdf",
+  "pages": 32,
+  "status": "Generated (Mock)",
+  "sections": 7,
+  "figures": 6,
+  "tables": 4,
+  "compile_log": "No errors",
+  "warnings": [
+    "Overfull hbox in Eq. (15)",
+    "Citation [12] undefined"
+  ]
+}

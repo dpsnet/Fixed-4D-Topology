@@ -1,0 +1,245 @@
+{
+  "experimental": [
+    {
+      "source": "Casco et al. (2002), SPP Proceedings",
+      "type": "Experimental",
+      "exciton_type": "Heavy Hole",
+      "data": [
+        {
+          "L_nm": 4.85,
+          "E_meV": 10.0,
+          "uncertainty": 0.5
+        },
+        {
+          "L_nm": 9.0,
+          "E_meV": 8.3,
+          "uncertainty": 0.5
+        },
+        {
+          "L_nm": 12.5,
+          "E_meV": 7.9,
+          "uncertainty": 0.5
+        }
+      ]
+    },
+    {
+      "source": "Casco et al. (2002), SPP Proceedings",
+      "type": "Experimental",
+      "exciton_type": "Light Hole",
+      "data": [
+        {
+          "L_nm": 4.85,
+          "E_meV": 13.5,
+          "uncertainty": 0.5
+        },
+        {
+          "L_nm": 9.0,
+          "E_meV": 12.7,
+          "uncertainty": 0.5
+        },
+        {
+          "L_nm": 12.5,
+          "E_meV": 9.2,
+          "uncertainty": 0.5
+        }
+      ]
+    }
+  ],
+  "theoretical": [
+    {
+      "source": "Greene, Bajaj & Phelps (1984), Phys. Rev. B 29, 1807",
+      "type": "Theory (Variational)",
+      "barrier": "Infinite",
+      "data": [
+        {
+          "L_nm": 2.0,
+          "E_meV": 12.5,
+          "note": "Estimated from Fig.1"
+        },
+        {
+          "L_nm": 3.0,
+          "E_meV": 11.8,
+          "note": "Estimated from Fig.1"
+        },
+        {
+          "L_nm": 5.0,
+          "E_meV": 10.5,
+          "note": "Estimated from Fig.1"
+        },
+        {
+          "L_nm": 7.0,
+          "E_meV": 9.2,
+          "note": "Estimated from Fig.1"
+        },
+        {
+          "L_nm": 10.0,
+          "E_meV": 7.8,
+          "note": "Estimated from Fig.1"
+        },
+        {
+          "L_nm": 15.0,
+          "E_meV": 6.5,
+          "note": "Estimated from Fig.1"
+        },
+        {
+          "L_nm": 20.0,
+          "E_meV": 5.8,
+          "note": "Estimated from Fig.1"
+        }
+      ]
+    },
+    {
+      "source": "Greene, Bajaj & Phelps (1984), Phys. Rev. B 29, 1807",
+      "type": "Theory (Variational)",
+      "barrier": "Finite (Al0.3Ga0.7As)",
+      "data": [
+        {
+          "L_nm": 2.0,
+          "E_meV": 10.8,
+          "note": "Estimated from Fig.2"
+        },
+        {
+          "L_nm": 3.0,
+          "E_meV": 10.5,
+          "note": "Estimated from Fig.2"
+        },
+        {
+          "L_nm": 5.0,
+          "E_meV": 9.8,
+          "note": "Estimated from Fig.2"
+        },
+        {
+          "L_nm": 7.0,
+          "E_meV": 8.9,
+          "note": "Estimated from Fig.2"
+        },
+        {
+          "L_nm": 10.0,
+          "E_meV": 7.8,
+          "note": "Estimated from Fig.2"
+        },
+        {
+          "L_nm": 15.0,
+          "E_meV": 6.5,
+          "note": "Estimated from Fig.2"
+        },
+        {
+          "L_nm": 20.0,
+          "E_meV": 5.5,
+          "note": "Estimated from Fig.2"
+        }
+      ]
+    },
+    {
+      "source": "Bastard et al. (1982), Phys. Rev. B 26, 1974",
+      "type": "Theory (Non-separable)",
+      "barrier": "Finite",
+      "data": [
+        {
+          "L_nm": 2.0,
+          "E_meV": 11.0,
+          "note": "Estimated from Fig.1"
+        },
+        {
+          "L_nm": 3.0,
+          "E_meV": 10.8,
+          "note": "Estimated from Fig.1"
+        },
+        {
+          "L_nm": 5.0,
+          "E_meV": 10.0,
+          "note": "Estimated from Fig.1"
+        },
+        {
+          "L_nm": 7.0,
+          "E_meV": 9.0,
+          "note": "Estimated from Fig.1"
+        },
+        {
+          "L_nm": 10.0,
+          "E_meV": 8.0,
+          "note": "Estimated from Fig.1"
+        },
+        {
+          "L_nm": 15.0,
+          "E_meV": 6.8,
+          "note": "Estimated from Fig.1"
+        },
+        {
+          "L_nm": 20.0,
+          "E_meV": 5.8,
+          "note": "Estimated from Fig.1"
+        }
+      ]
+    },
+    {
+      "source": "Casta\u00f1o et al. (2025), Nanomaterials 15, 1345",
+      "type": "FEM Calculation",
+      "barrier": "Al0.3Ga0.7As",
+      "data": [
+        {
+          "L_nm": 3.0,
+          "E_meV": 8.5,
+          "note": "Estimated from Fig.5"
+        },
+        {
+          "L_nm": 5.0,
+          "E_meV": 8.8,
+          "note": "Estimated from Fig.5"
+        },
+        {
+          "L_nm": 7.0,
+          "E_meV": 8.5,
+          "note": "Estimated from Fig.5"
+        },
+        {
+          "L_nm": 10.0,
+          "E_meV": 8.0,
+          "note": "Peak binding energy"
+        },
+        {
+          "L_nm": 15.0,
+          "E_meV": 6.5,
+          "note": "Estimated from Fig.5"
+        },
+        {
+          "L_nm": 20.0,
+          "E_meV": 5.2,
+          "note": "Estimated from Fig.5"
+        },
+        {
+          "L_nm": 30.0,
+          "E_meV": 4.0,
+          "note": "Estimated from Fig.5"
+        },
+        {
+          "L_nm": 50.0,
+          "E_meV": 2.8,
+          "note": "Estimated from Fig.5"
+        },
+        {
+          "L_nm": 100.0,
+          "E_meV": 2.2,
+          "note": "Estimated from Fig.5"
+        },
+        {
+          "L_nm": 200.0,
+          "E_meV": 1.8,
+          "note": "Estimated from Fig.5"
+        }
+      ]
+    }
+  ],
+  "material_parameters": {
+    "bulk_rydberg_GaAs_meV": 4.2,
+    "bulk_bohr_radius_GaAs_nm": 13.5,
+    "dielectric_constant_GaAs": 12.5,
+    "effective_mass_electron": 0.067,
+    "effective_mass_hh": 0.45,
+    "effective_mass_lh": 0.082
+  },
+  "ideal_2D_limits": {
+    "rydberg_2D_meV": 16.8,
+    "theoretical_max_binding_meV": 16.8
+  }
+}

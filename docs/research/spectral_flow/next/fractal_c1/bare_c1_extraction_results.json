@@ -1,0 +1,13 @@
+{
+  "analysis": "Bare c1 extraction from TMDs",
+  "wse2": {
+    "c1_measured": 0.1,
+    "c1_measured_err": 0.416,
+    "correction_factor": 0.5195954210064836,
+    "c1_bare": 0.1924574312188794,
+    "c1_bare_err": 0.8006229138705383,
+    "deviation_from_theory": -1.0086428389578932
+  },
+  "formula": "c1_bare = c1_measured / f(r0/a_B, eps_env, eps_mono)",
+  "recommendation": "Use ideal 2D systems for Strategy C validation"
+}
