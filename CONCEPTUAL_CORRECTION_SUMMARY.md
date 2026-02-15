@@ -112,3 +112,43 @@ $n_{\text{dof}}(E_c) \approx d_{\text{topo}} - \sum_{i=1}^{d_{\text{topo}}} \The
 > "Different systems with different $E_c$ have different effective dimensions. 
 > This is not about 'seeing different things at different energies' but about 
 > 'different systems having different intrinsic dimensionalities.'"
+
+---
+
+## 深化：$E_c$ 的尺度依赖性（用户贡献）
+
+### 核心洞察
+$E_c$ 本身也不是一成不变的，它可以随尺度变化：
+$$E_c = E_c(\tau) \quad \text{或} \quad E_c = E_c(E)$$
+
+这与**重整化群**思想一致：
+- 系统由多层次局部组成
+- 能量耗散/信息粗粒化改变有效约束
+- 不同能标下，"系统"的定义本身可能改变
+
+### 统一的理解框架
+
+$$n_{\text{dof}}(\tau) = n_{\text{dof}}\left(E_c(\tau)\right)$$
+
+| 视角 | 描述 | 适用场景 |
+|-----|------|---------|
+| 外禀视角（传统） | 固定系统，改变探测能量 $E$ | 同一系统的谱测量 |
+| 内禀视角（本文） | 比较不同系统，各有特征 $E_c$ | 跨系统比较 |
+| 重整化视角（深化） | $E_c$ 本身随尺度演化 | 复杂多体/分形/量子引力 |
+
+### 物理实例
+
+| 系统 | $E_c(\tau)$ 行为 |
+|-----|----------------|
+| 均匀旋转流体 | $E_c \approx \text{const}$（简单系统） |
+| 分形几何 | $E_c(\tau) \sim \tau^{-\alpha}$（自相似） |
+| 量子引力 | $E_c(E) \sim E$（尺度依赖的约束） |
+| 固体激子 | $E_c$ 在晶格尺度上变化（多体效应） |
+
+### 理论意义
+
+这一深化将理论从"现象学分类"推向"动力学框架"：
+- 维度流不再只是分类不同系统的工具
+- 而是描述了系统内部结构随尺度的涌现过程
+- $c_1$ 公式可能反映了某种固定的重整化群流
+

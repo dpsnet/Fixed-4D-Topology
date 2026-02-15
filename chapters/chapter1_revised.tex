@@ -9,9 +9,9 @@
 
 Physical systems exhibit a fundamental property: their \textbf{effective dimensionality is determined by their internal constraints}, not by the energy scale of external probes. Systems with stronger internal constraints exhibit lower effective dimensions, while systems with weaker constraints exhibit higher effective dimensions. This relationship is intrinsic to the system itself, independent of how it is observed. This constraint-determined dimensionality manifests across diverse physical contexts, from rapidly rotating fluids to black hole horizons to quantum spacetime geometries. Rather than indicating any change in the topological structure of space, this phenomenon reflects how the \textbf{strength of internal constraints} determines the effective number of accessible dynamical modes.
 
-The \textbf{spectral dimension} $d_s$ serves as a mathematical characterization of this intrinsic property. It is crucial to emphasize: the spectral dimension is \textbf{not} a physical dimension in the geometric sense, but rather a \textbf{mathematical measure} that characterizes the system's internal constraint structure. Different systems with different constraint strengths $E_c$ exhibit different spectral dimensions $d_s(E_c)$.
+The \textbf{spectral dimension} $d_s(\tau)$ serves as a mathematical probe of this intrinsic property. It is crucial to emphasize: the spectral dimension is \textbf{not} a physical dimension in the geometric sense, but rather a \textbf{mathematical measure} defined at each scale $\tau$. For systems with different constraint energies $E_c$, we compare their spectral dimensions at respective characteristic scales $\tau_c \sim \hbar/E_c$.
 
-\textbf{Terminological Note}: We intentionally avoid the phrase ``spectral flow'' in this revised version. In mathematics, ``spectral flow'' (Atiyah-Patodi-Singer) refers specifically to the net number of eigenvalues crossing zero in a family of self-adjoint operators, a concept distinct from the constraint-determined spectral behavior discussed here. The spectral dimension $d_s$ characterizes a system's intrinsic constraint structure, determined by its confinement energy $E_c$.
+\textbf{Terminological Note}: We intentionally avoid the phrase ``spectral flow'' in this revised version. In mathematics, ``spectral flow'' (Atiyah-Patodi-Singer) refers specifically to the net number of eigenvalues crossing zero in a family of self-adjoint operators, a concept distinct from the constraint-determined spectral behavior discussed here. The spectral dimension $d_s(\tau)$, when evaluated at characteristic scales corresponding to different constraint energies $E_c$, reveals the system's effective dimensionality.
 
 \subsection{Three Levels of Dimension Concepts}
 \label{subsec:distinction}
@@ -23,12 +23,12 @@ The topological dimension $d_{\text{topo}}$ is the intrinsic dimensionality of t
 \end{definition}
 
 \begin{definition}[Spectral Dimension]
-The spectral dimension $d_s$ is a \textbf{mathematical characterization} of a system's effective dimensionality, extracted from the heat kernel trace $K(\tau) = \text{Tr}\, e^{\tau\Delta}$. For a given system with constraint energy $E_c$, we define:
+The spectral dimension $d_s(\tau)$ is a \textbf{purely mathematical construct} defined through the heat kernel trace $K(\tau) = \text{Tr}\, e^{\tau\Delta}$ as:
 \begin{equation}
-d_s(E_c) \equiv -2 \left. \frac{d \ln K(\tau)}{d \ln \tau} \right|_{\tau \sim \hbar/E_c}
+d_s(\tau) \equiv -2 \frac{d \ln K(\tau)}{d \ln \tau}
 \label{eq:spectral_def}
 \end{equation}
-This definition, first systematically studied by Minakshisundaram and Pleijel (1949) \cite{Minakshisundaram1949}, extracts geometric information from the spectrum of the Laplacian operator $\Delta$ at characteristic scales corresponding to the system's constraint energy. Different systems with different $E_c$ exhibit different $d_s$ values.
+This definition, first systematically studied by Minakshisundaram and Pleijel (1949) \cite{Minakshisundaram1949}, extracts geometric information from the spectrum of the Laplacian operator $\Delta$. For a system with constraint energy $E_c$, we characterize its effective dimensionality by $d_s$ evaluated at the characteristic scale $\tau_c \sim \hbar/E_c$.
 \end{definition}
 
 \begin{definition}[Effective Degrees of Freedom]
@@ -43,11 +43,11 @@ The relationship between these concepts is:
 \begin{itemize}
 \item \textbf{Topological dimension}: The fixed stage ($d_{\text{topo}} = 4$)
 \item \textbf{Constraint energy}: The intrinsic binding strength ($E_c$)
-\item \textbf{Effective degrees of freedom}: The physical quantity of interest ($n_{\text{dof}}(E_c)$)
-\item \textbf{Spectral dimension}: The mathematical characterization ($d_s(E_c)$)
+\item \textbf{Effective degrees of freedom}: The physical quantity of interest ($n_{\text{dof}}$)
+\item \textbf{Spectral dimension}: The mathematical probe ($d_s(\tau)$), evaluated at characteristic scales
 \end{itemize}
 
-\textbf{Critical Clarification}: The identification $n_{\text{dof}}(E_c) \sim d_s(E_c)$ establishes a relationship between a system's intrinsic constraint energy and its effective dimensionality. While widely used in the quantum gravity literature, the rigorous mathematical proof of this correspondence remains an open problem. We treat this as a physically motivated working hypothesis, supported by extensive numerical evidence across diverse systems.
+\textbf{Critical Clarification}: The identification of effective degrees of freedom with spectral dimension at characteristic scales, $n_{\text{dof}} \sim d_s(\tau_c)$ where $\tau_c \sim \hbar/E_c$, establishes a relationship between a system's intrinsic constraint energy and its effective dimensionality. While widely used in the quantum gravity literature, the rigorous mathematical proof of this correspondence remains an open problem. We treat this as a physically motivated working hypothesis, supported by extensive numerical evidence across diverse systems.
 
 \subsection{Physical Interpretation: Constraint Hierarchy}
 \label{subsec:mechanism}
@@ -101,7 +101,13 @@ where $\Theta$ is the step function and $\alpha$ is a system-dependent constant.
 
 \textbf{The parameter $c_1$} describes the \textbf{universal relationship} between constraint strength and effective dimension: $d_{\text{eff}} = d_{\text{eff}}(E_c; c_1)$.
 
-\textit{Note: Different systems with different $E_c$ have different effective dimensions. This is not about ``seeing different things at different energies'' but about ``different systems having different intrinsic dimensionalities.''}
+\textbf{Refinement: Scale-Dependent $E_c$}. In complex systems with internal structure, the effective constraint energy may itself depend on scale: $E_c = E_c(\tau)$. This reflects the renormalization group idea that coarse-graining changes the effective parameters. The dimension flow formula then describes how $n_{\text{dof}}$ evolves as $E_c(\tau)$ changes:
+\begin{equation}
+n_{\text{dof}}(\tau) = d_{\text{topo}} - (d_{\text{topo}} - d_{\text{low}}) \cdot f\left(\frac{\tau}{\tau_c(E_c)}; c_1\right)
+\end{equation}
+where $\tau_c(E_c) \sim \hbar/E_c$ sets the characteristic scale.
+
+\textit{Note: Different systems with different characteristic $E_c$ have different effective dimensions. This is not about ``seeing different things at different energies'' but about ``different systems (or the same system at different scales) having different intrinsic dimensionalities.''}
 }}
 \end{center}
 

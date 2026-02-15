@@ -1,0 +1,205 @@
+\contentsline {section}{Preface to the Revised Edition}{1}{section*.1}%
+\contentsline {section}{Notation and Terminology Guide}{8}{section*.3}%
+\contentsline {section}{\numberline {1}Introduction}{9}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Constraint-Determined Effective Dimensionality}{9}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Three Levels of Dimension Concepts}{9}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Physical Interpretation: Constraint Hierarchy}{10}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}The Phenomenological $c_1$ Parameter}{11}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Hierarchical Structure: System, Mode, and Internal Levels}{11}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}Critical Distinction: Classical vs. Quantum}{12}{subsection.1.6}%
+\contentsline {subsection}{\numberline {1.7}Historical Development}{12}{subsection.1.7}%
+\contentsline {subsubsection}{\numberline {1.7.1}Mathematical Origins: Minakshisundaram-Pleijel (1949)}{12}{subsubsection.1.7.1}%
+\contentsline {subsubsection}{\numberline {1.7.2}Quantum Gravity Applications (2005-Present)}{13}{subsubsection.1.7.2}%
+\contentsline {subsection}{\numberline {1.8}Scope and Limitations of This Review}{13}{subsection.1.8}%
+\contentsline {section}{\numberline {2}Mathematical Foundations}{13}{section.2}%
+\contentsline {subsection}{\numberline {2.1}The Heat Kernel: Mathematical Definition}{14}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Spectral Dimension: Mathematical Definition}{14}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Heuristic Physical Interpretation}{15}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}The $c_1$ Parameter: Phenomenological Status}{15}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Discovery History}{15}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}Status Assessment}{15}{subsubsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.3}Open Problem: Derivation from First Principles}{16}{subsubsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.5}Classical vs. Quantum: Fundamental Differences}{16}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Non-Commutative and Fractal Geometries}{16}{subsection.2.6}%
+\contentsline {subsubsection}{\numberline {2.6.1}Non-Commutative Geometry}{16}{subsubsection.2.6.1}%
+\contentsline {subsubsection}{\numberline {2.6.2}Fractal Structures}{17}{subsubsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.7}Summary: Rigor vs. Heuristic}{17}{subsection.2.7}%
+\contentsline {subsection}{\numberline {2.8}Related Frameworks and Alternative Approaches}{17}{subsection.2.8}%
+\contentsline {subsubsection}{\numberline {2.8.1}Generalized Uncertainty Principle (GUP) Approaches}{29}{subsubsection.2.8.1}%
+\contentsline {subsubsection}{\numberline {2.8.2}Doubly Special Relativity (DSR)}{29}{subsubsection.2.8.2}%
+\contentsline {subsubsection}{\numberline {2.8.3}Condensed Matter Analogues}{30}{subsubsection.2.8.3}%
+\contentsline {subsubsection}{\numberline {2.8.4}Entropic Gravity and Emergent Spacetime}{30}{subsubsection.2.8.4}%
+\contentsline {subsubsection}{\numberline {2.8.5}Non-Local Gravity and Infinite Derivative Theories}{31}{subsubsection.2.8.5}%
+\contentsline {subsubsection}{\numberline {2.8.6}Comparison and Critical Assessment}{31}{subsubsection.2.8.6}%
+\contentsline {subsubsection}{\numberline {2.8.7}Limitations and Open Questions}{32}{subsubsection.2.8.7}%
+\contentsline {section}{\numberline {3}Physical Systems: Energy-Dependent Mode Constraint}{32}{section.3}%
+\contentsline {subsection}{\numberline {3.1}System I: Rotating Frames}{32}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Physical Setup and Inertial Frame Analysis}{32}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Transition to Rotating Frame}{33}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}Mode Constraint Mechanism}{33}{subsubsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.4}Spectral Analysis}{33}{subsubsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.2}System II: Black Hole Spacetimes}{33}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Schwarzschild Metric and Mode Decomposition}{33}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Gravitational Redshift as Mode Constraint}{34}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Spectral Dimension Analysis}{34}{subsubsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.3}System III: Quantum Discrete Spacetime}{34}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Physical Mechanism: Quantum Geometric Discreteness}{34}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Mode Constraint in Quantum Gravity}{35}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Spectral Dimension in Quantum Gravity Models}{35}{subsubsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.4}Critique of ``Evidence''}{35}{subsubsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.4}Comparison of Three Systems}{35}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}The Unified Framework: Honest Assessment}{36}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.5.1}Key Insight: Time as Background vs. Dynamical Variable}{36}{subsubsection.3.5.1}%
+\contentsline {section}{\numberline {4}Experimental and Numerical Evidence}{36}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Evidence Hierarchy}{36}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Rotating Systems: Tier I Evidence}{37}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}The Gran Sasso Experiment (E-6)}{37}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Ring Laser Gyroscopes}{37}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}Other Rotating Systems}{37}{subsubsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.3}Black Hole Systems: Tier II Evidence}{37}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Event Horizon Telescope}{37}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Gravitational Wave Observations}{38}{subsubsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.4}Quantum Gravity: Tier III Evidence}{38}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Causal Dynamical Triangulations}{38}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}Loop Quantum Gravity}{38}{subsubsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.3}Asymptotic Safety}{39}{subsubsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.5}Comparative Summary}{39}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Future Prospects}{39}{subsection.4.6}%
+\contentsline {subsubsection}{\numberline {4.6.1}Direct Tests}{39}{subsubsection.4.6.1}%
+\contentsline {subsubsection}{\numberline {4.6.2}Theoretical Developments}{39}{subsubsection.4.6.2}%
+\contentsline {subsection}{\numberline {4.7}Honest Conclusion on Evidence}{40}{subsection.4.7}%
+\contentsline {section}{\numberline {5}The E-6 Experiment: A Classical Tabletop Demonstration}{40}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Conceptual Foundation}{40}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Core Insight: Classical Mode Constraint}{40}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Correspondence Principle}{40}{subsubsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.3}Dimension Flow in the E-6 System}{41}{subsubsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.2}Experimental Design}{41}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Apparatus}{41}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}Environment Requirements}{41}{subsubsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.3}Multi-Mass Design}{42}{subsubsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.3}Dimension Measurement Methods}{42}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5.3.1}Box-Counting Method}{42}{subsubsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.2}Angular Distribution Method}{42}{subsubsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.3}Statistical Analysis}{42}{subsubsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.4}Experimental Protocol}{42}{subsection.5.4}%
+\contentsline {subsubsection}{\numberline {5.4.1}Four-Level Experimental Structure}{42}{subsubsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.5}Theoretical Predictions}{43}{subsection.5.5}%
+\contentsline {subsubsection}{\numberline {5.5.1}Dimension-Energy Relation}{43}{subsubsection.5.5.1}%
+\contentsline {subsubsection}{\numberline {5.5.2}Expected Results}{43}{subsubsection.5.5.2}%
+\contentsline {subsubsection}{\numberline {5.5.3}Mass-Dependence Prediction}{43}{subsubsection.5.5.3}%
+\contentsline {subsection}{\numberline {5.6}Connection to the Unified Framework}{44}{subsection.5.6}%
+\contentsline {subsubsection}{\numberline {5.6.1}Why $c_1 = 0.25$ for Classical Systems}{44}{subsubsection.5.6.1}%
+\contentsline {subsubsection}{\numberline {5.6.2}Universality Verification}{44}{subsubsection.5.6.2}%
+\contentsline {subsection}{\numberline {5.7}Significance and Implications}{44}{subsection.5.7}%
+\contentsline {subsubsection}{\numberline {5.7.1}For Quantum Gravity Research}{44}{subsubsection.5.7.1}%
+\contentsline {subsubsection}{\numberline {5.7.2}For Fundamental Physics}{45}{subsubsection.5.7.2}%
+\contentsline {subsubsection}{\numberline {5.7.3}Pedagogical Value}{45}{subsubsection.5.7.3}%
+\contentsline {subsection}{\numberline {5.8}Status and Future Directions}{45}{subsection.5.8}%
+\contentsline {subsubsection}{\numberline {5.8.1}Current Status}{45}{subsubsection.5.8.1}%
+\contentsline {subsubsection}{\numberline {5.8.2}Proposed Variants}{45}{subsubsection.5.8.2}%
+\contentsline {subsubsection}{\numberline {5.8.3}Integration with Other Tests}{45}{subsubsection.5.8.3}%
+\contentsline {section}{\numberline {6}Critical Comparison with Alternative Theories}{46}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Phenomenological Approaches}{46}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Phenomenological Quantum Gravity}{46}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.2}Effective Field Theory Approaches}{46}{subsubsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.2}String Theory and M-Theory}{46}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Compactification and Dimension}{47}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}AdS/CFT and Holography}{47}{subsubsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.3}Comparison and Critique}{47}{subsubsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.3}Loop Quantum Gravity}{47}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}Discrete Geometry}{47}{subsubsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.2}Critiques and Open Issues}{48}{subsubsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.4}Emergent Gravity Approaches}{48}{subsection.6.4}%
+\contentsline {subsubsection}{\numberline {6.4.1}Entropic Gravity}{48}{subsubsection.6.4.1}%
+\contentsline {subsubsection}{\numberline {6.4.2}Condensed Matter Analogues}{48}{subsubsection.6.4.2}%
+\contentsline {subsection}{\numberline {6.5}Comparative Assessment}{48}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Limitations of the Unified Framework}{49}{subsection.6.6}%
+\contentsline {section}{\numberline {7}Theoretical Implications of Mode Constraint}{49}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Black Hole Physics and the Information Paradox}{50}{subsection.7.1}%
+\contentsline {subsubsection}{\numberline {7.1.1}The Near-Horizon Mode Structure}{50}{subsubsection.7.1.1}%
+\contentsline {subsubsection}{\numberline {7.1.2}Implications for Hawking Radiation}{50}{subsubsection.7.1.2}%
+\contentsline {subsubsection}{\numberline {7.1.3}The Information Paradox Revisited}{51}{subsubsection.7.1.3}%
+\contentsline {subsubsection}{\numberline {7.1.4}Page Curve and Entanglement}{51}{subsubsection.7.1.4}%
+\contentsline {subsection}{\numberline {7.2}Quantum Gravity and the Renormalization Group}{51}{subsection.7.2}%
+\contentsline {subsubsection}{\numberline {7.2.1}The Wilsonian Perspective on Mode Constraint}{51}{subsubsection.7.2.1}%
+\contentsline {subsubsection}{\numberline {7.2.2}Asymptotic Safety and the Fixed Point}{52}{subsubsection.7.2.2}%
+\contentsline {subsubsection}{\numberline {7.2.3}Comparison with Lattice Field Theory}{52}{subsubsection.7.2.3}%
+\contentsline {subsection}{\numberline {7.3}Emergence of Effective Field Theories}{53}{subsection.7.3}%
+\contentsline {subsubsection}{\numberline {7.3.1}The Hierarchical Structure of Physical Theories}{53}{subsubsection.7.3.1}%
+\contentsline {subsubsection}{\numberline {7.3.2}Mode Constraint vs. Symmetry Breaking}{53}{subsubsection.7.3.2}%
+\contentsline {subsubsection}{\numberline {7.3.3}Philosophical Implications}{53}{subsubsection.7.3.3}%
+\contentsline {subsection}{\numberline {7.4}Implications for Experiment}{53}{subsection.7.4}%
+\contentsline {subsubsection}{\numberline {7.4.1}Distinguishing Mode Constraint from Compactification}{53}{subsubsection.7.4.1}%
+\contentsline {subsubsection}{\numberline {7.4.2}Specific Experimental Signatures}{54}{subsubsection.7.4.2}%
+\contentsline {subsection}{\numberline {7.5}Cosmological Implications}{54}{subsection.7.5}%
+\contentsline {subsubsection}{\numberline {7.5.1}Early Universe and Inflation}{54}{subsubsection.7.5.1}%
+\contentsline {subsubsection}{\numberline {7.5.2}Primordial Perturbations}{54}{subsubsection.7.5.2}%
+\contentsline {subsection}{\numberline {7.6}Condensed Matter Analogues}{55}{subsection.7.6}%
+\contentsline {subsubsection}{\numberline {7.6.1}Quantum Hall Effect}{55}{subsubsection.7.6.1}%
+\contentsline {subsubsection}{\numberline {7.6.2}Topological Insulators}{55}{subsubsection.7.6.2}%
+\contentsline {subsection}{\numberline {7.7}Information Theory Connections}{55}{subsection.7.7}%
+\contentsline {subsubsection}{\numberline {7.7.1}Entanglement Entropy Scaling}{55}{subsubsection.7.7.1}%
+\contentsline {subsubsection}{\numberline {7.7.2}Holographic Entropy Bound}{55}{subsubsection.7.7.2}%
+\contentsline {section}{\numberline {8}Future Directions and Conclusions}{55}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Open Theoretical Questions}{55}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Experimental Prospects}{56}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Conclusions}{56}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Near-Term Research Directions}{56}{subsection.8.4}%
+\contentsline {subsubsection}{\numberline {8.4.1}Theoretical Developments}{56}{subsubsection.8.4.1}%
+\contentsline {subsubsection}{\numberline {8.4.2}Computational Projects}{56}{subsubsection.8.4.2}%
+\contentsline {subsection}{\numberline {8.5}Experimental Prospects}{56}{subsection.8.5}%
+\contentsline {subsubsection}{\numberline {8.5.1}Atomic and Molecular Physics}{56}{subsubsection.8.5.1}%
+\contentsline {subsubsection}{\numberline {8.5.2}Condensed Matter Systems}{57}{subsubsection.8.5.2}%
+\contentsline {subsubsection}{\numberline {8.5.3}Astronomy and Cosmology}{57}{subsubsection.8.5.3}%
+\contentsline {subsection}{\numberline {8.6}Broader Context}{57}{subsection.8.6}%
+\contentsline {subsubsection}{\numberline {8.6.1}Unification of Physics}{57}{subsubsection.8.6.1}%
+\contentsline {subsubsection}{\numberline {8.6.2}Philosophical Questions}{57}{subsubsection.8.6.2}%
+\contentsline {subsection}{\numberline {8.7}Final Remarks}{57}{subsection.8.7}%
+\contentsline {subsection}{\numberline {8.8}Long-Term Research Program}{57}{subsection.8.8}%
+\contentsline {subsubsection}{\numberline {8.8.1}Theoretical Developments}{57}{subsubsection.8.8.1}%
+\contentsline {subsubsection}{\numberline {8.8.2}Computational Projects}{58}{subsubsection.8.8.2}%
+\contentsline {subsection}{\numberline {8.9}Experimental Prospects}{58}{subsection.8.9}%
+\contentsline {subsubsection}{\numberline {8.9.1}Near-Term Experiments (5-10 years)}{58}{subsubsection.8.9.1}%
+\contentsline {subsubsection}{\numberline {8.9.2}Long-Term Experiments (10-20 years)}{59}{subsubsection.8.9.2}%
+\contentsline {subsection}{\numberline {8.10}Connections to Other Fields}{59}{subsection.8.10}%
+\contentsline {subsubsection}{\numberline {8.10.1}Quantum Information Theory}{59}{subsubsection.8.10.1}%
+\contentsline {subsubsection}{\numberline {8.10.2}Condensed Matter Physics}{60}{subsubsection.8.10.2}%
+\contentsline {subsubsection}{\numberline {8.10.3}Mathematics}{60}{subsubsection.8.10.3}%
+\contentsline {subsection}{\numberline {8.11}Final Summary}{60}{subsection.8.11}%
+\contentsline {subsection}{\numberline {8.12}Interdisciplinary Connections}{60}{subsection.8.12}%
+\contentsline {subsubsection}{\numberline {8.12.1}Quantum Information and Computation}{60}{subsubsection.8.12.1}%
+\contentsline {subsubsection}{\numberline {8.12.2}Complex Systems and Networks}{60}{subsubsection.8.12.2}%
+\contentsline {subsection}{\numberline {8.13}Mathematical Open Problems}{61}{subsection.8.13}%
+\contentsline {subsection}{\numberline {8.14}Technological Applications}{61}{subsection.8.14}%
+\contentsline {subsubsection}{\numberline {8.14.1}Quantum Simulation}{61}{subsubsection.8.14.1}%
+\contentsline {subsubsection}{\numberline {8.14.2}Metamaterials}{61}{subsubsection.8.14.2}%
+\contentsline {section}{\numberline {A}Heat Kernel Coefficients}{61}{appendix.A}%
+\contentsline {section}{\numberline {B}Selberg Trace Formula}{62}{appendix.B}%
+\contentsline {section}{\numberline {C}Constraint Parameter Derivation}{62}{appendix.C}%
+\contentsline {section}{\numberline {D}Units and Conventions}{62}{appendix.D}%
+\contentsline {section}{\numberline {E}Glossary of Terms}{62}{appendix.E}%
+\contentsline {section}{\numberline {F}Detailed Calculations}{63}{appendix.F}%
+\contentsline {subsection}{\numberline {F.1}Heat Kernel on Spheres}{63}{subsection.F.1}%
+\contentsline {subsection}{\numberline {F.2}Hyperbolic Space Heat Kernel}{63}{subsection.F.2}%
+\contentsline {subsection}{\numberline {F.3}Constraint Parameter Derivation}{63}{subsection.F.3}%
+\contentsline {section}{\numberline {G}Tables of Values}{64}{appendix.G}%
+\contentsline {subsection}{\numberline {G.1}Comparison of Physical Systems}{64}{subsection.G.1}%
+\contentsline {subsection}{\numberline {G.2}Historical Timeline}{64}{subsection.G.2}%
+\contentsline {section}{\numberline {H}Extended Examples}{64}{appendix.H}%
+\contentsline {subsection}{\numberline {H.1}Example: 2D Ising Model Near Criticality}{64}{subsection.H.1}%
+\contentsline {subsection}{\numberline {H.2}Example: Quantum Harmonic Chain}{64}{subsection.H.2}%
+\contentsline {subsection}{\numberline {H.3}Example: Graphene Near Dirac Points}{64}{subsection.H.3}%
+\contentsline {section}{\numberline {I}Mathematical Proofs}{65}{appendix.I}%
+\contentsline {subsection}{\numberline {I.1}Proof of Monotonicity}{65}{subsection.I.1}%
+\contentsline {subsection}{\numberline {I.2}Proof of Universality}{65}{subsection.I.2}%
+\contentsline {section}{\numberline {J}Detailed Mathematical Derivations}{65}{appendix.J}%
+\contentsline {subsection}{\numberline {J.1}Derivation of Heat Kernel Expansion Coefficients}{65}{subsection.J.1}%
+\contentsline {subsection}{\numberline {J.2}Riemann Curvature Invariants}{65}{subsection.J.2}%
+\contentsline {subsection}{\numberline {J.3}Spectral Zeta Function Calculations}{66}{subsection.J.3}%
+\contentsline {section}{\numberline {K}Numerical Methods}{66}{appendix.K}%
+\contentsline {subsection}{\numberline {K.1}Finite Element Discretization}{66}{subsection.K.1}%
+\contentsline {subsection}{\numberline {K.2}Time Integration Methods}{66}{subsection.K.2}%
+\contentsline {section}{\numberline {L}Physical Constants and Units}{67}{appendix.L}%
+\contentsline {subsection}{\numberline {L.1}Planck Units}{67}{subsection.L.1}%
+\contentsline {subsection}{\numberline {L.2}Conversion Factors}{67}{subsection.L.2}%
+\contentsline {section}{\numberline {M}List of Symbols}{67}{appendix.M}%
