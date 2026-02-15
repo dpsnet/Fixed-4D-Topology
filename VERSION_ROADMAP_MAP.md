@@ -6,15 +6,15 @@ This document provides a canonical mapping between project versions and their go
 
 | Version | Status | Roadmap | Target Date | Primary Focus |
 |---------|--------|---------|-------------|---------------|
-| **v3.3.1** | 🟢 **CURRENT** | [v3.3 - Mode Constraint](docs/roadmaps/active/RESEARCH_ROADMAP_v3.3.md) | 2024 | Terminology refinement, conceptual corrections |
-| v3.4.0 | 🟡 Planned | [v3.3 - Phase 2 Extension](docs/roadmaps/active/RESEARCH_ROADMAP_v3.3.md) | 2025 Q4 | Fractal hypothesis validation |
-| v4.0.0 | 🔵 Planned | [v4.0 - Fractal Validation](docs/roadmaps/planned/RESEARCH_ROADMAP_v4.0.md) | 2026 | Quantum gravity interface |
+| **v3.4.0** | **🟡 CURRENT** | **[v3.4 - Fractal Validation](docs/roadmaps/active/RESEARCH_ROADMAP_v3.4.md)** | **2025 Q4** | **Fractal hypothesis validation, E-6 experiment** |
+| v4.0.0 | 🔵 Planned | [v4.0 - QG Interface](docs/roadmaps/planned/RESEARCH_ROADMAP_v4.0.md) | 2026+ | Quantum gravity integration |
 
 ## Released Versions
 
-| Version | Release Date | Roadmap | Key Achievement |
-|---------|--------------|---------|-----------------|
-| v3.3.0 | 2024 | [v3.3](docs/roadmaps/active/RESEARCH_ROADMAP_v3.3.md) | Conceptual corrections complete |
+| Version | Release Date | Roadmap / Summary | Key Achievement |
+|---------|--------------|-------------------|-----------------|
+| **v3.3.1** | **2024** | **[EXECUTION_SUMMARY_v3.3](docs/roadmaps/completed/EXECUTION_SUMMARY_v3.3.md)** | **Mode constraint terminology** |
+| v3.3.0 | 2024 | [EXECUTION_SUMMARY_v3.3](docs/roadmaps/completed/EXECUTION_SUMMARY_v3.3.md) | Conceptual corrections |
 | v3.0.0 | 2026-02-10 | [v3.0](docs/roadmaps/completed/RESEARCH_ROADMAP_v3.0.md) | Three Bridges Unification |
 | v2.1.0 | 2026-02-09 | [v2.x](docs/roadmaps/completed/) | 5 Papers PDF Release |
 | v2.0.0 | 2026-02-08 | [v2.x](docs/roadmaps/completed/) | Extended Research |
@@ -22,18 +22,19 @@ This document provides a canonical mapping between project versions and their go
 
 ## Research Tracks
 
-### Track: Dimension Flow Theory (2024-Present)
+### Track A: Dimension Flow Theory (2024-Present)
 
 ```
 v3.3.0 ──► v3.3.1 ──► v3.4.0 ──► v4.0.0
    │          │           │          │
-Concept    Mode-Con    Fractal    QG-Interface
- Corrections  Frame     Validation
+Concept   Mode-Con   Fractal    QG-Interface
+Corrections Frame   Validation
 ```
 
-**Roadmap**: [RESEARCH_ROADMAP_v3.3.md](docs/roadmaps/active/RESEARCH_ROADMAP_v3.3.md)
+**v3.3 Completion**: [EXECUTION_SUMMARY_v3.3.md](docs/roadmaps/completed/EXECUTION_SUMMARY_v3.3.md)  
+**v3.4 Active**: [RESEARCH_ROADMAP_v3.4.md](docs/roadmaps/active/RESEARCH_ROADMAP_v3.4.md)
 
-### Track: Fixed-4D Topology (2026)
+### Track B: Fixed-4D Topology (2026)
 
 ```
 v1.0.0 ──► v2.0.0 ──► v2.1.0 ──► v3.0.0
@@ -41,7 +42,25 @@ v1.0.0 ──► v2.0.0 ──► v2.1.0 ──► v3.0.0
 Foundat.   Extens.    5 Papers   Bridges
 ```
 
-**Roadmap**: [RESEARCH_ROADMAP_v3.0.md](docs/roadmaps/completed/RESEARCH_ROADMAP_v3.0.md) (Completed)
+**Completed**: [RESEARCH_ROADMAP_v3.0.md](docs/roadmaps/completed/RESEARCH_ROADMAP_v3.0.md)
+
+## Version History Detail
+
+### v3.3 Series (Completed)
+
+| Sub-version | Focus | Status | Documentation |
+|-------------|-------|--------|---------------|
+| v3.3.0 | Conceptual corrections (probe → constraint) | 🟢 Released | [Summary](docs/roadmaps/completed/EXECUTION_SUMMARY_v3.3.md) |
+| v3.3.1 | Terminology refinement (mode constraint) | 🟢 Released | [Summary](docs/roadmaps/completed/EXECUTION_SUMMARY_v3.3.md) |
+
+**Parent Log**: [EXECUTION_LOG_v3.1-v3.3.md](docs/roadmaps/completed/EXECUTION_LOG_v3.1-v3.3.md)
+
+### v3.4 Series (Current)
+
+**Status**: 🟡 In Progress  
+**Focus**: Fractal hypothesis validation and experimental confirmation  
+**Roadmap**: [RESEARCH_ROADMAP_v3.4.md](docs/roadmaps/active/RESEARCH_ROADMAP_v3.4.md)  
+**Execution Plan**: [EXECUTION_PLAN.md](EXECUTION_PLAN.md)
 
 ## Roadmap Status Icons
 

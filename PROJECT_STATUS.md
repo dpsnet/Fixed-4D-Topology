@@ -23,11 +23,11 @@ v1.0.0    v2.0.0    v2.1.0    v3.0.0    v3.3.x    v4.0.0
 | Version | Status | Release | Key Deliverable |
 |---------|--------|---------|-----------------|
 | v3.3.0 | 🟢 Released | 2024 | Conceptual corrections |
-| **v3.3.1** | **🟢 Current** | **2024** | **Mode constraint terminology** |
-| v3.4.0 | 🟡 Planned | 2025 Q4 | Fractal validation |
+| **v3.3.1** | **🟢 Released** | **2024** | **Mode constraint terminology** |
+| **v3.4.0** | **🟡 Current** | **2025 Q4** | **Fractal hypothesis validation** |
 | v4.0.0 | 🔵 Planned | 2026 | Quantum gravity interface |
 
-**Active Roadmap**: [RESEARCH_ROADMAP_v3.3](docs/roadmaps/active/RESEARCH_ROADMAP_v3.3.md)
+**Active Roadmap**: [RESEARCH_ROADMAP_v3.4](docs/roadmaps/active/RESEARCH_ROADMAP_v3.4.md)
 
 ### Track B: M-Series / Topology (Reference)
 
@@ -40,23 +40,33 @@ v1.0.0    v2.0.0    v2.1.0    v3.0.0    v3.3.x    v4.0.0
 
 ---
 
-## Current Status: Dimension Flow Theory v3.3
+## Current Status: Dimension Flow Theory v3.4
 
-### Phase Overview
+### Version History
+
+| Version | Phase | Status | Key Achievement |
+|---------|-------|--------|-----------------|
+| v3.3.0 | Conceptual Corrections | 🟢 Complete | "Probe → Constraint" framework |
+| v3.3.1 | Terminology | 🟢 Complete | "Mode constraint" terminology |
+| **v3.4.0** | **Fractal Validation** | **🟡 In Progress** | **Mathematical derivation + E-6 exp** |
+
+### Phase 2 Overview (v3.4 Focus)
 
 | Phase | Description | Status | Progress |
 |-------|-------------|--------|----------|
-| **Phase 1** | Cross-system Validation | 🟢 Complete | 100% |
-| **Phase 2** | Fractal Interpretation | 🟡 In Progress | 20% |
-| **Phase 3** | Quantum Gravity Interface | 🔵 Planned | 0% |
-| **Phase 4** | Cosmological Applications | 🔵 Planned | 0% |
+| Phase 1 | Cross-system Validation | 🟢 Complete | 100% |
+| **Phase 2** | **Fractal Interpretation** | **🟡 In Progress** | **20%** |
+| Phase 3 | Quantum Gravity Interface | 🔵 Planned | 0% |
+| Phase 4 | Cosmological Applications | 🔵 Planned | 0% |
 
-### Current Sprint: Phase 2.1 - Theoretical Foundation
+### Current Sprint: Phase 2.1 - Theoretical Foundation (v3.4)
 
 **Priority Tasks**:
 1. 🔵 Mathematical derivation of $c_1$ from fractal structure (Due: 2025 Q1)
 2. 🔵 Multifractal spectrum analysis (Due: 2025 Q2)
 3. 🔵 RG fixed point analysis (Due: 2025 Q3)
+
+**Parent**: [v3.3 Completion Summary](docs/roadmaps/completed/EXECUTION_SUMMARY_v3.3.md)
 
 ### Key Metrics
 

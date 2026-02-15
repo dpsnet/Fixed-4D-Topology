@@ -1,8 +1,8 @@
-# Dimension Flow Theory Research Roadmap v3.3
+# Dimension Flow Theory Research Roadmap v3.4
 
-**Status**: 🟡 In Progress (Phase 2)  
-**Target Version**: v3.3.x → v3.4.x  
-**Project**: Mode Constraint Framework & Fractal Hypothesis Validation  
+**Status**: 🔵 Planned (Phase 2 Extension)  
+**Target Version**: v3.4.x  
+**Project**: Fractal Hypothesis Validation & Experimental Confirmation  
 **Last Updated**: 2024
 
 ---
