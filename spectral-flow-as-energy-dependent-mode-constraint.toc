@@ -7,7 +7,7 @@
 \contentsline {subsection}{\numberline {1.4}The Phenomenological $c_1$ Parameter}{11}{subsection.1.4}%
 \contentsline {subsection}{\numberline {1.5}Hierarchical Structure: System, Mode, and Internal Levels}{12}{subsection.1.5}%
 \contentsline {subsection}{\numberline {1.6}Critical Distinction: Classical vs. Quantum}{12}{subsection.1.6}%
-\contentsline {subsection}{\numberline {1.7}Historical Development}{12}{subsection.1.7}%
+\contentsline {subsection}{\numberline {1.7}Historical Development}{13}{subsection.1.7}%
 \contentsline {subsubsection}{\numberline {1.7.1}Mathematical Origins: Minakshisundaram-Pleijel (1949)}{13}{subsubsection.1.7.1}%
 \contentsline {subsubsection}{\numberline {1.7.2}Quantum Gravity Applications (2005-Present)}{13}{subsubsection.1.7.2}%
 \contentsline {subsection}{\numberline {1.8}Scope and Limitations of This Review}{13}{subsection.1.8}%
@@ -17,7 +17,7 @@
 \contentsline {subsection}{\numberline {2.3}Heuristic Physical Interpretation}{15}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}The $c_1$ Parameter: Phenomenological Status}{15}{subsection.2.4}%
 \contentsline {subsubsection}{\numberline {2.4.1}Discovery History}{15}{subsubsection.2.4.1}%
-\contentsline {subsubsection}{\numberline {2.4.2}Status Assessment}{15}{subsubsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.2}Status Assessment}{16}{subsubsection.2.4.2}%
 \contentsline {subsubsection}{\numberline {2.4.3}Open Problem: Derivation from First Principles}{16}{subsubsection.2.4.3}%
 \contentsline {subsection}{\numberline {2.5}Classical vs. Quantum: Fundamental Differences}{16}{subsection.2.5}%
 \contentsline {subsection}{\numberline {2.6}Non-Commutative and Fractal Geometries}{16}{subsection.2.6}%
@@ -25,7 +25,7 @@
 \contentsline {subsubsection}{\numberline {2.6.2}Fractal Structures}{17}{subsubsection.2.6.2}%
 \contentsline {subsection}{\numberline {2.7}Summary: Rigor vs. Heuristic}{17}{subsection.2.7}%
 \contentsline {subsection}{\numberline {2.8}Related Frameworks and Alternative Approaches}{17}{subsection.2.8}%
-\contentsline {subsubsection}{\numberline {2.8.1}Generalized Uncertainty Principle (GUP) Approaches}{29}{subsubsection.2.8.1}%
+\contentsline {subsubsection}{\numberline {2.8.1}Generalized Uncertainty Principle (GUP) Approaches}{17}{subsubsection.2.8.1}%
 \contentsline {subsubsection}{\numberline {2.8.2}Doubly Special Relativity (DSR)}{29}{subsubsection.2.8.2}%
 \contentsline {subsubsection}{\numberline {2.8.3}Condensed Matter Analogues}{30}{subsubsection.2.8.3}%
 \contentsline {subsubsection}{\numberline {2.8.4}Entropic Gravity and Emergent Spacetime}{30}{subsubsection.2.8.4}%
@@ -35,7 +35,7 @@
 \contentsline {section}{\numberline {3}Physical Systems: Energy-Dependent Mode Constraint}{32}{section.3}%
 \contentsline {subsection}{\numberline {3.1}System I: Rotating Frames}{32}{subsection.3.1}%
 \contentsline {subsubsection}{\numberline {3.1.1}Physical Setup and Inertial Frame Analysis}{32}{subsubsection.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}Transition to Rotating Frame}{33}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.2}Transition to Rotating Frame}{32}{subsubsection.3.1.2}%
 \contentsline {subsubsection}{\numberline {3.1.3}Mode Constraint Mechanism}{33}{subsubsection.3.1.3}%
 \contentsline {subsubsection}{\numberline {3.1.4}Spectral Analysis}{33}{subsubsection.3.1.4}%
 \contentsline {subsection}{\numberline {3.2}System II: Black Hole Spacetimes}{33}{subsection.3.2}%
@@ -44,11 +44,11 @@
 \contentsline {subsubsection}{\numberline {3.2.3}Spectral Dimension Analysis}{34}{subsubsection.3.2.3}%
 \contentsline {subsection}{\numberline {3.3}System III: Quantum Discrete Spacetime}{34}{subsection.3.3}%
 \contentsline {subsubsection}{\numberline {3.3.1}Physical Mechanism: Quantum Geometric Discreteness}{34}{subsubsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}Mode Constraint in Quantum Gravity}{35}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.2}Mode Constraint in Quantum Gravity}{34}{subsubsection.3.3.2}%
 \contentsline {subsubsection}{\numberline {3.3.3}Spectral Dimension in Quantum Gravity Models}{35}{subsubsection.3.3.3}%
 \contentsline {subsubsection}{\numberline {3.3.4}Critique of ``Evidence''}{35}{subsubsection.3.3.4}%
 \contentsline {subsection}{\numberline {3.4}Comparison of Three Systems}{35}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}The Unified Framework: Honest Assessment}{36}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.5}The Unified Framework: Honest Assessment}{35}{subsection.3.5}%
 \contentsline {subsubsection}{\numberline {3.5.1}Key Insight: Time as Background vs. Dynamical Variable}{36}{subsubsection.3.5.1}%
 \contentsline {section}{\numberline {4}Experimental and Numerical Evidence}{36}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Evidence Hierarchy}{36}{subsection.4.1}%

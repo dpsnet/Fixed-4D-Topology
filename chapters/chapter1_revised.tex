@@ -109,13 +109,21 @@ where $\Theta$ is the step function and $\alpha$ is a system-dependent constant.
 
 \textbf{The parameter $c_1$} describes the \textbf{universal relationship} between constraint strength and effective dimension: $d_{\text{eff}} = d_{\text{eff}}(E_c; c_1)$.
 
-\textbf{Refinement: Scale-Dependent $E_c$}. In complex systems with internal structure, the effective constraint energy may itself depend on scale: $E_c = E_c(\tau)$. This reflects the renormalization group idea that coarse-graining changes the effective parameters. The dimension flow formula then describes how $n_{\text{dof}}$ evolves as $E_c(\tau)$ changes:
-\begin{equation}
-n_{\text{dof}}(\tau) = d_{\text{topo}} - (d_{\text{topo}} - d_{\text{low}}) \cdot f\left(\frac{\tau}{\tau_c(E_c)}; c_1\right)
-\end{equation}
-where $\tau_c(E_c) \sim \hbar/E_c$ sets the characteristic scale.
+\textbf{Refinement 1: Scale-Dependent $E_c$}. In complex systems with internal structure, the effective constraint energy may itself depend on scale: $E_c = E_c(\tau)$. This reflects the renormalization group idea that coarse-graining changes the effective parameters.
 
-\textit{Note: Different systems with different characteristic $E_c$ have different effective dimensions. This is not about ``seeing different things at different energies'' but about ``different systems (or the same system at different scales) having different intrinsic dimensionalities.''}
+\textbf{Refinement 2: Time-Dependent $E_c(t)$}. For a single system whose parameters evolve in time (e.g., rotation speed $\Omega(t)$, black hole mass $M(t)$, temperature $T(t)$), the constraint energy becomes time-dependent: $E_c = E_c(t)$. The dimension flow formula then describes the \textbf{real dynamical evolution} of the system's effective dimension:
+\begin{equation}
+n_{\text{dof}}(t) = d_{\text{topo}} - (d_{\text{topo}} - d_{\text{low}}) \cdot \frac{1}{1 + \left(\frac{E_c(t)}{E_{\text{ref}}}\right)^{c_1}}
+\end{equation}
+
+\textbf{Three Interpretations of $c_1$:}
+\begin{enumerate}
+\item \textbf{Cross-system}: Different systems with different parameters ($\Omega_1 \neq \Omega_2$) have different $n_{\text{dof}}$
+\item \textbf{Structural hierarchy}: Same system, different internal scales ($E_c(\tau)$ varies with coarse-graining)
+\item \textbf{Temporal evolution}: Same system, time-varying parameters ($E_c(t)$ evolves dynamically) $\rightarrow$ $n_{\text{dof}}(t)$
+\end{enumerate}
+
+\textit{Note: In all cases, $n_{\text{dof}}$ is an objective property determined by the system's intrinsic state ($E_c$ at that time/scale), not by external probe energy.}
 }}
 \end{center}
 
