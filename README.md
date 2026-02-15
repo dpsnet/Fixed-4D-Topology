@@ -2,7 +2,7 @@
 
 **English | [中文](README_zh.md)**
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18511249.svg)](https://doi.org/10.5281/zenodo.18511249)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18645295.svg)](https://doi.org/10.5281/zenodo.18645295)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Status](https://img.shields.io/badge/Status-v3.1.0%20EXPERIMENTAL-green.svg)]()
@@ -655,7 +655,7 @@ See [DATA_PROVENANCE.md](DATA_PROVENANCE.md) for details.
   title={Dimensionics: Mathematical Core (T1-T4)},
   year={2026},
   version={3.0.0-core},
-  doi={10.5281/zenodo.18511249},
+  doi={10.5281/zenodo.18645295},
   url={https://github.com/dpsnet/Fixed-4D-Topology}
 }
 ```

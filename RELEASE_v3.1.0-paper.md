@@ -2,7 +2,8 @@
 
 **Published**: February 15, 2026  
 **Authors**: Wang Bin (Independent Researcher), Kimi 2.5 Agent (AI Research Assistant)  
-**License**: MIT License
+**License**: MIT License  
+**DOI**: [10.5281/zenodo.18645295](https://doi.org/10.5281/zenodo.18645295)
 
 ---
 
