@@ -1,0 +1,152 @@
+\documentclass[11pt,a4paper]{article}
+
+% 基础包
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{mathrsfs}
+\usepackage{bm}
+\usepackage{tikz}
+
+% 页面设置
+\geometry{margin=2.5cm}
+
+% 定理环境
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+
+% 标题信息
+\title{\textbf{Spectral Flow as Energy-Dependent Mode Constraint}\\[0.5em]
+\large Historical Terminology Clarification and Unified Framework for Constrained Dynamics\\[0.3em]
+\normalsize \textit{Revised Edition - Based on Peer Review}}
+
+\author{
+    Wang Bin$^1$ \quad Kimi 2.5 Agent$^2$ \\[0.5em]
+    \small $^1$Independent Researcher, \href{mailto:wang.bin@foxmail.com}{wang.bin@foxmail.com} \\
+    \small $^2$Personal Research
+}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This comprehensive review presents a unified framework for understanding the phenomenon variously termed ``spectral dimension flow,'' ``running dimension,'' or ``dimensional reduction'' in the quantum gravity literature. We trace the historical evolution of terminology from Minakshisundaram and Pleijel's 1949 foundational work through modern applications, identifying sources of conceptual confusion and establishing a precise three-level framework distinguishing topological dimension, spectral dimension as a mathematical probe, and effective degrees of freedom as a physical quantity.
+
+The phenomenon is most accurately described as \textbf{energy-dependent constraint on dynamical degrees of freedom}, where physical mechanisms (centrifugal forces, gravitational redshift, quantum geometric discreteness) create energy gaps that freeze certain modes, leaving only a subset accessible to low-energy probes. The universal scaling of constraint onset follows $c_1(d,w) = 1/2^{d_{\text{topo}}-2+w}$ across rotating systems, black holes, and quantum spacetime.
+
+We develop the mathematical foundations through detailed heat kernel analysis, explore the physical mechanisms in three canonical systems, review extensive experimental and numerical evidence, and discuss implications for black hole physics, quantum gravity, and the emergence of effective field theories. Throughout, we maintain terminological precision: spacetime topology remains fixed while the \textbf{accessibility} of dynamical modes changes with energy scale.
+
+\end{abstract}
+
+% ========== 修订版前言 ==========
+\section*{Preface to the Revised Edition}
+\addcontentsline{toc}{section}{Preface to the Revised Edition}
+
+This revised edition addresses critical feedback from peer review regarding the mathematical rigor of our terminology and claims. The following clarifications are emphasized throughout:
+
+\begin{enumerate}
+\item \textbf{Spectral Dimension Definition}: We adopt the strict mathematical definition from Minakshisundaram-Pleijel (1949):
+\[d_s(\tau) = -2 \frac{d \ln K(\tau)}{d \ln \tau}\]
+The spectral dimension is a mathematical construct, not a physical quantity.
+
+\item \textbf{Three-Level Distinction}: We clearly distinguish:
+\begin{itemize}
+\item $d_{\text{topo}}$: Topological dimension (fixed at 4D)
+\item $d_s(\tau)$: Spectral dimension (mathematical probe)
+\item $n_{\text{dof}}(E)$: Effective degrees of freedom (physical quantity)
+\end{itemize}
+
+\item \textbf{Honest Assessment}: The correspondence $n_{\text{dof}}(E) \approx d_s(\hbar/E)$ is treated as a useful heuristic, not a rigorous theorem. The parameterization $c_1 = 1/2^{d-2+w}$ is phenomenological, derived from fitting numerical data rather than first principles.
+
+\item \textbf{Transparency}: We explicitly label mathematical theorems, conjectures, and heuristic arguments, allowing readers to distinguish rigorously established results from physically motivated hypotheses.
+\end{enumerate}
+
+We thank the anonymous peer reviewer whose careful reading significantly improved the clarity and honesty of this work.
+
+\newpage
+
+\tableofcontents
+\newpage
+
+% ========== 符号表 ==========
+\section*{Notation and Terminology Guide}
+\addcontentsline{toc}{section}{Notation and Terminology Guide}
+
+\begin{longtable}{@{}p{3.5cm}p{11.5cm}@{}}
+\toprule
+\textbf{Term} & \textbf{Precise Definition and Usage} \\
+\midrule
+\endhead
+$d_{\text{topo}}$ & \textbf{Topological dimension}: Intrinsic dimension of spacetime manifold. Fixed at 4 for physical spacetime. Never changes with energy scale. \\
+\addlinespace
+$d_s(\tau)$ & \textbf{Spectral dimension}: Mathematical parameter defined by $-2 d\ln K/d\ln\tau$. A \textit{measure} or \textit{probe} of mode accessibility, not a physical dimension. \\
+\addlinespace
+$n_{\text{dof}}(E)$ & \textbf{Effective degrees of freedom}: Number of dynamical directions accessible at energy $E$. Physical quantity approximated by $d_s(\tau)$ when $E \sim \hbar/\tau$. \\
+\addlinespace
+Mode constraint & Physical mechanism where energy gaps freeze dynamical modes, reducing $n_{\text{dof}}$ at low energy. \\
+\addlinespace
+Mode freezing & Decoupling of high-gap modes from low-energy physics due to energy constraints. Modes remain in principle but are exponentially suppressed. \\
+\addlinespace
+Spectral flow & Variation of $d_s(\tau)$ with scale $\tau$. Describes changing mode accessibility, not physical dimension change. \\
+\addlinespace
+$c_1(d,w)$ & Universal constraint parameter $= 1/2^{d_{\text{topo}}-2+w}$. Characterizes sharpness of constraint onset. $w=0$ (classical), $w=1$ (quantum). \\
+\addlinespace
+$K(\tau)$ & Heat kernel trace: measure of accessible mode density at diffusion time $\tau$. \\
+\addlinespace
+$E_{\text{gap}}$ & Energy gap required to excite a constrained mode. Modes with $E_{\text{gap}} \gg E$ are frozen at energy $E$. \\
+\addlinespace
+$\tau_c$ & Characteristic constraint scale. Determines energy scale at which constraint becomes significant. \\
+\bottomrule
+\end{longtable}
+
+\vspace{1em}
+\textbf{Important Clarifications}:
+\begin{itemize}
+\item We avoid ``dimension flow'' as ambiguous; use ``spectral flow'' (parameter change) or ``mode constraint'' (physical mechanism).
+\item ``Dimensional reduction'' is reserved for genuine topological change (e.g., Kaluza-Klein compactification), not for mode constraint.
+\item ``Effective dimension'' refers to $n_{\text{dof}}$, distinct from topological dimension.
+\end{itemize}
+
+\newpage
+
+% ========== 使用修订版章节 ==========
+\input{chapters/chapter1_revised}          % 【修订版】术语澄清与历史分析
+\input{chapters/chapter2_revised}          % 【修订版】数学基础（区分定理与启发式）
+\input{chapters/figures_all}               % 所有研究数据图表整合
+\input{chapters/chapter2_related_frameworks} % 相关框架（136行）
+\input{chapters/chapter3_revised}          % 【修订版】物理系统（精确术语）
+\input{chapters/chapter4_revised}          % 【修订版】实验证据（分层评估）
+\input{chapters/chapter_E6_experiment}    % E-6实验详细章节
+\input{chapters/chapter_comparison}        % 批判比较（161行）
+\input{chapters/chapter5_extended}         % 扩展版理论意义
+\input{chapters/chapter6_extended}         % 扩展版展望
+
+% ========== 附录 ==========
+\appendix
+\input{appendices_final}
+
+% ========== 致谢 ==========
+\section*{Acknowledgments}
+\addcontentsline{toc}{section}{Acknowledgments}
+
+This research was conducted independently without external funding support. The authors thank the developers of SnapPy for making their software freely available, and to the experimental groups who have provided high-precision data.
+
+\textbf{Discovery Process Acknowledgment}: The $c_1$ formula emerged through an authentic research process combining human intuition and AI-assisted pattern recognition. The first author (Wang Bin) provided key insights into the $1/2^{n-2}$ structure and the distinction between time-as-background versus time-as-variable. The second author (Kimi 2.5 Agent) assisted in data validation, cross-system comparison, and formula refinement. This collaboration exemplifies how phenomenological laws can emerge from numerical observation before theoretical understanding.
+
+We emphasize that the $c_1$ formula was discovered through data-driven pattern recognition, not derived from first principles. Its empirical success across diverse systems motivates ongoing theoretical work to understand its microscopic origin.
+
+The first author acknowledges personal dedication to foundational physics research. The second author was employed as an AI research assistant for literature analysis, technical writing, and collaborative discovery.
+
+\bibliographystyle{plain}
+\bibliography{references/extended_bibliography}
+
+\end{document}
