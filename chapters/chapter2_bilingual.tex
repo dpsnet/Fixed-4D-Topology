@@ -1,0 +1,106 @@
+% 第2章：理论基础 - 逐句对照
+\section{第二章：理论基础 / Chapter 2: Theoretical Foundations}
+\label{sec:foundations}
+
+\subsection{热核与谱维度 / Heat Kernel and Spectral Dimension}
+
+\textbf{[中]} 谱维度是普适量子引力理论中最精细的物理可观测量之一。
+
+\textbf{[En]} The spectral dimension is one of the most refined physical observables in theories of quantum gravity.
+
+\textbf{[中]} 它通过扩散过程探测时空的几何结构。
+
+\textbf{[En]} It probes the geometry of spacetime through the diffusion process.
+
+\textbf{[中]} 考虑在 $d$ 维黎曼流形 $\mathcal{M}$ 上具有度规 $g_{\mu\nu}$ 的扩散方程：
+
+\textbf{[En]} Consider the diffusion equation on a $d$-dimensional Riemannian manifold $\mathcal{M}$ with metric $g_{\mu\nu}$:
+
+\begin{equation}
+\frac{\partial K(x,x';\tau)}{\partial \tau} = \Delta_g K(x,x';\tau)
+\end{equation}
+
+\textbf{[中]} 其中 $\Delta_g = \frac{1}{\sqrt{g}} \partial_\mu (\sqrt{g} g^{\mu\nu} \partial_\nu)$ 是拉普拉斯-贝尔特拉米算子，$\tau$ 是扩散时间。
+
+\textbf{[En]} where $\Delta_g = \frac{1}{\sqrt{g}} \partial_\mu (\sqrt{g} g^{\mu\nu} \partial_\nu)$ is the Laplace-Beltrami operator and $\tau$ is the diffusion time.
+
+\textbf{[中]} 热核 $K(x,x';\tau)$ 表示在时间 $\tau$ 内从 $x'$ 扩散到 $x$ 的概率密度。
+
+\textbf{[En]} The heat kernel $K(x,x';\tau)$ represents the probability density for diffusion from $x'$ to $x$ in time $\tau$.
+
+\textbf{[中]} 谱维度通过对热核迹的对数导数定义：
+
+\textbf{[En]} The spectral dimension is defined through the logarithmic derivative of the heat kernel trace:
+
+\begin{equation}
+d_s(\tau) = -2 \frac{d \ln K(\tau)}{d \ln \tau}
+\end{equation}
+
+\textbf{[中]} 其中 $K(\tau) = \int d^dx \sqrt{g} \, K(x,x;\tau)$ 是热核迹。
+
+\textbf{[En]} where $K(\tau) = \int d^dx \sqrt{g} \, K(x,x;\tau)$ is the heat kernel trace.
+
+\textbf{[中]} 这个定义捕捉了流形的有效维度，即如何影响扩散过程。
+
+\textbf{[En]} This definition captures the effective dimensionality of the manifold as probed by the diffusion process.
+
+\subsection{热核的渐近展开 / Asymptotic Expansion of the Heat Kernel}
+
+\textbf{[中]} 对于小扩散时间，热核具有渐近展开：
+
+\textbf{[En]} For small diffusion times, the heat kernel admits an asymptotic expansion:
+
+\begin{equation}
+K(\tau) = \frac{1}{(4\pi\tau)^{d/2}} \sum_{k=0}^{\infty} c_k \tau^k
+\end{equation}
+
+\textbf{[中]} 其中系数 $c_k$ 是依赖于时空几何的热核系数。
+
+\textbf{[En]} where the coefficients $c_k$ are the heat kernel coefficients depending on the geometry of spacetime.
+
+\textbf{[中]} 首项 $c_0 = \int d^dx \sqrt{g}$ 是流形的体积。
+
+\textbf{[En]} The leading term $c_0 = \int d^dx \sqrt{g}$ is the volume of the manifold.
+
+\textbf{[中]} 在平坦空间中，$c_1 = 0$，而在弯曲时空中，$c_1 = \frac{1}{6} \int d^dx \sqrt{g} R$，其中 $R$ 是里奇标量。
+
+\textbf{[En]} In flat space, $c_1 = 0$, while in curved spacetime, $c_1 = \frac{1}{6} \int d^dx \sqrt{g} R$, where $R$ is the Ricci scalar.
+\subsection{$c_1$公式的三种推导 / Three Derivations of the $c_1$ Formula}
+
+\textbf{[中]} 维度流参数 $c_1$ 可以通过三种不同的理论框架推导：
+
+\textbf{[En]} The dimension flow parameter $c_1$ can be derived through three different theoretical frameworks:
+
+\subsubsection{信息论推导 / Information-Theoretic Derivation}
+
+\textbf{[中]} 从香农熵和维度之间的关系出发，考虑信息在 $d$ 维空间中的传播。
+
+\textbf{[En]} Starting from the relationship between Shannon entropy and dimension, consider information propagation in $d$-dimensional space.
+
+\textbf{[中]} 有效维度与熵的关系为 $S \sim d_{eff} \ln L$。
+
+\textbf{[En]} The effective dimension is related to entropy by $S \sim d_{eff} \ln L$.
+
+\textbf{[中]} 通过分析信息传播的标度行为，我们得到普适公式。
+
+\textbf{[En]} By analyzing the scaling behavior of information propagation, we obtain the universal formula.
+
+\subsubsection{统计力学推导 / Statistical Mechanics Derivation}
+
+\textbf{[中]} 从配分函数 $Z = \text{Tr}(e^{-\beta H})$ 的高温展开出发。
+
+\textbf{[En]} Starting from the high-temperature expansion of the partition function $Z = \text{Tr}(e^{-\beta H})$.
+
+\textbf{[中]} 自由能的标度行为决定了维度流参数。
+
+\textbf{[En]} The scaling behavior of free energy determines the dimension flow parameter.
+
+\subsubsection{全息原理推导 / Holographic Derivation}
+
+\textbf{[中]} 从面积律熵 $S \sim A$ 和体-界对应关系出发。
+
+\textbf{[En]} Starting from the area law entropy $S \sim A$ and the bulk-boundary correspondence.
+
+\textbf{[中]} 全息熵界要求维度流遵循特定的标度形式。
+
+\textbf{[En]} The holographic entropy bound requires dimension flow to follow a specific scaling form.

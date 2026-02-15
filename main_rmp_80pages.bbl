@@ -1,0 +1,79 @@
+\begin{thebibliography}{12}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Ambj{\"o}rn et~al.(2012)Ambj{\"o}rn, Jurkiewicz, and
+  Loll]{Ambjorn1998}
+Jan Ambj{\"o}rn, Jerzy Jurkiewicz, and Renate Loll.
+\newblock Non-perturbative quantum gravity.
+\newblock \emph{Physics Reports}, 519:\penalty0 127--210, 2012.
+
+\bibitem[Ashtekar and Lewandowski(2004)]{Ashtekar2004}
+Abhay Ashtekar and Jerzy Lewandowski.
+\newblock Background independent quantum gravity: A status report.
+\newblock \emph{Classical and Quantum Gravity}, 21:\penalty0 R53, 2004.
+
+\bibitem[Bloch et~al.(2008)Bloch, Dalibard, and Zwerger]{Bloch2008}
+Immanuel Bloch, Jean Dalibard, and Wilhelm Zwerger.
+\newblock Many-body physics with ultracold gases.
+\newblock \emph{Reviews of Modern Physics}, 80:\penalty0 885--964, 2008.
+\newblock \doi{10.1103/RevModPhys.80.885}.
+
+\bibitem[Bombelli et~al.(1987)Bombelli, Lee, Meyer, and Sorkin]{Bombelli1987}
+Luca Bombelli, Joohan Lee, David Meyer, and Rafael~D Sorkin.
+\newblock Space-time as a causal set.
+\newblock \emph{Physical Review Letters}, 59:\penalty0 521, 1987.
+
+\bibitem[Culler et~al.(2022)Culler, Dunfield, Goerner, and Weeks]{SnapPy}
+Marc Culler, Nathan~M Dunfield, Matthias Goerner, and Jeffrey~R Weeks.
+\newblock Snappy: A computer program for studying the geometry and topology of
+  3-manifolds.
+\newblock 2022.
+\newblock Available at https://snappy.math.uic.edu.
+
+\bibitem[Lauscher and Reuter(2002)]{Lauscher2002}
+Oliver Lauscher and Martin Reuter.
+\newblock Is quantum einstein gravity nonperturbatively renormalizable?
+\newblock \emph{Classical and Quantum Gravity}, 19:\penalty0 483, 2002.
+
+\bibitem[Lewenstein et~al.(2007)Lewenstein, Sanpera, Ahufinger,
+  et~al.]{Lewenstein2007}
+Maciej Lewenstein, Anna Sanpera, Veronica Ahufinger, et~al.
+\newblock Ultracold atomic gases in optical lattices: Mimicking condensed
+  matter physics and beyond.
+\newblock \emph{Advances in Physics}, 56:\penalty0 243--379, 2007.
+\newblock \doi{10.1080/00018730701223200}.
+
+\bibitem[Maldacena(1999)]{Maldacena1997}
+Juan Maldacena.
+\newblock The large n limit of superconformal field theories and supergravity.
+\newblock \emph{International Journal of Theoretical Physics}, 38:\penalty0
+  1113--1133, 1999.
+\newblock \doi{10.1023/A:1026654312961}.
+\newblock [Adv. Theor. Math. Phys.2,231(1998)].
+
+\bibitem[Minakshisundaram and Pleijel(1949)]{Minakshisundaram1949}
+S~Minakshisundaram and A~Pleijel.
+\newblock Some properties of the eigenfunctions of the laplace-operator on
+  riemannian manifolds.
+\newblock \emph{Canadian Journal of Mathematics}, 1:\penalty0 242--256, 1949.
+
+\bibitem[Polchinski(1998)]{Polchinski1998}
+Joseph Polchinski.
+\newblock String theory. vol. 1: An introduction to the bosonic string.
+\newblock 1998.
+
+\bibitem[Rovelli(2004)]{Rovelli2004}
+Carlo Rovelli.
+\newblock \emph{Quantum gravity}.
+\newblock Cambridge University Press, 2004.
+
+\bibitem[Sorkin(2005)]{Sorkin2005}
+Rafael~D Sorkin.
+\newblock Causal sets: Discrete gravity.
+\newblock \emph{Lectures on Quantum Gravity}, pages 305--327, 2005.
+
+\end{thebibliography}

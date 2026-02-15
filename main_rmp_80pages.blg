@@ -1,0 +1,137 @@
+This is BibTeX, Version 0.99d (TeX Live 2020)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main_rmp_80pages.aux
+The style file: plainnat.bst
+Database file #1: references/extended_bibliography.bib
+Repeated entry---line 1808 of file references/extended_bibliography.bib
+ : @article{Minakshisundaram1949
+ :                              ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Wheeler1957"
+Warning--I didn't find a database entry for "Wheeler1964"
+Warning--I didn't find a database entry for "Weyl1911"
+Warning--I didn't find a database entry for "DeWitt1965"
+Warning--I didn't find a database entry for "KPZ1988"
+Warning--I didn't find a database entry for "Distler1989"
+Warning--I didn't find a database entry for "Ambjorn2001"
+Warning--I didn't find a database entry for "Ambjorn1995"
+Warning--I didn't find a database entry for "Ambjorn2005"
+Warning--I didn't find a database entry for "Ambjorn2005b"
+Warning--I didn't find a database entry for "Ambjorn2008"
+Warning--I didn't find a database entry for "Ambjorn2012"
+Warning--I didn't find a database entry for "Weinberg1979"
+Warning--I didn't find a database entry for "Reuter1998"
+Warning--I didn't find a database entry for "Reuter2002"
+Warning--I didn't find a database entry for "Lauscher2005"
+Warning--I didn't find a database entry for "Codello2009"
+Warning--I didn't find a database entry for "Benedetti2009"
+Warning--I didn't find a database entry for "Modesto2009"
+Warning--I didn't find a database entry for "Calcagni2010"
+Warning--I didn't find a database entry for "Calcagni2012"
+Warning--I didn't find a database entry for "Engle2008"
+Warning--I didn't find a database entry for "Freidel2008"
+Warning--I didn't find a database entry for "Connes1994"
+Warning--I didn't find a database entry for "Connes2006"
+Warning--I didn't find a database entry for "Chamseddine2007"
+Warning--I didn't find a database entry for "Horava2009"
+Warning--I didn't find a database entry for "Orlando2009"
+Warning--I didn't find a database entry for "Carlip2009"
+Warning--I didn't find a database entry for "Eichhorn2013"
+Warning--I didn't find a database entry for "Belenchia2015"
+Warning--I didn't find a database entry for "Atick1988"
+Warning--I didn't find a database entry for "Vafa2005"
+Warning--I didn't find a database entry for "Ooguri2007"
+Warning--I didn't find a database entry for "Maggiore1993"
+Warning--I didn't find a database entry for "Scardigli1999"
+Warning--I didn't find a database entry for "Hossenfelder2007"
+Warning--I didn't find a database entry for "Hossenfelder2013"
+Warning--I didn't find a database entry for "Hossenfelder2009"
+Warning--I didn't find a database entry for "Nozari2012"
+Warning--I didn't find a database entry for "Pedram2016"
+Warning--I didn't find a database entry for "AmelinoCamelia2001"
+Warning--I didn't find a database entry for "AmelinoCamelia2002"
+Warning--I didn't find a database entry for "Magueijo2002"
+Warning--I didn't find a database entry for "Magueijo2003"
+Warning--I didn't find a database entry for "Ahlqvist2010"
+Warning--I didn't find a database entry for "AmelinoCamelia2004"
+Warning--I didn't find a database entry for "Judes2005"
+Warning--I didn't find a database entry for "CastroNeto2009"
+Warning--I didn't find a database entry for "Iorio2018"
+Warning--I didn't find a database entry for "Gromov2015"
+Warning--I didn't find a database entry for "Verlinde2011"
+Warning--I didn't find a database entry for "Padmanabhan2010"
+Warning--I didn't find a database entry for "Gao2011"
+Warning--I didn't find a database entry for "Kobakhidze2011"
+Warning--I didn't find a database entry for "Biswas2012"
+Warning--I didn't find a database entry for "Buoninfante2018"
+Warning--I didn't find a database entry for "Calcagni2013"
+Warning--I didn't find a database entry for "Boos2018"
+Warning--I didn't find a database entry for "Dirac1964"
+Warning--I didn't find a database entry for "Sundermeyer1982"
+Warning--I didn't find a database entry for "Fetter2009"
+Warning--I didn't find a database entry for "Zwierlein2006"
+Warning--I didn't find a database entry for "Chavel1984"
+Warning--I didn't find a database entry for "Buser1992"
+Warning--I didn't find a database entry for "Cheeger1982"
+Warning--I didn't find a database entry for "Carlip2017"
+Warning--I didn't find a database entry for "Carlip2019"
+Warning--I didn't find a database entry for "Aminneborg1998"
+Warning--I didn't find a database entry for "Kazimierczuk2014"
+Warning--I didn't find a database entry for "Heckotter2018"
+Warning--I didn't find a database entry for "Klingshirn1995"
+Warning--I didn't find a database entry for "Stillinger1977"
+Warning--I didn't find a database entry for "Anderson1975"
+Warning--I didn't find a database entry for "Reynolds1982"
+Warning--I didn't find a database entry for "Needs2010"
+Warning--I didn't find a database entry for "Monitor2017"
+Warning--I didn't find a database entry for "AmelinoCamelia2013"
+Warning--I didn't find a database entry for "Percacci2011"
+Warning--I didn't find a database entry for "Kostov2008"
+Warning--I didn't find a database entry for "Volovik2003"
+Warning--I didn't find a database entry for "Hawking1976"
+Warning--I didn't find a database entry for "Penington2019"
+Warning--I didn't find a database entry for "Almheiri2019"
+Warning--empty journal in SnapPy
+Warning--empty journal in Polchinski1998
+You've used 12 entries,
+            2773 wiz_defined-function locations,
+            849 strings with 8770 characters,
+and the built_in function-call counts, 5330 in all, are:
+= -- 483
+> -- 279
+< -- 8
++ -- 96
+- -- 84
+* -- 409
+:= -- 835
+add.period$ -- 41
+call.type$ -- 12
+change.case$ -- 62
+chr.to.int$ -- 12
+cite$ -- 26
+duplicate$ -- 252
+empty$ -- 445
+format.name$ -- 102
+if$ -- 1107
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 13
+newline$ -- 73
+num.names$ -- 48
+pop$ -- 116
+preamble$ -- 1
+purify$ -- 51
+quote$ -- 0
+skip$ -- 190
+stack$ -- 0
+substring$ -- 214
+swap$ -- 19
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 127
+warning$ -- 2
+while$ -- 52
+width$ -- 0
+write$ -- 168
+(There was 1 error message)

@@ -1,0 +1,99 @@
+\documentclass[11pt,a4paper]{article}
+
+% ========== 基础包 ==========
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{mathrsfs}
+\usepackage{bm}
+
+% CJK支持
+\usepackage{CJK}
+
+% 页面设置
+\geometry{margin=2.5cm}
+
+% 定理环境
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}
+\newtheorem{definition}{Definition}
+
+% 常用命令定义
+\newcommand{\dif}{\mathrm{d}}
+\newcommand{\Tr}{\mathrm{Tr}}
+\newcommand{\tr}{\mathrm{tr}}
+
+\title{\textbf{Spectral Flow as Degree-of-Freedom Constraint}\\[0.5em]
+\large Energy-Dependent Effective Dynamics in Physical Systems}
+\author{Unified Field Theory Research Group}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+We present a unified framework for understanding how the number of effectively accessible dynamical degrees of freedom varies with energy scale across diverse physical systems. The phenomenon traditionally termed "spectral dimension flow" is reinterpreted as \textbf{energy-dependent constraint on dynamical modes}, where the spectral dimension $d_s(\tau)$ serves not as a physical dimension but as a \textbf{measure} of effective mode accessibility.
+
+In this framework, the topological dimension of spacetime remains constant (4D), while the effective dimension---the number of directions in which excitations can propagate---changes with probe energy due to physical constraints: centrifugal forces in rotating systems, gravitational redshift near black hole horizons, and quantum geometric discreteness at the Planck scale.
+
+We derive the universal constraint parameter $c_1(d,w) = 1/2^{d-2+w}$ and validate it through numerical studies of hyperbolic manifolds, atomic spectroscopy of excitonic systems, and quantum simulations. The framework provides a consistent interpretation across classical and quantum regimes, distinguishing carefully between topological dimension (unchanged), effective dimension (energy-dependent), and spectral dimension (a diagnostic measure).
+
+\begin{CJK}{UTF8}{gbsn}
+\textbf{摘要：} 我们提出了一个统一框架，用于理解有效可访问的动力学自由度数量如何随能量标度变化。传统上称为"谱维度流"的现象被重新解释为\textbf{动力学模式的能量依赖约束}，其中谱维度$d_s(\tau)$不是作为物理维度，而是作为\textbf{有效模式可访问性的度量}。
+
+在此框架中，时空的拓扑维度保持恒定（4D），而有效维度——激发可以传播的方向数量——由于物理约束（旋转系统中的离心力、黑洞视界附近的引力红移、普朗克尺度的量子几何离散性）随探测能量变化。
+\end{CJK}
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+% ========== 符号表 ==========
+\section*{Notation and Conventions}
+\addcontentsline{toc}{section}{Notation and Conventions}
+
+\begin{longtable}{@{}p{3cm}p{12cm}@{}}
+\toprule
+\textbf{Symbol} & \textbf{Definition} \\
+\midrule
+\endhead
+$d_{\text{topo}}$ & Topological dimension of spacetime (fixed, typically 4) \\
+$d_{\text{eff}}(E)$ & Effective dimension: number of accessible DOF at energy $E$ \\
+$d_s(\tau)$ & Spectral dimension: mathematical probe of effective modes \\
+$\tau$ & Diffusion time (inverse energy scale) \\
+$\tau_c$ & Characteristic constraint scale \\
+$c_1(d,w)$ & Universal constraint parameter: $c_1 = 1/2^{d-2+w}$ \\
+$w$ & Constraint type: $w=0$ (classical), $w=1$ (quantum) \\
+$K(\tau)$ & Heat kernel trace: measure of accessible mode density \\
+$\Delta_g$ & Laplace-Beltrami operator \\
+$n_{\text{dof}}$ & Number of dynamical degrees of freedom \\
+$E_{\text{gap}}$ & Energy gap for mode excitation \\
+\bottomrule
+\end{longtable}
+
+\newpage
+
+% ========== 重构后的章节 ==========
+\input{chapters/chapter1_reconstructed}
+\input{chapters/chapter2_reconstructed}
+\input{chapters/chapter3_reconstructed}
+\input{chapters/chapter4_reconstructed}
+
+% ========== 致谢 ==========
+\section*{Acknowledgments}
+\addcontentsline{toc}{section}{Acknowledgments}
+
+The authors thank colleagues for discussions and the developers of SnapPy for their software.
+
+\bibliographystyle{plain}
+\bibliography{references/extended_bibliography}
+
+\end{document}

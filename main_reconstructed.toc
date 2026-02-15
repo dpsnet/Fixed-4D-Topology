@@ -1,0 +1,47 @@
+\contentsline {section}{Notation and Conventions}{3}{section*.2}%
+\contentsline {section}{\numberline {1}Introduction}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}The Phenomenon of Effective Degree of Freedom Constraint}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Distinction Between Topological and Effective Dimensions}{4}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Physical Mechanism: Energy Constraint}{4}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Historical Context}{5}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}The Three-System Correspondence}{5}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}Structure of This Review}{6}{subsection.1.6}%
+\contentsline {section}{\numberline {2}Mathematical Framework and Physical Interpretation}{6}{section.2}%
+\contentsline {subsection}{\numberline {2.1}The Heat Kernel as a Probe of Dynamical Modes}{6}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Definition and Spectral Representation}{6}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Physical Interpretation: Mode Counting}{6}{subsubsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.2}Spectral Dimension: A Measure of Effective Modes}{7}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Definition and Interpretation}{7}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Relation to Effective Degrees of Freedom}{7}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Spectral Flow as Constraint Onset}{7}{subsubsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.3}The Universal Constraint Parameter $c_1$}{8}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Physical Interpretation}{8}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Role of Constraint Type}{8}{subsubsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.4}Distinction From Dimensional Reduction}{8}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Degree-of-Freedom Constraint in Three Physical Systems}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Rotating Systems: Centrifugal Mode Freezing}{9}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Physical Mechanism}{9}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Spectral Dimension Analysis}{9}{subsubsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.2}Black Holes: Gravitational Redshift Constraint}{9}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}The Near-Horizon Energy Gap}{9}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Physical Interpretation}{10}{subsubsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.3}Quantum Spacetime: Discrete Geometry Constraints}{10}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}The Planck-Scale Energy Gap}{10}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}CDT and the Extended Phase}{10}{subsubsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.4}The Universal Constraint Framework}{10}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Common Structure}{10}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Comparison Table}{11}{subsubsection.3.4.2}%
+\contentsline {section}{\numberline {4}Experimental and Numerical Evidence for Mode Constraint}{11}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Numerical Studies: Mode Counting on Hyperbolic Manifolds}{11}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Mathematical Setup}{11}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Computational Mode Counting}{11}{subsubsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.2}Atomic Physics: Excitons as Mode Probes}{11}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Physical Mechanism}{11}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Mode Constraint Interpretation}{12}{subsubsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.3}Quantum Simulations: Controlled Mode Freezing}{12}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Fractional Dimension as Mode Suppression}{12}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}DMC as Mode Probe}{12}{subsubsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.4}Summary and Critical Assessment}{12}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Consistency Across Probes}{12}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}Alternative Interpretations}{13}{subsubsection.4.4.2}%
+\contentsline {section}{Acknowledgments}{13}{section*.3}%

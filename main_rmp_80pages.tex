@@ -1,0 +1,146 @@
+\documentclass[11pt,a4paper]{article}
+
+% ========== 基础包 ==========
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{booktabs}
+% \usepackage{siunitx}
+% \usepackage{physics}
+\usepackage{longtable}
+\usepackage{mathrsfs}
+\usepackage{bm}
+
+% CJK支持
+\usepackage{CJK}
+
+% 页面设置
+\geometry{margin=2.5cm}
+
+% 定理环境
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}
+\newtheorem{definition}{Definition}
+
+% 常用命令定义
+\newcommand{\dif}{\mathrm{d}}
+\newcommand{\Tr}{\mathrm{Tr}}
+\newcommand{\tr}{\mathrm{tr}}
+\newcommand{\sgn}{\mathrm{sgn}}
+\newcommand{\Re}{\mathrm{Re}}
+\newcommand{\Im}{\mathrm{Im}}
+\newcommand{\argmax}{\mathrm{argmax}}
+\newcommand{\argmin}{\mathrm{argmin}}
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\Cov}{\mathrm{Cov}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\P}{\mathbb{P}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\norm}[1]{\left\|#1\right\|}
+\newcommand{\braket}[2]{\left\langle #1 \middle| #2 \right\rangle}
+\newcommand{\ket}[1]{\left|#1\right\rangle}
+\newcommand{\bra}[1]{\left\langle#1\right|}
+\newcommand{\set}[1]{\left\{#1\right\}}
+
+\title{\textbf{Unified Dimension Flow Theory}\\[0.5em]
+\large A Comprehensive Review of Spectral Dimension Reduction in Quantum and Classical Systems}
+\author{Unified Field Theory Research Group}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+The phenomenon of spectral dimension flow---the scale-dependent change in effective dimensionality---represents a profound connection between quantum gravity, black hole physics, and classical mechanics. This review presents a unified theoretical framework deriving the universal formula $c_1(d,w) = 1/2^{d-2+w}$ and validates it through extensive comparison with numerical studies of hyperbolic manifolds, precision spectroscopy of Rydberg excitons in cuprous oxide, and quantum simulations of dimensional crossover.
+
+We develop the mathematical foundations through heat kernel theory, derive the universal formula via information-theoretic, statistical mechanical, and holographic approaches, and provide critical comparison with alternative approaches including string theory, loop quantum gravity, asymptotic safety, and phenomenological quantum gravity models. The implications of dimension flow extend from the resolution of the black hole information paradox to the renormalization group structure of quantum gravity and the emergence of spacetime from more fundamental degrees of freedom.
+
+\begin{CJK}{UTF8}{gbsn}
+\textbf{摘要：} 能谱维度流现象——有效维度随尺度变化的现象——代表了量子引力、黑洞物理和经典力学之间的深刻联系。本综述提出了统一理论框架，推导了普适公式 $c_1(d,w) = 1/2^{d-2+w}$，并通过与双曲流形的数值研究、氧化亚铜中里德堡激子的精密光谱测量、以及维度交叉的量子模拟的广泛比较进行验证。
+
+我们通过热核理论发展数学基础，通过信息论、统计力学和全息方法推导普适公式，并与弦论、圈量子引力、渐近安全以及现象学量子引力模型等替代方法进行批判性比较。维度流的意义延伸到从黑洞信息悖论的解决到量子引力的重整化群结构、以及时空从更基本自由度涌现等领域。
+\end{CJK}
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+% ========== 符号表 ==========
+\section*{Notation and Conventions}
+\addcontentsline{toc}{section}{Notation and Conventions}
+
+\begin{longtable}{@{}p{3cm}p{12cm}@{}}
+\toprule
+\textbf{Symbol} & \textbf{Definition} \\
+\midrule
+\endhead
+$d$ & Topological (embedding) dimension of spacetime \\
+$d_s(\tau)$ & Spectral dimension at diffusion time $\tau$ \\
+$\tau$ & Diffusion time (proper time) \\
+$\tau_c$ & Crossover scale for dimension flow \\
+$c_1(d,w)$ & Dimension flow parameter: $c_1 = 1/2^{d-2+w}$ \\
+$w$ & Constraint type exponent: $w=0$ (classical), $w=1$ (quantum) \\
+$K(x,x';\tau)$ & Heat kernel (return probability) \\
+$K(\tau)$ & Heat kernel trace \\
+$\Delta_g$ & Laplace-Beltrami operator on metric $g$ \\
+$\lambda_n$ & Eigenvalues of Laplacian \\
+$a_k$ & Heat kernel (Seeley-DeWitt) coefficients \\
+$d_{\text{IR}}$ & Infrared (large-scale) spectral dimension \\
+$d_{\text{UV}}$ & Ultraviolet (small-scale) spectral dimension \\
+$\Delta$ & Total dimension change: $\Delta = d_{\text{IR}} - d_{\text{UV}}$ \\
+$\ell_P$ & Planck length: $\ell_P = \sqrt{\hbar G/c^3}$ \\
+$E_P$ & Planck energy: $E_P = \sqrt{\hbar c^5/G}$ \\
+$\Box_g$ & d'Alembertian operator \\
+$R$ & Ricci scalar curvature \\
+$R_{\mu\nu}$ & Ricci tensor \\
+$R_{\mu\nu\rho\sigma}$ & Riemann curvature tensor \\
+$\Gamma$ & Discrete group of isometries \\
+CDT & Causal Dynamical Triangulations \\
+LQG & Loop Quantum Gravity \\
+FRG & Functional Renormalization Group \\
+GUP & Generalized Uncertainty Principle \\
+DSR & Doubly Special Relativity \\
+\bottomrule
+\end{longtable}
+
+\newpage
+
+% ========== 主章节 ==========
+\input{chapters/chapter1_rmp}
+\input{chapters/chapter2_extended}
+\input{chapters/chapter2_related_frameworks}
+\input{chapters/chapter3_extended}
+\input{chapters/chapter4_extended}
+\input{chapters/chapter_comparison}
+\input{chapters/chapter5_extended}
+\input{chapters/chapter6_extended}
+
+% ========== 致谢 ==========
+\section*{Acknowledgments}
+\addcontentsline{toc}{section}{Acknowledgments}
+
+The authors thank the numerous colleagues who have contributed to this field through their research and discussions. We are particularly grateful to the developers of SnapPy for making their software freely available, and to the experimental groups who have provided high-precision data on excitonic systems. This work was supported in part by the Institute for Advanced Study and the Simons Foundation.
+
+\begin{CJK}{UTF8}{gbsn}
+作者感谢众多同事通过研究和讨论对该领域的贡献。我们特别感谢SnapPy的开发者免费提供软件，以及提供激子系统高精度数据的实验组。本工作部分得到了高等研究院和西蒙斯基金会的支持。
+\end{CJK}
+
+% ========== 附录 ==========
+\input{appendices}
+
+\bibliographystyle{plainnat}
+\bibliography{references/extended_bibliography}
+
+\end{document}

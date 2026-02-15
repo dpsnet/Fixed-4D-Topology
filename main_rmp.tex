@@ -1,0 +1,79 @@
+\documentclass[11pt,a4paper]{article}
+
+% ========== 基础包 ==========
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{physics}
+
+% CJK支持
+\usepackage{CJK}
+
+% 页面设置
+\geometry{margin=2.5cm}
+
+% 定理环境
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}
+\newtheorem{definition}{Definition}
+
+\title{\textbf{Unified Dimension Flow Theory}\\[0.5em]
+\large A Comprehensive Review of Spectral Dimension Reduction in Quantum and Classical Systems}
+\author{Unified Field Theory Research Group}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+The phenomenon of spectral dimension flow—the scale-dependent change in effective dimensionality—represents a profound connection between quantum gravity, black hole physics, and classical mechanics. This review presents a unified theoretical framework deriving the universal formula $c_1(d,w) = 1/2^{d-2+w}$ and validates it through three independent approaches: numerical topology using hyperbolic 3-manifolds, precision spectroscopy of Rydberg excitons in Cu$_2$O, and quantum simulations of dimensional crossover. We develop the mathematical foundations through heat kernel theory, derive the universal formula via information-theoretic, statistical mechanical, and holographic approaches, and explore implications for the black hole information paradox, asymptotic safety, and the emergence of spacetime.
+
+\begin{CJK}{UTF8}{gbsn}
+\textbf{摘要：} 能谱维度流现象——有效维度随尺度变化的现象——代表了量子引力、黑洞物理和经典力学之间的深刻联系。本综述提出了统一的理论框架，推导了普适公式 $c_1(d,w) = 1/2^{d-2+w}$，并通过三种独立方法验证：双曲三维流形的数值拓扑学、Cu$_2$O里德堡激子的精密光谱学、以及维度交叉的量子模拟。我们通过热核理论发展数学基础，通过信息论、统计力学和全息方法推导普适公式，并探讨对黑洞信息悖论、渐近安全和时空涌现的意义。
+\end{CJK}
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+% ========== RMP级别章节 ==========
+\input{chapters/chapter1_introduction_expanded}
+\input{chapters/chapter2_foundations_rmp}
+\input{chapters/chapter3_correspondence_rmp}
+\input{chapters/chapter4_experiments_rmp}
+\input{chapters/chapter5_implications_rmp}
+\input{chapters/chapter6_outlook_rmp}
+
+% ========== 致谢 ==========
+\section*{Acknowledgments}
+\addcontentsline{toc}{section}{Acknowledgments}
+
+We thank the SnapPy development team, the experimental groups providing Cu$_2$O data, and colleagues for discussions.
+
+\begin{CJK}{UTF8}{gbsn}
+我们感谢SnapPy开发团队、提供Cu$_2$O数据的实验组，以及参与讨论的同事们。
+\end{CJK}
+
+% ========== 附录 ==========
+\appendix
+\section{Mathematical Derivations}
+\label{app:derivations}
+
+\subsection{Heat Kernel Expansion Derivation}
+The heat kernel expansion follows from the ansatz $K(x,x';\tau) = (4\pi\tau)^{-d/2}e^{-\sigma/2\tau}\sum_k a_k \tau^k$.
+
+\subsection{Seeley-DeWitt Coefficients}
+First three coefficients: $a_0 = 1$, $a_1 = R/6$, $a_2 = (R_{\mu\nu\rho\sigma}^2 - R_{\mu\nu}^2 + 5R^2)/180$.
+
+\bibliographystyle{apsrev4-1}
+\bibliography{references/extended_bibliography}
+
+\end{document}

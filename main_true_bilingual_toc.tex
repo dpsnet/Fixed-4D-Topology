@@ -1,0 +1,75 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\usepackage{CJKutf8}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+\geometry{margin=1.5cm, top=2cm, bottom=2cm}
+
+\definecolor{cnblue}{RGB}{0,0,139}
+\definecolor{engray}{RGB}{60,60,60}
+
+\newcommand{\CN}[1]{\textcolor{cnblue}{\textbf{[中]} #1}}
+\newcommand{\EN}[1]{\textcolor{engray}{\textbf{[En]} #1}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{\small \CN{统一维度流理论} / \EN{Unified Dimension Flow Theory}}
+\fancyfoot[C]{\thepage}
+
+\title{\vspace{-0.5cm}\begin{CJK}{UTF8}{gbsn}\textbf{统一维度流理论综述}\\Unified Dimension Flow Theory\end{CJK}\\[0.3em]
+\large \CN{逐句严格对照版} / \EN{Strict Sentence-by-Sentence Translation}}
+\author{\begin{CJK}{UTF8}{gbsn}王斌\end{CJK} (Wang Bin)}
+\date{February 2026}
+
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+
+\maketitle
+
+\vspace{-0.3cm}
+\begin{center}
+\fbox{\parbox{0.9\textwidth}{
+\centering
+\CN{本文档提供英文原文与中文翻译的严格一对一逐句对照。}\\
+\EN{This document provides strict one-to-one sentence-by-sentence translation.}
+}}
+\end{center}
+\vspace{0.3cm}
+
+% 目录
+\tableofcontents
+\newpage
+
+% 摘要
+\section*{\CN{摘要} / \EN{Abstract}}
+\addcontentsline{toc}{section}{摘要 / Abstract}
+
+\CN{本文综述了维度流理论的最新进展，建立了一个统一框架，将量子引力、黑洞物理和凝聚态系统联系起来。}
+
+\EN{We present a comprehensive review of dimension flow theory, establishing a unified framework that connects quantum gravity, black hole physics, and condensed matter systems.}
+
+\CN{谱维度 $d_s(\tau)$ 作为一个普适量，在高能（紫外）区域从 $d_{UV}=2$ 过渡到低能（红外）区域的 $d_{IR}=4$。}
+
+\EN{The spectral dimension $d_s(\tau)$ emerges as a universal observable that transitions from $d_{UV} = 2$ at high energies to $d_{IR} = 4$ at low energies.}
+
+\CN{我们推导了普适公式 $c_1(d,w)=1/2^{d-2+w}$，并通过三种独立方法验证。}
+
+\EN{We derive the universal formula $c_1(d,w) = 1/2^{d-2+w}$ and validate it through three independent approaches.}
+
+\newpage
+
+% 引入各章
+\input{chapters/chapter1_bilingual}
+\input{chapters/chapter2_bilingual}
+\input{chapters/chapter3_bilingual}
+\input{chapters/chapter4_bilingual}
+\input{chapters/chapter5_bilingual}
+\input{chapters/chapter6_bilingual}
+
+\end{CJK}
+\end{document}

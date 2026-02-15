@@ -1,0 +1,79 @@
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
+\contentsline {section}{\numberline {2}Introduction}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}The Dimension Problem in Modern Physics}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Historical Development}{2}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}The Unified Framework}{2}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Structure of This Review}{2}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Theoretical Foundations}{3}{section.3}%
+\contentsline {section}{\numberline {4}Theoretical Foundations}{3}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Heat Kernel and Spectral Dimension}{3}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Mathematical Definition}{3}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Asymptotic Expansion}{3}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}Spectral Dimension}{3}{subsubsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.2}The c₁ Formula Derivation}{4}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Information-Theoretic Approach}{4}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Statistical Mechanics Derivation}{4}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}Holographic Interpretation}{4}{subsubsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.3}Universal Constraint Mechanism}{4}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}The Fundamental Correspondence}{5}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Constraint Parameter}{5}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}Emergent Dimension Paradigm}{5}{subsubsection.4.3.3}%
+\contentsline {section}{\numberline {5}Three-System Correspondence}{5}{section.5}%
+\contentsline {section}{\numberline {6}Three-System Correspondence}{5}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Rotation Systems}{5}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}E-6 Experiment}{5}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.2}Theoretical Model}{6}{subsubsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.2}Black Hole Systems}{6}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Schwarzschild Geometry}{6}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}Near-Horizon Limit}{6}{subsubsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.3}Heat Kernel Calculation}{6}{subsubsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.3}Quantum Gravity}{7}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}UV/IR Structure}{7}{subsubsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.2}Various Approaches}{7}{subsubsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.3}Holographic Principle}{7}{subsubsection.6.3.3}%
+\contentsline {subsection}{\numberline {6.4}Universal Comparison}{7}{subsection.6.4}%
+\contentsline {subsubsection}{\numberline {6.4.1}Constraint-Dimension Correspondence}{7}{subsubsection.6.4.1}%
+\contentsline {subsubsection}{\numberline {6.4.2}Mathematical Unity}{7}{subsubsection.6.4.2}%
+\contentsline {section}{\numberline {7}Experimental Validations}{8}{section.7}%
+\contentsline {section}{\numberline {8}Experimental Validations}{8}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Cu₂O Rydberg Excitons}{8}{subsection.8.1}%
+\contentsline {subsubsection}{\numberline {8.1.1}Experimental Setup}{8}{subsubsection.8.1.1}%
+\contentsline {subsubsection}{\numberline {8.1.2}Data Analysis}{8}{subsubsection.8.1.2}%
+\contentsline {subsubsection}{\numberline {8.1.3}Results}{8}{subsubsection.8.1.3}%
+\contentsline {subsubsection}{\numberline {8.1.4}Statistical Analysis}{9}{subsubsection.8.1.4}%
+\contentsline {subsection}{\numberline {8.2}Numerical Simulations}{9}{subsection.8.2}%
+\contentsline {subsubsection}{\numberline {8.2.1}SnapPy Hyperbolic Manifolds}{9}{subsubsection.8.2.1}%
+\contentsline {subsubsection}{\numberline {8.2.2}2D Hydrogen Atom Simulation}{9}{subsubsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.3}Tabletop Experiments}{9}{subsection.8.3}%
+\contentsline {subsubsection}{\numberline {8.3.1}E-6 Rotation System}{9}{subsubsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.4}Cross-Validation Summary}{9}{subsection.8.4}%
+\contentsline {section}{\numberline {9}Applications}{10}{section.9}%
+\contentsline {section}{\numberline {10}Applications and Extensions}{10}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Gravitational Wave Astronomy}{10}{subsection.10.1}%
+\contentsline {subsubsection}{\numberline {10.1.1}Waveform Modifications}{10}{subsubsection.10.1.1}%
+\contentsline {subsubsection}{\numberline {10.1.2}GW150914 Analysis}{10}{subsubsection.10.1.2}%
+\contentsline {subsubsection}{\numberline {10.1.3}Future Detectors}{10}{subsubsection.10.1.3}%
+\contentsline {subsection}{\numberline {10.2}Cosmology}{10}{subsection.10.2}%
+\contentsline {subsubsection}{\numberline {10.2.1}Early Universe}{10}{subsubsection.10.2.1}%
+\contentsline {subsubsection}{\numberline {10.2.2}Primordial Gravitational Waves}{10}{subsubsection.10.2.2}%
+\contentsline {subsubsection}{\numberline {10.2.3}CMB Implications}{10}{subsubsection.10.2.3}%
+\contentsline {subsection}{\numberline {10.3}Condensed Matter Systems}{11}{subsection.10.3}%
+\contentsline {subsubsection}{\numberline {10.3.1}Quantum Well Spectroscopy}{11}{subsubsection.10.3.1}%
+\contentsline {subsubsection}{\numberline {10.3.2}Transition Metal Dichalcogenides}{11}{subsubsection.10.3.2}%
+\contentsline {subsubsection}{\numberline {10.3.3}Graphene and 2D Materials}{11}{subsubsection.10.3.3}%
+\contentsline {subsection}{\numberline {10.4}Quantum Information}{11}{subsection.10.4}%
+\contentsline {subsubsection}{\numberline {10.4.1}Entanglement Structure}{11}{subsubsection.10.4.1}%
+\contentsline {subsubsection}{\numberline {10.4.2}Holographic Entanglement}{11}{subsubsection.10.4.2}%
+\contentsline {section}{\numberline {11}Outlook and Conclusion}{12}{section.11}%
+\contentsline {section}{\numberline {12}Outlook and Future Directions}{12}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Open Theoretical Questions}{12}{subsection.12.1}%
+\contentsline {subsubsection}{\numberline {12.1.1}Mathematical Rigor}{12}{subsubsection.12.1.1}%
+\contentsline {subsubsection}{\numberline {12.1.2}Quantum Gravity Integration}{12}{subsubsection.12.1.2}%
+\contentsline {subsection}{\numberline {12.2}Experimental Opportunities}{12}{subsection.12.2}%
+\contentsline {subsubsection}{\numberline {12.2.1}Immediate Prospects}{12}{subsubsection.12.2.1}%
+\contentsline {subsubsection}{\numberline {12.2.2}Long-term Vision}{12}{subsubsection.12.2.2}%
+\contentsline {subsection}{\numberline {12.3}Connections to Other Fields}{13}{subsection.12.3}%
+\contentsline {subsubsection}{\numberline {12.3.1}Complex Systems}{13}{subsubsection.12.3.1}%
+\contentsline {subsubsection}{\numberline {12.3.2}Machine Learning}{13}{subsubsection.12.3.2}%
+\contentsline {subsection}{\numberline {12.4}Philosophical Implications}{13}{subsection.12.4}%
+\contentsline {subsection}{\numberline {12.5}Conclusion}{13}{subsection.12.5}%

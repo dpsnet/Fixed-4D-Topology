@@ -1,0 +1,88 @@
+\documentclass[11pt,a4paper]{article}
+
+% 基础包
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{mathrsfs}
+
+% 页面设置
+\geometry{margin=2.5cm}
+
+% 定理环境
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+
+% 标题信息
+\title{\textbf{Spectral Flow as Energy-Dependent Mode Constraint}\\[0.5em]
+\large Clarifying Terminology and Physical Mechanisms Across Classical and Quantum Systems}
+
+\author{Unified Field Theory Research Group}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+We present a comprehensive review of the phenomenon variously called ``spectral dimension flow'' or ``running dimension'' in the quantum gravity literature, clarifying terminology and physical interpretation that have become confused over two decades of research. We establish that this phenomenon is more precisely described as \textbf{energy-dependent constraint on dynamical degrees of freedom}, where the spectral dimension $d_s(\tau)$ serves not as a physical dimension but as a mathematical \textbf{measure} of accessible mode density.
+
+We trace the historical evolution of terminology from Minakshisundaram and Pleijel's 1949 asymptotic analysis through modern quantum gravity applications, distinguishing carefully between:
+\begin{itemize}
+\item \textbf{Topological dimension}: The intrinsic dimension of spacetime ($d_{\text{topo}} = 4$), unchanged by energy scale
+\item \textbf{Spectral dimension}: A mathematical parameter $d_s(\tau)$ measuring mode scaling
+\item \textbf{Effective degrees of freedom}: The physically accessible dynamical directions $n_{\text{dof}}(E)$
+\end{itemize}
+
+We analyze three physical systems---rotating fluids, black holes, and quantum spacetime---demonstrating how distinct mechanisms (centrifugal forces, gravitational redshift, quantum discreteness) all lead to mode constraint with universal scaling governed by $c_1(d,w) = 1/2^{d-2+w}$. Throughout, we emphasize that spacetime does not ``become'' lower-dimensional; rather, energy constraints render certain dynamical modes inaccessible to low-energy probes.
+
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+% 符号表
+\section*{Notation and Terminology}
+\addcontentsline{toc}{section}{Notation and Terminology}
+
+\begin{longtable}{@{}p{3.5cm}p{11.5cm}@{}}
+\toprule
+\textbf{Term} & \textbf{Precise Definition} \\
+\midrule
+\endhead
+$d_{\text{topo}}$ & \textbf{Topological dimension}: Intrinsic dimension of spacetime manifold. Fixed at 4 for physical spacetime. \\
+$d_s(\tau)$ & \textbf{Spectral dimension}: Mathematical parameter measuring scaling of diffusion processes. Not a physical dimension. \\
+$n_{\text{dof}}(E)$ & \textbf{Effective degrees of freedom}: Number of dynamical directions accessible at energy $E$. \\
+Mode constraint & Energy-dependent freezing of dynamical modes due to large excitation gaps. \\
+Spectral flow & Variation of $d_s(\tau)$ with scale; describes changing mode accessibility. \\
+$c_1(d,w)$ & Universal constraint parameter: $c_1 = 1/2^{d_{\text{topo}}-2+w}$. \\
+$w$ & Constraint type: 0 (classical), 1 (quantum). \\
+$K(\tau)$ & Heat kernel trace: measure of accessible mode density. \\
+\bottomrule
+\end{longtable}
+
+\textbf{Terminological clarification}: We avoid ``dimension flow'' as ambiguous. ``Spectral flow'' refers specifically to parameter variation. ``Dimensional reduction'' is reserved for genuine topological change (e.g., Kaluza-Klein compactification).
+
+\newpage
+
+% 主章节
+\input{chapters/chapter1_final}
+\input{chapters/chapter2_final}
+\input{chapters/chapter3_final}
+\input{chapters/chapter4_final}
+
+% 致谢
+\section*{Acknowledgments}
+\addcontentsline{toc}{section}{Acknowledgments}
+
+We thank colleagues for discussions on terminology and the developers of SnapPy for their software.
+
+\bibliographystyle{plain}
+\bibliography{references/extended_bibliography}
+
+\end{document}

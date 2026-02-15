@@ -1,0 +1,1515 @@
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2026.2.12)  14 FEB 2026 20:56
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main_rmp_80pages.tex
+(./main_rmp_80pages.tex
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-02-18>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count175
+\c@section=\count176
+\c@subsection=\count177
+\c@subsubsection=\count178
+\c@paragraph=\count179
+\c@subparagraph=\count180
+\c@figure=\count181
+\c@table=\count182
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2020/08/01 v1.3d Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
+2.
+
+(/usr/share/texlive/texmf-dist/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/09/23 v2.17i AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen139
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen140
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count183
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count184
+\leftroot@=\count185
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count186
+\DOTSCASE@=\count187
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box47
+\strutbox@=\box48
+\big@size=\dimen141
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count188
+\c@MaxMatrixCols=\count189
+\dotsspace@=\muskip16
+\c@parentequation=\count190
+\dspbrk@lvl=\count191
+\tag@help=\toks18
+\row@=\count192
+\column@=\count193
+\maxfields@=\count194
+\andhelp@=\toks19
+\eqnshift@=\dimen142
+\alignsep@=\dimen143
+\tagshift@=\dimen144
+\tagwidth@=\dimen145
+\totwidth@=\dimen146
+\lineht@=\dimen147
+\@envbody=\toks20
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks22
+\thm@bodyfont=\toks23
+\thm@headfont=\toks24
+\thm@notefont=\toks25
+\thm@headpunct=\toks26
+\thm@preskip=\skip52
+\thm@postskip=\skip53
+\thm@headsep=\skip54
+\dth@everypar=\toks27
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks28
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count195
+\Gm@cntv=\count196
+\c@Gm@tempcnt=\count197
+\Gm@bindingoffset=\dimen148
+\Gm@wd@mp=\dimen149
+\Gm@odd@mp=\dimen150
+\Gm@even@mp=\dimen151
+\Gm@layoutwidth=\dimen152
+\Gm@layoutheight=\dimen153
+\Gm@layouthoffset=\dimen154
+\Gm@layoutvoffset=\dimen155
+\Gm@dimlist=\toks29
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2021-02-27 v7.00k Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+)
+\@linkdim=\dimen156
+\Hy@linkcounter=\count198
+\Hy@pagecounter=\count199
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2021-02-27 v7.00k Hyperref: PDFDocEncoding definition (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
+File: hyperref-langpatches.def 2021-02-27 v7.00k Hyperref: patches for babel la
+nguages
+)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count266
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count267
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen157
+
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count268
+\Field@Width=\dimen158
+\Fld@charsize=\dimen159
+Package hyperref Info: Hyper figures OFF on input line 6075.
+Package hyperref Info: Link nesting OFF on input line 6080.
+Package hyperref Info: Hyper index ON on input line 6083.
+Package hyperref Info: backreferencing OFF on input line 6090.
+Package hyperref Info: Link coloring OFF on input line 6095.
+Package hyperref Info: Link coloring with OCG OFF on input line 6100.
+Package hyperref Info: PDF/A mode OFF on input line 6105.
+LaTeX Info: Redefining \ref on input line 6145.
+LaTeX Info: Redefining \pageref on input line 6149.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
+ge
+with kernel methods
+)
+\Hy@abspage=\count269
+\c@Item=\count270
+\c@Hfootnote=\count271
+)
+Package hyperref Info: Driver (autodetected): hxetex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hxetex.def
+File: hxetex.def 2021-02-27 v7.00k Hyperref driver for XeTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\pdfm@box=\box49
+\c@Hy@AnnotLevel=\count272
+\HyField@AnnotCount=\count273
+\Fld@listcount=\count274
+\c@bookmark@seq@number=\count275
+
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
+e
+with kernel methods
+)
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip55
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 105.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2020/08/26 v5.0i Graphics/color driver for xetex
+))
+\Gin@req@height=\dimen160
+\Gin@req@width=\dimen161
+)
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen162
+\lightrulewidth=\dimen163
+\cmidrulewidth=\dimen164
+\belowrulesep=\dimen165
+\belowbottomsep=\dimen166
+\aboverulesep=\dimen167
+\abovetopsep=\dimen168
+\cmidrulesep=\dimen169
+\cmidrulekern=\dimen170
+\defaultaddspace=\dimen171
+\@cmidla=\count276
+\@cmidlb=\count277
+\@aboverulesep=\dimen172
+\@belowrulesep=\dimen173
+\@thisruleclass=\count278
+\@lastruleclass=\count279
+\@thisrulewidth=\dimen174
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\LTleft=\skip56
+\LTright=\skip57
+\LTpre=\skip58
+\LTpost=\skip59
+\LTchunksize=\count280
+\LTcapwidth=\dimen175
+\LT@head=\box50
+\LT@firsthead=\box51
+\LT@foot=\box52
+\LT@lastfoot=\box53
+\LT@cols=\count281
+\LT@rows=\count282
+\c@LT@tables=\count283
+\c@LT@chunks=\count284
+\LT@p@ftn=\toks30
+)
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup6
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2019/07/24 v1.2d Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup7
+\symboldletters=\mathgroup8
+\symboldsymbols=\mathgroup9
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
+LaTeX Info: Redefining \bm on input line 209.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/cjk/texinput/CJK.sty
+Package: CJK 2015/04/18 4.8.4
+
+(/usr/share/texlive/texmf-dist/tex/latex/cjk/texinput/mule/MULEenc.sty
+Package: MULEenc 2015/04/18 4.8.4
+)
+(/usr/share/texlive/texmf-dist/tex/latex/cjk/texinput/CJK.enc
+File: CJK.enc 2015/04/18 4.8.4
+)
+LaTeX Info: Redefining \selectfont on input line 755.
+\CJK@indent=\box54
+)
+\c@theorem=\count285
+\c@lemma=\count286
+\c@corollary=\count287
+\c@proposition=\count288
+\c@definition=\count289
+
+
+! LaTeX Error: Command \Re already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 \newcommand{\Re}{\mathrm{Re}}
+                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \Im already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 \newcommand{\Im}{\mathrm{Im}}
+                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \P already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.42 \newcommand{\P}{\mathbb{P}}
+                                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+File: l3backend-xetex.def 2021-03-18 L3 backend support: XeTeX
+
+(|extractbb --version)
+\c__kernel_sys_dvipdfmx_version_int=\count290
+\l__color_backend_stack_int=\count291
+\g__graphics_track_int=\count292
+\l__pdf_internal_box=\box55
+\g__pdf_backend_object_int=\count293
+\g__pdf_backend_annotation_int=\count294
+\g__pdf_backend_link_int=\count295
+) (./main_rmp_80pages.aux
+
+LaTeX Warning: Label `eq:mp_expansion' multiply defined.
+
+
+LaTeX Warning: Label `eq:universal' multiply defined.
+
+
+LaTeX Warning: Label `tab:comparison' multiply defined.
+
+)
+\openout1 = `main_rmp_80pages.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 6
+1.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-38.1381pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=50.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package hyperref Info: Link coloring OFF on input line 61.
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count296
+)
+LaTeX Info: Redefining \ref on input line 61.
+LaTeX Info: Redefining \pageref on input line 61.
+LaTeX Info: Redefining \nameref on input line 61.
+
+(./main_rmp_80pages.out) (./main_rmp_80pages.out)
+\@outlinefile=\write3
+\openout3 = `main_rmp_80pages.out'.
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 64.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 64.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 64
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+Overfull \hbox (9.00623pt too wide) in paragraph at lines 66--67
+\T1/lmr/m/n/10 dimensionality---represents a pro-found con-nec-tion be-tween qu
+an-tum grav-ity, black hole physics,
+ []
+
+(/usr/share/texlive/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.bdg
+File: UTF8.bdg 2015/04/18 4.8.4
+)
+(/usr/share/texlive/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2015/04/18 4.8.4
+)
+(/usr/share/texlive/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2015/04/18 4.8.4
+)
+Missing character: There is no 摘 in font ec-lmbx10!
+Missing character: There is no 要 in font ec-lmbx10!
+Missing character: There is no ： in font ec-lmbx10!
+Missing character: There is no 能 in font ec-lmr10!
+Missing character: There is no 谱 in font ec-lmr10!
+Missing character: There is no 维 in font ec-lmr10!
+Missing character: There is no 度 in font ec-lmr10!
+Missing character: There is no 流 in font ec-lmr10!
+Missing character: There is no 现 in font ec-lmr10!
+Missing character: There is no 象 in font ec-lmr10!
+Missing character: There is no — in font ec-lmr10!
+Missing character: There is no — in font ec-lmr10!
+Missing character: There is no 有 in font ec-lmr10!
+Missing character: There is no 效 in font ec-lmr10!
+Missing character: There is no 维 in font ec-lmr10!
+Missing character: There is no 度 in font ec-lmr10!
+Missing character: There is no 随 in font ec-lmr10!
+Missing character: There is no 尺 in font ec-lmr10!
+Missing character: There is no 度 in font ec-lmr10!
+Missing character: There is no 变 in font ec-lmr10!
+Missing character: There is no 化 in font ec-lmr10!
+Missing character: There is no 的 in font ec-lmr10!
+Missing character: There is no 现 in font ec-lmr10!
+Missing character: There is no 象 in font ec-lmr10!
+Missing character: There is no — in font ec-lmr10!
+Missing character: There is no — in font ec-lmr10!
+Missing character: There is no 代 in font ec-lmr10!
+Missing character: There is no 表 in font ec-lmr10!
+Missing character: There is no 了 in font ec-lmr10!
+Missing character: There is no 量 in font ec-lmr10!
+Missing character: There is no 子 in font ec-lmr10!
+Missing character: There is no 引 in font ec-lmr10!
+Missing character: There is no 力 in font ec-lmr10!
+Missing character: There is no 、 in font ec-lmr10!
+Missing character: There is no 黑 in font ec-lmr10!
+Missing character: There is no 洞 in font ec-lmr10!
+Missing character: There is no 物 in font ec-lmr10!
+Missing character: There is no 理 in font ec-lmr10!
+Missing character: There is no 和 in font ec-lmr10!
+Missing character: There is no 经 in font ec-lmr10!
+Missing character: There is no 典 in font ec-lmr10!
+Missing character: There is no 力 in font ec-lmr10!
+Missing character: There is no 学 in font ec-lmr10!
+Missing character: There is no 之 in font ec-lmr10!
+Missing character: There is no 间 in font ec-lmr10!
+Missing character: There is no 的 in font ec-lmr10!
+Missing character: There is no 深 in font ec-lmr10!
+Missing character: There is no 刻 in font ec-lmr10!
+Missing character: There is no 联 in font ec-lmr10!
+Missing character: There is no 系 in font ec-lmr10!
+Missing character: There is no 。 in font ec-lmr10!
+Missing character: There is no 本 in font ec-lmr10!
+Missing character: There is no 综 in font ec-lmr10!
+Missing character: There is no 述 in font ec-lmr10!
+Missing character: There is no 提 in font ec-lmr10!
+Missing character: There is no 出 in font ec-lmr10!
+Missing character: There is no 了 in font ec-lmr10!
+Missing character: There is no 统 in font ec-lmr10!
+Missing character: There is no 一 in font ec-lmr10!
+Missing character: There is no 理 in font ec-lmr10!
+Missing character: There is no 论 in font ec-lmr10!
+Missing character: There is no 框 in font ec-lmr10!
+Missing character: There is no 架 in font ec-lmr10!
+Missing character: There is no ， in font ec-lmr10!
+Missing character: There is no 推 in font ec-lmr10!
+Missing character: There is no 导 in font ec-lmr10!
+Missing character: There is no 了 in font ec-lmr10!
+Missing character: There is no 普 in font ec-lmr10!
+Missing character: There is no 适 in font ec-lmr10!
+Missing character: There is no 公 in font ec-lmr10!
+Missing character: There is no 式 in font ec-lmr10!
+Missing character: There is no ， in font ec-lmr10!
+Missing character: There is no 并 in font ec-lmr10!
+Missing character: There is no 通 in font ec-lmr10!
+Missing character: There is no 过 in font ec-lmr10!
+Missing character: There is no 与 in font ec-lmr10!
+Missing character: There is no 双 in font ec-lmr10!
+Missing character: There is no 曲 in font ec-lmr10!
+Missing character: There is no 流 in font ec-lmr10!
+Missing character: There is no 形 in font ec-lmr10!
+Missing character: There is no 的 in font ec-lmr10!
+Missing character: There is no 数 in font ec-lmr10!
+Missing character: There is no 值 in font ec-lmr10!
+Missing character: There is no 研 in font ec-lmr10!
+Missing character: There is no 究 in font ec-lmr10!
+Missing character: There is no 、 in font ec-lmr10!
+Missing character: There is no 氧 in font ec-lmr10!
+Missing character: There is no 化 in font ec-lmr10!
+Missing character: There is no 亚 in font ec-lmr10!
+Missing character: There is no 铜 in font ec-lmr10!
+Missing character: There is no 中 in font ec-lmr10!
+Missing character: There is no 里 in font ec-lmr10!
+Missing character: There is no 德 in font ec-lmr10!
+Missing character: There is no 堡 in font ec-lmr10!
+Missing character: There is no 激 in font ec-lmr10!
+Missing character: There is no 子 in font ec-lmr10!
+Missing character: There is no 的 in font ec-lmr10!
+Missing character: There is no 精 in font ec-lmr10!
+Missing character: There is no 密 in font ec-lmr10!
+Missing character: There is no 光 in font ec-lmr10!
+Missing character: There is no 谱 in font ec-lmr10!
+Missing character: There is no 测 in font ec-lmr10!
+Missing character: There is no 量 in font ec-lmr10!
+Missing character: There is no 、 in font ec-lmr10!
+Missing character: There is no 以 in font ec-lmr10!
+Missing character: There is no 及 in font ec-lmr10!
+Missing character: There is no 维 in font ec-lmr10!
+Missing character: There is no 度 in font ec-lmr10!
+Missing character: There is no 交 in font ec-lmr10!
+Missing character: There is no 叉 in font ec-lmr10!
+Missing character: There is no 的 in font ec-lmr10!
+Missing character: There is no 量 in font ec-lmr10!
+Missing character: There is no 子 in font ec-lmr10!
+Missing character: There is no 模 in font ec-lmr10!
+Missing character: There is no 拟 in font ec-lmr10!
+Missing character: There is no 的 in font ec-lmr10!
+Missing character: There is no 广 in font ec-lmr10!
+Missing character: There is no 泛 in font ec-lmr10!
+Missing character: There is no 比 in font ec-lmr10!
+Missing character: There is no 较 in font ec-lmr10!
+Missing character: There is no 进 in font ec-lmr10!
+Missing character: There is no 行 in font ec-lmr10!
+Missing character: There is no 验 in font ec-lmr10!
+Missing character: There is no 证 in font ec-lmr10!
+Missing character: There is no 。 in font ec-lmr10!
+Missing character: There is no 我 in font ec-lmr10!
+Missing character: There is no 们 in font ec-lmr10!
+Missing character: There is no 通 in font ec-lmr10!
+Missing character: There is no 过 in font ec-lmr10!
+Missing character: There is no 热 in font ec-lmr10!
+Missing character: There is no 核 in font ec-lmr10!
+Missing character: There is no 理 in font ec-lmr10!
+Missing character: There is no 论 in font ec-lmr10!
+Missing character: There is no 发 in font ec-lmr10!
+Missing character: There is no 展 in font ec-lmr10!
+Missing character: There is no 数 in font ec-lmr10!
+Missing character: There is no 学 in font ec-lmr10!
+Missing character: There is no 基 in font ec-lmr10!
+Missing character: There is no 础 in font ec-lmr10!
+Missing character: There is no ， in font ec-lmr10!
+Missing character: There is no 通 in font ec-lmr10!
+Missing character: There is no 过 in font ec-lmr10!
+Missing character: There is no 信 in font ec-lmr10!
+Missing character: There is no 息 in font ec-lmr10!
+Missing character: There is no 论 in font ec-lmr10!
+Missing character: There is no 、 in font ec-lmr10!
+Missing character: There is no 统 in font ec-lmr10!
+Missing character: There is no 计 in font ec-lmr10!
+Missing character: There is no 力 in font ec-lmr10!
+Missing character: There is no 学 in font ec-lmr10!
+Missing character: There is no 和 in font ec-lmr10!
+Missing character: There is no 全 in font ec-lmr10!
+Missing character: There is no 息 in font ec-lmr10!
+Missing character: There is no 方 in font ec-lmr10!
+Missing character: There is no 法 in font ec-lmr10!
+Missing character: There is no 推 in font ec-lmr10!
+Missing character: There is no 导 in font ec-lmr10!
+Missing character: There is no 普 in font ec-lmr10!
+Missing character: There is no 适 in font ec-lmr10!
+Missing character: There is no 公 in font ec-lmr10!
+Missing character: There is no 式 in font ec-lmr10!
+Missing character: There is no ， in font ec-lmr10!
+Missing character: There is no 并 in font ec-lmr10!
+Missing character: There is no 与 in font ec-lmr10!
+Missing character: There is no 弦 in font ec-lmr10!
+Missing character: There is no 论 in font ec-lmr10!
+Missing character: There is no 、 in font ec-lmr10!
+Missing character: There is no 圈 in font ec-lmr10!
+Missing character: There is no 量 in font ec-lmr10!
+Missing character: There is no 子 in font ec-lmr10!
+Missing character: There is no 引 in font ec-lmr10!
+Missing character: There is no 力 in font ec-lmr10!
+Missing character: There is no 、 in font ec-lmr10!
+Missing character: There is no 渐 in font ec-lmr10!
+Missing character: There is no 近 in font ec-lmr10!
+Missing character: There is no 安 in font ec-lmr10!
+Missing character: There is no 全 in font ec-lmr10!
+Missing character: There is no 以 in font ec-lmr10!
+Missing character: There is no 及 in font ec-lmr10!
+Missing character: There is no 现 in font ec-lmr10!
+Missing character: There is no 象 in font ec-lmr10!
+Missing character: There is no 学 in font ec-lmr10!
+Missing character: There is no 量 in font ec-lmr10!
+Missing character: There is no 子 in font ec-lmr10!
+Missing character: There is no 引 in font ec-lmr10!
+Missing character: There is no 力 in font ec-lmr10!
+Missing character: There is no 模 in font ec-lmr10!
+Missing character: There is no 型 in font ec-lmr10!
+Missing character: There is no 等 in font ec-lmr10!
+Missing character: There is no 替 in font ec-lmr10!
+Missing character: There is no 代 in font ec-lmr10!
+Missing character: There is no 方 in font ec-lmr10!
+Missing character: There is no 法 in font ec-lmr10!
+Missing character: There is no 进 in font ec-lmr10!
+Missing character: There is no 行 in font ec-lmr10!
+Missing character: There is no 批 in font ec-lmr10!
+Missing character: There is no 判 in font ec-lmr10!
+Missing character: There is no 性 in font ec-lmr10!
+Missing character: There is no 比 in font ec-lmr10!
+Missing character: There is no 较 in font ec-lmr10!
+Missing character: There is no 。 in font ec-lmr10!
+Missing character: There is no 维 in font ec-lmr10!
+Missing character: There is no 度 in font ec-lmr10!
+Missing character: There is no 流 in font ec-lmr10!
+Missing character: There is no 的 in font ec-lmr10!
+Missing character: There is no 意 in font ec-lmr10!
+Missing character: There is no 义 in font ec-lmr10!
+Missing character: There is no 延 in font ec-lmr10!
+Missing character: There is no 伸 in font ec-lmr10!
+Missing character: There is no 到 in font ec-lmr10!
+Missing character: There is no 从 in font ec-lmr10!
+Missing character: There is no 黑 in font ec-lmr10!
+Missing character: There is no 洞 in font ec-lmr10!
+Missing character: There is no 信 in font ec-lmr10!
+Missing character: There is no 息 in font ec-lmr10!
+Missing character: There is no 悖 in font ec-lmr10!
+Missing character: There is no 论 in font ec-lmr10!
+Missing character: There is no 的 in font ec-lmr10!
+Missing character: There is no 解 in font ec-lmr10!
+Missing character: There is no 决 in font ec-lmr10!
+Missing character: There is no 到 in font ec-lmr10!
+Missing character: There is no 量 in font ec-lmr10!
+Missing character: There is no 子 in font ec-lmr10!
+Missing character: There is no 引 in font ec-lmr10!
+Missing character: There is no 力 in font ec-lmr10!
+Missing character: There is no 的 in font ec-lmr10!
+Missing character: There is no 重 in font ec-lmr10!
+Missing character: There is no 整 in font ec-lmr10!
+Missing character: There is no 化 in font ec-lmr10!
+Missing character: There is no 群 in font ec-lmr10!
+Missing character: There is no 结 in font ec-lmr10!
+Missing character: There is no 构 in font ec-lmr10!
+Missing character: There is no 、 in font ec-lmr10!
+Missing character: There is no 以 in font ec-lmr10!
+Missing character: There is no 及 in font ec-lmr10!
+Missing character: There is no 时 in font ec-lmr10!
+Missing character: There is no 空 in font ec-lmr10!
+Missing character: There is no 从 in font ec-lmr10!
+Missing character: There is no 更 in font ec-lmr10!
+Missing character: There is no 基 in font ec-lmr10!
+Missing character: There is no 本 in font ec-lmr10!
+Missing character: There is no 自 in font ec-lmr10!
+Missing character: There is no 由 in font ec-lmr10!
+Missing character: There is no 度 in font ec-lmr10!
+Missing character: There is no 涌 in font ec-lmr10!
+Missing character: There is no 现 in font ec-lmr10!
+Missing character: There is no 等 in font ec-lmr10!
+Missing character: There is no 领 in font ec-lmr10!
+Missing character: There is no 域 in font ec-lmr10!
+Missing character: There is no 。 in font ec-lmr10!
+
+(./main_rmp_80pages.toc
+Missing character: There is no ř in font ec-lmr10!
+ [1
+
+] [2] [3] [4] [5])
+\tf@toc=\write4
+\openout4 = `main_rmp_80pages.toc'.
+
+ [6] [7]
+(./chapters/chapter1_rmp.tex
+
+LaTeX Warning: Citation `Wheeler1957' on page 8 undefined on input line 10.
+
+
+LaTeX Warning: Citation `Wheeler1964' on page 8 undefined on input line 10.
+
+Missing character: There is no — in font ec-lmr10!
+
+LaTeX Warning: Citation `Weyl1911' on page 8 undefined on input line 17.
+
+
+LaTeX Warning: Citation `DeWitt1965' on page 8 undefined on input line 31.
+
+[8]
+
+LaTeX Warning: Citation `KPZ1988' on page 9 undefined on input line 40.
+
+
+LaTeX Warning: Citation `Distler1989' on page 9 undefined on input line 42.
+
+! Undefined control sequence.
+l.46 ...al Dynamical Triangulations (CDT) by Ambjø
+                                                  rn, Jurkiewicz, and Loll \...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `Ambjorn2001' on page 9 undefined on input line 46.
+
+
+LaTeX Warning: Citation `Ambjorn1995' on page 9 undefined on input line 48.
+
+! Undefined control sequence.
+l.50 In 2005, Ambjø
+                   rn, Jurkiewicz, and Loll reported the discovery of an ``e...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `Ambjorn2005' on page 9 undefined on input line 50.
+
+
+LaTeX Warning: Citation `Ambjorn2005b' on page 9 undefined on input line 57.
+
+
+LaTeX Warning: Citation `Ambjorn2008' on page 9 undefined on input line 57.
+
+
+LaTeX Warning: Citation `Ambjorn2012' on page 9 undefined on input line 57.
+
+
+LaTeX Warning: Citation `Weinberg1979' on page 9 undefined on input line 61.
+
+
+LaTeX Warning: Citation `Reuter1998' on page 9 undefined on input line 61.
+
+
+LaTeX Warning: Citation `Reuter2002' on page 9 undefined on input line 61.
+
+
+LaTeX Warning: Citation `Lauscher2005' on page 9 undefined on input line 63.
+
+
+LaTeX Warning: Citation `Codello2009' on page 9 undefined on input line 65.
+
+
+LaTeX Warning: Citation `Benedetti2009' on page 9 undefined on input line 65.
+
+[9]
+
+LaTeX Warning: Citation `Modesto2009' on page 10 undefined on input line 69.
+
+
+LaTeX Warning: Citation `Calcagni2010' on page 10 undefined on input line 71.
+
+
+LaTeX Warning: Citation `Calcagni2012' on page 10 undefined on input line 71.
+
+
+LaTeX Warning: Citation `Engle2008' on page 10 undefined on input line 73.
+
+
+LaTeX Warning: Citation `Freidel2008' on page 10 undefined on input line 73.
+
+
+LaTeX Warning: Citation `Connes1994' on page 10 undefined on input line 82.
+
+
+LaTeX Warning: Citation `Connes2006' on page 10 undefined on input line 84.
+
+
+LaTeX Warning: Citation `Chamseddine2007' on page 10 undefined on input line 84
+.
+
+Missing character: There is no ř in font ec-lmbx10!
+Missing character: There is no ř in font ec-lmr10!
+
+LaTeX Warning: Citation `Horava2009' on page 10 undefined on input line 88.
+
+Missing character: There is no ř in font ec-lmr10!
+
+LaTeX Warning: Citation `Orlando2009' on page 10 undefined on input line 93.
+
+
+LaTeX Warning: Citation `Carlip2009' on page 10 undefined on input line 93.
+
+
+LaTeX Warning: Citation `Eichhorn2013' on page 10 undefined on input line 97.
+
+
+LaTeX Warning: Citation `Belenchia2015' on page 10 undefined on input line 97.
+
+
+Overfull \hbox (7.18013pt too wide) in paragraph at lines 97--98
+\T1/lmr/m/n/10.95 In causal set the-ory [[], []], space-
+ []
+
+[10]
+
+LaTeX Warning: Citation `Atick1988' on page 11 undefined on input line 103.
+
+
+LaTeX Warning: Citation `Vafa2005' on page 11 undefined on input line 105.
+
+
+LaTeX Warning: Citation `Ooguri2007' on page 11 undefined on input line 105.
+
+
+LaTeX Warning: Reference `sec:experiments' on page 11 undefined on input line 1
+22.
+
+) (./chapters/chapter2_extended.tex [11] [12] [13]
+Overfull \hbox (1.99362pt too wide) in paragraph at lines 142--143
+[]\T1/lmr/m/it/10.95 Sphere $\OML/cmm/m/it/10.95 S[]$\T1/lmr/m/it/10.95 : \T1/l
+mr/m/n/10.95 The eigen-val-ues are $\OML/cmm/m/it/10.95 ^^U[] \OT1/cmr/m/n/10.9
+5 = \OML/cmm/m/it/10.95 n\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 n \OT1/cmr/m/n
+/10.95 + \OML/cmm/m/it/10.95 d \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 1)\OM
+L/cmm/m/it/10.95 =a[]$ \T1/lmr/m/n/10.95 with mul-ti-plic-i-ties $\OML/cmm/m/it
+/10.95 m[] \OT1/cmr/m/n/10.95 = []$\T1/lmr/m/n/10.95 .
+ []
+
+[14]
+Overfull \hbox (10.8428pt too wide) in paragraph at lines 225--226
+[]\T1/lmr/m/it/10.95 For flat $\OML/cmm/m/it/10.95 d$\T1/lmr/m/it/10.95 -dimens
+ional Eu-clidean space:
+ []
+
+[15] [16]
+Overfull \hbox (6.78508pt too wide) in paragraph at lines 331--332
+\T1/lmr/bx/n/10.95 Holographic prin-ci-ple. \T1/lmr/m/n/10.95 The holo-graphic 
+prin-ci-ple states that the in-for-ma-tion in a $\OML/cmm/m/it/10.95 d$\T1/lmr/
+m/n/10.95 -dimensional
+ []
+
+Missing character: There is no ř in font ec-lmr10!
+[17] [18] [19]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 486.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 486.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 486.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 497.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 497.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 497.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 508.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 508.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 508.
+
+[20] [21] [22] [23]) (./chapters/chapter2_related_frameworks.tex
+
+LaTeX Warning: Citation `Maggiore1993' on page 24 undefined on input line 9.
+
+
+LaTeX Warning: Citation `Scardigli1999' on page 24 undefined on input line 9.
+
+
+LaTeX Warning: Citation `Hossenfelder2007' on page 24 undefined on input line 1
+6.
+
+
+LaTeX Warning: Citation `Hossenfelder2013' on page 24 undefined on input line 1
+6.
+
+
+LaTeX Warning: Citation `Hossenfelder2009' on page 24 undefined on input line 2
+2.
+
+
+LaTeX Warning: Citation `Nozari2012' on page 24 undefined on input line 29.
+
+
+LaTeX Warning: Citation `Pedram2016' on page 24 undefined on input line 29.
+
+
+LaTeX Warning: Citation `AmelinoCamelia2001' on page 24 undefined on input line
+ 33.
+
+
+LaTeX Warning: Citation `AmelinoCamelia2002' on page 24 undefined on input line
+ 33.
+
+[24]
+
+LaTeX Warning: Citation `Magueijo2002' on page 25 undefined on input line 40.
+
+
+LaTeX Warning: Citation `Magueijo2003' on page 25 undefined on input line 40.
+
+
+LaTeX Warning: Citation `Ahlqvist2010' on page 25 undefined on input line 42.
+
+Missing character: There is no — in font ec-lmr10!
+
+LaTeX Warning: Citation `AmelinoCamelia2004' on page 25 undefined on input line
+ 49.
+
+
+LaTeX Warning: Citation `Judes2005' on page 25 undefined on input line 49.
+
+
+LaTeX Warning: Citation `CastroNeto2009' on page 25 undefined on input line 55.
+
+
+
+LaTeX Warning: Citation `Iorio2018' on page 25 undefined on input line 55.
+
+
+LaTeX Warning: Citation `Gromov2015' on page 25 undefined on input line 57.
+
+
+Overfull \hbox (80.81747pt too wide) in paragraph at lines 59--60
+\T1/lmr/m/n/10.95 [[], []]. 
+ []
+
+
+LaTeX Warning: Citation `Verlinde2011' on page 25 undefined on input line 65.
+
+Missing character: There is no — in font ec-lmr10!
+Missing character: There is no — in font ec-lmr10!
+
+LaTeX Warning: Citation `Padmanabhan2010' on page 25 undefined on input line 67
+.
+
+[25]
+
+LaTeX Warning: Citation `Gao2011' on page 26 undefined on input line 71.
+
+
+LaTeX Warning: Citation `Kobakhidze2011' on page 26 undefined on input line 71.
+
+
+
+LaTeX Warning: Citation `Biswas2012' on page 26 undefined on input line 75.
+
+
+LaTeX Warning: Citation `Buoninfante2018' on page 26 undefined on input line 75
+.
+
+
+LaTeX Warning: Citation `Calcagni2013' on page 26 undefined on input line 84.
+
+
+LaTeX Warning: Citation `Boos2018' on page 26 undefined on input line 84.
+
+Missing character: There is no ř in font ec-lmr10!
+[26]
+Missing character: There is no ř in font ec-lmr10!
+) (./chapters/chapter3_extended.tex
+
+LaTeX Warning: Citation `Dirac1964' on page 27 undefined on input line 12.
+
+
+LaTeX Warning: Citation `Sundermeyer1982' on page 27 undefined on input line 12
+.
+
+[27]
+
+LaTeX Warning: Citation `Fetter2009' on page 28 undefined on input line 94.
+
+[28]
+
+LaTeX Warning: Citation `Zwierlein2006' on page 29 undefined on input line 97.
+
+[29]
+
+LaTeX Warning: Citation `Ambjorn2005' on page 30 undefined on input line 232.
+
+[30]
+
+LaTeX Warning: Citation `Lauscher2005' on page 31 undefined on input line 247.
+
+
+LaTeX Warning: Citation `Modesto2009' on page 31 undefined on input line 261.
+
+
+LaTeX Warning: Citation `Calcagni2010' on page 31 undefined on input line 261.
+
+[31] [32] [33] [34]) (./chapters/chapter4_extended.tex
+
+LaTeX Warning: Citation `Chavel1984' on page 35 undefined on input line 12.
+
+
+LaTeX Warning: Citation `Buser1992' on page 35 undefined on input line 12.
+
+
+LaTeX Warning: Citation `Cheeger1982' on page 35 undefined on input line 19.
+
+
+Overfull \hbox (20.07425pt too wide) in paragraph at lines 26--28
+\T1/lmr/bx/n/10.95 SnapPy Soft-ware. \T1/lmr/m/n/10.95 The SnapPy pack-age [[]]
+
+ []
+
+[35]
+
+LaTeX Warning: Citation `Carlip2017' on page 36 undefined on input line 50.
+
+
+LaTeX Warning: Citation `Carlip2019' on page 36 undefined on input line 50.
+
+
+LaTeX Warning: Citation `Aminneborg1998' on page 36 undefined on input line 56.
+
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 71.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 71.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 71.
+
+
+LaTeX Warning: Citation `Kazimierczuk2014' on page 36 undefined on input line 7
+3.
+
+
+LaTeX Warning: Citation `Heckotter2018' on page 36 undefined on input line 73.
+
+
+LaTeX Warning: Citation `Kazimierczuk2014' on page 36 undefined on input line 8
+3.
+
+[36]
+
+LaTeX Warning: Citation `Klingshirn1995' on page 37 undefined on input line 96.
+
+
+
+LaTeX Warning: Citation `Stillinger1977' on page 37 undefined on input line 105
+.
+
+
+LaTeX Warning: Citation `Anderson1975' on page 37 undefined on input line 124.
+
+
+LaTeX Warning: Citation `Reynolds1982' on page 37 undefined on input line 124.
+
+
+LaTeX Warning: Citation `Needs2010' on page 37 undefined on input line 124.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[37] [38] [39]
+
+LaTeX Warning: Citation `Monitor2017' on page 40 undefined on input line 309.
+
+[40]) (./chapters/chapter_comparison.tex [41]
+
+LaTeX Warning: Citation `AmelinoCamelia2013' on page 42 undefined on input line
+ 12.
+
+Missing character: There is no — in font ec-lmr10!
+
+LaTeX Warning: Citation `Percacci2011' on page 42 undefined on input line 31.
+
+
+LaTeX Warning: Reference `subsec:qg_implications' on page 42 undefined on input
+ line 31.
+
+
+Overfull \hbox (12.95882pt too wide) in paragraph at lines 31--32
+\T1/lmr/m/n/10.95 gued that grav-ity is fun-da-men-tally dif-fer-ent from other
+ field the-o-ries due to its non-renormalizability
+ []
+
+[42]
+
+LaTeX Warning: Citation `Kostov2008' on page 43 undefined on input line 50.
+
+
+LaTeX Warning: Citation `Atick1988' on page 43 undefined on input line 50.
+
+! Undefined control sequence.
+\CJK@XXX ...endcsname {`#2}{`#3}\CJK@ignorespaces 
+                                                  \fi 
+l.52 ...e near-horizon geometry of the Poincaré pa
+                                                  tch) to $d_s = d$ in the I...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `Modesto2009' on page 43 undefined on input line 74.
+
+
+LaTeX Warning: Citation `Calcagni2010' on page 43 undefined on input line 74.
+
+[43]
+
+LaTeX Warning: Citation `Verlinde2011' on page 44 undefined on input line 95.
+
+Missing character: There is no — in font ec-lmr10!
+Missing character: There is no — in font ec-lmr10!
+
+LaTeX Warning: Citation `Gao2011' on page 44 undefined on input line 104.
+
+
+LaTeX Warning: Citation `Kobakhidze2011' on page 44 undefined on input line 104
+.
+
+
+LaTeX Warning: Citation `Volovik2003' on page 44 undefined on input line 108.
+
+! Argument of \@citex has an extra }.
+<inserted text> 
+                \par 
+l.108 ...Volovik2003}, Barceló \cite{Barcelo2005},
+                                                   and others. In these appr...
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \@citex was complete.
+<to be read again> 
+                   \par 
+l.108 ...Volovik2003}, Barceló \cite{Barcelo2005},
+                                                   and others. In these appr...
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+\CJK@XXXX ...ame {`#2}{`#3}{`#4}\CJK@ignorespaces 
+                                                  \fi 
+l.108 ...Volovik2003}, Barceló \cite{Barcelo2005},
+                                                   and others. In these appr...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--128
+[]\T1/lmr/m/n/10.95 Asymptotic
+ []
+
+Missing character: There is no ř in font ec-lmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--131
+[]\T1/lmr/m/n/10.95 Entropic
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[44]) (./chapters/chapter5_extended.tex [45]
+
+LaTeX Warning: Citation `Hawking1976' on page 46 undefined on input line 12.
+
+
+LaTeX Warning: Citation `Penington2019' on page 46 undefined on input line 26.
+
+
+LaTeX Warning: Citation `Almheiri2019' on page 46 undefined on input line 26.
+
+
+LaTeX Warning: Citation `Weinberg1979' on page 46 undefined on input line 40.
+
+
+LaTeX Warning: Citation `Reuter1998' on page 46 undefined on input line 40.
+
+[46] [47]
+Missing character: There is no — in font ec-lmr10!
+) (./chapters/chapter6_extended.tex [48] [49]
+Missing character: There is no — in font ec-lmr10!
+Missing character: There is no — in font ec-lmr10!
+ [50])
+(/usr/share/texlive/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2015/04/18 4.8.4
+)
+(/usr/share/texlive/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2015/04/18 4.8.4
+)
+Missing character: There is no 作 in font ec-lmr10!
+Missing character: There is no 者 in font ec-lmr10!
+Missing character: There is no 感 in font ec-lmr10!
+Missing character: There is no 谢 in font ec-lmr10!
+Missing character: There is no 众 in font ec-lmr10!
+Missing character: There is no 多 in font ec-lmr10!
+Missing character: There is no 同 in font ec-lmr10!
+Missing character: There is no 事 in font ec-lmr10!
+Missing character: There is no 通 in font ec-lmr10!
+Missing character: There is no 过 in font ec-lmr10!
+Missing character: There is no 研 in font ec-lmr10!
+Missing character: There is no 究 in font ec-lmr10!
+Missing character: There is no 和 in font ec-lmr10!
+Missing character: There is no 讨 in font ec-lmr10!
+Missing character: There is no 论 in font ec-lmr10!
+Missing character: There is no 对 in font ec-lmr10!
+Missing character: There is no 该 in font ec-lmr10!
+Missing character: There is no 领 in font ec-lmr10!
+Missing character: There is no 域 in font ec-lmr10!
+Missing character: There is no 的 in font ec-lmr10!
+Missing character: There is no 贡 in font ec-lmr10!
+Missing character: There is no 献 in font ec-lmr10!
+Missing character: There is no 。 in font ec-lmr10!
+Missing character: There is no 我 in font ec-lmr10!
+Missing character: There is no 们 in font ec-lmr10!
+Missing character: There is no 特 in font ec-lmr10!
+Missing character: There is no 别 in font ec-lmr10!
+Missing character: There is no 感 in font ec-lmr10!
+Missing character: There is no 谢 in font ec-lmr10!
+Missing character: There is no 的 in font ec-lmr10!
+Missing character: There is no 开 in font ec-lmr10!
+Missing character: There is no 发 in font ec-lmr10!
+Missing character: There is no 者 in font ec-lmr10!
+Missing character: There is no 免 in font ec-lmr10!
+Missing character: There is no 费 in font ec-lmr10!
+Missing character: There is no 提 in font ec-lmr10!
+Missing character: There is no 供 in font ec-lmr10!
+Missing character: There is no 软 in font ec-lmr10!
+Missing character: There is no 件 in font ec-lmr10!
+Missing character: There is no ， in font ec-lmr10!
+Missing character: There is no 以 in font ec-lmr10!
+Missing character: There is no 及 in font ec-lmr10!
+Missing character: There is no 提 in font ec-lmr10!
+Missing character: There is no 供 in font ec-lmr10!
+Missing character: There is no 激 in font ec-lmr10!
+Missing character: There is no 子 in font ec-lmr10!
+Missing character: There is no 系 in font ec-lmr10!
+Missing character: There is no 统 in font ec-lmr10!
+Missing character: There is no 高 in font ec-lmr10!
+Missing character: There is no 精 in font ec-lmr10!
+Missing character: There is no 度 in font ec-lmr10!
+Missing character: There is no 数 in font ec-lmr10!
+Missing character: There is no 据 in font ec-lmr10!
+Missing character: There is no 的 in font ec-lmr10!
+Missing character: There is no 实 in font ec-lmr10!
+Missing character: There is no 验 in font ec-lmr10!
+Missing character: There is no 组 in font ec-lmr10!
+Missing character: There is no 。 in font ec-lmr10!
+Missing character: There is no 本 in font ec-lmr10!
+Missing character: There is no 工 in font ec-lmr10!
+Missing character: There is no 作 in font ec-lmr10!
+Missing character: There is no 部 in font ec-lmr10!
+Missing character: There is no 分 in font ec-lmr10!
+Missing character: There is no 得 in font ec-lmr10!
+Missing character: There is no 到 in font ec-lmr10!
+Missing character: There is no 了 in font ec-lmr10!
+Missing character: There is no 高 in font ec-lmr10!
+Missing character: There is no 等 in font ec-lmr10!
+Missing character: There is no 研 in font ec-lmr10!
+Missing character: There is no 究 in font ec-lmr10!
+Missing character: There is no 院 in font ec-lmr10!
+Missing character: There is no 和 in font ec-lmr10!
+Missing character: There is no 西 in font ec-lmr10!
+Missing character: There is no 蒙 in font ec-lmr10!
+Missing character: There is no 斯 in font ec-lmr10!
+Missing character: There is no 基 in font ec-lmr10!
+Missing character: There is no 金 in font ec-lmr10!
+Missing character: There is no 会 in font ec-lmr10!
+Missing character: There is no 的 in font ec-lmr10!
+Missing character: There is no 支 in font ec-lmr10!
+Missing character: There is no 持 in font ec-lmr10!
+Missing character: There is no 。 in font ec-lmr10!
+
+(./appendices.tex [51] [52]) (./main_rmp_80pages.bbl [53]) [54]
+(./main_rmp_80pages.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `main_rmp_80pages.out' has not changed.
+(rerunfilecheck)             Checksum: CA7D84DA8083D65277A43AF3D6EE6940;49670.
+ ) 
+Here is how much of TeX's memory you used:
+ 11042 strings out of 478968
+ 155892 string characters out of 5868621
+ 541009 words of memory out of 5000000
+ 30637 multiletter control sequences out of 15000+600000
+ 465862 words of font info for 105 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 71i,12n,77p,1019b,481s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on main_rmp_80pages.pdf (54 pages).
