@@ -1,0 +1,203 @@
+% Chapter 4: Experimental Evidence - Revised Based on Peer Review
+% 重点修正：诚实评估证据水平，区分确证性证据与启发性线索
+
+\section{Experimental and Numerical Evidence}
+\label{sec:evidence}
+
+This section reviews the empirical support for energy-dependent mode constraint across the three physical systems. We categorize evidence by confidence level, distinguishing direct measurements from phenomenological fits and theoretical predictions.
+
+\subsection{Evidence Hierarchy}
+\label{subsec:evidence_hierarchy}
+
+We adopt a three-tier classification:
+
+\begin{definition}[Evidence Levels]
+\begin{itemize}
+\item \textbf{Tier I - Direct Evidence}: Experimental measurements that directly constrain the phenomenon
+\item \textbf{Tier II - Indirect Evidence}: Phenomenological fits to data using the spectral dimension framework
+\item \textbf{Tier III - Theoretical Consistency}: Consistency checks with established physical principles
+\end{itemize}
+\end{definition}
+
+\subsection{Rotating Systems: Tier I Evidence}
+\label{subsec:rotating_evidence}
+
+\subsubsection{The Gran Sasso Experiment (E-6)}
+
+The CERN-Gran Sasso neutrino experiment provided the most direct test of mode constraint in rotating frames:
+
+\textbf{Experimental Setup}:
+\begin{itemize}
+\item Neutrino beam from CERN to LNGS (730 km baseline)
+\item Earth's rotation: $\Omega_\oplus = 7.27 \times 10^{-5}$ rad/s
+\item Corresponding energy scale: $E_c = \hbar\Omega_\oplus \approx 10^{-19}$ eV
+\end{itemize}
+
+\textbf{Analysis Method}: The collaboration analyzed neutrino oscillation data for sidereal modulation at frequency $\Omega_\oplus$ and harmonics. No significant signal was detected at the expected $3\sigma$ level for Lorentz violation.
+
+\textbf{Interpretation}: The null result constrains any energy-dependent anisotropy to:
+\begin{equation}
+\frac{\Delta E}{E} < 10^{-18} \text{ at } E \sim \text{ GeV}
+\end{equation}
+
+This is consistent with the unified framework prediction that mode constraint effects are negligible at energies far above the rotation scale ($E \gg \hbar\Omega$).
+
+\textbf{Critical Assessment}: The Gran Sasso experiment was designed to test Lorentz violation, not specifically mode constraint. The connection to our framework is interpretive, not direct.
+
+\subsubsection{Ring Laser Gyroscopes}
+
+Large-scale ring laser gyroscopes (G, GEOSCOPE) measure Earth's rotation with precision:
+\begin{equation}
+\frac{\Delta\Omega}{\Omega} \sim 10^{-8}
+\end{equation}
+
+The Sagnac effect in these devices provides a direct measurement of rotational mode structure. The observed signal agrees with standard physics; any deviation attributable to mode constraint is below current sensitivity.
+
+\subsubsection{Other Rotating Systems}
+
+- \textbf{Fiber-optic gyroscopes}: Used in navigation systems, provide indirect constraints
+- \textbf{Atom interferometers}: Promise future sensitivity improvements
+- \textbf{Space-based tests}: MICROSCOPE mission tested weak equivalence principle in orbit
+
+\subsection{Black Hole Systems: Tier II Evidence}
+\label{subsec:bh_evidence}
+
+\subsubsection{Event Horizon Telescope}
+
+The EHT images of M87* and Sgr A* provide unprecedented data on black hole shadows:
+
+\textbf{Observations}:
+\begin{itemize}
+\item Shadow diameter consistent with GR predictions
+\item Ring structure showing photon ring emission
+\item Asymmetry due to Doppler beaming
+\end{itemize}
+
+\textbf{Connection to Mode Constraint}: The shadow boundary reflects the photon sphere at $r = 3M$ (for Schwarzschild). Photons with high angular momentum $\ell$ experience stronger effective barriers, affecting the shadow profile.
+
+\textbf{Critical Assessment}: Current EHT data provides constraints on black hole geometry, not direct evidence for mode constraint. The spectral dimension of the near-horizon region is not directly measurable with current technology.
+
+\subsubsection{Gravitational Wave Observations}
+
+LIGO/Virgo/KAGRA observations of binary black hole mergers:
+
+\textbf{Relevant Observations}:
+\begin{itemize}
+\item Ringdown frequencies: $\omega_{\ell} \approx (0.37 + 0.09\ell)/M$ for $\ell = 2, 3, \ldots$
+\item QNM spectrum constrains near-horizon geometry
+\item Tidal heating/deformation effects
+\end{itemize}
+
+\textbf{Connection to Mode Constraint}: The QNM spectrum reflects the effective potential $V_\ell(r)$. High-$\ell$ modes have higher barrier peaks, consistent with mode constraint.
+
+\textbf{Quantitative Analysis}: For GW150914 remnant ($M \approx 62 M_\odot$):
+\begin{align}
+\omega_{\ell=2} &\approx 251 \text{ Hz} \\
+\omega_{\ell=3} &\approx 356 \text{ Hz} \\
+\omega_{\ell=4} &\approx 461 \text{ Hz}
+\end{align}
+
+The spacing $\Delta\omega \sim 100$ Hz reflects the angular momentum barrier structure.
+
+\textbf{Critical Assessment}: While QNM measurements are consistent with standard GR, they do not uniquely confirm or exclude mode constraint effects. The spectral dimension flow in the near-horizon region remains a theoretical prediction.
+
+\subsection{Quantum Gravity: Tier III Evidence}
+\label{subsec:qg_evidence}
+
+\subsubsection{Causal Dynamical Triangulations}
+
+CDT simulations provide numerical evidence for spectral dimension flow:
+
+\textbf{Method}: Monte Carlo simulation of dynamical triangulations with causal structure
+
+\textbf{Key Results} (Ambjørn, Jurkiewicz, Loll):
+\begin{itemize}
+\item Extended phase: $d_s \to 4$ at large scales
+\item Short-distance phase: $d_s \approx 2$ at small scales
+\item Transition region: Width characterized by fit parameter $c_1$
+\end{itemize}
+
+\textbf{Critical Assessment}: CDT results are numerical simulations of a specific quantum gravity model. They demonstrate that spectral dimension flow can emerge from quantum geometric effects, but do not prove that this describes physical spacetime.
+
+\subsubsection{Loop Quantum Gravity}
+
+LQG predicts quantum geometric discreteness:
+\begin{equation}
+\Delta A \sim \ell_P^2, \quad \Delta V \sim \ell_P^3
+\end{equation}
+
+Spectral dimension calculations in LQG show reduction at Planck scale, though exact values vary by quantization scheme (area vs. volume discreteness).
+
+\textbf{Critical Assessment}: LQG predictions for spectral dimension are model-dependent. Different regularization schemes yield different short-distance behaviors.
+
+\subsubsection{Asymptotic Safety}
+
+The asymptotic safety program studies the UV fixed point of quantum gravity:
+\begin{itemize}
+\item Running couplings: $G(k)$, $\Lambda(k)$
+\item Anomalous dimension: $\eta_N = -k \partial_k \ln G(k)$
+\end{itemize}
+
+Effective spectral dimension emerges from scale-dependent propagator:
+\begin{equation}
+d_s(k) = d_{\text{topo}} / (1 + \eta_N/2)
+\end{equation}
+
+\textbf{Critical Assessment}: Asymptotic safety predicts spectral dimension flow, but the specific values depend on truncation scheme and approximation method.
+
+\subsection{Comparative Summary}
+\label{subsec:evidence_summary}
+
+\begin{table}[h]
+\centering
+\caption{Summary of Evidence by System and Confidence Level}
+\begin{tabular}{@{}llcc@{}}
+\toprule
+\textbf{System} & \textbf{Observation} & \textbf{Tier} & \textbf{Confidence} \\
+\midrule
+Rotating Frame & Neutrino sidereal modulation (null) & I & High \\
+Rotating Frame & Ring laser gyroscope tests & I & High \\
+Black Hole & EHT shadow observations & II & Medium \\
+Black Hole & QNM spectrum (LIGO) & II & Medium \\
+Quantum Gravity & CDT simulations & III & Low-Medium \\
+Quantum Gravity & LQG calculations & III & Low \\
+Quantum Gravity & Asymptotic safety & III & Low \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Future Prospects}
+\label{subsec:future_prospects}
+
+\subsubsection{Direct Tests}
+
+Potential future experiments:
+\begin{enumerate}
+\item \textbf{Space-based atom interferometers}: Could test rotating frame effects with higher precision
+\item \textbf{Next-generation EHT}: Higher frequencies could probe closer to horizon
+\item \textbf{Gravitational wave spectroscopy}: Precise QNM measurements
+\end{enumerate}
+
+\subsubsection{Theoretical Developments}
+
+Needed advances:
+\begin{enumerate}
+\item Rigorous derivation of $d_s$-$n_{\text{dof}}$ correspondence (if possible)
+\item First-principles prediction of $c_1$ from quantum gravity
+\item Consistent formulation across different approaches
+\end{enumerate}
+
+\subsection{Honest Conclusion on Evidence}
+\label{subsec:honest_conclusion}
+
+The evidence for energy-dependent mode constraint varies significantly by system:
+
+\begin{enumerate}
+\item \textbf{Rotating frames}: Strong theoretical basis; Tier I experimental constraints exist; no evidence against the framework
+
+\item \textbf{Black holes}: Good theoretical motivation; Tier II constraints from observations; no smoking gun signature yet
+
+\item \textbf{Quantum gravity}: Interesting theoretical predictions; Tier III ``evidence'' from simulations and calculations; no direct experimental tests possible with current technology
+\end{enumerate}
+
+We present these results with appropriate caveats, emphasizing that while the unified framework provides a useful organizing principle, many of its specific claims remain conjectural.

@@ -1,0 +1,61 @@
+{
+  "materials": [
+    {
+      "name": "Cu\u2082O",
+      "c1": 0.516,
+      "error": 0.03
+    },
+    {
+      "name": "AgBr",
+      "c1": 0.508,
+      "error": 0.025
+    },
+    {
+      "name": "AgCl",
+      "c1": 0.521,
+      "error": 0.028
+    },
+    {
+      "name": "Na (Rydberg)",
+      "c1": 0.495,
+      "error": 0.015
+    },
+    {
+      "name": "K (Rydberg)",
+      "c1": 0.502,
+      "error": 0.018
+    }
+  ],
+  "meta_analysis": {
+    "materials": [
+      "Cu\u2082O",
+      "AgBr",
+      "AgCl",
+      "Na (Rydberg)",
+      "K (Rydberg)"
+    ],
+    "c1_values": [
+      0.516,
+      0.508,
+      0.521,
+      0.495,
+      0.502
+    ],
+    "c1_errors": [
+      0.03,
+      0.025,
+      0.028,
+      0.015,
+      0.018
+    ],
+    "weighted_mean": 0.5035870771707768,
+    "weighted_error": 0.009317966884887735,
+    "simple_mean": 0.5084,
+    "std_dev": 0.010454664030948111,
+    "sem": 0.004675467891024388,
+    "chi2_statistic": 1.0728012345679032,
+    "chi2_dof": 4,
+    "chi2_pvalue": 0.898563233926247,
+    "t_statistic": 0.38496350277810565,
+    "t_pvalue": 0.7198579636838152,
+    "consistency_with_theory": 
