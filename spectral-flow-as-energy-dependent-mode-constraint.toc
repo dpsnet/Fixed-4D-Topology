@@ -1,7 +1,7 @@
 \contentsline {section}{Preface to the Revised Edition}{1}{section*.1}%
 \contentsline {section}{Notation and Terminology Guide}{8}{section*.3}%
 \contentsline {section}{\numberline {1}Introduction}{9}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Constraint-Determined Effective Dimensionality}{9}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.1}Constraint-Determined Effective Degrees of Freedom}{9}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Three Levels of Dimension Concepts}{9}{subsection.1.2}%
 \contentsline {subsection}{\numberline {1.3}Physical Interpretation: Constraint Hierarchy}{10}{subsection.1.3}%
 \contentsline {subsection}{\numberline {1.4}The Phenomenological $c_1$ Parameter}{11}{subsection.1.4}%

@@ -4,14 +4,14 @@
 \section{Introduction}
 \label{sec:introduction}
 
-\subsection{Constraint-Determined Effective Dimensionality}
+\subsection{Constraint-Determined Effective Degrees of Freedom}
 \label{subsec:phenomenon}
 
-Physical systems exhibit a fundamental property: their \textbf{effective dimensionality is determined by their internal constraints}, not by the energy scale of external probes. Systems with stronger internal constraints exhibit lower effective dimensions, while systems with weaker constraints exhibit higher effective dimensions. This relationship is intrinsic to the system itself, independent of how it is observed. This constraint-determined dimensionality manifests across diverse physical contexts, from rapidly rotating fluids to black hole horizons to quantum spacetime geometries. Rather than indicating any change in the topological structure of space, this phenomenon reflects how the \textbf{strength of internal constraints} determines the effective number of accessible dynamical modes.
+Physical systems exhibit a fundamental property: their \textbf{effective degrees of freedom are determined by their internal constraints}, not by the energy scale of external probes. Systems with stronger internal constraints exhibit fewer accessible dynamical modes (lower effective dimensionality), while systems with weaker constraints exhibit more accessible modes (higher effective dimensionality). This relationship is intrinsic to the system itself, independent of how it is observed. This constraint-determined behavior manifests across diverse physical contexts, from rapidly rotating fluids to black hole horizons to quantum spacetime geometries. Rather than indicating any change in the topological structure of space, this phenomenon reflects how the \textbf{strength of internal constraints} determines the effective number of accessible dynamical modes.
 
 The \textbf{spectral dimension} $d_s(\tau)$ serves as a mathematical probe of this intrinsic property. It is crucial to emphasize: the spectral dimension is \textbf{not} a physical dimension in the geometric sense, but rather a \textbf{mathematical measure} defined at each scale $\tau$. For systems with different constraint energies $E_c$, we compare their spectral dimensions at respective characteristic scales $\tau_c \sim \hbar/E_c$.
 
-\textbf{Terminological Note}: We intentionally avoid the phrase ``spectral flow'' in this revised version. In mathematics, ``spectral flow'' (Atiyah-Patodi-Singer) refers specifically to the net number of eigenvalues crossing zero in a family of self-adjoint operators, a concept distinct from the constraint-determined spectral behavior discussed here. The spectral dimension $d_s(\tau)$, when evaluated at characteristic scales corresponding to different constraint energies $E_c$, reveals the system's effective dimensionality.
+\textbf{Terminological Note}: We intentionally avoid the phrase ``spectral flow'' or ``dimension flow'' in this revised version. In mathematics, ``spectral flow'' (Atiyah-Patodi-Singer) refers specifically to the net number of eigenvalues crossing zero in a family of self-adjoint operators. In physics literature, ``dimension flow'' misleadingly suggests that space itself changes dimension when probed differently. We use \textbf{``mode constraint''} or \textbf{``effective degrees of freedom''} to describe the physical phenomenon: the number of accessible dynamical modes is determined by internal constraints, not by external observation. The spectral dimension $d_s(\tau)$ is a mathematical probe that characterizes this constraint structure.
 
 \subsection{Three Levels of Dimension Concepts}
 \label{subsec:distinction}
@@ -52,7 +52,7 @@ The relationship between these concepts is:
 \subsection{Physical Interpretation: Constraint Hierarchy}
 \label{subsec:mechanism}
 
-The physical interpretation of spectral dimension variation is \textbf{hierarchical constraint structure}. Consider a system with topological dimension $d_{\text{topo}}$ and global constraint energy $E_c$. The system possesses a hierarchy of internal modes, each with characteristic energy gaps relative to $E_c$:
+The physical interpretation of varying effective degrees of freedom is \textbf{hierarchical mode constraint}. Consider a system with topological dimension $d_{\text{topo}}$ and global constraint energy $E_c$. The system possesses a hierarchy of internal modes, each with characteristic energy gaps relative to $E_c$:
 
 
 \begin{center}
@@ -79,27 +79,28 @@ where $\Theta$ is the step function and $\alpha$ is a system-dependent constant.
 \textbf{Important Caveat}: This formula is phenomenological. The precise relationship between constraint energy and the spectral dimension is not derived from first principles but postulated based on physical intuition and extensive numerical observations.
 
 
-\textbf{Core Concept: Effective Dimension is Determined by Constraint Strength}
+\textbf{Core Concept: Effective Degrees of Freedom are Determined by Constraint Strength}
 
 \begin{center}
 \fbox{\parbox{0.95\textwidth}{
 \small
-\textbf{Fundamental Principle:} The effective dimension of a physical system is an \textbf{intrinsic property} determined by its internal constraint strength, not by external probe energy.
+\textbf{Fundamental Principle:} The effective degrees of freedom of a physical system are an \textbf{intrinsic property} determined by its internal constraint strength, not by external probe energy.
 
-\textbf{Critical Clarification on Probe Energy:}
+\textbf{Critical Clarification on Terminology:}
 \begin{itemize}
+\item \textbf{``Effective dimension''} refers to the number of accessible dynamical modes, not to any change in the topological dimension of space
+\item \textbf{``Dimension flow'' is a misleading term} that suggests space itself changes dimension when probed differently; we avoid this terminology
 \item \textbf{Probe energy $E_{\text{probe}}$ does NOT change the system's degrees of freedom}---it merely determines which modes the observer can resolve
-\item The system has a fixed $n_{\text{dof}}$ determined by its intrinsic $E_c$ and system parameters ($\Omega$, $E_b$, $M$, etc.)
-\item Only when $E_{\text{probe}} \sim E_c$ and the probe \textbf{perturbs} the system does the effective dimension change---because the system has been \textbf{altered}, not just observed
-\item Spectral dimension $d_s(\tau)$ is a mathematical tool for characterizing the system at scale $\tau$; it does not imply the system "flows" when probed differently
+\item The system has fixed $n_{\text{dof}}$ determined by intrinsic $E_c$; only perturbation changes $n_{\text{dof}}$
+\item Spectral dimension $d_s(\tau)$ is a mathematical characterization, not a physical ``flow''
 \end{itemize}
 
 \textbf{1. Confinement Energy} ($E_c$): The system's intrinsic characteristic energy---binding energy, rotation energy, gravitational binding, etc. This is determined by system parameters ($\Omega$, $E_b$, $M$, etc.) and represents the ``tightness'' of internal constraints.
 
-\textbf{2. Effective Dimension} ($d_{\text{eff}}$): The system's intrinsic dimensionality, determined by $E_c$:
+\textbf{2. Effective Degrees of Freedom} ($n_{\text{dof}}$): The number of accessible dynamical modes, determined by $E_c$:
 \begin{itemize}
-\item Higher $E_c$ (stronger constraints) $\rightarrow$ Lower $d_{\text{eff}}$ (more ``compact'')
-\item Lower $E_c$ (weaker constraints) $\rightarrow$ Higher $d_{\text{eff}}$ (more ``free'')
+\item Higher $E_c$ (stronger constraints) $\rightarrow$ Fewer $n_{\text{dof}}$ (more ``frozen'' modes)
+\item Lower $E_c$ (weaker constraints) $\rightarrow$ More $n_{\text{dof}}$ (more ``free'' modes)
 \end{itemize}
 
 \textbf{Key Physical Insight:} 
@@ -107,11 +108,11 @@ where $\Theta$ is the step function and $\alpha$ is a system-dependent constant.
 - A tightly bound exciton ($E_b$ large, $E_c$ high) \textit{is} a lower-dimensional system intrinsically  
 - A small black hole ($M$ small, $E_c$ high) \textit{is} a more constrained system near the horizon
 
-\textbf{The parameter $c_1$} describes the \textbf{universal relationship} between constraint strength and effective dimension: $d_{\text{eff}} = d_{\text{eff}}(E_c; c_1)$.
+\textbf{The parameter $c_1$} describes the \textbf{universal relationship} between constraint strength and effective degrees of freedom: $n_{\text{dof}} = n_{\text{dof}}(E_c; c_1)$.
 
 \textbf{Refinement 1: Scale-Dependent $E_c$}. In complex systems with internal structure, the effective constraint energy may itself depend on scale: $E_c = E_c(\tau)$. This reflects the renormalization group idea that coarse-graining changes the effective parameters.
 
-\textbf{Refinement 2: Time-Dependent $E_c(t)$}. For a single system whose parameters evolve in time (e.g., rotation speed $\Omega(t)$, black hole mass $M(t)$, temperature $T(t)$), the constraint energy becomes time-dependent: $E_c = E_c(t)$. The dimension flow formula then describes the \textbf{real dynamical evolution} of the system's effective dimension:
+\textbf{Refinement 2: Time-Dependent $E_c(t)$}. For a single system whose parameters evolve in time (e.g., rotation speed $\Omega(t)$, black hole mass $M(t)$, temperature $T(t)$), the constraint energy becomes time-dependent: $E_c = E_c(t)$. The constraint formula then describes the \textbf{real dynamical evolution} of the system's effective degrees of freedom:
 \begin{equation}
 n_{\text{dof}}(t) = d_{\text{topo}} - (d_{\text{topo}} - d_{\text{low}}) \cdot \frac{1}{1 + \left(\frac{E_c(t)}{E_{\text{ref}}}\right)^{c_1}}
 \end{equation}
@@ -151,7 +152,7 @@ These values agree reasonably well with numerical results from various approache
 \subsection{Hierarchical Structure: System, Mode, and Internal Levels}
 \label{subsec:hierarchical}
 
-A subtle but important aspect of the dimension flow framework is the \textbf{hierarchical structure} of energy-constraint relationships. This involves three distinct levels:
+A subtle but important aspect of the mode constraint framework is the \textbf{hierarchical structure} of energy-constraint relationships. This involves three distinct levels:
 
 \begin{enumerate}
 \item \textbf{System Level}: The overall system has a characteristic confinement energy $E_c$ determined by its global parameters (rotation rate $\Omega$, binding energy $E_b$, mass $M$, etc.).
@@ -161,9 +162,9 @@ A subtle but important aspect of the dimension flow framework is the \textbf{hie
 \item \textbf{Internal Structure}: Each ``local'' element of the system (e.g., an exciton within a crystal, a fluid element in a rotating frame) may itself be a complex subsystem with its own internal energy-constraint structure.
 \end{enumerate}
 
-This hierarchical structure exhibits a form of \textbf{self-similarity}: the relationship between constraint energy and effective dimension may reappear at each level, though with different characteristic scales. The parameter $c_1$ describes the universal pattern of how constraint strength determines effective dimension across these levels, while the specific constraint energies at each level depend on the particular physics at that scale.
+This hierarchical structure exhibits a form of \textbf{self-similarity}: the relationship between constraint energy and effective degrees of freedom may reappear at each level, though with different characteristic scales. The parameter $c_1$ describes the universal pattern of how constraint strength determines the number of accessible degrees of freedom across these levels, while the specific constraint energies at each level depend on the particular physics at that scale.
 
-\textbf{Example}: In Cu$_2$O excitons, the quantum defect analysis operates at the Mode Level (exciton states within the crystal lattice). The internal electron-hole structure involves different physics and energy scales. The dimension flow formula captures the universal pattern while respecting these distinct physical origins.
+\textbf{Example}: In Cu$_2$O excitons, the quantum defect analysis operates at the Mode Level (exciton states within the crystal lattice). The internal electron-hole structure involves different physics and energy scales. The mode constraint formula captures the universal pattern while respecting these distinct physical origins.
 
 \subsection{Critical Distinction: Classical vs. Quantum}
 \label{subsec:classical_quantum_distinction}
@@ -203,9 +204,9 @@ The spectral dimension is derived from this asymptotic behavior. For a smooth ma
 
 \subsubsection{Quantum Gravity Applications (2005-Present)}
 
-The modern application of spectral dimension to quantum gravity began with observations in Causal Dynamical Triangulations (CDT) \cite{Ambjorn2005}, where numerical simulations revealed systems with different effective dimensionalities at different characteristic scales. This reflects varying constraint strengths across the quantum spacetime ensemble---not a ``flow'' of dimension within a single system.
+The modern application of spectral dimension to quantum gravity began with observations in Causal Dynamical Triangulations (CDT) \cite{Ambjorn2005}, where numerical simulations revealed that different configurations in the quantum spacetime ensemble exhibit different numbers of accessible degrees of freedom at different characteristic scales. This reflects varying constraint strengths across the ensemble---not a ``flow'' of dimension within a single system.
 
-\textbf{Critical Note}: The interpretation of this behavior as ``spacetime becoming two-dimensional'' is a misnomer. The correct interpretation is that different elements of the quantum spacetime ensemble exhibit different effective dimensionalities due to their intrinsic constraint structures. The spectral dimension characterizes this constraint-determined effective dimensionality---not a change in the topological dimension of any manifold.
+\textbf{Critical Note}: The interpretation of this behavior as ``spacetime becoming two-dimensional'' is a misnomer. The correct interpretation is that different elements of the quantum spacetime ensemble exhibit different effective degrees of freedom due to their intrinsic constraint structures. The spectral dimension characterizes this constraint-determined mode structure---not a change in the topological dimension of any manifold.
 
 \subsection{Scope and Limitations of This Review}
 \label{subsec:scope}
