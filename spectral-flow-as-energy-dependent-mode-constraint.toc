@@ -5,13 +5,13 @@
 \contentsline {subsection}{\numberline {1.2}Three Levels of Dimension Concepts}{9}{subsection.1.2}%
 \contentsline {subsection}{\numberline {1.3}Physical Interpretation: Constraint Hierarchy}{10}{subsection.1.3}%
 \contentsline {subsection}{\numberline {1.4}The Phenomenological $c_1$ Parameter}{11}{subsection.1.4}%
-\contentsline {subsection}{\numberline {1.5}Hierarchical Structure: System, Mode, and Internal Levels}{11}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.5}Hierarchical Structure: System, Mode, and Internal Levels}{12}{subsection.1.5}%
 \contentsline {subsection}{\numberline {1.6}Critical Distinction: Classical vs. Quantum}{12}{subsection.1.6}%
 \contentsline {subsection}{\numberline {1.7}Historical Development}{12}{subsection.1.7}%
-\contentsline {subsubsection}{\numberline {1.7.1}Mathematical Origins: Minakshisundaram-Pleijel (1949)}{12}{subsubsection.1.7.1}%
+\contentsline {subsubsection}{\numberline {1.7.1}Mathematical Origins: Minakshisundaram-Pleijel (1949)}{13}{subsubsection.1.7.1}%
 \contentsline {subsubsection}{\numberline {1.7.2}Quantum Gravity Applications (2005-Present)}{13}{subsubsection.1.7.2}%
 \contentsline {subsection}{\numberline {1.8}Scope and Limitations of This Review}{13}{subsection.1.8}%
-\contentsline {section}{\numberline {2}Mathematical Foundations}{13}{section.2}%
+\contentsline {section}{\numberline {2}Mathematical Foundations}{14}{section.2}%
 \contentsline {subsection}{\numberline {2.1}The Heat Kernel: Mathematical Definition}{14}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Spectral Dimension: Mathematical Definition}{14}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Heuristic Physical Interpretation}{15}{subsection.2.3}%
