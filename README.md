@@ -11,7 +11,7 @@
 
 > 📢 **v3.1.0 Released** (2026-02-14): Experimental validation completed — Cu₂O Rydberg exciton data confirms $c_1 = 0.516 \pm 0.026$ (theory: 0.5). See [VERSION_3.1.0.md](VERSION_3.1.0.md) and [docs/research/spectral_flow/](docs/research/spectral_flow/)
 
-> 📄 **Paper Open Sourced** (2026-02-15): **"Spectral Flow as Energy-Dependent Mode Constraint"** (88 pages, 21 figures) — Complete RMP-level review paper with unified framework, E-6 experiment details, non-commutative/fractal geometry integration, and extensive experimental validation. [PDF Download](docs/research/spectral_flow/unified_theory/rmp_review_paper/output/main_80pages.pdf)
+> 📄 **Paper Open Sourced** (2026-02-15): **"Spectral Flow as Energy-Dependent Mode Constraint"** (88 pages, 21 figures) — Complete RMP-level review paper with unified framework, E-6 experiment details, non-commutative/fractal geometry integration, and extensive experimental validation. [PDF Download](docs/research/spectral_flow/unified_theory/rmp_review_paper/output/Spectral_Flow_as_Energy-Dependent_Mode_Constraint.pdf)
 
 ---
 

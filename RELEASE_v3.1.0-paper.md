@@ -102,7 +102,7 @@ This release open-sources the complete **RMP-level review paper** presenting a u
 ## 📥 Downloads
 
 ### Main Paper
-- **PDF**: `docs/research/spectral_flow/unified_theory/rmp_review_paper/output/main_80pages.pdf`
+- **PDF**: `docs/research/spectral_flow/unified_theory/rmp_review_paper/output/Spectral_Flow_as_Energy-Dependent_Mode_Constraint.pdf`
 - **Size**: 1.2 MB
 - **Pages**: 88
 
@@ -147,7 +147,7 @@ This release open-sources the complete **RMP-level review paper** presenting a u
 ```
 Fixed-4D-Topology/
 ├── docs/research/spectral_flow/unified_theory/rmp_review_paper/
-│   ├── main_80pages.pdf              # Main paper (1.2 MB)
+│   ├── Spectral_Flow_as_Energy-Dependent_Mode_Constraint.pdf  # Main paper (1.2 MB)
 │   ├── chapters/                      # LaTeX source files
 │   │   ├── chapter1_reconstructed.tex
 │   │   ├── chapter2_extended.tex
@@ -208,7 +208,7 @@ copies or substantial portions of the Software.
 ## 🔗 Quick Links
 
 - **Repository**: https://github.com/dpsnet/Fixed-4D-Topology
-- **Paper PDF**: [Download main_80pages.pdf](docs/research/spectral_flow/unified_theory/rmp_review_paper/output/main_80pages.pdf)
+- **Paper PDF**: [Download Spectral_Flow_as_Energy-Dependent_Mode_Constraint.pdf](docs/research/spectral_flow/unified_theory/rmp_review_paper/output/Spectral_Flow_as_Energy-Dependent_Mode_Constraint.pdf)
 - **Release**: https://github.com/dpsnet/Fixed-4D-Topology/releases/tag/v3.1.0-paper
 - **Issues**: https://github.com/dpsnet/Fixed-4D-Topology/issues
 
