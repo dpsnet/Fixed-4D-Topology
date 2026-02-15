@@ -66,6 +66,25 @@ where $\Delta E$ characterizes the transition width.
 
 \textbf{Important Caveat}: This formula is phenomenological. The relationship between energy gaps and the spectral dimension evolution is not derived from first principles but postulated based on physical intuition and numerical observations.
 
+\textbf{Conceptual Clarification: Probe Energy vs. Confinement Energy}
+
+\begin{center}
+\fbox{\parbox{0.95\textwidth}{
+\small
+\textbf{Critical Distinction:} Two distinct energy scales must be distinguished:
+
+\textbf{1. Probe Energy} ($E$): The external energy used to investigate the system. Controlled by the observer, corresponds to diffusion time $\tau \sim \hbar/E$ in spectral analysis.
+
+\textbf{2. Confinement Energy} ($E_c$ or $E_{\text{gap}}$): The system's intrinsic characteristic energy (binding energy, rotation energy, etc.). Determined by system parameters such as $\Omega$, $E_b$, or $M$.
+
+\textbf{Key Physical Insight:} Systems with \textbf{higher confinement energy} are more ``tightly bound.'' When probed at energies $E \ll E_c$, they exhibit \textbf{lower effective degrees of freedom} because high-gap modes are frozen.
+
+The parameter $c_1$ describes the \textbf{rate} at which constraints ``turn on'' as probe energy decreases, while $E_c$ determines the \textbf{scale} where this occurs.
+
+\textit{Note: This differs from atomic physics where ``high energy level'' (large $n$) means weakly bound---in dimension flow theory, ``high energy probe'' means overcoming constraints.}
+}}
+\end{center}
+
 \subsection{The Phenomenological $c_1$ Parameter}
 \label{subsec:c1_phenomenological}
 
@@ -86,6 +105,23 @@ The values predicted by this formula are:
 \end{itemize}
 
 These values agree reasonably well with numerical results from various approaches, but the theoretical foundation requires further investigation.
+
+\subsection{Hierarchical Structure: System, Mode, and Internal Levels}
+\label{subsec:hierarchical}
+
+A subtle but important aspect of the dimension flow framework is the \textbf{hierarchical structure} of energy-constraint relationships. This involves three distinct levels:
+
+\begin{enumerate}
+\item \textbf{System Level}: The overall system has a characteristic confinement energy $E_c$ determined by its global parameters (rotation rate $\Omega$, binding energy $E_b$, mass $M$, etc.).
+
+\item \textbf{Mode Level}: Individual dynamical modes (directions, angular momentum states, etc.) have specific energy gaps $E_{\text{gap},i}$. Whether these modes participate in low-energy physics depends on the comparison between probe energy $E$ and their respective gaps.
+
+\item \textbf{Internal Structure}: Each ``local'' element of the system (e.g., an exciton within a crystal, a fluid element in a rotating frame) may itself be a complex subsystem with its own internal energy-constraint structure.
+\end{enumerate}
+
+This hierarchical structure exhibits a form of \textbf{self-similarity}: the relationship between energy and constraints may reappear at each level, though with different characteristic scales. The parameter $c_1$ describes the universal pattern of how constraints ``turn on'' across these levels, while the specific energy scales at each level depend on the particular physics at that scale.
+
+\textbf{Example}: In Cu$_2$O excitons, the quantum defect analysis operates at the Mode Level (exciton states within the crystal lattice). The internal electron-hole structure involves different physics and energy scales. The dimension flow formula captures the universal pattern while respecting these distinct physical origins.
 
 \subsection{Critical Distinction: Classical vs. Quantum}
 \label{subsec:classical_quantum_distinction}
